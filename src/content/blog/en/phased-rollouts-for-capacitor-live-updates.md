@@ -1,6 +1,6 @@
 ---
 slug: phased-rollouts-for-capacitor-live-updates
-title: Phased Rollouts for Capacitor Live Updates
+title: Phased Rollouts for React Native Live Updates
 description: Learn how phased rollouts improve app updates by minimizing risks, enhancing quality, and ensuring user satisfaction through strategic user segmentation.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -89,13 +89,13 @@ CodePushGo's web interface makes it easy to monitor updates in real time, tracki
 
 These steps help you manage your rollout effectively while minimizing risks.
 
-## Setting Up Phased Rollouts in [Capacitor](https://capacitorjs.com/)
+## Setting Up Phased Rollouts in [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-11.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-11.jpg?auto=compress)
 
 ### Live Update Configuration
 
-Start by installing the [CodePushGo plugin](https://capgo.app/plugins/) to enable over-the-air (OTA) updates for your Capacitor project:
+Start by installing the [CodePushGo plugin](https://capgo.app/plugins/) to enable over-the-air (OTA) updates for your React Native project:
 
 ```bash
 npx @capgo/cli init
@@ -177,7 +177,7 @@ Using the right [update management](https://capgo.app/docs/plugin/cloud-mode/man
 
 ### Platform Comparison
 
-CodePushGo stands out as a solution for live updates in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It supports up to **1,000,000 live updates monthly** and can increase release speed by **81%** [\[1\]](https://capgo.app/). This makes it a strong alternative, especially since [AppCenter](https://visualstudio.microsoft.com/app-center/) no longer supports hybrid apps and AppFlow is often too expensive. One developer shared their experience:
+CodePushGo stands out as a solution for live updates in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It supports up to **1,000,000 live updates monthly** and can increase release speed by **81%** [\[1\]](https://capgo.app/). This makes it a strong alternative, especially since [AppCenter](https://visualstudio.microsoft.com/app-center/) no longer supports hybrid apps and AppFlow is often too expensive. One developer shared their experience:
 
 > "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://capgo.app/)
 
@@ -199,7 +199,7 @@ For enterprise deployments, CodePushGo offers CI/CD integration with a one-time 
 
 ## Summary
 
-Rolling out updates in Capacitor apps requires careful planning and the right tools. Platforms like CodePushGo streamline this process with features like user segmentation, progress monitoring, and error management.
+Rolling out updates in React Native apps requires careful planning and the right tools. Platforms like CodePushGo streamline this process with features like user segmentation, progress monitoring, and error management.
 
 Here’s how the phased rollout typically works:
 
@@ -217,4 +217,4 @@ Key practices include:
 -   Ensuring compliance with app store requirements.
 -   Using tools that allow for quick rollbacks if needed.
 
-Following this approach helps you deliver secure, uninterrupted updates to your Capacitor apps.
+Following this approach helps you deliver secure, uninterrupted updates to your React Native apps.

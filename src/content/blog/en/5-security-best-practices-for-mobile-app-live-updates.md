@@ -41,7 +41,7 @@ Let’s dive deeper into each practice to understand how they protect your app a
 
 ## 1\. Secure Delivery of Updates
 
-To ensure safe updates for Capacitor-based apps, **encryption** and **authentication protocols** are the backbone of a secure delivery pipeline.
+To ensure safe updates for React Native-based apps, **encryption** and **authentication protocols** are the backbone of a secure delivery pipeline.
 
 > "Secure coding is the foundation of security for mobile applications" [\[1\]](https://dashdevs.com/blog/mobile-app-security-tips/).
 
@@ -130,7 +130,7 @@ While keeping unauthorized access at bay is crucial, don’t forget that regular
 
 ## 4\. Apply Regular Updates and Patches
 
-For live OTA updates in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/), keeping your app updated is key to addressing new risks and maintaining user confidence.
+For live OTA updates in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/), keeping your app updated is key to addressing new risks and maintaining user confidence.
 
 ### Automated Update Management
 
@@ -181,9 +181,9 @@ Netflix is a prime example of combining automated and manual testing in their CI
 
 ## Conclusion
 
-By following the five key practices - securing delivery, validating integrity, blocking unauthorized access, applying timely updates, and conducting thorough testing - developers can better protect their apps and users from ever-changing threats. For apps built with Capacitor, where OTA updates are critical for fast and efficient maintenance, these steps help strike the right balance between speed and security.
+By following the five key practices - securing delivery, validating integrity, blocking unauthorized access, applying timely updates, and conducting thorough testing - developers can better protect their apps and users from ever-changing threats. For apps built with React Native, where OTA updates are critical for fast and efficient maintenance, these steps help strike the right balance between speed and security.
 
-Strong security practices for live updates in Capacitor-based apps are essential to avoid vulnerabilities, safeguard user data, and meet industry regulations. Data breaches not only cost millions but also damage financial stability and user confidence.
+Strong security practices for live updates in React Native-based apps are essential to avoid vulnerabilities, safeguard user data, and meet industry regulations. Data breaches not only cost millions but also damage financial stability and user confidence.
 
 Security isn't a one-time effort. It requires regular updates, constant monitoring, and thorough testing. Combining automated tools with manual reviews creates a stronger defense, especially when integrated into CI/CD pipelines. A great example is Netflix, which uses an extensive security testing framework to stay ahead of potential risks [\[2\]](https://www.acceldata.io/blog/data-integrity-testing-explained-safeguard-accuracy-reliability).
 

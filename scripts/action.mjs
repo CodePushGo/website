@@ -107,7 +107,7 @@ export const actions = [
   {
     name: '@capgo/nativegeocoder',
     author: 'Martin Donadieu',
-    description: 'Capacitor plugin for native forward and reverse geocoding',
+    description: 'React Native plugin for native forward and reverse geocoding',
     href: 'https://github.com/Cap-go/capacitor-nativegeocoder/',
     title: 'Native Geocoder',
     // icon: MapPinIcon,
@@ -115,7 +115,7 @@ export const actions = [
   {
     name: '@capgo/inappbrowser',
     author: 'Martin Donadieu',
-    description: 'Capacitor plugin in app browser',
+    description: 'React Native plugin in app browser',
     href: 'https://github.com/Cap-go/capacitor-inappbrowser/',
     title: 'In App Browser',
     // icon: GlobeAltIcon,
@@ -171,7 +171,7 @@ export const actions = [
   {
     name: '@capgo/home-indicator',
     author: 'Martin Donadieu',
-    description: 'hide and show home button indicator in Capacitor app',
+    description: 'hide and show home button indicator in React Native app',
     href: 'https://github.com/Cap-go/home-indicator/',
     title: 'Indicator',
     // icon: HomeIcon,
@@ -195,7 +195,7 @@ export const actions = [
   {
     name: '@capgo/capacitor-fingerprint',
     author: 'Martin Donadieu',
-    description: 'Capacitor client for Fingerprint PRO. 100% accurate device identification for fraud detection.',
+    description: 'React Native client for Fingerprint PRO. 100% accurate device identification for fraud detection.',
     href: 'https://github.com/Cap-go/capacitor-fingerprint/',
     title: 'Fingerprint',
     // icon: FingerPrintIcon,
@@ -219,7 +219,7 @@ export const actions = [
   {
     name: '@capgo/walletconnect',
     author: 'Martin Donadieu',
-    description: 'WIP: Capacitor plugin for WalletConnect',
+    description: 'WIP: React Native plugin for WalletConnect',
     href: 'N/A',
     title: 'WalletConnect',
     // icon: WalletIcon,

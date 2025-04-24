@@ -1,7 +1,7 @@
 ---
 slug: compliance-checks-in-cicd-for-capacitor-apps
-title: Compliance Checks in CI/CD for Capacitor Apps
-description: Ensure your Capacitor apps meet compliance standards through automated CI/CD checks, enhancing security and speeding up updates.
+title: Compliance Checks in CI/CD for React Native Apps
+description: Ensure your React Native apps meet compliance standards through automated CI/CD checks, enhancing security and speeding up updates.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-24T02:36:18.433Z
 updated_at: 2025-03-24T02:36:54.915Z
 head_image: https://assets.seobotai.com/capgo.app/67e0a31ca2808c1172f2bc74-1742783814915.jpg
 head_image_alt: Mobile Development
-keywords: CI/CD, compliance checks, Capacitor apps, mobile security, automated testing
+keywords: CI/CD, compliance checks, React Native apps, mobile security, automated testing
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Compliance checks in CI/CD pipelines are your solution.** They ensure your [Capacitor](https://capacitorjs.com/) apps meet Apple and [Google Play](https://support.google.com/googleplay/android-developer/answer/113513?hl=en) requirements, keeping security tight and updates fast.
+**Compliance checks in CI/CD pipelines are your solution.** They ensure your [React Native](https://capacitorjs.com/) apps meet Apple and [Google Play](https://support.google.com/googleplay/android-developer/answer/113513?hl=en) requirements, keeping security tight and updates fast.
 
 Here’s why compliance checks matter:
 
@@ -33,21 +33,21 @@ Here’s why compliance checks matter:
 
 **CodePushGo simplifies this process**, offering tools for automated compliance, real-time error tracking, and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
 
-Stay compliant, secure, and efficient with proper CI/CD practices for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
+Stay compliant, secure, and efficient with proper CI/CD practices for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
 
 ## Using DevSecOps for Continuous Compliance and Security ...
 
 <iframe src="https://www.youtube.com/embed/HTMuZfv6JS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## Building CI/CD Pipelines for [Capacitor](https://capacitorjs.com/)
+## Building CI/CD Pipelines for [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-24.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-24.jpg?auto=compress)
 
 A well-designed CI/CD pipeline simplifies deployment and helps ensure your app consistently meets app store guidelines.
 
 ### Selecting a CI/CD Platform
 
-Pick a CI/CD platform that works seamlessly with Capacitor apps. Look for features like:
+Pick a CI/CD platform that works seamlessly with React Native apps. Look for features like:
 
 -   **Integration with your current development tools**
 -   **Customizable configuration options for compliance checks**
@@ -79,7 +79,7 @@ Steps to integrate compliance tools:
 
 ## App Store Compliance Automation
 
-Automating compliance checks helps ensure your Capacitor app aligns with iOS and Google Play guidelines, catching potential issues early.
+Automating compliance checks helps ensure your React Native app aligns with iOS and Google Play guidelines, catching potential issues early.
 
 ### iOS Compliance Requirements
 
@@ -119,7 +119,7 @@ For teams handling multiple app versions, CodePushGo's [channel system](https://
 
 ## Security and Privacy Checks
 
-Protecting Capacitor apps and user data requires thorough security and privacy measures across your CI/CD pipeline.
+Protecting React Native apps and user data requires thorough security and privacy measures across your CI/CD pipeline.
 
 ### Code Security Scanning
 
@@ -160,7 +160,7 @@ For teams embedding security checks, CodePushGo integrates smoothly with popular
 
 ## Automated Testing Setup
 
-Automating tests in your CI/CD pipeline is a key step to ensure your Capacitor apps maintain high quality and meet compliance standards.
+Automating tests in your CI/CD pipeline is a key step to ensure your React Native apps maintain high quality and meet compliance standards.
 
 ### UI Testing Methods
 
@@ -198,7 +198,7 @@ After performance testing, focus on accessibility to make sure your app is usabl
 | Touch Target Size | Element dimension checks | OS-specific requirements |
 | Keyboard Navigation | Input method testing | Cross-platform standards |
 
-With CodePushGo's integration tools, you can automate these accessibility tests directly within your CI/CD workflow. The platform supports Capacitor 6 and 7, ensuring smooth compatibility across supported CI/CD systems while helping you meet compliance standards [\[1\]](https://capgo.app/).
+With CodePushGo's integration tools, you can automate these accessibility tests directly within your CI/CD workflow. The platform supports React Native 6 and 7, ensuring smooth compatibility across supported CI/CD systems while helping you meet compliance standards [\[1\]](https://capgo.app/).
 
 ## Next Steps and Tips
 

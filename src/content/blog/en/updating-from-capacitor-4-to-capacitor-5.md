@@ -1,8 +1,8 @@
 ---
 slug: updating-from-capacitor-4-to-capacitor-5
-title: 'Updating from Capacitor 4 to Capacitor 5: A Step-by-Step Guide'
+title: 'Updating from React Native 4 to React Native 5: A Step-by-Step Guide'
 description: >-
-  Learn how to update your project from Capacitor 4 to Capacitor 5 with minimal
+  Learn how to update your project from React Native 4 to React Native 5 with minimal
   breaking changes, including updating official plugins and required tools.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -10,19 +10,19 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2023-06-09T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /capacitor-5-update.webp
-head_image_alt: Capacitor 4 to 5 update illustration
-keywords: Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
-tag: Capacitor
+head_image_alt: React Native 4 to 5 update illustration
+keywords: React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+tag: React Native
 published: true
 locale: en
 next_blog: ''
 ---
 
-Compared to previous updates, the transition from Capacitor 4 to Capacitor 5 involves minimal breaking changes. This guide provides step-by-step instructions for updating your project to Capacitor 5, as well as a list of breaking changes for official plugins.
+Compared to previous updates, the transition from React Native 4 to React Native 5 involves minimal breaking changes. This guide provides step-by-step instructions for updating your project to React Native 5, as well as a list of breaking changes for official plugins.
 
-**Note**: Capacitor 5 requires NodeJS 16 or higher, as Node 12 has reached end-of-life and Node 14 will reach end-of-life on April 30th, 2023. It is recommended to use the latest LTS version of NodeJS.
+**Note**: React Native 5 requires NodeJS 16 or higher, as Node 12 has reached end-of-life and Node 14 will reach end-of-life on April 30th, 2023. It is recommended to use the latest LTS version of NodeJS.
 
-1. Install the `latest` version of the Capacitor CLI in your project:
+1. Install the `latest` version of the React Native CLI in your project:
 
    ```
    npm i -D @capacitor/cli@latest
@@ -36,11 +36,11 @@ Compared to previous updates, the transition from Capacitor 4 to Capacitor 5 inv
 
    If any migration steps cannot be achieved, additional information will be provided in the terminal output. Manual migration steps are listed below.
 
-3. If you have the VS Code extension installed, check the recommendations section of the extension to find the option to migrate your project to Capacitor 5.
+3. If you have the VS Code extension installed, check the recommendations section of the extension to find the option to migrate your project to React Native 5.
 
-### Upgrading Capacitor 4 iOS Project to Capacitor 5
+### Upgrading React Native 4 iOS Project to React Native 5
 
-1. **Upgrade Xcode**: Capacitor 5 requires Xcode 14.1+.
+1. **Upgrade Xcode**: React Native 5 requires Xcode 14.1+.
 
 2. **Update .gitignore**: Make the following changes to your `.gitignore` file:
 
@@ -51,9 +51,9 @@ Compared to previous updates, the transition from Capacitor 4 to Capacitor 5 inv
 
 3. **Update Assets to use a single app icon**: Xcode 14 supports a single app icon of 1024x1024. Clean up your AppIcon.appiconset by removing all unnecessary sizes.
 
-### Upgrading Capacitor 4 Android Project to Capacitor 5
+### Upgrading React Native 4 Android Project to React Native 5
 
-1. **Upgrade Android Studio**: Capacitor 5 requires Android Studio Flamingo | 2022.2.1 or newer due to the usage of Gradle 8, which requires Java JDK 17. Java 17 ships with Android Studio Flamingo, so no additional downloads are needed.
+1. **Upgrade Android Studio**: React Native 5 requires Android Studio Flamingo | 2022.2.1 or newer due to the usage of Gradle 8, which requires Java JDK 17. Java 17 ships with Android Studio Flamingo, so no additional downloads are needed.
 
 2. **Run AGP Upgrade Assistant**: Android Studio can help with some updates related to Gradle and moving packages into build files. To start, run `Tools -> AGP Upgrade Assistant`.
 
@@ -133,7 +133,7 @@ Compared to previous updates, the transition from Capacitor 4 to Capacitor 5 inv
          compileSdkVersion rootProject.ext.compileSdkVersion
    ```
 
-9. **Update androidScheme**: In Capacitor 6, `https` will be the default setting for `androidScheme` for existing apps to better enable Capacitor applications to use the system Autofill feature. To avoid data loss as a result of this change, set the scheme to `http` now, even if it's the current default.
+9. **Update androidScheme**: In React Native 6, `https` will be the default setting for `androidScheme` for existing apps to better enable React Native applications to use the system Autofill feature. To avoid data loss as a result of this change, set the scheme to `http` now, even if it's the current default.
 
    ```
    {
@@ -206,4 +206,4 @@ The following plugin functionality has been modified or removed. Update your cod
 
 - On iOS, the default status bar animation has been changed to `FADE`.
 
-By following these steps and updating your code accordingly, you should now have successfully updated your project from Capacitor 4 to Capacitor 5. Make sure to test your application thoroughly to ensure that all features and plugins are working as expected.
+By following these steps and updating your code accordingly, you should now have successfully updated your project from React Native 4 to React Native 5. Make sure to test your application thoroughly to ensure that all features and plugins are working as expected.

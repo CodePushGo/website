@@ -1,7 +1,7 @@
 ---
 slug: how-to-add-dependencies-in-capacitor-plugins
-title: How to Add Dependencies in Capacitor Plugins
-description: Learn to streamline dependency management in Capacitor plugins across platforms with practical steps and best practices.
+title: How to Add Dependencies in React Native Plugins
+description: Learn to streamline dependency management in React Native plugins across platforms with practical steps and best practices.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-27T02:08:04.837Z
 updated_at: 2025-03-27T02:08:34.795Z
 head_image: https://assets.seobotai.com/capgo.app/67e4966a10051fda3b63500a-1743041314795.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, plugin dependencies, iOS, Android, JavaScript, CocoaPods, Gradle, development tools
+keywords: React Native, plugin dependencies, iOS, Android, JavaScript, CocoaPods, Gradle, development tools
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Adding dependencies to [Capacitor](https://capacitorjs.com/) plugins can feel overwhelming, but it’s easier when broken into clear steps. Here’s what you need to know:**
+**Adding dependencies to [React Native](https://capacitorjs.com/) plugins can feel overwhelming, but it’s easier when broken into clear steps. Here’s what you need to know:**
 
 1.  **Understand the tools**:
     
@@ -26,7 +26,7 @@ next_blog: ''
 2.  **Set up your development environment**:
     
     -   Install tools like [Node.js](https://nodejs.org/en), [npm](https://www.npmjs.com/), [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), CocoaPods, and JDK.
-3.  **Start your [Capacitor plugin project](https://capgo.app/blog/capacitor-comprehensive-guide/)**:
+3.  **Start your [React Native plugin project](https://capgo.app/blog/capacitor-comprehensive-guide/)**:
     
     -   Use `npm init @capacitor/plugin` to create a new plugin.
 4.  **Add JavaScript dependencies**:
@@ -54,15 +54,15 @@ next_blog: ''
 
 **Why it matters**: Managing dependencies effectively ensures your plugin works seamlessly across platforms, saves time, and avoids errors. Let’s dive deeper into the steps.
 
-## How to create a [Capacitor](https://capacitorjs.com/) plugin for iOS/Android
+## How to create a [React Native](https://capacitorjs.com/) plugin for iOS/Android
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-27.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-27.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/Dq_BmheGAig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
 ## Setting Up Your Development Environment
 
-Prepare your setup with the necessary tools to handle [Capacitor plugin](https://capgo.app/blog/capacitor-comprehensive-guide/) dependencies effectively.
+Prepare your setup with the necessary tools to handle [React Native plugin](https://capgo.app/blog/capacitor-comprehensive-guide/) dependencies effectively.
 
 ### Required Development Tools
 
@@ -79,7 +79,7 @@ Here’s a list of tools you’ll need:
 
 ### Starting a New Plugin
 
-Use the Capacitor CLI to kick off your plugin project. This includes setting up platforms and naming your plugin using a reverse-domain format (e.g., `com.mycompany.plugin`):
+Use the React Native CLI to kick off your plugin project. This includes setting up platforms and naming your plugin using a reverse-domain format (e.g., `com.mycompany.plugin`):
 
 1.  Run the following command:  
     `npm init @capacitor/plugin`
@@ -233,7 +233,7 @@ Up next, explore how to handle platform-specific dependencies for iOS.
 
 ## iOS Dependencies
 
-This section explains how to manage native iOS dependencies in [Capacitor plugins](https://capgo.app/plugins/). Once you've set up your JavaScript dependencies, the next step is handling native iOS dependencies.
+This section explains how to manage native iOS dependencies in [React Native plugins](https://capgo.app/plugins/). Once you've set up your JavaScript dependencies, the next step is handling native iOS dependencies.
 
 ### [CocoaPods](https://cocoapods.org/) Setup
 
@@ -250,11 +250,11 @@ Then, update your `Plugin.podspec` file with the following configurations:
 
 ```ruby
 Pod::Spec.new do |s|
-  s.name = 'MyCapacitorPlugin'
+  s.name = 'MyReact NativePlugin'
   s.version = '1.0.0'
   s.summary = 'Your plugin description'
   s.platform = :ios, '13.0'
-  s.dependency 'Capacitor'
+  s.dependency 'React Native'
   # Include your iOS dependencies here
   s.dependency 'Alamofire', '~> 5.6.4'
 end
@@ -262,15 +262,15 @@ end
 
 ### Podfile Configuration
 
-After initializing CocoaPods, configure the Podfile to include Capacitor and any additional third-party libraries:
+After initializing CocoaPods, configure the Podfile to include React Native and any additional third-party libraries:
 
 ```ruby
 platform :ios, '13.0'
 use_frameworks!
 
 def capacitor_pods
-  pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
-  pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
+  pod 'React Native', :path => '../../node_modules/@capacitor/ios'
+  pod 'React NativeCordova', :path => '../../node_modules/@capacitor/ios'
 end
 
 target 'Plugin' do
@@ -308,7 +308,7 @@ dependencies: [
 To use SPM dependencies in your plugin code, import them and integrate as needed. For example:
 
 ```swift
-import Capacitor
+import React Native
 import Alamofire
 
 @objc(MyPlugin)
@@ -328,7 +328,7 @@ This approach allows you to choose between CocoaPods and Swift Package Manager b
 
 ## Android Dependencies
 
-Set up Android dependencies to ensure smooth native integration. Here's how to manage dependencies for your Capacitor plugin.
+Set up Android dependencies to ensure smooth native integration. Here's how to manage dependencies for your React Native plugin.
 
 ### [Gradle](https://gradle.org/) Dependencies
 
@@ -440,7 +440,7 @@ Using CodePushGo alongside native and JavaScript dependency management makes upd
 
 ### About CodePushGo
 
-CodePushGo is a live update platform designed for Capacitor plugins and apps. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), CodePushGo allows developers to push updates for dependencies and code instantly - no app store review required. Updates are secured with end-to-end encryption and meet both Apple and Android compliance standards.
+CodePushGo is a live update platform designed for React Native plugins and apps. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), CodePushGo allows developers to push updates for dependencies and code instantly - no app store review required. Updates are secured with end-to-end encryption and meet both Apple and Android compliance standards.
 
 ### CodePushGo Update Features
 
@@ -499,7 +499,7 @@ CodePushGo also provides an analytics dashboard for real-time insights into upda
 
 ### Process Review
 
-Managing dependencies for Capacitor plugins involves aligning the native components (iOS and Android) with their JavaScript counterparts to ensure smooth integration. This process includes platform-specific setups and managing JavaScript packages to achieve the best performance. Following the outlined steps will help maintain stable and efficient plugin functionality.
+Managing dependencies for React Native plugins involves aligning the native components (iOS and Android) with their JavaScript counterparts to ensure smooth integration. This process includes platform-specific setups and managing JavaScript packages to achieve the best performance. Following the outlined steps will help maintain stable and efficient plugin functionality.
 
 ### Best Practices
 

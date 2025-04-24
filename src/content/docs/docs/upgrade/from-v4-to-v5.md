@@ -7,9 +7,9 @@ sidebar:
 
 ## Why this upgrade
 
-This major version is here to follow Capacitor major version
+This major version is here to follow React Native major version
 
-First follow the migration guide of Capacitor:
+First follow the migration guide of React Native:
 
 [https://capacitorjs.com/docs/updating/5-0](https://capacitorjs.com/docs/updating/5-0/)
 

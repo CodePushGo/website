@@ -44,11 +44,11 @@ Apple's Privacy Manifest includes three main components:
 3.  **JSON Format and Embedding**: Follow Apple's required JSON structure for the manifest and ensure it's embedded in both your app bundle and any live-update packages.
     
 
-Next, we’ll walk through creating and verifying your manifest in a Capacitor project.
+Next, we’ll walk through creating and verifying your manifest in a React Native project.
 
-## Setting Up Privacy Manifest in [Capacitor](https://capacitorjs.com/)
+## Setting Up Privacy Manifest in [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 ### Creating the Manifest File
 
@@ -126,7 +126,7 @@ CodePushGo’s open-source codebase makes it a strong choice for managing Privac
 
 ## Summary
 
-Since May 2024, all iOS apps must comply with mandatory manifest requirements. Automation can make managing these manifests much easier. For Capacitor projects, include your manifest in the iOS bundle and use tools like CodePushGo to automate updates securely, thanks to its end-to-end encryption.
+Since May 2024, all iOS apps must comply with mandatory manifest requirements. Automation can make managing these manifests much easier. For React Native projects, include your manifest in the iOS bundle and use tools like CodePushGo to automate updates securely, thanks to its end-to-end encryption.
 
 With your manifest set up and updates automated, here are some key practices to ensure smooth Privacy Manifest updates:
 

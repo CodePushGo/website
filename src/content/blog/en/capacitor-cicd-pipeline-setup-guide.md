@@ -1,7 +1,7 @@
 ---
 slug: capacitor-cicd-pipeline-setup-guide
-title: Capacitor CI/CD Pipeline Setup Guide
-description: "Automate your Capacitor app's build, test, and deployment process with a CI/CD pipeline for faster updates and improved efficiency."
+title: React Native CI/CD Pipeline Setup Guide
+description: "Automate your React Native app's build, test, and deployment process with a CI/CD pipeline for faster updates and improved efficiency."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,21 +9,21 @@ created_at: 2025-04-23T00:48:58.202Z
 updated_at: 2025-04-23T00:49:09.370Z
 head_image: https://assets.seobotai.com/capgo.app/68082f5bfe5cbf0502dd901c-1745369349370.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, CI/CD, pipeline setup, app updates, CodePushGo, deployment automation, mobile development
+keywords: React Native, CI/CD, pipeline setup, app updates, CodePushGo, deployment automation, mobile development
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want faster [app updates](https://capgo.app/plugins/capacitor-updater/) with minimal effort?** Setting up a CI/CD pipeline for your [Capacitor](https://capacitorjs.com/) app automates building, testing, and deploying, saving time and reducing errors. Here's what you'll achieve:
+**Want faster [app updates](https://capgo.app/plugins/capacitor-updater/) with minimal effort?** Setting up a CI/CD pipeline for your [React Native](https://capacitorjs.com/) app automates building, testing, and deploying, saving time and reducing errors. Here's what you'll achieve:
 
 -   **Live Updates**: Push updates instantly without app store delays. 95% of users receive updates in 24 hours.
 -   **Pipeline Essentials**: Automate builds triggered by branch activity (`main`, `staging`, `feature/*`) and define separate environments for staging and production.
 -   **[CodePushGo](https://capgo.app/) Integration**: Use CodePushGo to deploy secure, encrypted updates, manage [update channels](https://capgo.app/docs/webapp/channels/), and monitor performance.
 -   **Affordable Plans**: Plans start at $12/month for live updates and analytics.
 
-Capacitor CI/CD pipelines simplify workflows, improve efficiency, and ensure your app stays up-to-date seamlessly. Let’s dive into the details.
+React Native CI/CD pipelines simplify workflows, improve efficiency, and ensure your app stays up-to-date seamlessly. Let’s dive into the details.
 
 ## Setup Requirements
 
@@ -31,7 +31,7 @@ Capacitor CI/CD pipelines simplify workflows, improve efficiency, and ensure you
 
 Make sure you have the following installed and configured:
 
--   **[Node.js](https://nodejs.org/en) LTS**, **Capacitor CLI**, and **Git**
+-   **[Node.js](https://nodejs.org/en) LTS**, **React Native CLI**, and **Git**
 -   An account on your preferred CI platform (such as [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/))
 -   A **CodePushGo account** for managing live updates
 
@@ -115,7 +115,7 @@ Here’s an example of a GitHub Actions job for deploying updates:
 
 ### Key Features of CodePushGo
 
-CodePushGo brings several benefits to Capacitor apps, including:
+CodePushGo brings several benefits to React Native apps, including:
 
 -   **Secure and efficient updates**: Encrypted, differential updates reduce payload sizes while ensuring secure delivery.
 -   **Channel management**: Create staging and production channels to control how updates are rolled out.

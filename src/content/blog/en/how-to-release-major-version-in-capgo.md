@@ -32,8 +32,8 @@ Now it's clear we don't mix them and use them for what they are made!
 
 ## Major release
 
-In your Capacitor app, a major release is necessary when a breaking change happens. 
-For example, a new IOS target (15 to 16), or a new version of Capacitor (3 to 4), or a plugin (1.2 to 2.0) you use have been updated to a major version.
+In your React Native app, a major release is necessary when a breaking change happens. 
+For example, a new IOS target (15 to 16), or a new version of React Native (3 to 4), or a plugin (1.2 to 2.0) you use have been updated to a major version.
 
 This change means all tooling has to be aligned to handle the breaking change.
 
@@ -63,7 +63,7 @@ Where CodePushGo find the version to compare
   in JavaScript, the var is set on your project here `package.json` under the key `version`
 ## Example
 
-Your Ionic app is currently released with the version `1.2.3` with Capacitor 3
+Your Ionic app is currently released with the version `1.2.3` with React Native 3
 
 You are doing the upgrade to capacitor 4.
 
@@ -78,7 +78,7 @@ If you follow this pattern, no need to worry more, all is well handled.
 
 ## If I don't follow this
 
-In this case, that means you have to send your new app with Capacitor 4 to Apple and Google, but don't to CodePushGo.
+In this case, that means you have to send your new app with React Native 4 to Apple and Google, but don't to CodePushGo.
 
 Then you have to wait 100% of your users, have the app or at least 90%, it will take months, probably.
 

@@ -1,6 +1,6 @@
 ---
 slug: secure-storage-for-offline-tokens-in-capacitor
-title: Secure Storage for Offline Tokens in Capacitor
+title: Secure Storage for Offline Tokens in React Native
 description: Learn how to securely store offline authentication tokens using encryption and biometric controls in mobile applications.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -49,7 +49,7 @@ Once that's set up, move on to defining methods for storing tokens and managing 
 
 ## Storage Solutions Analysis
 
-When choosing secure storage options for offline tokens in Capacitor applications, developers must weigh factors like [encryption methods](https://capgo.app/docs/cli/migrations/encryption/), compatibility across platforms, and ease of integration. Below is a breakdown of key secure-storage plugins for managing offline tokens.
+When choosing secure storage options for offline tokens in React Native applications, developers must weigh factors like [encryption methods](https://capgo.app/docs/cli/migrations/encryption/), compatibility across platforms, and ease of integration. Below is a breakdown of key secure-storage plugins for managing offline tokens.
 
 ### Plugin Feature Comparison
 

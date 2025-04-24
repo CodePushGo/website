@@ -1,6 +1,6 @@
 ---
 slug: how-to-bypass-app-store-review
-title: How to update Capacitor JS Apps without the App Store review.
+title: How to update React Native JS Apps without the App Store review.
 description: >-
   How can CodePushGo Feature allow you to push code updates to live iOS Ionic apps
   and be fully compliant with Apple’s guidelines? 
@@ -10,7 +10,7 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2022-01-13T00:00:00.000Z
 updated_at: 2022-01-13T00:00:00.000Z
 head_image: /bypass_illustration.webp
-head_image_alt: Capacitor bypass illustration
+head_image_alt: React Native bypass illustration
 keywords: Apple, App Store, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
@@ -30,9 +30,9 @@ With CodePushGo capacitor plugin, you can only update and modify your HTML CSS a
 On a side note, the ability for apps to update themselves without the App Store has been around for a quite a while.
 Only for apps created using JavaScript frameworks such as Facebook's React Native and services such as Expo.
 
-A proof that React Native is not more Native than Capacitor 😆
+A proof that React Native is not more Native than React Native 😆
 
-CodePushGo is simply the first affordable solution that provides the ability to push code-level updates to native Capacitor apps.
+CodePushGo is simply the first affordable solution that provides the ability to push code-level updates to native React Native apps.
 The second condition, no new features or functionality, is really up to you.
 
 CodePushGo isn't intended to push new features or functionality. It is meant to tweak or fix them, avoiding the minor releases needed to fix bugs, add logging or tracking, update messages, force users to upgrade, etc.

@@ -1,6 +1,6 @@
 ---
 slug: capacitor-ota-updates-debugging-issues
-title: "Capacitor OTA Updates: Debugging Issues"
+title: "React Native OTA Updates: Debugging Issues"
 description: Learn how to troubleshoot OTA update issues effectively, ensuring smooth app deployments and user satisfaction with best practices and tools.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4

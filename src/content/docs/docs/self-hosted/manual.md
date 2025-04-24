@@ -40,7 +40,7 @@ Add this to your config, to disable auto-update:
 	"appId": "**.***.**",
 	"appName": "Name",
 	"plugins": {
-		"CapacitorUpdater": {
+		"React NativeUpdater": {
 			"autoUpdate": false
 		}
 	}
@@ -50,15 +50,15 @@ Add this to your config, to disable auto-update:
 Then add this code to your app to use manual download
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 import { App } from '@capacitor/app'
 let data = {version: ""}
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 App.addListener('appStateChange', async(state) => {
      if (state.isActive) {
        // Do the download during user active app time to prevent failed download
-       data = await CapacitorUpdater.download({
+       data = await React NativeUpdater.download({
        version: '0.0.4',
        url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.4/dist.zip',
        })
@@ -67,7 +67,7 @@ App.addListener('appStateChange', async(state) => {
        // Do the switch when user leave app
        SplashScreen.show()
        try {
-         await CapacitorUpdater.set(data)
+         await React NativeUpdater.set(data)
        } catch (err) {
          console.log(err)
          SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
@@ -87,7 +87,7 @@ Check the demo app for more info
 
 ## Package
 
-Whatever you choose to name the file you download from your release/update server URL, the zip file should contain the full contents of your production Capacitor build output folder, usually `{project directory}/dist/` or `{project directory}/www/`.
+Whatever you choose to name the file you download from your release/update server URL, the zip file should contain the full contents of your production React Native build output folder, usually `{project directory}/dist/` or `{project directory}/www/`.
 
 This is where `index.html` will be located, and it should also contain all bundled JavaScript, CSS, and web resources necessary for your app to run.
 

@@ -1,7 +1,7 @@
 ---
 slug: creating-and-deleting-update-channels-in-capacitor
-title: Creating and Deleting Update Channels in Capacitor
-description: Learn how to create, manage, and delete update channels in Capacitor for streamlined app updates and improved user experience.
+title: Creating and Deleting Update Channels in React Native
+description: Learn how to create, manage, and delete update channels in React Native for streamlined app updates and improved user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-21T03:02:38.679Z
 updated_at: 2025-03-21T03:02:57.947Z
 head_image: https://assets.seobotai.com/capgo.app/67dcb1f883b63ee70fa08665-1742526177947.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, update channels, app updates, development, mobile, CI/CD, user management, version control
+keywords: React Native, update channels, app updates, development, mobile, CI/CD, user management, version control
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capacitor](https://capacitorjs.com/) [update channels](https://capgo.app/docs/webapp/channels/) let you send over-the-air (OTA) updates to specific user groups. This helps manage multiple app versions, test new features, and roll out updates gradually. Here's what you need to know:
+[React Native](https://capacitorjs.com/) [update channels](https://capgo.app/docs/webapp/channels/) let you send over-the-air (OTA) updates to specific user groups. This helps manage multiple app versions, test new features, and roll out updates gradually. Here's what you need to know:
 
 -   **Benefits**:
     
@@ -25,7 +25,7 @@ next_blog: ''
     -   Roll back problematic updates instantly.
 -   **Setup**:
     
-    -   Use tools like Capacitor CLI, [Node.js](https://nodejs.org/en), and [CodePushGo](https://capgo.app/) CLI.
+    -   Use tools like React Native CLI, [Node.js](https://nodejs.org/en), and [CodePushGo](https://capgo.app/) CLI.
     -   Assign roles (Admin, Developer, Viewer) to manage permissions.
     -   Integrate with CI/CD tools for automated workflows.
 -   **Managing Channels**:
@@ -52,10 +52,10 @@ To manage update channels effectively, you'll need to install specific tools and
 
 Make sure you have the following:
 
--   **Capacitor CLI**: This is the core tool for handling app updates.
+-   **React Native CLI**: This is the core tool for handling app updates.
 -   **Node.js**: Version 14.0 or higher is required.
 -   **[CodePushGo CLI](https://capgo.app/docs/cli/commands)**: Used for setting up and managing update channels.
--   **Development Environment**: Choose an IDE that supports Capacitor.
+-   **Development Environment**: Choose an IDE that supports React Native.
 
 To initialize CodePushGo CLI, run this command:
 
@@ -75,7 +75,7 @@ Set up permissions for secure and efficient channel management:
 | Developer | Limited access | Deploy and test updates |
 | Viewer | Read-only | Monitor update statuses |
 
-Assign roles to your team based on their responsibilities. CodePushGo works seamlessly with both Capacitor 6 and 7, ensuring it fits various project needs.
+Assign roles to your team based on their responsibilities. CodePushGo works seamlessly with both React Native 6 and 7, ensuring it fits various project needs.
 
 For added convenience, CodePushGo integrates with popular CI/CD tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/). Just make sure your build system is ready to handle update channel management.
 
@@ -224,7 +224,7 @@ After removal, monitor system performance. If any issues arise, CodePushGo's rol
 
 ### CodePushGo Core Functions
 
-CodePushGo simplifies managing update channels with features tailored for Capacitor projects. Its channel system lets you target specific user groups with updates that suit their needs. On top of that, CodePushGo provides developers with tools to speed up deployment and improve workflows.
+CodePushGo simplifies managing update channels with features tailored for React Native projects. Its channel system lets you target specific user groups with updates that suit their needs. On top of that, CodePushGo provides developers with tools to speed up deployment and improve workflows.
 
 ### Developer Tools
 

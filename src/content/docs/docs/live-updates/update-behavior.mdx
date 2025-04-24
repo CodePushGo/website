@@ -59,9 +59,9 @@ In some cases, you may want more control over exactly when an update is applied.
 CodePushGo provides a `setDelay` function that lets you specify conditions that must be met before an update is installed:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@capgo/capacitor-updater';
 
-await CapacitorUpdater.setMultiDelay({
+await React NativeUpdater.setMultiDelay({
   delayConditions: [
     {
       kind: 'date',
@@ -97,11 +97,11 @@ For critical updates or apps with very simple state, you may want to apply an up
 `directUpdate` is set in your `capacitor.config.ts` file, not in JavaScript code:
 
 ```typescript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       autoUpdate: true,
       directUpdate: true,
     },
@@ -119,15 +119,15 @@ Note that because `directUpdate` is a native configuration, it requires some add
 When using `directUpdate`, you need to listen for the `appReady` event and hide your app's splash screen in response:
 
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@capgo/capacitor-updater';
 import { SplashScreen } from '@capacitor/splash-screen';
 
-CapacitorUpdater.addListener('appReady', () => {
+React NativeUpdater.addListener('appReady', () => {
   // Hide splash screen
   SplashScreen.hide();
 });
 
-CapacitorUpdater.notifyAppReady();
+React NativeUpdater.notifyAppReady();
 ```
 
 The `appReady` event fires once the app has finished initializing and applying any pending updates. This is the point at which it's safe to show your app's UI, as it ensures the user will see the latest version.

@@ -1,6 +1,6 @@
 ---
 slug: how-to-schedule-ota-updates-for-capacitor-apps
-title: How to Schedule OTA Updates for Capacitor Apps
+title: How to Schedule OTA Updates for React Native Apps
 description: Learn how to effectively schedule OTA updates for your mobile app, ensuring quick bug fixes and enhanced user experiences.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-03-21T04:03:25.616Z
 updated_at: 2025-03-24T13:12:18.675Z
 head_image: https://assets.seobotai.com/capgo.app/67dcd7fb83b63ee70fa0b90f-1742529933736.jpg
 head_image_alt: Mobile Development
-keywords: OTA updates, mobile app updates, Capacitor, app deployment, update scheduling, performance monitoring
+keywords: OTA updates, mobile app updates, React Native, app deployment, update scheduling, performance monitoring
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to update your** [**Capacitor**](https://capacitorjs.com/) **app without app store delays? Over-the-Air (OTA) updates let you push fixes, new features, and improvements directly to users in real time.** Here’s how you can schedule them effectively:
+**Want to update your** [**React Native**](https://capacitorjs.com/) **app without app store delays? Over-the-Air (OTA) updates let you push fixes, new features, and improvements directly to users in real time.** Here’s how you can schedule them effectively:
 
 -   **What are OTA Updates?** They allow you to deliver app changes directly to users, downloading only updated parts to save time and bandwidth.
     
@@ -29,7 +29,7 @@ next_blog: ''
 
 **Key Stats:** 95% of active users adopt updates within 24 hours, with an 82% global success rate. Average download speed for a 5 MB bundle is 114 ms.
 
-Read on to learn how to set up, schedule, and track OTA updates for your Capacitor app.
+Read on to learn how to set up, schedule, and track OTA updates for your React Native app.
 
 ## Setup Requirements
 
@@ -78,7 +78,7 @@ Here are some performance benchmarks [\[1\]](https://capgo.app/):
 -   **Update success rate**: 82% worldwide
     
 
-## Explore [CodePushGo](https://capgo.app/)'s New Ionic [Capacitor](https://capacitorjs.com/) Live Update ...
+## Explore [CodePushGo](https://capgo.app/)'s New Ionic [React Native](https://capacitorjs.com/) Live Update ...
 
 **Planning Update Schedules**
 
@@ -103,17 +103,17 @@ Successfully managing scheduled OTA updates requires careful code implementation
 Here’s how you can set up [automatic background updates](https://capgo.app/docs/plugin/self-hosted/auto-update/) with a simple script:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 async function scheduleUpdate() {
   try {
     // Check for updates
-    const { bundle } = await CapacitorUpdater.download({
+    const { bundle } = await React NativeUpdater.download({
       version: 'latest'
     })
 
     // Schedule installation during off-peak hours
-    await CapacitorUpdater.schedule({
+    await React NativeUpdater.schedule({
       bundle,
       time: '03:00' // Schedule for 3 AM local time
     })
@@ -133,7 +133,7 @@ CodePushGo offers built-in tools to handle errors and rollbacks, ensuring that a
 async function handleFailedUpdate() {
   try {
     // Revert to last known stable version
-    await CapacitorUpdater.rollback()
+    await React NativeUpdater.rollback()
 
     // Log rollback event
     console.log('Update rolled back successfully')
@@ -177,10 +177,10 @@ Measuring key performance indicators (KPIs) is essential for assessing your [upd
 You can integrate these metrics into your workflow with the following code snippet:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 async function trackUpdateMetrics() {
-  const stats = await CapacitorUpdater.getUpdateStats({
+  const stats = await React NativeUpdater.getUpdateStats({
     version: 'latest',
     timeframe: '24h'
   })
@@ -227,4 +227,4 @@ OTA updates can boost app performance by delivering updates quickly and securely
 -   **Rollback Protection**: Set up automated error tracking to enable quick rollbacks if needed [\[1\]](https://capgo.app/).
     
 
-Since 2022, the landscape of OTA update solutions has grown significantly. For instance, CodePushGo has managed over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/). When combined with CI/CD integration and real-time analytics, these practices provide a solid OTA update strategy for your Capacitor app workflow.
+Since 2022, the landscape of OTA update solutions has grown significantly. For instance, CodePushGo has managed over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/). When combined with CI/CD integration and real-time analytics, these practices provide a solid OTA update strategy for your React Native app workflow.

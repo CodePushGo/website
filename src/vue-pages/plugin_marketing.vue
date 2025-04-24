@@ -5,7 +5,7 @@ import * as m from '../paraglide/messages.js'
 const plugins = ref([
   {
     name: 'capacitor-updater',
-    description: 'Instant updates for Capacitor apps',
+    description: 'Instant updates for React Native apps',
     stars: 508,
     language: 'Android & iOS',
     icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />',

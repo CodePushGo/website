@@ -1,6 +1,6 @@
 ---
 slug: how-to-handle-user-data-in-capacitor-apps
-title: How to Handle User Data in Capacitor Apps
+title: How to Handle User Data in React Native Apps
 description: Learn effective strategies for handling user data in mobile apps, focusing on security, compliance, and data management best practices.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Handling user data in [Capacitor](https://capacitorjs.com/) apps requires secure storage, clear retention policies, and compliance with data protection laws like [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) and [CCPA](https://en.wikipedia.org/wiki/California_Consumer_Privacy_Act).** This guide explains how to minimize data collection, secure sensitive information, and manage permissions effectively. Here's a quick overview:
+**Handling user data in [React Native](https://capacitorjs.com/) apps requires secure storage, clear retention policies, and compliance with data protection laws like [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) and [CCPA](https://en.wikipedia.org/wiki/California_Consumer_Privacy_Act).** This guide explains how to minimize data collection, secure sensitive information, and manage permissions effectively. Here's a quick overview:
 
 -   **Data Minimization**: Collect only what's necessary for specific app features.
 -   **Secure Storage**: Use tools like the `@capacitor/secure-storage` plugin for encryption.
@@ -25,15 +25,15 @@ next_blog: ''
 -   **Permission Management**: Request permissions contextually and provide alternatives for denied requests.
 -   **OTA Updates**: Ensure secure over-the-air updates with tools like [CodePushGo](https://capgo.app/).
 
-## How to use Ionic [Capacitor](https://capacitorjs.com/) Secure Storage
+## How to use Ionic [React Native](https://capacitorjs.com/) Secure Storage
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-18.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-18.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/VsZECyPIOYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
 ## Reducing Data Collection
 
-Taking a structured approach to reviewing, planning, and managing data collection is key to staying compliant with privacy regulations. By leveraging Capacitor's built-in tools for minimizing data collection, you can take practical steps to improve your app's data practices.
+Taking a structured approach to reviewing, planning, and managing data collection is key to staying compliant with privacy regulations. By leveraging React Native's built-in tools for minimizing data collection, you can take practical steps to improve your app's data practices.
 
 ### Data Collection Review
 
@@ -64,7 +64,7 @@ If your app has a weather feature, it might only require a zip code rather than 
 
 Use validation tools to limit the amount of data collected through forms and API calls. Combine client-side validation with server-side verification to enforce these limits effectively.
 
-Incorporate Capacitor's security features to enhance these controls:
+Incorporate React Native's security features to enhance these controls:
 
 -   Use dropdown menus instead of free-text fields where possible.
 -   Set character limits for text input fields.
@@ -125,7 +125,7 @@ Setting clear data retention policies helps align with data minimization princip
 
 ### Storage Time Rules
 
-Different types of user data should have defined retention periods based on their purpose and level of sensitivity. Below is a suggested framework for managing data retention in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/):
+Different types of user data should have defined retention periods based on their purpose and level of sensitivity. Below is a suggested framework for managing data retention in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/):
 
 | Data Type | Retention Period | Justification |
 | --- | --- | --- |
@@ -148,7 +148,7 @@ async function storeDataWithExpiration(key: string, value: any, retentionDays: n
 
 ### Automatic Data Removal
 
-Automating data cleanup can help maintain compliance and reduce manual intervention. Capacitor's background fetch feature is a useful tool for this:
+Automating data cleanup can help maintain compliance and reduce manual intervention. React Native's background fetch feature is a useful tool for this:
 
 ```typescript
 import { BackgroundFetch } from '@capacitor/background-fetch';
@@ -204,15 +204,15 @@ async function exportUserData(userId: string) {
 }
 ```
 
-The French data protection authority [CNIL](https://www.cnil.fr/en) highlights that retention periods must align with the core functionality of the app [\[3\]](https://www.privado.ai/post/cnil-publishes-mobile-app-privacy-guidance). This principle is particularly relevant for Capacitor app developers and should guide your data retention strategy.
+The French data protection authority [CNIL](https://www.cnil.fr/en) highlights that retention periods must align with the core functionality of the app [\[3\]](https://www.privado.ai/post/cnil-publishes-mobile-app-privacy-guidance). This principle is particularly relevant for React Native app developers and should guide your data retention strategy.
 
 ## App Permissions Control
 
-Handling app permissions carefully is key to safeguarding user data while ensuring your app functions as intended. By managing permissions properly, you can limit access to only the device features your app truly needs. Capacitor's Permissions API offers a unified approach to managing permissions on both iOS and Android.
+Handling app permissions carefully is key to safeguarding user data while ensuring your app functions as intended. By managing permissions properly, you can limit access to only the device features your app truly needs. React Native's Permissions API offers a unified approach to managing permissions on both iOS and Android.
 
 ### Permission Request Steps
 
-Make sure the permissions you request align with your app's data collection goals. Here's a sample implementation for handling permission requests in a Capacitor app:
+Make sure the permissions you request align with your app's data collection goals. Here's a sample implementation for handling permission requests in a React Native app:
 
 ```typescript
 import { Permissions } from '@capacitor/core';
@@ -314,22 +314,22 @@ Signing update packages is a critical step in protecting against unauthorized co
 
 ![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-18.jpg?auto=compress)
 
-CodePushGo simplifies secure OTA updates for Capacitor apps by offering automated security features. Here's an example of how to use CodePushGo's update system in your app:
+CodePushGo simplifies secure OTA updates for React Native apps by offering automated security features. Here's an example of how to use CodePushGo's update system in your app:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@capgo/capacitor-updater';
 
 const secureUpdate = async () => {
   try {
-    const update = await CapacitorUpdater.download({
+    const update = await React NativeUpdater.download({
       version: 'latest',
       validateSignature: true
     });
     if (update.status === 'success') {
-      await CapacitorUpdater.set(update);
+      await React NativeUpdater.set(update);
     }
   } catch (error) {
-    await CapacitorUpdater.rollback();
+    await React NativeUpdater.rollback();
   }
 };
 ```
@@ -352,7 +352,7 @@ Below is an example of implementing store-compliant updates:
 const compliantUpdate = async () => {
   const userConsent = await requestUpdateConsent();
   if (userConsent) {
-    await CapacitorUpdater.setUpdateConfig({
+    await React NativeUpdater.setUpdateConfig({
       type: 'assets-only',
       scope: 'ui-updates' // Updates limited to UI components
     });
@@ -360,7 +360,7 @@ const compliantUpdate = async () => {
 };
 
 const preventDowngrade = async (newVersion, currentVersion) => {
-  const versions = await CapacitorUpdater.getVersions();
+  const versions = await React NativeUpdater.getVersions();
   if (versions.current.buildNumber > newVersion.buildNumber) {
     throw new Error('Downgrade attempt detected');
   }

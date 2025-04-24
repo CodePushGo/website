@@ -53,7 +53,7 @@ Instead of being locked into a proprietary CI/CD system, CodePushGo allows you t
 1. **Cost-Effective**: Starting at just $14/month compared to AppFlow's $499/month
 2. **Enhanced Security**: End-to-end encryption included in all plans
 3. **Open Source**: 100% open-source, allowing for complete transparency and customization
-4. **Modern Architecture**: Built specifically for Capacitor, ensuring optimal performance
+4. **Modern Architecture**: Built specifically for React Native, ensuring optimal performance
 5. **Rapid Updates**: Deliver changes to your users in under a minute
 
 ## Making the Switch
@@ -78,14 +78,14 @@ CodePushGo offers several advantages over AppFlow:
 
 ## Our Commitment to the Ecosystem
 
-The Ionic and Capacitor ecosystem remains strong and vibrant. At CodePushGo, we deeply value this ecosystem and are fully committed to its future. As a self-funded and sustainable company, we're not just providing alternatives – we're actively investing in the ecosystem's growth and stability.
+The Ionic and React Native ecosystem remains strong and vibrant. At CodePushGo, we deeply value this ecosystem and are fully committed to its future. As a self-funded and sustainable company, we're not just providing alternatives – we're actively investing in the ecosystem's growth and stability.
 
 ### Why Trust CodePushGo?
-We love Ionic and Capacitor, and we're here for the long haul. If any part of the ecosystem needs support, we stand ready to fork and maintain it – that's the power of open source. Our commitment isn't just words; it's backed by action:
+We love Ionic and React Native, and we're here for the long haul. If any part of the ecosystem needs support, we stand ready to fork and maintain it – that's the power of open source. Our commitment isn't just words; it's backed by action:
 
 ### Proven Track Record
 - **Massive Scale**: Serving over 30 million live updates daily in our cloud infrastructure, with even more in self-hosted environments
-- **Active Development**: Created and maintained over 20 plugins in the Capacitor ecosystem: [explore our plugins](https://github.com/cap-go/)
+- **Active Development**: Created and maintained over 20 plugins in the React Native ecosystem: [explore our plugins](https://github.com/cap-go/)
 - **Growing Community**: Successfully helping numerous teams transition to CodePushGo this year
 - **Complete Solutions**: Providing comprehensive CI/CD solutions, from tutorials to full service integration
 - **Sustainable Model**: Self-funded and profitable, ensuring long-term stability for our users

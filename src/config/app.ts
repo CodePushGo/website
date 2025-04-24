@@ -9,8 +9,8 @@ function getRightKey(branch: string, keyname: 'base_domain'): string {
 }
 
 const brand = 'CodePushGo'
-const blogTitle = `${brand} | Capacitor Blog`
-const blogDescription = 'The best articles to enhance your Capacitor app. Do more with Capacitor and CodePushGo. Learn how to build a modern app with Capacitor.'
+const blogTitle = `${brand} | React Native Blog`
+const blogDescription = 'The best articles to enhance your React Native app. Do more with React Native and CodePushGo. Learn how to build a modern app with React Native.'
 
 function getUrl(branch = ''): string {
   if (branch === 'local') return `http://${getRightKey(branch, 'base_domain')}`
@@ -52,7 +52,7 @@ export function useRuntimeConfig(): RuntimeConfig {
       brand,
       blog_title: blogTitle,
       blog_description: blogDescription,
-      blog_keywords: 'Learning Capacitor, Capacitor updates, OTA updates, mobile app development, update strategy, developer tools',
+      blog_keywords: 'Learning React Native, React Native updates, OTA updates, mobile app development, update strategy, developer tools',
       baseUrl: getUrl(import.meta.env.BRANCH),
       baseApiUrl: getApiUrl(import.meta.env.BRANCH),
     },

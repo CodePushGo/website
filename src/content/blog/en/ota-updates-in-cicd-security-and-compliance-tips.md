@@ -23,7 +23,7 @@ next_blog: ''
 -   **Security Risks**: Risks include data interception, code injection, and server compromises.
 -   **Best Practices**: Use **end-to-end encryption**, **code signing**, and **secure HTTPS delivery**.
 -   **Compliance**: Follow app store rules (no core functionality changes without approval) and privacy laws like [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)/[CCPA](https://en.wikipedia.org/wiki/California_Consumer_Privacy_Act).
--   **Benefits for Capacitor Apps**: Fix issues instantly, roll out updates gradually, and track performance in real time.
+-   **Benefits for React Native Apps**: Fix issues instantly, roll out updates gradually, and track performance in real time.
 
 ### Tools to Use:
 

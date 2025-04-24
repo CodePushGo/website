@@ -67,7 +67,7 @@ CodePushGo costs approximately $300 per month, with a one-time setup fee of $2,6
 
 ### Update Management
 
-CodePushGo supports partial updates to reduce bandwidth usage and is compatible with Capacitor versions 6 and 7. Users can choose between cloud-hosted or self-hosted setups.
+CodePushGo supports partial updates to reduce bandwidth usage and is compatible with React Native versions 6 and 7. Users can choose between cloud-hosted or self-hosted setups.
 
 By combining fast rollback capabilities with real-time analytics and error tracking, CodePushGo enables teams to address production issues quickly and maintain smooth delivery cycles. Up next, we'll explore how CodePushGo's rollback method compares to Capawesome's region-specific approach.
 

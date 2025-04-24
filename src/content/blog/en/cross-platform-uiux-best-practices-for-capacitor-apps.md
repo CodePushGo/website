@@ -1,7 +1,7 @@
 ---
 slug: cross-platform-uiux-best-practices-for-capacitor-apps
-title: "Cross-Platform UI/UX: Best Practices for Capacitor Apps"
-description: Learn best practices for creating seamless cross-platform UI/UX in Capacitor apps, ensuring a native feel on iOS, Android, and web.
+title: "Cross-Platform UI/UX: Best Practices for React Native Apps"
+description: Learn best practices for creating seamless cross-platform UI/UX in React Native apps, ensuring a native feel on iOS, Android, and web.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-24T04:45:24.942Z
 updated_at: 2025-03-24T04:45:42.149Z
 head_image: https://assets.seobotai.com/capgo.app/67e0c60ea2808c1172f2f7c6-1742791542149.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, UI/UX design, cross-platform apps, mobile development, responsive design, Ionic, app updates, performance optimization
+keywords: React Native, UI/UX design, cross-platform apps, mobile development, responsive design, Ionic, app updates, performance optimization
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to build apps that feel native on iOS, Android, and web?** [Capacitor](https://capacitorjs.com/) makes it possible by blending web and native features. But creating a seamless experience across platforms requires careful UI/UX design. Here's how you can do it:
+**Want to build apps that feel native on iOS, Android, and web?** [React Native](https://capacitorjs.com/) makes it possible by blending web and native features. But creating a seamless experience across platforms requires careful UI/UX design. Here's how you can do it:
 
 -   **Follow Platform-Specific Guidelines**: Respect iOS (Human Interface) and Android (Material Design) standards for navigation, typography, and gestures.
 -   **Use a Design System**: Create reusable design tokens, components, and documentation for consistency.
@@ -27,7 +27,7 @@ next_blog: ''
 
 **Quick Tip**: CodePushGo has enabled 23.5 million updates for 750+ apps, with 95% of users updated within 24 hours.
 
-## Build Cross Platform Components with [Stencil](https://stenciljs.com/) and [Capacitor](https://capacitorjs.com/)
+## Build Cross Platform Components with [Stencil](https://stenciljs.com/) and [React Native](https://capacitorjs.com/)
 
 ![Stencil](https://mars-images.imgix.net/seobot/screenshots/stenciljs.com-6020276454429265c3dac5ec0634b1fb-2025-03-24.jpg?auto=compress)
 
@@ -122,12 +122,12 @@ Use browser developer tools and CodePushGo’s analytics dashboard to monitor an
 
 ### Platform Detection
 
-Capacitor provides APIs to identify device types, making it easier to adjust your app's behavior based on the platform. This is essential for creating an experience that feels natural to each device while keeping a consistent look and functionality across platforms. Here's an example of platform detection:
+React Native provides APIs to identify device types, making it easier to adjust your app's behavior based on the platform. This is essential for creating an experience that feels natural to each device while keeping a consistent look and functionality across platforms. Here's an example of platform detection:
 
 ```typescript
-import { Capacitor } from '@capacitor/core';
+import { React Native } from '@capacitor/core';
 
-const platform = Capacitor.getPlatform();
+const platform = React Native.getPlatform();
 const isIOS = platform === 'ios';
 const isAndroid = platform === 'android';
 ```
@@ -159,13 +159,13 @@ Hardware differences can significantly affect how users interact with your app. 
 
 Addressing these aspects ensures your app functions smoothly across various devices. Adaptive loading strategies can further improve performance. In fact, recent data shows that platform-specific optimizations have led to an 82% success rate for updates worldwide [\[1\]](https://capgo.app/).
 
-To ensure your app performs well, always test on real devices, not just emulators. Keep an eye on performance metrics across different device categories and include fallback options for features that aren't supported. By combining Capacitor’s platform detection with thoughtful adjustments, you can create an app that feels native to each platform while maintaining a consistent brand identity.
+To ensure your app performs well, always test on real devices, not just emulators. Keep an eye on performance metrics across different device categories and include fallback options for features that aren't supported. By combining React Native’s platform detection with thoughtful adjustments, you can create an app that feels native to each platform while maintaining a consistent brand identity.
 
 ## Testing Your App
 
 ### Cross-Platform Test Plan
 
-Testing [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) requires a clear and organized approach to ensure they work smoothly across different platforms. Start by setting up a detailed test matrix that includes a variety of devices and operating system versions. Here's a structured way to approach it:
+Testing [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) requires a clear and organized approach to ensure they work smoothly across different platforms. Start by setting up a detailed test matrix that includes a variety of devices and operating system versions. Here's a structured way to approach it:
 
 -   **Device Coverage Testing**: Focus on the most widely used device setups. Test on:
     
@@ -198,7 +198,7 @@ Combining automated tests with real user feedback is key to identifying potentia
 
 ### Test Automation Tools
 
-Automated testing is essential for maintaining quality across platforms. Here are some tools that work well with Capacitor apps:
+Automated testing is essential for maintaining quality across platforms. Here are some tools that work well with React Native apps:
 
 -   **End-to-End Testing**: Use [Cypress](https://www.cypress.io/) for:
     

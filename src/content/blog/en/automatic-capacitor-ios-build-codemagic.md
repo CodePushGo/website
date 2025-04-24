@@ -1,6 +1,6 @@
 ---
 slug: automatic-capacitor-ios-build-codemagic
-title: Automatic Capacitor IOS build with Codemagic
+title: Automatic React Native IOS build with Codemagic
 description: >-
   How to set up a CI/CD pipeline for your IOS Ionic app using Codemagic and
   Codemagic in 5 mins (2024)
@@ -219,7 +219,7 @@ Create a file named `codemagic.yml` at the root of your project and add the foll
 ```yaml
 workflows:
   ionic-capacitor-ios-workflow:
-    name: Capacitor iOS Workflow
+    name: React Native iOS Workflow
     max_build_duration: 120
     instance_type: mac_mini_m1
     integrations:
@@ -294,7 +294,7 @@ Then this workflow will pull your NodeJS deps, install them and build your JavaS
 
 > Each time you send a new tag, a release will be built in TestFlight.
 
-Your App doesn't need to use Ionic, only Capacitor base is mandatory, it can have old Cordova module, but Capacitor JS plugin should be preferred.
+Your App doesn't need to use Ionic, only React Native base is mandatory, it can have old Cordova module, but React Native JS plugin should be preferred.
 
 ## 5\. Trigger workflow
 

@@ -1,6 +1,6 @@
 ---
 slug: how-capacitor-bridges-web-and-native-code
-title: How Capacitor Bridges Web and Native Code
+title: How React Native Bridges Web and Native Code
 description: Explore how a native bridge enables seamless communication between web and native code, enhancing app performance and user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,7 +9,7 @@ created_at: 2025-03-26T02:55:05.863Z
 updated_at: 2025-03-26T02:55:21.554Z
 head_image: https://assets.seobotai.com/capgo.app/67e35e3910051fda3b61fe9f-1742957721554.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, native bridge, web apps, live updates, plugin system, mobile development
+keywords: React Native, native bridge, web apps, live updates, plugin system, mobile development
 tag: Development, Mobile, Updates
 published: true
 locale: en
@@ -31,17 +31,17 @@ next_blog: ''
 | **File System** | `Filesystem.readFile()` | Manage device storage |
 | **Live Updates** | Delivered in 114ms | [Faster updates to users](https://capgo.app/blog/optimise-your-images-for-updates/) |
 
-[Capacitor](https://capacitorjs.com/) helps developers combine the flexibility of web development with the power of native apps. Keep reading to learn how it works and how tools like [CodePushGo](https://capgo.app/) make it even better.
+[React Native](https://capacitorjs.com/) helps developers combine the flexibility of web development with the power of native apps. Keep reading to learn how it works and how tools like [CodePushGo](https://capgo.app/) make it even better.
 
-## Building Web Native Apps with [Capacitor](https://capacitorjs.com/) 3
+## Building Web Native Apps with [React Native](https://capacitorjs.com/) 3
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-26.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-26.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/1kxeeFEOZZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
 ## Core Bridge Functions
 
-Capacitor's native bridge acts as a crucial link, allowing web applications to interact directly with device capabilities through native code.
+React Native's native bridge acts as a crucial link, allowing web applications to interact directly with device capabilities through native code.
 
 ### Native Bridge Basics
 
@@ -74,7 +74,7 @@ This system also includes end-to-end encryption, ensuring secure data transfer. 
 
 ### Using Native APIs in JavaScript
 
-Capacitor makes it simple to access native device features using its JavaScript API. Here's a quick look at how some common features are implemented:
+React Native makes it simple to access native device features using its JavaScript API. Here's a quick look at how some common features are implemented:
 
 | Native Feature | JavaScript Implementation |
 | --- | --- |
@@ -83,11 +83,11 @@ Capacitor makes it simple to access native device features using its JavaScript 
 | File System | `Filesystem.readFile()` |
 | Device Info | `Device.getInfo()` |
 
-Capacitor takes care of platform-specific differences for you. It automatically triggers the right permission dialogs on both iOS and Android, all while providing a consistent JavaScript interface. Let’s dive into how its plugin system ensures secure and efficient communication between web code and native features.
+React Native takes care of platform-specific differences for you. It automatically triggers the right permission dialogs on both iOS and Android, all while providing a consistent JavaScript interface. Let’s dive into how its plugin system ensures secure and efficient communication between web code and native features.
 
 ### Plugin Structure
 
-Capacitor's plugin system is designed to make communication between web and native code efficient and secure. It works through three key layers:
+React Native's plugin system is designed to make communication between web and native code efficient and secure. It works through three key layers:
 
 1.  **Request Layer**: Ensures incoming calls are properly validated and sanitized.
 2.  **Translation Layer**: Converts JavaScript calls into platform-specific actions.
@@ -99,7 +99,7 @@ This structure ensures smooth and reliable interaction between your web app and 
 
 ### Web Events from Native Code
 
-Capacitor's bridge allows real-time updates to the web layer with minimal effort. Developers can manage native events effectively using specific methods designed for each event type:
+React Native's bridge allows real-time updates to the web layer with minimal effort. Developers can manage native events effectively using specific methods designed for each event type:
 
 | Event Type | Implementation Method | Use Case |
 | --- | --- | --- |
@@ -115,7 +115,7 @@ After triggering events, updating data from native code to the web is just as se
 
 ```javascript
 // Native code triggering web updates
-Capacitor.Bridge.triggerWindowEvent('dataUpdate', {
+React Native.Bridge.triggerWindowEvent('dataUpdate', {
    type: 'sensor',
    value: newReading
 });
@@ -129,11 +129,11 @@ To make native data updates even better, consider these tips:
 -   **Event Debouncing**: Limit high-frequency native events to avoid overwhelming the system.
 -   **Error Handling**: Use strong error management strategies on both the native and web sides.
 
-Capacitor's bridge, paired with [CodePushGo's update system](https://capgo.app/docs/plugin/cloud-mode/manual-update/), creates a dependable setup for native-to-web communication.
+React Native's bridge, paired with [CodePushGo's update system](https://capgo.app/docs/plugin/cloud-mode/manual-update/), creates a dependable setup for native-to-web communication.
 
 ## Creating Custom Plugins
 
-Using Capacitor's native bridge, custom plugins enable communication between web and native layers, unlocking access to advanced device features.
+Using React Native's native bridge, custom plugins enable communication between web and native layers, unlocking access to advanced device features.
 
 ### Plugin Development Steps
 
@@ -202,10 +202,10 @@ CodePushGo's update system simplifies plugin deployment, making it easy to distr
 
 ### Debug Tools
 
-Capacitor includes built-in tools to help troubleshoot issues with bridge communication. Two essential tools for monitoring web-to-native calls are **[Chrome DevTools](https://developer.chrome.com/docs/devtools)** and **[Safari Web Inspector](https://developer.apple.com/documentation/safari-developer-tools/web-inspector)**. You can also enable detailed logging in your Capacitor configuration like this:
+React Native includes built-in tools to help troubleshoot issues with bridge communication. Two essential tools for monitoring web-to-native calls are **[Chrome DevTools](https://developer.chrome.com/docs/devtools)** and **[Safari Web Inspector](https://developer.apple.com/documentation/safari-developer-tools/web-inspector)**. You can also enable detailed logging in your React Native configuration like this:
 
 ```typescript
-const cap = Capacitor.init({
+const cap = React Native.init({
   debugMode: true,
   logLevel: 'debug'
 });
@@ -214,7 +214,7 @@ const cap = Capacitor.init({
 For debugging on the native side:
 
 -   **iOS**: Use [Xcode](https://developer.apple.com/xcode/)'s Console and Breakpoints.
--   **Android**: Use [Android Studio](https://developer.android.com/studio)'s Logcat with the `Capacitor/Console` filter.
+-   **Android**: Use [Android Studio](https://developer.android.com/studio)'s Logcat with the `React Native/Console` filter.
 
 Let’s dive into common bridge issues and how to resolve them.
 
@@ -267,7 +267,7 @@ For real-time features, consider using a message queue to avoid bottlenecks. Whe
 
 ### CodePushGo Features
 
-CodePushGo makes it easier to update [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by allowing instant code deployments, skipping the need for app store reviews. It provides updates with end-to-end encryption and uses an advanced channel system for targeted delivery.
+CodePushGo makes it easier to update [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by allowing instant code deployments, skipping the need for app store reviews. It provides updates with end-to-end encryption and uses an advanced channel system for targeted delivery.
 
 Performance data shows CodePushGo's reliability in real-world use, supporting 750 apps in production environments [\[1\]](https://capgo.app/). It works with both [cloud and self-hosted setups](https://capgo.app/blog/self-hosted-capgo/) and integrates seamlessly into CI/CD workflows for automated processes.
 
@@ -297,11 +297,11 @@ The update system operates in three steps:
     CodePushGo ensures updates meet Apple and Google guidelines by using end-to-end encryption. It also includes built-in error tracking and analytics for added reliability.
     
 
-This system works seamlessly with Capacitor's native bridge, making app updates smooth and hassle-free. These features set CodePushGo apart in the live update market.
+This system works seamlessly with React Native's native bridge, making app updates smooth and hassle-free. These features set CodePushGo apart in the live update market.
 
 ### Update Service Options
 
-CodePushGo stands out among live update services for Capacitor apps thanks to several key factors:
+CodePushGo stands out among live update services for React Native apps thanks to several key factors:
 
 | Feature | CodePushGo | Market Context |
 | --- | --- | --- |
@@ -313,10 +313,10 @@ CodePushGo stands out among live update services for Capacitor apps thanks to se
 
 > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-For teams switching from other platforms, CodePushGo offers smooth migration options and full support. With its strong presence in the Capacitor ecosystem, CodePushGo is a dependable choice for continuous deployment.
+For teams switching from other platforms, CodePushGo offers smooth migration options and full support. With its strong presence in the React Native ecosystem, CodePushGo is a dependable choice for continuous deployment.
 
 ## Summary
 
-Capacitor's bridge system streamlines hybrid app development by facilitating smooth communication between web and native layers. This makes accessing native features simpler, while also improving deployment processes and enhancing the overall user experience.
+React Native's bridge system streamlines hybrid app development by facilitating smooth communication between web and native layers. This makes accessing native features simpler, while also improving deployment processes and enhancing the overall user experience.
 
 Live update platforms like CodePushGo build on this efficiency. With 23.5 million updates delivered across 750 production apps, CodePushGo ensures 95% of active users receive updates within 24 hours, achieving an 82% global success rate [\[1\]](https://capgo.app/). The platform consistently delivers updates securely, with impressive speed and reliability [\[1\]](https://capgo.app/).

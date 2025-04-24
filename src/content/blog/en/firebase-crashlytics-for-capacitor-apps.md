@@ -1,6 +1,6 @@
 ---
 slug: firebase-crashlytics-for-capacitor-apps
-title: Firebase Crashlytics for Capacitor Apps
+title: Firebase Crashlytics for React Native Apps
 description: Learn how to integrate real-time crash reporting into your mobile apps with a step-by-step guide on setting up Crashlytics for both iOS and Android.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-04-21T03:55:39.168Z
 updated_at: 2025-04-21T03:56:15.479Z
 head_image: https://assets.seobotai.com/capgo.app/6805ba51360079f947b8a1bf-1745207775479.jpg
 head_image_alt: Mobile Development
-keywords: Firebase, Crashlytics, mobile apps, Capacitor, app development, crash reporting, error tracking
+keywords: Firebase, Crashlytics, mobile apps, React Native, app development, crash reporting, error tracking
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**[Firebase Crashlytics](https://firebase.google.com/docs/crashlytics)** helps you track app crashes in real-time, providing detailed reports to fix issues quickly. It integrates seamlessly with [Capacitor](https://capacitorjs.com/) for both iOS and Android apps. Here’s what you need to know:
+**[Firebase Crashlytics](https://firebase.google.com/docs/crashlytics)** helps you track app crashes in real-time, providing detailed reports to fix issues quickly. It integrates seamlessly with [React Native](https://capacitorjs.com/) for both iOS and Android apps. Here’s what you need to know:
 
 -   **Why Use Crashlytics?**
     
@@ -25,7 +25,7 @@ next_blog: ''
     -   Monitor critical errors to keep apps stable.
 -   **Setup Requirements:**
     
-    -   Install **[Node.js](https://nodejs.org/en) (v16+)**, **Capacitor (v4+)**, and tools like **[Xcode](https://developer.apple.com/xcode/) 14+** and **[Android Studio](https://developer.android.com/studio) Electric Eel**.
+    -   Install **[Node.js](https://nodejs.org/en) (v16+)**, **React Native (v4+)**, and tools like **[Xcode](https://developer.apple.com/xcode/) 14+** and **[Android Studio](https://developer.android.com/studio) Electric Eel**.
     -   Download [Firebase](https://firebase.google.com/) configuration files (`GoogleService-Info.plist` for iOS, `google-services.json` for Android).
     -   Update platform-specific files like `Podfile` (iOS) and `build.gradle` (Android).
 -   **Key Steps:**
@@ -70,7 +70,7 @@ Before diving in, make sure you’ve completed the following steps:
 
 You'll need to install the following:
 
--   **Node.js** (v16 or higher) and **Capacitor** (v4 or higher)
+-   **Node.js** (v16 or higher) and **React Native** (v4 or higher)
 -   A **Firebase account** with an active project
 -   **Xcode 14+** for iOS development
 -   **Android Studio Electric Eel** or a newer version for Android development
@@ -128,7 +128,7 @@ Once these steps are complete, you’re ready to move on to the Plugin Installat
 
 ### Plugin Installation
 
-First, install the plugin and [sync it with Capacitor](https://capgo.app/plugins/capacitor-updater/):
+First, install the plugin and [sync it with React Native](https://capgo.app/plugins/capacitor-updater/):
 
 ```bash
 npm install @capacitor-firebase/crashlytics && npx cap sync
@@ -271,7 +271,7 @@ Streamline the process from crash detection to fix deployment by pairing CodePus
 
 ### About CodePushGo
 
-CodePushGo is a live update tool designed specifically for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). With over 1,900 apps in production and a 95% update rate within 24 hours, it ensures quick fixes without the delays of app store approvals [\[1\]](https://capgo.app/).
+CodePushGo is a live update tool designed specifically for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). With over 1,900 apps in production and a 95% update rate within 24 hours, it ensures quick fixes without the delays of app store approvals [\[1\]](https://capgo.app/).
 
 Key features include:
 
@@ -320,7 +320,7 @@ Continue to the Plugin Options section to explore other live update tools.
 
 Choosing the right crash-reporting plugin can greatly impact how you identify and fix errors in your app.
 
-Here’s a quick comparison of Crashlytics with other popular error-reporting tools for Capacitor:
+Here’s a quick comparison of Crashlytics with other popular error-reporting tools for React Native:
 
 -   **[Sentry](https://sentry.io/)**: Offers a free tier with paid plans starting at $26/month. Supports over 30 platforms and provides real-time error monitoring with detailed context.
 -   **[Bugsnag](https://www.bugsnag.com/)**: Starts at $47/month. Covers both mobile and web platforms, featuring automatic error grouping and release tracking.

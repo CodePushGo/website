@@ -1,7 +1,7 @@
 ---
 slug: capacitor-apps-and-data-sharing-policies
-title: Capacitor Apps and Data Sharing Policies
-description: "Learn essential data sharing policies for Capacitor apps to ensure compliance with Apple and Google Play's privacy standards."
+title: React Native Apps and Data Sharing Policies
+description: "Learn essential data sharing policies for React Native apps to ensure compliance with Apple and Google Play's privacy standards."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -81,7 +81,7 @@ Using secure update systems, like CodePushGo, can improve compliance rates. For 
 
 ### Data Security Methods
 
-Protecting user data requires strong security measures, especially for modern [Capacitor](https://capacitorjs.com/) apps. These measures must align with platform standards.
+Protecting user data requires strong security measures, especially for modern [React Native](https://capacitorjs.com/) apps. These measures must align with platform standards.
 
 > "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
@@ -116,7 +116,7 @@ Currently, 750 apps are successfully using these permission systems in productio
 
 ## Compliance Tools
 
-To complement platform rules and secure update practices, the tools below simplify the process of meeting data-sharing requirements for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
+To complement platform rules and secure update practices, the tools below simplify the process of meeting data-sharing requirements for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
 
 ### [CodePushGo](https://capgo.app/) Security Features
 
@@ -189,7 +189,7 @@ For updates that significantly impact data sharing policies, consider a channel 
 
 ### Main Points
 
-Following platform-specific data sharing rules is essential for the success of Capacitor apps. To achieve this, focus on **end-to-end encryption**, effective management of user permissions, and using tools designed for secure updates. For example, 95% of active users receive updates within 24 hours, and CodePushGo has reached an 82% global success rate in update management [\[1\]](https://capgo.app/).
+Following platform-specific data sharing rules is essential for the success of React Native apps. To achieve this, focus on **end-to-end encryption**, effective management of user permissions, and using tools designed for secure updates. For example, 95% of active users receive updates within 24 hours, and CodePushGo has reached an 82% global success rate in update management [\[1\]](https://capgo.app/).
 
 Here’s a quick breakdown of areas to prioritize:
 

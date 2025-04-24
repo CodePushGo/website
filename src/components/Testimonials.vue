@@ -11,7 +11,7 @@ const featuredTestimonial = {
     handle: '_andypeacock',
     imageUrl: '/andrew.webp',
   },
-  body: "Here's my view:\nReact-native: Too many moving parts that eventually broke.\nFlutterflow: new language, stumbled on first attempt to add a plugin.\nNow: @Capacitor + @vue or @react + @VoltBuilder + @CodePushGo 🤘",
+  body: "Here's my view:\nReact-native: Too many moving parts that eventually broke.\nFlutterflow: new language, stumbled on first attempt to add a plugin.\nNow: @React Native + @vue or @react + @VoltBuilder + @CodePushGo 🤘",
 }
 
 // Define other testimonials

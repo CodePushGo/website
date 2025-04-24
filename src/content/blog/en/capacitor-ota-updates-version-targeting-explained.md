@@ -1,6 +1,6 @@
 ---
 slug: capacitor-ota-updates-version-targeting-explained
-title: "Capacitor OTA Updates: Version Targeting Explained"
+title: "React Native OTA Updates: Version Targeting Explained"
 description: Learn how version targeting for OTA updates ensures app stability, quicker deployments, and better user experiences by managing specific app versions.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-03-14T03:00:49.720Z
 updated_at: 2025-03-24T13:14:15.818Z
 head_image: https://assets.seobotai.com/capgo.app/67d37b87bca46a2e63b4584d-1741921265630.jpg
 head_image_alt: Mobile Development
-keywords: OTA updates, version targeting, Capacitor, mobile app updates, semantic versioning, app stability, bug fixes
+keywords: OTA updates, version targeting, React Native, mobile app updates, semantic versioning, app stability, bug fixes
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capacitor](https://capacitorjs.com/) Over-The-Air (OTA) updates let you push app changes directly to users without waiting for app store approvals. With **version targeting**, you can deliver updates to specific app versions, ensuring compatibility and reducing risks like crashes.
+[React Native](https://capacitorjs.com/) Over-The-Air (OTA) updates let you push app changes directly to users without waiting for app store approvals. With **version targeting**, you can deliver updates to specific app versions, ensuring compatibility and reducing risks like crashes.
 
 Here’s what you’ll learn:
 
@@ -36,7 +36,7 @@ Here’s what you’ll learn:
     
     -   Follow semantic versioning (**MAJOR.MINOR.PATCH**).
         
-    -   [Configure updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) in your Capacitor project.
+    -   [Configure updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) in your React Native project.
         
     -   Test thoroughly across targeted versions.
         
@@ -53,7 +53,7 @@ Here’s what you’ll learn:
 
 Want to learn how to set it up and avoid common mistakes? Keep reading for a step-by-step guide.
 
-## Explore [CodePushGo](https://capgo.app/plugins)'s Ionic [Capacitor](https://capacitorjs.com/) Live Update Plugin
+## Explore [CodePushGo](https://capgo.app/plugins)'s Ionic [React Native](https://capacitorjs.com/) Live Update Plugin
 
 **Version Targeting Technical Guide**
 
@@ -61,7 +61,7 @@ Semantic versioning is crucial for managing OTA updates effectively, ensuring co
 
 ### Semantic Version Numbers
 
-Capacitor uses a **MAJOR.MINOR.PATCH** format for semantic versioning. Each part has a distinct role:
+React Native uses a **MAJOR.MINOR.PATCH** format for semantic versioning. Each part has a distinct role:
 
 | Version Component | When to Increment | Example |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ This structure ensures updates are distributed accurately and efficiently.
 
 ### Setup and Configuration
 
-Follow these steps to set up version targeting in your Capacitor project:
+Follow these steps to set up version targeting in your React Native project:
 
 1\. **Initial Setup**
 
@@ -81,7 +81,7 @@ Run `npx @capgo/cli init` in your project directory. This initializes the tools 
 
 2\. **Version Configuration**
 
-Define version parameters in your Capacitor configuration file. Here's an example:
+Define version parameters in your React Native configuration file. Here's an example:
 
 ```json
 {
@@ -207,7 +207,7 @@ Supporting older versions is just as important as rolling out new ones. Here’s
 
 ## Fix Version Targeting Issues
 
-Version targeting in [Capacitor OTA updates](https://capgo.app/ja/) can sometimes create challenges that disrupt functionality. Below are steps to help identify and address these problems effectively.
+Version targeting in [React Native OTA updates](https://capgo.app/ja/) can sometimes create challenges that disrupt functionality. Below are steps to help identify and address these problems effectively.
 
 ### Known Issues
 
@@ -241,7 +241,7 @@ If you need additional assistance, here are some useful resources:
 
 | **Resource Type** | **Purpose** | **Access** |
 | --- | --- | --- |
-| Documentation | Technical instructions | Official Capacitor docs |
+| Documentation | Technical instructions | Official React Native docs |
 | Community Forums | Peer advice and solutions | Developer communities |
 | Support Tools | Automated troubleshooting | CodePushGo platform |
 

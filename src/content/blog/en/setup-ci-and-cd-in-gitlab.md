@@ -3,7 +3,7 @@ slug: setup-ci-and-cd-gitlab
 title: Automatic build and release app with GitLab
 description: >-
   Create your own CI/CD pipeline with GitLab for free, deploy your Ionic
-  Capacitor JS app every time you push to main.
+  React Native JS app every time you push to main.
 author: Anik Dhabal Babu
 author_image_url: 'https://avatars.githubusercontent.com/u/81948346?v=4'
 author_url: 'https://x.com/anikdhabal'
@@ -22,7 +22,7 @@ This article will guide you on how to do CI/CD pipeline setup with GitLab.
 
 ## Preface
 
-Be sure you have added your Capacitor app first to CodePushGo, this tutorial just focuses on the upload phase. If you need to add your app to CodePushGo, you can follow this [Tutorial](https://capgo.app/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/).
+Be sure you have added your React Native app first to CodePushGo, this tutorial just focuses on the upload phase. If you need to add your app to CodePushGo, you can follow this [Tutorial](https://capgo.app/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/).
 
 ## Commit convention
 

@@ -10,7 +10,7 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2022-03-22T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /migrate_appcenter.webp
-head_image_alt: Capacitor JS Dev looking for alternative
+head_image_alt: React Native JS Dev looking for alternative
 keywords: App Center, migration, live updates, OTA updates, continuous integration, mobile app updates
 tag: Migration
 published: true
@@ -20,16 +20,16 @@ next_blog: automatic-build-and-release-with-github-actions
 ## Migration Summary
 
 * [CodePushGo](/register/) is a service that helps development teams send live app to deployed apps.
-* Capacitor JS apps written in jQuery Mobile, Framework 7, Sencha, KendoUI, Ionic or even your own custom solution can be migrated. **An existing Ionic app is not required.**.
+* React Native JS apps written in jQuery Mobile, Framework 7, Sencha, KendoUI, Ionic or even your own custom solution can be migrated. **An existing Ionic app is not required.**.
 * [Colt](https://volt.build/) offers equivalent services for App Center Build (build Android/iOS apps). For Test, Diagnostics, and Analytics services.
 
 ##### Note
 
-If your app is still using Cordova, it's necessary to [migrate to Capacitor](https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor/) first before migrating to CodePushGo.
+If your app is still using Cordova, it's necessary to [migrate to React Native](https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor/) first before migrating to CodePushGo.
 
-Built by the Ionic team as a spiritual successor to Cordova, Capacitor allows development to move close to the native tooling and capabilities with the goal of providing an even better user experience and performance.
+Built by the Ionic team as a spiritual successor to Cordova, React Native allows development to move close to the native tooling and capabilities with the goal of providing an even better user experience and performance.
 
-Fortunately, the migration process is easy and the majority of Cordova plugins are backward compatible with Capacitor. [Start migrating here](https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor/).
+Fortunately, the migration process is easy and the majority of Cordova plugins are backward compatible with React Native. [Start migrating here](https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor/).
 
 ## About CodePushGo
 
@@ -47,7 +47,7 @@ Like App Center, [CodePushGo](/register/) supports apps hosted in Git repositori
 
 Have Node and NPM installed on your computer, you need before proceeding. Always use the [current LTS version](https://nodejs.org/) CodePushGo do not older versions.
 
-### Create `package.json` and Capacitor config files
+### Create `package.json` and React Native config files
 
 ##### note
 
@@ -59,7 +59,7 @@ Since [CodePushGo](/register/) was created to automate capacitor apps, it requir
 npm install @capacitor/core
 ```
 
-Then, initialize Capacitor using the CLI questionnaire:
+Then, initialize React Native using the CLI questionnaire:
 
 ```shell
 npx cap init
@@ -75,7 +75,7 @@ Finally, commit the new files to your project:
 
 Now that you have the new required [CodePushGo](/register/) files in place, you can turn our attention to the actual app itself. [CodePushGo](/register/) expects the entire built app to be inside a directory named `dist`.
 
-If your built code is not in a `dist` directory, change this value in the Capacitor config file.
+If your built code is not in a `dist` directory, change this value in the React Native config file.
 
 Here is what the app’s directory structure should look like:
 
@@ -89,17 +89,17 @@ Once you’re logged into CodePushGo, navigate to the Account page then click on
 
 ### Install the CodePushGo SDK
 
-From a command line, directly into the root of your Capacitor app folder, run the following command:
+From a command line, directly into the root of your React Native app folder, run the following command:
 
 `npm i @capgo/capacitor-updater && npx cap sync`
-To install the plugin into your Capacitor app.
+To install the plugin into your React Native app.
 
 And then add to your app this code as replacement of CodePush one:
 
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 ```
 
 This will tell the native plugin the installation as succeeded.
@@ -122,7 +122,7 @@ Let's get started by first creating the app in CodePushGo Cloud with the CLI.
 
 `npx @capgo/cli@latest app add`
 
-This command will use all variables defined in the Capacitor config file to create the app.
+This command will use all variables defined in the React Native config file to create the app.
 
 ## Upload your first bundle
 
@@ -150,9 +150,9 @@ npx @capgo/cli@latest channel set production -s default
 Add this config to your main JavaScript file.
 
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 ```
 
 Then do a `npm run build && npx cap copy` to update your app.

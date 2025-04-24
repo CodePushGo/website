@@ -3,7 +3,7 @@ slug: automatic-build-and-release-with-github-actions
 title: Automatic build and release app with Github actions
 description: >-
   Create your own CI/CD pipeline with Github actions for free, deploy your Ionic
-  Capacitor JS app every time you push to main.
+  React Native JS app every time you push to main.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
@@ -21,7 +21,7 @@ This tutorial focuses on the GitHub hosting, but you can adapt it with little tw
 
 ## Preface 
 
-Be sure you have added your Capacitor app first to CodePushGo, this tutorial just focuses on the upload phase.
+Be sure you have added your React Native app first to CodePushGo, this tutorial just focuses on the upload phase.
 If you need to add your app to CodePushGo, you can follow this [Tutorial](/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/)
 
 ## Commit convention
@@ -138,4 +138,4 @@ Go To your CodePushGo dashboard and check your build who just appeared, you now 
 
 If you want to let all of your users get the update whenever it's available, go to your channel and set it to `public`.
 
-You can also add the native build of your Ionic Capacitor JavaScript app by following this tutorial 👇
+You can also add the native build of your Ionic React Native JavaScript app by following this tutorial 👇

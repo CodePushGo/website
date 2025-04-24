@@ -29,13 +29,13 @@ and things got messy, i had to fix it, but I wanted to avoid releasing a new ver
 
 At the time, Captime was making $400/month, so I was looking for an affordable solution, Ionic Appflow was out of my budget.
 
-The only other alternative was Microsoft App Center, but they shut down support for apps running on Cordova / Capacitor.
+The only other alternative was Microsoft App Center, but they shut down support for apps running on Cordova / React Native.
 
 If you are a solo developer like me, you will find that Ionic AppFlow is not the best Price for you.
 
 Like you, I was complaining about it, I contacted Ionic, they understood the complaint, but there weren't open to change the pricing, i wasn't the target.
 
-So, I decided to try to fix my biggest pain in my Capacitor JS development workflow: Live updates.
+So, I decided to try to fix my biggest pain in my React Native JS development workflow: Live updates.
 
 After one month of trying, I found a way to download from one URL a zip and replace the source of the app.
 
@@ -43,7 +43,7 @@ I shared about it and got huge interest on GitHub.
 
 That was too manual for most teams, so they asked for a paid service, that was where I started to work on CodePushGo as AppFlow alternative.
 
-The goal was to provide a simple and easy to use solution to push code updates to Capacitor JavaScript apps.
+The goal was to provide a simple and easy to use solution to push code updates to React Native JavaScript apps.
 
 No Native build, not big toolbox like Ionic, just live updates, for the market they don't address, Us.
 

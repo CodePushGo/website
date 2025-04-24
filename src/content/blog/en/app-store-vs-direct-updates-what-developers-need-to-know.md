@@ -35,7 +35,7 @@ next_blog: ''
 
 **Key takeaway**: Use App Store updates for reliability and compliance, and direct OTA updates for speed and flexibility. Choose based on your app's needs and user expectations.
 
-## Ionic & Capacitor for Building Native Mobile Apps
+## Ionic & React Native for Building Native Mobile Apps
 
 <iframe src="https://www.youtube-nocookie.com/embed/K7ghUiXLef8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -64,13 +64,13 @@ Other issues include Apple’s 15% commission on transactions [\[1\]](https://ma
 
 Because of these hurdles, many developers are turning to alternatives like OTA (over-the-air) updates. While the App Store offers a secure and centralized system, exploring faster, more adaptable options can be a game changer for many teams.
 
-## Direct OTA Updates with Capacitor
+## Direct OTA Updates with React Native
 
 Direct over-the-air (OTA) updates let developers bypass app store review delays, making it easier to release new features and fixes quickly. This approach changes how updates are delivered to users' devices.
 
 ### What Are Direct OTA Updates?
 
-With direct OTA updates, developers can push changes to JavaScript, HTML, and CSS without needing to submit a new app version to the app stores. Using Capacitor, these updates can be sent straight to users' devices, simplifying the entire [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
+With direct OTA updates, developers can push changes to JavaScript, HTML, and CSS without needing to submit a new app version to the app stores. Using React Native, these updates can be sent straight to users' devices, simplifying the entire [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
 
 ### Why Use Direct OTA Updates?
 
@@ -176,7 +176,7 @@ Tracking these metrics helps you identify problems quickly while maintaining hig
 
 Picking the best update strategy means finding the right balance between your development goals and what your users expect. App Store updates offer a reliable, automated process that many users appreciate. However, they come with a 15% commission fee and limit how much control you have over distribution [\[1\]](https://manytricks.com/blog/?p=4156).
 
-On the other hand, direct OTA updates through tools like Capacitor work well for apps that need:
+On the other hand, direct OTA updates through tools like React Native work well for apps that need:
 
 -   **Fast deployment of critical updates**
     

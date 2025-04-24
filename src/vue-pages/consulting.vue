@@ -20,7 +20,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
       >
         <div class="mx-auto my-0 text-center sm:mx-auto" style="max-width: 950px">
           <h1 class="relative pb-0 mt-0 mb-16 text-4xl font-medium text-white md:text-6xl" style="line-height: 72px">
-            <strong style="line-height: 72px">CapacitorJS</strong>&nbsp;<span class="text-indigo-600" style="line-height: 72px"
+            <strong style="line-height: 72px">React NativeJS</strong>&nbsp;<span class="text-indigo-600" style="line-height: 72px"
               ><strong style="line-height: 72px">{{ m.code_review_and_consulting() }}</strong></span
             >&nbsp;<strong style="line-height: 72px">{{ m.services() }}</strong>
           </h1>
@@ -358,7 +358,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
       >
         <div class="flex flex-col items-center justify-center text-center" style="padding-right: 3vw; padding-left: 3vw">
           <h2
-            v-html="m.hire_capacitorjs_consultants().replace('CapacitorJS', `<span class='text-indigo-600'>CapacitorJS</span>`)"
+            v-html="m.hire_capacitorjs_consultants().replace('React NativeJS', `<span class='text-indigo-600'>React NativeJS</span>`)"
             class="relative pb-10 my-0 text-6xl font-medium text-white"
             style="line-height: 72px"
           />
@@ -446,7 +446,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
                 text-decoration: underline;
               "
             >
-              Cordova &amp; CapacitorJS expert</a
+              Cordova &amp; React NativeJS expert</a
             >
           </p>
         </div>
@@ -463,7 +463,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
             <a
               href="https://github.com/Cap-go/capacitor-updater"
               target="_blank"
-              title="Cordova &amp; CapacitorJS projects"
+              title="Cordova &amp; React NativeJS projects"
               class="font-normal text-indigo-600 cursor-pointer hover:font-normal hover:text-indigo-600"
               style="
                 transition:
@@ -511,7 +511,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
           <p
             v-html="
               m.core_contributors_to_capacitorjs_and_ionic().replace(
-                'CapacitorJS',
+                'React NativeJS',
                 `<a
               href='https://capacitorjs.com/'
               title='Core contributors'
@@ -522,7 +522,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
                   all 0.3s ease 0s;
                 text-decoration: underline;
               '
-              >CapacitorJS</a
+              >React NativeJS</a
             >`,
               )
             "

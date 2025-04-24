@@ -12,7 +12,7 @@ Here are some common issues you might encounter while using CodePushGo and how t
 
 If your bundle upload fails, double check:
 - Your app ID in `capacitor.config.ts` matches your app in the CodePushGo dashboard
-- You're running the upload command from the root of your Capacitor project 
+- You're running the upload command from the root of your React Native project 
 - Your web assets are built and up to date
 
 #### Advanced upload options
@@ -53,7 +53,7 @@ If you're encountering issues with live updates, the CodePushGo debug command is
 
 4. Use the debug logs to identify where the issue is occurring. For example:
    - If no update is found, double check that your bundle was uploaded successfully and the app is configured to use the correct channel.
-   - If the update downloads but doesn't install, make sure you've called `CapacitorUpdater.notifyAppReady()` and that the app was fully closed and reopened.
+   - If the update downloads but doesn't install, make sure you've called `React NativeUpdater.notifyAppReady()` and that the app was fully closed and reopened.
    - If you see an error message, look up that specific error in the CodePushGo docs or reach out to support for help.
 
 The debug command is especially useful for identifying issues with the update download and installation process. If the logs show the expected update version was found but not ultimately applied, focus your troubleshooting on the steps after the download.
@@ -116,7 +116,7 @@ When troubleshooting a tricky live update problem, it's a good idea to capture b
 ### Updates not applying
 
 If you've uploaded a bundle but aren't seeing the changes on your device:
-- Make sure you've called `CapacitorUpdater.notifyAppReady()` in your app code as shown in the [quickstart](/docs/getting-started/quickstart)  
+- Make sure you've called `React NativeUpdater.notifyAppReady()` in your app code as shown in the [quickstart](/docs/getting-started/quickstart)  
 - Check that your device is connected to the internet and the CodePushGo debug logs show the update was downloaded
 - Try fully closing and reopening the app, as updates are only applied on a fresh launch
 - Look for any errors in the native logs that might indicate a problem applying the update
@@ -126,7 +126,7 @@ Refer to the [deploying live updates](/docs/getting-started/deploy) guide for mo
 ## SDK Installation
 
 If you're having trouble installing the CodePushGo SDK, make sure:
-- Your app is using a supported version of Capacitor (4.0 or newer)
+- Your app is using a supported version of React Native (4.0 or newer)
 - You've followed the [quickstart](/docs/getting-started/quickstart) steps in order, including syncing your app after installing the SDK
 
 ## CI/CD Integration 

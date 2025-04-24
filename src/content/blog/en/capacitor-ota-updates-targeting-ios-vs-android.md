@@ -1,6 +1,6 @@
 ---
 slug: capacitor-ota-updates-targeting-ios-vs-android
-title: "Capacitor OTA Updates: Targeting iOS vs Android"
+title: "React Native OTA Updates: Targeting iOS vs Android"
 description: Explore the differences in OTA update strategies for iOS and Android, focusing on deployment, security, and user requirements.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Want to update your** [**Capacitor**](https://capacitorjs.com/) **app instantly without app store delays?** Over-the-Air (OTA) updates let you push changes to the web layer (HTML, CSS, JavaScript) of your app without resubmitting to app stores. But iOS and Android handle these updates differently, and understanding these differences is crucial.
+**Want to update your** [**React Native**](https://capacitorjs.com/) **app instantly without app store delays?** Over-the-Air (OTA) updates let you push changes to the web layer (HTML, CSS, JavaScript) of your app without resubmitting to app stores. But iOS and Android handle these updates differently, and understanding these differences is crucial.
 
 ### Key Takeaways:
 
@@ -116,7 +116,7 @@ Even with smaller file sizes, update speed is still a major factor. iOS often ha
 > "Instantly deploying live updates to users is one of the most critical benefits of Appflow, Ionic's mobile CI/CD platform."  
 > – Cecelia Martinez, Developer Advocate [\[12\]](https://ionic.io/blog/the-future-of-live-updates-is-here-and-its-more-performant-than-ever)
 
-To improve update efficiency, strategies like differential updates and leveraging native functionality are key. Capacitor, for example, shifts certain operations to the native layer. When paired with differential updates, this approach cuts down both update times and data usage [\[12\]](https://ionic.io/blog/the-future-of-live-updates-is-here-and-its-more-performant-than-ever). Considering Android's dominant market share - over 70% globally as of March 2023 [\[13\]](https://flexiple.com/compare/android-vs-ios) - delivering efficient updates is especially important to maintain consistent performance across its varied devices.
+To improve update efficiency, strategies like differential updates and leveraging native functionality are key. React Native, for example, shifts certain operations to the native layer. When paired with differential updates, this approach cuts down both update times and data usage [\[12\]](https://ionic.io/blog/the-future-of-live-updates-is-here-and-its-more-performant-than-ever). Considering Android's dominant market share - over 70% globally as of March 2023 [\[13\]](https://flexiple.com/compare/android-vs-ios) - delivering efficient updates is especially important to maintain consistent performance across its varied devices.
 
 ###### sbb-itb-f9944d2
 
@@ -155,7 +155,7 @@ By working with iOS and Android security protocols, CodePushGo ensures seamless 
 
 ### CodePushGo Key Functions
 
-CodePushGo focuses on solving update challenges with secure, efficient, and compliant delivery. Updates are protected with **end-to-end encryption**, and decryption happens only on user devices [\[1\]](https://capgo.app/). For iOS, it uses a custom Dart interpreter to align with Apple's interpreter-only update rule [\[9\]](https://capgo.app/docs/faq/). On Android, it supports API level 22 and above, in line with Capacitor's requirements [\[9\]](https://capgo.app/docs/faq/).
+CodePushGo focuses on solving update challenges with secure, efficient, and compliant delivery. Updates are protected with **end-to-end encryption**, and decryption happens only on user devices [\[1\]](https://capgo.app/). For iOS, it uses a custom Dart interpreter to align with Apple's interpreter-only update rule [\[9\]](https://capgo.app/docs/faq/). On Android, it supports API level 22 and above, in line with React Native's requirements [\[9\]](https://capgo.app/docs/faq/).
 
 | Feature | Implementation | Platform Support |
 | --- | --- | --- |
@@ -184,7 +184,7 @@ CodePushGo can adjust any JavaScript code, including app and generated code, but
 
 ## Conclusion
 
-OTA updates for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) require different approaches for iOS and Android due to platform-specific rules. For iOS, there are stricter controls, such as the file path restriction that limits server paths to "/Library/NoCloud/ionic\_built\_snapshots" [\[2\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). Meanwhile, Android allows more freedom, with fewer limitations on virtual machines and interpreters accessing APIs [\[2\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). These differences highlight the importance of creating update strategies that align with each platform's framework.
+OTA updates for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) require different approaches for iOS and Android due to platform-specific rules. For iOS, there are stricter controls, such as the file path restriction that limits server paths to "/Library/NoCloud/ionic\_built\_snapshots" [\[2\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). Meanwhile, Android allows more freedom, with fewer limitations on virtual machines and interpreters accessing APIs [\[2\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). These differences highlight the importance of creating update strategies that align with each platform's framework.
 
 Data from platforms like CodePushGo demonstrates how effective these strategies can be. Developers have successfully delivered 947.6 million updates across 1,400 production apps, proving the scalability of well-designed update systems [\[1\]](https://capgo.app/). However, success relies heavily on meeting each platform's requirements while maintaining strong security measures.
 

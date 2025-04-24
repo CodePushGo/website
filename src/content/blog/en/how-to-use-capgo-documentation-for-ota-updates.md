@@ -1,7 +1,7 @@
 ---
 slug: how-to-use-capgo-documentation-for-ota-updates
 title: How to Use CodePushGo Documentation for OTA Updates
-description: "Learn how to implement secure Over-the-Air updates in your Capacitor apps with CodePushGo's comprehensive documentation and step-by-step guidance."
+description: "Learn how to implement secure Over-the-Air updates in your React Native apps with CodePushGo's comprehensive documentation and step-by-step guidance."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,7 +9,7 @@ created_at: 2025-02-19T03:56:01.854Z
 updated_at: 2025-03-18T13:13:59.127Z
 head_image: https://assets.seobotai.com/capgo.app/67b53306eac600a2c6713dad-1740671704703.jpg
 head_image_alt: Mobile Development
-keywords: OTA updates, Capacitor, CodePushGo, mobile app updates, documentation, app deployment, security features, error handling
+keywords: OTA updates, React Native, CodePushGo, mobile app updates, documentation, app deployment, security features, error handling
 tag: Development, Mobile, Updates
 published: true
 locale: en
@@ -20,7 +20,7 @@ next_blog: ''
 
 ### Key Takeaways:
 
--   **What is CodePushGo?** An open-source platform for live updates in [Capacitor](https://capacitorjs.com/) apps.
+-   **What is CodePushGo?** An open-source platform for live updates in [React Native](https://capacitorjs.com/) apps.
 -   **Why OTA Updates?** Save time, improve user experience, and fix bugs quickly.
 -   **How to Get Started?**
     -   Install the [CodePushGo plugin](https://capgo.app/plugins/): `npm install @capgo/capacitor-updater`
@@ -30,7 +30,7 @@ next_blog: ''
 
 CodePushGo's documentation ([capgo.app/docs](https://capgo.app/docs)) provides step-by-step instructions for setup, security, and troubleshooting. From installation to advanced configurations, it's your go-to guide for seamless updates.
 
-## [CodePushGo](https://capgo.app/), CapacitorJs plugin for Live update
+## [CodePushGo](https://capgo.app/), React NativeJs plugin for Live update
 
 ![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-19.jpg?auto=compress)
 
@@ -38,7 +38,7 @@ CodePushGo's documentation ([capgo.app/docs](https://capgo.app/docs)) provides s
 
 ## Using CodePushGo Documentation
 
-Navigating documentation effectively is essential when working with OTA updates. CodePushGo's documentation offers detailed guidance for integrating live updates into Capacitor apps.
+Navigating documentation effectively is essential when working with OTA updates. CodePushGo's documentation offers detailed guidance for integrating live updates into React Native apps.
 
 ### Where to Find the Documentation
 
@@ -66,10 +66,10 @@ Here are some key terms you’ll encounter:
 The documentation provides sample code to simplify integration. Here's a basic example using TypeScript/JavaScript:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 // Initialize the updater
-await CapacitorUpdater.notifyAppReady()
+await React NativeUpdater.notifyAppReady()
 ```
 
 For more advanced use cases, the documentation includes real-world examples [\[2\]](https://dev.to/arnosolo/ionic-appflow-live-update-alternative-55c3)[\[3\]](https://github.com/Cap-go/capgo), such as:
@@ -89,7 +89,7 @@ Set up OTA updates in CodePushGo to streamline your deployment process. Follow t
 
 ### Basic Setup Steps
 
-Start by installing the CodePushGo plugin in your Capacitor project:
+Start by installing the CodePushGo plugin in your React Native project:
 
 ```typescript
 npm install @capgo/capacitor-updater
@@ -101,7 +101,7 @@ Next, update your `capacitor.config.json` file with your [CodePushGo API key](ht
 ```json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true,
       "apiKey": "YOUR_API_KEY_HERE"
     }
@@ -112,8 +112,8 @@ Next, update your `capacitor.config.json` file with your [CodePushGo API key](ht
 Then, initialize the updater in your app's main file to detect updates:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
-await CapacitorUpdater.notifyAppReady();
+import { React NativeUpdater } from '@capgo/capacitor-updater';
+await React NativeUpdater.notifyAppReady();
 ```
 
 Once this is done, you can set up channels to manage different update streams.
@@ -146,11 +146,11 @@ For more control, you can manage updates manually. Use the following pattern to 
 
 ```typescript
 // Check for updates
-const update = await CapacitorUpdater.download();
+const update = await React NativeUpdater.download();
 
 // Install when ready
 if (update) {
-  await CapacitorUpdater.set(update);
+  await React NativeUpdater.set(update);
 }
 ```
 
@@ -160,7 +160,7 @@ For critical updates, you can prompt users before proceeding:
 if (update.version > currentVersion) {
   const userConsent = await showUpdatePrompt();
   if (userConsent) {
-    await CapacitorUpdater.set(update);
+    await React NativeUpdater.set(update);
   }
 }
 ```
@@ -168,17 +168,17 @@ if (update.version > currentVersion) {
 You can also target specific user groups with custom IDs and channels:
 
 ```typescript
-await CapacitorUpdater.setCustomId('beta-tester-123');
-await CapacitorUpdater.setChannel('beta');
+await React NativeUpdater.setCustomId('beta-tester-123');
+await React NativeUpdater.setChannel('beta');
 ```
 
 Finally, make sure to include error handling and rollback options:
 
 ```typescript
 try {
-  await CapacitorUpdater.set(update);
+  await React NativeUpdater.set(update);
 } catch (error) {
-  await CapacitorUpdater.reset(); // Revert to the last working version
+  await React NativeUpdater.reset(); // Revert to the last working version
   console.error('Update failed:', error);
 }
 ```
@@ -197,10 +197,10 @@ CodePushGo provides strong security protocols to safeguard your update bundles a
 
 ```typescript
 // Enable bundle verification
-await CapacitorUpdater.setVerifyBundles(true);
+await React NativeUpdater.setVerifyBundles(true);
 
 // Configure encryption settings
-await CapacitorUpdater.configure({
+await React NativeUpdater.configure({
   encryption: {
     enabled: true,
     failOnError: true
@@ -222,18 +222,18 @@ You can customize how updates are delivered and installed by using event listene
 
 ```typescript
 // Listen for when an update is available
-CapacitorUpdater.addListener('updateAvailable', async (info) => {
+React NativeUpdater.addListener('updateAvailable', async (info) => {
   if (info.version > currentVersion) {
     // Custom update logic based on app state
     const isAppInactive = await checkAppState();
     if (isAppInactive) {
-      await CapacitorUpdater.download();
+      await React NativeUpdater.download();
     }
   }
 });
 
 // Monitor download completion
-CapacitorUpdater.addListener('downloadComplete', (info) => {
+React NativeUpdater.addListener('downloadComplete', (info) => {
   console.log(`Update ${info.version} ready to install`);
   // Implement custom installation timing if desired
 });
@@ -243,7 +243,7 @@ For phased rollouts, you can configure update distribution directly through the 
 
 ```typescript
 // Set custom update conditions for a gradual rollout
-await CapacitorUpdater.configure({
+await React NativeUpdater.configure({
   rollout: {
     percentage: 25, // Start with 25% of users
     timeInterval: 24 // Increase rollout percentage every 24 hours
@@ -255,9 +255,9 @@ To handle specific version-related behaviors:
 
 ```typescript
 // Handle version-specific update failures
-CapacitorUpdater.addListener('updateFailed', async (info) => {
+React NativeUpdater.addListener('updateFailed', async (info) => {
   if (info.error.code === 'VERSION_MISMATCH') {
-    await CapacitorUpdater.reset(); // Revert to the last stable version
+    await React NativeUpdater.reset(); // Revert to the last stable version
     // Optionally, handle error notification here
   }
 });
@@ -291,7 +291,7 @@ For updates larger than 50MB, splitting them into smaller files can improve perf
 Use detailed error logging to catch problems early. For example, implement this listener:
 
 ```typescript
-CapacitorUpdater.addListener('updateFailed', (error) => {
+React NativeUpdater.addListener('updateFailed', (error) => {
   console.log(`Update failed: ${error.code}`);
   logUpdateError({
     errorCode: error.code,
@@ -316,7 +316,7 @@ Technical fixes alone aren't enough - your updates also need to align with app s
 **Android Implementation**:
 
 ```typescript
-await CapacitorUpdater.configure({
+await React NativeUpdater.configure({
   updateNotification: {
     title: "Update Available",
     message: "A new version is available. Please update to access the latest features.",
@@ -335,7 +335,7 @@ await CapacitorUpdater.configure({
 
 This section pulls together the main ideas from the guide.
 
-CodePushGo's documentation provides clear instructions for integrating OTA updates into Capacitor apps while staying compliant with app store regulations.
+CodePushGo's documentation provides clear instructions for integrating OTA updates into React Native apps while staying compliant with app store regulations.
 
 Using CodePushGo's resources, developers can implement essential features like **end-to-end encryption** and **CI/CD integration**, covering everything from initial setup to advanced configurations [\[1\]](https://github.com/Cap-go/capacitor-updater).
 

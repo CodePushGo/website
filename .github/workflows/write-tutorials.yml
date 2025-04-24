@@ -1,0 +1,58 @@
+name: Write Tutorials
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 0' # Run at 3AM UTC every Sunday
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Write Tutorials
+    steps:
+      - name: Install Git LFS
+        run: sudo apt-get update && sudo apt-get install git-lfs && git lfs install
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install && pnpm approve-builds && pnpm add faiss-node --allow-build=faiss-node && pnpm rebuild faiss-node
+
+      - name: Generate tutorials
+        run: node scripts/generate_tutorials.mjs
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_TOKEN }}
+
+      - name: Commit generated files
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        run: |
+          git config --global user.name "Martin DONADIEU"
+          git config --global user.email "martindonadieu@gmail.com"
+          git lfs track "loadedVectorStore/*.json" || true
+          git lfs track "loadedVectorStore/*.index" || true
+          git add .gitattributes
+          shopt -s nullglob
+          files=(loadedVectorStore/*.json loadedVectorStore/*.index)
+          if [ ${#files[@]} -gt 0 ]; then
+            git add "${files[@]}"
+          fi
+          git add -A
+          git commit -m "Commit generated files"
+          git push origin main -f
+        working-directory: ./

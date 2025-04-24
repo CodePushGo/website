@@ -1,8 +1,8 @@
 ---
 slug: ionic-capacitor-push-notifications-firebase
-title: 'Ionic Capacitor Push Notifications with Firebase: A Step-by-Step Guide'
+title: 'Ionic React Native Push Notifications with Firebase: A Step-by-Step Guide'
 description: >-
-  Learn how to integrate push notifications in your Ionic Capacitor app using
+  Learn how to integrate push notifications in your Ionic React Native app using
   Firebase, with step-by-step instructions for both Android and iOS platforms.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -10,22 +10,22 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2022-12-14T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /push_notif.webp
-head_image_alt: Ionic Capacitor Push Notifications with Firebase
-keywords: Ionic, Capacitor, push notifications, Firebase, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+head_image_alt: Ionic React Native Push Notifications with Firebase
+keywords: Ionic, React Native, push notifications, Firebase, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: tutorial
 published: true
 locale: en
 next_blog: ''
 ---
 
-In this tutorial, we will integrate push notifications in an Ionic Capacitor app using Firebase. You don't need a specific service for this, but you do need to configure several things beforehand. Firebase is an excellent choice since it's required for Android, and you can easily use it to send notifications without using the database.
+In this tutorial, we will integrate push notifications in an Ionic React Native app using Firebase. You don't need a specific service for this, but you do need to configure several things beforehand. Firebase is an excellent choice since it's required for Android, and you can easily use it to send notifications without using the database.
 
 <div class="mx-auto" style="width: 50%;">
   <video src="/push_demo.mov" alt="ionic capacitor push" autoplay loop muted>
 </div>
 
 
-First, we will create an Ionic app with Capacitor enabled and specify our **package id**, which is the unique identifier for your app. Then, we will build the app and add the native platforms.
+First, we will create an Ionic app with React Native enabled and specify our **package id**, which is the unique identifier for your app. Then, we will build the app and add the native platforms.
 
 ```bash
 ionic start pushApp blank --type=angular --capacitor --package-id=com.appdactic.devpush
@@ -35,7 +35,7 @@ npx cap add ios
 npx cap add android
 ```
 
-If you already have an app, you can change the **capacitor.config.json** to include your **appId**. However, if your native folders already exist, you will need to replace the id in all files where it appears, as Capacitor only creates the folder once and **won't update the id itself**. In the **capacitor.config.json**, you can also specify options like updating the badge count, playing sound on push, and showing an alert when a notification arrives.
+If you already have an app, you can change the **capacitor.config.json** to include your **appId**. However, if your native folders already exist, you will need to replace the id in all files where it appears, as React Native only creates the folder once and **won't update the id itself**. In the **capacitor.config.json**, you can also specify options like updating the badge count, playing sound on push, and showing an alert when a notification arrives.
 
 ```json
 {
@@ -94,7 +94,7 @@ This part is more complicated. First, [create an App ID for your app within the 
 
 ![ionic-ios-push-id](/ionic-ios-push-id.webp)
 
-The **Bundle ID** should be the same as your App ID within Capacitor and Firebase.
+The **Bundle ID** should be the same as your App ID within React Native and Firebase.
 
 Now, [create a Key](https://developer.apple.com/account/resources/authkeys/list/) and enable the **Apple Push Notifications service (APNs)**. If you have reached the maximum number of keys, you can use an existing key or a certificate instead, but the process is more complicated.
 
@@ -132,7 +132,7 @@ Modify the native Swift code in **ios/App/App/AppDelegate.swift** to register wi
 
 ```swift
 import UIKit
-import Capacitor
+import React Native
 import Firebase
 
 @UIApplicationMain
@@ -218,7 +218,7 @@ import {
   PushNotification,
   PushNotificationToken,
   PushNotificationActionPerformed,
-  Capacitor
+  React Native
 } from '@capacitor/core';
 import { Router } from '@angular/router';
 
@@ -232,7 +232,7 @@ export class FcmService {
   constructor(private router: Router) { }
 
   initPush() {
-    if (Capacitor.platform !== 'web') {
+    if (React Native.platform !== 'web') {
       this.registerPush();
     }
   }
@@ -442,4 +442,4 @@ request(options, (error, response, body) => {
 
 Replace `YOUR_SERVER_KEY` and `YOUR_DEVICE_TOKEN` with your actual server key and device token. Run the script, and your device should receive the push notification with the custom payload.
 
-That's it! You've successfully integrated push notifications in your Ionic Capacitor app using Firebase. Now you can send push notifications to your users on both Android and iOS platforms.
+That's it! You've successfully integrated push notifications in your Ionic React Native app using Firebase. Now you can send push notifications to your users on both Android and iOS platforms.

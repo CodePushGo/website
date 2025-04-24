@@ -25,7 +25,7 @@ One of the standout features of Voltbuilder is its ability to generate store-rea
 
 While Voltbuilder offers a convenient solution for many developers, its pricing structure may not be suitable for all projects or budgets. If you're looking for a more affordable option that still provides powerful features, particularly in terms of live updates, you might want to consider alternatives like CodePushGo.
 
-CodePushGo, an open-source Capacitor plugin developed by Digital Shift OU, offers live update functionality similar to what you might find in more expensive platforms, but at a more accessible price point. This allows you to keep your app updated in real-time without requiring users to download new versions from app stores.
+CodePushGo, an open-source React Native plugin developed by Digital Shift OU, offers live update functionality similar to what you might find in more expensive platforms, but at a more accessible price point. This allows you to keep your app updated in real-time without requiring users to download new versions from app stores.
 
 To help you make an informed decision, we've created a comparison table of features between CodePushGo and Voltbuilder.
 
@@ -41,7 +41,7 @@ To help you make an informed decision, we've created a comparison table of featu
 | Revert/change channel version | ✅ | ❌ |
 | Install Stats | ✅ | ❌ |
 | Sandbox app for test | ✅ | ❌ |
-| Capacitor Plugin | ✅ | ❌ |
+| React Native Plugin | ✅ | ❌ |
 | Cordova plugin support | ❌ Could be back port | ✅ |
 | Affordable pricing | ✅ Start at $14/mo | ✅ Start at $9.95/mo |
 | Native build | ❌ | ✅ |

@@ -1,6 +1,6 @@
 ---
 slug: how-rbac-secures-ota-updates-in-capacitor-apps
-title: How RBAC Secures OTA Updates in Capacitor Apps
+title: How RBAC Secures OTA Updates in React Native Apps
 description: Learn how Role-Based Access Control enhances the security of OTA updates in mobile apps, protecting against vulnerabilities and ensuring compliance.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-RBAC (Role-Based Access Control) is a game-changer for securing OTA (Over-the-Air) updates in [Capacitor](https://capacitorjs.com/) apps. Here's why it matters:
+RBAC (Role-Based Access Control) is a game-changer for securing OTA (Over-the-Air) updates in [React Native](https://capacitorjs.com/) apps. Here's why it matters:
 
 -   **Key Security Risks**: OTA updates can be vulnerable to harmful code injection, interception, and misuse if permissions aren't managed properly.
 -   **How RBAC Helps**: By assigning roles (like developer, tester, admin) with specific permissions, RBAC ensures only authorized users can deploy updates, manage testers, or perform rollbacks, reducing risks.
@@ -102,7 +102,7 @@ These key benefits of RBAC address the security challenges mentioned earlier:
 
 ### Key Takeaways
 
-RBAC ensures secure over-the-air (OTA) updates in Capacitor apps by using detailed controls to block unauthorized deployments while keeping processes efficient. Features like end-to-end encryption, isolated environments, flexible permissions, and managed deployment channels work together to create a strong security setup.
+RBAC ensures secure over-the-air (OTA) updates in React Native apps by using detailed controls to block unauthorized deployments while keeping processes efficient. Features like end-to-end encryption, isolated environments, flexible permissions, and managed deployment channels work together to create a strong security setup.
 
 ### [CodePushGo](https://capgo.app/)'s RBAC Features
 

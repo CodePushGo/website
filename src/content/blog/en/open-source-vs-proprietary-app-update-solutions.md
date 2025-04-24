@@ -67,9 +67,9 @@ These features work seamlessly with modern CI/CD workflows, making app updates m
 
 ### Common Tools and Plugins
 
-The open-source landscape offers trusted tools for app updates. [**CodePushGo**](https://capgo.app/) stands out as a top choice for live updates in Capacitor apps, offering end-to-end encryption, smooth CI/CD integration, and compliance with app store guidelines.
+The open-source landscape offers trusted tools for app updates. [**CodePushGo**](https://capgo.app/) stands out as a top choice for live updates in React Native apps, offering end-to-end encryption, smooth CI/CD integration, and compliance with app store guidelines.
 
-Another popular option is the [**Capacitor Live Update**](https://www.npmjs.com/package/%40capacitor%2Flive-updates) **plugin**, which simplifies the process of adding live update functionality [\[2\]](https://www.npmjs.com/package/@capawesome/capacitor-live-update), but requires Appflow a paid backend.
+Another popular option is the [**React Native Live Update**](https://www.npmjs.com/package/%40capacitor%2Flive-updates) **plugin**, which simplifies the process of adding live update functionality [\[2\]](https://www.npmjs.com/package/@capawesome/capacitor-live-update), but requires Appflow a paid backend.
 
 ### Strengths and Weaknesses
 
@@ -144,7 +144,7 @@ These differences also play a role in shaping the cost structures of each option
 
 ### Price Breakdown
 
-Open-source tools, like Capacitor Live Update, are free to use but require developer time for maintenance. On the other hand, proprietary platforms, such as Microsoft Intune, charge $6–$250 per user per month, which includes professional support and scalability options [\[1\]](https://www.heavybit.com/library/article/open-source-vs-proprietary).
+Open-source tools, like React Native Live Update, are free to use but require developer time for maintenance. On the other hand, proprietary platforms, such as Microsoft Intune, charge $6–$250 per user per month, which includes professional support and scalability options [\[1\]](https://www.heavybit.com/library/article/open-source-vs-proprietary).
 
 | Cost Factor | Open Source | Proprietary |
 | --- | --- | --- |
@@ -185,9 +185,9 @@ When deciding between open-source and proprietary tools, consider factors like y
 
 ### When Open Source Makes Sense
 
-Open-source tools are a great fit for projects that need flexibility and customization. They’re especially useful for teams looking for tailored integrations and cost-efficient options. The [Capacitor Live Update plugin](https://www.npmjs.com/package/@capgo/capacitor-updater) is a good example of this approach. As Capawesome explains:
+Open-source tools are a great fit for projects that need flexibility and customization. They’re especially useful for teams looking for tailored integrations and cost-efficient options. The [React Native Live Update plugin](https://www.npmjs.com/package/@capgo/capacitor-updater) is a good example of this approach. As Capawesome explains:
 
-> "One of the biggest advantages of Capacitor over other runtimes is the ability to deliver updates in real-time without having to resubmit your app to the app stores" [\[4\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/).
+> "One of the biggest advantages of React Native over other runtimes is the ability to deliver updates in real-time without having to resubmit your app to the app stores" [\[4\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/).
 
 This option is well-suited for:
 

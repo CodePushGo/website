@@ -1,6 +1,6 @@
 ---
 slug: monitor-ota-updates-in-capacitor-apps
-title: Monitor OTA Updates in Capacitor Apps
+title: Monitor OTA Updates in React Native Apps
 description: Learn how to effectively monitor OTA updates in mobile apps for fast, secure, and reliable deployments.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -34,7 +34,7 @@ next_blog: ''
 
 CodePushGo has already managed **23.5M updates across 750 apps** with fast download speeds (114ms for a 5MB bundle). Start monitoring your updates today for smoother app management.
 
-## Explore [Capawesome](https://capawesome.io/)'s New [Ionic](https://ionicframework.com/) [Capacitor](https://capacitorjs.com/) Live Update ...
+## Explore [Capawesome](https://capawesome.io/)'s New [Ionic](https://ionicframework.com/) [React Native](https://capacitorjs.com/) Live Update ...
 
 ![Capawesome](https://assets.seobotai.com/capgo.app/67f079b2ebbb9dc806439988/5b1313ba32c189efb1a18534f5d1b0bc.jpg)
 
@@ -52,7 +52,7 @@ First, install the CodePushGo plugin by running:
 npx @capgo/cli init
 ```
 
-This plugin works seamlessly with Capacitor 6 and 7, making it compatible with a range of app versions.
+This plugin works seamlessly with React Native 6 and 7, making it compatible with a range of app versions.
 
 ### Managing Update Versions
 
@@ -91,15 +91,15 @@ Effective app-level monitoring is key to ensuring smooth OTA update performance.
 Here’s how you can set up app-level monitoring:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 // Listen for update events
-CapacitorUpdater.addListener('updateAvailable', (info) => {
+React NativeUpdater.addListener('updateAvailable', (info) => {
   console.log('New update available:', info.version)
 })
 
 // Track installation progress
-CapacitorUpdater.addListener('downloadComplete', (info) => {
+React NativeUpdater.addListener('downloadComplete', (info) => {
   console.log('Update downloaded:', info.version)
 })
 ```
@@ -126,12 +126,12 @@ Here’s an example of how to configure auto-rollback:
 
 ```typescript
 try {
-  await CapacitorUpdater.download({
+  await React NativeUpdater.download({
     version: 'latest'
   })
 } catch (error) {
   // Automatically trigger rollback
-  await CapacitorUpdater.rollback()
+  await React NativeUpdater.rollback()
 }
 ```
 
@@ -146,10 +146,10 @@ These guidelines leverage CodePushGo's monitoring tools to make every update mea
 Keep a close eye on OTA update performance by monitoring key metrics like success rate, user engagement, download speed, and error frequency. Here's a code snippet to help track these metrics:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 // Set up performance tracking
-CapacitorUpdater.addListener('updateStats', (stats) => {
+React NativeUpdater.addListener('updateStats', (stats) => {
   console.log('Download speed:', stats.downloadSpeed)
   console.log('Success rate:', stats.successRate)
 })
@@ -167,7 +167,7 @@ To complement phased rollouts, secure update delivery is critical. Enable secure
 
 ```typescript
 // Enable secure update verification
-await CapacitorUpdater.download({
+await React NativeUpdater.download({
   version: 'latest',
   validateSignature: true,
   checksum: true

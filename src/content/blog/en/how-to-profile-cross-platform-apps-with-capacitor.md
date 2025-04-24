@@ -1,7 +1,7 @@
 ---
 slug: how-to-profile-cross-platform-apps-with-capacitor
-title: How to Profile Cross-Platform Apps with Capacitor
-description: Learn how to profile and optimize cross-platform apps built with Capacitor for improved performance on iOS, Android, and web.
+title: How to Profile Cross-Platform Apps with React Native
+description: Learn how to profile and optimize cross-platform apps built with React Native for improved performance on iOS, Android, and web.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,19 +9,19 @@ created_at: 2025-04-19T02:37:04.938Z
 updated_at: 2025-04-19T02:37:25.432Z
 head_image: https://assets.seobotai.com/capgo.app/6803080d9291ae98c5004a60-1745030245432.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, profiling, cross-platform apps, performance optimization, iOS, Android, web development, memory leaks, error tracking
+keywords: React Native, profiling, cross-platform apps, performance optimization, iOS, Android, web development, memory leaks, error tracking
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-Profiling cross-platform apps built with [Capacitor](https://capacitorjs.com/) helps you identify performance issues across iOS, Android, and web platforms. Here's a quick guide to get started:
+Profiling cross-platform apps built with [React Native](https://capacitorjs.com/) helps you identify performance issues across iOS, Android, and web platforms. Here's a quick guide to get started:
 
 -   **Tools You Need**:
     
     -   [Node.js](https://nodejs.org/en) v16+ and npm v8+ for package management
-    -   Capacitor CLI v5.0+ for building and deploying apps
+    -   React Native CLI v5.0+ for building and deploying apps
     -   [Xcode](https://developer.apple.com/xcode/) 14+ (iOS) and [Android Studio](https://developer.android.com/studio) Electric Eel+ (Android) for platform-specific development and profiling
     -   [Chrome DevTools](https://developer.chrome.com/docs/devtools) for web performance analysis
 -   **Devices**:
@@ -42,7 +42,7 @@ Profiling cross-platform apps built with [Capacitor](https://capacitorjs.com/) h
     -   Implement partial bundle updates and live updates to improve performance and user experience.
     -   Track performance metrics and errors in real time using tools like [CodePushGo](https://capgo.app/).
 
-This article walks you through using platform-specific tools, finding performance bottlenecks, and applying fixes to optimize your Capacitor apps.
+This article walks you through using platform-specific tools, finding performance bottlenecks, and applying fixes to optimize your React Native apps.
 
 ## How to find MEMORY LEAKS in Ionic Angular Apps
 
@@ -50,14 +50,14 @@ This article walks you through using platform-specific tools, finding performanc
 
 ## Setup Requirements
 
-To profile Capacitor apps effectively, you'll need the right tools, software, and testing environments. Here's what you need for accurate performance analysis.
+To profile React Native apps effectively, you'll need the right tools, software, and testing environments. Here's what you need for accurate performance analysis.
 
 ### Tools and Software
 
 Make sure you have the following:
 
 -   **Node.js v16+** with **npm v8+** for managing packages
--   **Capacitor CLI (v5.0+)** to build and deploy apps
+-   **React Native CLI (v5.0+)** to build and deploy apps
 -   **Xcode 14+** for iOS development and profiling
 -   **Android Studio Electric Eel** (or newer) for Android development
 -   **Chrome DevTools** for web performance profiling
@@ -124,7 +124,7 @@ For apps using WebView, enable debugging with `WebView.setWebContentsDebuggingEn
 
 ### Bottlenecks
 
-Common performance issues in Capacitor apps often stem from **large bundle sizes**, **unminified code**, and **excessive overhead from bridge calls**. These factors can slow down your app and impact the user experience.
+Common performance issues in React Native apps often stem from **large bundle sizes**, **unminified code**, and **excessive overhead from bridge calls**. These factors can slow down your app and impact the user experience.
 
 ### Analyzing Profiles
 
@@ -156,7 +156,7 @@ CodePushGo simplifies the update process by offering encrypted, staged updates w
 
 ## Summary
 
-Use tools like Chrome DevTools, Xcode Instruments, and Android Studio Profiler to fine-tune your Capacitor apps. Keep an eye on key metrics and roll out live updates when needed. Here's what to focus on:
+Use tools like Chrome DevTools, Xcode Instruments, and Android Studio Profiler to fine-tune your React Native apps. Keep an eye on key metrics and roll out live updates when needed. Here's what to focus on:
 
 -   **Profile consistently** using platform-specific tools (Chrome DevTools, Xcode, Android Studio Profiler).
 -   **Track performance and errors** in real time across all platforms.

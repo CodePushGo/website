@@ -1,8 +1,8 @@
 ---
 slug: developing-cross-platform-apps-with-capacitorjs
-title: 'Developing Cross-Platform Apps with CapacitorJS: A Step-by-Step Guide'
+title: 'Developing Cross-Platform Apps with React NativeJS: A Step-by-Step Guide'
 description: >-
-  Learn how to create cross-platform applications using CapacitorJS with a
+  Learn how to create cross-platform applications using React NativeJS with a
   single JavaScript codebase for Android, iOS, and web (PWA).
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -11,16 +11,16 @@ created_at: 2023-12-02T00:00:00.000Z
 updated_at: 2023-12-14T00:00:00.000Z
 head_image: /create_app_with_js.webp
 head_image_alt: Cross-Platform App Development
-keywords: Capacitor, cross-platform, PWA, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+keywords: React Native, cross-platform, PWA, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tuto
 published: true
 locale: en
 next_blog: ''
 ---
 
-In the evolving world of mobile application development, the rise of Progressive Web Applications (PWAs) has paved the way for new cross-platform runtimes. These runtimes enable web-based applications to be present in app stores without relying solely on native code. One such technology that facilitates this is [**CapacitorJS**](https://capacitorjs.com/), which allows developers to deploy a simple website as an application across Android, iOS, and the web using a single JavaScript codebase. This approach significantly reduces development costs and increases coding efficiency.
+In the evolving world of mobile application development, the rise of Progressive Web Applications (PWAs) has paved the way for new cross-platform runtimes. These runtimes enable web-based applications to be present in app stores without relying solely on native code. One such technology that facilitates this is [**React NativeJS**](https://capacitorjs.com/), which allows developers to deploy a simple website as an application across Android, iOS, and the web using a single JavaScript codebase. This approach significantly reduces development costs and increases coding efficiency.
 
-This guide will focus on creating an application using pure JavaScript without any additional frameworks. Despite the challenges of finding resources for pure JavaScript app development in 2021, we're here to provide you with a comprehensive tutorial on building your application and utilizing native plugins with CapacitorJS.
+This guide will focus on creating an application using pure JavaScript without any additional frameworks. Despite the challenges of finding resources for pure JavaScript app development in 2021, we're here to provide you with a comprehensive tutorial on building your application and utilizing native plugins with React NativeJS.
 
 ## ‣ Prerequisites
 
@@ -33,15 +33,15 @@ Before we begin, ensure you have the following tools installed:
 
 > **Note**: iOS app development is only possible on a macOS device.
 
-## ‣ Setting Up Your Capacitor Project
+## ‣ Setting Up Your React Native Project
 
-To create a Capacitor application, navigate to your desired folder and execute the following command in your terminal:
+To create a React Native application, navigate to your desired folder and execute the following command in your terminal:
 
 ```
 npm init @capacitor/app
 ```
 
-Follow the prompts to install the package and set up your project. With Capacitor v3, your project directory should look like this:
+Follow the prompts to install the package and set up your project. With React Native v3, your project directory should look like this:
 
 ```
 www/
@@ -129,13 +129,13 @@ export default defineConfig({
 
 ## capacitor.config.json
 
-In the `capacitor.config.json` file, locate the `"bundledWebRuntime": true` property and change it to `false`. This adjustment ensures that Capacitor does not bundle the files, allowing us to use Vite for that purpose instead.
+In the `capacitor.config.json` file, locate the `"bundledWebRuntime": true` property and change it to `false`. This adjustment ensures that React Native does not bundle the files, allowing us to use Vite for that purpose instead.
 
-With these changes, your Capacitor application's basic setup is complete, and you're ready to start developing your app with pure JavaScript.
+With these changes, your React Native application's basic setup is complete, and you're ready to start developing your app with pure JavaScript.
 
 ## ‣ Developing Your App
 
-Now that the groundwork is laid, you can begin writing your application logic in the `src/index.js` file. Here, you can import any necessary Node.js modules, define your app's functionality, and interact with Capacitor's native plugins.
+Now that the groundwork is laid, you can begin writing your application logic in the `src/index.js` file. Here, you can import any necessary Node.js modules, define your app's functionality, and interact with React Native's native plugins.
 
 Remember to run Vite's build command to bundle your JavaScript files whenever you make changes:
 
@@ -147,7 +147,7 @@ This command will generate the `main.js` file in your `www/js` directory, which 
 
 ## ‣ Testing and Debugging
 
-Capacitor provides a convenient way to test your application on various platforms. Use the following commands to open your app in the respective platform's development environment:
+React Native provides a convenient way to test your application on various platforms. Use the following commands to open your app in the respective platform's development environment:
 
 For Android:
 ```bash
@@ -170,6 +170,6 @@ These commands will allow you to run your application in Android Studio, Xcode, 
 
 ## ‣ Conclusion
 
-Developing cross-platform applications with CapacitorJS using pure JavaScript is a cost-effective and efficient way to create apps for multiple platforms with a single codebase. By following this guide, you've set up your project, restructured it for Vite, and prepared your app for development. With this foundation, you're well on your way to building a robust and versatile application.
+Developing cross-platform applications with React NativeJS using pure JavaScript is a cost-effective and efficient way to create apps for multiple platforms with a single codebase. By following this guide, you've set up your project, restructured it for Vite, and prepared your app for development. With this foundation, you're well on your way to building a robust and versatile application.
 
-Remember to test thoroughly on all platforms and make use of Capacitor's native plugins to enhance your app's functionality. Happy coding!
+Remember to test thoroughly on all platforms and make use of React Native's native plugins to enhance your app's functionality. Happy coding!

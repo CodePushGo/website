@@ -1,7 +1,7 @@
 ---
 slug: error-logging-tools-for-capacitor-ota-updates
-title: Error Logging Tools for Capacitor OTA Updates
-description: Explore essential error logging tools for Capacitor OTA updates, comparing features, pricing, and setup to enhance app stability and user experience.
+title: Error Logging Tools for React Native OTA Updates
+description: Explore essential error logging tools for React Native OTA updates, comparing features, pricing, and setup to enhance app stability and user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-Error logging tools are essential for managing Capacitor Over-the-Air (OTA) updates. They help developers monitor issues, track update performance, and ensure app stability. This article compares four popular tools - **[Sentry](https://sentry.io/)**, **[LogRocket](https://logrocket.com/)**, **[Bugsnag](https://www.bugsnag.com/)**, and **[CodePushGo](https://capgo.app/)** - highlighting their features, pricing, and setup ease.
+Error logging tools are essential for managing React Native Over-the-Air (OTA) updates. They help developers monitor issues, track update performance, and ensure app stability. This article compares four popular tools - **[Sentry](https://sentry.io/)**, **[LogRocket](https://logrocket.com/)**, **[Bugsnag](https://www.bugsnag.com/)**, and **[CodePushGo](https://capgo.app/)** - highlighting their features, pricing, and setup ease.
 
 ### Key Takeaways:
 
@@ -37,7 +37,7 @@ Error logging tools are essential for managing Capacitor Over-the-Air (OTA) upda
 
 Each tool offers unique benefits depending on your team's needs, budget, and expertise. Read on for a detailed breakdown of their features, pricing, and setup requirements.
 
-## [Sentry](https://sentry.io/) and Capacitor: How to Build and Monitor User Experiences
+## [Sentry](https://sentry.io/) and React Native: How to Build and Monitor User Experiences
 
 ![Sentry](https://mars-images.imgix.net/seobot/screenshots/sentry.io-925fc70e12ac801815ba3ab27e6adcda-2025-03-18.jpg?auto=compress)
 
@@ -45,11 +45,11 @@ Each tool offers unique benefits depending on your team's needs, budget, and exp
 
 ## Error Logging Tools Review
 
-Explore top error logging tools for [Capacitor OTA updates](https://capgo.app/ja/), focusing on their features and how they work.
+Explore top error logging tools for [React Native OTA updates](https://capgo.app/ja/), focusing on their features and how they work.
 
 ### Sentry: Features and Setup
 
-Sentry's SDK works effortlessly with Capacitor apps, providing detailed stack traces and helpful context for debugging. Its release tracking feature pinpoints recurring issues in OTA update failures.
+Sentry's SDK works effortlessly with React Native apps, providing detailed stack traces and helpful context for debugging. Its release tracking feature pinpoints recurring issues in OTA update failures.
 
 **Key features**:
 
@@ -100,7 +100,7 @@ CodePushGo’s features include real-time update status tracking, end-to-end enc
 
 ## Tool Comparison Guide
 
-A detailed look at error logging tools for Capacitor OTA updates.
+A detailed look at error logging tools for React Native OTA updates.
 
 ### Features Matrix
 

@@ -1,6 +1,6 @@
 ---
 slug: how-to-track-ota-update-success-in-capacitor-apps
-title: How to Track OTA Update Success in Capacitor Apps
+title: How to Track OTA Update Success in React Native Apps
 description: Learn how to effectively track OTA update success in your apps to enhance user experience and quickly address issues.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -51,7 +51,7 @@ OTA updates let you push app changes directly to users without waiting for app s
     -   Rollback options
         
 
-## Explore [CodePushGo](https://capgo.app/)'s New [Ionic](https://ionicframework.com/) [Capacitor](https://capacitorjs.com/) Live Update ...
+## Explore [CodePushGo](https://capgo.app/)'s New [Ionic](https://ionicframework.com/) [React Native](https://capacitorjs.com/) Live Update ...
 
 **Setting Up Update Tracking**
 
@@ -96,14 +96,14 @@ To track updates within your app, follow these steps:
     Configure listeners to detect updates:
     
     ```javascript
-    CapacitorUpdater.addListener('updateAvailable', () => { … });
+    React NativeUpdater.addListener('updateAvailable', () => { … });
     ```
     
 3.  **Log installation progress**  
     Track when updates are downloaded and installed:
     
     ```javascript
-    CapacitorUpdater.addListener('downloadComplete', () => { … });
+    React NativeUpdater.addListener('downloadComplete', () => { … });
     ```
     
 
@@ -329,7 +329,7 @@ Here’s how to pick the best OTA update tracking tool for your needs:
         
     -   Flexible hosting options
         
-    -   Compatibility with the latest Capacitor version
+    -   Compatibility with the latest React Native version
         
 
 > "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)

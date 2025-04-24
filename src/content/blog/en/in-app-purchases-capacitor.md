@@ -2,7 +2,7 @@
 slug: in-app-purchases-capacitor
 title: in app purchases for capacitor
 description: >-
-  How to implement in-app purchases for capacitor apps using the Capacitor
+  How to implement in-app purchases for capacitor apps using the React Native
   Purchases plugin and RevenueCat
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -11,7 +11,7 @@ created_at: 2023-01-19T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /revenuecat_iap.webp
 head_image_alt: Revenue cat in app purchases
-keywords: Capacitor, in-app purchases, RevenueCat, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+keywords: React Native, in-app purchases, RevenueCat, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
 locale: en
@@ -20,9 +20,9 @@ next_blog: ''
 
 >> This plugin is now transferred to RevenueCat official repository. Please look at the [official documentation](https://www.revenuecat.com/docs/getting-started/installation/capacitor) for more information.
 
-Capacitor Purchases is a plugin for the Capacitor framework that allows in-app purchases on iOS and Android. It provides a simple and consistent API across multiple platforms, making it easy for developers to implement in-app subscriptions and purchases in their mobile apps.
+React Native Purchases is a plugin for the React Native framework that allows in-app purchases on iOS and Android. It provides a simple and consistent API across multiple platforms, making it easy for developers to implement in-app subscriptions and purchases in their mobile apps.
 
-One of the key features of the Capacitor Purchases plugin is that it integrates with RevenueCat, a platform that provides tools for in-app subscriptions and in-app purchases. RevenueCat simplifies the process of implementing in-app subscriptions and purchases by providing a simple and consistent API across multiple platforms, and automating tasks such as receipt validation and user management.
+One of the key features of the React Native Purchases plugin is that it integrates with RevenueCat, a platform that provides tools for in-app subscriptions and in-app purchases. RevenueCat simplifies the process of implementing in-app subscriptions and purchases by providing a simple and consistent API across multiple platforms, and automating tasks such as receipt validation and user management.
 
 With RevenueCat, developers can easily manage subscriptions, track revenue, and perform other related tasks. Some features offered by RevenueCat include:
 
@@ -32,16 +32,16 @@ With RevenueCat, developers can easily manage subscriptions, track revenue, and 
 - Detailed analytics
 -Scalability
 
-By using the Capacitor Purchases plugin with RevenueCat, developers can save time and effort when implementing in-app subscriptions and purchases in their mobile apps, and provide additional features that can help to improve the user experience and increase revenue.
+By using the React Native Purchases plugin with RevenueCat, developers can save time and effort when implementing in-app subscriptions and purchases in their mobile apps, and provide additional features that can help to improve the user experience and increase revenue.
 
-Using Capacitor Purchases plugin and RevenueCat, developers can easily manage and track in-app subscriptions and purchases, validate receipts, and manage users across multiple platforms. It also allows creating custom pricing models and get detailed analytics to improve the performance and revenue.
+Using React Native Purchases plugin and RevenueCat, developers can easily manage and track in-app subscriptions and purchases, validate receipts, and manage users across multiple platforms. It also allows creating custom pricing models and get detailed analytics to improve the performance and revenue.
 
 
 ## Installation
 
-Be sure to use the latest version of Capacitor and the Capacitor Purchases plugin. You can check the latest version of Capacitor and the Capacitor Purchases plugin on the Capacitor website.
+Be sure to use the latest version of React Native and the React Native Purchases plugin. You can check the latest version of React Native and the React Native Purchases plugin on the React Native website.
 
-To install the Capacitor Purchases plugin, run the following command:
+To install the React Native Purchases plugin, run the following command:
 `npm i @capgo/capacitor-purchases`
 add the plugin to your app native code
 `npx cap sync`
@@ -164,14 +164,14 @@ Make sure you configure _Purchases_ with your public SDK key only. You can read 
 
 
 ```javascript
-import { CapacitorPurchases } from '@capgo/capacitor-purchases'
+import { React NativePurchases } from '@capgo/capacitor-purchases'
 import { isPlatform } from '@ionic/vue' // use the right one for your framework
 
-CapacitorPurchases.setDebugLogsEnabled({ enabled: import.meta.env.DEV }) // Enable to get debug logs in dev mode
+React NativePurchases.setDebugLogsEnabled({ enabled: import.meta.env.DEV }) // Enable to get debug logs in dev mode
 if (isPlatform('ios')) {
-    CapacitorPurchases.setup({ apiKey:'appl_******'})
+    React NativePurchases.setup({ apiKey:'appl_******'})
 } else if (isPlatform('android')) {
-    CapacitorPurchases.setup({ apiKey:'goog_******'})
+    React NativePurchases.setup({ apiKey:'goog_******'})
 }
 ```
 
@@ -203,7 +203,7 @@ The SDK will automatically fetch the [configured Offerings](https://www.revenuec
 Below is an example of fetching Offerings. You can utilize Offerings to organize your paywall screen. See RevenueCat guide on [Displaying Products](https://www.revenuecat.com/docs/displaying-products/) for more information and best practices.
 
 ```javascript
-const { offerings } = await CapacitorPurchases.getOfferings()
+const { offerings } = await React NativePurchases.getOfferings()
 if (offerings.current !== null) {  
     // Display current offering with offerings.current
 }
@@ -225,7 +225,7 @@ The code sample below shows the process of purchasing a package and confirming i
 const purchase = async (p: Package): Promise<PurchaserInfo | null> => {
   try {
     // console.log('purchase', p)
-    const data = await CapacitorPurchases.purchasePackage({
+    const data = await React NativePurchases.purchasePackage({
       identifier: p.identifier,
       offeringIdentifier: p.offeringIdentifier,
     })
@@ -258,7 +258,7 @@ It's typical to call this method when deciding which UI to show the user, and wh
 RevenueCat enables your users to restore their in-app purchases, reactivating any content that they previously purchased from the **same store account** (Apple, Google, or Amazon account). We recommend that all apps have some way for users to trigger the restore method. Note that Apple does require a restore mechanism in the event a user loses access to their purchases (e.g: uninstalling/reinstalling the app, losing their account information, etc).
 
 ```javascript
-  const res = await CapacitorPurchases.restoreTransactions()
+  const res = await React NativePurchases.restoreTransactions()
   const purchaserInfo = res.purchaserInfo
   const ids: string[] = [] // extract active subscriptions ids
   purchaserInfo.activeSubscriptions.forEach((id) => {
@@ -279,7 +279,7 @@ CustomerInfo updates are _not_ pushed to your app from the RevenueCat backend, u
 Depending on your app, it may be sufficient to ignore the delegate and simply handle changes to customer information the next time your app is launched or in the completion blocks of the SDK methods.
 
 ```javascript
-CapacitorPurchases.addListener('purchasesUpdate', (data) => {
+React NativePurchases.addListener('purchasesUpdate', (data) => {
   console.log('purchasesUpdate', data)
 })
 ```
@@ -296,9 +296,9 @@ To download more complete examples of integrating the SDK, head over to RevenueC
 
 **[View Samples](https://www.revenuecat.com/docs/sample-apps/)**
 
-I will soon publish a sample app using Capacitor and Vue.js.
+I will soon publish a sample app using React Native and Vue.js.
 
-If you need to move deep usage of the Capacitor SDK check the documentation [here](https://github.com/Cap-go/capacitor-purchases/).
+If you need to move deep usage of the React Native SDK check the documentation [here](https://github.com/Cap-go/capacitor-purchases/).
 
 ### Next Steps
 \

@@ -1,6 +1,6 @@
 ---
 slug: checklist-for-validating-capacitor-app-updates
-title: Checklist for Validating Capacitor App Updates
+title: Checklist for Validating React Native App Updates
 description: Ensure smooth app updates with this actionable checklist for validating over-the-air updates and choosing the right tools.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-04-20T01:48:44.409Z
 updated_at: 2025-04-20T01:50:09.661Z
 head_image: https://assets.seobotai.com/capgo.app/680445af6000445eb1a661a6-1745113809661.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, app updates, OTA updates, testing checklist, mobile development
+keywords: React Native, app updates, OTA updates, testing checklist, mobile development
 tag: Mobile, Security, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to deliver [smooth app updates](https://capgo.app/plugins/capacitor-updater/) without risking user trust?** Here’s a quick, actionable checklist for validating [Capacitor](https://capacitorjs.com/) app updates, especially when using over-the-air (OTA) updates:
+**Want to deliver [smooth app updates](https://capgo.app/plugins/capacitor-updater/) without risking user trust?** Here’s a quick, actionable checklist for validating [React Native](https://capacitorjs.com/) app updates, especially when using over-the-air (OTA) updates:
 
 -   **Test Features**: Ensure all workflows (like login, data sync) function end-to-end.
 -   **Device Coverage**: Test on various devices, operating systems, and screen sizes.
@@ -38,7 +38,7 @@ next_blog: ''
 
 Follow this checklist and choose the right tools to ensure every update is fast, secure, and reliable.
 
-## Ionic & Capacitor for Building Native Mobile Apps – Full ...
+## Ionic & React Native for Building Native Mobile Apps – Full ...
 
 <iframe src="https://www.youtube.com/embed/K7ghUiXLef8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -48,7 +48,7 @@ After migration, set up dedicated environments for each platform to ensure smoot
 
 ### Testing Environment Setup
 
-Prepare separate testing environments for iOS, Android, and web platforms, following Capacitor's official guidelines [\[1\]](https://capgo.app/). Secure your codebase by implementing strict version control practices.
+Prepare separate testing environments for iOS, Android, and web platforms, following React Native's official guidelines [\[1\]](https://capgo.app/). Secure your codebase by implementing strict version control practices.
 
 ### Version Control Setup
 
@@ -71,7 +71,7 @@ Configure CodePushGo with these steps [\[1\]](https://capgo.app/):
 -   Configure rollback options for better control.
 -   Choose between cloud or [self-hosted deployment](https://capgo.app/blog/self-hosted-capgo/), based on your needs.
 
-For enterprise use, CodePushGo offers compatibility with Capacitor 6 and 7, and supports both cloud and self-hosted deployments [\[1\]](https://capgo.app/). Once this setup is complete, move on to feature and device testing.
+For enterprise use, CodePushGo offers compatibility with React Native 6 and 7, and supports both cloud and self-hosted deployments [\[1\]](https://capgo.app/). Once this setup is complete, move on to feature and device testing.
 
 ## Main Testing Checklist
 

@@ -9,14 +9,14 @@ created_at: 2025-03-16T02:24:50.565Z
 updated_at: 2025-03-18T13:14:19.939Z
 head_image: https://assets.seobotai.com/capgo.app/67d61b378b902ec211cf87e9-1742091902582.jpg
 head_image_alt: Mobile Development
-keywords: CodePushGo, GitHub Actions, CI/CD, Capacitor apps, deployment, automation, updates, security
+keywords: CodePushGo, GitHub Actions, CI/CD, React Native apps, deployment, automation, updates, security
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[CodePushGo](https://capgo.app/) and [GitHub Actions](https://docs.github.com/actions) together simplify deploying updates for [Capacitor](https://capacitorjs.com/) apps. Here's why this integration is worth your attention:
+[CodePushGo](https://capgo.app/) and [GitHub Actions](https://docs.github.com/actions) together simplify deploying updates for [React Native](https://capacitorjs.com/) apps. Here's why this integration is worth your attention:
 
 -   **Save Money**: Cut CI/CD costs by up to $26,100 over 5 years compared to [AppFlow](https://ionic.io/appflow/).
 -   **Fast Updates**: Push updates instantly with 95% of users receiving them in 24 hours.
@@ -25,7 +25,7 @@ next_blog: ''
 
 ### Quick Overview
 
-1.  **Requirements**: GitHub account, [CodePushGo account](https://capgo.app/disclaimer/) (from $12/month), Capacitor project, [Node.js](https://nodejs.org/en).
+1.  **Requirements**: GitHub account, [CodePushGo account](https://capgo.app/disclaimer/) (from $12/month), React Native project, [Node.js](https://nodejs.org/en).
 2.  **Setup**: Install [CodePushGo CLI](https://capgo.app/docs/cli/commands) with `npx @capgo/cli init`, configure GitHub Actions with a YAML workflow.
 3.  **Deployment**: Use commands like `npx @capgo/cli deploy` to [automate updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
 4.  **Testing**: Deploy to test channels (e.g., beta, staging) before production.
@@ -75,7 +75,7 @@ Make sure you have the following accounts and tools ready:
 | --- | --- | --- |
 | **GitHub Account** | Version Control & CI/CD | Active account with access to repositories |
 | **CodePushGo Account** | Manage Live Updates | Plans start at $12/month for the SOLO plan |
-| **Capacitor Project** | App Development | A functional project ready for integration |
+| **React Native Project** | App Development | A functional project ready for integration |
 | **Node.js** | Runtime Environment | Latest LTS version is recommended |
 
 Once these are in place, you can proceed to add CodePushGo to your project for automated live updates.
@@ -84,7 +84,7 @@ Once these are in place, you can proceed to add CodePushGo to your project for a
 
 ![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-16.jpg?auto=compress)
 
-To integrate CodePushGo, install it in your Capacitor project using its CLI tool. According to Martin Donadieu, founder of CodePushGo:
+To integrate CodePushGo, install it in your React Native project using its CLI tool. According to Martin Donadieu, founder of CodePushGo:
 
 > "Run npx @capgo/cli init that it!" [\[1\]](https://capgo.app/)
 
@@ -275,7 +275,7 @@ For high-priority deployments, take advantage of CodePushGo's error tracking to 
 
 ### Key Highlights
 
-CodePushGo's integration with GitHub Actions simplifies the deployment process for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/), delivering major benefits to development teams. With an 82% global success rate for updates and 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/), this solution stands out for its efficiency.
+CodePushGo's integration with GitHub Actions simplifies the deployment process for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/), delivering major benefits to development teams. With an 82% global success rate for updates and 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/), this solution stands out for its efficiency.
 
 Here are some standout features:
 

@@ -47,7 +47,7 @@ Overall, [CodePushGo](/register/) is a powerful and flexible alternative to Expo
 | Sandbox app for test | ✅ | ✅ |
 | React Native | ❌ | ✅ |
 | React | ✅ | ❌ |
-| Capacitor | ✅ | ❌ React-native only |
+| React Native | ✅ | ❌ React-native only |
 | Affordable pricing | ✅ | ✅ |
 | Native build | ❌ | ✅ |
 | 100% Open source | ✅ | ❌ |

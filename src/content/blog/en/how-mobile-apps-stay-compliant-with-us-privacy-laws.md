@@ -70,7 +70,7 @@ Securing data is a core component of privacy compliance. Developers should use *
 
 ### Tools for Privacy-Focused Development
 
-Certain tools can help maintain privacy compliance throughout the development process. For instance, CodePushGo provides solutions tailored for Capacitor apps that meet U.S. state privacy regulations.
+Certain tools can help maintain privacy compliance throughout the development process. For instance, CodePushGo provides solutions tailored for React Native apps that meet U.S. state privacy regulations.
 
 Here are some key features to consider when choosing privacy-focused development tools:
 

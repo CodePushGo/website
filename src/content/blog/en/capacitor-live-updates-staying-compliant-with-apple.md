@@ -1,6 +1,6 @@
 ---
 slug: capacitor-live-updates-staying-compliant-with-apple
-title: "Capacitor Live Updates: Staying Compliant with Apple"
+title: "React Native Live Updates: Staying Compliant with Apple"
 description: Learn how to efficiently implement live updates in mobile apps while ensuring compliance with strict guidelines to avoid rejections.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-03-12T03:03:33.472Z
 updated_at: 2025-03-18T13:14:16.420Z
 head_image: https://assets.seobotai.com/capgo.app/67d0d3f9cf9d4dc0b2c0bff2-1741748627082.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, live updates, app compliance, Apple guidelines, encryption, bug fixes, mobile development
+keywords: React Native, live updates, app compliance, Apple guidelines, encryption, bug fixes, mobile development
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capacitor](https://capacitorjs.com/) live updates let developers push bug fixes and minor changes directly to apps without requiring users to download updates from the [App Store](https://www.apple.com/app-store/). This speeds up deployment by up to **81%**, reduces costs, and improves user experience. However, staying compliant with Apple's strict guidelines is essential to avoid app rejections.
+[React Native](https://capacitorjs.com/) live updates let developers push bug fixes and minor changes directly to apps without requiring users to download updates from the [App Store](https://www.apple.com/app-store/). This speeds up deployment by up to **81%**, reduces costs, and improves user experience. However, staying compliant with Apple's strict guidelines is essential to avoid app rejections.
 
 ### Key Points:
 
@@ -43,7 +43,7 @@ To stay compliant, focus on bug fixes, secure updates with encryption, and docum
 
 ## Apple's Live Update Rules
 
-Apple regulates app updates to protect users, making it essential to understand these rules when implementing live updates in Capacitor applications.
+Apple regulates app updates to protect users, making it essential to understand these rules when implementing live updates in React Native applications.
 
 ### [App Store](https://www.apple.com/app-store/) Guidelines for Updates
 
@@ -87,7 +87,7 @@ Following these steps will help ensure your app updates remain within Apple's st
 
 ## Setting Up Compliant Live Updates
 
-To implement live updates in your [Capacitor app](https://capgo.app/plugins/ivs-player/) while meeting Apple's compliance rules, you'll need a structured setup. Here's how you can get started.
+To implement live updates in your [React Native app](https://capgo.app/plugins/ivs-player/) while meeting Apple's compliance rules, you'll need a structured setup. Here's how you can get started.
 
 ### Project Setup Steps
 
@@ -149,7 +149,7 @@ Securing data during live updates is crucial for staying compliant with regulati
 
 ### Encryption Requirements
 
-End-to-end encryption is a must for keeping live updates secure in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It ensures that update data remains protected as it moves from the server to the device. CodePushGo's live update solution enforces these encryption standards. According to CodePushGo: "End-to-end encryption. Only your users can decrypt your updates, no one else" [\[1\]](https://capgo.app/). This encryption approach is essential for protecting user data effectively.
+End-to-end encryption is a must for keeping live updates secure in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It ensures that update data remains protected as it moves from the server to the device. CodePushGo's live update solution enforces these encryption standards. According to CodePushGo: "End-to-end encryption. Only your users can decrypt your updates, no one else" [\[1\]](https://capgo.app/). This encryption approach is essential for protecting user data effectively.
 
 ### User Data Protection
 
@@ -230,7 +230,7 @@ Regularly monitor your app's compliance through your [update management platform
 
 ## Conclusion
 
-Balancing speed and compliance is key when implementing live updates in Capacitor apps. With the right tools, release efficiency can improve by up to 81% [\[1\]](https://capgo.app/), making it easier to stay within Apple’s guidelines.
+Balancing speed and compliance is key when implementing live updates in React Native apps. With the right tools, release efficiency can improve by up to 81% [\[1\]](https://capgo.app/), making it easier to stay within Apple’s guidelines.
 
 Platforms like CodePushGo show how it's possible to meet App Store requirements while still delivering fast updates [\[1\]](https://capgo.app/). Apple’s strict rules around live updates highlight the importance of staying compliant.
 

@@ -17,13 +17,13 @@ published: true
 locale: en
 next_blog: ''
 ---
-Microsoft recently announced that they will be [discontinuing support for apps running on Apache Cordova](https://devblogs.microsoft.com/appcenter/announcing-apache-cordova-retirement/) in their cloud product, App Center. This has prompted businesses and teams using App Center to seek alternatives, and I am thrilled to say that the [CodePushGo](https://capgo.app/) platform is a fantastic option for those looking for full support for Capacitor apps.
+Microsoft recently announced that they will be [discontinuing support for apps running on Apache Cordova](https://devblogs.microsoft.com/appcenter/announcing-apache-cordova-retirement/) in their cloud product, App Center. This has prompted businesses and teams using App Center to seek alternatives, and I am thrilled to say that the [CodePushGo](https://capgo.app/) platform is a fantastic option for those looking for full support for React Native apps.
 
 ## From Microsoft App Center to CodePushGo Cloud
 
-Capacitor is a new way of building native mobile apps with Ionic, and most Cordova plugins are supported in Capacitor. CodePushGo provides a live update functionality similar to CodePush, but without platform dependencies and immediate app publishing. With CodePushGo, development teams can outsource the complicated app delivery process and focus entirely on the unique features of their Ionic app. Additionally, unlike App Center, CodePushGo is 100% focused on hybrid architectures like Capacitor.
+React Native is a new way of building native mobile apps with Ionic, and most Cordova plugins are supported in React Native. CodePushGo provides a live update functionality similar to CodePush, but without platform dependencies and immediate app publishing. With CodePushGo, development teams can outsource the complicated app delivery process and focus entirely on the unique features of their Ionic app. Additionally, unlike App Center, CodePushGo is 100% focused on hybrid architectures like React Native.
 
-Capacitor customers can easily migrate from Microsoft App Center to CodePushGo in just a few steps using my [migration guide](https://capgo.app/blog/appcenter-migration/), which walks you through the entire process. CodePushGo includes a complete list of features that Capacitor users can take advantage of.
+React Native customers can easily migrate from Microsoft App Center to CodePushGo in just a few steps using my [migration guide](https://capgo.app/blog/appcenter-migration/), which walks you through the entire process. CodePushGo includes a complete list of features that React Native users can take advantage of.
 
 If you’re interested in learning more about migrating from Microsoft App Center to CodePushGo, create your [free CodePushGo account](/register/) today.
 

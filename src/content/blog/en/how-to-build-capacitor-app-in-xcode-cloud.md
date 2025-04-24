@@ -1,15 +1,15 @@
 ---
 slug: how-to-build-capacitor-app-in-xcode-cloud
-title: How to build Ionic Capacitor app in Xcode Cloud
-description: Use Xcode cloud to build your Capacitor JS app and bypass the need of MacOS.
+title: How to build Ionic React Native app in Xcode Cloud
+description: Use Xcode cloud to build your React Native JS app and bypass the need of MacOS.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
 created_at: 2022-09-01T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /xcode_cloud.webp
-head_image_alt: Capacitor Xcode cloud build
-keywords: Xcode Cloud, Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+head_image_alt: React Native Xcode cloud build
+keywords: Xcode Cloud, React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
 locale: en
@@ -20,7 +20,7 @@ locale: en
 Before continuing with the tutorial…
 
 -   Make sure you use GitHub
--   Use Capacitor
+-   Use React Native
 -   Your app is already deployed on Apple Store
 -   Desire to read 😆…
 
@@ -41,7 +41,7 @@ You can see in the screenshot price and limits (prices as of the creation of the
 
 ## Intro
 
-To make Xcode build your Capacitor app, you need to set up a few things.
+To make Xcode build your React Native app, you need to set up a few things.
 
 ## Package Preparation
 

@@ -19,22 +19,22 @@ Store the private key securely. Never commit it to source control or share it wi
 
 This command:
 - Creates a new key pair in your app
-- Removes the old key from your Capacitor config
+- Removes the old key from your React Native config
 - Keeps old key files for backward compatibility
 
-## 2. Update Capacitor Config
+## 2. Update React Native Config
 
-When prompted "Do you want to setup encryption with the new channel in order to support old apps and facilitate the migration?", select yes. This adds a new `defaultChannel` option to your Capacitor config.
+When prompted "Do you want to setup encryption with the new channel in order to support old apps and facilitate the migration?", select yes. This adds a new `defaultChannel` option to your React Native config.
 
 ```ts
 // capacitor.config.ts
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   appName: 'Example App',
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       // ... other options
       defaultChannel: 'encryption_v2' // New apps will use this channel
     }
@@ -67,14 +67,14 @@ npx @capgo/cli bundle upload --channel production
 ```
 
 :::tip
-Capacitor config is never uploaded to CodePushGo
+React Native config is never uploaded to CodePushGo
 :::
 
 ## 6. Cleanup (After 3-4 Months)
 
 Once all users have updated their apps:
 
-1. Remove `defaultChannel` from your Capacitor config
+1. Remove `defaultChannel` from your React Native config
 2. Delete the old channel:
 
 ```bash

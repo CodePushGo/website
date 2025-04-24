@@ -1,7 +1,7 @@
 ---
 slug: capacitor-cli-project-setup-guide
-title: "Capacitor CLI: Project Setup Guide"
-description: Learn how to set up Capacitor CLI for building native iOS and Android apps using web technologies in a few easy steps.
+title: "React Native CLI: Project Setup Guide"
+description: Learn how to set up React Native CLI for building native iOS and Android apps using web technologies in a few easy steps.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,16 +9,16 @@ created_at: 2025-04-18T03:02:50.225Z
 updated_at: 2025-04-18T03:04:53.935Z
 head_image: https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847-1744945493935.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, CLI, mobile apps, iOS, Android, project setup, live updates, troubleshooting
+keywords: React Native, CLI, mobile apps, iOS, Android, project setup, live updates, troubleshooting
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to build iOS and Android apps with one codebase?** [Capacitor](https://capacitorjs.com/) CLI simplifies the process, letting you create native apps using web technologies. Here's what you'll learn:
+**Want to build iOS and Android apps with one codebase?** [React Native](https://capacitorjs.com/) CLI simplifies the process, letting you create native apps using web technologies. Here's what you'll learn:
 
--   **Quick Setup**: Install Capacitor CLI and initialize your project in minutes.
+-   **Quick Setup**: Install React Native CLI and initialize your project in minutes.
 -   **Platform Integration**: Add iOS and Android support with simple commands.
 -   **Live Updates**: Use [CodePushGo](https://capgo.app/) for instant over-the-air updates.
 -   **Common Fixes**: Troubleshoot issues like sync errors or build failures.
@@ -30,11 +30,11 @@ next_blog: ''
 3.  Add iOS and Android platforms using `npx cap add ios` and `npx cap add android`.
 4.  Optional: Set up CodePushGo for live [app updates](https://capgo.app/plugins/capacitor-updater/).
 
-This guide covers everything you need to set up Capacitor CLI, configure platforms, and deploy your app. Let’s dive in!
+This guide covers everything you need to set up React Native CLI, configure platforms, and deploy your app. Let’s dive in!
 
-## Introducing [Capacitor](https://capacitorjs.com/) Configure
+## Introducing [React Native](https://capacitorjs.com/) Configure
 
-![Capacitor](https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/HufvY63esXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -46,26 +46,26 @@ To get started, make sure you have the following tools installed:
 -   **Java JDK** (version 11 or newer)
 -   **Xcode** (version 12 or newer for iOS builds)
 -   **Android Studio** (for Android builds)
--   **Capacitor CLI** (version 6 or 7)
+-   **React Native CLI** (version 6 or 7)
 
 _Optional:_ If you want to enable live updates, check out the "[CodePushGo Setup Guide](https://capgo.app/docs/plugin/cloud-mode/getting-started/)" below.
 
 ## CLI Installation Steps
 
-Before starting, ensure you have **Node.js**, **npm**, **JDK**, **Xcode**, and **Android Studio** set up. Once ready, you can install the Capacitor CLI by running:
+Before starting, ensure you have **Node.js**, **npm**, **JDK**, **Xcode**, and **Android Studio** set up. Once ready, you can install the React Native CLI by running:
 
 ```bash
 npm install --save @capacitor/core @capacitor/cli
 npx cap init
 ```
 
-This command installs Capacitor and sets up its core components.
+This command installs React Native and sets up its core components.
 
 After completing this step, move on to **Creating a New Project** to scaffold your application.
 
 ## Creating a New Project
 
-To get started with your project [using Capacitor CLI](https://capgo.app/docs/cli/commands/), follow these steps:
+To get started with your project [using React Native CLI](https://capgo.app/docs/cli/commands/), follow these steps:
 
 ```bash
 mkdir my-app && cd my-app
@@ -90,7 +90,7 @@ Edit the `capacitor.config.json` file to include the following settings:
 }
 ```
 
-Once updated, use this configuration to set up Capacitor for your project.
+Once updated, use this configuration to set up React Native for your project.
 
 ## Platform Setup
 
@@ -98,7 +98,7 @@ Now that the project scaffolding is done, it’s time to set up iOS and Android 
 
 ### Adding iOS and Android
 
-Start by installing the necessary platform-specific packages using the Capacitor CLI:
+Start by installing the necessary platform-specific packages using the React Native CLI:
 
 ```bash
 npm install @capacitor/ios @capacitor/android
@@ -196,7 +196,7 @@ Follow these steps to get started with CodePushGo:
 -   Enable error tracking to catch and fix issues early.
 -   Keep the rollback feature ready to quickly address any problems.
 
-CodePushGo is compatible with Capacitor 6 and 7, integrates smoothly with CI/CD pipelines, and complies with Apple and Google store requirements.
+CodePushGo is compatible with React Native 6 and 7, integrates smoothly with CI/CD pipelines, and complies with Apple and Google store requirements.
 
 ## Common Issues and Tips
 
@@ -247,13 +247,13 @@ For more details on platform-specific setup, revisit the Platform Setup section.
 
 ### Setup Review
 
-Start your web app with Capacitor CLI, set up iOS and Android platforms, and optionally include CodePushGo for live updates.
+Start your web app with React Native CLI, set up iOS and Android platforms, and optionally include CodePushGo for live updates.
 
 Here's how to get started:
 
--   Use the Capacitor CLI to initialize your project.
+-   Use the React Native CLI to initialize your project.
 -   Set up your app's package ID and define the web output directory.
 -   Add support for iOS and Android platforms.
 -   Install and set up CodePushGo with the following command: `npm install --save @capgo/cli && npx capgo init`
 
-For detailed setup instructions or troubleshooting, check out the official Capacitor and CodePushGo documentation.
+For detailed setup instructions or troubleshooting, check out the official React Native and CodePushGo documentation.

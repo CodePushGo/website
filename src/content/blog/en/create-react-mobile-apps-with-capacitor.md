@@ -1,8 +1,8 @@
 ---
 slug: create-react-mobile-apps-with-capacitor
-title: Building Mobile Apps with React and Capacitor
+title: Building Mobile Apps with React and React Native
 description: >-
-  Learn how to build a mobile app using React, Capacitor, and enhance the native
+  Learn how to build a mobile app using React, React Native, and enhance the native
   UI with Konsta UI.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -10,27 +10,27 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2023-02-21T00:00:00.000Z
 updated_at: 2023-03-10T00:00:00.000Z
 head_image: /react_capacitor.webp
-head_image_alt: React and Capacitor illustration
-keywords: React, Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+head_image_alt: React and React Native illustration
+keywords: React, React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
 locale: en
 next_blog: update-your-capacitor-apps-seamlessly-using-capacitor-updater
 ---
 
-In this tutorial, we'll begin with a new [React](https://reactjs.org/) app and transition to native mobile development using Capacitor. Optionally, you can also add [Konsta UI](https://konstaui.com/) for an improved mobile UI with Tailwind CSS.
+In this tutorial, we'll begin with a new [React](https://reactjs.org/) app and transition to native mobile development using React Native. Optionally, you can also add [Konsta UI](https://konstaui.com/) for an improved mobile UI with Tailwind CSS.
 
-Capacitor allows you to easily convert your React web application into a native mobile app without significant modifications or learning a new skill like React Native.
+React Native allows you to easily convert your React web application into a native mobile app without significant modifications or learning a new skill like React Native.
 
 With just a few simple steps, most React applications can be transformed into mobile apps.
 
-This tutorial will guide you through the process, starting with a new React app and then incorporating Capacitor to move into the realm of native mobile apps. Additionally, you can optionally use [Konsta UI](https://konstaui.com/) to enhance your mobile UI with Tailwind CSS.
+This tutorial will guide you through the process, starting with a new React app and then incorporating React Native to move into the realm of native mobile apps. Additionally, you can optionally use [Konsta UI](https://konstaui.com/) to enhance your mobile UI with Tailwind CSS.
 
-## About Capacitor
+## About React Native
 
-CapacitorJS is a game-changer! You can effortlessly incorporate it into any web project, and it will wrap your application into a native webview, generating the native Xcode and Android Studio project for you. Plus, its plugins provide access to native device features like the camera via a JS bridge.
+React NativeJS is a game-changer! You can effortlessly incorporate it into any web project, and it will wrap your application into a native webview, generating the native Xcode and Android Studio project for you. Plus, its plugins provide access to native device features like the camera via a JS bridge.
 
-With Capacitor, you get a fantastic native mobile app without any complicated setup or steep learning curve. Its slim API and streamlined functionality make it a breeze to integrate into your project. Trust me, you'll be amazed at how effortless it is to achieve a fully functional native app with Capacitor!
+With React Native, you get a fantastic native mobile app without any complicated setup or steep learning curve. Its slim API and streamlined functionality make it a breeze to integrate into your project. Trust me, you'll be amazed at how effortless it is to achieve a fully functional native app with React Native!
 
 ## Preparing Your React App
 
@@ -55,23 +55,23 @@ In order to create a native mobile app, we require an **export** of our project.
 
 You can now run `npm run build` without any worries, and you should be able to spot a fresh out folder at your project's root.
 
-This folder will be used by Capacitor later on, but for now, we must set it up correctly.
+This folder will be used by React Native later on, but for now, we must set it up correctly.
 
-## Adding Capacitor to Your React App
+## Adding React Native to Your React App
 
 To package any web app into a native mobile container, we must follow a few initial steps, but afterward it's as simple as executing a single `sync` command.
 
-Firstly, we can install the [Capacitor CLI](https://capacitorjs.com/docs/cli/) as a development dependency, and then set it up within our project. During the setup, you can press “enter” to accept the default values for name and bundle ID.
+Firstly, we can install the [React Native CLI](https://capacitorjs.com/docs/cli/) as a development dependency, and then set it up within our project. During the setup, you can press “enter” to accept the default values for name and bundle ID.
 
 Next, we need to install the core package and the relevant packages for the iOS and Android platforms.
 
-Finally, we can add the platforms, and Capacitor will create folders for each platform at the root of our project:
+Finally, we can add the platforms, and React Native will create folders for each platform at the root of our project:
 
 ```shell
-# Install the Capacitor CLI locally
+# Install the React Native CLI locally
 npm install -D @capacitor/cli
 
-# Initialize Capacitor in your React project
+# Initialize React Native in your React project
 npx cap init
 
 # Install the required packages
@@ -88,7 +88,7 @@ By this point, you should be able to observe new **ios** and **android** folders
 
 To access the Android project later, you must install [Android Studio](https://developer.android.com/studio/). For iOS, you need a Mac and should install [Xcode](https://developer.apple.com/xcode/).
 
-Additionally, you should find a **capacitor.config.ts** file in your project, which contains some fundamental Capacitor settings utilized during the sync. The only thing you need to pay attention to is the **webDir**, which must point to the result of your build command. Currently, it is inaccurate.
+Additionally, you should find a **capacitor.config.ts** file in your project, which contains some fundamental React Native settings utilized during the sync. The only thing you need to pay attention to is the **webDir**, which must point to the result of your build command. Currently, it is inaccurate.
 
 To rectify this, open the **capacitor.config.json** file and update the **webDir**:
 
@@ -112,7 +112,7 @@ The first command `npm run build` will simply build your React project and expor
 
 While the second command `npx cap sync` will sync all the web code into the right places of the native platforms so they can be displayed in an app.
 
-Additionally, the sync command might update the native platforms and install plugins, so when you install a new [Capacitor plugins](https://capacitorjs.com/docs/plugins/) it’s time to run `npx cap sync` again.
+Additionally, the sync command might update the native platforms and install plugins, so when you install a new [React Native plugins](https://capacitorjs.com/docs/plugins/) it’s time to run `npx cap sync` again.
 
 Without noticing, you are now actually done, so let’s see the app on a device!
 
@@ -120,7 +120,7 @@ Without noticing, you are now actually done, so let’s see the app on a device!
 
 To develop iOS apps, you need to have **Xcode** installed, and for Android apps, you need to have **Android Studio** installed. Moreover, if you plan to distribute your app on the app store, you need to enroll in the Apple Developer Program for iOS and the Google Play Console for Android.
 
-If you're new to native mobile development, you can use the Capacitor CLI to easily open both native projects:
+If you're new to native mobile development, you can use the React Native CLI to easily open both native projects:
 
 ```shell
 npx cap open ios
@@ -143,11 +143,11 @@ Congratulations! You have successfully deployed your React web app to a mobile d
 
 But hold on, there's also a faster way to do this during development...
 
-## Capacitor Live Reload
+## React Native Live Reload
 
 By now, you're probably used to having hot reload with all modern frameworks, and the good news is that you can have the same functionality **on a mobile device** with minimal effort!
 
-Enable access to your locally hosted application with live reload **on your network** by having the Capacitor app load the content from the specific URL.
+Enable access to your locally hosted application with live reload **on your network** by having the React Native app load the content from the specific URL.
 
 The first step is to figure out your local IP address. If you're using a Mac, you can find this out by running the following command in the terminal:
 
@@ -163,12 +163,12 @@ ipconfig
 
 Then look for the IPv4 address.
 
-We can instruct Capacitor to load the app directly from the server by adding another entry to our `capacitor.config.ts` file:
+We can instruct React Native to load the app directly from the server by adding another entry to our `capacitor.config.ts` file:
 
 ```javascript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   appName: 'my-app',
   webDir: 'out',
@@ -198,9 +198,9 @@ You can now deploy your app one more time through Android Studio or Xcode. After
 
 Note that you should use the correct IP and port in your configuration. The code block above shows the default React port for demonstration purposes.
 
-## Using Capacitor Plugins
+## Using React Native Plugins
 
-Let's take a look at how to use a Capacitor plugin in action, which we've mentioned a few times before. To do this, we can install a fairly simple plugin by running:
+Let's take a look at how to use a React Native plugin in action, which we've mentioned a few times before. To do this, we can install a fairly simple plugin by running:
 
 ```shell
 npm i @capacitor/share
@@ -224,7 +224,7 @@ function App() {
 
   return (
     <div>
-      <h1>Welcome to React and Capacitor!</h1>
+      <h1>Welcome to React and React Native!</h1>
       <p>
         <h2>Cool channel</h2>
         <button onClick={() => share()}>Share now!</button>
@@ -354,7 +354,7 @@ function App() {
 export default App;
 ```
 
-If the live reload is out of sync after installing all the necessary components, try restarting everything. Once you have done that, you should see a mobile app with a somewhat native look, built with React and Capacitor!
+If the live reload is out of sync after installing all the necessary components, try restarting everything. Once you have done that, you should see a mobile app with a somewhat native look, built with React and React Native!
 
 You should see the following page as a result:
 
@@ -364,7 +364,7 @@ You should see the following page as a result:
 
 ## Conclusion
 
-Capacitor is an excellent option for building native applications based on an existing web project, offering a simple way to share code and maintain a consistent UI.
+React Native is an excellent option for building native applications based on an existing web project, offering a simple way to share code and maintain a consistent UI.
 
 And with the addition of [CodePushGo](https://capgo.app/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
 

@@ -1,6 +1,6 @@
 ---
 slug: automatic-capacitor-android-build-gitlab
-title: Automatic Capacitor Android build with GitLab
+title: Automatic React Native Android build with GitLab
 description: >-
   How to set up a CI/CD pipeline for your Android Ionic app using fastlane and
   GitLab in 5 mins
@@ -20,7 +20,7 @@ next_blog: null
 
 # Automatic Android Builds with GitLab CI
 
-Setting up CI/CD for Capacitor apps can be complex and time-consuming. Here's what you need to know:
+Setting up CI/CD for React Native apps can be complex and time-consuming. Here's what you need to know:
 
 ## Prerequisites
 

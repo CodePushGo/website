@@ -2,7 +2,7 @@
 slug: self-hosted-capgo
 title: Self hosted CodePushGo
 description: >-
-  Self-hosting CodePushGo allows you to deploy Capacitor live updates to your users
+  Self-hosting CodePushGo allows you to deploy React Native live updates to your users
   without having to use the CodePushGo cloud service.
 author: Anik Dhabal Babu
 author_image_url: 'https://avatars.githubusercontent.com/u/81948346?v=4'
@@ -71,13 +71,13 @@ We mainly use Supabase in CodePushGo, to self host you just need to follow the [
 To use the CLI with self-hosted capgo edit the capacitor.config.ts from your app directory and set it like this:
 
 ```ts
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.demo.app',
   appName: 'demoApp',
   webDir: 'dist',
   bundledWebRuntime: false,
   plugins: {
-    CapacitorUpdater : {
+    React NativeUpdater : {
       localHost: "http://localhost:5173",
       localWebHost: "http://localhost:5173",
       localSupa: "http://localhost:54321",
@@ -98,13 +98,13 @@ Cloned [capgo](https://github.com/Cap-go/capgo/)
 To use the capacitor updater with self-hosted capgo edit the `capacitor.config.ts` from your app directory and set it like this:
 
 ```ts
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.demo.app',
   appName: 'demoApp',
   webDir: 'dist',
   bundledWebRuntime: false,
   plugins: {
-    CapacitorUpdater : {
+    React NativeUpdater : {
       statsUrl: "http://localhost:54321/functions/v1/stats",
       channelUrl: "http://localhost:54321/functions/v1/channel_self",
       updateUrl: "http://localhost:54321/functions/v1/updates"

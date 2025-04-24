@@ -9,7 +9,7 @@ created_at: 2025-03-18T06:14:25.862Z
 updated_at: 2025-03-18T15:14:16.781Z
 head_image: /capgo_banner.webp
 head_image_alt: 'Live Updates Architecture'
-keywords: 'CodePushGo live updates, OTA updates, Capacitor updates, mobile app development, app updates'
+keywords: 'CodePushGo live updates, OTA updates, React Native updates, mobile app development, app updates'
 tag: 'Development, Mobile, Updates'
 published: true
 locale: en
@@ -18,11 +18,11 @@ next_blog: ''
 
 # Understanding Live Updates in CodePushGo
 
-Live updates are one of the most powerful features in Capacitor apps, allowing real-time updates without app store submissions. Let's dive deep into how CodePushGo implements this functionality.
+Live updates are one of the most powerful features in React Native apps, allowing real-time updates without app store submissions. Let's dive deep into how CodePushGo implements this functionality.
 
 ## Core Concepts
 
-A Capacitor app consists of two main layers:
+A React Native app consists of two main layers:
 
 1. **Web Layer**: Contains HTML, CSS, and JavaScript files loaded in the WebView
 2. **Native Layer**: Contains platform-specific code (Java/Kotlin for Android, Swift for iOS)
@@ -31,7 +31,7 @@ CodePushGo's live update system works by replacing the web layer at runtime, as 
 
 ## Technical Implementation
 
-### Server Paths in Capacitor
+### Server Paths in React Native
 
 CodePushGo manages two critical paths:
 
@@ -44,7 +44,7 @@ On Android, CodePushGo manages paths through:
 
 ```java
 // Store next server path
-private void setNextCapacitorServerPath(String path) {
+private void setNextReact NativeServerPath(String path) {
     SharedPreferences prefs = context.getSharedPreferences("CapWebViewSettings", Activity.MODE_PRIVATE);
     SharedPreferences.Editor editor = prefs.edit();
     editor.putString("serverBasePath", path);
@@ -52,7 +52,7 @@ private void setNextCapacitorServerPath(String path) {
 }
 
 // Update current path and reload
-private void setCurrentCapacitorServerPath(String path) {
+private void setCurrentReact NativeServerPath(String path) {
     bridge.setServerBasePath(path);
     bridge.reload();
 }
@@ -64,12 +64,12 @@ On iOS, paths are managed through:
 
 ```swift
 // Store next server path
-private func setNextCapacitorServerPath(path: String) {
+private func setNextReact NativeServerPath(path: String) {
     KeyValueStore.standard["serverBasePath"] = path
 }
 
 // Update current path
-private func setCurrentCapacitorServerPath(path: String) {
+private func setCurrentReact NativeServerPath(path: String) {
     bridge.viewController.setServerBasePath(path: path)
 }
 ```
@@ -140,7 +140,7 @@ This behavior is controlled by the `autoUpdate` setting:
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true // Enable automatic updates
     }
   }
@@ -158,11 +158,11 @@ When a new version is detected, if `autoUpdate` is enabled:
 
 You can monitor this process through events:
 ```typescript
-CapacitorUpdater.addListener('download', (info: DownloadEvent) => {
+React NativeUpdater.addListener('download', (info: DownloadEvent) => {
   console.log('Auto-download progress:', info.percent);
 });
 
-CapacitorUpdater.addListener('downloadComplete', (info: DownloadCompleteEvent) => {
+React NativeUpdater.addListener('downloadComplete', (info: DownloadCompleteEvent) => {
   console.log('Auto-download complete:', info.bundle);
 });
 ```
@@ -175,7 +175,7 @@ The installation timing depends on your configuration:
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true,
       "directUpdate": false // install update on app backgrounding
       "resetWhenUpdate": true, // reset live updates on native update (true by default)
@@ -201,23 +201,23 @@ You can control when updates are installed using delay conditions:
 
 ```typescript
 // Delay until app goes to background
-await CapacitorUpdater.setDelay({
+await React NativeUpdater.setDelay({
   kind: 'background'
 });
 
 // Delay until specific date
-await CapacitorUpdater.setDelay({
+await React NativeUpdater.setDelay({
   kind: 'date',
   value: '2024-03-20T10:00:00.000Z'
 });
 
 // Delay until next native version
-await CapacitorUpdater.setDelay({
+await React NativeUpdater.setDelay({
   kind: 'nativeVersion'
 });
 
 // Multiple conditions
-await CapacitorUpdater.setMultiDelay({
+await React NativeUpdater.setMultiDelay({
   delayConditions: [
     {
       kind: 'background'

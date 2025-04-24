@@ -1,24 +1,24 @@
 ---
 slug: integrate-universal-links-capacitor-nextjs
-title: How to Integrate Universal Links in Next.js with Capacitor
+title: How to Integrate Universal Links in Next.js with React Native
 description: >-
   Learn step by step how to set up universal links for your Next.js app with
-  Capacitor on both iOS and Android platforms.
+  React Native on both iOS and Android platforms.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://twitter.com/martindonadieu'
 created_at: 2023-12-14T00:00:00.000Z
 updated_at: 2023-12-14T00:00:00.000Z
 head_image: /deeplink_next_capacitor.webp
-head_image_alt: Capacitor Universal Links
-keywords: Capacitor, Universal Links, Next.js, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+head_image_alt: React Native Universal Links
+keywords: React Native, Universal Links, Next.js, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: DeepLinking
 published: true
 locale: en
 next_blog: ''
 ---
 
-Universal links on iOS and App Links on Android allow users to be taken directly into your app from a link, bypassing the browser. This is particularly useful for improving user experience and maintaining the context from a web page to an app. In this guide, we'll walk through the process of setting up these deep links for a Next.js app using Capacitor.
+Universal links on iOS and App Links on Android allow users to be taken directly into your app from a link, bypassing the browser. This is particularly useful for improving user experience and maintaining the context from a web page to an app. In this guide, we'll walk through the process of setting up these deep links for a Next.js app using React Native.
 
 Setting up deep links doesn't require a lot of code, but it does involve some configuration. By the end of this guide, you'll be able to click a link like `https://www.capgo.app/details/22` and have your app open to the correct page if it's installed.
 
@@ -68,7 +68,7 @@ function DetailsPage() {
 export default DetailsPage
 ```
 
-Now, let's handle the `appUrlOpen` event with Capacitor. This event is triggered when the app is opened via a custom URL scheme. Add a listener in the `pages/_app.js` file:
+Now, let's handle the `appUrlOpen` event with React Native. This event is triggered when the app is opened via a custom URL scheme. Add a listener in the `pages/_app.js` file:
 
 ```jsx
 import { useEffect } from 'react'
@@ -151,9 +151,9 @@ adb install capgo.apk
 
 This will install the signed app on your connected Android device.
 
-## Capacitor Configure for Native Project Settings
+## React Native Configure for Native Project Settings
 
-To automate native project settings, consider using the [Capacitor configure package](https://github.com/ionic-team/capacitor-configure/). Install it in your project:
+To automate native project settings, consider using the [React Native configure package](https://github.com/ionic-team/capacitor-configure/). Install it in your project:
 
 ```sh
 npm install @capacitor/configure
@@ -186,4 +186,4 @@ This will apply the settings specified in the YAML file to your native projects.
 
 ## Conclusion
 
-Setting up deep links with Capacitor for a Next.js app involves configuring your domain and project settings for both iOS and Android. While the process requires attention to detail, it's streamlined compared to older methods and doesn't require additional plugins. Ensure your domain verification files are correctly served and check them with the respective platform tools. Once set up, your app will seamlessly open from web links, providing a smooth transition for your users from web to app.
+Setting up deep links with React Native for a Next.js app involves configuring your domain and project settings for both iOS and Android. While the process requires attention to detail, it's streamlined compared to older methods and doesn't require additional plugins. Ensure your domain verification files are correctly served and check them with the respective platform tools. Once set up, your app will seamlessly open from web links, providing a smooth transition for your users from web to app.

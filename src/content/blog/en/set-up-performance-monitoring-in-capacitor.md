@@ -1,6 +1,6 @@
 ---
 slug: set-up-performance-monitoring-in-capacitor
-title: Set Up Performance Monitoring in Capacitor
+title: Set Up Performance Monitoring in React Native
 description: Learn how to set up performance monitoring in your app using Firebase and Sentry for improved efficiency and user satisfaction.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-03-23T05:36:41.635Z
 updated_at: 2025-03-23T05:37:33.934Z
 head_image: https://assets.seobotai.com/capgo.app/67df674387fa49042c75b4e1-1742708253934.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, performance monitoring, Firebase, Sentry, mobile app development, error tracking, monitoring tools
+keywords: React Native, performance monitoring, Firebase, Sentry, mobile app development, error tracking, monitoring tools
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to optimize your [Capacitor](https://capacitorjs.com/) app's performance?** Monitoring tools like [Firebase](https://firebase.google.com/) and [Sentry](https://sentry.io/) can help you track crashes, resource usage, and response times, ensuring a smoother user experience. Here's a quick breakdown:
+**Want to optimize your [React Native](https://capacitorjs.com/) app's performance?** Monitoring tools like [Firebase](https://firebase.google.com/) and [Sentry](https://sentry.io/) can help you track crashes, resource usage, and response times, ensuring a smoother user experience. Here's a quick breakdown:
 
 -   **Why Monitor Performance**: Identify crashes, optimize resource usage, and improve response times.
 -   **Tools to Use**:
@@ -73,7 +73,7 @@ When deciding between these tools, consider the following:
 
 ## Firebase Setup Guide
 
-Setting up Firebase Performance Monitoring in your [Capacitor app](https://capgo.app/plugins/ivs-player/) requires a few clear steps to ensure accurate data tracking.
+Setting up Firebase Performance Monitoring in your [React Native app](https://capgo.app/plugins/ivs-player/) requires a few clear steps to ensure accurate data tracking.
 
 ### Install Firebase SDK
 
@@ -397,7 +397,7 @@ Performance monitoring tools and practices are always advancing. Stay ahead by e
 **Official Documentation**:
 
 -   Firebase Performance Monitoring documentation
--   Sentry's Capacitor integration guide
--   Capacitor's official performance optimization guides
+-   Sentry's React Native integration guide
+-   React Native's official performance optimization guides
 
 **Advanced Implementation**: Explore CodePushGo's analytics system, successfully used in over 750 production apps [\[1\]](https://capgo.app/). Their documentation provides insights into monitoring patterns and live update strategies that work seamlessly with other performance tracking tools.

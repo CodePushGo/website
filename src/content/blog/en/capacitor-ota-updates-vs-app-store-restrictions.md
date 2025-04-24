@@ -1,6 +1,6 @@
 ---
 slug: capacitor-ota-updates-vs-app-store-restrictions
-title: Capacitor OTA Updates vs App Store Restrictions
+title: React Native OTA Updates vs App Store Restrictions
 description: Explore how OTA updates provide faster, more flexible app deployment compared to traditional app store methods, enhancing efficiency and user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -63,11 +63,11 @@ Because of these controls, developers are turning to alternative methods to keep
 
 Modern OTA systems provide a way to push critical updates quickly without breaking app store guidelines. This approach demonstrates how developers can achieve faster deployment while staying compliant. Up next, we'll dive deeper into how OTA updates offer this agility.
 
-## How [Capacitor](https://capacitorjs.com/) OTA Updates Work
+## How [React Native](https://capacitorjs.com/) OTA Updates Work
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-19.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-19.jpg?auto=compress)
 
-[Capacitor OTA updates](https://capgo.app/ja/) make app deployment faster and more efficient, allowing developers to push changes without waiting for app store approvals.
+[React Native OTA updates](https://capgo.app/ja/) make app deployment faster and more efficient, allowing developers to push changes without waiting for app store approvals.
 
 ### How OTA Updates Work
 
@@ -105,7 +105,7 @@ OTA (Over-the-Air) updates and app store updates differ greatly in terms of spee
 
 Here's a breakdown of the key differences between app store updates and OTA updates, showing why many developers are turning to OTA solutions:
 
-| Feature | App Store Updates | Capacitor OTA Updates |
+| Feature | App Store Updates | React Native OTA Updates |
 | --- | --- | --- |
 | **Deployment Time** | 2–7 days review process | Minutes to hours |
 | **Update Success Rate** | Depends on user action | 95% within 24 hours |

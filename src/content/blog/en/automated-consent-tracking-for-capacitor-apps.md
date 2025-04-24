@@ -1,6 +1,6 @@
 ---
 slug: automated-consent-tracking-for-capacitor-apps
-title: Automated Consent Tracking for Capacitor Apps
+title: Automated Consent Tracking for React Native Apps
 description: Learn how to implement automated consent tracking in apps to enhance privacy compliance and user trust without app store delays.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-04-04T01:27:27.426Z
 updated_at: 2025-04-04T01:27:39.829Z
 head_image: https://assets.seobotai.com/capgo.app/67ef2243ebbb9dc80641c5e1-1743730059829.jpg
 head_image_alt: Mobile Development
-keywords: consent tracking, privacy compliance, user rights, Capacitor apps, data protection
+keywords: consent tracking, privacy compliance, user rights, React Native apps, data protection
 tag: Development, Mobile, Security
 published: true
 locale: en
 next_blog: ''
 ---
 
-Automated consent tracking is essential for [Capacitor](https://capacitorjs.com/) apps to meet privacy regulations and platform rules. Here's why it matters and how to implement it:
+Automated consent tracking is essential for [React Native](https://capacitorjs.com/) apps to meet privacy regulations and platform rules. Here's why it matters and how to implement it:
 
 -   **Why It’s Important**:
     
@@ -48,7 +48,7 @@ Automated consent tracking is essential for [Capacitor](https://capacitorjs.com/
 
 ## Consent Requirements Guide
 
-Adding consent tracking to [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) means meeting the rules set by both Apple and Google. These rules are designed to ensure user privacy and compliance with platform standards.
+Adding consent tracking to [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) means meeting the rules set by both Apple and Google. These rules are designed to ensure user privacy and compliance with platform standards.
 
 ### App Store Policy Requirements
 

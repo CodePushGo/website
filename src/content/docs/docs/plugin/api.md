@@ -12,7 +12,7 @@ See the Github [Readme](https://github.com/Cap-go/capacitor-updater) for more in
 <docgen-config>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-CapacitorUpdater can be configured with these options:
+React NativeUpdater can be configured with these options:
 
 | Prop                         | Type                 | Description                                                                                                                                                                                     | Default                                            | Since   |
 | ---------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------- |
@@ -48,7 +48,7 @@ In `capacitor.config.json`:
 ```json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "appReadyTimeout": 1000 // (1 second),
       "responseTimeout": 10 // (10 second),
       "autoDeleteFailed": false,
@@ -83,11 +83,11 @@ In `capacitor.config.ts`:
 ```ts
 /// <reference types="@capgo/capacitor-updater" />
 
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       appReadyTimeout: 1000 // (1 second),
       responseTimeout: 10 // (10 second),
       autoDeleteFailed: false,
@@ -174,7 +174,7 @@ export default config;
 notifyAppReady() => Promise<AppReadyResult>
 ```
 
-Notify Capacitor Updater that the current bundle is working (a rollback will occur if this method is not called on every app launch)
+Notify React Native Updater that the current bundle is working (a rollback will occur if this method is not called on every app launch)
 By default this method should be called in the first 10 sec after app launch, otherwise a rollback will occur.
 Change this behaviour with {@link appReadyTimeout}
 
@@ -514,7 +514,7 @@ Get unique ID used to identify device (sent to auto update server)
 getPluginVersion() => Promise<PluginVersion>
 ```
 
-Get the native Capacitor Updater plugin version (sent to auto update server)
+Get the native React Native Updater plugin version (sent to auto update server)
 
 **Returns:** <code>Promise&lt;<a href="#pluginversion">PluginVersion</a>&gt;</code>
 

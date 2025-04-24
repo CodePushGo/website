@@ -2,10 +2,10 @@
 slug: create-offline-screen-in-vue-angular-react
 title: >-
   How to Create an Offline Screen in Vue, Angular, and React Applications using
-  the Network API and Capacitor
+  the Network API and React Native
 description: >-
   Learn how to implement an offline screen in Vue, Angular, or React
-  applications using the Network API and Capacitor. Improve the user experience
+  applications using the Network API and React Native. Improve the user experience
   by handling offline scenarios effectively.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -14,7 +14,7 @@ created_at: 2022-06-21T00:00:00.000Z
 updated_at: 2022-06-21T00:00:00.000Z
 head_image: /vue_angular_react.webp
 head_image_alt: Image of a person working on a computer
-keywords: Vue, Angular, React, offline screen, network API, Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+keywords: Vue, Angular, React, offline screen, network API, React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
 locale: en
@@ -78,13 +78,13 @@ Open your terminal and navigate to your project directory. Then, run the followi
 npm install @capacitor/network
 ```
 
-For Capacitor projects, also run the following command to sync the native project files:
+For React Native projects, also run the following command to sync the native project files:
 
 ```shell
 npx cap sync
 ```
 
-Make sure you have the Capacitor CLI installed globally by running:
+Make sure you have the React Native CLI installed globally by running:
 
 ```shell
 npm install -g @capacitor/cli

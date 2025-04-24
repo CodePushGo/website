@@ -9,7 +9,9 @@ import * as m from '../paraglide/messages.js'
     <h2 id="projects">{{ m.projects() }}</h2>
     <p
       v-html="
-        m.there_are_numerous_repositories_in_the_capgo_organization_that_are_part_of_the_capgo().replace('CodePushGo', `<a href='https://github.com/Cap-go'><code>CodePushGo</code></a>`)
+        m
+          .there_are_numerous_repositories_in_the_capgo_organization_that_are_part_of_the_capgo()
+          .replace('CodePushGo', `<a href='https://github.com/Cap-go'><code>CodePushGo</code></a>`)
       "
     />
     <p>{{ m.repositories_have_different_scopes_use_different_programming_languages_and_have_varying_level_when_it_comes_to_contributions() }}</p>

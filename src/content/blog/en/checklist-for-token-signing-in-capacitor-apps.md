@@ -1,7 +1,7 @@
 ---
 slug: checklist-for-token-signing-in-capacitor-apps
-title: Checklist for Token Signing in Capacitor Apps
-description: Follow this comprehensive checklist for secure token signing in Capacitor apps, ensuring data integrity and compliance with U.S. standards.
+title: Checklist for Token Signing in React Native Apps
+description: Follow this comprehensive checklist for secure token signing in React Native apps, ensuring data integrity and compliance with U.S. standards.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-04-20T02:15:22.429Z
 updated_at: 2025-04-20T02:15:38.258Z
 head_image: https://assets.seobotai.com/capgo.app/680454b86000445eb1a68ab2-1745115338258.jpg
 head_image_alt: Mobile Development
-keywords: token signing, Capacitor apps, data integrity, security standards, compliance, JWT, cryptographic library
+keywords: token signing, React Native apps, data integrity, security standards, compliance, JWT, cryptographic library
 tag: Mobile, Security, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-Token signing is essential for securing [Capacitor](https://capacitorjs.com/) apps, ensuring data integrity, authentication, and compliance with U.S. security standards. This guide provides a clear checklist for setup, implementation, and risk management.
+Token signing is essential for securing [React Native](https://capacitorjs.com/) apps, ensuring data integrity, authentication, and compliance with U.S. security standards. This guide provides a clear checklist for setup, implementation, and risk management.
 
 **Key Steps for Token Signing:**
 
@@ -146,7 +146,7 @@ Here’s how these standards apply to token signing:
 
 ## Conclusion
 
-Secure token signing and live-update integration are crucial for maintaining your Capacitor app's integrity and meeting compliance requirements.
+Secure token signing and live-update integration are crucial for maintaining your React Native app's integrity and meeting compliance requirements.
 
 Refer to the checklist provided to ensure your implementation adheres to security standards and U.S. regulations.
 

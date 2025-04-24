@@ -65,7 +65,7 @@ Once your hotfix has passed all tests, you’re ready to set up CodePushGo for d
 
 ### Install Required Packages
 
-To get started with CodePushGo in your Capacitor project, use its CLI tool. Simply run the following command:
+To get started with CodePushGo in your React Native project, use its CLI tool. Simply run the following command:
 
 ```bash
 npx @capgo/cli init
@@ -129,9 +129,9 @@ Once your hotfix is uploaded and labeled, move on to Step 4 to configure your up
 
 ###### sbb-itb-f9944d2
 
-## CodePushGo Live Update System for [Capacitor](https://capacitorjs.com/) Apps
+## CodePushGo Live Update System for [React Native](https://capacitorjs.com/) Apps
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-13.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-13.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/NzXXKoyhTIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 

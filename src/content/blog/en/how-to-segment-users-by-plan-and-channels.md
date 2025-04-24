@@ -40,11 +40,11 @@ This is the more secure method. It involves:
 Here's how to implement it:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 // Get device ID
 const getDeviceId = async () => {
-  const { deviceId } = await CapacitorUpdater.getDeviceId()
+  const { deviceId } = await React NativeUpdater.getDeviceId()
   return deviceId
 }
 
@@ -114,16 +114,16 @@ The backend should also:
 This method allows devices to directly assign themselves to a channel. It's useful for testing but less secure for production:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 // Assign device to channel
 const assignToChannel = async (channel: string) => {
-  await CapacitorUpdater.setChannel(channel)
+  await React NativeUpdater.setChannel(channel)
 }
 
 // Get current channel
 const getCurrentChannel = async () => {
-  const { channel } = await CapacitorUpdater.getChannel()
+  const { channel } = await React NativeUpdater.getChannel()
   return channel
 }
 ```

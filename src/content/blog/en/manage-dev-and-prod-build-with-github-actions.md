@@ -3,7 +3,7 @@ slug: manage-dev-and-prod-build-with-github-actions
 title: Manage development and production build with GitHub actions
 description: >-
   Use CodePushGo to release your devbuild to specific channel, and let your team try
-  your Capacitor Ionic app, without waiting Apple and Google review
+  your React Native Ionic app, without waiting Apple and Google review
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
@@ -21,7 +21,7 @@ This tutorial focuses on the GitHub hosting, but you can adapt it with a little 
 
 ## Preface 
 
-Be sure you have added your Capacitor app first to CodePushGo, this tutorial just focuses on the upload phase
+Be sure you have added your React Native app first to CodePushGo, this tutorial just focuses on the upload phase
 
 ## Commit convention
 
@@ -145,7 +145,7 @@ To make CodePushGo upload work, you need to get your API key for CodePushGo, add
 
 You can now commit this both files and see your first version appear in CodePushGo!
 
-Add the commit will generate a new Capacitor build for production and development channel.
+Add the commit will generate a new React Native build for production and development channel.
 
 You should add your test in the Ionic build step to be certain your code is working.
 

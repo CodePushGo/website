@@ -1,8 +1,8 @@
 ---
 slug: automatic-capacitor-android-build-github-action
-title: Automatic Capacitor Android build with GitHub actions
+title: Automatic React Native Android build with GitHub actions
 description: >-
-  How to set up a CI/CD pipeline for your Android Capacitor app using fastlane and
+  How to set up a CI/CD pipeline for your Android React Native app using fastlane and
   GitHub Actions in 5 minutes
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -11,7 +11,7 @@ created_at: 2022-10-27T00:00:00.000Z
 updated_at: 2024-06-01T00:00:00.000Z
 head_image: /fastlane_android.webp
 head_image_alt: Fastlane Google play GitHub action illustration
-keywords: Fastlane, CI/CD, Android, automatic build, automatic release, mobile app updates, Capacitor
+keywords: Fastlane, CI/CD, Android, automatic build, automatic release, mobile app updates, React Native
 tag: CI/CD
 published: true
 locale: en
@@ -20,7 +20,7 @@ next_blog: automatic-capacitor-ios-build-github-action
 
 # Automatic Android Builds with GitHub Actions
 
-Setting up CI/CD for Capacitor apps can be complex and time-consuming. Here's what you need to know:
+Setting up CI/CD for React Native apps can be complex and time-consuming. Here's what you need to know:
 
 ## Prerequisites
 
@@ -200,7 +200,7 @@ jobs:
       - name: Build app
         run: npm run build
         
-      - name: Sync Capacitor
+      - name: Sync React Native
         run: npx cap sync
         
       - name: Setup Java

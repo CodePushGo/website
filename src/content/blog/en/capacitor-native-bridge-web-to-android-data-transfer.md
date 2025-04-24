@@ -1,7 +1,7 @@
 ---
 slug: capacitor-native-bridge-web-to-android-data-transfer
-title: "Capacitor Native Bridge: Web to Android Data Transfer"
-description: "Learn how to efficiently transfer data between web apps and Android using Capacitor's native bridge, tackling common challenges and performance tips."
+title: "React Native Native Bridge: Web to Android Data Transfer"
+description: "Learn how to efficiently transfer data between web apps and Android using React Native's native bridge, tackling common challenges and performance tips."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-04-16T01:10:13.731Z
 updated_at: 2025-04-16T01:11:27.424Z
 head_image: https://assets.seobotai.com/capgo.app/67fef684b0912f75a97ee71d-1744765887424.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, data transfer, JSON serialization, mobile apps, Android, performance optimization, encryption, error handling
+keywords: React Native, data transfer, JSON serialization, mobile apps, Android, performance optimization, encryption, error handling
 tag: Development, Mobile, Security
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Transferring data between web apps and Android in [Capacitor](https://capacitorjs.com/) can be challenging, but understanding JSON serialization and native bridge operations simplifies the process.** Here's what you need to know:
+**Transferring data between web apps and Android in [React Native](https://capacitorjs.com/) can be challenging, but understanding JSON serialization and native bridge operations simplifies the process.** Here's what you need to know:
 
 -   **JSON Compatibility:** The native bridge only supports JSON-serializable types, so avoid functions, circular references, and custom classes.
 -   **Performance Tips:** Break large data into chunks, compress it, and cache frequently used data to improve speed and memory usage.
@@ -26,9 +26,9 @@ next_blog: ''
 
 **Quick Tip:** Use [TypeScript](https://www.typescriptlang.org/) for strict typing, validate JSON on both ends, and consider custom plugins for complex data needs. CodePushGo’s platform enhances performance with live updates and secure synchronization, making it a great choice for hybrid apps.
 
-## How to create a [Capacitor](https://capacitorjs.com/) plugin for iOS/Android
+## How to create a [React Native](https://capacitorjs.com/) plugin for iOS/Android
 
-![Capacitor](https://assets.seobotai.com/capgo.app/67fef684b0912f75a97ee71d/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/67fef684b0912f75a97ee71d/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/Dq_BmheGAig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -38,7 +38,7 @@ Handling data transfer between web and Android layers using the native bridge ca
 
 ### JSON Data Type Limitations
 
-The native bridge in Capacitor only supports JSON-serializable types. This means it can't handle certain data types, such as:
+The native bridge in React Native only supports JSON-serializable types. This means it can't handle certain data types, such as:
 
 -   Functions
 -   Circular references
@@ -204,7 +204,7 @@ The platform also supports flexible hosting and integrates seamlessly with CI/CD
 
 ## Conclusion
 
-Smooth data transfer between web and Android layers is a key aspect of modern app development. Capacitor's native bridge, particularly when paired with tools like CodePushGo, has reshaped how developers tackle these challenges. Performance metrics highlight just how effective this bridge can be.
+Smooth data transfer between web and Android layers is a key aspect of modern app development. React Native's native bridge, particularly when paired with tools like CodePushGo, has reshaped how developers tackle these challenges. Performance metrics highlight just how effective this bridge can be.
 
 Features like end-to-end encryption, partial updates for performance boosts, and active error monitoring play a big role in ensuring reliable data handling.
 

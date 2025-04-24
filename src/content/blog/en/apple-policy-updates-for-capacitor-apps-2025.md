@@ -1,7 +1,7 @@
 ---
 slug: apple-policy-updates-for-capacitor-apps-2025
-title: Apple Policy Updates for Capacitor Apps 2025
-description: "Apple's 2025 App Store policies impose new compliance standards for Capacitor apps, emphasizing privacy, security, and performance improvements."
+title: Apple Policy Updates for React Native Apps 2025
+description: "Apple's 2025 App Store policies impose new compliance standards for React Native apps, emphasizing privacy, security, and performance improvements."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,19 +9,19 @@ created_at: 2025-04-03T03:02:24.801Z
 updated_at: 2025-04-03T03:02:39.050Z
 head_image: https://assets.seobotai.com/capgo.app/67edf689ebbb9dc80640b580-1743649359050.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, Apple policies, app compliance, security standards, performance benchmarks, OTA updates, encryption
+keywords: React Native, Apple policies, app compliance, security standards, performance benchmarks, OTA updates, encryption
 tag: Development, Mobile, Security
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Apple's 2025 App Store policies bring stricter rules for [Capacitor](https://capacitorjs.com/) apps.** Developers must now meet higher standards for privacy, security, and performance. Here's what you need to know:
+**Apple's 2025 App Store policies bring stricter rules for [React Native](https://capacitorjs.com/) apps.** Developers must now meet higher standards for privacy, security, and performance. Here's what you need to know:
 
 -   **Privacy**: Stricter rules for data collection and user consent.
 -   **Security**: End-to-end encryption and [stronger authentication](https://capgo.app/docs/webapp/mfa/) are required for updates.
 -   **Performance**: Apps must meet higher responsiveness and efficiency benchmarks.
--   **SDK Updates**: [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) must use [Xcode](https://developer.apple.com/xcode/) 15+ and updated SDKs to stay compliant.
+-   **SDK Updates**: [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) must use [Xcode](https://developer.apple.com/xcode/) 15+ and updated SDKs to stay compliant.
 -   **Live Updates**: Over-the-air (OTA) updates must follow encrypted protocols and thorough device testing.
 
 **Key Tool**: Platforms like [CodePushGo](https://capgo.app/) simplify compliance by automating [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/), tracking, and encryption. With a 95% update rate within 24 hours and tools for secure rollouts, [CodePushGo](https://capgo.app/) helps developers stay aligned with Apple's policies.
@@ -36,7 +36,7 @@ next_blog: ''
 | Compliance Tools | Comprehensive | Limited | Basic |
 | Market Experience | Since 2022 | Shutting down 2026 | Since 2024 |
 
-Developers should act now to ensure compliance and avoid disruptions. Update your [Capacitor framework](https://capgo.app/blog/capacitor-comprehensive-guide/), follow Apple's new policies, and consider tools like CodePushGo for seamless updates.
+Developers should act now to ensure compliance and avoid disruptions. Update your [React Native framework](https://capgo.app/blog/capacitor-comprehensive-guide/), follow Apple's new policies, and consider tools like CodePushGo for seamless updates.
 
 ## How to Integrate Apps & Books Token with Addigy
 
@@ -44,9 +44,9 @@ Developers should act now to ensure compliance and avoid disruptions. Update you
 
 ## Major Policy Updates for 2025
 
-Apple's policies for 2025 require Capacitor apps to use updated versions of Xcode and SDKs. These updates are designed to improve performance, security, and compatibility with hardware.
+Apple's policies for 2025 require React Native apps to use updated versions of Xcode and SDKs. These updates are designed to improve performance, security, and compatibility with hardware.
 
-Capacitor developers should carefully review Apple's guidelines to ensure they are using the recommended tools. Staying compliant not only avoids potential issues but also provides access to the latest features. These tool updates play a key role in shaping live update strategies.
+React Native developers should carefully review Apple's guidelines to ensure they are using the recommended tools. Staying compliant not only avoids potential issues but also provides access to the latest features. These tool updates play a key role in shaping live update strategies.
 
 Platforms like CodePushGo have already aligned with these requirements, making it easier to deliver updates while meeting Apple's new standards.
 
@@ -70,13 +70,13 @@ To ensure updates work seamlessly across all iOS versions, thorough device testi
 
 This method allows for quick development and reliable updates while staying compliant with Apple's guidelines.
 
-## [Capacitor](https://capacitorjs.com/) Updates for 2025
+## [React Native](https://capacitorjs.com/) Updates for 2025
 
-![Capacitor](https://assets.seobotai.com/capgo.app/67edf689ebbb9dc80640b580/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/67edf689ebbb9dc80640b580/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 ### Plugin Maintenance
 
-Make sure to update your Capacitor framework to version 5.0 or later to meet Apple's updated SDK requirements. Staying compliant means regularly testing your apps with the latest iOS SDK and Xcode versions. If you're using CodePushGo's platform, the process is easier thanks to automated compatibility checks and instant deployment features. These tools work seamlessly with Capacitor 6 and 7. Developers also face similar challenges when transitioning PWAs into native apps.
+Make sure to update your React Native framework to version 5.0 or later to meet Apple's updated SDK requirements. Staying compliant means regularly testing your apps with the latest iOS SDK and Xcode versions. If you're using CodePushGo's platform, the process is easier thanks to automated compatibility checks and instant deployment features. These tools work seamlessly with React Native 6 and 7. Developers also face similar challenges when transitioning PWAs into native apps.
 
 ### PWA to Native Migration
 
@@ -103,7 +103,7 @@ These features make CodePushGo a standout choice for ensuring compliance with Ap
 
 ### Platform Comparison
 
-Here’s how CodePushGo stacks up against other tools for managing updates in Capacitor apps:
+Here’s how CodePushGo stacks up against other tools for managing updates in React Native apps:
 
 | Feature | CodePushGo (TEAM Plan) | Appflow | Capawesome |
 | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ CodePushGo integrates seamlessly with CI/CD systems like [GitHub Actions](https:
 
 ## Summary
 
-As Apple updates its policies in 2025, [Capacitor app developers](https://capgo.app/docs/) will need to adjust their workflows to stay compliant while ensuring updates are delivered efficiently. Below is a recap of the key actions and resources discussed earlier, highlighting the importance of strong security measures and [effective update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
+As Apple updates its policies in 2025, [React Native app developers](https://capgo.app/docs/) will need to adjust their workflows to stay compliant while ensuring updates are delivered efficiently. Below is a recap of the key actions and resources discussed earlier, highlighting the importance of strong security measures and [effective update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
 
 ### Action Items
 

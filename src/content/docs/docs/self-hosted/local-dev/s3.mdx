@@ -86,13 +86,13 @@ supabase functions serve --env-file ./supabase/.env.local
 
 The CLI will not work by default with minio. The following change to `capacitor.config.ts`[^1] is required.
 ```ts
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.demo.app',
   appName: 'demoApp',
   webDir: 'dist',
   bundledWebRuntime: false,
   plugins: {
-    CapacitorUpdater : {
+    React NativeUpdater : {
       // Without this localS3 the upload command will fail
       localS3: true
     },

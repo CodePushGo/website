@@ -29,8 +29,8 @@ onMounted(() => {
     <div class="mx-auto max-w-7xl">
       <h1 class="mb-4 text-4xl font-bold">CodePushGo Sponsors</h1>
       <p class="mb-8 max-w-3xl text-xl text-gray-300">
-        CodePushGo is an open-source framework free to use thanks to our generous sponsors. If you use CodePushGo in your daily work and can't use our cloud service, please consider backing
-        us.
+        CodePushGo is an open-source framework free to use thanks to our generous sponsors. If you use CodePushGo in your daily work and can't use our cloud service, please
+        consider backing us.
       </p>
       <a
         href="https://github.com/sponsors/riderx"

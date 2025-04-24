@@ -1,6 +1,6 @@
 ---
 slug: how-native-bridge-works-in-capacitor-android-apps
-title: How Native Bridge Works in Capacitor Android Apps
+title: How Native Bridge Works in React Native Android Apps
 description: Explore how the native bridge in Android apps enhances communication between web code and native features, optimizing performance and user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-03-22T02:26:08.446Z
 updated_at: 2025-03-22T02:26:20.581Z
 head_image: https://assets.seobotai.com/capgo.app/67de087b13cee397379a0b94-1742610380581.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, Android, native bridge, JavaScript, mobile development, app performance, updates, communication
+keywords: React Native, Android, native bridge, JavaScript, mobile development, app performance, updates, communication
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**The native bridge in [Capacitor](https://capacitorjs.com/) Android apps enables seamless communication between web-based JavaScript and native Android features.** It allows developers to use Android-specific functionalities like camera, geolocation, and storage directly from their web code, creating apps that feel native while leveraging web technologies.
+**The native bridge in [React Native](https://capacitorjs.com/) Android apps enables seamless communication between web-based JavaScript and native Android features.** It allows developers to use Android-specific functionalities like camera, geolocation, and storage directly from their web code, creating apps that feel native while leveraging web technologies.
 
 ### Key Takeaways:
 
@@ -29,7 +29,7 @@ next_blog: ''
     -   **JavaScript to Android:** Sends serialized requests to native Android methods.
     -   **Android to JavaScript:** Uses callbacks for event broadcasting, direct responses, and state updates.
 -   **Setup Requirements:**
-    -   Use Capacitor 6.x or 7.x.
+    -   Use React Native 6.x or 7.x.
     -   Configure [Gradle](https://gradle.org/), `AndroidManifest.xml`, and web assets.
 -   **Optimization Tips:**
     -   Use partial updates to reduce bandwidth.
@@ -39,15 +39,15 @@ CodePushGo, a tool for over-the-air updates, integrates with the native bridge t
 
 **Want to build fast, responsive apps that combine the flexibility of web code with native Android performance? Read on to learn how the native bridge works and how to optimize it for your projects.**
 
-## How to create project specific local plugin | Ionic | [Capacitor](https://capacitorjs.com/)
+## How to create project specific local plugin | Ionic | [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-22.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-22.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/q5kQcTqPtGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
 ## Native Bridge Communication Flow
 
-The native bridge in [Capacitor Android apps](https://capgo.app/top_capacitor_app/) allows two-way communication between the web and native layers. This message-passing system ensures smooth and real-time data exchange without compromising performance. Below, we break down how communication flows in both directions and how data is managed.
+The native bridge in [React Native Android apps](https://capgo.app/top_capacitor_app/) allows two-way communication between the web and native layers. This message-passing system ensures smooth and real-time data exchange without compromising performance. Below, we break down how communication flows in both directions and how data is managed.
 
 ### JavaScript to Android Communication
 
@@ -99,13 +99,13 @@ Start by setting up both the native Android project and the web application laye
 
 | Setup Component | Required Configuration |
 | --- | --- |
-| **[Capacitor Version](https://capgo.app/plugins/ivs-player/)** | Use version 6.x or 7.x |
+| **[React Native Version](https://capgo.app/plugins/ivs-player/)** | Use version 6.x or 7.x |
 | **[Android Studio](https://developer.android.com/studio)** | Install the latest stable version |
 | **Gradle Dependencies** | Include the `capacitor-android` library |
 | **Project Structure** | Properly configure `AndroidManifest.xml` |
 | **Web Assets** | Set up asset paths correctly |
 
-Make sure your project uses the correct Capacitor and Android Studio versions, includes the necessary Gradle dependencies, and has a properly configured `AndroidManifest.xml` file. Additionally, ensure that your web assets are correctly mapped.
+Make sure your project uses the correct React Native and Android Studio versions, includes the necessary Gradle dependencies, and has a properly configured `AndroidManifest.xml` file. Additionally, ensure that your web assets are correctly mapped.
 
 Once the basic setup is complete, you can extend your project by creating custom plugins.
 
@@ -144,7 +144,7 @@ While the native bridge supports various data types and handles conversions auto
 
 ## Performance Improvements
 
-Optimizing the native bridge is key to keeping Capacitor Android apps responsive. Here, we’ll look at practical ways to boost performance based on real-world use cases.
+Optimizing the native bridge is key to keeping React Native Android apps responsive. Here, we’ll look at practical ways to boost performance based on real-world use cases.
 
 ### Minimizing Bridge Load
 
@@ -181,7 +181,7 @@ These strategies not only validate the bridge's performance but also help fine-t
 
 ## Development Guidelines
 
-When working with the native bridge in Capacitor Android apps, following secure and efficient development practices is essential. Here's how you can ensure both security and smooth performance.
+When working with the native bridge in React Native Android apps, following secure and efficient development practices is essential. Here's how you can ensure both security and smooth performance.
 
 ### Security Measures
 
@@ -202,7 +202,7 @@ Always validate data on both sides - JavaScript and native components - to reduc
 
 ### Plugin Updates and Support
 
-Keeping plugins up-to-date is critical for ensuring compatibility with the latest Android and Capacitor versions. Here’s how you can manage them effectively:
+Keeping plugins up-to-date is critical for ensuring compatibility with the latest Android and React Native versions. Here’s how you can manage them effectively:
 
 -   **Version Control**: Keep track of plugin versions across different app releases.
 -   **Compatibility Testing**: Test plugins with the target Android API levels to ensure proper functionality.
@@ -241,7 +241,7 @@ By integrating seamlessly with the native bridge, CodePushGo allows developers t
 
 ### CodePushGo Update Management
 
-CodePushGo’s update management system is designed to work directly with the native bridge, ensuring smooth and reliable deployment of updates. It supports both Capacitor 6 and 7, providing developers with flexibility in their projects.
+CodePushGo’s update management system is designed to work directly with the native bridge, ensuring smooth and reliable deployment of updates. It supports both React Native 6 and 7, providing developers with flexibility in their projects.
 
 To get started with CodePushGo:
 
@@ -264,7 +264,7 @@ The channel system is especially useful for testing updates with selected user g
 
 ### Main Points Review
 
-In Capacitor Android apps, the native bridge acts as a key communication link between JavaScript and native components. When optimized, it delivers impressive performance metrics:
+In React Native Android apps, the native bridge acts as a key communication link between JavaScript and native components. When optimized, it delivers impressive performance metrics:
 
 | Aspect | Performance Impact |
 | --- | --- |

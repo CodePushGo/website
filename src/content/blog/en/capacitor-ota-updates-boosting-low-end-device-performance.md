@@ -1,6 +1,6 @@
 ---
 slug: capacitor-ota-updates-boosting-low-end-device-performance
-title: "Capacitor OTA Updates: Boosting Low-End Device Performance"
+title: "React Native OTA Updates: Boosting Low-End Device Performance"
 description: Learn how OTA updates enhance app performance on low-end devices by minimizing download sizes and improving update efficiency.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Want your app to run better on low-end devices? OTA updates are the answer.** [Capacitor](https://capacitorjs.com/)'s over-the-air (OTA) updates let you push only the necessary changes to your app - no full downloads required. This saves time, reduces data usage, and improves performance, especially for users with limited hardware or slow networks.
+**Want your app to run better on low-end devices? OTA updates are the answer.** [React Native](https://capacitorjs.com/)'s over-the-air (OTA) updates let you push only the necessary changes to your app - no full downloads required. This saves time, reduces data usage, and improves performance, especially for users with limited hardware or slow networks.
 
 ### Key Benefits:
 
@@ -65,7 +65,7 @@ These power-related challenges frequently lead to failed updates. Data suggests 
 
 ## Performance Benefits of OTA Updates
 
-OTA updates tackle the challenges posed by limited hardware and network resources by offering smarter, more efficient performance improvements. For example, Capacitor's OTA updates send only the changes needed, instead of requiring users to download the entire app again. This approach reduces unnecessary data usage and speeds up the process.
+OTA updates tackle the challenges posed by limited hardware and network resources by offering smarter, more efficient performance improvements. For example, React Native's OTA updates send only the changes needed, instead of requiring users to download the entire app again. This approach reduces unnecessary data usage and speeds up the process.
 
 ### Key OTA Update Functions
 
@@ -111,7 +111,7 @@ CodePushGo's OTA system was tested on 1,400 apps, delivering an impressive 947.6
 
 ### Speed Test Results
 
-[Capacitor OTA updates](https://capgo.app/) showed clear improvements in update delivery speed and app responsiveness. Test data highlighted consistent performance boosts, especially on low-end devices and in areas with poor connectivity [\[1\]](https://capgo.app/).
+[React Native OTA updates](https://capgo.app/) showed clear improvements in update delivery speed and app responsiveness. Test data highlighted consistent performance boosts, especially on low-end devices and in areas with poor connectivity [\[1\]](https://capgo.app/).
 
 ### Real-World Examples
 
@@ -131,7 +131,7 @@ These improvements align directly with the performance gains observed in speed t
 
 ### Main Points
 
-Capacitor OTA updates have shown to improve performance on low-end devices significantly. CodePushGo's system has already powered **947.6 million updates** across 1,400 apps, increasing release efficiency by 81% [\[1\]](https://capgo.app/). As Rodrigo Mantica puts it:
+React Native OTA updates have shown to improve performance on low-end devices significantly. CodePushGo's system has already powered **947.6 million updates** across 1,400 apps, increasing release efficiency by 81% [\[1\]](https://capgo.app/). As Rodrigo Mantica puts it:
 
 > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"
 

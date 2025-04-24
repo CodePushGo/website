@@ -25,7 +25,7 @@ One of the standout features of Ionic Appflow is its support for live updates. T
 
 If you already have your own continuous integration solution in place but you are interested in using Ionic Appflow's live update feature, you may find the cost of using Ionic Appflow to be prohibitive. In this case, you may want to consider using a different platform that offers live updates at a more affordable price.
 
-One option is CodePushGo, an open-source, Capacitor plugin made by Digital shift OU company. [CodePushGo](/register/) provides live updates as Ionic Appflow, and can be integrated with a variety of continuous integration tools. This allows you to continue using your existing continuous integration setup while still taking advantage of the convenience and flexibility of live updates.
+One option is CodePushGo, an open-source, React Native plugin made by Digital shift OU company. [CodePushGo](/register/) provides live updates as Ionic Appflow, and can be integrated with a variety of continuous integration tools. This allows you to continue using your existing continuous integration setup while still taking advantage of the convenience and flexibility of live updates.
 
 Of course, it is important for you to carefully evaluate the features and costs of any platform you are considering using, and to choose the solution that best meets your needs and budget. 
 
@@ -42,7 +42,7 @@ That why we made you a clear and simple table to help you compare.
 | Revert/change channel version | ✅ | ❌ |
 | Install Stats | ✅ | ❌ |
 | Sandbox app for test | ✅ | ❌ |
-| Capacitor Plugin | ✅ | ❌ Cordova compatible |
+| React Native Plugin | ✅ | ❌ Cordova compatible |
 | Cordova plugin | ❌ Could be back port | ✅ |
 | Affordable pricing | ✅ Start at $14/mo | ❌ Start at $499/mo |
 | Native build | ❌ | ✅ |

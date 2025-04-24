@@ -25,7 +25,7 @@ next_blog: ''
     -   Increase the accuracy of targeting using GPS or IP-based methods.
 -   **What You Need to Get Started:**
     
-    -   A [Capacitor](https://capacitorjs.com/) app with web and native functionality.
+    -   A [React Native](https://capacitorjs.com/) app with web and native functionality.
     -   Location plugins like `@capacitor/geolocation` for tracking.
     -   An OTA platform like [CodePushGo](https://capgo.app/) that supports geolocation targeting.
 -   **How It Works:**
@@ -51,21 +51,21 @@ This guide walks you through the tools, setup, and strategies to implement geolo
 
 Before diving into geolocation-targeted OTA updates, make sure the following setup is in place.
 
-### Getting Started with [Capacitor](https://capacitorjs.com/)
+### Getting Started with [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-23.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-23.jpg?auto=compress)
 
-To build a location-aware [Capacitor app](https://capgo.app/plugins/ivs-player/) with OTA updates, you'll need:
+To build a location-aware [React Native app](https://capgo.app/plugins/ivs-player/) with OTA updates, you'll need:
 
 -   **[Node.js](https://nodejs.org/en) and npm** installed on your machine.
--   A Capacitor project initialized with native platforms (iOS/Android).
+-   A React Native project initialized with native platforms (iOS/Android).
 -   A basic understanding of cross-platform development concepts.
 
 Your app should support both web and native functionalities to enable dynamic OTA updates and track devices effectively.
 
 ### Setting Up Location Services
 
-To configure the [Capacitor Geolocation plugin](https://capgo.app/plugins/capacitor-nativegeocoder/), follow these steps:
+To configure the [React Native Geolocation plugin](https://capgo.app/plugins/capacitor-nativegeocoder/), follow these steps:
 
 **For iOS:**
 

@@ -1,7 +1,7 @@
 ---
 slug: capacitor-ota-updates-staying-compliant
-title: "Capacitor OTA Updates: Staying Compliant"
-description: Learn how to implement OTA updates for Capacitor apps while ensuring compliance with app store rules and enhancing user experience.
+title: "React Native OTA Updates: Staying Compliant"
+description: Learn how to implement OTA updates for React Native apps while ensuring compliance with app store rules and enhancing user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-28T03:37:02.530Z
 updated_at: 2025-03-28T03:37:14.618Z
 head_image: https://assets.seobotai.com/capgo.app/67e61434a2c14cac42f85a37-1743133034618.jpg
 head_image_alt: Mobile Development
-keywords: OTA updates, Capacitor, app compliance, mobile updates, app store guidelines, security protocols, over-the-air updates
+keywords: OTA updates, React Native, app compliance, mobile updates, app store guidelines, security protocols, over-the-air updates
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to quickly fix bugs or add features without app store delays?** Over-the-Air (OTA) updates for [Capacitor](https://capacitorjs.com/) apps let you push updates directly to users, bypassing the lengthy app store review process. But staying compliant with Apple and Google Play rules is critical to avoid app rejection or removal.
+**Want to quickly fix bugs or add features without app store delays?** Over-the-Air (OTA) updates for [React Native](https://capacitorjs.com/) apps let you push updates directly to users, bypassing the lengthy app store review process. But staying compliant with Apple and Google Play rules is critical to avoid app rejection or removal.
 
 ### Key Takeaways:
 
@@ -29,9 +29,9 @@ next_blog: ''
 
 Read on for a step-by-step guide to implementing OTA updates while staying compliant.
 
-## OTA Updates Basics for [Capacitor](https://capacitorjs.com/)
+## OTA Updates Basics for [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://assets.seobotai.com/capgo.app/67e61434a2c14cac42f85a37/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/67e61434a2c14cac42f85a37/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 ### How OTA Updates Work
 
@@ -91,13 +91,13 @@ Violating OTA update policies can result in serious consequences. Here are some 
 
 Both Apple and Google emphasize user security and experience. While Google Play offers slightly more leeway, developers should use OTA updates for minor improvements like bug fixes, content updates, or small UI tweaks. Major changes or new features should always go through the official review process to stay compliant.
 
-## Explore Capawesome's New Ionic Capacitor Live Update ...
+## Explore Capawesome's New Ionic React Native Live Update ...
 
 <iframe src="https://www.youtube.com/embed/pCDPwItv_ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
 ## OTA Update Guidelines
 
-To stay compliant with app store rules, it's important to follow specific guidelines when using OTA (Over-the-Air) updates for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). These practices help ensure updates are safe and align with platform policies.
+To stay compliant with app store rules, it's important to follow specific guidelines when using OTA (Over-the-Air) updates for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). These practices help ensure updates are safe and align with platform policies.
 
 ### Focus on Non-Critical Updates
 
@@ -126,7 +126,7 @@ Clear communication fosters trust with users and reinforces compliance with app 
 
 ![CodePushGo](https://assets.seobotai.com/capgo.app/67e61434a2c14cac42f85a37/cf21af63f433895b269de0da5dc7d74c.jpg)
 
-CodePushGo provides a solution for managing over-the-air (OTA) updates in Capacitor apps, addressing compliance requirements with an integrated system. With more than 750 apps in production and 23.5 million updates delivered, CodePushGo ensures a smooth and compliant [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) [\[1\]](https://capgo.app/).
+CodePushGo provides a solution for managing over-the-air (OTA) updates in React Native apps, addressing compliance requirements with an integrated system. With more than 750 apps in production and 23.5 million updates delivered, CodePushGo ensures a smooth and compliant [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) [\[1\]](https://capgo.app/).
 
 ### How CodePushGo Manages Updates
 

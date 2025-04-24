@@ -1,7 +1,7 @@
 ---
 slug: capacitor-ota-updates-app-store-approval-guide
-title: "Capacitor OTA Updates: App Store Approval Guide"
-description: Learn how to navigate App Store and Play Store guidelines for OTA updates in Capacitor apps, ensuring compliance and security.
+title: "React Native OTA Updates: App Store Approval Guide"
+description: Learn how to navigate App Store and Play Store guidelines for OTA updates in React Native apps, ensuring compliance and security.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,7 +9,7 @@ created_at: 2025-02-15T04:38:10.916Z
 updated_at: 2025-03-24T13:22:05.322Z
 head_image: https://assets.seobotai.com/capgo.app/67afe3423823fbac65afe97c-1739594307916.jpg
 head_image_alt: Mobile Development
-keywords: OTA updates, Capacitor, App Store, Play Store, compliance, JavaScript updates, security
+keywords: OTA updates, React Native, App Store, Play Store, compliance, JavaScript updates, security
 tag: Development, Mobile, Updates
 published: true
 locale: en
@@ -48,7 +48,7 @@ next_blog: ''
 
 ![Apple App Store](https://mars-images.imgix.net/seobot/screenshots/developer.apple.com-647d6fa866954dfb3c8455f75fc9840a-2025-02-15.jpg?auto=compress)
 
-Apple's guidelines, specifically §3.3.2, place strict limits on OTA updates for Capacitor applications. Updates are allowed **only** for JavaScript and assets. Key restrictions include:
+Apple's guidelines, specifically §3.3.2, place strict limits on OTA updates for React Native applications. Updates are allowed **only** for JavaScript and assets. Key restrictions include:
 
 -   No changes to the app's core functionality or primary purpose
     
@@ -57,7 +57,7 @@ Apple's guidelines, specifically §3.3.2, place strict limits on OTA updates for
 -   No bypassing iOS security features like code signing
     
 
-**Important for Capacitor Developers**: Any JavaScript updates must stay within the app's original security container and cannot alter the app's essential behavior.
+**Important for React Native Developers**: Any JavaScript updates must stay within the app's original security container and cannot alter the app's essential behavior.
 
 ### [Google Play Store](https://developer.android.com/distribute/play-policies) Rules
 
@@ -73,7 +73,7 @@ Google Play takes a more lenient stance on OTA updates but still enforces clear 
     
 -   Requiring updates to align with the app's approved Play Store version
     
--   Preventing circumvention of Google Play’s billing system for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) [\[6\]](https://essaypro.com/blog/article-review)
+-   Preventing circumvention of Google Play’s billing system for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) [\[6\]](https://essaypro.com/blog/article-review)
     
 
 | Feature | Apple App Store | Google Play Store |
@@ -94,11 +94,11 @@ Common reasons apps get rejected include:
 -   Using unencrypted update packages
     
 
-To avoid these issues, following Capacitor-specific implementation guidelines is crucial. Tools that offer automated compliance checks can make this process much easier. For example, CodePushGo’s end-to-end encryption feature secures update packages, helping meet the requirements of both app stores [\[7\]](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
+To avoid these issues, following React Native-specific implementation guidelines is crucial. Tools that offer automated compliance checks can make this process much easier. For example, CodePushGo’s end-to-end encryption feature secures update packages, helping meet the requirements of both app stores [\[7\]](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
 
-## OTA Update Guidelines for [Capacitor](https://capacitorjs.com/)
+## OTA Update Guidelines for [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-15.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-15.jpg?auto=compress)
 
 ### Technical Compliance Steps
 
@@ -150,7 +150,7 @@ These security measures align with Apple's code signing requirements and Google'
 
 ![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-15.jpg?auto=compress)
 
-CodePushGo provides a secure way to deliver and manage [Capacitor OTA updates](https://capgo.app/), ensuring smooth distribution while meeting compliance standards. It also offers advanced tools for enterprise-level [update management](https://capgo.app/it/docs/plugin/cloud-mode/manual-update/).
+CodePushGo provides a secure way to deliver and manage [React Native OTA updates](https://capgo.app/), ensuring smooth distribution while meeting compliance standards. It also offers advanced tools for enterprise-level [update management](https://capgo.app/it/docs/plugin/cloud-mode/manual-update/).
 
 ### Key Features of CodePushGo
 
@@ -216,7 +216,7 @@ Feature scope problems are another common hurdle. Use the following framework to
 | UI Refinements | Medium | Apply gradual interface changes |
 | New Features | Low | Use feature flags and phased rollouts |
 
-For example, a Capacitor-based e-commerce app successfully reduced customer support tickets by 60% by rolling out new features in phases while staying compliant [\[14\]](https://www.ada.gov/law-and-regs/regulations/title-ii-2010-regulations/).
+For example, a React Native-based e-commerce app successfully reduced customer support tickets by 60% by rolling out new features in phases while staying compliant [\[14\]](https://www.ada.gov/law-and-regs/regulations/title-ii-2010-regulations/).
 
 ### Update Process Errors
 
@@ -235,7 +235,7 @@ Apps that provide clear and transparent interfaces have seen **30% higher retent
 
 ## Wrapping Up
 
-Rolling out OTA updates for Capacitor apps involves a mix of technical precision and meeting compliance standards. To succeed, focus on essential areas that align with platform-specific guidelines and strategies:
+Rolling out OTA updates for React Native apps involves a mix of technical precision and meeting compliance standards. To succeed, focus on essential areas that align with platform-specific guidelines and strategies:
 
 | Priority | Action | Outcome |
 | --- | --- | --- |

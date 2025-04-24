@@ -1,6 +1,6 @@
 ---
 slug: real-time-update-metrics-for-capacitor-apps
-title: Real-Time Update Metrics for Capacitor Apps
+title: Real-Time Update Metrics for React Native Apps
 description: Learn how to effectively track update performance for your apps, ensuring fast, reliable releases and improved user experiences.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -39,7 +39,7 @@ Want to ensure your app updates are fast, reliable, and impactful? Here's what y
 
 Monitoring updates helps you deliver seamless updates, reduce errors, and improve app performance. Let’s dive into the details.
 
-## [CodePushGo](https://capgo.app/), CapacitorJs plugin for Live update
+## [CodePushGo](https://capgo.app/), React NativeJs plugin for Live update
 
 ![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-02.jpg?auto=compress)
 
@@ -51,7 +51,7 @@ To track updates effectively, you'll need to configure the right tools and ident
 
 ### Adding Tracking Tools
 
-Start by choosing a tracking tool that fits your needs. For [Capacitor](https://capacitorjs.com/) apps, here are two popular options:
+Start by choosing a tracking tool that fits your needs. For [React Native](https://capacitorjs.com/) apps, here are two popular options:
 
 -   **CodePushGo Plugin**: Install the CodePushGo plugin using the command line:
     
@@ -131,7 +131,7 @@ Addressing update issues is crucial for keeping users happy and ensuring your ap
 
 ### Finding Update Errors
 
-Capacitor-updater provides tools to help you identify and resolve update errors:
+React Native-updater provides tools to help you identify and resolve update errors:
 
 -   Set up **updateFailed** and **downloadFailed** listeners to catch issues during the update process.
 -   Use **notifyAppReady()** to confirm that the update bundle has successfully loaded.

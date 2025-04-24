@@ -1,7 +1,7 @@
 ---
 slug: setting-up-capacitor-local-environment
-title: Setting Up Capacitor Local Environment
-description: Learn how to quickly set up a local Capacitor environment for building iOS and Android apps using web technologies with this comprehensive guide.
+title: Setting Up React Native Local Environment
+description: Learn how to quickly set up a local React Native environment for building iOS and Android apps using web technologies with this comprehensive guide.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-04-03T01:01:07.065Z
 updated_at: 2025-04-03T01:01:18.509Z
 head_image: https://assets.seobotai.com/capgo.app/67edd19cebbb9dc8064069d2-1743642078509.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, mobile development, iOS setup, Android setup, app development, web technologies, local environment
+keywords: React Native, mobile development, iOS setup, Android setup, app development, web technologies, local environment
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to build iOS and Android apps using web technologies? Here's how to set up a local [Capacitor](https://capacitorjs.com/) environment quickly and efficiently.**
+**Want to build iOS and Android apps using web technologies? Here's how to set up a local [React Native](https://capacitorjs.com/) environment quickly and efficiently.**
 
 ### Key Steps:
 
@@ -31,7 +31,7 @@ next_blog: ''
     
     -   [Android Studio](https://developer.android.com/studio) Hedgehog (2023.1.1)+, Android SDK API level 23+, JDK 17, and [Gradle](https://gradle.org/) 8.0+.
     -   Set environment variables for Android tools.
-4.  **Install Capacitor**:
+4.  **Install React Native**:
     
     ```bash
     npm install @capacitor/core @capacitor/cli @capacitor/ios @capacitor/android
@@ -39,7 +39,7 @@ next_blog: ''
     
 5.  **Initialize a Project**:
     
-    -   Create a new project or integrate Capacitor into an existing app using `npx cap init`.
+    -   Create a new project or integrate React Native into an existing app using `npx cap init`.
 6.  **Add Platforms**:
     
     ```bash
@@ -67,7 +67,7 @@ next_blog: ''
 Update `capacitor.config.ts` to manage environments and enable live updates. For example:
 
 ```typescript
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   server: {
     url: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://production-url.com',
     cleartext: true
@@ -75,9 +75,9 @@ const config: CapacitorConfig = {
 };
 ```
 
-This setup ensures smooth development, testing, and deployment for your Capacitor apps.
+This setup ensures smooth development, testing, and deployment for your React Native apps.
 
-## Ionic Capacitor - Create new App - Run in Android & iOS ...
+## Ionic React Native - Create new App - Run in Android & iOS ...
 
 <iframe src="https://www.youtube.com/embed/krTN38Z-Ux4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -122,30 +122,30 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-### Installing Capacitor
+### Installing React Native
 
-Install Capacitor using npm:
+Install React Native using npm:
 
 ```bash
 npm install @capacitor/core @capacitor/cli
 npm install @capacitor/ios @capacitor/android
 ```
 
-If you're using a framework like Vue, React, or Angular, install the corresponding Capacitor plugins. For Vue, run:
+If you're using a framework like Vue, React, or Angular, install the corresponding React Native plugins. For Vue, run:
 
 ```bash
 npm install @capacitor/vue
 ```
 
-To confirm the installation, check the Capacitor version by running:
+To confirm the installation, check the React Native version by running:
 
 ```bash
 npx cap --version
 ```
 
-You should see the current Capacitor version displayed (e.g., 5.x.x as of April 2025).
+You should see the current React Native version displayed (e.g., 5.x.x as of April 2025).
 
-Finally, initialize Capacitor in your project directory:
+Finally, initialize React Native in your project directory:
 
 ```bash
 npx cap init
@@ -157,7 +157,7 @@ Once completed, you can configure these components for your specific project.
 
 ### Project Setup
 
-To start, either create a **new Capacitor project** or integrate Capacitor into an existing web app:
+To start, either create a **new React Native project** or integrate React Native into an existing web app:
 
 ```bash
 npm init @capacitor/app
@@ -165,7 +165,7 @@ cd my-cap-app
 npm install
 ```
 
-If you're adding Capacitor to an existing web app, initialize it in your project directory:
+If you're adding React Native to an existing web app, initialize it in your project directory:
 
 ```bash
 cd your-web-app
@@ -188,11 +188,11 @@ npx cap add android
 Update your `capacitor.config.ts` file to include the required configurations:
 
 ```typescript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
     appId: 'com.example.app',
-    appName: 'My Capacitor App',
+    appName: 'My React Native App',
     webDir: 'dist',
     bundledWebRuntime: false,
     plugins: {
@@ -224,7 +224,7 @@ After syncing, make sure to configure your environment and live update settings.
 To manage environments, update your `capacitor.config.ts` file:
 
 ```typescript
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
     server: {
       url: process.env.NODE_ENV === 'development'
         ? 'http://localhost:3000'
@@ -262,7 +262,7 @@ CodePushGo's channel system is a great tool for beta testing and staged rollouts
 
 ## Additional Features
 
-Expand your Capacitor setup with tools that improve update delivery, streamline automation, and allow for tailored configurations.
+Expand your React Native setup with tools that improve update delivery, streamline automation, and allow for tailored configurations.
 
 ### [CodePushGo](https://capgo.app/) Setup
 
@@ -279,7 +279,7 @@ Then, adjust your `capacitor.config.ts` file to enable live updates:
 ```typescript
 {
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       autoUpdate: true,
       statsUrl: 'https://your-stats-endpoint.com'
     }
@@ -316,7 +316,7 @@ build_and_deploy:
 Tailor your app's configuration with specific settings beyond live updates and automation:
 
 ```typescript
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   ios: {
     contentInset: 'automatic',
     preferredContentMode: 'mobile'
@@ -371,13 +371,13 @@ npm install
 Ensure your configuration aligns with the following example:
 
 ```typescript
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   appName: 'My App',
   webDir: 'dist',
   bundledWebRuntime: false,
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       autoUpdate: true
     }
   }
@@ -428,7 +428,7 @@ Here are some ways to improve stability and avoid recurring problems.
 
 ## Summary
 
-Here's a quick recap of how an optimized Capacitor environment can improve your development process. Setting up your local Capacitor environment the right way speeds up development, streamlines builds, and simplifies updates.
+Here's a quick recap of how an optimized React Native environment can improve your development process. Setting up your local React Native environment the right way speeds up development, streamlines builds, and simplifies updates.
 
 **Key Advantages of Proper Setup**
 
@@ -439,7 +439,7 @@ These improvements come from following the setup and integration practices discu
 
 **Performance Highlights**
 
-[CodePushGo-enhanced Capacitor environments](https://capgo.app/blog/) show impressive results, including fast response times, quick downloads, and high success rates for updates [\[1\]](https://capgo.app/).
+[CodePushGo-enhanced React Native environments](https://capgo.app/blog/) show impressive results, including fast response times, quick downloads, and high success rates for updates [\[1\]](https://capgo.app/).
 
 **Benefits for Developers**
 

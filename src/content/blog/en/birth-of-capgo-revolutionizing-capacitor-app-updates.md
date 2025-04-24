@@ -3,7 +3,7 @@ slug: birth-of-capgo-my-challenging-journey-as-a-solo-maker
 title: How a GitHub Issue Evolved into a business
 description: >-
   Discover the trials and triumphs behind creating CodePushGo, an innovative live
-  update system for Capacitor apps, born from necessity and shaped by community
+  update system for React Native apps, born from necessity and shaped by community
   feedback.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -25,17 +25,17 @@ The seeds of CodePushGo were actually planted long before I began my journey as 
 
 ![Initial plugin request](/capgo-initial-request.webp)
 
-This request outlined the need for a "Capacitor Hot Code Push" plugin with the following key points:
+This request outlined the need for a "React Native Hot Code Push" plugin with the following key points:
 
 1. **Platforms**: Support for both Android and iOS.
-2. **Existing Solutions**: It highlighted the limitations of current options like MS Code Push (which lacked Capacitor support) and App Flow (which was expensive and inflexible).
+2. **Existing Solutions**: It highlighted the limitations of current options like MS Code Push (which lacked React Native support) and App Flow (which was expensive and inflexible).
 3. **Description**: The ability to update js/css/html of an app in real-time without going through the app store review process.
 4. **Key Features**: 
    - Facilitate over-the-air updates from a server/endpoint of the developer's choosing.
-   - Download a zip file of the updated dist folder, extract it, and tell Capacitor to launch from this new directory.
+   - Download a zip file of the updated dist folder, extract it, and tell React Native to launch from this new directory.
    - Additional features like update verification, installation timing, and selective downloading of updates.
 
-This comprehensive request garnered significant community support, with 65 likes and 25 heart reactions. It clearly demonstrated a strong demand for such a solution in the Capacitor ecosystem.
+This comprehensive request garnered significant community support, with 65 likes and 25 heart reactions. It clearly demonstrated a strong demand for such a solution in the React Native ecosystem.
 
 When I came across this request over a year later, it resonated deeply with the challenges I was facing in my own projects. It served as both validation of the need for such a tool and a roadmap for what would become CodePushGo.
 
@@ -57,7 +57,7 @@ The energy of Lisbon's startup ecosystem and the freedom of the digital nomad li
 This revision accurately reflects your living situation in Lisbon as a digital nomad, which provides important context for the environment in which you developed CodePushGo. It also highlights the connection between your lifestyle choice and the innovative spirit that led to CodePushGo's creation.
 ## The Spark of an Idea
 
-While working on Captime, I encountered a significant hurdle - the lack of an affordable and flexible update solution for Capacitor apps. In October 2021, I voiced these concerns on a GitHub thread.
+While working on Captime, I encountered a significant hurdle - the lack of an affordable and flexible update solution for React Native apps. In October 2021, I voiced these concerns on a GitHub thread.
 
 ![Initial proposal for CodePushGo](/capgo-initial-proposal.webp)
 
@@ -92,7 +92,7 @@ However, turning this simple idea into reality proved to be far more challenging
 
 ## The Struggle Behind the Scenes
 
-What isn't apparent from the GitHub thread is the sheer complexity of the task I had undertaken. The code required to implement this functionality was obscure and hard to understand. I found myself grappling with intricate details of how Capacitor apps handle updates and file systems.
+What isn't apparent from the GitHub thread is the sheer complexity of the task I had undertaken. The code required to implement this functionality was obscure and hard to understand. I found myself grappling with intricate details of how React Native apps handle updates and file systems.
 
 Many nights were spent in my van, poring over documentation and experimenting with different approaches. Progress was slow, and there were times when I questioned whether I had bitten off more than I could chew.
 
@@ -141,7 +141,7 @@ However, staying true to the project's roots, I maintained CodePushGo's open-sou
 
 ## Conclusion
 
-My journey with CodePushGo is a testament to the power of community-driven innovation and the unexpected paths that solo makers often find themselves on. What started as a personal frustration while working on a crossfit timer app grew into a robust, affordable, and flexible live update system for Capacitor apps.
+My journey with CodePushGo is a testament to the power of community-driven innovation and the unexpected paths that solo makers often find themselves on. What started as a personal frustration while working on a crossfit timer app grew into a robust, affordable, and flexible live update system for React Native apps.
 
 The creation of CodePushGo was far from easy. It required countless hours of work, the support of a generous developer community, and a willingness to pivot based on user feedback. From coding in Airbnb in Portugal to launching a paid product, every step of this journey has been a learning experience.
 

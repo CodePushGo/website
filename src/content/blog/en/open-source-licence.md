@@ -137,7 +137,7 @@ How do I accomplish all that? By changing my license.
 
 CodePushGo has now changed the license from the MIT to a newer licensing scheme called GNU Affero General Public License V3 (AGPLv3) or any later version. CodePushGo version can be [found here](https://github.com/Cap-go/capgo/blob/main/LICENSE/).
 
-Capacitor-updater (the plugin) has now changed the license from the LGPLv3 to a newer licensing scheme called Mozilla Public License Version 2.0 (MPLv2) or any later version. Capacitor-updater version can be [found here](https://github.com/Cap-go/capacitor-updater/blob/main/LICENCE/).
+React Native-updater (the plugin) has now changed the license from the LGPLv3 to a newer licensing scheme called Mozilla Public License Version 2.0 (MPLv2) or any later version. React Native-updater version can be [found here](https://github.com/Cap-go/capacitor-updater/blob/main/LICENCE/).
 
 This change makes no difference to any of you who subscribe to CodePushGo Cloud or who self-host CodePushGo, but it may upset a few corporations who tried to use my software to directly compete with me without contributing back.
 

@@ -25,9 +25,9 @@ Live updates let developers quickly push updates and fixes to users’ apps with
 -   **Partial Updates**: Only the necessary changes are updated, not the whole app.
 -   **Emergency Fixes**: Critical bugs can be resolved immediately.
 
-### How to Use Live Updates in [Capacitor](https://capacitorjs.com/):
+### How to Use Live Updates in [React Native](https://capacitorjs.com/):
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-07.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-07.jpg?auto=compress)
 
 1.  **Set Up the SDK**: Install the Live Updates SDK and configure your app.
 2.  **Integrate Update Logic**: Add code to check and apply updates automatically.
@@ -47,23 +47,23 @@ Live updates let developers quickly push updates and fixes to users’ apps with
 
 Live updates save time, improve app stability, and allow developers to respond quickly to issues. Ready to get started? Dive into the full guide for setup and best practices.
 
-## Setting Up Live Updates in Capacitor
+## Setting Up Live Updates in React Native
 
-### Capacitor Live Update Components
+### React Native Live Update Components
 
-Capacitor's live update system relies on the **Live Updates SDK** for adding updates to your app and **[Ionic Appflow](https://ionic.io/appflow/)** for managing deployments. Here's a quick breakdown of the key components:
+React Native's live update system relies on the **Live Updates SDK** for adding updates to your app and **[Ionic Appflow](https://ionic.io/appflow/)** for managing deployments. Here's a quick breakdown of the key components:
 
 | Component | Function | Key Features |
 | --- | --- | --- |
 | **Live Updates SDK** | Frontend Implementation | APIs for updates, UI integration |
 | **Ionic Appflow** | Backend Management | Cloud builds, deployment tools |
-| **[Capacitor App Plugin](https://capgo.app/blog/capacitor-comprehensive-guide/)** | Core Integration | Handles events and lifecycles |
+| **[React Native App Plugin](https://capgo.app/blog/capacitor-comprehensive-guide/)** | Core Integration | Handles events and lifecycles |
 
 ### Setup Instructions
 
 1\. **Update `capacitor.config.ts` for live updates**
 
-Add the following configuration to your Capacitor configuration file:
+Add the following configuration to your React Native configuration file:
 
 ```typescript
 {
@@ -127,7 +127,7 @@ Here’s what a solid CI/CD pipeline for live updates typically includes:
 
 ### Top CI/CD Tools for Apps
 
-Several tools work seamlessly with Capacitor's live update workflows, helping developers automate updates across different platforms:
+Several tools work seamlessly with React Native's live update workflows, helping developers automate updates across different platforms:
 
 | Tool | Specialization | Integration Features |
 | --- | --- | --- |
@@ -203,7 +203,7 @@ When notifying users, aim for clarity and relevance. Use concise changelogs to e
 
 ## Live Update Tools Guide
 
-For [Capacitor developers](https://capgo.app/blog/capacitor-comprehensive-guide/), picking the right live update tool can make a big difference in app performance and user experience.
+For [React Native developers](https://capgo.app/blog/capacitor-comprehensive-guide/), picking the right live update tool can make a big difference in app performance and user experience.
 
 ### Tool Comparison Chart
 
@@ -211,7 +211,7 @@ Here’s a quick breakdown of popular live update tools and how they stack up:
 
 | Feature | CodePushGo | Ionic Appflow | Other Solutions |
 | --- | --- | --- | --- |
-| Integration Ease | Built for Capacitor | Focused on Ionic | Varies by platform |
+| Integration Ease | Built for React Native | Focused on Ionic | Varies by platform |
 | Update Strategies | Background + Immediate | Background only | Limited options |
 | Scalability | 1M updates, 12GB storage | Plan-based limits | 500MB-5GB, varies |
 | CI/CD Integration | Yes, with Bitrise | Limited | Platform dependent |
@@ -285,7 +285,7 @@ Here’s a quick comparison of how the two platforms handle live updates:
 | Security Protocols | Requires strict encryption | Accepts standard HTTPS |
 | Feature Changes | Restricted post-approval | Offers greater flexibility |
 
-For developers using Capacitor, documenting pre-submission testing results and aligning them with app store guidelines can help ensure compliance. This approach maximizes the potential of live updates while meeting the requirements of both platforms.
+For developers using React Native, documenting pre-submission testing results and aligning them with app store guidelines can help ensure compliance. This approach maximizes the potential of live updates while meeting the requirements of both platforms.
 
 ## Conclusion: Implementation Steps
 
@@ -295,7 +295,7 @@ Setting up live updates involves several key phases. Here's a simplified breakdo
 
 | Phase | Key Actions | Tools/Requirements |
 | --- | --- | --- |
-| Initial Setup | Install Live Updates SDK, Configure Capacitor | Capacitor CLI, Live Updates SDK |
+| Initial Setup | Install Live Updates SDK, Configure React Native | React Native CLI, Live Updates SDK |
 | CI/CD Integration | Configure build environments, Set up automated testing | Ionic Appflow, Jenkins |
 | Security Setup | Enable HTTPS, Configure encryption protocols | SSL certificates, Security tokens |
 | Deployment | Set up distribution channels, Configure user targeting | CodePushGo or similar platform |

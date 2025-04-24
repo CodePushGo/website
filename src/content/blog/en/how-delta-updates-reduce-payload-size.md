@@ -29,17 +29,17 @@ Delta updates make app updates faster and smaller by sending only the changed pa
 -   **Automated Tools**: Works with CI/CD systems like [GitHub Actions](https://docs.github.com/actions) and [Jenkins](https://www.jenkins.io/).
 -   **Performance Metrics**: Tracks update success rates, download speeds, and user engagement.
 
-Delta updates are ideal for [Capacitor](https://capacitorjs.com/) apps, enabling quick bug fixes, feature rollouts, and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) while saving bandwidth and time.
+Delta updates are ideal for [React Native](https://capacitorjs.com/) apps, enabling quick bug fixes, feature rollouts, and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) while saving bandwidth and time.
 
 ## How To Get MORE FPS and Better Performance in Warzone ...
 
 <iframe src="https://www.youtube.com/embed/G4X7XGYj0Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## Delta Updates in [Capacitor](https://capacitorjs.com/) Apps
+## Delta Updates in [React Native](https://capacitorjs.com/) Apps
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-20.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-20.jpg?auto=compress)
 
-Delta updates in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) rely on a method called differential patching, which sends only the modified portions of the code. This approach minimizes the amount of data transferred, making updates quicker and easier for users.
+Delta updates in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) rely on a method called differential patching, which sends only the modified portions of the code. This approach minimizes the amount of data transferred, making updates quicker and easier for users.
 
 ### How Delta Updates Work
 
@@ -66,7 +66,7 @@ These components handle everything from identifying changes to deploying updates
 
 To maintain reliability, the system includes safeguards like checksums and verification steps. If something goes wrong, it can automatically roll back to the last stable version, preventing disruptions for users.
 
-Up next, we’ll walk you through setting up delta updates in your Capacitor app.
+Up next, we’ll walk you through setting up delta updates in your React Native app.
 
 ## Setting Up Delta Updates
 
@@ -76,7 +76,7 @@ Before implementing delta updates, make sure you have the following:
 
 | Component | Purpose | Requirement |
 | --- | --- | --- |
-| **Capacitor Version** | Framework version | Version 6 or 7 |
+| **React Native Version** | Framework version | Version 6 or 7 |
 | **Development Environment** | Build tools | [Node.js](https://nodejs.org/en) and npm |
 | **[Update Service](https://capgo.app/docs/plugin/cloud-mode/manual-update/)** | Delta management | [CodePushGo CLI](https://capgo.app/docs/cli/commands) |
 | **CI/CD Integration** | Automated deployment | GitHub Actions, [GitLab CI](https://docs.gitlab.com/ee/ci/), or Jenkins |
@@ -100,10 +100,10 @@ You can set up delta updates in three simple steps:
     Add the following code to your app's configuration to activate delta updates:
     
     ```typescript
-    import { CapacitorUpdater } from '@capgo/capacitor-updater';
+    import { React NativeUpdater } from '@capgo/capacitor-updater';
     
     // Initialize the updater
-    await CapacitorUpdater.initialize({
+    await React NativeUpdater.initialize({
       deltaUpdates: true,
       autoUpdate: true
     });
@@ -114,8 +114,8 @@ You can set up delta updates in three simple steps:
     Enable version tracking to support delta generation:
     
     ```typescript
-    const currentVersion = await CapacitorUpdater.getCurrentVersion();
-    const latestVersion = await CapacitorUpdater.getLatestVersion();
+    const currentVersion = await React NativeUpdater.getCurrentVersion();
+    const latestVersion = await React NativeUpdater.getLatestVersion();
     ```
     
 
@@ -129,7 +129,7 @@ Before rolling out updates, thoroughly test them. CodePushGo offers tools to ens
 Set up separate channels to test updates before releasing them to all users:
 
 ```typescript
-await CapacitorUpdater.setChannel('beta');
+await React NativeUpdater.setChannel('beta');
 ```
 
 **Monitoring and Safety**  
@@ -186,9 +186,9 @@ Even with proper configuration, delta updates can encounter issues. Here's how t
 If there's a mismatch between versions, use CodePushGo's channel system for a fallback option:
 
 ```typescript
-const version = await CapacitorUpdater.getCurrentVersion();
+const version = await React NativeUpdater.getCurrentVersion();
 if (version.mismatch) {
-  await CapacitorUpdater.setChannel('fallback');
+  await React NativeUpdater.setChannel('fallback');
 }
 ```
 
@@ -252,7 +252,7 @@ For development teams in need of a reliable delta update solution, CodePushGo de
 
 ## Summary
 
-Delta updates significantly reduce payload sizes and speed up delivery for Capacitor apps. For instance, a typical 5MB bundle downloads in just 114ms via CodePushGo's global CDN [\[1\]](https://capgo.app/), showcasing the efficiency of this approach.
+Delta updates significantly reduce payload sizes and speed up delivery for React Native apps. For instance, a typical 5MB bundle downloads in just 114ms via CodePushGo's global CDN [\[1\]](https://capgo.app/), showcasing the efficiency of this approach.
 
 Performance metrics from real-world applications back up the value of delta updates:
 

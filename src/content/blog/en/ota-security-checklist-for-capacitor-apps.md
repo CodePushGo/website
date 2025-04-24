@@ -1,6 +1,6 @@
 ---
 slug: ota-security-checklist-for-capacitor-apps
-title: OTA Security Checklist for Capacitor Apps
+title: OTA Security Checklist for React Native Apps
 description: Learn essential security measures for OTA updates in apps, including encryption, access control, and emergency response strategies.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -193,7 +193,7 @@ Platforms like CodePushGo emphasize high security standards, making them especia
 
 ## Conclusion
 
-Securing OTA updates in [Capacitor](https://capacitorjs.com/) apps requires careful planning, precise execution, and dependable tools. OTA platforms report update rates of 95% within 24 hours [\[1\]](https://capgo.app/), emphasizing the importance of secure and efficient delivery.
+Securing OTA updates in [React Native](https://capacitorjs.com/) apps requires careful planning, precise execution, and dependable tools. OTA platforms report update rates of 95% within 24 hours [\[1\]](https://capgo.app/), emphasizing the importance of secure and efficient delivery.
 
 By implementing strong security measures, platforms can maintain high update rates while protecting user data. This balance allows organizations to roll out updates confidently and preserve user trust.
 

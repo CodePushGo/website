@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-description: "All available settings for Capacitor Updater"
+description: "All available settings for React Native Updater"
 sidebar:
   order: 8
 ---
@@ -19,7 +19,7 @@ Default: `10000` (10 seconds)
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "appReadyTimeout": 1000
     }
   }
@@ -38,7 +38,7 @@ Default: `20` (20 second)
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "responseTimeout": 1000
     }
   }
@@ -57,7 +57,7 @@ Default: `true`
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoDeleteFailed": false
     }
   }
@@ -76,7 +76,7 @@ Default: `true`
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoDeletePrevious": false
     }
   }
@@ -95,7 +95,7 @@ Default: `true`
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": false
     }
   }
@@ -114,7 +114,7 @@ Default: `https://api.capgo.app/updates`
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "updateUrl": "https://example.com/api/updates"
     }
   }
@@ -133,7 +133,7 @@ Default: `https://api.capgo.app/stats`
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "statsUrl": "https://example.com/api/stats"
     }
   }
@@ -154,7 +154,7 @@ Default: `undefined`
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "privateKey": "YOUR_KEY"
     }
   }
@@ -173,7 +173,7 @@ Default: `undefined`
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true,
       "directUpdate": true
     }
@@ -196,7 +196,7 @@ To configure the plugin, use these settings:
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true,
       "resetWhenUpdate": false
     }
@@ -215,7 +215,7 @@ This setting require you to hide the app from the user while the update is being
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true,
       "directUpdate": true
     }
@@ -232,7 +232,7 @@ Set the default channel for the app. This will override any other channel set in
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "defaultChannel": "production"
     }
   }
@@ -248,7 +248,7 @@ This is the new way to set the appId. The old way is still and will stay support
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "AppId": "com.example.app"
     }
   }
@@ -264,7 +264,7 @@ This is the new way to set the version. The old way is still and will stay suppo
 // capacitor.config.json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "version": "1.2.3"
     }
   }

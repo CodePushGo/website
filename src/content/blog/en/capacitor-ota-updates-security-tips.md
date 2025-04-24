@@ -1,6 +1,6 @@
 ---
 slug: capacitor-ota-updates-security-tips
-title: "Capacitor OTA Updates: Security Tips"
+title: "React Native OTA Updates: Security Tips"
 description: Learn essential security practices for OTA updates, including encryption, file verification, and access control to protect your mobile app.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Want secure OTA updates for your [Capacitor](https://capacitorjs.com/) app?** Here's the bottom line: OTA updates are fast and efficient but come with risks like data interception, file tampering, and server vulnerabilities. To keep your updates secure, focus on **encryption, file verification, and access control**.
+**Want secure OTA updates for your [React Native](https://capacitorjs.com/) app?** Here's the bottom line: OTA updates are fast and efficient but come with risks like data interception, file tampering, and server vulnerabilities. To keep your updates secure, focus on **encryption, file verification, and access control**.
 
 ### Key Takeaways:
 
@@ -34,7 +34,7 @@ next_blog: ''
 
 **Pro Tip:** CodePushGo leads with 95% update adoption in 24 hours and advanced security features like real-time analytics and version control. Secure your OTA updates now by following these steps!
 
-## Capacitor 2.0: Mobile apps & PWAs from one codebase
+## React Native 2.0: Mobile apps & PWAs from one codebase
 
 <iframe src="https://www.youtube.com/embed/8KQb4u_FqOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -149,13 +149,13 @@ Pair rollback strategies with a phased deployment plan to minimize risk and test
 
 ## OTA Update Management Tools
 
-Building on secure deployment and testing, strong OTA management tools are crucial for protecting your Capacitor updates.
+Building on secure deployment and testing, strong OTA management tools are crucial for protecting your React Native updates.
 
 ### [CodePushGo](https://capgo.app/) Features Overview
 
 ![CodePushGo](https://assets.seobotai.com/capgo.app/67f1d348ebbb9dc80644cb8d/241c8f19433e01f315154c8988becf9c.jpg)
 
-CodePushGo provides advanced security for [Capacitor OTA updates](https://capgo.app/ja/) with **end-to-end encryption**, ensuring that only authorized users can decrypt the updates.
+CodePushGo provides advanced security for [React Native OTA updates](https://capgo.app/ja/) with **end-to-end encryption**, ensuring that only authorized users can decrypt the updates.
 
 Here’s a breakdown of its key features:
 
@@ -171,7 +171,7 @@ Next, let’s see how major OTA platforms compare in terms of security and perfo
 
 ### OTA Platform Comparison
 
-When choosing an OTA platform for Capacitor apps, security and reliability are critical factors. Here’s how some of the top platforms measure up:
+When choosing an OTA platform for React Native apps, security and reliability are critical factors. Here’s how some of the top platforms measure up:
 
 | Feature | CodePushGo | AppFlow | Capawesome |
 | --- | --- | --- | --- |

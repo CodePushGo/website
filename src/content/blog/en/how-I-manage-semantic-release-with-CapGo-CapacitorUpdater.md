@@ -1,9 +1,9 @@
 ---
-slug: how-rapido-cloud-manage-semantic-rerlease-with-CapGo-CapacitorUpdater
-title: How Rapido Cloud manage Semantic Release with CodePushGo CapacitorUpdater
+slug: how-rapido-cloud-manage-semantic-rerlease-with-CapGo-React NativeUpdater
+title: How Rapido Cloud manage Semantic Release with CodePushGo React NativeUpdater
 description: >-
   This is how I set up semantic release to manage releases of my applications
-  which use CapGo CapacitorUpdater
+  which use CapGo React NativeUpdater
 author: Rupert Barrow
 author_image_url: 'https://avatars.githubusercontent.com/u/48629751?v=4'
 author_url: 'https://linkedin.com/in/rbarrow'
@@ -11,7 +11,7 @@ created_at: 2024-09-22T00:00:00.000Z
 updated_at: 2024-09-22T00:00:00.000Z
 head_image: /rapido_cloud_study_case.webp
 head_image_alt: Study case rapido cloud
-keywords: semantic release, semantic-release, CapGo, CapacitorUpdater, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+keywords: semantic release, semantic-release, CapGo, React NativeUpdater, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Case Study
 published: true
 locale: en
@@ -22,19 +22,19 @@ next_blog: ''
 
 At Rapido Cloud (www.rapido.cloud), I am developing a mobile application for Salesforce clients to easily deploy their own branded mobile application without having to go through the difficult loops of using the Salesforce Mobile SDK or the Salesforce Mobile Publisher.
 
-I have developed this mobile app on a modern and "standard" platform with widespread components and tools including Ionic 8, Angular 18, TypeScript, Capacitor and now CapGo CapacitorUpdater. These are more simple to handle for clients who do not want to manage Salesforce platform specifics such as Lightning Web Components; and its easier and cheaper for me to recruit developers and maintainers of Ionic + Angular mobile applications.
+I have developed this mobile app on a modern and "standard" platform with widespread components and tools including Ionic 8, Angular 18, TypeScript, React Native and now CapGo React NativeUpdater. These are more simple to handle for clients who do not want to manage Salesforce platform specifics such as Lightning Web Components; and its easier and cheaper for me to recruit developers and maintainers of Ionic + Angular mobile applications.
 
-This article explains my design, my choices and implementation which make CapGo and `semantic-release` a very successful no-brainer for managing all deployements automatically via Github Actions. All this was designed, tested and documented during the nice 14-day free trial period of CapGo CapacitorUpdater.
+This article explains my design, my choices and implementation which make CapGo and `semantic-release` a very successful no-brainer for managing all deployements automatically via Github Actions. All this was designed, tested and documented during the nice 14-day free trial period of CapGo React NativeUpdater.
 
 ## 2. Why use CapGo ? Why use semantic-release ?
-CapGo CapacitorUpdater attracted me with its promise to make mobile app deployments much more simple, much more rapid and flexible than going through the standard Apple AppStore/Google PlayStore delivery process.
+CapGo React NativeUpdater attracted me with its promise to make mobile app deployments much more simple, much more rapid and flexible than going through the standard Apple AppStore/Google PlayStore delivery process.
 This is my first mobile application which I am pushing to the stores, having concentrated in the past on web apps, usually developed on the Salesforce Experience Cloud.
 
-I was rather afraid of the learning curve to make this successful but I got my app onto Apple TestFlight quite easily. I was then in position to use CapGo CapacitorUpdater to deploy my updates much faster.
+I was rather afraid of the learning curve to make this successful but I got my app onto Apple TestFlight quite easily. I was then in position to use CapGo React NativeUpdater to deploy my updates much faster.
 
-My first requirement and test case was to deploy for myself to test my app as a real mobile app on my own phone, instead of testing in a mobile emulator or in a simulator via the Nexus mobile browser suggested by IIonic. That's because my app uses native features such as Geolocation or accessing the Photo Gallery and Camera. Not having the past experience of testing a Capacitor mobile app, I wasn't sure if everything was going to work properly : nothing better than to test the real app, in real conditions !
+My first requirement and test case was to deploy for myself to test my app as a real mobile app on my own phone, instead of testing in a mobile emulator or in a simulator via the Nexus mobile browser suggested by IIonic. That's because my app uses native features such as Geolocation or accessing the Photo Gallery and Camera. Not having the past experience of testing a React Native mobile app, I wasn't sure if everything was going to work properly : nothing better than to test the real app, in real conditions !
 
-So CapGo CapacitorUpdater helped me udate my application on my mobile, live, 1 minute after saving a new feature or fix in my source code : so relieving, and so flexible, and easy to set up !
+So CapGo React NativeUpdater helped me udate my application on my mobile, live, 1 minute after saving a new feature or fix in my source code : so relieving, and so flexible, and easy to set up !
 
 ## 3. My branching and release model, and how semantic-release fits in
 
@@ -90,7 +90,7 @@ npx @capgo/cli bundle upload --channel $CHANNEL --apikey $CAPGO_APIKEY --bundle 
 - CAPGO_APIKEY is provided by CapGo to uniquely identify your CI/CD pipeline login
 - CAPGO_APPID is provided by CapGo to uniquely identify your application (eg `com.mystartup.mysuperapp`)
 
-## 6. My semantic release + CapGo CapacitorUpdate setup
+## 6. My semantic release + CapGo React NativeUpdate setup
 
 Finally, how does this all fit together ?
 
@@ -250,7 +250,7 @@ Integrating all this with XCode Cloud building new versions of the application b
 
 ## 7. Conclusion
 
-In conclusion, I am very happy to have been able to integrate CapGo CapacitorUpdater into my standard semantic release pipeline, rapidly within the delay of the 14-day trial period, and the result is the following :
+In conclusion, I am very happy to have been able to integrate CapGo React NativeUpdater into my standard semantic release pipeline, rapidly within the delay of the 14-day trial period, and the result is the following :
 - bundle version numbers are generated automatically by semantic release and compatible with the CapGo servers
 - semantic release automatically deploys CapGo application bundles, also making use of CapGo channels
 - this fits in nicely with XCode Cloud builds of application binaries
@@ -261,7 +261,7 @@ I am currently in the development phase of this app. I will quickly make it avai
 
 I hope to add better pre-build verification of CapGo `bundle upload` prerequisites into my semantic release configuration.
 
-I now have a clean, simple an reproducible semantic release pipeline for future mobile apps developed with Ionic + Angular + Capacitor.
+I now have a clean, simple an reproducible semantic release pipeline for future mobile apps developed with Ionic + Angular + React Native.
 
 
 ## Author - Rupert Barrow

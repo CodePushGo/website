@@ -1,6 +1,6 @@
 ---
 slug: capacitor-ota-updates-cicd-integration-guide
-title: "Capacitor OTA Updates: CI/CD Integration Guide"
+title: "React Native OTA Updates: CI/CD Integration Guide"
 description: Learn how to integrate OTA updates into your CI/CD pipeline for faster app deployments and improved user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,19 +9,19 @@ created_at: 2025-04-17T01:02:12.522Z
 updated_at: 2025-04-17T01:04:06.737Z
 head_image: https://assets.seobotai.com/capgo.app/6800475b28980901df1e541b-1744851846737.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, OTA updates, CI/CD, app deployment, automation, mobile development, versioning, error tracking
+keywords: React Native, OTA updates, CI/CD, app deployment, automation, mobile development, versioning, error tracking
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to update your [Capacitor](https://capacitorjs.com/) app instantly without app store delays?** Over-the-Air (OTA) updates let you push fixes and features directly to users' devices. Combine this with a CI/CD pipeline, and you can automate deployments, speed up bug fixes, and improve user experience.
+**Want to update your [React Native](https://capacitorjs.com/) app instantly without app store delays?** Over-the-Air (OTA) updates let you push fixes and features directly to users' devices. Combine this with a CI/CD pipeline, and you can automate deployments, speed up bug fixes, and improve user experience.
 
 ### Key Takeaways:
 
 -   **Why OTA + CI/CD?** Automates updates, enables rollbacks, and ensures faster bug fixes.
--   **What You Need:** Capacitor app, Git repository, CI/CD platform (e.g., [GitHub Actions](https://docs.github.com/actions)), and an OTA service like [CodePushGo](https://capgo.app/).
+-   **What You Need:** React Native app, Git repository, CI/CD platform (e.g., [GitHub Actions](https://docs.github.com/actions)), and an OTA service like [CodePushGo](https://capgo.app/).
 -   **Setup Costs:** Expect ~$300/month for CI/CD operations; CodePushGo's one-time setup fee is $2,600.
 -   **Best Practices:** Use versioning (major, minor, patch), staged rollouts, and error tracking to ensure smooth updates.
 -   **Top OTA Platforms:** CodePushGo stands out with fast updates (114ms), high success rates (82%), and global support.
@@ -51,7 +51,7 @@ Here are the main components you'll need for OTA updates in a CI/CD setup:
 
 | Component | Purpose | Key Features |
 | --- | --- | --- |
-| Capacitor App | Base app | Works with Capacitor 6 & 7 |
+| React Native App | Base app | Works with React Native 6 & 7 |
 | Git Repository | Code tracking | Monitors code changes and updates |
 | CI/CD Platform | Automation | Supports GitHub Actions, [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/) |
 | OTA Update Service | Distribution | Handles live updates and rollbacks |
@@ -82,7 +82,7 @@ Once these components are in place, you’re ready to integrate them into your C
 
 ### Installing OTA Components
 
-To get started, you'll need to add specific OTA packages and configurations to your Capacitor project. Here's a quick guide:
+To get started, you'll need to add specific OTA packages and configurations to your React Native project. Here's a quick guide:
 
 | **Component** | **Installation Command** | **Purpose** |
 | --- | --- | --- |
@@ -159,7 +159,7 @@ Once you've set your OTA update guidelines, the next step is choosing an OTA pla
 
 ### Platform Comparison
 
-Here’s a breakdown of key features across popular OTA platforms for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/):
+Here’s a breakdown of key features across popular OTA platforms for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/):
 
 | Feature | CodePushGo | Capawesome | Appflow | CodePush |
 | --- | --- | --- | --- | --- |

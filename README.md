@@ -16,7 +16,7 @@
 [![Open Bounties](https://img.shields.io/endpoint?url=https%3A%2F%2Fconsole.algora.io%2Fapi%2Fshields%2FCodePushGo%2Fbounties%3Fstatus%3Dopen)](https://console.algora.io/org/CodePushGo/bounties?status=open)
 [![Rewarded Bounties](https://img.shields.io/endpoint?url=https%3A%2F%2Fconsole.algora.io%2Fapi%2Fshields%2FCodePushGo%2Fbounties%3Fstatus%3Dcompleted)](https://console.algora.io/org/CodePushGo/bounties?status=completed)
 
-<h2><a href="https://capgo.app/consulting/">Hire a Capacitor consultant</a></h2>
+<h2><a href="https://capgo.app/consulting/">Hire a React Native consultant</a></h2>
 
 This is the source code for the CodePushGo website, built with [Astro](https://astro.build/).
 

@@ -27,14 +27,14 @@ Channel names can be anything you'd like. A common strategy is to match channels
 
 With your channels created, you need to configure your app to listen to the appropriate channel. In this example, we'll use the `Development` channel.
 
-Open your `capacitor.config.ts` (or `capacitor.config.json`) file. Under the `plugins` section, set the `channel` property of the `CapacitorUpdater` plugin to the name of your desired channel:
+Open your `capacitor.config.ts` (or `capacitor.config.json`) file. Under the `plugins` section, set the `channel` property of the `React NativeUpdater` plugin to the name of your desired channel:
 
 ```ts
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       defaultChannel: 'Development',
     },
   },

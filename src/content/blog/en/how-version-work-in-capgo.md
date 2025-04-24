@@ -2,7 +2,7 @@
 slug: how-version-work-in-capgo
 title: How version work in CodePushGo
 description: >-
-  Understand how CodePushGo manage versions in your Capacitor app, and use it at
+  Understand how CodePushGo manage versions in your React Native app, and use it at
   best. Learn the meaning of major, minor, patch.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -18,13 +18,13 @@ locale: en
 next_blog: how-to-release-major-version-in-capgo
 ---
 
-CodePushGo uses 2 main variables to manage versions in your Capacitor app:
+CodePushGo uses 2 main variables to manage versions in your React Native app:
   - Native version
   - JavaScript versions
 
 
 <div class="mx-auto" style="width:100%;">
-  <img src="/graph_capgo.webp" alt="Capacitor update system">
+  <img src="/graph_capgo.webp" alt="React Native update system">
 </div>
 
 All versions choices are decided server side by CodePushGo.
@@ -58,7 +58,7 @@ This is how CodePushGo channel will behave if you didn't change any settings.
 
 > This behavior will be based on the unique channel you made default.
 
-### When Fresh installation of your Capacitor app
+### When Fresh installation of your React Native app
 When user did download your Ionic app for the first time and opens the app it contacts CodePushGo server.
 
 Currently, 4 outputs can happen:
@@ -96,7 +96,7 @@ With some guard conditions:
 
 ## App store update
 
-When you publish your Capacitor JS app on the App Store, what happens is simple.
+When you publish your React Native JS app on the App Store, what happens is simple.
 
 Your user will get the new version from the store and remove all local updates in their app by default.
 

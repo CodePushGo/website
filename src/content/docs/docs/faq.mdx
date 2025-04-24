@@ -9,9 +9,9 @@ If you have questions not answered here, please ask! Both filing an issue or ask
 
 ### What is "code push"?[](https://capgo.app/docs/#what-is-code-push "Direct link to What is \"code push\"?")
 
-Code push, also referred to as "over the air updates" (OTA) is a cloud service enabling Capacitor developers to deploy updates to their apps in production. CodePushGo currently works on Android and iOS and will eventually work everywhere Capacitor works.
+Code push, also referred to as "over the air updates" (OTA) is a cloud service enabling React Native developers to deploy updates to their apps in production. CodePushGo currently works on Android and iOS and will eventually work everywhere React Native works.
 
-"Code Push" is a reference to the name of a deploy feature used by the React Native community from [Microsoft](https://appcenter.ms/) and [Expo](https://expo.dev/), neither of which support Capacitor.
+"Code Push" is a reference to the name of a deploy feature used by the React Native community from [Microsoft](https://appcenter.ms/) and [Expo](https://expo.dev/), neither of which support React Native.
 
 ### What is the difference between a bundle and a release?[](https://capgo.app/docs/faq/#what-is-the-difference-between-a-bundle-and-a-release "Direct link to What is the difference between a bundle and a release?")
 
@@ -49,7 +49,7 @@ Code push allows adding new code / replacing code on the device. Firebase Remote
 
 ### How big of a dependency footprint does this add?[](https://capgo.app/docs/faq/#how-big-of-a-dependency-footprint-does-this-add "Direct link to How big of a dependency footprint does this add?")
 
-I haven't measured recently, but I expect the code push library to add less than one megabyte to Capacitor apps. We know of ways we can make this smaller when that becomes a priority. If size is a blocker for you, please let us know!
+I haven't measured recently, but I expect the code push library to add less than one megabyte to React Native apps. We know of ways we can make this smaller when that becomes a priority. If size is a blocker for you, please let us know!
 
 ### Does code push work with large applications?[](https://capgo.app/docs/faq/#does-code-push-work-with-large-applications "Direct link to Does code push work with large applications?")
 
@@ -97,11 +97,11 @@ The CodePushGo updater (included in your application when you build your app) ca
 
 The CodePushGo command line tools (e.g. `npx @capgo/cli app update`) are installed on disk in npm caches, your logins are stored in your home directory in `~/.capgo`.
 
-### How does this relate to Capacitor Hot Reload?[](https://capgo.app/docs/faq/#how-does-this-relate-to-capacitor-hot-reload "Direct link to How does this relate to Capacitor Hot Reload?")
+### How does this relate to React Native Hot Reload?[](https://capgo.app/docs/faq/#how-does-this-relate-to-capacitor-hot-reload "Direct link to How does this relate to React Native Hot Reload?")
 
-Capacitor's Hot reload is a development-time-only feature. Code push is for production.
+React Native's Hot reload is a development-time-only feature. Code push is for production.
 
-Hot reload is a feature of Capacitor that allows you to change code on the device during development. It requires building the Capacitor app with a proxy to connect to your local machine.
+Hot reload is a feature of React Native that allows you to change code on the device during development. It requires building the React Native app with a proxy to connect to your local machine.
 
 Code push is a feature that allows you to change code on the device in production. We will use a variety of different techniques to make this possible depending on the platform.
 
@@ -121,17 +121,17 @@ If you have a use case for code push with web, we'd love to know !
 
 Yes.
 
-So far we've focused on Android and iOS support, but code push will eventually work everywhere Capacitor works. We're ensuring we've built all the infrastructure needed to provide code push reliably, safely first before expanding to more platforms.
+So far we've focused on Android and iOS support, but code push will eventually work everywhere React Native works. We're ensuring we've built all the infrastructure needed to provide code push reliably, safely first before expanding to more platforms.
 
 ### What OS versions does CodePushGo support?[](https://capgo.app/docs/faq/#what-os-versions-does-capgo-support "Direct link to What OS versions does CodePushGo support?")
 
-CodePushGo supports the same versions of Android that Capacitor supports.
+CodePushGo supports the same versions of Android that React Native supports.
 
-Capacitor currently supports Android API level 22+ and iOS 13.0+: [https://capacitorjs.com/docs/main/reference/support-policy](https://capacitorjs.com/docs/main/reference/support-policy/)
+React Native currently supports Android API level 22+ and iOS 13.0+: [https://capacitorjs.com/docs/main/reference/support-policy](https://capacitorjs.com/docs/main/reference/support-policy/)
 
-### What versions of Capacitor does CodePushGo support?[](https://capgo.app/docs/faq/#what-versions-of-flutter-does-capgo-support "Direct link to What versions of Flutter does CodePushGo support?")
+### What versions of React Native does CodePushGo support?[](https://capgo.app/docs/faq/#what-versions-of-flutter-does-capgo-support "Direct link to What versions of Flutter does CodePushGo support?")
 
-CodePushGo currently supports only recent stable releases of Capacitor. We could support older versions of Capacitor as well, we just haven't built out the infrastructure necessary to maintain such over time. We intend to support more versions of Capacitor in the future, including any version for our enterprise customers. [https://github.com/Cap-go/capgo/issues/1100](https://github.com/Cap-go/capgo/issues/1100/)
+CodePushGo currently supports only recent stable releases of React Native. We could support older versions of React Native as well, we just haven't built out the infrastructure necessary to maintain such over time. We intend to support more versions of React Native in the future, including any version for our enterprise customers. [https://github.com/Cap-go/capgo/issues/1100](https://github.com/Cap-go/capgo/issues/1100/)
 
 CodePushGo tracks Flutter stable and generally updates within a few hours of any stable release. Our system for doing these updates is automated takes a few minutes to run. We then do an extra manual verification step before publishing to our servers.
 
@@ -216,11 +216,11 @@ Our implementation always sends an update specifically tailored for the device t
 
 The update server could be changed to support responding with either the next incremental version or the latest version depending on your application's needs. Please let us know if alternative update behaviors are important to you.
 
-### How does CodePushGo relate to Capacitor?[](https://capgo.app/docs/faq/#how-does-capgo-relate-to-capacitor "Direct link to How does CodePushGo relate to Capacitor?")
+### How does CodePushGo relate to React Native?[](https://capgo.app/docs/faq/#how-does-capgo-relate-to-capacitor "Direct link to How does CodePushGo relate to React Native?")
 
-CodePushGo is a plugin for Capacitor that adds code push. CodePushGo is not a replacement for Capacitor. You can continue to use the Capacitor tooling you already know and love.
+CodePushGo is a plugin for React Native that adds code push. CodePushGo is not a replacement for React Native. You can continue to use the React Native tooling you already know and love.
 
-We track the latest stable release of Capacitor and update our code push plugin to work with it.
+We track the latest stable release of React Native and update our code push plugin to work with it.
 
 ### When do updates happen?[](https://capgo.app/docs/faq/#when-do-updates-happen "Direct link to When do updates happen?")
 
@@ -246,7 +246,7 @@ Requests sent from the app to CodePushGo servers include:
 
 -   app\_id (specified `capacitor.config.json`)
 -   channel (optional in `capacitor.config.json`)
--   release\_version (versionName from AndroidManifest.xml or CFBundleShortVersionString from Info.plist or `capacitor.config.json` if set in [`CapacitorUpdater.version`](/docs/plugin/settings/#version) )
+-   release\_version (versionName from AndroidManifest.xml or CFBundleShortVersionString from Info.plist or `capacitor.config.json` if set in [`React NativeUpdater.version`](/docs/plugin/settings/#version) )
 -   version\_number (generated as part of `npx @capgo/cli app update`)
 -   os_version (e.g. '11.2.1')
 -   platform (e.g. 'android', needed to send down the right patch) That's it. The code for this is in `updater/library/src/network.rs`

@@ -1,7 +1,7 @@
 ---
 slug: how-to-use-semantic-versioning-with-capgo-ota-updates
 title: How to Use Semantic Versioning with CodePushGo OTA Updates
-description: "Learn how to streamline app updates and version control using Semantic Versioning with CodePushGo's OTA updates for Capacitor apps."
+description: "Learn how to streamline app updates and version control using Semantic Versioning with CodePushGo's OTA updates for React Native apps."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-03T04:48:38.491Z
 updated_at: 2025-03-18T13:14:09.597Z
 head_image: https://assets.seobotai.com/capgo.app/67c4f6356c9ebce91891f4e6-1740977344964.jpg
 head_image_alt: Mobile Development
-keywords: Semantic Versioning, CodePushGo, OTA updates, Capacitor apps, version control, app updates, deployment, CI/CD
+keywords: Semantic Versioning, CodePushGo, OTA updates, React Native apps, version control, app updates, deployment, CI/CD
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to simplify [app updates](https://capgo.app/plugins/capacitor-updater/) and version control?** Semantic Versioning (SemVer) combined with [CodePushGo](https://capgo.app/)'s Over-The-Air (OTA) updates makes managing [Capacitor](https://capacitorjs.com/) apps easier and faster. Here's how:
+**Want to simplify [app updates](https://capgo.app/plugins/capacitor-updater/) and version control?** Semantic Versioning (SemVer) combined with [CodePushGo](https://capgo.app/)'s Over-The-Air (OTA) updates makes managing [React Native](https://capacitorjs.com/) apps easier and faster. Here's how:
 
 -   **Semantic Versioning Basics:** Versions use the format `MAJOR.MINOR.PATCH`:
     
@@ -115,7 +115,7 @@ If you're working on local development, you can disable auto-updates by adding t
 ```json
 { 
   "plugins": { 
-    "CapacitorUpdater": { 
+    "React NativeUpdater": { 
       "autoUpdate": false 
     } 
   } 
@@ -132,8 +132,8 @@ npx @capgo/cli@latest channel set production -s default
 Finally, notify the native plugin about the bundle's health in your app's main file:
 
 ```javascript
-import { CapacitorUpdater } from '@capgo/capacitor-updater';  
-CapacitorUpdater.notifyAppReady();
+import { React NativeUpdater } from '@capgo/capacitor-updater';  
+React NativeUpdater.notifyAppReady();
 ```
 
 This setup ensures your app is ready for smooth OTA deployments and version management.
@@ -170,7 +170,7 @@ CodePushGo allows you to manage deployments effectively by setting up distinct c
     ```json
     {
       "plugins": {
-        "CapacitorUpdater": {
+        "React NativeUpdater": {
           "disableAutoUpdate": "minor"
         }
       }
@@ -245,7 +245,7 @@ Managing semantic versioning in CodePushGo can sometimes complicate update deplo
 ```json
 { 
   "plugins": { 
-    "CapacitorUpdater": { 
+    "React NativeUpdater": { 
       "autoUpdate": false 
     } 
   } 
@@ -262,7 +262,7 @@ If an update fails, here's what you can do:
 For major version updates, use the `disableAutoUpdateBreaking` flag and listen for the `majorAvailable` event to handle updates properly:
 
 ```javascript
-CapacitorUpdater.addListener('majorAvailable', (info) => {
+React NativeUpdater.addListener('majorAvailable', (info) => {
   console.log(`Major update available: ${info.version}`);
   // Add your update prompt logic here
 });
@@ -303,7 +303,7 @@ CodePushGo's updater is designed to handle disruptions. For example, if the serv
 
 ## Summary
 
-Semantic Versioning, combined with CodePushGo, has made OTA updates for Capacitor apps more efficient. With 947.6 million updates delivered and 1,400 production apps using this system [\[1\]](https://capgo.app/), deployment processes have become 81% more efficient [\[1\]](https://capgo.app/). This setup allows developers to push updates quickly and in a controlled manner, bypassing app store delays.
+Semantic Versioning, combined with CodePushGo, has made OTA updates for React Native apps more efficient. With 947.6 million updates delivered and 1,400 production apps using this system [\[1\]](https://capgo.app/), deployment processes have become 81% more efficient [\[1\]](https://capgo.app/). This setup allows developers to push updates quickly and in a controlled manner, bypassing app store delays.
 
 Here’s what developers are saying:
 

@@ -1,8 +1,8 @@
 ---
 slug: creating-mobile-apps-with-sveltekit-and-capacitor
-title: Building Mobile Apps with SvelteKit and Capacitor
+title: Building Mobile Apps with SvelteKit and React Native
 description: >-
-  Learn how to build a mobile app using SvelteKit, Capacitor, and enhance the
+  Learn how to build a mobile app using SvelteKit, React Native, and enhance the
   native UI with Konsta UI.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -11,24 +11,24 @@ created_at: 2023-06-04T00:00:00.000Z
 updated_at: 2023-06-04T00:00:00.000Z
 head_image: /sveltekit_capacitor.webp
 head_image_alt: SvelteKit and CodePushGo illustration
-keywords: SvelteKit, Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+keywords: SvelteKit, React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
 locale: en
 next_blog: updating-your-capacitor-apps-seamlessly-with-capacitor-updater
 ---
 
-In this tutorial, we'll begin with a new [SvelteKit](https://kit.svelte.dev/) app and transition to native mobile development using Capacitor. Optionally, you can also integrate [Konsta UI](https://konstaui.com/) for an enhanced Tailwind CSS mobile UI.
+In this tutorial, we'll begin with a new [SvelteKit](https://kit.svelte.dev/) app and transition to native mobile development using React Native. Optionally, you can also integrate [Konsta UI](https://konstaui.com/) for an enhanced Tailwind CSS mobile UI.
 
-Capacitor allows you to easily convert your SvelteKit web application into a native mobile app without the need for significant modifications or learning a new skill like React Native.
+React Native allows you to easily convert your SvelteKit web application into a native mobile app without the need for significant modifications or learning a new skill like React Native.
 
-Follow this step-by-step guide to transform your SvelteKit app into a mobile app using Capacitor and, if desired, enhance your mobile UI with Konsta UI.
+Follow this step-by-step guide to transform your SvelteKit app into a mobile app using React Native and, if desired, enhance your mobile UI with Konsta UI.
 
-## About Capacitor
+## About React Native
 
-CapacitorJS is a game-changer! It can be effortlessly integrated into any web project, wrapping your application in a native webview and generating native Xcode and Android Studio projects for you. Its plugins provide access to native device features like the camera via a JavaScript bridge.
+React NativeJS is a game-changer! It can be effortlessly integrated into any web project, wrapping your application in a native webview and generating native Xcode and Android Studio projects for you. Its plugins provide access to native device features like the camera via a JavaScript bridge.
 
-Capacitor enables you to create a fantastic native mobile app without any complicated setup or steep learning curve. Its slim API and streamlined functionality make it easy to integrate into your project. You'll be amazed at how simple it is to achieve a fully functional native app with Capacitor!
+React Native enables you to create a fantastic native mobile app without any complicated setup or steep learning curve. Its slim API and streamlined functionality make it easy to integrate into your project. You'll be amazed at how simple it is to achieve a fully functional native app with React Native!
 
 ## Preparing Your SvelteKit App
 
@@ -43,23 +43,23 @@ npm run build
 
 After running the `build` command, you should see a new `dist` folder at the root of your project.
 
-This folder will be used by Capacitor later, but for now, we need to set it up correctly.
+This folder will be used by React Native later, but for now, we need to set it up correctly.
 
-## Adding Capacitor to Your SvelteKit App
+## Adding React Native to Your SvelteKit App
 
 To package any web app into a native mobile container, we need to follow a few initial steps. Afterward, it's as simple as running a single `sync` command.
 
-First, install the [Capacitor CLI](https://capacitorjs.com/docs/cli/) as a development dependency and set it up within your project. During the setup, you can press "enter" to accept the default values for name and bundle ID.
+First, install the [React Native CLI](https://capacitorjs.com/docs/cli/) as a development dependency and set it up within your project. During the setup, you can press "enter" to accept the default values for name and bundle ID.
 
 Next, install the core package and the relevant packages for the iOS and Android platforms.
 
-Finally, add the platforms, and Capacitor will create folders for each platform at the root of your project:
+Finally, add the platforms, and React Native will create folders for each platform at the root of your project:
 
 ```shell
-# Install the Capacitor CLI locally
+# Install the React Native CLI locally
 npm install -D @capacitor/cli
 
-# Initialize Capacitor in your SvelteKit project
+# Initialize React Native in your SvelteKit project
 npx cap init
 
 # Install the required packages
@@ -76,14 +76,14 @@ At this point, you should see new **ios** and **android** folders in your Svelte
 
 To access the Android project later, you need to install [Android Studio](https://developer.android.com/studio/). For iOS, you need a Mac and should install [Xcode](https://developer.apple.com/xcode/).
 
-Additionally, you should find a **capacitor.config.ts** file in your project, which contains some basic Capacitor settings used during the sync. The only thing you need to pay attention to is the **webDir**, which must point to the result of your build command. Currently, it is incorrect.
+Additionally, you should find a **capacitor.config.ts** file in your project, which contains some basic React Native settings used during the sync. The only thing you need to pay attention to is the **webDir**, which must point to the result of your build command. Currently, it is incorrect.
 
 To fix this, open the **capacitor.config.ts** file and update the **webDir**:
 
 ```ts
-import { CapacitorConfig } from '@capacitor/cli'
+import { React NativeConfig } from '@capacitor/cli'
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   appName: 'my-app',
   webDir: 'build',
@@ -91,7 +91,7 @@ const config: CapacitorConfig = {
 
 export default config
 ```
-ow that we’ve updated our Capacitor settings, let’s change out Sveltekit project to a static application by downloading the proper static adapter package:
+ow that we’ve updated our React Native settings, let’s change out Sveltekit project to a static application by downloading the proper static adapter package:
 
 ```shell
 npm i -D @sveltejs/adapter-static
@@ -145,7 +145,7 @@ npx cap sync
 
 The first command `npm run build` will build your SvelteKit project and copy the static build, while the second command `npx cap sync` will sync all the web code into the right places of the native platforms so they can be displayed in an app.
 
-Additionally, the sync command might update the native platforms and install plugins, so when you install new [Capacitor plugins](https://capacitorjs.com/docs/plugins/), it's time to run `npx cap sync` again.
+Additionally, the sync command might update the native platforms and install plugins, so when you install new [React Native plugins](https://capacitorjs.com/docs/plugins/), it's time to run `npx cap sync` again.
 
 Without realizing it, you've now completed the process, so let's see the app on a device!
 
@@ -153,7 +153,7 @@ Without realizing it, you've now completed the process, so let's see the app on 
 
 To develop iOS apps, you need to have **Xcode** installed, and for Android apps, you need to have **Android Studio** installed. Moreover, if you plan to distribute your app on the app store, you need to enroll in the Apple Developer Program for iOS and the Google Play Console for Android.
 
-If you're new to native mobile development, you can use the Capacitor CLI to easily open both native projects:
+If you're new to native mobile development, you can use the React Native CLI to easily open both native projects:
 
 ```shell
 npx cap open ios
@@ -176,11 +176,11 @@ Congratulations! You have successfully deployed your SvelteKit web app to a mobi
 
 But wait, there's also a faster way to do this during development...
 
-## Capacitor Live Reload
+## React Native Live Reload
 
 By now, you're probably used to having hot reload with all modern frameworks, and the good news is that you can have the same functionality **on a mobile device** with minimal effort!
 
-Enable access to your locally hosted application with live reload **on your network** by having the Capacitor app load the content from the specific URL.
+Enable access to your locally hosted application with live reload **on your network** by having the React Native app load the content from the specific URL.
 
 The first step is to figure out your local IP address. If you're using a Mac, you can find this out by running the following command in the terminal:
 
@@ -196,12 +196,12 @@ ipconfig
 
 Then look for the IPv4 address.
 
-We can instruct Capacitor to load the app directly from the server by adding another entry to our `capacitor.config.ts` file:
+We can instruct React Native to load the app directly from the server by adding another entry to our `capacitor.config.ts` file:
 
 ```javascript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   appName: 'my-app',
   webDir: 'dist',
@@ -231,9 +231,9 @@ You can now deploy your app one more time through Android Studio or Xcode. After
 
 Note that you should use the correct IP and port in your configuration. The code block above shows the default SvelteKit port for demonstration purposes.
 
-## Using Capacitor Plugins
+## Using React Native Plugins
 
-Let's take a look at how to use a Capacitor plugin in action, which we've mentioned a few times before. To do this, we can install a simple plugin by running:
+Let's take a look at how to use a React Native plugin in action, which we've mentioned a few times before. To do this, we can install a simple plugin by running:
 
 ```shell
 npm i @capacitor/share
@@ -255,7 +255,7 @@ There’s nothing fancy about the [Share plugin](https://capacitorjs.com/docs/ap
   }
 </script>
 
-<h1>Welcome to SvelteKit and Capacitor!</h1>
+<h1>Welcome to SvelteKit and React Native!</h1>
 <button on:click={share}>Share now!</button>
 ```
 
@@ -355,7 +355,7 @@ For example, let's open `src/routes/index.svelte` and change it to the following
 </Page>
 ```
 
-If the live reload is out of sync after installing all the necessary components, try restarting everything. Once you have done that, you should see a mobile app with a somewhat native look, built with SvelteKit and Capacitor!
+If the live reload is out of sync after installing all the necessary components, try restarting everything. Once you have done that, you should see a mobile app with a somewhat native look, built with SvelteKit and React Native!
 
 You should see the following page as a result:
 
@@ -365,7 +365,7 @@ You should see the following page as a result:
 
 ## Conclusion
 
-Capacitor is an excellent option for building native applications based on an existing web project, offering a simple way to share code and maintain a consistent UI.
+React Native is an excellent option for building native applications based on an existing web project, offering a simple way to share code and maintain a consistent UI.
 
 And with the addition of [CodePushGo](https://capgo.app/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
 

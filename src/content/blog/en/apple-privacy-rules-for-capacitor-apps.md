@@ -1,6 +1,6 @@
 ---
 slug: apple-privacy-rules-for-capacitor-apps
-title: Apple Privacy Rules for Capacitor Apps
+title: Apple Privacy Rules for React Native Apps
 description: "Learn how to comply with Apple's privacy rules for app development by implementing user consent, data transparency, and secure updates."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-03-31T01:48:03.832Z
 updated_at: 2025-03-31T01:48:15.606Z
 head_image: https://assets.seobotai.com/capgo.app/67e9dc69283d21cbd67b72cf-1743385695606.jpg
 head_image_alt: Mobile Development
-keywords: Apple privacy rules, Capacitor apps, data transparency, user consent, App Store compliance, privacy policy
+keywords: Apple privacy rules, React Native apps, data transparency, user consent, App Store compliance, privacy policy
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Apple's privacy rules now require [Capacitor](https://capacitorjs.com/) app developers to focus on user data transparency and compliance to ensure App Store approval and maintain user trust.**
+**Apple's privacy rules now require [React Native](https://capacitorjs.com/) app developers to focus on user data transparency and compliance to ensure App Store approval and maintain user trust.**
 
 Key steps include:
 
@@ -34,7 +34,7 @@ These rules emphasize user control, transparency, and secure app updates. Develo
 
 ## Apple Privacy Rules Explained
 
-Apple requires developers to prioritize clarity and give users control over their data. If you're a Capacitor developer, this means being upfront about how your app collects and uses data, both for users and Apple reviewers.
+Apple requires developers to prioritize clarity and give users control over their data. If you're a React Native developer, this means being upfront about how your app collects and uses data, both for users and Apple reviewers.
 
 ### Documenting Data Practices
 
@@ -64,14 +64,14 @@ Apple updates its privacy requirements in phases. Stay informed by regularly che
 
 ## Adding Privacy Rules to Your App
 
-Learn how to implement Apple's privacy rules in your Capacitor app with this step-by-step guide.
+Learn how to implement Apple's privacy rules in your React Native app with this step-by-step guide.
 
 ### Setup Requirements
 
 Before you begin, ensure the following:
 
 -   You have **Xcode 15 or later** for privacy manifest support.
--   Capacitor 6 or 7 is installed.
+-   React Native 6 or 7 is installed.
 -   The iOS deployment target is set to **iOS 14.5 or later**.
 -   Your app includes a properly configured `Info.plist` file.
 -   You have an **Apple Developer account** with valid certificates.
@@ -149,7 +149,7 @@ This section focuses on how to give users control over tracking and data access,
 
 ### Setting Up Tracking Permissions
 
-To configure App Tracking Transparency (ATT) in your Capacitor app, include the following key in your `Info.plist` file:
+To configure App Tracking Transparency (ATT) in your React Native app, include the following key in your `Info.plist` file:
 
 ```xml
 <key>NSUserTrackingUsageDescription</key>
@@ -337,7 +337,7 @@ CodePushGo's detailed permissions ensure that only authorized team members can a
 
 ### Key Privacy Requirements
 
-Apple's privacy rules for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) outline the following needs:
+Apple's privacy rules for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) outline the following needs:
 
 | Requirement | Details |
 | --- | --- |

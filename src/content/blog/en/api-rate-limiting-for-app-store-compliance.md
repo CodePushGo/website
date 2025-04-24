@@ -155,7 +155,7 @@ These tools work alongside standard rate limiting practices, offering real-time 
 
 ### Rate Limiting with CodePushGo
 
-CodePushGo's rate limiting tools integrate seamlessly into your [Capacitor](https://capacitorjs.com/) workflow. They help achieve a 95% user update rate within 24 hours while keeping API performance stable [\[1\]](https://capgo.app/).
+CodePushGo's rate limiting tools integrate seamlessly into your [React Native](https://capacitorjs.com/) workflow. They help achieve a 95% user update rate within 24 hours while keeping API performance stable [\[1\]](https://capgo.app/).
 
 Here’s a breakdown of CodePushGo’s approach:
 

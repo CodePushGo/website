@@ -11,12 +11,12 @@ Create a plugin file `capacitor-updater.js` in `plugins` directory.
 
 ```js
 
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 export default ({ app }) => {
   if (process.client) {
     window.onNuxtReady(() => {
-      CapacitorUpdater.notifyAppReady()
+      React NativeUpdater.notifyAppReady()
     })
   }
 }

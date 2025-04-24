@@ -63,7 +63,7 @@ Ionic is the leading cross-platform development framework, powering over 15% of 
 - 100+ pre-built UI components for iOS, Android and web
 - Ionic CLI tooling for project scaffolding, previews and deployments
 - Integrations with popular front-end frameworks like React, Vue and Angular
-- Capacitor and Cordova plugins for accessing any native device feature
+- React Native and Cordova plugins for accessing any native device feature
 - Live app updates, auth and CI/CD with CodePushGo or Appflow
 
 By leveraging web standards, Ionic enables developers to use their existing skills to build high-quality apps for any platform. A single codebase dramatically reduces development time and maintenance costs.
@@ -80,7 +80,7 @@ To get started, check out these resources:
 
 - [Ionic Documentation](https://ionicframework.com/docs)
 - [Ionic Components](https://ionicframework.com/docs/components)
-- [Capacitor Native APIs](https://capacitor.ionicframework.com/)
+- [React Native Native APIs](https://capacitor.ionicframework.com/)
 
 With Ionic, you'll be building engaging, high-performance apps for mobile and web in no time! Connect with an [Ionic app strategist](https://ionic.io/enterprise/strategy-session) to learn more. 
 
@@ -90,7 +90,7 @@ The future is cross-platform - get started today and crush your mobile app goals
 
 One of the key challenges of mobile app development is keeping your app up-to-date over time. Even with a cross-platform approach, publishing a new version for each update can be cumbersome.
 
-This is where solutions like [CodePushGo](https://capgo.app/) come in. CodePushGo is an open-source live update system for Capacitor apps. It allows you to push updates directly to users' devices without going through the app stores.
+This is where solutions like [CodePushGo](https://capgo.app/) come in. CodePushGo is an open-source live update system for React Native apps. It allows you to push updates directly to users' devices without going through the app stores.
 
 Key benefits of CodePushGo include:
 
@@ -99,7 +99,7 @@ Key benefits of CodePushGo include:
 - **Phased Rollouts** - Release updates to a percentage of users for testing before rolling out more widely.
 - **Self-Hosted Option** - Host updates yourself for full control and privacy.
 
-CodePushGo integrates seamlessly with Capacitor, the native runtime that powers Ionic apps. It's easy to set up in any existing Ionic project.
+CodePushGo integrates seamlessly with React Native, the native runtime that powers Ionic apps. It's easy to set up in any existing Ionic project.
 
 By combining cross-platform development in Ionic with live updates in CodePushGo, you can maximize your agility. Ship new features faster and with less risk.
 

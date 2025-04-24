@@ -28,7 +28,7 @@ Each one as a slight different way of being counted
 
 ## Users
 
-Each time a user download your Capacitor JS app and opens it, it will send a request to CodePushGo backend to know is update is available.
+Each time a user download your React Native JS app and opens it, it will send a request to CodePushGo backend to know is update is available.
 When the app does that, it sends little information, including the most important one `DeviceID`
 
 `DeviceID`: is a unique ID (UUID) defined by the OS of the device, this ID is unique by app install.
@@ -47,7 +47,7 @@ You can see both in your account on the home page:
 
 > CodePushGo don't count emulator and dev build in your usage. Keep in mind after the trial you can't have more than 3% of them, or that will lock your account, until you fix it.
 
-> CodePushGo is also doing some filtering for you. If you have CI/CD configured to send your version to Google PLAY, Google is running your Capacitor app each time to 20+ real device. During the 4 first hours of a new bundle, we block Google data center IP to prevent them to being counted.
+> CodePushGo is also doing some filtering for you. If you have CI/CD configured to send your version to Google PLAY, Google is running your React Native app each time to 20+ real device. During the 4 first hours of a new bundle, we block Google data center IP to prevent them to being counted.
 
 Each month, this data starts from zero.
 
@@ -83,7 +83,7 @@ The calculation of this value is a bit more complex, but the idea is the same as
 
 Each time a user download a bundle, this number is increased by the size of the download.
 
-This data is only related to your download size, the better your Capacitor JS app size is, the better you stay in your plan.
+This data is only related to your download size, the better your React Native JS app size is, the better you stay in your plan.
 
 > One important thing to note, CodePushGo cannot see what size is downloaded, it only sees the size of the bundle. So if you have a big bundle, and you have many users who fail to download it, you will reach the limit quickly.
 

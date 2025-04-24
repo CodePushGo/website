@@ -10,9 +10,9 @@ sidebar:
 Before migrating, note your current AppFlow configuration in `capacitor.config.ts`:
 
 ```typescript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   plugins: {
     LiveUpdates: {
       appId: 'your-app-id',
@@ -35,7 +35,7 @@ If using AppFlow's default background updates:
 // CodePushGo equivalent in capacitor.config.ts
 {
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       autoUpdate: true,
       directUpdate: false,
       autoDeletePrevious: true
@@ -51,7 +51,7 @@ If using AppFlow's force update strategy:
 // CodePushGo equivalent in capacitor.config.ts
 {
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       autoUpdate: true,
       directUpdate: true,
       keepUrlPathAfterReload: true
@@ -60,30 +60,30 @@ If using AppFlow's force update strategy:
 }
 
 // Required JavaScript code
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@capgo/capacitor-updater';
 import { SplashScreen } from '@capacitor/splash-screen';
 
-CapacitorUpdater.addListener('appReady', () => {
+React NativeUpdater.addListener('appReady', () => {
   SplashScreen.hide();
 });
 
-CapacitorUpdater.notifyAppReady();
+React NativeUpdater.notifyAppReady();
 ```
 
 ### Always Latest Updates
 If using AppFlow's always latest strategy, implement with CodePushGo:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@capgo/capacitor-updater';
 import { App } from '@capacitor/app';
 
 async function setupAlwaysLatest() {
   App.addListener('resume', async () => {
-    const result = await CapacitorUpdater.download({
+    const result = await React NativeUpdater.download({
       url: 'your-update-url'
     });
     if (result) {
-      await CapacitorUpdater.set({ id: result.id });
+      await React NativeUpdater.set({ id: result.id });
     }
   });
 }
@@ -108,12 +108,12 @@ if (result.activeApplicationPathChanged) {
 }
 
 // CodePushGo equivalent
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
-const bundle = await CapacitorUpdater.download({
+import { React NativeUpdater } from '@capgo/capacitor-updater';
+const bundle = await React NativeUpdater.download({
   url: 'your-update-url'
 });
 if (bundle) {
-  await CapacitorUpdater.set({ id: bundle.id });
+  await React NativeUpdater.set({ id: bundle.id });
 }
 ```
 
@@ -150,7 +150,7 @@ Add CodePushGo configuration to your `capacitor.config.json`:
 ```json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true
     }
   }

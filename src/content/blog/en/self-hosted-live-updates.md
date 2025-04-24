@@ -28,7 +28,7 @@ This means you can avoid delays caused by Apple Store reviews, address bugs and 
 
 Deploying CodePushGo-hosted Live Updates is a breeze using the [CodePushGo SDK](https://github.com/Cap-go/capacitor-updater/). As for Self-hosted Live Updates, I have enhanced the CodePushGo CLI with the necessary functionalities to enable configuration on your infrastructure.
 
-To ensure a safe and coordinated delivery of the latest web build artifacts to end-users, CodePushGo now allows the Capacitor Live Updates plugin to employ a public/private key pairing. When using Self-hosted Live Updates, an additional handshake is performed to provide reassurance that the artifacts downloaded via the plugin from the enterprise's infrastructure are unmodified.
+To ensure a safe and coordinated delivery of the latest web build artifacts to end-users, CodePushGo now allows the React Native Live Updates plugin to employ a public/private key pairing. When using Self-hosted Live Updates, an additional handshake is performed to provide reassurance that the artifacts downloaded via the plugin from the enterprise's infrastructure are unmodified.
 
 ![CodePushGo encryption schema](/encryption_flow.webp)
 
@@ -42,7 +42,7 @@ To generate a public/private key pair, enterprises can utilize the following Cod
 npx @capgo/cli@latest key create
 ```
 
-This command will set `CapacitorUpdater.privateKey` properties in your config file.
+This command will set `React NativeUpdater.privateKey` properties in your config file.
 And generate 2 key files, `capgo_key.pub` and `capgo_key` in your project root directory.
 
 This key pair is used to sign the update and verify the update on the app side.

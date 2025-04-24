@@ -1,7 +1,7 @@
 ---
 slug: installing-capacitor-cli-step-by-step-guide
-title: "Installing Capacitor CLI: Step-by-Step Guide"
-description: Learn to install and configure Capacitor CLI for transforming web apps into native mobile apps efficiently.
+title: "Installing React Native CLI: Step-by-Step Guide"
+description: Learn to install and configure React Native CLI for transforming web apps into native mobile apps efficiently.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,26 +9,26 @@ created_at: 2025-04-04T02:49:29.961Z
 updated_at: 2025-04-04T02:49:43.341Z
 head_image: https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f-1743734983341.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, CLI, mobile app development, Node.js, Android, iOS, live updates
+keywords: React Native, CLI, mobile app development, Node.js, Android, iOS, live updates
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**[Capacitor](https://capacitorjs.com/) CLI helps you transform web apps into native iOS and Android apps with one codebase.** Here's how to set it up quickly:
+**[React Native](https://capacitorjs.com/) CLI helps you transform web apps into native iOS and Android apps with one codebase.** Here's how to set it up quickly:
 
 -   **Prerequisites**: Install [Node.js](https://nodejs.org/en) (v16+), npm, and a web framework (React, Vue, Angular, etc.).
--   **[Install Capacitor CLI](https://capgo.app/docs/cli/commands)**: Run `npm install @capacitor/cli @capacitor/core` and initialize your project with `npx cap init`.
+-   **[Install React Native CLI](https://capgo.app/docs/cli/commands)**: Run `npm install @capacitor/cli @capacitor/core` and initialize your project with `npx cap init`.
 -   **Prepare Platforms**: Add support for iOS (`npx cap add ios`) and Android (`npx cap add android`) platforms.
 -   **Build and Sync**: Use `npm run build` and `npx cap sync` to transfer web assets to native projects.
 -   **Optional Live Updates**: Use tools like [CodePushGo](https://capgo.app/) to push updates instantly without app store delays.
 
-Capacitor CLI simplifies app development and maintenance. Follow the guide for smooth setup and troubleshooting.
+React Native CLI simplifies app development and maintenance. Follow the guide for smooth setup and troubleshooting.
 
-## Build a Mobile App Fast! React + [Capacitor](https://capacitorjs.com/) + [Tailwind](https://tailwindcss.com/) + [DaisyUI](https://daisyui.com/)
+## Build a Mobile App Fast! React + [React Native](https://capacitorjs.com/) + [Tailwind](https://tailwindcss.com/) + [DaisyUI](https://daisyui.com/)
 
-![Capacitor](https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/PPXktTJXMPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -49,7 +49,7 @@ npm --version
 
 If you need to update, download Node.js (which includes npm) from the official website.
 
-After confirming Node.js is ready, ensure your web project meets the necessary Capacitor requirements.
+After confirming Node.js is ready, ensure your web project meets the necessary React Native requirements.
 
 ### Check Your Web Project
 
@@ -98,21 +98,21 @@ Once your Node.js and web project are ready, move on to installing platform-spec
 
 When integrating CodePushGo later, make sure you have a stable internet connection and valid SSL certificates.
 
-With these steps done, you're set for a smooth Capacitor development process. Next, you’ll install the Capacitor CLI.
+With these steps done, you're set for a smooth React Native development process. Next, you’ll install the React Native CLI.
 
-## Install Capacitor CLI
+## Install React Native CLI
 
-With your environment ready, it's time to install and configure Capacitor CLI.
+With your environment ready, it's time to install and configure React Native CLI.
 
-### Add Capacitor Packages
+### Add React Native Packages
 
-Start by installing the Capacitor CLI and Core packages using npm:
+Start by installing the React Native CLI and Core packages using npm:
 
 ```bash
 npm install @capacitor/cli @capacitor/core
 ```
 
-Once installed, confirm the setup by checking the [Capacitor version](https://capgo.app/plugins/ivs-player/):
+Once installed, confirm the setup by checking the [React Native version](https://capgo.app/plugins/ivs-player/):
 
 ```bash
 npx cap --version
@@ -120,7 +120,7 @@ npx cap --version
 
 ### Set Up Your Project
 
-Initialize Capacitor in your project with the following command:
+Initialize React Native in your project with the following command:
 
 ```bash
 npx cap init
@@ -137,9 +137,9 @@ During initialization, you'll be prompted to provide these details:
 Next, update your configuration file (`capacitor.config.ts` or `capacitor.config.json`) with the relevant settings:
 
 ```typescript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.mycompany.myapp',
   appName: 'My Awesome App',
   webDir: 'dist',
@@ -170,7 +170,7 @@ npm run build
 npx cap sync
 ```
 
-This process compiles your web assets and transfers them to the native projects, including any installed [Capacitor plugins](https://capgo.app/plugins/).
+This process compiles your web assets and transfers them to the native projects, including any installed [React Native plugins](https://capgo.app/plugins/).
 
 To open the native projects for further customization:
 
@@ -183,7 +183,7 @@ Now you're ready to test your setup and resolve any issues that may arise.
 
 ## Fix Common Problems
 
-When setting up Capacitor CLI, you might run into a few common hiccups. Here's how to tackle them:
+When setting up React Native CLI, you might run into a few common hiccups. Here's how to tackle them:
 
 ### Android Gradle Issues
 
@@ -223,7 +223,7 @@ A blank screen usually points to a configuration issue. Here's how to address it
 -   **Check the Web Directory Path**: Ensure the `webDir` matches your build output.
     
     ```typescript
-    const config: CapacitorConfig = {
+    const config: React NativeConfig = {
         webDir: 'dist', // Adjust if necessary
     };
     ```
@@ -315,7 +315,7 @@ To enable live updates, add the following to your `capacitor.config.ts` file:
 ```typescript
 {
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       autoUpdate: true,
       updateUrl: 'https://api.capgo.app/updates'
     }
@@ -350,14 +350,14 @@ Test updates in development before deploying them live. Use the following comman
     ```
     
 
-CodePushGo ensures compliance with Apple and Android guidelines, so your live updates won't risk app store violations. It's an efficient way to manage Capacitor apps after installation.
+CodePushGo ensures compliance with Apple and Android guidelines, so your live updates won't risk app store violations. It's an efficient way to manage React Native apps after installation.
 
 ## Conclusion
 
-Setting up Capacitor CLI is simple when you have the right prerequisites in place. This setup ensures smoother app updates and efficient development workflows.
+Setting up React Native CLI is simple when you have the right prerequisites in place. This setup ensures smoother app updates and efficient development workflows.
 
-Modern tools make app maintenance easier than ever. For example, CodePushGo now provides live updates, replacing older methods. Its integration with the CLI installation makes it a great option for developers working with Capacitor apps.
+Modern tools make app maintenance easier than ever. For example, CodePushGo now provides live updates, replacing older methods. Its integration with the CLI installation makes it a great option for developers working with React Native apps.
 
-The [Capacitor ecosystem](https://capgo.app/blog/capacitor-comprehensive-guide/) is constantly improving with new tools and features. Installing the CLI is just the starting point for [building mobile apps](https://capgo.app/blog/angular-mobile-app-capacitor/), and you'll benefit from detailed documentation and an active developer community.
+The [React Native ecosystem](https://capgo.app/blog/capacitor-comprehensive-guide/) is constantly improving with new tools and features. Installing the CLI is just the starting point for [building mobile apps](https://capgo.app/blog/angular-mobile-app-capacitor/), and you'll benefit from detailed documentation and an active developer community.
 
-Be sure to keep the Capacitor CLI and its packages up to date to avoid compatibility issues.
+Be sure to keep the React Native CLI and its packages up to date to avoid compatibility issues.

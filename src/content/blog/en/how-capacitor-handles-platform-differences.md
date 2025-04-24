@@ -1,6 +1,6 @@
 ---
 slug: how-capacitor-handles-platform-differences
-title: How Capacitor Handles Platform Differences
+title: How React Native Handles Platform Differences
 description: Learn how to effectively manage platform differences in mobile app development using a single codebase for iOS and Android.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,16 +9,16 @@ created_at: 2025-03-25T02:08:36.160Z
 updated_at: 2025-03-25T02:08:56.741Z
 head_image: https://assets.seobotai.com/capgo.app/67e200987856e801f1f26fa8-1742868536741.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, mobile development, cross-platform, iOS, Android, custom plugins, UI design, live updates
+keywords: React Native, mobile development, cross-platform, iOS, Android, custom plugins, UI design, live updates
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capacitor](https://capacitorjs.com/) helps developers build apps for iOS and Android using the same codebase, while addressing platform-specific differences. It simplifies native feature integration, ensures compliance with platform guidelines, and optimizes performance. Key highlights:
+[React Native](https://capacitorjs.com/) helps developers build apps for iOS and Android using the same codebase, while addressing platform-specific differences. It simplifies native feature integration, ensures compliance with platform guidelines, and optimizes performance. Key highlights:
 
--   **Platform Detection**: Use `Capacitor.getPlatform()` to apply platform-specific code.
+-   **Platform Detection**: Use `React Native.getPlatform()` to apply platform-specific code.
 -   **Built-in Plugins**: Unified APIs for features like Camera, Storage, and Geolocation.
 -   **Custom Plugins**: Add native code for unique requirements.
 -   **UI Adjustments**: Follow design rules for iOS (e.g., [SF Symbols](https://developer.apple.com/sf-symbols/), rounded buttons) and Android (e.g., [Material Icons](https://developers.google.com/fonts/docs/material_icons), left-aligned buttons).
@@ -34,26 +34,26 @@ next_blog: ''
 | **Plugins (e.g., Camera)** | [AVFoundation](https://developer.apple.com/documentation/avfoundation/) | [Camera2 API](https://developer.android.com/media/camera/camera2) |
 | **Build Output** | `.ipa` file | `.aab` or `.apk` file |
 
-Capacitor bridges the gap between web and native app development, making it easier to create cross-platform apps while maintaining platform-specific optimizations.
+React Native bridges the gap between web and native app development, making it easier to create cross-platform apps while maintaining platform-specific optimizations.
 
-## Cross-Platform Development: Exploring CapacitorJS with ...
+## Cross-Platform Development: Exploring React NativeJS with ...
 
 <iframe src="https://www.youtube.com/embed/73YWZ1G_DX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## How [Capacitor](https://capacitorjs.com/) Handles Platform Code
+## How [React Native](https://capacitorjs.com/) Handles Platform Code
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-25.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-25.jpg?auto=compress)
 
-Capacitor offers tools to manage platform-specific code, allowing developers to create tailored experiences for iOS and Android using a single API.
+React Native offers tools to manage platform-specific code, allowing developers to create tailored experiences for iOS and Android using a single API.
 
 ### Detect Platforms in Code
 
-With Capacitor's built-in platform API, detecting the current platform is simple. The `Capacitor.getPlatform()` method identifies the running environment, making it easy to apply conditional logic:
+With React Native's built-in platform API, detecting the current platform is simple. The `React Native.getPlatform()` method identifies the running environment, making it easy to apply conditional logic:
 
 ```typescript
-import { Capacitor } from '@capacitor/core';
+import { React Native } from '@capacitor/core';
 
-const platform = Capacitor.getPlatform();
+const platform = React Native.getPlatform();
 if (platform === 'ios') {
   // Code specific to iOS
 } else if (platform === 'android') {
@@ -61,11 +61,11 @@ if (platform === 'ios') {
 }
 ```
 
-This approach is especially handy for features like [biometric authentication](https://capgo.app/plugins/capacitor-native-biometric/), where iOS might use [Face ID](https://en.wikipedia.org/wiki/Face_ID) and Android relies on Fingerprint Authentication. Along with platform detection, Capacitor's built-in plugins simplify native integration.
+This approach is especially handy for features like [biometric authentication](https://capgo.app/plugins/capacitor-native-biometric/), where iOS might use [Face ID](https://en.wikipedia.org/wiki/Face_ID) and Android relies on Fingerprint Authentication. Along with platform detection, React Native's built-in plugins simplify native integration.
 
 ### Built-in Platform Features
 
-Capacitor comes with a set of core plugins that handle platform-specific differences seamlessly. These plugins manage the complexities of native implementations while providing a consistent JavaScript interface:
+React Native comes with a set of core plugins that handle platform-specific differences seamlessly. These plugins manage the complexities of native implementations while providing a consistent JavaScript interface:
 
 | Plugin | iOS Implementation | Android Implementation |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ For cases where built-in plugins don't meet your needs, you can create custom pl
     ```typescript
     @PluginMethod()
     async customFunction(): Promise<void> {
-      if (Capacitor.getPlatform() === 'ios') {
+      if (React Native.getPlatform() === 'ios') {
         // Add iOS-specific code
       } else {
         // Add Android-specific code
@@ -145,7 +145,7 @@ While each platform has its own rules, maintaining a cohesive brand identity acr
 const sharedStyles = {
   primaryColor: '#007AFF', // iOS blue
   androidPrimaryColor: '#6200EE', // Material Design purple
-  borderRadius: Capacitor.getPlatform() === 'ios' ? '10px' : '4px'
+  borderRadius: React Native.getPlatform() === 'ios' ? '10px' : '4px'
 };
 
 :root {
@@ -154,7 +154,7 @@ const sharedStyles = {
 }
 ```
 
-Using Capacitor, you can integrate platform-specific UI components while keeping functionality consistent. It also helps manage system-wide settings like Dark Mode and Dynamic Type. To complete the process, make sure your platform-specific build settings align with these guidelines.
+Using React Native, you can integrate platform-specific UI components while keeping functionality consistent. It also helps manage system-wide settings like Dark Mode and Dynamic Type. To complete the process, make sure your platform-specific build settings align with these guidelines.
 
 ## Platform Setup and Config
 
@@ -239,7 +239,7 @@ Here are some key build considerations:
 
 ![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
 
-Keeping [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) updated efficiently for both iOS and Android is crucial. CodePushGo offers a live update system that aligns with the guidelines of both platforms.
+Keeping [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) updated efficiently for both iOS and Android is crucial. CodePushGo offers a live update system that aligns with the guidelines of both platforms.
 
 ### CodePushGo Features
 
@@ -264,7 +264,7 @@ Currently, 750 production apps rely on CodePushGo, maintaining an 82% global upd
 
 ### Platform Management Benefits
 
-Managing platform differences effectively in Capacitor enhances cross-platform development. Its built-in tools for platform detection and configuration allow developers to create smooth experiences for both iOS and Android, all while respecting the unique design standards and features of each platform.
+Managing platform differences effectively in React Native enhances cross-platform development. Its built-in tools for platform detection and configuration allow developers to create smooth experiences for both iOS and Android, all while respecting the unique design standards and features of each platform.
 
 By focusing on proper platform management, development teams can release updates faster and improve user satisfaction. Tools like CodePushGo have shown how consistent platform handling can lead to higher update success rates and better user experiences [\[1\]](https://capgo.app/).
 

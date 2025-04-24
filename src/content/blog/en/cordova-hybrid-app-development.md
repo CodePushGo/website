@@ -5,7 +5,7 @@ description: >-
   Dive deep into the world of Apache Cordova. Learn how Cordova empowers
   developers to build cross-platform mobile apps using web technologies like
   HTML, CSS, and JavaScript. Explore its history, benefits, and compare it with
-  alternatives like Capacitor.
+  alternatives like React Native.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://twitter.com/martindonadieu'
@@ -74,18 +74,18 @@ Ionic and Cordova have long been intertwined, forming a powerful synergy that st
 3. **A Streamlined Development Workflow:**
    - Ionic and Cordova complement each other perfectly, establishing a well-defined and efficient development workflow. Developers can leverage Ionic's rich UI toolkit and rapid prototyping capabilities to craft beautiful and engaging user interfaces. At the same time, Cordova ensures that these apps can seamlessly tap into native device features, delivering a truly native-like experience.
 
-### Capacitor: A Modern Contender in the Hybrid App Arena
+### React Native: A Modern Contender in the Hybrid App Arena
 
-While Cordova has enjoyed a long and successful reign as the go-to solution for hybrid app development, a new contender has emerged on the scene, aiming to push the boundaries further: Capacitor.
+While Cordova has enjoyed a long and successful reign as the go-to solution for hybrid app development, a new contender has emerged on the scene, aiming to push the boundaries further: React Native.
 
-1. **Capacitor: Modernizing the Hybrid App Runtime:**
-   - Developed by the same team behind Ionic, Capacitor represents a natural evolution of the hybrid app runtime. It builds upon the solid foundation laid by Cordova while addressing some of its limitations and embracing modern web standards.
+1. **React Native: Modernizing the Hybrid App Runtime:**
+   - Developed by the same team behind Ionic, React Native represents a natural evolution of the hybrid app runtime. It builds upon the solid foundation laid by Cordova while addressing some of its limitations and embracing modern web standards.
 
 2. **Leveraging the Power of Modern Web APIs:**
-   - Capacitor is designed from the ground up to embrace the latest advancements in web technologies. It leverages modern Web APIs, such as Service Workers, Web Components, and Promises, to deliver enhanced performance, improved security, and a more future-proof foundation for hybrid apps.
+   - React Native is designed from the ground up to embrace the latest advancements in web technologies. It leverages modern Web APIs, such as Service Workers, Web Components, and Promises, to deliver enhanced performance, improved security, and a more future-proof foundation for hybrid apps.
 
 3. **Seamless Native Integration and Customization:**
-   - One of Capacitor's key strengths is its deep integration with native SDKs, providing developers with greater flexibility and control over the native layer of their apps. This allows for easier customization of native functionality, more streamlined debugging processes, and a generally more robust and reliable integration with the underlying device platform.
+   - One of React Native's key strengths is its deep integration with native SDKs, providing developers with greater flexibility and control over the native layer of their apps. This allows for easier customization of native functionality, more streamlined debugging processes, and a generally more robust and reliable integration with the underlying device platform.
 
 ## About Ionic: Empowering Developers to Build Amazing Hybrid Apps
 
@@ -99,9 +99,9 @@ Ionic has established itself as a leading open-source framework for crafting hig
 - **Vibrant and Supportive Community:** Ionic boasts a large and active community of developers worldwide. This vibrant community contributes to a wealth of resources, including extensive documentation, helpful tutorials, and active forums where developers can seek assistance and share their knowledge.
 - **Enterprise-Grade Support and Solutions:** Ionic offers enterprise-grade support and services for organizations with mission-critical app needs. This includes dedicated support channels, expert consulting, and tailored solutions to meet the specific requirements of enterprise clients.
 
-## CodePushGo: Streamlining Live Updates for Capacitor Apps
+## CodePushGo: Streamlining Live Updates for React Native Apps
 
-CodePushGo is a comprehensive platform explicitly designed to simplify and enhance the live update process for Capacitor-based mobile applications. 
+CodePushGo is a comprehensive platform explicitly designed to simplify and enhance the live update process for React Native-based mobile applications. 
 
 ### Key Benefits of Integrating CodePushGo into Your Workflow:
 
@@ -110,6 +110,6 @@ CodePushGo is a comprehensive platform explicitly designed to simplify and enhan
 - **Enhanced User Experience with Minimal Disruptions:**  [CodePushGo](capgo.app) prioritizes the user experience by delivering updates seamlessly and unobtrusively. This ensures that your users can enjoy the latest enhancements without interruptions or delays, keeping them engaged and satisfied.
 - **Accelerated Development Cycles and Rapid Iteration:** [CodePushGo](capgo.app) empowers development teams to iterate faster and more efficiently by enabling instant deployment and testing of app updates. This rapid feedback loop fosters innovation and allows for quicker response times to user feedback or changing market demands.
 
-## Why CodePushGo Exclusively Supports Capacitor for Live Updates
+## Why CodePushGo Exclusively Supports React Native for Live Updates
 
-CodePushGo has made the strategic decision to focus solely on Capacitor, a modern and powerful hybrid app runtime, to deliver the best possible live update experience. Capacitor's modern architecture, deep integration with native SDKs, and commitment to web standards align perfectly with CodePushGo's vision of providing seamless, reliable, and efficient live updates for hybrid mobile applications.
+CodePushGo has made the strategic decision to focus solely on React Native, a modern and powerful hybrid app runtime, to deliver the best possible live update experience. React Native's modern architecture, deep integration with native SDKs, and commitment to web standards align perfectly with CodePushGo's vision of providing seamless, reliable, and efficient live updates for hybrid mobile applications.

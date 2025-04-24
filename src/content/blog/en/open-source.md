@@ -135,7 +135,7 @@ Remember that contributing to open source is not just about code. You can also h
 
 As you know, open-source technologies have multiple advantages. They are available at a portion of the price of proprietary software. They are also flexible and more secure due to frequent code revisions by the open-source community.
 
-These are all principles we adhere to in CodePushGo! We're an open source live update system for Capacitor apps whose mission is to live update the Capacitor apps. We allows you to deploy updates to your users without the need to re-install the app. We're a cloud-based service, but you can also self-host it.
+These are all principles we adhere to in CodePushGo! We're an open source live update system for React Native apps whose mission is to live update the React Native apps. We allows you to deploy updates to your users without the need to re-install the app. We're a cloud-based service, but you can also self-host it.
 
 Why not try it for yourself? [Try our free version](https://web.capgo.app/register/) and [contribute to our ever-evolving open-source project](https://github.com/Cap-go/) - we’d be happy to have you on board!
 

@@ -20,7 +20,7 @@ New way: Use the `version` field in your `capacitor.config.json` file.
 ```json
 {
   "plugins": {
-    "CapacitorUpdater": {
+    "React NativeUpdater": {
       "autoUpdate": true, // Enable auto-update, true by default
       "appId": "com.example.app", // Used to identify the app in the server
       "version": "1.0.0" // Used to check for updates
@@ -77,9 +77,9 @@ This can be done by calling within your app `notifyAppReady`.
 Do it as soon as possible.
 
 ```ts
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 ```
 
 #### User flow
@@ -110,9 +110,9 @@ To upload the version at each commit setup CI/CD with this guide
 When `disableAutoUpdateBreaking` is set to true, you can listen to the event to know when the app refuses to do a major braking update.
 
 ```jsx
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-CapacitorUpdater.addListener('majorAvailable', (info: any) => {
+React NativeUpdater.addListener('majorAvailable', (info: any) => {
   console.log('majorAvailable was fired', info.version)
 })
 ```

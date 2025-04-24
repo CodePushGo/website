@@ -26,7 +26,7 @@ I got the feeling too, but since I'm the maker of CodePushGo, I was able to take
 
 > Since all is open-source, you have this power too :)
 
-The next pain I got in the Capacitor app distribution process is to make other teammates test the updates!
+The next pain I got in the React Native app distribution process is to make other teammates test the updates!
 
 With TestFlight, the issue is simple, bringing people into your team and making them understand how to get it is time-consuming!
 
@@ -57,9 +57,9 @@ With that one, the only thing you need to do is allow one of your channels to be
 
 And then add this in the code of your Ionic app, for best experience, use this after the user clicks on a button like "register for beta"
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-const deviceId = await CapacitorUpdater.setChannel({ channel: 'beta' })
+const deviceId = await React NativeUpdater.setChannel({ channel: 'beta' })
 ```
 
 ### Manual way
@@ -67,9 +67,9 @@ const deviceId = await CapacitorUpdater.setChannel({ channel: 'beta' })
 This can be useful for your internal team, this is fast to implement.
 Allow users to copy their deviceID from your app and send it to you manually, this code will help you to get it:
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-const deviceId = await CapacitorUpdater.getDeviceId()
+const deviceId = await React NativeUpdater.getDeviceId()
 ```
 Hide a button somewhere in your app, or show the button to only connected users with a `admin` role, for example.
 
@@ -86,9 +86,9 @@ This can be useful for your beta testers, this is longer to implement.
 
 Same as the manual way, you have to get the deviceID
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-const deviceId = await CapacitorUpdater.getDeviceId()
+const deviceId = await React NativeUpdater.getDeviceId()
 ```
 
 But this time you have to send it automatically to your backend, I let you decide how you do that.

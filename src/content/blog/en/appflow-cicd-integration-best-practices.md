@@ -51,7 +51,7 @@ With Appflow, teams can push updates directly to users' devices without waiting 
 
 ### iOS and Android Build Tools
 
-Appflow automates the building process for both iOS and Android platforms. For iOS, it manages tasks like code signing, provisioning, and Xcode settings. For Android, it handles Gradle automation, keystore management, and generates APKs or app bundles. This ensures consistent builds for frameworks like [React Native](https://reactnative.dev/) and [Capacitor](https://capacitorjs.com/).
+Appflow automates the building process for both iOS and Android platforms. For iOS, it manages tasks like code signing, provisioning, and Xcode settings. For Android, it handles Gradle automation, keystore management, and generates APKs or app bundles. This ensures consistent builds for frameworks like [React Native](https://reactnative.dev/) and [React Native](https://capacitorjs.com/).
 
 ### App Store Deployment
 

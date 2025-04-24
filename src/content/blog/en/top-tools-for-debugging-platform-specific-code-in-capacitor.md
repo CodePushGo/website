@@ -1,7 +1,7 @@
 ---
 slug: top-tools-for-debugging-platform-specific-code-in-capacitor
-title: Top Tools for Debugging Platform-Specific Code in Capacitor
-description: Explore essential tools and techniques for effectively debugging platform-specific code in Capacitor applications across various environments.
+title: Top Tools for Debugging Platform-Specific Code in React Native
+description: Explore essential tools and techniques for effectively debugging platform-specific code in React Native applications across various environments.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,19 +9,19 @@ created_at: 2025-04-17T11:27:03.103Z
 updated_at: 2025-04-17T11:31:36.415Z
 head_image: https://assets.seobotai.com/capgo.app/680053ff28980901df1e733b-1744889496415.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, debugging tools, platform-specific code, VS Code, Android Studio, Xcode, live updates, web debugging
+keywords: React Native, debugging tools, platform-specific code, VS Code, Android Studio, Xcode, live updates, web debugging
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-Debugging platform-specific code in [Capacitor](https://capacitorjs.com/) can be challenging, but the right tools simplify the process. Here’s what you need to know:
+Debugging platform-specific code in [React Native](https://capacitorjs.com/) can be challenging, but the right tools simplify the process. Here’s what you need to know:
 
 -   **Key Tools**: Use [VS Code](https://code.visualstudio.com/) with extensions, [Android Studio](https://developer.android.com/studio), [Xcode](https://developer.apple.com/xcode/), and browser dev tools like [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview) and [Safari Web Inspector](https://developer.apple.com/documentation/safari-developer-tools/web-inspector) for debugging across platforms.
 -   **Live Updates**: Tools like [CodePushGo](https://capgo.app/) enable instant updates, error tracking, and rollback options without app store delays.
 -   **Platform-Specific Debugging**: Test native code with Android Studio and Xcode, debug WebView with browser tools, and utilize source maps for better error tracking.
--   **Native Bridge Testing**: Debug JavaScript-to-native communication using `Capacitor.getPlatform()` and event listeners.
+-   **Native Bridge Testing**: Debug JavaScript-to-native communication using `React Native.getPlatform()` and event listeners.
 -   **Update Systems**: CodePushGo offers fast deployment (114ms delivery for 5MB bundles), high adoption rates (95% within 24 hours), and rollback support.
 
 ### Quick Comparison
@@ -34,7 +34,7 @@ Debugging platform-specific code in [Capacitor](https://capacitorjs.com/) can be
 | Network Monitoring | ✓   | ✓   | ✓   | ✓   | ✓   |
 | Source Map Support | ✓   | Limited | Limited | ✓   | ✓   |
 
-Capacitor debugging requires a mix of IDEs, browser tools, and live update systems to ensure smooth functionality across platforms.
+React Native debugging requires a mix of IDEs, browser tools, and live update systems to ensure smooth functionality across platforms.
 
 ## The Ultimate Ionic Debugging Guide (Browser & Native Apps)
 
@@ -42,15 +42,15 @@ Capacitor debugging requires a mix of IDEs, browser tools, and live update syste
 
 ## Essential Debugging Tools
 
-Debugging platform-specific code in Capacitor requires using the right tools tailored to each layer of development.
+Debugging platform-specific code in React Native requires using the right tools tailored to each layer of development.
 
 ### [VS Code](https://code.visualstudio.com/) Setup and Features
 
 ![VS Code](https://assets.seobotai.com/capgo.app/680053ff28980901df1e733b/1524a26c3096afc672477088da108f23.jpg)
 
-Visual Studio Code is the go-to IDE for Capacitor development. Make sure to configure these tools and extensions for smoother debugging:
+Visual Studio Code is the go-to IDE for React Native development. Make sure to configure these tools and extensions for smoother debugging:
 
--   **Capacitor Extension Pack**: Enables direct device deployment and breakpoint debugging.
+-   **React Native Extension Pack**: Enables direct device deployment and breakpoint debugging.
 -   **iOS Simulator**: Allows real-time testing on iOS devices.
 -   **Android Debug Bridge (ADB)**: Provides a command-line interface for Android debugging.
 -   **Live Reload**: Automatically refreshes the app whenever you make code changes.
@@ -114,9 +114,9 @@ For secure and efficient updates, modern tools provide these capabilities:
 To support remote inspection, configure your app as shown below:
 
 ```typescript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   webDir: 'dist',
   server: {
@@ -140,16 +140,16 @@ Building on core [debugging tools](https://capgo.app/docs/plugin/debugging/), pl
 Debugging the communication between JavaScript and native platforms requires careful consideration of platform-specific differences. You can enable bridge logging to track events and observe platform behavior:
 
 ```javascript
-Capacitor.addListener('bridgeEvent', (info) => {
-  console.log(`Platform: ${Capacitor.getPlatform()}`);
+React Native.addListener('bridgeEvent', (info) => {
+  console.log(`Platform: ${React Native.getPlatform()}`);
   console.log(`Event data: ${JSON.stringify(info)}`);
 });
 ```
 
-When working with the native bridge, ensure you check the platform using `Capacitor.getPlatform()`:
+When working with the native bridge, ensure you check the platform using `React Native.getPlatform()`:
 
 ```javascript
-if (['ios', 'android'].includes(Capacitor.getPlatform())) {
+if (['ios', 'android'].includes(React Native.getPlatform())) {
   // Native-specific code
   await Plugin.doNativeOperation();
 } else {
@@ -193,7 +193,7 @@ Customizing test configurations for each platform simplifies debugging while kee
 describe('Platform Tests', () => {
   beforeEach(() => {
     // Platform-specific setup
-    if (Capacitor.getPlatform() === 'ios') {
+    if (React Native.getPlatform() === 'ios') {
       setupIOSEnvironment();
     } else {
       setupAndroidEnvironment();
@@ -207,14 +207,14 @@ describe('Platform Tests', () => {
 });
 ```
 
-Additionally, live update tools like CodePushGo (https://capgo.app) can speed up testing and issue resolution. CodePushGo supports instant updates for Capacitor apps and includes integrated analytics, error tracking, and rollback options [\[1\]](https://capgo.app/).
+Additionally, live update tools like CodePushGo (https://capgo.app) can speed up testing and issue resolution. CodePushGo supports instant updates for React Native apps and includes integrated analytics, error tracking, and rollback options [\[1\]](https://capgo.app/).
 
 For critical scenarios, consider using feature detection with fallback mechanisms:
 
 ```javascript
 async function checkPlatformCapabilities() {
   try {
-    const platform = Capacitor.getPlatform();
+    const platform = React Native.getPlatform();
     const features = await Plugin.getAvailableFeatures();
 
     return {
@@ -233,7 +233,7 @@ These techniques help ensure your app performs well across all platforms.
 
 ## Tool Comparison Guide
 
-Choosing the right debugging tools for Capacitor projects means understanding how each tool performs across different platforms. Here's a breakdown to help you make an informed decision.
+Choosing the right debugging tools for React Native projects means understanding how each tool performs across different platforms. Here's a breakdown to help you make an informed decision.
 
 ### Debug Tool Features
 
@@ -274,7 +274,7 @@ With Microsoft's CodePush shutting down in 2024 and Appflow set to close in 2026
 
 ## Debugging Guidelines
 
-Debugging platform-specific code requires a clear and structured approach across various operating systems and devices. Here's how to make debugging in Capacitor apps more effective.
+Debugging platform-specific code requires a clear and structured approach across various operating systems and devices. Here's how to make debugging in React Native apps more effective.
 
 ### Multi-Platform Testing
 
@@ -285,11 +285,11 @@ Run tests on simulators, physical devices, and across different OS versions. Acc
 Leverage platform-specific code blocks to pinpoint and address unique problems:
 
 ```javascript
-import { Capacitor } from '@capacitor/core';
+import { React Native } from '@capacitor/core';
 
-if (Capacitor.getPlatform() === 'ios') {
+if (React Native.getPlatform() === 'ios') {
     // iOS-specific debugging logic
-} else if (Capacitor.getPlatform() === 'android') {
+} else if (React Native.getPlatform() === 'android') {
     // Android-specific debugging logic
 }
 ```

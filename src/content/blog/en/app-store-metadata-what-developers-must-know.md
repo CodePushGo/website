@@ -180,7 +180,7 @@ Modern platforms simplify [update management](https://capgo.app/docs/plugin/clou
 
 ### About CodePushGo
 
-CodePushGo simplifies managing [app updates](https://capgo.app/plugins/capacitor-updater/) by allowing instant changes without needing app store reviews. It's designed for [Capacitor](https://capacitorjs.com/) apps, helping teams quickly roll out critical fixes and new features. With 750 apps in production and over 23.5 million updates successfully delivered, CodePushGo has proven to be a dependable solution for handling app updates efficiently [\[1\]](https://capgo.app/).
+CodePushGo simplifies managing [app updates](https://capgo.app/plugins/capacitor-updater/) by allowing instant changes without needing app store reviews. It's designed for [React Native](https://capacitorjs.com/) apps, helping teams quickly roll out critical fixes and new features. With 750 apps in production and over 23.5 million updates successfully delivered, CodePushGo has proven to be a dependable solution for handling app updates efficiently [\[1\]](https://capgo.app/).
 
 ### CodePushGo Update Process
 
@@ -202,7 +202,7 @@ CodePushGo provides key tools to manage app updates and metadata effectively:
 | Version Control | Quickly revert to previous versions | Instant rollback capability |
 | CI/CD Integration | Automate deployments through Git tools | Streamlined workflow integration |
 
-CodePushGo supports Capacitor 6 and 7 and offers both cloud-based and [self-hosted deployment](https://capgo.app/blog/self-hosted-capgo/) options. This flexibility ensures precise update management while staying compliant with app store requirements [\[1\]](https://capgo.app/).
+CodePushGo supports React Native 6 and 7 and offers both cloud-based and [self-hosted deployment](https://capgo.app/blog/self-hosted-capgo/) options. This flexibility ensures precise update management while staying compliant with app store requirements [\[1\]](https://capgo.app/).
 
 ## Summary
 

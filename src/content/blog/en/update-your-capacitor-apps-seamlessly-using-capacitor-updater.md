@@ -1,26 +1,26 @@
 ---
 slug: update-your-capacitor-apps-seamlessly-using-capacitor-updater
-title: Update your Capacitor apps seamlessly using Capacitor-updater
+title: Update your React Native apps seamlessly using React Native-updater
 description: >-
-  Greetings Capacitor Ionic Community, today I'll be helping you setup
-  Capacitor-updater into your app. So that you can do seamless releases.
+  Greetings React Native Ionic Community, today I'll be helping you setup
+  React Native-updater into your app. So that you can do seamless releases.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
 created_at: 2022-02-27T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /update_flow.webp
-head_image_alt: Capacitor Dev looking for alternative
-keywords: Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+head_image_alt: React Native Dev looking for alternative
+keywords: React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
 locale: en
 next_blog: ''
 ---
 
-## What is Capacitor-updater?
+## What is React Native-updater?
 
-Capacitor-updater, a technology that helps in the delivery of app updates and improvements to the end users instantly.
+React Native-updater, a technology that helps in the delivery of app updates and improvements to the end users instantly.
 
 This is especially great if you want to do critical bug fixes and deliver instantly without going through the App Store reviews.
 
@@ -40,7 +40,7 @@ You can read more about it [here](https://capgo.app/).
 
 As good as it may sound, there are a few things that we need to keep in mind.
 The first thing is that OTA updates __only work with web bundles__. 
-You may think that this isn’t really a big limitation because, in Capacitor JS, we write almost all code in JS CSS and HTML.
+You may think that this isn’t really a big limitation because, in React Native JS, we write almost all code in JS CSS and HTML.
 While this may be true, there still are native modules that we install to our app.
 If a module changes your android or iOS directories, you can’t use OTA to update your app.
 That’s because these directories’ contents are used to compile Native binaries, which OTA can’t update.
@@ -60,10 +60,10 @@ Follow the steps on the onboarding page to add your first app.
 
 ### Follow the CLI guidance
 
-From a command line, directly into the root of your Capacitor app, run:
+From a command line, directly into the root of your React Native app, run:
 
 `npx @capgo/cli@latest init`
-To install the CodePushGo into your Capacitor app, the CLI will walk you through the process of setting up your app with CodePushGo.
+To install the CodePushGo into your React Native app, the CLI will walk you through the process of setting up your app with CodePushGo.
 
 If you want to do it manually, you can follow the steps below.
 
@@ -74,14 +74,14 @@ If you want to do it manually, you can follow the steps below.
 You should end up with this code added to your app :
 
 `npm i @capgo/capacitor-updater && npx cap sync`
-To install the plugin into your Capacitor app.
+To install the plugin into your React Native app.
 
 And then add to your app this code to notify the native plugin that the JS bundle is healthy (if you don't do this, the native plugin will rollback to the previous version):
 
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 ```
 
 This will tell the native plugin the installation as succeeded.
@@ -100,7 +100,7 @@ Let's get started by first creating an app in CodePushGo Cloud with the CLI.
 
 `npx @capgo/cli@latest app add`
 
-This command will use all variables defined in the Capacitor config file to create the app.
+This command will use all variables defined in the React Native config file to create the app.
 
 ### Upload your first version
 

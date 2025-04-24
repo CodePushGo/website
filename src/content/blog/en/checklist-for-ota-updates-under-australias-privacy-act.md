@@ -231,6 +231,6 @@ Follow these steps to put compliance strategies into action:
     -   Implement rollback mechanisms to fix issues quickly during updates.
     -   Use version control systems that align with Privacy Act standards.
 
-> "The Most Secure Live Update System for Capacitor. Built for developers who value security and speed." - CodePushGo.app
+> "The Most Secure Live Update System for React Native. Built for developers who value security and speed." - CodePushGo.app
 
 CodePushGo offers live update security that aligns with these compliance needs.

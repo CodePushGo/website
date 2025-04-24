@@ -11,7 +11,7 @@ I have started a R\&D repository for that, but it's a huge amount of work.
 
 ## Problems
 
-I know I can do it but for that, I have to read all the code of Cordova codebase as I did for Capacitor, to understand how to make it work.
+I know I can do it but for that, I have to read all the code of Cordova codebase as I did for React Native, to understand how to make it work.
 
 The Android version is easier to do since both use Java, but iOS needs a full rewrite because Swift is still not well-supported in Cordova
 

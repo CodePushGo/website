@@ -1,7 +1,7 @@
 ---
 slug: version-tagging-in-capacitor-apps
-title: Version Tagging in Capacitor Apps
-description: Learn the essentials of version tagging in Capacitor apps, including best practices for updates, synchronization, and automation.
+title: Version Tagging in React Native Apps
+description: Learn the essentials of version tagging in React Native apps, including best practices for updates, synchronization, and automation.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-26T03:19:04.753Z
 updated_at: 2025-03-26T03:19:15.569Z
 head_image: https://assets.seobotai.com/capgo.app/67e36d7410051fda3b6230a0-1742959155569.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, version tagging, semantic versioning, app updates, mobile development
+keywords: React Native, version tagging, semantic versioning, app updates, mobile development
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-Version tagging is essential for managing [Capacitor](https://capacitorjs.com/) apps. It ensures smooth updates, tracks changes, and enhances app reliability across iOS, Android, and web platforms. Here's a quick overview:
+Version tagging is essential for managing [React Native](https://capacitorjs.com/) apps. It ensures smooth updates, tracks changes, and enhances app reliability across iOS, Android, and web platforms. Here's a quick overview:
 
 -   **Why It Matters**: Tracks updates, enables rollbacks, and ensures stable deployments.
 -   **Semantic Versioning**: Use **MAJOR.MINOR.PATCH** to indicate breaking changes, new features, or bug fixes.
@@ -37,15 +37,15 @@ Version tagging is essential for managing [Capacitor](https://capacitorjs.com/) 
 
 Version tagging simplifies [app updates](https://capgo.app/plugins/capacitor-updater/), keeps users happy, and ensures developers can manage releases effectively.
 
-## How to AUTOMATICALLY configure your [Capacitor](https://capacitorjs.com/) project ⚡️
+## How to AUTOMATICALLY configure your [React Native](https://capacitorjs.com/) project ⚡️
 
-![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-26.jpg?auto=compress)
+![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-03-26.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/kYFZkmJ6rAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## Version Setup in Capacitor
+## Version Setup in React Native
 
-Follow these steps to ensure consistent version management across all platforms in your Capacitor app.
+Follow these steps to ensure consistent version management across all platforms in your React Native app.
 
 ### Setting the Version in `package.json`
 
@@ -86,15 +86,15 @@ After updating the version in `package.json`, use this command to sync the chang
 npx cap sync
 ```
 
-### Using Capacitor CLI for Version Management
+### Using React Native CLI for Version Management
 
-The Capacitor CLI offers helpful commands to manage versions:
+The React Native CLI offers helpful commands to manage versions:
 
 ```bash
-# Check the current version of Capacitor
+# Check the current version of React Native
 npx cap --version
 
-# Update Capacitor core and platform dependencies
+# Update React Native core and platform dependencies
 npm install @capacitor/core@latest
 npm install @capacitor/ios@latest
 npm install @capacitor/android@latest
@@ -103,7 +103,7 @@ npm install @capacitor/android@latest
 npx cap sync
 ```
 
-Keeping your Capacitor CLI updated ensures compatibility with version-specific features and reduces potential mismatches. Following these steps will help you maintain proper versioning in your app.
+Keeping your React Native CLI updated ensures compatibility with version-specific features and reduces potential mismatches. Following these steps will help you maintain proper versioning in your app.
 
 ## Semantic Version Setup
 
@@ -135,7 +135,7 @@ Now let’s look at automating these updates to simplify release management.
 
 ### Version Update Automation
 
-[Automating version updates](https://capgo.app/docs/plugin/self-hosted/auto-update/) can save time and reduce errors in your Capacitor project. Here's how to set it up:
+[Automating version updates](https://capgo.app/docs/plugin/self-hosted/auto-update/) can save time and reduce errors in your React Native project. Here's how to set it up:
 
 1.  **NPM Version Scripts**
 
@@ -160,7 +160,7 @@ Add these scripts to your `package.json` file to manage version updates easily:
 
 ### Git Version Tags
 
-Git version tags are a reliable way to keep track of [Capacitor app releases](https://capgo.app/docs/). To create clear and informative tags, combine semantic versioning with a brief description:
+Git version tags are a reliable way to keep track of [React Native app releases](https://capgo.app/docs/). To create clear and informative tags, combine semantic versioning with a brief description:
 
 ```bash
 git tag -a v1.2.3 -m "Release v1.2.3: Added offline mode support"
@@ -235,9 +235,9 @@ This approach ensures thorough testing and smooth transitions between developmen
 
 Displaying accurate version information in your app is key to keeping users informed and managing updates effectively.
 
-### Getting Version with Capacitor
+### Getting Version with React Native
 
-You can retrieve version details using Capacitor with this code:
+You can retrieve version details using React Native with this code:
 
 ```typescript
 import { App } from '@capacitor/app';
@@ -293,14 +293,14 @@ In addition to displaying version info, integrating an update check system can i
 An update check system ensures users have access to the latest features and fixes. CodePushGo provides real-time notifications and controlled update channels to manage this process:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@capgo/capacitor-updater';
 
 async function checkForUpdates() {
-  const current = await CapacitorUpdater.current();
-  const latest = await CapacitorUpdater.getLatest();
+  const current = await React NativeUpdater.current();
+  const latest = await React NativeUpdater.getLatest();
 
   if (current.version !== latest.version) {
-    await CapacitorUpdater.download({
+    await React NativeUpdater.download({
       version: latest.version
     });
   }
@@ -351,7 +351,7 @@ Here are some key features to look for:
 | CI/CD Integration | Useful | Streamlines deployment processes |
 | Cost Efficiency | Strategic | Influences long-term budget planning |
 
-One standout tool in this space is CodePushGo, which offers features specifically designed for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
+One standout tool in this space is CodePushGo, which offers features specifically designed for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
 
 ### [CodePushGo](https://capgo.app/) Version Control Features
 
@@ -368,16 +368,16 @@ Here’s an example of how to use CodePushGo for version control:
 
 ```typescript
 // CodePushGo version control example
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@capgo/capacitor-updater';
 
 const versionControl = {
   async checkVersion() {
-    const current = await CapacitorUpdater.current();
+    const current = await React NativeUpdater.current();
     return current.version;
   },
 
   async deployUpdate(version: string) {
-    await CapacitorUpdater.setChannel({
+    await React NativeUpdater.setChannel({
       channel: 'production',
       version: version
     });
@@ -409,7 +409,7 @@ const enterpriseVersionControl = {
   },
 
   async deployToChannel(channel: string, version: string) {
-    await CapacitorUpdater.setChannel({
+    await React NativeUpdater.setChannel({
       channel: channel,
       version: version
     });

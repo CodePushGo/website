@@ -22,17 +22,17 @@ Let's say you have:
 npx @capgo/cli channel create v2
 ```
 
-## 2. Update Capacitor Config
+## 2. Update React Native Config
 
 ```ts
 // capacitor.config.ts
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   appName: 'Example App',
   plugins: {
-    CapacitorUpdater: {
+    React NativeUpdater: {
       // ... other options
       defaultChannel: 'v2' // New apps will use v2 channel
     }
@@ -65,16 +65,16 @@ Add version check in your app to assign users to the correct channel:
 
 ```ts
 // src/utils/updater.ts
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 
 export async function setupUpdater() {
-  const { appVersion } = await CapacitorUpdater.getCurrentVersion()
+  const { appVersion } = await React NativeUpdater.getCurrentVersion()
   const majorVersion = appVersion.split('.')[0]
   
   // Version 1.x uses default production channel
   // Only assign v2 channel for version 2.x
   if (majorVersion === '2') {
-    await CapacitorUpdater.setChannel('v2')
+    await React NativeUpdater.setChannel('v2')
   }
 }
 ```
@@ -83,7 +83,7 @@ export async function setupUpdater() {
 
 Once all users have migrated to version 2.x ( count 3/4 months):
 
-1. Remove `defaultChannel` from your Capacitor config
+1. Remove `defaultChannel` from your React Native config
 2. Delete the v2 channel:
 
 ```bash

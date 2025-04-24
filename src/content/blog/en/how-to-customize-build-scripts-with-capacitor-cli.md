@@ -1,7 +1,7 @@
 ---
 slug: how-to-customize-build-scripts-with-capacitor-cli
-title: How to Customize Build Scripts with Capacitor CLI
-description: Learn how to customize your build scripts using Capacitor CLI for efficient deployments and tailored app updates across platforms.
+title: How to Customize Build Scripts with React Native CLI
+description: Learn how to customize your build scripts using React Native CLI for efficient deployments and tailored app updates across platforms.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-04-02T01:58:36.984Z
 updated_at: 2025-04-02T01:58:48.944Z
 head_image: https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873-1743559128944.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, build scripts, mobile development, deployment automation, environment variables, app updates
+keywords: React Native, build scripts, mobile development, deployment automation, environment variables, app updates
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capacitor](https://capacitorjs.com/) CLI lets you customize your app's build process for iOS, Android, and web platforms. By tweaking build scripts, you can:
+[React Native](https://capacitorjs.com/) CLI lets you customize your app's build process for iOS, Android, and web platforms. By tweaking build scripts, you can:
 
 -   **Speed up updates**: Push changes instantly without app store delays.
 -   **Control deployments**: Roll back updates or target specific user groups.
@@ -32,19 +32,19 @@ next_blog: ''
 
 [CodePushGo](https://capgo.app/), a deployment tool, enhances this process with [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/), version tracking, and global performance optimization. Keep reading to learn how to set up and customize your build scripts for maximum efficiency.
 
-## Introducing [Capacitor](https://capacitorjs.com/) Configure
+## Introducing [React Native](https://capacitorjs.com/) Configure
 
-![Capacitor](https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/HufvY63esXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## Default Build Process in Capacitor
+## Default Build Process in React Native
 
-Understanding how Capacitor handles its default build process is crucial if you want to customize it effectively. Below, we'll break down the Capacitor CLI's build process and its key configuration files.
+Understanding how React Native handles its default build process is crucial if you want to customize it effectively. Below, we'll break down the React Native CLI's build process and its key configuration files.
 
 ### Standard Build Steps
 
-Capacitor uses a step-by-step process to transform your web app into platform-specific builds. Here's what happens during the default build process:
+React Native uses a step-by-step process to transform your web app into platform-specific builds. Here's what happens during the default build process:
 
 | Phase | Description | Output |
 | --- | --- | --- |
@@ -55,10 +55,10 @@ Capacitor uses a step-by-step process to transform your web app into platform-sp
 
 ### Main Config Files
 
-Two key configuration files shape how Capacitor handles your builds:
+Two key configuration files shape how React Native handles your builds:
 
 **capacitor.config.json**  
-This is the core configuration file for your Capacitor project. It sets important parameters for your builds:
+This is the core configuration file for your React Native project. It sets important parameters for your builds:
 
 ```json
 {
@@ -76,7 +76,7 @@ This is the core configuration file for your Capacitor project. It sets importan
 
 -   **`appId`**: A unique identifier for your app.
 -   **`appName`**: The name of your app.
--   **`webDir`**: Specifies where Capacitor should look for the web assets (e.g., `dist`).
+-   **`webDir`**: Specifies where React Native should look for the web assets (e.g., `dist`).
 -   **`plugins`**: Allows you to configure plugin-specific settings, like SplashScreen options.
 
 **package.json**  
@@ -92,14 +92,14 @@ This file includes build scripts and dependencies that influence the build proce
 }
 ```
 
--   The `webDir` setting in `capacitor.config.json` tells Capacitor where to locate your compiled web assets for inclusion in the native builds.
+-   The `webDir` setting in `capacitor.config.json` tells React Native where to locate your compiled web assets for inclusion in the native builds.
 -   After making changes to `capacitor.config.json`, you need to run `cap sync` to ensure your native projects are updated.
 
 Next, we'll explore how you can modify these settings to customize your builds even further.
 
 ## Modifying Build Scripts
 
-You can tweak Capacitor's default build process to better suit your project needs. Here's how:
+You can tweak React Native's default build process to better suit your project needs. Here's how:
 
 ### Config File Settings
 
@@ -163,12 +163,12 @@ You can take automation even further by adding build hooks.
 For more advanced control, use build hooks to execute custom code at specific points during the build process. Here's an example setup in `capacitor.config.ts`:
 
 ```typescript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   plugins: {
-    CapacitorHooks: {
+    React NativeHooks: {
       beforeBuild: async () => {
         console.log('Running pre-build tasks...');
         // Add your pre-build tasks here

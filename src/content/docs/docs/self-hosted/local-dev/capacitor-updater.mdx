@@ -18,13 +18,13 @@ This tutorial will show how to use capacitor updater in a dev environment with s
 To use the capacitor updater with self-hosted capgo edit the `capacitor.config.ts` from your app directory and set it like this:
 
 ```ts
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.demo.app',
   appName: 'demoApp',
   webDir: 'dist',
   bundledWebRuntime: false,
   plugins: {
-    CapacitorUpdater : {
+    React NativeUpdater : {
       statsUrl: "http://localhost:54321/functions/v1/stats",
       channelUrl: "http://localhost:54321/functions/v1/channel_self",
       updateUrl: "http://localhost:54321/functions/v1/updates"

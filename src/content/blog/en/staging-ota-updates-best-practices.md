@@ -192,7 +192,7 @@ Getting started with CodePushGo for staging is simple. First, install the CodePu
 npx @capgo/cli init
 ```
 
-CodePushGo works with both **[Capacitor](https://capacitorjs.com/) 6 and 7**, ensuring it fits into various development workflows. For staging environments, follow these steps:
+CodePushGo works with both **[React Native](https://capacitorjs.com/) 6 and 7**, ensuring it fits into various development workflows. For staging environments, follow these steps:
 
 -   **Set up separate update channels** for staging and production to keep environments distinct.
 -   **Enable detailed error tracking** to catch issues early.

@@ -1,6 +1,6 @@
 ---
 slug: code-integrity-in-capacitor-apps-key-techniques
-title: "Code Integrity in Capacitor Apps: Key Techniques"
+title: "Code Integrity in React Native Apps: Key Techniques"
 description: Explore essential techniques for securing code integrity in mobile apps, focusing on OTA updates, encryption, and compliance with app store guidelines.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Code integrity is critical for securing [Capacitor](https://capacitorjs.com/) apps, especially with OTA updates.** Without proper measures, your app could face risks like malicious code injection, API credential theft, or binary modifications. Here's a quick breakdown of what you need to know:
+**Code integrity is critical for securing [React Native](https://capacitorjs.com/) apps, especially with OTA updates.** Without proper measures, your app could face risks like malicious code injection, API credential theft, or binary modifications. Here's a quick breakdown of what you need to know:
 
 -   **Core Tools:** Use SHA-256 digital signatures, runtime checks, and encryption (AES-256) to protect code.
 -   **Platform-Specific Features:** For Android, integrate the [Play Integrity API](https://developer.android.com/google/play/integrity) for app verification and device attestation. For iOS, follow App Store Guideline 3.1.2 for OTA updates.
@@ -34,7 +34,7 @@ next_blog: ''
 
 ## Code Verification Methods
 
-[Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) combine web and native verification techniques to secure code using digital signatures and encryption.
+[React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) combine web and native verification techniques to secure code using digital signatures and encryption.
 
 ### Digital Signatures and Encryption
 
@@ -49,7 +49,7 @@ Code verification relies on cryptographic methods. Using **asymmetric cryptograp
 
 ### Platform Security APIs
 
-Capacitor builds on its native security features by leveraging platform-specific APIs. For Android, the `@capacitor-community/play-integrity` plugin [\[2\]](https://github.com/capacitor-community/play-integrity/) adds extra layers of verification. The setup includes:
+React Native builds on its native security features by leveraging platform-specific APIs. For Android, the `@capacitor-community/play-integrity` plugin [\[2\]](https://github.com/capacitor-community/play-integrity/) adds extra layers of verification. The setup includes:
 
 1.  Generating cryptographic challenge tokens (16+ bytes).
 2.  Configuring the Play Integrity API with a [Google Cloud](https://cloud.google.com/) Project ID.
@@ -63,7 +63,7 @@ This system performs three key checks:
 
 ### Combined Web and Native Checks
 
-A hybrid approach enhances Capacitor's protections by integrating **Content Security Policies (CSP)** for web content with tools like [Free-RASP-Capacitor](https://github.com/talsec/Free-RASP-Capacitor) [\[3\]](https://github.com/talsec/Free-RASP-Capacitor).
+A hybrid approach enhances React Native's protections by integrating **Content Security Policies (CSP)** for web content with tools like [Free-RASP-React Native](https://github.com/talsec/Free-RASP-React Native) [\[3\]](https://github.com/talsec/Free-RASP-React Native).
 
 For production environments, developers should implement:
 
@@ -79,7 +79,7 @@ App stores enforce strict guidelines for OTA (Over-the-Air) updates to ensure us
 
 ### iOS and Android Guidelines
 
-Both iOS and Android have specific requirements that align with Capacitor's native verification methods. For iOS, **App Store Review Guideline 3.1.2** governs OTA updates. While JavaScript updates are allowed under certain conditions, any functionality changes require prior approval.
+Both iOS and Android have specific requirements that align with React Native's native verification methods. For iOS, **App Store Review Guideline 3.1.2** governs OTA updates. While JavaScript updates are allowed under certain conditions, any functionality changes require prior approval.
 
 Android focuses on the **Play Integrity API**, which provides a robust system for verifying app integrity. Here's a quick breakdown of the key requirements for each platform:
 
@@ -110,13 +110,13 @@ Integrating these tracking methods with CI/CD pipelines strengthens both securit
 
 ## Code Integrity Tools
 
-Capacitor's native security features serve as a strong foundation, but specialized tools can further enhance protection during update workflows.
+React Native's native security features serve as a strong foundation, but specialized tools can further enhance protection during update workflows.
 
 ### [CodePushGo](https://capgo.app): Secure OTA Updates
 
 ![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-09.jpg?auto=compress)
 
-CodePushGo is designed specifically for managing secure over-the-air (OTA) updates in Capacitor applications. It ensures code integrity with features like:
+CodePushGo is designed specifically for managing secure over-the-air (OTA) updates in React Native applications. It ensures code integrity with features like:
 
 | **Security Feature** | **How It Works** | **Performance Impact** |
 | --- | --- | --- |
@@ -129,7 +129,7 @@ CodePushGo also integrates seamlessly with CI/CD pipelines, automating verificat
 
 ### Tool Comparison
 
-When choosing a code integrity tool for Capacitor apps, it's crucial to weigh their features and ease of implementation:
+When choosing a code integrity tool for React Native apps, it's crucial to weigh their features and ease of implementation:
 
 | **Feature** | **CodePushGo** | **Other Tools** |
 | --- | --- | --- |
@@ -147,7 +147,7 @@ When selecting a tool, consider the trade-offs between security features and ope
 
 ## Code Integrity Guidelines
 
-Maintaining code integrity in Capacitor apps requires a smart mix of monitoring systems and balancing security with performance. Development teams must adopt practical, scalable approaches that meet strict security requirements while keeping their apps running smoothly.
+Maintaining code integrity in React Native apps requires a smart mix of monitoring systems and balancing security with performance. Development teams must adopt practical, scalable approaches that meet strict security requirements while keeping their apps running smoothly.
 
 These guidelines go beyond app store requirements by turning compliance into actionable technical measures.
 
@@ -186,13 +186,13 @@ Here are a few strategies to ensure both speed and security:
 -   **Risk-based Authentication**: Tailor verification intensity based on risk signals, such as unusual user locations or device profiles.
 -   **Offline-compatible Validation**: Make sure your system works even with poor network conditions by caching essential security tokens and using fallback mechanisms.
 
-Continuous monitoring and adjustments are critical. Weekly security reviews [\[3\]](https://github.com/talsec/Free-RASP-Capacitor) paired with automated vulnerability scans can help maintain this balance between protection and performance.
+Continuous monitoring and adjustments are critical. Weekly security reviews [\[3\]](https://github.com/talsec/Free-RASP-React Native) paired with automated vulnerability scans can help maintain this balance between protection and performance.
 
 ## Summary
 
-Protecting the code integrity of Capacitor apps requires a mix of platform-native features and specialized tools:
+Protecting the code integrity of React Native apps requires a mix of platform-native features and specialized tools:
 
-The **Play Integrity API** offers device-level attestation with response times under 200ms, ensuring Google-verified app legitimacy [\[1\]](https://ionic.io/docs/tutorials/mobile-security/play-integrity)[\[2\]](https://github.com/capacitor-community/play-integrity/). Complementing this, runtime verification tools like **freeRASP** provide real-time detection of compromised environments [\[3\]](https://github.com/talsec/Free-RASP-Capacitor)[\[4\]](https://www.npmjs.com/package/capacitor-freerasp/v/1.0.0).
+The **Play Integrity API** offers device-level attestation with response times under 200ms, ensuring Google-verified app legitimacy [\[1\]](https://ionic.io/docs/tutorials/mobile-security/play-integrity)[\[2\]](https://github.com/capacitor-community/play-integrity/). Complementing this, runtime verification tools like **freeRASP** provide real-time detection of compromised environments [\[3\]](https://github.com/talsec/Free-RASP-React Native)[\[4\]](https://www.npmjs.com/package/capacitor-freerasp/v/1.0.0).
 
 For teams managing OTA updates, using **end-to-end encryption** and **automatic checksum validation** is crucial. Combining these platform features with specialized tools enables secure updates while supporting fast deployments.
 

@@ -1,7 +1,7 @@
 ---
 slug: capacitor-plugin-contribution-guide
-title: Capacitor Plugin Contribution Guide
-description: Learn how to effectively contribute to Capacitor plugins with a comprehensive guide on setup, coding standards, testing, and documentation.
+title: React Native Plugin Contribution Guide
+description: Learn how to effectively contribute to React Native plugins with a comprehensive guide on setup, coding standards, testing, and documentation.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-02-17T05:00:51.296Z
 updated_at: 2025-03-18T13:13:57.261Z
 head_image: https://assets.seobotai.com/capgo.app/67b290a70d4a761ccc9919b5-1739768465938.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, plugins, development, mobile, coding standards, testing, documentation, contribution, open source
+keywords: React Native, plugins, development, mobile, coding standards, testing, documentation, contribution, open source
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capacitor](https://capacitorjs.com/) plugins connect web technologies with native device features, enabling [cross-platform app development](https://capgo.app/blog/cross-platform-mobile-app-development-guide-2024/). This guide helps you:
+[React Native](https://capacitorjs.com/) plugins connect web technologies with native device features, enabling [cross-platform app development](https://capgo.app/blog/cross-platform-mobile-app-development-guide-2024/). This guide helps you:
 
 -   **Set Up Your Environment**: Tools like [Node.js](https://nodejs.org/en), [Xcode](https://developer.apple.com/xcode/), and [Android Studio](https://developer.android.com/studio) are essential.
 -   **Follow Code Standards**: Use [TypeScript](https://www.typescriptlang.org/), [Swift](https://developer.apple.com/swift/), and [Kotlin](https://kotlinlang.org/) with consistent naming conventions and error handling.
@@ -47,10 +47,10 @@ You should also be comfortable with TypeScript for web development and either Sw
 
 ### Setting Up the Monorepo
 
-The [Capacitor plugins](https://capgo.app/plugins/) ecosystem relies on a monorepo structure. This approach ensures your work aligns with community standards right from the start.
+The [React Native plugins](https://capgo.app/plugins/) ecosystem relies on a monorepo structure. This approach ensures your work aligns with community standards right from the start.
 
 1.  **Fork and Clone the Repository**  
-    Start by forking the Capacitor plugins repository on GitHub. Then, clone your forked repository:
+    Start by forking the React Native plugins repository on GitHub. Then, clone your forked repository:
     
     ```bash
     git clone https://github.com/your-username/capacitor-plugins.git
@@ -108,7 +108,7 @@ Now that your development environment is set up, stick to these guidelines to bu
 
 ### Style Guide Compliance
 
-The [Capacitor plugin ecosystem](https://capgo.app/blog/capacitor-comprehensive-guide/) enforces strict coding standards using tools like [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and SwiftLint. Here’s a quick overview of the required formatting:
+The [React Native plugin ecosystem](https://capgo.app/blog/capacitor-comprehensive-guide/) enforces strict coding standards using tools like [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and SwiftLint. Here’s a quick overview of the required formatting:
 
 | Component | Format |
 | --- | --- |
@@ -156,13 +156,13 @@ async getBatteryLevel(): Promise<{ level: number }>;
 
 2.  **README Structure**: Include essential information like installation steps, configuration instructions, platform-specific requirements, usage examples, and a detailed API reference.
 
-Well-written documentation ensures that your plugin is easy to adopt and contributes to the broader Capacitor community.
+Well-written documentation ensures that your plugin is easy to adopt and contributes to the broader React Native community.
 
 ###### sbb-itb-f9944d2
 
 ## Plugin Testing Guide
 
-Testing Capacitor plugins involves focusing on a few critical areas to ensure smooth functionality and reliability.
+Testing React Native plugins involves focusing on a few critical areas to ensure smooth functionality and reliability.
 
 ### Native Bridge Tests
 
@@ -260,7 +260,7 @@ When collaborating, stick to these best practices:
 -   Use GitHub's suggestion feature to propose code changes.
 -   Submit small, focused pull requests that address one feature or issue at a time.
 
-For larger changes, it's a good idea to create an issue first and discuss your approach. The Capacitor team relies on GitHub Actions for automated checks, and all checks must pass before your pull request can be reviewed.
+For larger changes, it's a good idea to create an issue first and discuss your approach. The React Native team relies on GitHub Actions for automated checks, and all checks must pass before your pull request can be reviewed.
 
 ### CodePushGo Integration Guide
 
@@ -278,10 +278,10 @@ If your plugin involves live updates, ensure it works seamlessly with CodePushGo
 
 ## Summary
 
-To make a meaningful contribution with your plugin, it's important to follow the established process and meet community standards. This includes sticking to Capacitor's coding guidelines and thoroughly testing your work.
+To make a meaningful contribution with your plugin, it's important to follow the established process and meet community standards. This includes sticking to React Native's coding guidelines and thoroughly testing your work.
 
 The PR checklist highlights the need for high-quality submissions. If your plugin supports live updates, integrating with CodePushGo (as mentioned earlier) can help you release updates quickly without waiting for app store approvals.
 
-Once your PR is merged, stay involved by tracking issues and releasing version updates. Regular interaction with the community, consistent maintenance, and [keeping up with Capacitor updates](https://capgo.app/plugins/capacitor-updater/) will ensure your plugin stays useful and relevant.
+Once your PR is merged, stay involved by tracking issues and releasing version updates. Regular interaction with the community, consistent maintenance, and [keeping up with React Native updates](https://capgo.app/plugins/capacitor-updater/) will ensure your plugin stays useful and relevant.
 
 Pay attention to user feedback and make updates as needed. This ongoing effort helps maintain the overall quality of the ecosystem and keeps your plugin valuable for developers.

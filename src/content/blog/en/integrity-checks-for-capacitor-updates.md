@@ -1,7 +1,7 @@
 ---
 slug: integrity-checks-for-capacitor-updates
-title: Integrity Checks for Capacitor Updates
-description: Learn how to implement secure OTA updates for Capacitor apps using integrity checks, encryption, and effective rollback strategies.
+title: Integrity Checks for React Native Updates
+description: Learn how to implement secure OTA updates for React Native apps using integrity checks, encryption, and effective rollback strategies.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-02-25T02:39:56.412Z
 updated_at: 2025-03-18T13:14:05.745Z
 head_image: https://assets.seobotai.com/capgo.app/67bd178e258ce8f57ea75e3e-1740451235493.jpg
 head_image_alt: Mobile Development
-keywords: OTA updates, Capacitor, security, integrity checks, encryption, mobile apps, update management
+keywords: OTA updates, React Native, security, integrity checks, encryption, mobile apps, update management
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Secure OTA updates for [Capacitor](https://capacitorjs.com/) apps are essential to protect users and their data.** Here's how to ensure safe updates:
+**Secure OTA updates for [React Native](https://capacitorjs.com/) apps are essential to protect users and their data.** Here's how to ensure safe updates:
 
 -   **Integrity Checks**: Use cryptographic hashes and digital signatures to confirm updates are unaltered.
 -   **Common Threats**: Prevent interception, spoofing, and tampering with HTTPS, digital signatures, and checksums.
@@ -37,7 +37,7 @@ This article dives into setting up a secure OTA infrastructure, cryptographic me
 
 ## Secure OTA Update Infrastructure
 
-Build a reliable OTA (Over-The-Air) update system for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by incorporating HTTPS, strong authentication, and real-time update tools.
+Build a reliable OTA (Over-The-Air) update system for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by incorporating HTTPS, strong authentication, and real-time update tools.
 
 ### HTTPS Setup for Updates
 
@@ -49,7 +49,7 @@ Using HTTPS is crucial for encrypting update transmissions. Key security measure
 | Server Configuration | Enforce strict HTTPS usage | Protects against downgrade attacks |
 | Certificate Pinning | Validate SHA-256 fingerprint | Confirms server identity |
 
-Ensure your Capacitor app only accepts HTTPS connections for update requests. This step prevents data interception and tampering, forming the base for secure authentication.
+Ensure your React Native app only accepts HTTPS connections for update requests. This step prevents data interception and tampering, forming the base for secure authentication.
 
 ### Update Request Authentication
 
@@ -71,7 +71,7 @@ To get started, install the CodePushGo plugin using `npx @capgo/cli init`. This 
 
 ## Cryptographic Security Methods
 
-Secure OTA updates in Capacitor apps by implementing strong cryptographic practices.
+Secure OTA updates in React Native apps by implementing strong cryptographic practices.
 
 ### Key Management
 
@@ -90,7 +90,7 @@ For client-side key storage, rely on secure platform-specific tools like **[iOS 
 
 1.  **Package Preparation**
     
-    Prepare the update bundle by including your production Capacitor build output, typically located in the "dist/" or "www/" directory. The package should include:
+    Prepare the update bundle by including your production React Native build output, typically located in the "dist/" or "www/" directory. The package should include:
     
     -   `index.html`
     -   Bundled JavaScript files
@@ -98,7 +98,7 @@ For client-side key storage, rely on secure platform-specific tools like **[iOS 
     -   Other necessary web assets
 2.  **Signing Process**
     
-    Use Capacitor's `publicKey` configuration to enable end-to-end encryption. Keep the zip file unencrypted to ensure smooth unpacking during updates.
+    Use React Native's `publicKey` configuration to enable end-to-end encryption. Keep the zip file unencrypted to ensure smooth unpacking during updates.
     
 
 ### Update Verification Steps
@@ -126,7 +126,7 @@ Set up an automated rollback system to handle situations where integrity checks 
 | Execution | Restore previous working version | Confirm successful restoration |
 | Post-rollback | Validate app functionality | Run critical path tests |
 
-Here's how you can configure your [Capacitor updater](https://capgo.app/plugins/capacitor-updater/) with suitable timeout settings for smoother rollbacks:
+Here's how you can configure your [React Native updater](https://capgo.app/plugins/capacitor-updater/) with suitable timeout settings for smoother rollbacks:
 
 ```javascript
 {
@@ -138,7 +138,7 @@ Here's how you can configure your [Capacitor updater](https://capgo.app/plugins/
 
 ### Error Tracking System
 
-Capacitor's built-in event listeners are handy for tracking errors during updates. Use them to monitor and log issues effectively:
+React Native's built-in event listeners are handy for tracking errors during updates. Use them to monitor and log issues effectively:
 
 -   Monitor events like `updateFailed` and `downloadFailed`
 -   Log version details and failure causes
@@ -209,4 +209,4 @@ Here’s an example of a secure configuration for your project:
     -   Configure automatic rollbacks for failed updates.
     -   Use CodePushGo's analytics dashboard to monitor update performance and statistics.
 
-Following these practices will help you maintain secure OTA updates for Capacitor apps.
+Following these practices will help you maintain secure OTA updates for React Native apps.

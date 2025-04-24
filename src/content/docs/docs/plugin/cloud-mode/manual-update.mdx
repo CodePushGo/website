@@ -26,7 +26,7 @@ Disable auto-update in your ```capacitor.confg.json```
 	"appId": "**.***.**",
 	"appName": "Name",
 	"plugins": {
-		"CapacitorUpdater": {
+		"React NativeUpdater": {
 			"autoUpdate": false
 		}
 	}
@@ -37,12 +37,12 @@ Then add logic to handle updates yourself.\
 Here is an example on how you can do it:
 
 ```typescript
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 import type { BundleInfo } from '@capgo/capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 import { App } from '@capacitor/app'
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 
 let data: BundleInfo | null = null
 
@@ -51,10 +51,10 @@ App.addListener('appStateChange', async (state: any) => {
   if (state.isActive) {
     console.log('getLatest')
     // Do the download during user active app time to prevent failed downloads
-    const latest = await CapacitorUpdater.getLatest()
+    const latest = await React NativeUpdater.getLatest()
     console.log('latest', latest)
     if (latest.url) {
-      data = await CapacitorUpdater.download({
+      data = await React NativeUpdater.download({
         url: latest.url,
         version: latest.version,
       })
@@ -66,7 +66,7 @@ App.addListener('appStateChange', async (state: any) => {
     // Do the switch when user leaves the app or when you want
     SplashScreen.show()
     try {
-      await CapacitorUpdater.set({ id: data.id })
+      await React NativeUpdater.set({ id: data.id })
     }
     catch (err) {
       console.log(err)

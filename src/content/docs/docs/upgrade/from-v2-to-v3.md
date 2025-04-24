@@ -22,7 +22,7 @@ npx cap sync
 
 ```json
 {
-  CapacitorUpdater: {
+  React NativeUpdater: {
       autoUpdateURL: "https...",
       ...
   },
@@ -33,7 +33,7 @@ to only let this:
 
 ```json
 {
-  "CapacitorUpdater": {
+  "React NativeUpdater": {
     "autoUpdate": true
   }
 }
@@ -58,7 +58,7 @@ This will also remove the need to update often the plugin, most updates will be 
 
 ```json
 {
-  "CapacitorUpdater": {
+  "React NativeUpdater": {
     "autoUpdate": true,
     "resetWhenUpdate": false
   }
@@ -70,13 +70,13 @@ This will also remove the need to update often the plugin, most updates will be 
 Lastly, update all your imports in JS from:
 
 ```
-import { CapacitorUpdater } from 'capacitor-updater'
+import { React NativeUpdater } from 'capacitor-updater'
 ```
 
 to
 
 ```
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 ```
 
 Then build your code again `npm run build` and copy assets once more `npx cap copy`.

@@ -13,7 +13,7 @@ export const translateTextOpenAI = async (text: string, lang: string) => {
         {
           role: 'system',
           content:
-            'Only respond with the translation of the text. No other or unrelated text or characters. Make sure to keep links, HTML tags, code blocks, image links, do not translate them. when Capacitor is used it refers to the CapacitorJs so do not translate that. Re-verify your output to not have additional code block or declaration. Make sure to have the list items in <Steps> component have decimal, such as "1" should be modified to keep "1." in every kind of output. If you see imports but no code block declaration, do not add them by yourself un-necessarily.',
+            'Only respond with the translation of the text. No other or unrelated text or characters. Make sure to keep links, HTML tags, code blocks, image links, do not translate them. when React Native is used it refers to the React NativeJs so do not translate that. Re-verify your output to not have additional code block or declaration. Make sure to have the list items in <Steps> component have decimal, such as "1" should be modified to keep "1." in every kind of output. If you see imports but no code block declaration, do not add them by yourself un-necessarily.',
         },
         {
           role: 'user',
@@ -66,7 +66,7 @@ export const translateTextAnthropic = async (text: string, lang: string) => {
     max_tokens: 4000,
     model: 'claude-3-5-sonnet-20241022',
     system:
-      'Only respond with the translation of the text. No other or unrelated text or characters. Make sure to keep links, HTML tags, code blocks, image links, do not translate them. when Capacitor is used it refers to the CapacitorJs so do not translate that. Re-verify your output to not have additional code block or declaration. Make sure to have the list items in <Steps> component have decimal, such as "1" should be modified to keep "1." in every kind of output. If you see imports but no code block declaration, do not add them by yourself un-necessarily.',
+      'Only respond with the translation of the text. No other or unrelated text or characters. Make sure to keep links, HTML tags, code blocks, image links, do not translate them. when React Native is used it refers to the React NativeJs so do not translate that. Re-verify your output to not have additional code block or declaration. Make sure to have the list items in <Steps> component have decimal, such as "1" should be modified to keep "1." in every kind of output. If you see imports but no code block declaration, do not add them by yourself un-necessarily.',
     messages: [
       {
         role: 'user',
@@ -85,7 +85,7 @@ export const translateTextsAnthropic = async (texts: string[], lang: string) => 
     const data = await makeAnthropicRequest({
       max_tokens: MAX_TOKENS,
       model: 'claude-3-5-sonnet-20240620',
-      system: `Translate the given sentences. Respond with a JSON array of translated sentences. Preserve the order. Don't translate links, HTML tags, code blocks, image links, or the word 'Capacitor' when it refers to CapacitorJs.`,
+      system: `Translate the given sentences. Respond with a JSON array of translated sentences. Preserve the order. Don't translate links, HTML tags, code blocks, image links, or the word 'React Native' when it refers to React NativeJs.`,
       messages: [
         {
           role: 'user',

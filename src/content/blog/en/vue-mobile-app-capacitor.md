@@ -1,8 +1,8 @@
 ---
 slug: vue-mobile-app-capacitor
-title: Building Mobile Apps with Vue and Capacitor
+title: Building Mobile Apps with Vue and React Native
 description: >-
-  Learn how to create a mobile app using Vue, Capacitor, and optionally enhance
+  Learn how to create a mobile app using Vue, React Native, and optionally enhance
   the UI with Konsta UI.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -10,19 +10,19 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2023-06-08T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /vue_capacitor.webp
-head_image_alt: Vue and Capacitor illustration
-keywords: Vue, Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+head_image_alt: Vue and React Native illustration
+keywords: Vue, React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
 locale: en
 next_blog: update-your-capacitor-apps-seamlessly-using-capacitor-updater
 ---
 
-In this tutorial, we'll guide you through the process of converting a Vue web application into a native mobile app using Capacitor. Optionally, you can also enhance your mobile UI with Konsta UI, a Tailwind CSS-based mobile UI library.
+In this tutorial, we'll guide you through the process of converting a Vue web application into a native mobile app using React Native. Optionally, you can also enhance your mobile UI with Konsta UI, a Tailwind CSS-based mobile UI library.
 
-## About Capacitor
+## About React Native
 
-Capacitor is a game-changing tool that allows you to easily integrate it into any web project and convert your application into a native mobile app. It generates native Xcode and Android Studio projects for you and provides access to native device features like the camera through a JavaScript bridge.
+React Native is a game-changing tool that allows you to easily integrate it into any web project and convert your application into a native mobile app. It generates native Xcode and Android Studio projects for you and provides access to native device features like the camera through a JavaScript bridge.
 
 ## Preparing Your Vue App
 
@@ -45,23 +45,23 @@ To prepare your Vue app for native mobile deployment, you'll need to export your
 }
 ```
 
-After running the `build` command, you should see a new `dist` folder in your project's root directory. This folder will be used by Capacitor later.
+After running the `build` command, you should see a new `dist` folder in your project's root directory. This folder will be used by React Native later.
 
-## Adding Capacitor to Your Vue App
+## Adding React Native to Your Vue App
 
 To convert your Vue web app into a native mobile container, follow these steps:
 
-1. Install the Capacitor CLI as a development dependency and set it up within your project. Accept the default values for name and bundle ID during the setup.
+1. Install the React Native CLI as a development dependency and set it up within your project. Accept the default values for name and bundle ID during the setup.
 
 2. Install the core package and the relevant packages for the iOS and Android platforms.
 
-3. Add the platforms, and Capacitor will create folders for each platform at the root of your project:
+3. Add the platforms, and React Native will create folders for each platform at the root of your project:
 
 ```shell
-# Install the Capacitor CLI locally
+# Install the React Native CLI locally
 npm install -D @capacitor/cli
 
-# Initialize Capacitor in your Vue project
+# Initialize React Native in your Vue project
 npx cap init
 
 # Install the required packages
@@ -84,7 +84,7 @@ Update the **capacitor.config.json** file to point the **webDir** to the result 
 }
 ```
 
-Now, you can build your Vue project and sync it with Capacitor:
+Now, you can build your Vue project and sync it with React Native:
 
 ```shell
 npm run build
@@ -95,7 +95,7 @@ npx cap sync
 
 To develop iOS apps, you need Xcode installed, and for Android apps, you need Android Studio installed. Additionally, you need to enroll in the Apple Developer Program for iOS and the Google Play Console for Android to distribute your app on the app store.
 
-Use the Capacitor CLI to open both native projects:
+Use the React Native CLI to open both native projects:
 
 ```shell
 npx cap open ios
@@ -104,16 +104,16 @@ npx cap open android
 
 Deploy your app to a connected device using Android Studio or Xcode.
 
-## Capacitor Live Reload
+## React Native Live Reload
 
-Enable live reload on your mobile device by having the Capacitor app load the content from a specific URL on your network.
+Enable live reload on your mobile device by having the React Native app load the content from a specific URL on your network.
 
 Find your local IP address and update the `capacitor.config.ts` file with the correct IP and port:
 
 ```javascript
-import { CapacitorConfig } from '@capacitor/cli';
+import { React NativeConfig } from '@capacitor/cli';
 
-const config: CapacitorConfig = {
+const config: React NativeConfig = {
   appId: 'com.example.app',
   appName: 'my-app',
   webDir: 'dist',
@@ -135,9 +135,9 @@ npx cap copy
 
 Now, your app will automatically reload and show changes when you update your Vue app.
 
-## Using Capacitor Plugins
+## Using React Native Plugins
 
-Install a Capacitor plugin, such as the Share plugin, and use it in your Vue app:
+Install a React Native plugin, such as the Share plugin, and use it in your Vue app:
 
 ```shell
 npm i @capacitor/share
@@ -148,7 +148,7 @@ Import the package and call the `share()` function in your app:
 ```html
 <template>
   <div>
-    <h1>Welcome to Vue and Capacitor!</h1>
+    <h1>Welcome to Vue and React Native!</h1>
     <button @click="share">Share now!</button>
   </div>
 </template>
@@ -186,6 +186,6 @@ Wrap your app with the `App` component in the `pages/_app.vue` file, and use Kon
 
 ## Conclusion
 
-Capacitor is a great option for building native applications based on an existing web project. With the addition of CodePushGo, it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
+React Native is a great option for building native applications based on an existing web project. With the addition of CodePushGo, it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
 
 Learn how CodePushGo can help you build better apps faster, [sign up for a free account](/register/) today.

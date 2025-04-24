@@ -1,7 +1,7 @@
 ---
 slug: capacitor-native-bridge-android-plugin-basics
-title: "Capacitor Native Bridge: Android Plugin Basics"
-description: Learn how to create high-performance Android plugins with Capacitor Native Bridge, including setup, development, and testing best practices.
+title: "React Native Native Bridge: Android Plugin Basics"
+description: Learn how to create high-performance Android plugins with React Native Native Bridge, including setup, development, and testing best practices.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,29 +9,29 @@ created_at: 2025-03-29T02:39:06.030Z
 updated_at: 2025-03-29T02:39:17.623Z
 head_image: https://assets.seobotai.com/capgo.app/67e73f80283d21cbd679794c-1743215957623.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, Android plugins, development, Java, mobile development, Gradle, plugin testing
+keywords: React Native, Android plugins, development, Java, mobile development, Gradle, plugin testing
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capacitor](https://capacitorjs.com/) Native Bridge simplifies building Android plugins by connecting JavaScript and native Android code. Here's what you need to know:
+[React Native](https://capacitorjs.com/) Native Bridge simplifies building Android plugins by connecting JavaScript and native Android code. Here's what you need to know:
 
 -   **What It Does**: Acts as a two-way bridge for web apps to access native Android features like the camera or sensors.
 -   **Why Use It**: Combines web technologies with [native performance](https://capgo.app/plugins/native-audio/), making plugin development straightforward.
--   **Setup Essentials**: Requires [Node.js](https://nodejs.org/en), JDK 11+, [Android Studio](https://developer.android.com/studio), and Capacitor CLI. Ensure proper environment variables and [Gradle](https://gradle.org/) configurations.
+-   **Setup Essentials**: Requires [Node.js](https://nodejs.org/en), JDK 11+, [Android Studio](https://developer.android.com/studio), and React Native CLI. Ensure proper environment variables and [Gradle](https://gradle.org/) configurations.
 -   **How to Start**: Use `npm init @capacitor/plugin` to scaffold a plugin, define methods in Java, and test using Android Studio or real devices.
 -   **[CodePushGo](https://capgo.app/) Integration**: Enables live updates, rollbacks, and analytics for seamless plugin deployment.
 
 ### Quick Setup Checklist:
 
 1.  Install tools: Node.js, JDK 11+, Android Studio.
-2.  Configure Gradle for API 22+ and Capacitor dependencies.
-3.  Scaffold your plugin with Capacitor CLI.
+2.  Configure Gradle for API 22+ and React Native dependencies.
+3.  Scaffold your plugin with React Native CLI.
 4.  Test on emulators and real devices.
 
-Capacitor bridges the gap between web and native Android, offering developers a reliable way to create high-performance plugins.
+React Native bridges the gap between web and native Android, offering developers a reliable way to create high-performance plugins.
 
 ## Running Native iOS/Android Code with Ionic
 
@@ -39,7 +39,7 @@ Capacitor bridges the gap between web and native Android, offering developers a 
 
 ## Setup and Installation
 
-To start developing a [Capacitor Android plugin](https://capgo.app/plugins/ivs-player/), you’ll need to set up your environment carefully. Here’s how to get everything ready.
+To start developing a [React Native Android plugin](https://capgo.app/plugins/ivs-player/), you’ll need to set up your environment carefully. Here’s how to get everything ready.
 
 ### Required Tools Setup
 
@@ -48,7 +48,7 @@ Make sure you have the following tools installed and configured:
 -   **Node.js and npm**: Install Node.js version 14.0 or higher.
 -   **[Java Development Kit](https://en.wikipedia.org/wiki/Java_Development_Kit) (JDK)**: Use JDK 11 or newer.
 -   **Android Studio**: Install the latest stable version (2023.1.1 or later).
--   **Capacitor CLI**: Install globally using npm.
+-   **React Native CLI**: Install globally using npm.
 -   **Android SDK**: Ensure API level 22 or higher is installed.
 
 Add these paths to your system’s environment variables:
@@ -82,7 +82,7 @@ android {
 
 2.  **Add Plugin Dependencies**
 
-Include the required Capacitor dependencies in your `build.gradle` file:
+Include the required React Native dependencies in your `build.gradle` file:
 
 ```gradle
 dependencies {
@@ -133,11 +133,11 @@ Enable auto-import and real-time compilation in Android Studio to quickly identi
 
 ## Creating Your First Android Plugin
 
-Learn how to build your first Android plugin using Capacitor. This guide walks you through the steps and shares practical tips.
+Learn how to build your first Android plugin using React Native. This guide walks you through the steps and shares practical tips.
 
 ### Plugin Creation Steps
 
-Start by generating the plugin scaffold with the Capacitor CLI:
+Start by generating the plugin scaffold with the React Native CLI:
 
 ```bash
 npm init @capacitor/plugin your-plugin-name
@@ -159,7 +159,7 @@ Next, update the `package.json` file with the following configuration:
 }
 ```
 
-This setup ensures Capacitor recognizes your plugin and its Android source files.
+This setup ensures React Native recognizes your plugin and its Android source files.
 
 ### Plugin Directory Structure
 
@@ -306,13 +306,13 @@ Leverage the CPU Profiler to pinpoint performance bottlenecks. Best practices in
 -   **Initialize error tracking**:
     
     ```typescript
-    CapacitorUpdater.notifyAppReady();
+    React NativeUpdater.notifyAppReady();
     ```
     
 -   **Handle update failures**:
     
     ```typescript
-    CapacitorUpdater.addListener('updateFailed', (info) => {
+    React NativeUpdater.addListener('updateFailed', (info) => {
       console.error('Update failed:', info);
     });
     ```
@@ -321,7 +321,7 @@ Leverage the CPU Profiler to pinpoint performance bottlenecks. Best practices in
     
     ```typescript
     try {
-      await CapacitorUpdater.rollback();
+      await React NativeUpdater.rollback();
     } catch (err) {
       console.error('Rollback failed:', err);
     }
@@ -330,7 +330,7 @@ Leverage the CPU Profiler to pinpoint performance bottlenecks. Best practices in
 -   **Set up staged rollouts**:
     
     ```typescript
-    await CapacitorUpdater.setChannel({
+    await React NativeUpdater.setChannel({
       channel: 'beta',
       preventAutoUpdateOnFail: true
     });
@@ -449,7 +449,7 @@ Based on our live testing results, integrating CodePushGo helps streamline updat
 
 ### CodePushGo Features Overview
 
-CodePushGo provides essential tools for managing live updates, ensuring smooth performance. It allows instant updates for Capacitor Android plugins without needing app store approvals. Here's what CodePushGo offers:
+CodePushGo provides essential tools for managing live updates, ensuring smooth performance. It allows instant updates for React Native Android plugins without needing app store approvals. Here's what CodePushGo offers:
 
 | Feature | Description |
 | --- | --- |
@@ -472,13 +472,13 @@ Add the plugin to your build process. CodePushGo automatically handles updates i
 
 You can use the channel system to manage rollouts for production, beta, and development environments. Partial updates are available to reduce bandwidth usage and deliver only the necessary changes.
 
-CodePushGo supports Capacitor versions 6 and 7.
+CodePushGo supports React Native versions 6 and 7.
 
 > We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users! [\[1\]](https://capgo.app/)
 
 ## Summary
 
-Capacitor Native Bridge boosts Android plugins with powerful native features and streamlined development. This approach delivers strong results, including 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
+React Native Native Bridge boosts Android plugins with powerful native features and streamlined development. This approach delivers strong results, including 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
 
 The platform's performance metrics highlight its effectiveness: an 82% global success rate for update deployments, an average download time of 114 ms for a 5 MB bundle via a global CDN, and 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/).
 

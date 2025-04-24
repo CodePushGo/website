@@ -1,6 +1,6 @@
 ---
 slug: privacy-manifest-for-capacitor-apps-guide
-title: "Privacy Manifest for Capacitor Apps: Guide"
+title: "Privacy Manifest for React Native Apps: Guide"
 description: Learn how to create a Privacy Manifest for your app to comply with App Store requirements and protect user data effectively.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -9,14 +9,14 @@ created_at: 2025-04-02T03:07:47.047Z
 updated_at: 2025-04-02T03:08:00.473Z
 head_image: https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776-1743563280473.jpg
 head_image_alt: Mobile Development
-keywords: Privacy Manifest, Capacitor, App Store compliance, user data protection, app development, privacy standards
+keywords: Privacy Manifest, React Native, App Store compliance, user data protection, app development, privacy standards
 tag: Development, Mobile, Security
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Want to launch your [Capacitor](https://capacitorjs.com/) app on the [App Store](https://en.wikipedia.org/wiki/App_Store_\(Apple\)) without delays?** Start by creating a Privacy Manifest. Apple now requires developers to include this document to ensure apps meet strict privacy standards. Here's what you need to know:
+**Want to launch your [React Native](https://capacitorjs.com/) app on the [App Store](https://en.wikipedia.org/wiki/App_Store_\(Apple\)) without delays?** Start by creating a Privacy Manifest. Apple now requires developers to include this document to ensure apps meet strict privacy standards. Here's what you need to know:
 
 -   **What is a Privacy Manifest?**  
     A structured file outlining your app's data collection practices, API usage, and tracking domains.
@@ -77,16 +77,16 @@ Here are the primary elements to include in your privacy manifest to align with 
 
 According to CodePushGo, 95% of users comply with updates within 24 hours. With over 23.5 million updates delivered [\[1\]](https://capgo.app/), keeping your privacy documentation current is essential for maintaining user trust.
 
-## Building Privacy Manifests for [Capacitor](https://capacitorjs.com/)
+## Building Privacy Manifests for [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 ### Setup Requirements
 
 Before you start building the manifest, make sure you have:
 
 -   Xcode 15 or later installed
--   A Capacitor 5.0+ project set up
+-   A React Native 5.0+ project set up
 -   Access to your app's `Info.plist` file
 -   A basic understanding of JSON structure
 -   Documentation outlining your app's data collection practices
@@ -143,13 +143,13 @@ To prevent issues, keep these tips in mind:
 -   **Provide Complete Reasons**: Make sure every API access includes a corresponding reason code.
 -   **Keep Information Up-to-Date**: Update the manifest whenever new features are added.
 
-Also, ensure the manifest file stays under 512KB to avoid build errors. Regularly validate the file during Xcode's build process to catch mistakes early. Once your manifest is ready, integrate it into your Capacitor project by following the file placement guidelines.
+Also, ensure the manifest file stays under 512KB to avoid build errors. Regularly validate the file during Xcode's build process to catch mistakes early. Once your manifest is ready, integrate it into your React Native project by following the file placement guidelines.
 
-## Adding Privacy Manifests to Capacitor
+## Adding Privacy Manifests to React Native
 
 ### File Placement Guide
 
-To include a privacy manifest in your Capacitor project, place the `PrivacyInfo.xcprivacy` file in the following directory structure:
+To include a privacy manifest in your React Native project, place the `PrivacyInfo.xcprivacy` file in the following directory structure:
 
 ```
 your-app/
@@ -160,7 +160,7 @@ your-app/
 │   └── App.xcworkspace
 ```
 
-For Capacitor plugins, use this structure:
+For React Native plugins, use this structure:
 
 ```
 your-plugin/

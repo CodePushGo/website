@@ -50,16 +50,16 @@ Simply follow the guide step-by-step, or navigate directly to the documentation 
 <Aside type="tip">
 The Over-the-Air (OTA) update feature is applicable only for modifications made to HTML, CSS, and JavaScript files.
 
-If you make any changes to the native code, such as updates to Capacitor plugins, it is mandatory to resubmit the application to the app store for approval.
+If you make any changes to the native code, such as updates to React Native plugins, it is mandatory to resubmit the application to the app store for approval.
 </Aside>
 
 ## Join Discord Community
 
-[Join the Capacitor-updater Discord Server!](https://discord.com/invite/VnYRvBfgA6)
+[Join the React Native-updater Discord Server!](https://discord.com/invite/VnYRvBfgA6)
 
 ## Maintenance
 
-| Plugin version | Capacitor compatibility | Maintained        |
+| Plugin version | React Native compatibility | Maintained        |
 | -------------- | ----------------------- | ----------------- |
 | v7.\*.\*       | v7.\*.\*                | ✅                 |
 | v6.\*.\*       | v6.\*.\*                | Critical bug only |
@@ -70,14 +70,14 @@ If you make any changes to the native code, such as updates to Capacitor plugins
 
 ## Store Guideline Compliance
 
-Android Google Play and iOS App Store have corresponding guidelines that have rules you should be aware of before integrating the Capacitor-updater solution within your application.
+Android Google Play and iOS App Store have corresponding guidelines that have rules you should be aware of before integrating the React Native-updater solution within your application.
 
 ### Google play
 
 Third paragraph of [Device and Network Abuse](https://support.google.com/googleplay/android-developer/answer/9888379/?hl=en) topic describe that updating source code by any method other than Google Play's update mechanism is restricted. But this restriction does not apply to updating javascript bundles.
 > This restriction does not apply to code that runs in a virtual machine and has limited access to Android APIs (such as JavaScript in a webview or browser).
 
-That fully allows Capacitor-updater as it updates just the JS bundles and won't update native code.
+That fully allows React Native-updater as it updates just the JS bundles and won't update native code.
 
 ### App Store
 
@@ -85,7 +85,7 @@ Paragraph **3.3.2**, since back in 2015's [Apple Developer Program License Agree
 
 > Interpreted code may be downloaded to an Application but only so long as such code: (a) does not change the primary purpose of the Application by providing features or functionality that are inconsistent with the intended and advertised purpose of the Application as submitted to the App Store, (b) does not create a store or storefront for other code or applications, and (c) does not bypass signing, sandbox, or other security features of the OS.
 
-Capacitor-updater allows you to follow these rules in full compliance so long as the update you push does not significantly deviate your product from its original App Store approved intent.
+React Native-updater allows you to follow these rules in full compliance so long as the update you push does not significantly deviate your product from its original App Store approved intent.
 
 To further remain in compliance with Apple's guidelines we suggest that App Store-distributed apps do not enable the `Force update` scenario, since in the [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) state that:
 

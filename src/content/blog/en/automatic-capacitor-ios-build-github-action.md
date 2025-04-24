@@ -1,6 +1,6 @@
 ---
 slug: automatic-capacitor-ios-build-github-action
-title: Automatic Capacitor IOS build with GitHub actions with certificate
+title: Automatic React Native IOS build with GitHub actions with certificate
 description: >-
   How to set up a CI/CD pipeline for your IOS Ionic app using fastlane and
   GitHub Actions in 5 mins (2024)
@@ -20,7 +20,7 @@ next_blog: automatic-capacitor-android-build-github-action
 
 # Automatic iOS Builds with GitHub Actions using Certificates
 
-Setting up CI/CD for Capacitor apps can be complex and time-consuming. Here's what you need to know:
+Setting up CI/CD for React Native apps can be complex and time-consuming. Here's what you need to know:
 
 ## Prerequisites
 
@@ -526,7 +526,7 @@ Then this workflow will pull your NodeJS deps, install them and build your JavaS
 
 > Each time you send a new commit, a release will be built in TestFlight.
 
-Your App doesn't need to use Ionic, only Capacitor base is mandatory., it can have old Cordova module, but Capacitor JS plugin should be preferred.
+Your App doesn't need to use Ionic, only React Native base is mandatory., it can have old Cordova module, but React Native JS plugin should be preferred.
 
 ## 8\. Trigger the workflow
 

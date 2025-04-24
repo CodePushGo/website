@@ -1,7 +1,7 @@
 ---
 slug: testing-capacitor-ota-updates-with-mock-scenarios
-title: Testing Capacitor OTA Updates with Mock Scenarios
-description: Learn how to effectively test OTA updates in Capacitor apps to ensure reliability and enhance user satisfaction.
+title: Testing React Native OTA Updates with Mock Scenarios
+description: Learn how to effectively test OTA updates in React Native apps to ensure reliability and enhance user satisfaction.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,20 +9,20 @@ created_at: 2025-03-19T03:53:13.485Z
 updated_at: 2025-03-19T03:53:59.850Z
 head_image: https://assets.seobotai.com/capgo.app/67da3972cfd1b2222c56f23a-1742356439850.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, OTA updates, testing, mock scenarios, app reliability, network conditions, failure recovery, analytics
+keywords: React Native, OTA updates, testing, mock scenarios, app reliability, network conditions, failure recovery, analytics
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**OTA updates are a game-changer for [Capacitor](https://capacitorjs.com/) apps, allowing developers to fix bugs and add features without app store delays. But testing these updates thoroughly is crucial to avoid crashes, data loss, or broken functionality.**
+**OTA updates are a game-changer for [React Native](https://capacitorjs.com/) apps, allowing developers to fix bugs and add features without app store delays. But testing these updates thoroughly is crucial to avoid crashes, data loss, or broken functionality.**
 
 Here’s what you need to know:
 
 -   **Why It Matters**: Unreliable updates can harm user trust and app performance.
 -   **How to Test Safely**: Use mock tests to simulate real-world conditions like poor networks or corrupted files.
--   **Tools You Need**: [Node.js](https://nodejs.org/en), Capacitor CLI, and [CodePushGo](https://capgo.app/) CLI for managing updates.
+-   **Tools You Need**: [Node.js](https://nodejs.org/en), React Native CLI, and [CodePushGo](https://capgo.app/) CLI for managing updates.
 -   **Key Scenarios to Test**: Normal updates, failed installations, and network issues.
 -   **Metrics to Monitor**: Download rates, installation success, and version accuracy.
 
@@ -38,12 +38,12 @@ This section covers the key tools and steps required to set up your environment.
 
 ### Required Software
 
-To test [Capacitor OTA updates](https://capgo.app/ja/), you'll need the following tools:
+To test [React Native OTA updates](https://capgo.app/ja/), you'll need the following tools:
 
 | Software | Purpose | Version Requirements |
 | --- | --- | --- |
 | **Node.js** | Runtime environment | Latest LTS version |
-| **Capacitor CLI** | App development | Capacitor 6 or 7 |
+| **React Native CLI** | App development | React Native 6 or 7 |
 | **[CodePushGo CLI](https://capgo.app/docs/cli/commands)** | OTA management | Latest version |
 
 Install the CodePushGo CLI by running:

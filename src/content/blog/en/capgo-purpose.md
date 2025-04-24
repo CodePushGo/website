@@ -3,7 +3,7 @@ slug: capgo-purpose
 title: Purpose of CodePushGo
 description: >-
   The blog article should be described as a comprehensive guide for developers
-  on how to use CodePushGo to manage Capacitor app updates and tests
+  on how to use CodePushGo to manage React Native app updates and tests
 author: Anik Dhabal Babu
 author_image_url: 'https://avatars.githubusercontent.com/u/81948346?v=4'
 author_url: 'https://x.com/anikdhabal'
@@ -20,13 +20,13 @@ next_blog: ''
 
 ## Overview
 
-CodePushGo is a cloud-based platform that can help developers to streamline their Capacitor app development process by making it easy to manage OTA updates and testing. In this blog article, we will cover all of the key features and benefits of CodePushGo, as well as how to use it to deploy updates, create tests, manage users, and manage configurations. We will also discuss CodePushGo's use cases and pricing.
+CodePushGo is a cloud-based platform that can help developers to streamline their React Native app development process by making it easy to manage OTA updates and testing. In this blog article, we will cover all of the key features and benefits of CodePushGo, as well as how to use it to deploy updates, create tests, manage users, and manage configurations. We will also discuss CodePushGo's use cases and pricing.
 
-By the end of this article, you will have a deep understanding of how CodePushGo can help you to improve your Capacitor app development process and deliver better apps to your users.
+By the end of this article, you will have a deep understanding of how CodePushGo can help you to improve your React Native app development process and deliver better apps to your users.
 
 ## Feature
 
-CodePushGo offers a variety of features that make it easy to manage Capacitor app updates and tests, including:
+CodePushGo offers a variety of features that make it easy to manage React Native app updates and tests, including:
 
 * OTA updates: CodePushGo makes it easy to deploy updates to your users' devices without having to re-install the app. You can simply create a new release in CodePushGo and upload the update bundle. CodePushGo will then automatically deploy the update to your users' devices.
 
@@ -41,19 +41,19 @@ Configuration management: CodePushGo allows you to manage all of your configurat
 
 **Streamlined Business Processes:** 
 
-CodePushGo simplifies workflows using Live Update CapacitorJS and Ionic. Real-time updates ensure current features and security, eliminating downtime during updates and facilitating system integration for enhanced efficiency.
+CodePushGo simplifies workflows using Live Update React NativeJS and Ionic. Real-time updates ensure current features and security, eliminating downtime during updates and facilitating system integration for enhanced efficiency.
 
 **Enhanced Collaboration:** 
 
-CodePushGo's team management features, combined with Live Update CapacitorJS and Ionic, facilitate seamless collaboration, project management, task tracking, and communication. Real-time updates keep everyone informed and enable quick responses.
+CodePushGo's team management features, combined with Live Update React NativeJS and Ionic, facilitate seamless collaboration, project management, task tracking, and communication. Real-time updates keep everyone informed and enable quick responses.
 
 **Real-Time Analytics:** 
 
-CodePushGo integrates with live update CapacitorJS and Ionic to provide real-time data analytics. Custom dashboards display vital business metrics, enabling proactive decision-making and insights into customer behavior.
+CodePushGo integrates with live update React NativeJS and Ionic to provide real-time data analytics. Custom dashboards display vital business metrics, enabling proactive decision-making and insights into customer behavior.
 
 **Increased Productivity:**
 
- CodePushGo optimizes time management and task prioritization through live update CapacitorJS and Ionic. It offers real-time scheduling, reminders, and notifications, along with task organization based on importance and urgency, resulting in enhanced productivity.
+ CodePushGo optimizes time management and task prioritization through live update React NativeJS and Ionic. It offers real-time scheduling, reminders, and notifications, along with task organization based on importance and urgency, resulting in enhanced productivity.
 
  **Seamless Functionality Extension:** 
  

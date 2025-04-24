@@ -1,6 +1,6 @@
 ---
 slug: capacitor-vs-appflow-versioning-differences
-title: "Capacitor vs Appflow: Versioning Differences"
+title: "React Native vs Appflow: Versioning Differences"
 description: Explore the differences in versioning between manual and automated methods, and discover emerging alternatives for app development.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
@@ -16,9 +16,9 @@ locale: en
 next_blog: ''
 ---
 
-**Managing app versions can be tricky.** [Capacitor](https://capacitorjs.com/) uses [manual updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/), while [Appflow](https://ionic.io/docs/appflow) automates the process. Here’s what you need to know:
+**Managing app versions can be tricky.** [React Native](https://capacitorjs.com/) uses [manual updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/), while [Appflow](https://ionic.io/docs/appflow) automates the process. Here’s what you need to know:
 
--   **Capacitor:** Manual versioning requires editing files like `Info.plist` (iOS) and `build.gradle` (Android). This gives control but risks errors and slows updates.
+-   **React Native:** Manual versioning requires editing files like `Info.plist` (iOS) and `build.gradle` (Android). This gives control but risks errors and slows updates.
 -   **Appflow:** Automates versioning with CI/CD tools for faster releases but costs ~$6,000/year and may lack flexibility.
 
 **Key Changes in the Market:**
@@ -28,7 +28,7 @@ next_blog: ''
 
 ### Quick Comparison
 
-| Feature | Capacitor (Manual) | Appflow (Automated) | CodePushGo (Alternative) |
+| Feature | React Native (Manual) | Appflow (Automated) | CodePushGo (Alternative) |
 | --- | --- | --- | --- |
 | **Versioning** | Manual edits | Automated via CI/CD | Live updates |
 | **Update Speed** | Slower (App Store delays) | Faster (Code-push) | Near-instant |
@@ -38,17 +38,17 @@ next_blog: ''
 
 When choosing, consider your budget, update frequency, and need for speed.
 
-## Live Demo: Building [Capacitor](https://capacitorjs.com/) Apps in Ionic [Appflow](https://ionic.io/docs/appflow)
+## Live Demo: Building [React Native](https://capacitorjs.com/) Apps in Ionic [Appflow](https://ionic.io/docs/appflow)
 
-![Capacitor](https://assets.seobotai.com/capgo.app/6805c3ba360079f947b8c4ac/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/6805c3ba360079f947b8c4ac/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/tkgNuSG5FJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## Versioning Methods: Capacitor vs Appflow
+## Versioning Methods: React Native vs Appflow
 
-Capacitor and Appflow take very different approaches to managing version control. Here’s a closer look at how each platform handles this process and fits into development workflows.
+React Native and Appflow take very different approaches to managing version control. Here’s a closer look at how each platform handles this process and fits into development workflows.
 
-### Capacitor's Manual Version Control
+### React Native's Manual Version Control
 
 -   For iOS, you need to manually update the **Info.plist** file for each release.
 -   For Android, version-code adjustments in the **build.gradle** file are done manually.
@@ -85,7 +85,7 @@ When comparing manual and automated version control, each approach comes with it
 
 ### Risks of Manual Version Control
 
-Capacitor's manual process requires developers to update several configuration files for every release. This increases the chance of errors, such as mismatched versions or untracked deployments. Additionally, it can lead to delays in addressing bugs, with fixes potentially taking days or even weeks to reach users.
+React Native's manual process requires developers to update several configuration files for every release. This increases the chance of errors, such as mismatched versions or untracked deployments. Additionally, it can lead to delays in addressing bugs, with fixes potentially taking days or even weeks to reach users.
 
 Key challenges include:
 
@@ -101,7 +101,7 @@ Appflow simplifies the process by automating version updates and deployments. Ho
 
 ## New Version Control Options
 
-Managing version control for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) has always been a challenge, especially when balancing manual errors and the high costs of automation. Fortunately, the tools available for version control have grown, offering alternatives to traditional methods.
+Managing version control for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) has always been a challenge, especially when balancing manual errors and the high costs of automation. Fortunately, the tools available for version control have grown, offering alternatives to traditional methods.
 
 ### [CodePushGo](https://capgo.app/) Update System
 
@@ -126,7 +126,7 @@ These tools are stepping in to fill the void left by the closure of CodePush in 
 
 ## Conclusion
 
-Managing version control for Capacitor apps involves a mix of manual workflows, Appflow's automation, and [modern live-update platforms](https://capgo.app/blog/alternative-to-expo/).
+Managing version control for React Native apps involves a mix of manual workflows, Appflow's automation, and [modern live-update platforms](https://capgo.app/blog/alternative-to-expo/).
 
 ### Key Takeaways
 

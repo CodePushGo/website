@@ -1,7 +1,7 @@
 ---
 slug: npm-scripts-for-capacitor-ota-updates-explained
-title: npm Scripts for Capacitor OTA Updates Explained
-description: Learn how to automate OTA updates for your Capacitor app using npm scripts, enhancing deployment efficiency and user experience.
+title: npm Scripts for React Native OTA Updates Explained
+description: Learn how to automate OTA updates for your React Native app using npm scripts, enhancing deployment efficiency and user experience.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-04-13T01:07:05.331Z
 updated_at: 2025-04-13T01:07:18.251Z
 head_image: https://assets.seobotai.com/capgo.app/67fb02ab2e221594daf3f266-1744506438251.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, npm scripts, OTA updates, CI/CD, mobile app deployment, automation, app version management, security
+keywords: React Native, npm scripts, OTA updates, CI/CD, mobile app deployment, automation, app version management, security
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Updating your [Capacitor](https://capacitorjs.com/) app has never been easier.** By combining Over-The-Air (OTA) updates with npm scripts, you can automate deployments, save time, and ensure your users always have the latest version - without waiting for app store approvals.
+**Updating your [React Native](https://capacitorjs.com/) app has never been easier.** By combining Over-The-Air (OTA) updates with npm scripts, you can automate deployments, save time, and ensure your users always have the latest version - without waiting for app store approvals.
 
 **Here’s what you’ll learn:**
 
@@ -40,7 +40,7 @@ next_blog: ''
 
 With platforms like CodePushGo offering fast updates (95% user adoption in 24 hours) and affordable pricing, managing OTA updates has never been more efficient.
 
-## Explore [Capawesome](https://capawesome.io/)'s New Ionic [Capacitor](https://capacitorjs.com/) Live Update ...
+## Explore [Capawesome](https://capawesome.io/)'s New Ionic [React Native](https://capacitorjs.com/) Live Update ...
 
 ![Capawesome](https://assets.seobotai.com/capgo.app/67fb02ab2e221594daf3f266/04d155e1ac5e3041660c0e8da59e2e54.jpg)
 
@@ -48,7 +48,7 @@ With platforms like CodePushGo offering fast updates (95% user adoption in 24 ho
 
 ## npm Scripts Setup for OTA Updates
 
-Here's how to configure npm scripts to manage [Capacitor OTA updates](https://capgo.app/ja/) effectively. This involves installing necessary packages, setting up configurations, and creating deployment scripts.
+Here's how to configure npm scripts to manage [React Native OTA updates](https://capgo.app/ja/) effectively. This involves installing necessary packages, setting up configurations, and creating deployment scripts.
 
 ### Installing Required Packages
 
@@ -74,7 +74,7 @@ Update your `capacitor.config.json` file with the following settings to prepare 
   "appId": "com.your.app",
   "appName": "Your App",
   "plugins": {
-    "CapacitorUpdates": {
+    "React NativeUpdates": {
       "autoUpdate": true,
       "updateUrl": "https://api.capgo.app/updates",
       "statsUrl": "https://api.capgo.app/stats"
@@ -118,7 +118,7 @@ CAPGO_APP_ID=your_app_id
 
 ### Compatibility and Reliability
 
-The CodePushGo CLI supports Capacitor 6 and 7, ensuring it works with the latest versions while maintaining dependable update functionality.
+The CodePushGo CLI supports React Native 6 and 7, ensuring it works with the latest versions while maintaining dependable update functionality.
 
 | Script Command | Purpose | When to Use |
 | --- | --- | --- |
@@ -129,7 +129,7 @@ The CodePushGo CLI supports Capacitor 6 and 7, ensuring it works with the latest
 
 ## Adding npm Scripts to CI/CD
 
-Integrating npm scripts into your CI/CD pipeline can simplify the Over-The-Air (OTA) update process for Capacitor apps. Here's a guide to setting up automated deployments efficiently.
+Integrating npm scripts into your CI/CD pipeline can simplify the Over-The-Air (OTA) update process for React Native apps. Here's a guide to setting up automated deployments efficiently.
 
 ### CI/CD Build Setup
 
@@ -272,7 +272,7 @@ Choosing the right OTA update platform is crucial for effectively integrating np
 
 ![CodePushGo](https://assets.seobotai.com/capgo.app/67fb02ab2e221594daf3f266/04cc402ef2e8f7dc781d2b86cd364db3.jpg)
 
-CodePushGo is designed specifically for Capacitor OTA updates, offering an average update speed of 434 milliseconds and achieving a 95% user update rate [\[1\]](https://capgo.app/). It provides seamless integration with npm scripts, as shown in the example below:
+CodePushGo is designed specifically for React Native OTA updates, offering an average update speed of 434 milliseconds and achieving a 95% user update rate [\[1\]](https://capgo.app/). It provides seamless integration with npm scripts, as shown in the example below:
 
 ```json
 {
@@ -319,7 +319,7 @@ CodePushGo's ability to handle complex npm script configurations while maintaini
 
 ### Main Points Review
 
-Using npm scripts simplifies the process of managing Capacitor OTA updates. When integrated into CI/CD pipelines, these scripts help automate deployments while ensuring security and maintaining performance levels.
+Using npm scripts simplifies the process of managing React Native OTA updates. When integrated into CI/CD pipelines, these scripts help automate deployments while ensuring security and maintaining performance levels.
 
 Here are the key areas of focus:
 

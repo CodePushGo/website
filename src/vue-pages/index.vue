@@ -584,8 +584,8 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
                 <h3 class="text-xl font-bold text-white">Broad Compatibility</h3>
               </div>
               <div class="p-10">
-                <p class="mt-2 text-lg font-medium tracking-tight text-white">Support for Capacitor 6 & 7</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Full compatibility with latest Capacitor versions and all major platforms</p>
+                <p class="mt-2 text-lg font-medium tracking-tight text-white">Support for React Native 6 & 7</p>
+                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Full compatibility with latest React Native versions and all major platforms</p>
               </div>
             </div>
           </div>

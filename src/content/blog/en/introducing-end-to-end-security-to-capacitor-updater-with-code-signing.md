@@ -18,9 +18,9 @@ locale: en
 next_blog: ''
 ---
 
-[Capacitor-updater](https://github.com/Cap-go/capacitor-updater/) now supports end-to-end code encryption. Code signing makes sure the updates run by end users’ devices have not been tampered with and provides an extra level of protection above Capacitor-updater’s standard web-grade security.
+[React Native-updater](https://github.com/Cap-go/capacitor-updater/) now supports end-to-end code encryption. Code signing makes sure the updates run by end users’ devices have not been tampered with and provides an extra level of protection above React Native-updater’s standard web-grade security.
 
-## The default security of Capacitor-updater
+## The default security of React Native-updater
 
 By default, CodePushGo’s security model is similar to that of web hosting providers. CodePushGo stores updates [encrypted at rest](https://cloud.google.com/docs/security/encryption/default-encryption/) and serves them over HTTPS using modern ciphers. Similarly, publishing an update from a developer’s computer always uses HTTPS.
 
@@ -36,11 +36,11 @@ Another thing CodePushGo and most web hosts have in common is they run on lower-
 
 The cloud supply chain and its security model work for a vast number of websites and apps. Every web developer who uses a cloud provider puts trust in that provider and expects the files they upload to be the files that are run or served without being tampered with. And cloud providers work hard at keeping their infrastructure secure.
 
-But obviously, hardware and software vulnerabilities get discovered. Cloud providers patch vulnerabilities on timely schedules, proactively prevent malicious software(e.g. [Google’s SLSA](https://security.googleblog.com/2021/06/introducing-slsa-end-to-end-framework.html/)), and build layers of defense in depth, and in practice, cloud infrastructure has shown to meet most websites and apps’ security needs. However, some Ionic apps include compromised cloud infrastructure in their threat models. For these Capacitor JS apps with the highest security requirements above the web, we built end-to-end code signing in to CodePushGo and the [CodePushGo Updates standard protocol](/docs/self-hosted/auto-update/update-endpoint/).
+But obviously, hardware and software vulnerabilities get discovered. Cloud providers patch vulnerabilities on timely schedules, proactively prevent malicious software(e.g. [Google’s SLSA](https://security.googleblog.com/2021/06/introducing-slsa-end-to-end-framework.html/)), and build layers of defense in depth, and in practice, cloud infrastructure has shown to meet most websites and apps’ security needs. However, some Ionic apps include compromised cloud infrastructure in their threat models. For these React Native JS apps with the highest security requirements above the web, we built end-to-end code signing in to CodePushGo and the [CodePushGo Updates standard protocol](/docs/self-hosted/auto-update/update-endpoint/).
 
 ## End-to-end code signing with CodePushGo
 
-CodePushGo’s end-to-end code signing uses public-key cryptography to ensure end users’ devices run only unmodified, original updates from the Capacitor app developer.
+CodePushGo’s end-to-end code signing uses public-key cryptography to ensure end users’ devices run only unmodified, original updates from the React Native app developer.
 
 “End-to-end” means this security covers the flow from the time a developer publishes an update to the time an end user’s device receives and runs the update. “Code signing” is using cryptography and a secret private key to “sign” code, and later using a trusted public key to verify the signature.
 

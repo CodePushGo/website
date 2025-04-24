@@ -23,7 +23,7 @@ this will trigger the update cycle as usual without the user interaction.
 	"appId": "**.***.**",
 	"appName": "Name",
 	"plugins": {
-		"CapacitorUpdater": {
+		"React NativeUpdater": {
 			"directUpdate": true,
 		},
     "SplashScreen": {
@@ -36,15 +36,15 @@ this will trigger the update cycle as usual without the user interaction.
 And then in your app, you should hide the splash screen when you receive the event `appReady`:
 
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 
-CapacitorUpdater.addListener('appReady', () => {
+React NativeUpdater.addListener('appReady', () => {
   // Hide splash
   SplashScreen.hide()
 })
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 ```
 
 ## Force update
@@ -52,23 +52,23 @@ CapacitorUpdater.notifyAppReady()
 Add a listener to the event `updateAvailable` and then show an alert to let the user know the app will update:
 
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 import { Dialog } from '@capacitor/dialog'
 
-CapacitorUpdater.addListener('updateAvailable', async (res) => {
+React NativeUpdater.addListener('updateAvailable', async (res) => {
   try {
     await Dialog.alert({
       title: 'Update Available',
       message: `Version ${res.bundle.version} is available. The app will update now`,
     })
-    CapacitorUpdater.set(res.bundle)
+    React NativeUpdater.set(res.bundle)
   }
   catch (error) {
     console.log(error)
   }
 })
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 ```
 
 ## Modal update
@@ -76,10 +76,10 @@ CapacitorUpdater.notifyAppReady()
 You can also let the user decide by showing a dialog to ask them to update:
 
 ```js
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@capgo/capacitor-updater'
 import { Dialog } from '@capacitor/dialog'
 
-CapacitorUpdater.addListener('updateAvailable', async (res) => {
+React NativeUpdater.addListener('updateAvailable', async (res) => {
   try {
     const { value } = await Dialog.confirm({
       title: 'Update Available',
@@ -87,7 +87,7 @@ CapacitorUpdater.addListener('updateAvailable', async (res) => {
     })
 
     if (value)
-      CapacitorUpdater.set(res.bundle)
+      React NativeUpdater.set(res.bundle)
 
   }
   catch (error) {
@@ -95,5 +95,5 @@ CapacitorUpdater.addListener('updateAvailable', async (res) => {
   }
 })
 
-CapacitorUpdater.notifyAppReady()
+React NativeUpdater.notifyAppReady()
 ```

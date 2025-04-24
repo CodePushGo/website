@@ -67,13 +67,13 @@ CodePushGo emphasizes this approach, stating:
 
 This multi-step process ensures that updates are protected from the moment they’re created until they’re installed, offering a stronger level of security than approaches that rely solely on signing updates.
 
-## Setting Up End-to-End Encryption in [Capacitor](https://capacitorjs.com/)
+## Setting Up End-to-End Encryption in [React Native](https://capacitorjs.com/)
 
-![Capacitor](https://assets.seobotai.com/capgo.app/67fc6fa4af1a45e500bc7deb/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/capgo.app/67fc6fa4af1a45e500bc7deb/7e137b9b90adb3934b29b03381f213c1.jpg)
 
-This section explains how to implement end-to-end encryption in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/), building on the concepts covered earlier.
+This section explains how to implement end-to-end encryption in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/), building on the concepts covered earlier.
 
-To ensure secure over-the-air (OTA) updates in Capacitor, use encryption protocols designed for high security. CodePushGo's platform simplifies managing encryption keys while adhering to leading security standards.
+To ensure secure over-the-air (OTA) updates in React Native, use encryption protocols designed for high security. CodePushGo's platform simplifies managing encryption keys while adhering to leading security standards.
 
 ### Encrypting Update Packages
 
