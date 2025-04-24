@@ -1,6 +1,6 @@
 # CodePushGo website
 
-<a href="https://codepushgo.com/"><img src='https://raw.githubusercontent.com/Cap-go/codepushgo/main/assets/codepushgo_banner.png' alt='CodePushGo - Instant updates for capacitor'/></a>
+<a href="https://codepushgo.com/"><img src='https://raw.githubusercontent.com/Cap-go/codepushgo/main/assets/codepushgo_banner.png' alt='CodePushGo - Instant updates for React Native'/></a>
 [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/invite/VnYRvBfgA6)
 <a href="https://discord.com/invite/VnYRvBfgA6"><img src="https://img.shields.io/discord/912707985829163099?color=%237289DA&label=Discord" alt="Discord">
 [![npm](https://img.shields.io/npm/dm/@codepushgo/website)](https://www.npmjs.com/package/@codepushgo/website)
@@ -25,8 +25,8 @@ This is the source code for the CodePushGo website, built with [Astro](https://a
 To start the development server, run:
 
 ```sh
-bun install
-bun run dev
+pnpm install
+pnpm dev
 ```
 
 ## Deployment
@@ -67,12 +67,12 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun run dev`             | Starts local dev server at `localhost:3000`      |
-| `bun run build`           | Build your production site to `./dist/`          |
-| `bun run preview`         | Preview your build locally, before deploying     |
-| `bun run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun run astro -- --help` | Get help using the Astro CLI                     |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm run dev`             | Starts local dev server at `localhost:3000`      |
+| `pnpm run build`           | Build your production site to `./dist/`          |
+| `pnpm run preview`         | Preview your build locally, before deploying     |
+| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
 
 ## Automatic i18n
 
@@ -94,8 +94,8 @@ const locales = ['fr']
 
 Now to have translations generated for `fr`, you'd want to run:
 
-- `bun run setup:new:locale`: This script copies the existing files in `src/pages` directory to `src/pages/fr` directory and makes sure to replace each reference to `content/blog` to `content/fr/blog`. Then, it copies the `src/content/blog` directory to `src/content/fr/blog` and makes sure to set `locale` frontmatter in each markdown file as `fr`. Then, it runs all the translation scripts mentioned below.
-- `bun run generate:locale:translations`: This script uses the translate function to translate the `en.yml` key value pairs into the desired language, and creates a `fr.yml` file.
-- `bun run generate:translation.ts`: This script uses all the `.yml` files in the `locales` directory to generate two files, `src/services/locale.ts` and `src/services/translation.ts` files with all the locales translations key value pair.
-- `bun run generate:blog:translations`: This script uses all the `.md` files in the `src/content/blog` directory to generate the translated version of the file in the `src/content/fr/blog` directory.
-- `bun run generate:plugin:translations`: This script uses all the `.md` files in the `src/content/plugins-tutorials` directory to generate the translated version of the file in the `src/content/fr/plugins-tutorials` directory.
+- `pnpm run setup:new:locale`: This script copies the existing files in `src/pages` directory to `src/pages/fr` directory and makes sure to replace each reference to `content/blog` to `content/fr/blog`. Then, it copies the `src/content/blog` directory to `src/content/fr/blog` and makes sure to set `locale` frontmatter in each markdown file as `fr`. Then, it runs all the translation scripts mentioned below.
+- `pnpm run generate:locale:translations`: This script uses the translate function to translate the `en.yml` key value pairs into the desired language, and creates a `fr.yml` file.
+- `pnpm run generate:translation.ts`: This script uses all the `.yml` files in the `locales` directory to generate two files, `src/services/locale.ts` and `src/services/translation.ts` files with all the locales translations key value pair.
+- `pnpm run generate:blog:translations`: This script uses all the `.md` files in the `src/content/blog` directory to generate the translated version of the file in the `src/content/fr/blog` directory.
+- `pnpm run generate:plugin:translations`: This script uses all the `.md` files in the `src/content/plugins-tutorials` directory to generate the translated version of the file in the `src/content/fr/plugins-tutorials` directory.
