@@ -25,8 +25,8 @@ This is the source code for the CodePushGo website, built with [Astro](https://a
 To start the development server, run:
 
 ```sh
-pnpm install
-pnpm dev
+bun install && bun add faiss-node --allow-build=faiss-node
+bun run dev
 ```
 
 ## Deployment
@@ -67,12 +67,12 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm run dev`             | Starts local dev server at `localhost:3000`      |
-| `pnpm run build`           | Build your production site to `./dist/`          |
-| `pnpm run preview`         | Preview your build locally, before deploying     |
-| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
+| `bun install && bun add faiss-node --allow-build=faiss-node`             | Installs dependencies                            |
+| `bun run dev`             | Starts local dev server at `localhost:3000`      |
+| `bun run build`           | Build your production site to `./dist/`          |
+| `bun run preview`         | Preview your build locally, before deploying     |
+| `bun run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `bun run astro -- --help` | Get help using the Astro CLI                     |
 
 ## Automatic i18n
 
@@ -94,8 +94,8 @@ const locales = ['fr']
 
 Now to have translations generated for `fr`, you'd want to run:
 
-- `pnpm run setup:new:locale`: This script copies the existing files in `src/pages` directory to `src/pages/fr` directory and makes sure to replace each reference to `content/blog` to `content/fr/blog`. Then, it copies the `src/content/blog` directory to `src/content/fr/blog` and makes sure to set `locale` frontmatter in each markdown file as `fr`. Then, it runs all the translation scripts mentioned below.
-- `pnpm run generate:locale:translations`: This script uses the translate function to translate the `en.yml` key value pairs into the desired language, and creates a `fr.yml` file.
-- `pnpm run generate:translation.ts`: This script uses all the `.yml` files in the `locales` directory to generate two files, `src/services/locale.ts` and `src/services/translation.ts` files with all the locales translations key value pair.
-- `pnpm run generate:blog:translations`: This script uses all the `.md` files in the `src/content/blog` directory to generate the translated version of the file in the `src/content/fr/blog` directory.
-- `pnpm run generate:plugin:translations`: This script uses all the `.md` files in the `src/content/plugins-tutorials` directory to generate the translated version of the file in the `src/content/fr/plugins-tutorials` directory.
+- `bun run setup:new:locale`: This script copies the existing files in `src/pages` directory to `src/pages/fr` directory and makes sure to replace each reference to `content/blog` to `content/fr/blog`. Then, it copies the `src/content/blog` directory to `src/content/fr/blog` and makes sure to set `locale` frontmatter in each markdown file as `fr`. Then, it runs all the translation scripts mentioned below.
+- `bun run generate:locale:translations`: This script uses the translate function to translate the `en.yml` key value pairs into the desired language, and creates a `fr.yml` file.
+- `bun run generate:translation.ts`: This script uses all the `.yml` files in the `locales` directory to generate two files, `src/services/locale.ts` and `src/services/translation.ts` files with all the locales translations key value pair.
+- `bun run generate:blog:translations`: This script uses all the `.md` files in the `src/content/blog` directory to generate the translated version of the file in the `src/content/fr/blog` directory.
+- `bun run generate:plugin:translations`: This script uses all the `.md` files in the `src/content/plugins-tutorials` directory to generate the translated version of the file in the `src/content/fr/plugins-tutorials` directory.

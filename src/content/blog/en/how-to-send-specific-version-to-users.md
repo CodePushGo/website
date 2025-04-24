@@ -102,7 +102,7 @@ Then in your backend you have to send it to CodePushGo backend too. Below two co
 ```js
 import axios from 'axios'
 
-await axios.post('https://api.codepushgo.com/device', {
+await axios.post('https://api.capgo.app/device', {
   app_id: 'YOUR_APP_ID',
   device_id: 'DEVICE_ID',
   channel: 'CHANNEL_NAME', // The name of the channel, or undefined if version_id provided
@@ -136,7 +136,7 @@ async function handleRequest(request) {
     device_id: body.device_id,
     channel: 'alpha'
   })
-  const newUrl = new URL('https://api.codepushgo.com/device')
+  const newUrl = new URL('https://api.capgo.app/device')
   const options = {
     headers: {
       authorization: 'YOUR_API_KEY',
@@ -166,7 +166,7 @@ If you need to check programmatically what override is set on a device, you can 
 ```js
 import axios from 'axios'
 
-const res = await axios.get('https://api.codepushgo.com/device?app_id=YOUR_APP_ID&device_id=DEVICE_ID', {
+const res = await axios.get('https://api.capgo.app/device?app_id=YOUR_APP_ID&device_id=DEVICE_ID', {
   headers: {
     authorization: 'YOUR_API_KEY' // choose a key with 'write' or 'all' rights
   }

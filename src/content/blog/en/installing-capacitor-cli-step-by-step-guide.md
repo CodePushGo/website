@@ -317,7 +317,7 @@ To enable live updates, add the following to your `capacitor.config.ts` file:
   plugins: {
     React NativeUpdater: {
       autoUpdate: true,
-      updateUrl: 'https://api.codepushgo.com/updates'
+      updateUrl: 'https://api.capgo.app/updates'
     }
   }
 }

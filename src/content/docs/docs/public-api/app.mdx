@@ -29,7 +29,7 @@ An app in CodePushGo represents your React Native application and includes:
 
 ### GET
 
-`https://api.codepushgo.com/app/`
+`https://api.capgo.app/app/`
 
 Retrieve information about your apps.
 
@@ -39,7 +39,7 @@ Retrieve information about your apps.
 - `org_id`: Optional. Filter apps by organization ID. If not provided, returns apps from all organizations the user has access to
 
 For getting a specific app:
-- Use the app ID in the URL path: `https://api.codepushgo.com/app/:app_id`
+- Use the app ID in the URL path: `https://api.capgo.app/app/:app_id`
 
 #### Response Type
 
@@ -65,15 +65,15 @@ interface App {
 ```bash
 # Get all apps
 curl -H "authorization: your-api-key" \
-  "https://api.codepushgo.com/app/"
+  "https://api.capgo.app/app/"
 
 # Get apps from a specific organization
 curl -H "authorization: your-api-key" \
-  "https://api.codepushgo.com/app/?org_id=046a36ac-e03c-4590-9257-bd6c9dba9ee8"
+  "https://api.capgo.app/app/?org_id=046a36ac-e03c-4590-9257-bd6c9dba9ee8"
 
 # Get specific app
 curl -H "authorization: your-api-key" \
-  "https://api.codepushgo.com/app/com.demo.app"
+  "https://api.capgo.app/app/com.demo.app"
 ```
 
 #### Example Response
@@ -101,7 +101,7 @@ curl -H "authorization: your-api-key" \
 
 ### POST
 
-`https://api.codepushgo.com/app/`
+`https://api.capgo.app/app/`
 
 Create a new app.
 
@@ -127,7 +127,7 @@ curl -X POST \
     "icon": "https://example.com/icon.png",
     "owner_org": "046a36ac-e03c-4590-9257-bd6c9dba9ee8"
   }' \
-  https://api.codepushgo.com/app/
+  https://api.capgo.app/app/
 ```
 
 #### Success Response
@@ -148,7 +148,7 @@ curl -X POST \
 
 ### PUT
 
-`https://api.codepushgo.com/app/:app_id`
+`https://api.capgo.app/app/:app_id`
 
 Update an existing app. The app ID is specified in the URL path.
 
@@ -173,7 +173,7 @@ curl -X PUT \
     "icon": "https://example.com/updated-icon.png",
     "retention": 45
   }' \
-  https://api.codepushgo.com/app/com.demo.app
+  https://api.capgo.app/app/com.demo.app
 ```
 
 #### Success Response
@@ -194,7 +194,7 @@ curl -X PUT \
 
 ### DELETE
 
-`https://api.codepushgo.com/app/:app_id`
+`https://api.capgo.app/app/:app_id`
 
 Delete an app and all associated resources. The app ID is specified in the URL path. Use with extreme caution as this action cannot be undone.
 
@@ -203,7 +203,7 @@ Delete an app and all associated resources. The app ID is specified in the URL p
 ```bash
 curl -X DELETE \
   -H "authorization: your-api-key" \
-  https://api.codepushgo.com/app/com.demo.app
+  https://api.capgo.app/app/com.demo.app
 ```
 
 #### Success Response
@@ -281,7 +281,7 @@ Common error scenarios and their responses:
 ```bash
 # List all apps in a specific organization
 curl -H "authorization: your-api-key" \
-  "https://api.codepushgo.com/app/?org_id=046a36ac-e03c-4590-9257-bd6c9dba9ee8"
+  "https://api.capgo.app/app/?org_id=046a36ac-e03c-4590-9257-bd6c9dba9ee8"
 ```
 
 ## Resource Management

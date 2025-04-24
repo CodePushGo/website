@@ -77,7 +77,7 @@ Here's a Node.js example:
 import axios from 'axios'
 
 const CAPGO_API_KEY = 'your_api_key'
-const CAPGO_API_URL = 'https://api.codepushgo.com'
+const CAPGO_API_URL = 'https://api.capgo.app'
 
 async function assignDeviceToChannel(deviceId: string, channel: string) {
   try {

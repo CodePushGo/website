@@ -130,7 +130,7 @@ jobs:
           curl -X POST \
           -H "X-CodePushGo-Signature: sha256=${{ secrets.CAPGO_SECRET }}" \
           -H "Authorization: Bearer ${{ secrets.CAPGO_API_KEY }}" \
-          https://api.codepushgo.com/deploy
+          https://api.capgo.app/deploy
 ```
 
 Make sure to store your API keys and secrets securely in your CI/CD platform's [encrypted storage](https://codepushgo.com/docs/cli/migrations/encryption/) to protect sensitive data.
@@ -152,7 +152,7 @@ Having a reliable rollback mechanism is essential to keep your app stable. Your 
 
 ```bash
 # Rollback script triggered by monitoring
-if [ $(curl -s https://api.codepushgo.com/metrics/errors) -gt 5 ]; then
+if [ $(curl -s https://api.capgo.app/metrics/errors) -gt 5 ]; then
   codepushgo rollback v1.2 --channel production
   notify-team "Update rolled back due to high error rate"
 fi

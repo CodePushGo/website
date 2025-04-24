@@ -34,7 +34,7 @@ Organization members are users who have access to your CodePushGo organization. 
 
 ### POST
 
-`https://api.codepushgo.com/organization/members/`
+`https://api.capgo.app/organization/members/`
 
 Add a new member to an organization or update an existing member's role. Note that you can only invite users who already have a CodePushGo account - the email must correspond to an existing CodePushGo user.
 
@@ -59,7 +59,7 @@ curl -X POST \
     "email": "newmember@example.com",
     "role": "write"
   }' \
-  https://api.codepushgo.com/organization/members/
+  https://api.capgo.app/organization/members/
 ```
 
 #### Success Response
@@ -82,7 +82,7 @@ Notes:
 
 ### GET 
 
-`https://api.codepushgo.com/organization/members/`
+`https://api.capgo.app/organization/members/`
 
 Retrieve all members of an organization.
 
@@ -109,7 +109,7 @@ interface Member {
 
 ```bash
 curl -H "authorization: your-api-key" \
-  "https://api.codepushgo.com/organization/members/?orgId=org_123"
+  "https://api.capgo.app/organization/members/?orgId=org_123"
 ```
 
 #### Example Response
@@ -141,7 +141,7 @@ curl -H "authorization: your-api-key" \
 
 ### DELETE
 
-`https://api.codepushgo.com/organization/members/`
+`https://api.capgo.app/organization/members/`
 
 Remove a member from an organization. This will immediately revoke their access.
 
@@ -164,7 +164,7 @@ curl -X DELETE \
     "orgId": "org_123",
     "email": "user@example.com"
   }' \
-  https://api.codepushgo.com/organization/members/
+  https://api.capgo.app/organization/members/
 ```
 
 #### Success Response

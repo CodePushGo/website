@@ -3,7 +3,7 @@
 
 [build]
   publish = "dist"
-  command = "pnpm build"
+  command = "bun run build"
 
 [[redirects]]
   from = '/.well-known/*'
@@ -12,7 +12,7 @@
 
 [[redirects]]
   from = "/api/auto_update"
-  to = "https://api.codepushgo.com/updates"
+  to = "https://api.capgo.app/updates"
   status = 200
 
 [[headers]]
@@ -32,7 +32,7 @@
     X-XSS-Protection = "1; mode=block"
 
 [dev]
-  command = "pnpm dev"
+  command = "bun run dev"
   autoLaunch = false
   targetPort = 3336
   functionsPort = 3335

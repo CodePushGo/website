@@ -188,7 +188,7 @@ Here’s an example of a secure configuration for your project:
 ```javascript
 {
   autoUpdate: true,
-  updateUrl: "https://api.codepushgo.com/updates",
+  updateUrl: "https://api.capgo.app/updates",
   autoDeleteFailed: true,
   responseTimeout: 15000
 }

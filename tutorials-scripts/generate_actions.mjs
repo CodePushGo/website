@@ -83,7 +83,7 @@ async function fetchPackages() {
       export const actions = [${combinedActions.map((i) => JSON.stringify(i))}]`,
     )
     console.log(`Running prettier...`)
-    spawnSync('pnpm', ['fmt'])
+    spawnSync('bun', ['run', 'fmt'])
     console.log(`Done!`)
     exit()
   } catch (error) {

@@ -76,8 +76,8 @@ Update your `capacitor.config.json` file with the following settings to prepare 
   "plugins": {
     "React NativeUpdates": {
       "autoUpdate": true,
-      "updateUrl": "https://api.codepushgo.com/updates",
-      "statsUrl": "https://api.codepushgo.com/stats"
+      "updateUrl": "https://api.capgo.app/updates",
+      "statsUrl": "https://api.capgo.app/stats"
     }
   }
 }
