@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import type { Action } from '@/config/plugins'
-import { actions } from '@/config/plugins'
 import { getSlug } from '@/services/github'
 import { type Locales } from '@/services/locale'
-import * as m from "../paraglide/messages.js"
 import { ArrowUpRightIcon } from '@heroicons/vue/20/solid'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import { marked } from 'marked'
 import { onMounted, ref } from 'vue'
+import * as m from '../paraglide/messages.js'
 
-const props = defineProps<{ locale: Locales }>()
-const plugins = ref<Action[]>(actions)
+const props = defineProps<{ locale: Locales; actions: Action[] }>()
+const plugins = ref<Action[]>(props.actions)
 
 onMounted(() => {
   plugins.value.forEach(async (i) => {
@@ -30,7 +29,7 @@ onMounted(() => {
         <a
           v-for="item in plugins"
           :key="item.href"
-          :href="item.href !== 'N/A' ? getRelativeLocaleUrl(props.locale, `plugins/${getSlug(item.href)}`) : '#'"
+          :href="item.href !== 'N/A' ? getRelativeLocaleUrl(props.locale, `blog/${getSlug(item.href)}`) : '#'"
           class="flex flex-col overflow-hidden border border-gray-600 rounded shadow group hover:shadow-white md:max-w-sm"
         >
           <div class="flex flex-col px-5 py-3">

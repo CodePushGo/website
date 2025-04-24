@@ -26,10 +26,13 @@ const blog = defineCollection({
 })
 
 const plugin = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: 'src/content/plugins-tutorials' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/plugins-tutorials', generateId: ({ entry }) => entry }),
   schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    created_at: z.union([z.string(), z.date()]).optional(),
+    slug: z.string().optional(),
     published: z.boolean().optional(),
-    locale: z.string().optional() as z.ZodType<Locales>,
   }),
 })
 

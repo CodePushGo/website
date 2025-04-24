@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useRuntimeConfig } from '@/config/app'
 import type { Locales } from '@/services/locale'
-import * as m from "../paraglide/messages.js"
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import { ref } from 'vue'
+import * as m from '../paraglide/messages.js'
 
 const config = useRuntimeConfig()
 const brand = config.public.brand
@@ -18,7 +18,7 @@ const menuMobile = ref(false)
       <div class="relative flex items-center justify-between">
         <div class="flex-shrink-0">
           <a :href="getRelativeLocaleUrl(props.locale)" title="Capgo home" aria-label="Capgo home" class="flex items-center pr-3 text-4xl font-medium font-prompt">
-            <img class="w-auto pr-1 h-18" loading="eager" height="72" width="133" :alt="`${brand} logo`" :title="`${brand} logo`" src="/capgo_logo.webp" />
+            <img class="w-auto pr-1 h-18" loading="eager" height="72" width="133" :alt="`${brand} logo`" :title="`${brand} logo`" src="/logo.png" />
           </a>
         </div>
         <div class="flex lg:hidden">

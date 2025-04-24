@@ -18,3 +18,5 @@ export const getSlug = (item: string) =>
   removeTrailingSlash(item)
     .substring(removeTrailingSlash(item).lastIndexOf('/') + 1)
     .toLowerCase()
+    .replace(/\.git/g, '')
+    .replace(/\.md/g, '')

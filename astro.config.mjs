@@ -11,11 +11,11 @@ import { pwa } from './src/config/pwa'
 import { defaultLocale, localeNames, locales } from './src/services/locale'
 
 export default defineConfig({
-  site: `https://${config.base_domain.prod}`,
   trailingSlash: 'always',
+  site: `https://${config.base_domain.prod}`,
   build: {
-    format: 'directory',
     concurrency: 2,
+    format: 'directory',
   },
   redirects: {
     '/docs/getting-started/': {

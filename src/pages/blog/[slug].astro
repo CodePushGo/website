@@ -1,82 +1,146 @@
 ---
+import { marked } from 'marked'
+import { actions } from '@/config/plugins'
 import Layout from '@/layouts/Layout.astro'
-import VueBlogSlug from '@/vue-pages/blog/[slug].vue'
-import type { GetStaticPaths } from 'astro'
-import { getCollection, render } from 'astro:content'
-import striptags from 'striptags'
+import type { Plugin } from '@/config/plugins'
+import { useRuntimeConfig } from '@/config/app'
+import VuePluginPDP from '@/vue-pages/plugins/[id].vue'
+import { fetchWithToken, getSlug } from '@/services/github'
+import { getCollection } from 'astro:content'
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const blogs = await getCollection('blog')
-  const entries = blogs.filter((j) => j.data.published !== false)
-  return entries.map((post) => {
+export async function getStaticPaths() {
+  let tutMap: any = {}
+  const promises: any[] = []
+  let processTuts: Plugin[] = []
+  let tuts = await getCollection('plugin', ({ data }) => data.published !== false)
+  tuts = tuts
+    .filter((i) => i.filePath)
+    .map((i) => ({
+      ...i,
+      data: {
+        ...i.data,
+        slug: i.filePath
+          .substring(i.filePath.lastIndexOf('/') + 1)
+          .replaceAll('.md', '')
+          .replaceAll('.git', '')
+          .toLowerCase(),
+      },
+    }))
+  for (let i of tuts) {
+    tutMap[i.data.slug] = i.body
+    const findTut = actions.find((item) => getSlug(item.href) === i.data.slug)
+    if (i.data.title) findTut['page_title'] = i.data.title
+    if (i.data.description) findTut['page_description'] = i.data.description
+    if (findTut) processTuts.push(findTut)
+  }
+  let plugins: Plugin[] = processTuts
+  for (let index = 0; index < processTuts.length; index++) {
+    let item = processTuts[index]
+    plugins[index].githubStars = 0
+    plugins[index].npmDownloads = 0
+    plugins[index].readme = marked.parse(`# ${item.title}\n\n${item.description}`)
+    // Fetch npm package details to get npm downloads
+    const npmApiUrl = `https://api.npmjs.org/downloads/point/last-month/${item.name}`
+    promises.push(
+      fetch(npmApiUrl)
+        .then((res) => (res.ok ? res.json() : null))
+        .then((res) => {
+          if (res) plugins[index].npmDownloads = res.downloads
+        })
+        .catch((e) => {}),
+    )
+    // Fetch npm package details to get npm modified
+    const registryNpmApiUrl = `https://registry.npmjs.org/${item.name}`
+    promises.push(
+      fetch(registryNpmApiUrl)
+        .then((res) => (res.ok ? res.json() : null))
+        .then((res) => {
+          if (res) {
+            plugins[index].datePublished = res.time.created
+            plugins[index].dateModified = res.time.modified
+          }
+        })
+        .catch((e) => {}),
+    )
+    // Extract the GitHub repository owner and name from the URL
+    const githubUrlParts = item.href.split('/')
+    const githubOwner = githubUrlParts[3]
+    const githubRepo = githubUrlParts[4]
+    // Fetch GitHub repository details to get GitHub stars
+    const githubApiUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}`
+    promises.push(
+      fetch(githubApiUrl)
+        .then((res) => (res.ok ? res.json() : null))
+        .then((res) => {
+          if (res) {
+            plugins[index].githubStars = res.stargazers_count
+          }
+        })
+        .catch((e) => {}),
+    )
+    // Update the item with fetched data
+    const readmeApiUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/readme`
+    promises.push(
+      fetchWithToken(readmeApiUrl)
+        .then((res) => (res.ok ? res.json() : null))
+        .then((res) => {
+          if (res) plugins[index].readme = marked.parse(Buffer.from(res.content, 'base64').toString('utf-8'))
+        })
+        .catch((e) => {}),
+    )
+  }
+  await Promise.allSettled(promises)
+  return plugins.map((item) => {
+    const slug = getSlug(item.href)
     return {
       params: {
-        slug: post.data.slug,
+        slug,
+      },
+      props: {
+        item,
+        tutorial: tutMap[slug],
       },
     }
   })
 }
 
-if (!Astro.params.slug) {
-  console.log(`Astro.params.slug is invalid for: ${Astro.url.pathname}`)
-  return new Response(null, { status: 404 })
-}
+const plugin = Astro.props.item
+let tutorial = Astro.props.tutorial
 
-const blogs = await getCollection('blog')
-const entry = blogs.find((j) => j.data.slug === Astro.params.slug && j.data.locale === Astro.locals.locale)
-const related = blogs.filter((j) => j.data.published !== false && j.data.slug !== Astro.params.slug && j.data.locale === Astro.locals.locale).slice(0, 3)
+if (tutorial) plugin['tutorial'] = marked.parse(tutorial)
 
-if (!entry) {
-  console.log(`entry is not found for: ${Astro.url.pathname}`)
-  return new Response(null, { status: 404 })
-}
+const content = {}
+if (plugin.title) content['title'] = plugin.title
+if (plugin.page_title) content['title'] = plugin.page_title
+if (plugin.description) content['description'] = plugin.description
+if (plugin.page_description) content['description'] = plugin.page_description
 
-const { Content, headings } = await render(entry)
+const config = useRuntimeConfig()
 
-const content: { title?: string; description?: string; image?: string; author?: string; ldJSON?: Object; keywords?: string[] } = {}
+const { id } = Astro.params
 
-if (entry.data.title) content['title'] = entry.data.title
-if (entry.data.description) content['description'] = entry.data.description
-if (entry.data.head_image) content['image'] = `${Astro.locals.runtimeConfig.public.baseUrl}${entry.data.head_image || '/capgo_banner.webp'}`
-if (entry.data.author) content['author'] = entry.data.author || 'Capgo'
-if (entry.data.keywords) content['keywords'] = entry.data.keywords.split(',') || []
-
-const dateModified = entry.data.updated_at
-const datePublished = entry.data.created_at
-
-content['ldJSON'] = {
-  '@type': 'NewsArticle',
+content['ldJSON'] = JSON.stringify({
   '@context': 'https://schema.org',
+  '@type': 'WebPage',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': `${Astro.locals.runtimeConfig.public.baseUrl}/${entry.data?.slug}`,
+    '@id': `${config.public.baseUrl}/plugins/${id}`,
   },
-  dateModified: dateModified,
-  datePublished: datePublished,
-  inLanguage: Astro.locals.locale,
-  headline: entry.data?.description,
-  image: [`${Astro.locals.runtimeConfig.public.baseUrl}${entry.data?.head_image || '/capgo_banner.webp'}`],
-  author: {
-    '@type': 'Person',
-    name: entry.data?.author,
-    url: entry.data?.author_url,
-  },
+  headline: content['title'],
+  image: [`${config.public.baseUrl}/capgo_banner.webp`],
   publisher: {
-    name: 'Capgo',
     '@type': 'Organization',
+    name: 'Capgo',
     logo: {
       '@type': 'ImageObject',
-      url: `${Astro.locals.runtimeConfig.public.baseUrl}/icon.webp`,
+      url: `${config.public.baseUrl}/icon.webp`,
     },
   },
-  articleBody: striptags(entry.rendered?.html || ''),
-  keywords: entry.data?.keywords || [],
-  articleSection: entry.data?.tag || [],
-}
+  ...(plugin.hasOwnProperty('datePublished') && { datePublished: plugin.datePublished }),
+  ...(plugin.hasOwnProperty('dateModified') && { dateModified: plugin.dateModified }),
+})
 ---
 
 <Layout content={content}>
-  <VueBlogSlug client:load {related} {headings} {...entry.data}>
-    <Content />
-  </VueBlogSlug>
+  <VuePluginPDP client:load {...plugin} />
 </Layout>
