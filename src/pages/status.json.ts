@@ -3,7 +3,7 @@ import type { APIRoute } from 'astro'
 
 export const GET: APIRoute = async () => {
   try {
-    const response = await fetch('https://status.codepushgo.com/status.json')
+    const response = await fetch('https://status.capgo.app/status.json')
     const data = await response.json()
     return webJson(data)
   } catch (error) {

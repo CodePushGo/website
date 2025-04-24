@@ -81,11 +81,11 @@ const navigation: Record<string, NavigationItem[]> = {
     { name: m.guides(), href: getRelativeLocaleUrl(props.locale, 'blog') },
     {
       name: () => (systemStatus.value.indicator === 'up' ? m.all_systems_normal() : m.systems_are_disturbed()),
-      href: 'https://status.codepushgo.com/',
+      href: 'https://status.capgo.app/',
       target: '_blank',
       icon: () => (systemStatus.value.indicator === 'up' ? '🟢' : '🟠'),
     },
-    { name: m.status(), href: 'https://status.codepushgo.com/', target: '_blank' },
+    { name: m.status(), href: 'https://status.capgo.app/', target: '_blank' },
     {
       name: m.chat(),
       href: 'mailto:support@codepushgo.com',

@@ -29,7 +29,7 @@ onMounted(() => {
         <a
           v-for="item in plugins"
           :key="item.href"
-          :href="item.href !== 'N/A' ? getRelativeLocaleUrl(props.locale, `blog/${getSlug(item.href)}`) : '#'"
+          :href="item.href !== 'N/A' ? getRelativeLocaleUrl(props.locale, `tutorials/${getSlug(item.href)}`) : '#'"
           class="flex flex-col overflow-hidden border border-gray-600 rounded shadow group hover:shadow-white md:max-w-sm"
         >
           <div class="flex flex-col px-5 py-3">

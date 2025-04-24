@@ -62,8 +62,8 @@ const config = useRuntimeConfig()
           <h2 class="text-3xl font-bold text-gray-900">{{ m.application_security() }}</h2>
           <ul class="mt-8 space-y-5 text-lg text-gray-600 list-disc list-inside">
             <li>{{ m.secure_coding() }}</li>
-            <li>{{ m.site_reliability() }} <a href="https://status.codepushgo.com/" class="text-blue-500 underline underline-current" target="_blank">Uptime Monitoring</a>.</li>
-            <!-- link to update monitoring: https://status.codepushgo.com/ -->
+            <li>{{ m.site_reliability() }} <a href="https://status.capgo.app/" class="text-blue-500 underline underline-current" target="_blank">Uptime Monitoring</a>.</li>
+            <!-- link to update monitoring: https://status.capgo.app/ -->
             <li>{{ m.application_penetration_testing() }}</li>
           </ul>
         </div>
