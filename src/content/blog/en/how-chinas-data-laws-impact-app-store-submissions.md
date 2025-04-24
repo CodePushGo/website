@@ -20,7 +20,7 @@ China's strict data laws make it challenging for app developers to enter the mar
 
 -   **Key Laws**: Developers must comply with the [Cybersecurity Law](https://en.wikipedia.org/wiki/Cybersecurity_Law_of_the_People%27s_Republic_of_China) (2017), [Data Security Law](https://en.wikipedia.org/wiki/Data_Security_Law_of_the_People%27s_Republic_of_China) (2021), and [Personal Information Protection Law](https://en.wikipedia.org/wiki/Personal_Information_Protection_Law_of_the_People%27s_Republic_of_China) (PIPL, 2021). These laws require [local data storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/), user consent, and strict controls on cross-border data transfers.
 -   **App Design Adjustments**: Apps must store Chinese user data locally, disable features involving cross-border transfers, and ensure compliance from the start.
--   **Compliance Steps**: Implement local data storage solutions, classify data by sensitivity, and secure permissions for transfers. Tools like [Capgo](https://capgo.app/) help manage updates while meeting these requirements.
+-   **Compliance Steps**: Implement local data storage solutions, classify data by sensitivity, and secure permissions for transfers. Tools like [CodePushGo](https://capgo.app/) help manage updates while meeting these requirements.
 
 **Quick Tip**: Balancing compliance with app functionality is critical. Use secure tools and local hosting to meet regulatory demands without compromising user experience.
 
@@ -53,7 +53,7 @@ China's rules on data localization require apps to meet specific design standard
 -   **Data Routing**: Ensure all data from Chinese users is stored on local or region-specific servers. This helps avoid any cross-border data transfers that might violate regulations.
 -   **Feature Adjustments**: Modify or disable features that involve cross-border data sharing to stay compliant.
 
-Capgo can help by allowing you to push updates and features instantly, using end-to-end encryption and customizable local data storage.
+CodePushGo can help by allowing you to push updates and features instantly, using end-to-end encryption and customizable local data storage.
 
 ## Meeting Compliance Standards
 
@@ -78,15 +78,15 @@ Before managing updates, it's important to evaluate your data flow and control s
 -   **Transfer Patterns**: Map out how data flows between systems or components.
 -   **Access Controls**: Clearly document who has access to different types of data.
 
-### Update Management with [Capgo](https://capgo.app/)
+### Update Management with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-23.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-23.jpg?auto=compress)
 
-Capgo simplifies the process of managing updates while staying compliant.
+CodePushGo simplifies the process of managing updates while staying compliant.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo has proven its reliability in the Chinese market with impressive performance metrics:
+CodePushGo has proven its reliability in the Chinese market with impressive performance metrics:
 
 -   **95%** of active users receive updates within 24 hours [\[1\]](https://capgo.app/)
 -   **23.5M** updates delivered successfully [\[1\]](https://capgo.app/)
@@ -104,7 +104,7 @@ Submitting apps to Chinese app stores involves navigating strict technical and r
 
 ### Submission Tips
 
-For smoother updates and compliance, consider using Capgo. This tool allows developers to deliver updates directly to users while adhering to regulatory standards through secure deployment methods.
+For smoother updates and compliance, consider using CodePushGo. This tool allows developers to deliver updates directly to users while adhering to regulatory standards through secure deployment methods.
 
 > "Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
@@ -128,14 +128,14 @@ Some standout features include:
 -   **Flexible hosting options**, whether cloud-based or self-hosted
 -   **Privacy-focused analytics** for better insights without compromising user data
 
-> "The community needed this and @Capgo is doing something really important!" - Lincoln Baxter [\[1\]](https://capgo.app/)
+> "The community needed this and @CodePushGo is doing something really important!" - Lincoln Baxter [\[1\]](https://capgo.app/)
 
 As these tools become more integrated with development platforms, they are expected to make regulatory compliance more manageable while keeping update cycles efficient.
 
 ## Conclusion
 
-Navigating China's data regulations while maintaining global app functionality is no small feat. Developers face the dual challenge of adhering to strict local data laws and delivering updates quickly. Tools like Capgo simplify this process by streamlining updates and helping ensure compliance with these complex requirements.
+Navigating China's data regulations while maintaining global app functionality is no small feat. Developers face the dual challenge of adhering to strict local data laws and delivering updates quickly. Tools like CodePushGo simplify this process by streamlining updates and helping ensure compliance with these complex requirements.
 
-Modern solutions now enable developers to strike a balance between meeting regulatory demands and achieving operational efficiency. Capgo, for instance, has shown how compliance efforts can align with the need for smooth global distribution, proving that the right tools can make a big difference.
+Modern solutions now enable developers to strike a balance between meeting regulatory demands and achieving operational efficiency. CodePushGo, for instance, has shown how compliance efforts can align with the need for smooth global distribution, proving that the right tools can make a big difference.
 
 As China's data protection rules continue to shift, it's essential for developers to focus on tools that combine security and adaptability. Features like end-to-end encryption, flexible hosting setups, and fast deployment options are key to meeting both regulatory standards and the expectations of a global audience.

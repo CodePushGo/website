@@ -261,7 +261,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Capgo!</a>
+          Welcome to <a href="https://nextjs.org">CodePushGo!</a>
         </h1>
 
         <p className={styles.description}>
@@ -404,7 +404,7 @@ In this tutorial, we explored how to build native mobile apps using Next.js and 
 
 We covered the steps to set up a Next.js app, integrate Capacitor, and build and deploy the app to mobile devices. Additionally, we discussed using Capacitor plugins, adding Konsta UI for an enhanced mobile UI, and performance optimization techniques.
 
-To take your Next.js and Capacitor app to the next level, consider exploring [Capgo](https://capgo.app/) for seamless live updates, ensuring your users always have access to the latest features and bug fixes.
+To take your Next.js and Capacitor app to the next level, consider exploring [CodePushGo](https://capgo.app/) for seamless live updates, ensuring your users always have access to the latest features and bug fixes.
 
 By following the best practices and techniques outlined in this guide, you'll be well-equipped to build stunning native mobile apps using Next.js and Capacitor.
 
@@ -413,8 +413,8 @@ By following the best practices and techniques outlined in this guide, you'll be
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Capacitor Documentation](https://capacitorjs.com/docs)
 - [Konsta UI Documentation](https://konstaui.com/docs)
-- [Capgo - Live Updates for Capacitor Apps](https://capgo.app/)
+- [CodePushGo - Live Updates for Capacitor Apps](https://capgo.app/)
 
 Happy app building!
 
-Learn how Capgo can help you build better apps faster, [sign up for a free account](/register/) today.
+Learn how CodePushGo can help you build better apps faster, [sign up for a free account](/register/) today.

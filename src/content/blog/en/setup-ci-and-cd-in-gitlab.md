@@ -22,7 +22,7 @@ This article will guide you on how to do CI/CD pipeline setup with GitLab.
 
 ## Preface
 
-Be sure you have added your Capacitor app first to Capgo, this tutorial just focuses on the upload phase. If you need to add your app to Capgo, you can follow this [Tutorial](https://capgo.app/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/).
+Be sure you have added your Capacitor app first to CodePushGo, this tutorial just focuses on the upload phase. If you need to add your app to CodePushGo, you can follow this [Tutorial](https://capgo.app/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/).
 
 ## Commit convention
 
@@ -77,7 +77,7 @@ Add another stage to your .gitlab-ci.yml file for the build:
          environment:
            name: production
 
-Ensure you have your Capgo API key (CAPGO_TOKEN) added as a CI/CD variable in your GitLab project. Go to your project in GitLab, navigate to Settings > CI/CD > Variables, and add a variable named CAPGO_TOKEN with your API key value.
+Ensure you have your CodePushGo API key (CAPGO_TOKEN) added as a CI/CD variable in your GitLab project. Go to your project in GitLab, navigate to Settings > CI/CD > Variables, and add a variable named CAPGO_TOKEN with your API key value.
 
 Customize the build script to match your specific project's build process, such as changing the npm run build command.
 

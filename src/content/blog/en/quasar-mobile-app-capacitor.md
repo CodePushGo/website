@@ -8,7 +8,7 @@ author_url: 'https://x.com/anikDhabal'
 created_at: 2023-09-14T00:00:00.000Z
 updated_at: 2023-09-14T00:00:00.000Z
 head_image: /quasar_capgo.webp
-head_image_alt: Quasar and Capgo illustration
+head_image_alt: Quasar and CodePushGo illustration
 keywords: Quasar, Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
@@ -19,7 +19,7 @@ In this tutorial, we will begin with creating a new web app using [Quasar](https
 
 With Capacitor, you can change your Quasar web app into a mobile app without needing to do lots of hard things or learn a completely new way of making apps like you would with something called React Native. 
 
-This tutorial will guide you through the process, starting with a new Quasar app and then incorporating Capacitor to move into the realm of native mobile apps. Additionally, you will use [Capgo](https://capgo.app/) to send live update to your app in seconds.
+This tutorial will guide you through the process, starting with a new Quasar app and then incorporating Capacitor to move into the realm of native mobile apps. Additionally, you will use [CodePushGo](https://capgo.app/) to send live update to your app in seconds.
 
 ## About Capacitor
 
@@ -139,17 +139,17 @@ Congratulations! You have successfully deployed your Quasar web app to a mobile 
 
 But hold on, there's also a faster way to do this during development...
 
-## Capgo Live Update
+## CodePushGo Live Update
 
-Capgo Live Update is a service that allows developers to deploy updates to their mobile apps without going through the traditional App Store submission process. This can be a convenient way to quickly fix bugs or make small updates to an app without waiting for the App Store review process.
+CodePushGo Live Update is a service that allows developers to deploy updates to their mobile apps without going through the traditional App Store submission process. This can be a convenient way to quickly fix bugs or make small updates to an app without waiting for the App Store review process.
 
-Integrating Capgo into your Quasar app is a straightforward process that empowers you to harness the power of real-time live updates. This step-by-step guide will walk you through the integration and implementation of Capgo Live Update, enabling you to deliver seamless updates.
+Integrating CodePushGo into your Quasar app is a straightforward process that empowers you to harness the power of real-time live updates. This step-by-step guide will walk you through the integration and implementation of CodePushGo Live Update, enabling you to deliver seamless updates.
 
-**Sign Up and Access the Capgo Dashboard**:
+**Sign Up and Access the CodePushGo Dashboard**:
 
-It’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a Capgo account](https://web.capgo.app/register/).
+It’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a CodePushGo account](https://web.capgo.app/register/).
 
-**Install the Capgo SDK**:
+**Install the CodePushGo SDK**:
 
 From a command line, directly into the root of your Capacitor app, run:
 
@@ -165,7 +165,7 @@ CapacitorUpdater.notifyAppReady()
 
 This will tell the native plugin the installation as succeeded. 
 
-**Login to Capgo CLOUD**:
+**Login to CodePushGo CLOUD**:
 
 First, use the `all` [apikey](https://web.capgo.app/dashboard/apikeys/) present in your account to log in with the CLI:
 
@@ -173,7 +173,7 @@ First, use the `all` [apikey](https://web.capgo.app/dashboard/apikeys/) present 
 
 **Add your first App**:
 
-Let’s get started by first creating an app in Capgo Cloud with the CLI.
+Let’s get started by first creating an app in CodePushGo Cloud with the CLI.
 
 ```shell
     npx @capgo/cli@latest app add
@@ -182,7 +182,7 @@ This command will use all variables defined in the Capacitor config file to crea
 
 **Upload your first version**:
 
-Run the command to build your code and send it to Capgo with: 
+Run the command to build your code and send it to CodePushGo with: 
 
 ```shell
 npx @capgo/cli@latest bundle upload`
@@ -190,13 +190,13 @@ npx @capgo/cli@latest bundle upload`
 
 By default, the version name will be the one in your package.json file.
 
-Check in [Capgo](https://web.capgo.app/login/) if the build is present.
+Check in [CodePushGo](https://web.capgo.app/login/) if the build is present.
 
 You can even test it with my [mobile sandbox app](https://capgo.app/app_mobile/).
 
 **Make channel default**:
 
-After you have sent your app to Capgo, you need to make your channel default to let apps receive updates from Capgo.
+After you have sent your app to CodePushGo, you need to make your channel default to let apps receive updates from CodePushGo.
 
 `npx @capgo/cli@latest channel set production -s default`
 
@@ -361,6 +361,6 @@ If the live reload is out of sync after installing all the necessary components,
 
 Capacitor is an excellent option for building native applications based on an existing web project, offering a simple way to share code and maintain a consistent UI. 
 
-And with the addition of [Capgo](https://capgo.app/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
+And with the addition of [CodePushGo](https://capgo.app/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
 
-If you would like to learn how to add Capgo to your Next.js app, take a look at the next article :
+If you would like to learn how to add CodePushGo to your Next.js app, take a look at the next article :

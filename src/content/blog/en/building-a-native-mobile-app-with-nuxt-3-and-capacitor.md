@@ -8,7 +8,7 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2023-06-03T00:00:00.000Z
 updated_at: 2023-06-03T00:00:00.000Z
 head_image: /nuxt_capgo.webp
-head_image_alt: Nuxt 3 and Capgo illustration
+head_image_alt: Nuxt 3 and CodePushGo illustration
 keywords: Nuxt 3, Capacitor, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
@@ -339,9 +339,9 @@ You should see the following page as a result:
 
 Capacitor is an excellent option for building native applications based on an existing web project, offering a simple way to share code and maintain a consistent UI. 
 
-And with the addition of [Capgo](https://capgo.app/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
+And with the addition of [CodePushGo](https://capgo.app/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
 
-If you would like to learn how to add Capgo to your Next.js app, take a look at the next article :
+If you would like to learn how to add CodePushGo to your Next.js app, take a look at the next article :
 
 ## Credits
 

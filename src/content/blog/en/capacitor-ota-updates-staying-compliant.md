@@ -23,7 +23,7 @@ next_blog: ''
 -   **What are OTA updates?** They let you update app content (like bug fixes or UI tweaks) instantly via a secure CDN, without requiring users to download updates manually.
 -   **Why use them?** OTA updates reach 95% of active users within 24 hours, saving time and improving user experience.
 -   **Compliance matters:** Apple restricts OTA updates to non-executable content (e.g., web assets), while Google allows more flexibility but enforces strict security and user consent rules.
--   **Tools like [Capgo](https://capgo.app/) help:** Capgo provides encryption, rollback options, error tracking, and analytics to ensure fast, secure, and compliant OTA updates.
+-   **Tools like [CodePushGo](https://capgo.app/) help:** CodePushGo provides encryption, rollback options, error tracking, and analytics to ensure fast, secure, and compliant OTA updates.
 
 **Pro tip:** Use OTA updates for minor fixes or content changes, but always submit major changes or new features for app store review.
 
@@ -50,7 +50,7 @@ OTA updates offer multiple advantages to both developers and end-users. Here’s
 | **User Convenience** | No need for manual updates or app store visits. |
 | **Development Agility** | Enables faster bug fixes and feature releases. |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ### Common OTA Implementation Issues
 
@@ -60,7 +60,7 @@ Despite these benefits, implementing OTA updates can come with challenges. Data 
 -   **Version Management**: Using a [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) helps manage beta testing and phased rollouts effectively.
 -   **Update Monitoring**: Without proper tracking, failed updates can go unnoticed. Analytics and error tracking are essential, as global success rates of 82% emphasize the importance of monitoring [\[1\]](https://capgo.app/).
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." – Colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." – Colenso [\[1\]](https://capgo.app/)
 
 To ensure reliable OTA updates, developers should focus on proactive monitoring and maintain rollback options for quick issue resolution. With an average API response time of 434ms, optimizing the update delivery infrastructure is also crucial [\[1\]](https://capgo.app/).
 
@@ -115,30 +115,30 @@ These practices reduce risks and ensure your updates meet app store requirements
 
 ### Keeping Users in the Loop
 
--   **[Automatic Updates](https://capgo.app/docs/plugin/cloud-mode/auto-update/)**: Updates can be installed in the background, but users should still be informed. Tools like Capgo make it simple to automate installations while keeping users updated.
+-   **[Automatic Updates](https://capgo.app/docs/plugin/cloud-mode/auto-update/)**: Updates can be installed in the background, but users should still be informed. Tools like CodePushGo make it simple to automate installations while keeping users updated.
 -   **Monitoring and Feedback**: Use analytics, error tracking, and feedback channels to monitor the success of installations and address any problems.
 
 Clear communication fosters trust with users and reinforces compliance with app store guidelines.
 
-> "One-click rollback to any previous version if needed" – Capgo [\[1\]](https://capgo.app/)
+> "One-click rollback to any previous version if needed" – CodePushGo [\[1\]](https://capgo.app/)
 
-## Using [Capgo](https://capgo.app/) for OTA Updates
+## Using [CodePushGo](https://capgo.app/) for OTA Updates
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e61434a2c14cac42f85a37/cf21af63f433895b269de0da5dc7d74c.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e61434a2c14cac42f85a37/cf21af63f433895b269de0da5dc7d74c.jpg)
 
-Capgo provides a solution for managing over-the-air (OTA) updates in Capacitor apps, addressing compliance requirements with an integrated system. With more than 750 apps in production and 23.5 million updates delivered, Capgo ensures a smooth and compliant [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) [\[1\]](https://capgo.app/).
+CodePushGo provides a solution for managing over-the-air (OTA) updates in Capacitor apps, addressing compliance requirements with an integrated system. With more than 750 apps in production and 23.5 million updates delivered, CodePushGo ensures a smooth and compliant [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) [\[1\]](https://capgo.app/).
 
-### How Capgo Manages Updates
+### How CodePushGo Manages Updates
 
-Capgo streamlines the update process while ensuring updates are efficient and meet compliance standards. Key features include:
+CodePushGo streamlines the update process while ensuring updates are efficient and meet compliance standards. Key features include:
 
 -   **End-to-End Encryption**: Updates are encrypted and accessible only to authorized users.
 -   **Partial Updates**: Instead of downloading entire bundles, only changed components are updated. This allows for an average download time of just 114ms for a 5MB bundle.
 -   **High Performance**: Within 24 hours of deployment, update success rates reach 95%.
 
-### Compliance Tools Offered by Capgo
+### Compliance Tools Offered by CodePushGo
 
-Capgo includes tools designed to maintain compliance and ensure smooth updates:
+CodePushGo includes tools designed to maintain compliance and ensure smooth updates:
 
 | Feature | Compliance Benefit |
 | --- | --- |
@@ -149,15 +149,15 @@ Capgo includes tools designed to maintain compliance and ensure smooth updates:
 
 These tools help maintain safe content and version control, contributing to an 82% global update success rate while staying compliant with platform guidelines [\[1\]](https://capgo.app/).
 
-### Getting Started with Capgo
+### Getting Started with CodePushGo
 
-Getting started with Capgo is fast and simple. Use the following command:
+Getting started with CodePushGo is fast and simple. Use the following command:
 
 ```bash
 npx @capgo/cli init
 ```
 
-The setup process takes less than 15 minutes to deploy your first update. Capgo also supports CI/CD integration with platforms like [GitHub Actions](https://docs.github.com/actions) and [GitLab CI](https://docs.gitlab.com/ee/ci/). The one-time setup fee for Capgo is $2,600.
+The setup process takes less than 15 minutes to deploy your first update. CodePushGo also supports CI/CD integration with platforms like [GitHub Actions](https://docs.github.com/actions) and [GitLab CI](https://docs.gitlab.com/ee/ci/). The one-time setup fee for CodePushGo is $2,600.
 
 ## Long-term Compliance Management
 
@@ -165,21 +165,21 @@ Staying compliant with app store policies over the long term requires consistent
 
 ### Regular Policy Checks
 
-Frequent policy reviews help you stay ahead of compliance challenges. Tools like Capgo's analytics dashboard simplify this process by identifying potential problems early, giving you time to address them before they escalate.
+Frequent policy reviews help you stay ahead of compliance challenges. Tools like CodePushGo's analytics dashboard simplify this process by identifying potential problems early, giving you time to address them before they escalate.
 
 ### Policy Change Monitoring
 
-Keeping up with policy changes involves a mix of automated tools and manual oversight. Capgo supports this process by offering:
+Keeping up with policy changes involves a mix of automated tools and manual oversight. CodePushGo supports this process by offering:
 
 -   Real-time updates to spot compliance issues as they arise
 -   Success rate tracking across different app versions
 -   Controlled update distribution to specific user groups
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ### Fixing Policy Violations
 
-Quickly addressing policy violations is crucial to maintaining high update success rates. Capgo makes this easier by providing:
+Quickly addressing policy violations is crucial to maintaining high update success rates. CodePushGo makes this easier by providing:
 
 1\. **Immediate rollback options**  
 Quickly revert updates to avoid further issues.
@@ -190,16 +190,16 @@ Pinpoint the root cause of violations for precise fixes.
 3\. **Channel-based testing**  
 Test fixes on a select group of users before rolling out updates widely.
 
-Capgo also ensures compliance with robust security measures like end-to-end encryption and a partial update system, which minimize disruption for users while maintaining high standards.
+CodePushGo also ensures compliance with robust security measures like end-to-end encryption and a partial update system, which minimize disruption for users while maintaining high standards.
 
 ## Conclusion
 
-Managing OTA updates while staying compliant with app store rules requires careful planning and the right tools. Capgo, with over 23.5 million updates delivered and 750 apps in production [\[1\]](https://capgo.app/), offers a dependable solution for handling OTA updates within platform guidelines.
+Managing OTA updates while staying compliant with app store rules requires careful planning and the right tools. CodePushGo, with over 23.5 million updates delivered and 750 apps in production [\[1\]](https://capgo.app/), offers a dependable solution for handling OTA updates within platform guidelines.
 
 The secret to [effective OTA update management](https://capgo.app/blog/open-source-licecing/) lies in using robust compliance tools and monitoring systems. By employing end-to-end encryption and strictly following platform requirements, developers can ensure both security and smooth operations during updates.
 
 Even experts in the field emphasize the importance of fast and compliant updates. As NASA's [OSIRIS-REx](https://science.nasa.gov/mission/osiris-rex/) team noted:
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
 
 For developers aiming to balance compliance with timely updates, a solid update management system is crucial. Tools offering features like instant rollbacks, real-time analytics, and channel-based distribution help teams deliver updates efficiently while staying within compliance boundaries.

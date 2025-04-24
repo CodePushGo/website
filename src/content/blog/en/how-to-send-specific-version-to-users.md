@@ -20,9 +20,9 @@ next_blog: ''
 
 ## Preface
 
-When you start to enjoy the update system of Capgo, like me for my apps, you will start to get the feeling “What if I want more?”
+When you start to enjoy the update system of CodePushGo, like me for my apps, you will start to get the feeling “What if I want more?”
 
-I got the feeling too, but since I'm the maker of Capgo, I was able to take a look!
+I got the feeling too, but since I'm the maker of CodePushGo, I was able to take a look!
 
 > Since all is open-source, you have this power too :)
 
@@ -39,7 +39,7 @@ And for Google this is even worse, the big mystery of my life, releasing a produ
 
 ## Solution
 
-To fix this, I crated the Channel system in Capgo.
+To fix this, I crated the Channel system in CodePushGo.
 
 `npx @capgo/cli@latest bundle upload -c production` will update to all users (if production channel is set to default)
 
@@ -53,7 +53,7 @@ This can be useful when you don't want to create your own backend for channel se
 
 With that one, the only thing you need to do is allow one of your channels to be self to set.
 
-![Allow set self in Capgo](/self_set.webp)
+![Allow set self in CodePushGo](/self_set.webp)
 
 And then add this in the code of your Ionic app, for best experience, use this after the user clicks on a button like "register for beta"
 ```js
@@ -73,7 +73,7 @@ const deviceId = await CapacitorUpdater.getDeviceId()
 ```
 Hide a button somewhere in your app, or show the button to only connected users with a `admin` role, for example.
 
-Then Go to the Web app or native app Capgo, connect as app admin, select your app, click on the device list.
+Then Go to the Web app or native app CodePushGo, connect as app admin, select your app, click on the device list.
 
 Then put in the search bar the deviceID click on the one found and then click on the Channel link choose the `development`, ask your teammate to open the app again, wait 30 sec and open close.
 
@@ -95,7 +95,7 @@ But this time you have to send it automatically to your backend, I let you decid
 
 I will just suggest you to store it in a database, that will facilitate your life later.
 
-Then in your backend you have to send it to Capgo backend too. Below two code examples:
+Then in your backend you have to send it to CodePushGo backend too. Below two code examples:
 <details>
   <summary>NodeJS</summary>
 

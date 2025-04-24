@@ -27,19 +27,19 @@ Rollback mechanisms ensure stability when updating [Capacitor](https://capacitor
     -   **Monitoring**: Detects issues in real-time.
     -   **Rollback Execution**: Restores previous versions seamlessly.
 -   **Tools**:
-    -   **[Capgo](https://capgo.app/)**: Managed service with features like one-click rollback and real-time analytics.
+    -   **[CodePushGo](https://capgo.app/)**: Managed service with features like one-click rollback and real-time analytics.
     -   **Capacitor [Live Update Plugin](https://capgo.app/docs/plugin/self-hosted/auto-update/)**: Native solution requiring manual setup but offering direct API access.
 
 ### Quick Comparison:
 
-| Feature | Capgo | Live Update Plugin |
+| Feature | CodePushGo | Live Update Plugin |
 | --- | --- | --- |
 | Setup Time | Minutes | Hours/Days |
 | Encryption | End-to-end | Basic signing |
 | Monitoring | Built-in analytics | Manual integration needed |
 | Update Speed | 114ms | Varies |
 
-Rollback systems are critical for smooth updates and user satisfaction. Choose a solution that fits your needs - whether it's Capgo's simplicity or the manual flexibility of the Live Update Plugin.
+Rollback systems are critical for smooth updates and user satisfaction. Choose a solution that fits your needs - whether it's CodePushGo's simplicity or the manual flexibility of the Live Update Plugin.
 
 ## Rollback Mechanism Basics
 
@@ -51,11 +51,11 @@ In [Capacitor plugins](https://capgo.app/plugins/), rollback mechanisms work as 
 -   **Health Check**: After the update, the system checks to ensure everything is working correctly.
 -   **Automatic Reversion**: If the update fails the health check, the system reverts back to the backup version.
 
-> "One-click rollback to any previous version if needed" – Capgo [\[1\]](https://capgo.app/)
+> "One-click rollback to any previous version if needed" – CodePushGo [\[1\]](https://capgo.app/)
 
 ### When to Use Rollbacks
 
-Rollbacks are essential when an update causes problems like critical bugs, slower performance, version conflicts, integration issues, or major user complaints. Capgo reports that 82% of updates succeed globally [\[1\]](https://capgo.app/), but for the remaining cases, having a reliable rollback system is crucial to fix issues quickly.
+Rollbacks are essential when an update causes problems like critical bugs, slower performance, version conflicts, integration issues, or major user complaints. CodePushGo reports that 82% of updates succeed globally [\[1\]](https://capgo.app/), but for the remaining cases, having a reliable rollback system is crucial to fix issues quickly.
 
 ### [Capacitor](https://capacitorjs.com/) Rollback Architecture
 
@@ -69,7 +69,7 @@ The rollback system in Capacitor relies on three main components to handle versi
 | Monitoring Framework | Continuously checks update performance | Real-time issue detection |
 | Distribution Control | Handles phased rollouts of updates | Targeted, gradual update distribution |
 
-> "Proactively monitor and fix issues before they impact users" – Capgo [\[1\]](https://capgo.app/)
+> "Proactively monitor and fix issues before they impact users" – CodePushGo [\[1\]](https://capgo.app/)
 
 These components create a solid foundation for managing rollbacks, which will be further explained in the setup guide.
 
@@ -92,7 +92,7 @@ These methods are the foundation of a reliable rollback process, which you can i
 Once you grasp the basics of rollbacks, follow these steps to set up a functional system:
 
 1.  **Configure Version Control**  
-    Integrate version tracking into your deployment process and establish restore points for quick reversion. Data from Capgo shows this strategy can cut downtime by up to 85% during critical failures [\[1\]](https://capgo.app/).
+    Integrate version tracking into your deployment process and establish restore points for quick reversion. Data from CodePushGo shows this strategy can cut downtime by up to 85% during critical failures [\[1\]](https://capgo.app/).
     
 2.  **Set Up Monitoring**  
     Include error tracking, user feedback, performance metrics, and update status monitoring to ensure smooth operations.
@@ -103,7 +103,7 @@ Once you grasp the basics of rollbacks, follow these steps to set up a functiona
 
 ### Implementation Tips
 
-**Testing Protocol**: Use a phased rollout strategy to reduce risks. Rodrigo Mantica emphasized, "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+**Testing Protocol**: Use a phased rollout strategy to reduce risks. Rodrigo Mantica emphasized, "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 For faster recovery, connect your rollback system to your CI/CD pipeline. This can reduce recovery time from hours to just minutes [\[1\]](https://capgo.app/).
 
@@ -115,11 +115,11 @@ For faster recovery, connect your rollback system to your CI/CD pipeline. This c
 
 Managing rollbacks effectively requires tools that can handle versioning, monitoring, and quick reversion. Here's a look at some top options for managing rollbacks in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
 
-### [Capgo](https://capgo.app/)
+### [CodePushGo](https://capgo.app/)
 
-![Capgo](https://assets.seobotai.com/capgo.app/67f09788ebbb9dc80643dc99/a64cd6a83185b5ac05d3640337221542.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67f09788ebbb9dc80643dc99/a64cd6a83185b5ac05d3640337221542.jpg)
 
-Capgo emerged as a strong rollback management solution after [Microsoft Code Push](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/)'s shutdown in 2024. It simplifies plugin updates with a range of features:
+CodePushGo emerged as a strong rollback management solution after [Microsoft Code Push](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/)'s shutdown in 2024. It simplifies plugin updates with a range of features:
 
 | Feature | Advantage | Performance |
 | --- | --- | --- |
@@ -128,26 +128,26 @@ Capgo emerged as a strong rollback management solution after [Microsoft Code Pus
 | **[Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/)** | Distribute beta updates to specific groups | 23.5M updates delivered |
 | **Analytics Dashboard** | Track updates in real-time | 750 production apps served |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 For those who prefer a more hands-on approach, the [Capacitor Live Update Plugin](https://capgo.app/confirm_email/) is another option worth considering.
 
 ### Capacitor Live Update Plugin
 
-Unlike Capgo's managed service, the Capacitor Live Update Plugin offers a native solution for rollback management. Its features include:
+Unlike CodePushGo's managed service, the Capacitor Live Update Plugin offers a native solution for rollback management. Its features include:
 
 -   Integration with version control systems
 -   Direct access to native APIs
 -   Platform-specific optimizations
 -   Basic rollback functionality
 
-While powerful, this plugin requires more manual configuration compared to managed services like Capgo.
+While powerful, this plugin requires more manual configuration compared to managed services like CodePushGo.
 
 ### Tool Comparison
 
-Here’s a quick comparison of Capgo and the Capacitor Live Update Plugin:
+Here’s a quick comparison of CodePushGo and the Capacitor Live Update Plugin:
 
-| Feature | Capgo | Live Update Plugin |
+| Feature | CodePushGo | Live Update Plugin |
 | --- | --- | --- |
 | **Setup Time** | Minutes | Hours/Days |
 | **Encryption** | End-to-end | Basic signing |
@@ -155,7 +155,7 @@ Here’s a quick comparison of Capgo and the Capacitor Live Update Plugin:
 | **Success Rate** | 82% worldwide | Depends on implementation |
 | **Monitoring** | Built-in analytics | Manual integration needed |
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 With [Appflow](https://ionic.io/appflow/)'s scheduled shutdown in 2026, developers are looking for reliable and cost-efficient rollback solutions to keep their projects running smoothly.
 
@@ -192,7 +192,7 @@ Meeting app store requirements is essential when implementing rollback mechanism
 | **Android** | Security verification | Apply end-to-end encryption |
 | **Both** | Protect user data | Implement secure state management |
 
-> "App Store compliant" - Capgo
+> "App Store compliant" - CodePushGo
 
 To stay compliant and safeguard user data, use end-to-end encryption and robust error tracking. These measures not only address common issues but also ensure quick resolutions when problems arise.
 

@@ -26,12 +26,12 @@ Here’s why compliance checks matter:
 
 ### Quick Overview:
 
--   Set up CI/CD pipelines with tools like [Capgo](https://capgo.app/) for smooth compliance.
+-   Set up CI/CD pipelines with tools like [CodePushGo](https://capgo.app/) for smooth compliance.
 -   Automate checks for iOS (privacy labels, HTTPS, binary validation) and Google Play (APK validation, permissions, API levels).
 -   Integrate security measures like encryption, dependency checks, and testing.
 -   Use performance and accessibility tests to enhance user experience.
 
-**Capgo simplifies this process**, offering tools for automated compliance, real-time error tracking, and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
+**CodePushGo simplifies this process**, offering tools for automated compliance, real-time error tracking, and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
 
 Stay compliant, secure, and efficient with proper CI/CD practices for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
 
@@ -58,7 +58,7 @@ After choosing a platform, configure your pipeline to enable consistent builds a
 
 ### Basic Pipeline Setup
 
-Set up build dependencies and environment variables to maintain compliance. Capgo integrates with most major CI/CD platforms and doesn’t require hosting [\[1\]](https://capgo.app/).
+Set up build dependencies and environment variables to maintain compliance. CodePushGo integrates with most major CI/CD platforms and doesn’t require hosting [\[1\]](https://capgo.app/).
 
 Core setup steps include:
 
@@ -75,7 +75,7 @@ Steps to integrate compliance tools:
 -   **Automate code scans to identify and block non-compliant updates**
 -   **Use monitoring tools to track compliance and notify the team of issues**
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 ## App Store Compliance Automation
 
@@ -103,19 +103,19 @@ When targeting Google Play, focus on these key verifications:
 
 Using built-in tools for compliance automation can make these processes more efficient.
 
-### [Capgo](https://capgo.app/)'s Compliance Tools
+### [CodePushGo](https://capgo.app/)'s Compliance Tools
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-24.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-24.jpg?auto=compress)
 
-Capgo enhances compliance workflows with tools that integrate directly into your CI/CD pipeline. Here's how Capgo can help:
+CodePushGo enhances compliance workflows with tools that integrate directly into your CI/CD pipeline. Here's how CodePushGo can help:
 
 -   **End-to-end encryption** ensures secure update delivery.
 -   **Automated version control** allows for instant rollbacks when needed.
 -   **Real-time analytics** provide insights into update performance and success.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-For teams handling multiple app versions, Capgo's [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) supports targeted beta testing and staged rollouts [\[1\]](https://capgo.app/).
+For teams handling multiple app versions, CodePushGo's [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) supports targeted beta testing and staged rollouts [\[1\]](https://capgo.app/).
 
 ## Security and Privacy Checks
 
@@ -142,9 +142,9 @@ Securing data goes beyond just scanning for vulnerabilities. It requires strict 
 | Network Security | Enforce HTTPS connections | SSL/TLS validation |
 | Access Control | Role-based permissions | Authentication testing |
 
-### Capgo Security Features
+### CodePushGo Security Features
 
-Capgo takes security to the next level by building on these scanning and data protection protocols. It provides advanced tools to safeguard your apps.
+CodePushGo takes security to the next level by building on these scanning and data protection protocols. It provides advanced tools to safeguard your apps.
 
 Some standout features include:
 
@@ -152,11 +152,11 @@ Some standout features include:
 -   **Automated rollback** to quickly address security issues when they arise.
 -   **Real-time error tracking** to detect and resolve potential problems immediately.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
-Capgo boasts a 95% update success rate within 24 hours [\[1\]](https://capgo.app/), combining strong security with fast deployment.
+CodePushGo boasts a 95% update success rate within 24 hours [\[1\]](https://capgo.app/), combining strong security with fast deployment.
 
-For teams embedding security checks, Capgo integrates smoothly with popular CI/CD platforms like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/). This allows for automated security checks at every step of deployment.
+For teams embedding security checks, CodePushGo integrates smoothly with popular CI/CD platforms like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/). This allows for automated security checks at every step of deployment.
 
 ## Automated Testing Setup
 
@@ -198,7 +198,7 @@ After performance testing, focus on accessibility to make sure your app is usabl
 | Touch Target Size | Element dimension checks | OS-specific requirements |
 | Keyboard Navigation | Input method testing | Cross-platform standards |
 
-With Capgo's integration tools, you can automate these accessibility tests directly within your CI/CD workflow. The platform supports Capacitor 6 and 7, ensuring smooth compatibility across supported CI/CD systems while helping you meet compliance standards [\[1\]](https://capgo.app/).
+With CodePushGo's integration tools, you can automate these accessibility tests directly within your CI/CD workflow. The platform supports Capacitor 6 and 7, ensuring smooth compatibility across supported CI/CD systems while helping you meet compliance standards [\[1\]](https://capgo.app/).
 
 ## Next Steps and Tips
 
@@ -214,17 +214,17 @@ Automating policy checks within your CI/CD pipeline helps you catch issues early
 | Platform Updates | Quarterly | OS compatibility, API changes |
 | Security Patches | Weekly | Fixing vulnerabilities, encryption updates |
 
-### Making the Most of Capgo
+### Making the Most of CodePushGo
 
-Capgo integrates seamlessly with CI/CD platforms, simplifying compliance management and enabling fast updates. Its channel system allows staged rollouts, helping you spot and fix compliance issues before they affect all users.
+CodePushGo integrates seamlessly with CI/CD platforms, simplifying compliance management and enabling fast updates. Its channel system allows staged rollouts, helping you spot and fix compliance issues before they affect all users.
 
 Here’s how to get started:
 
--   **Automate compliance checks** with Capgo's CLI tool to ensure nothing slips through the cracks.
+-   **Automate compliance checks** with CodePushGo's CLI tool to ensure nothing slips through the cracks.
 -   **Track errors in real-time** to monitor how updates perform.
 -   **[Use the channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/)** to beta test compliance changes before a full rollout.
 
-With Capgo's analytics, you can quickly validate compliance and streamline staged rollouts. These steps ensure smoother updates and long-term compliance.
+With CodePushGo's analytics, you can quickly validate compliance and streamline staged rollouts. These steps ensure smoother updates and long-term compliance.
 
 ### Key Takeaways
 

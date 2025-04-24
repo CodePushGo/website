@@ -19,7 +19,7 @@ next_blog: ''
 Want to ensure your app updates are fast, reliable, and impactful? Here's what you need to know:
 
 -   **Why Track Updates?**  
-    Track update performance to deliver updates faster, fix issues quickly, and improve user experience. Tools like [Capgo](https://capgo.app/) can boost release efficiency by 81%.
+    Track update performance to deliver updates faster, fix issues quickly, and improve user experience. Tools like [CodePushGo](https://capgo.app/) can boost release efficiency by 81%.
     
 -   **Key Metrics to Monitor:**
     
@@ -28,20 +28,20 @@ Want to ensure your app updates are fast, reliable, and impactful? Here's what y
     -   **User Impact:** Post-update crashes and feature usage.
 -   **Top Tools for Tracking:**
     
-    -   **Capgo:** Secure [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) with CI/CD support.
+    -   **CodePushGo:** Secure [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) with CI/CD support.
     -   **[Firebase Performance Monitoring](https://firebase.google.com/docs/perf-mon):** Free real-time performance insights.
     -   **[New Relic](https://newrelic.com/):** Tracks errors, network requests, and more.
 -   **Quick Setup Steps:**
     
-    1.  Install tools like Capgo with `npx @capgo/cli init`.
+    1.  Install tools like CodePushGo with `npx @capgo/cli init`.
     2.  Track metrics like load time, memory usage, and crash reports.
     3.  Use A/B testing to refine updates before full rollout.
 
 Monitoring updates helps you deliver seamless updates, reduce errors, and improve app performance. Let’s dive into the details.
 
-## [Capgo](https://capgo.app/), CapacitorJs plugin for Live update
+## [CodePushGo](https://capgo.app/), CapacitorJs plugin for Live update
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-02.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-02.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/NzXXKoyhTIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -53,7 +53,7 @@ To track updates effectively, you'll need to configure the right tools and ident
 
 Start by choosing a tracking tool that fits your needs. For [Capacitor](https://capacitorjs.com/) apps, here are two popular options:
 
--   **Capgo Plugin**: Install the Capgo plugin using the command line:
+-   **CodePushGo Plugin**: Install the CodePushGo plugin using the command line:
     
     ```bash
     npx @capgo/cli init
@@ -81,9 +81,9 @@ These metrics will give you a clear picture of how well your updates are perform
 Fine-tune your tracking settings to collect the most relevant data. Depending on the tool you choose, here’s what you can do:
 
 -   **New Relic**: Offers features like analytics, custom logging, crash reporting, network monitoring, and HTTP response body capture [\[2\]](https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile-ionic-capacitor/get-started/introduction-new-relic-ionic-capacitor/).
--   **Capgo**: Allows you to enable encryption for [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) and assign updates to specific users for better targeting [\[1\]](https://capgo.app/).
+-   **CodePushGo**: Allows you to enable encryption for [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) and assign updates to specific users for better targeting [\[1\]](https://capgo.app/).
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 ## Reading Update Performance Data
 
@@ -115,7 +115,7 @@ The next step is to test different update versions systematically.
 
 ### Testing Update Versions
 
-Capgo's platform, with over 947.6 million updates delivered globally [\[1\]](https://capgo.app/), offers insights into effective testing strategies. Here’s what to focus on:
+CodePushGo's platform, with over 947.6 million updates delivered globally [\[1\]](https://capgo.app/), offers insights into effective testing strategies. Here’s what to focus on:
 
 -   **Real-time Performance Monitoring**: Keep an eye on response times and error rates immediately after deploying updates.
 -   **Resource Utilization**: Ensure the update doesn't overburden system resources or reduce app performance.
@@ -168,7 +168,7 @@ Keeping update sizes small is critical for faster delivery. Here are some effect
 
 For instance, removing unused SVGs reduced one app's APK size from 4.2 MB to 3.4 MB [\[6\]](https://stackoverflow.com/questions/50988174/how-do-i-decrease-the-size-of-the-ionic-android-apk-file).
 
-Capgo's platform offers automated tools to optimize update sizes. Their differential update system transfers only the files that have changed, speeding up delivery and improving overall performance while ensuring compliance with app store requirements.
+CodePushGo's platform offers automated tools to optimize update sizes. Their differential update system transfers only the files that have changed, speeding up delivery and improving overall performance while ensuring compliance with app store requirements.
 
 ## Update Tracking Guidelines
 
@@ -217,7 +217,7 @@ Turn your metrics into meaningful actions to enhance your app's performance.
 -   Shift heavy processing tasks to the background to improve responsiveness.
 -   Add offline functionality so users can access the app even during network outages.
 
-Platforms like Capgo can provide in-depth analytics and allow for quick rollbacks when needed, ensuring a smoother user experience.
+Platforms like CodePushGo can provide in-depth analytics and allow for quick rollbacks when needed, ensuring a smoother user experience.
 
 ## Summary
 
@@ -230,7 +230,7 @@ Modern update tracking tools have proven to be game-changers for development tea
 
 By combining effective metrics tracking with live updates, developers have reimagined how they maintain and improve their apps. Even NASA's [OSIRIS-REx](https://science.nasa.gov/mission/osiris-rex/) team has praised this approach:
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
 
 Ready to see these results for yourself? Follow the steps below to start tracking updates effectively.
 
@@ -246,9 +246,9 @@ Here’s how to begin tracking update metrics:
     | Update Success Rate | Over 99% | Ensures stability |
     | Download Speed | Less than 5 sec | Boosts satisfaction |
     
--   **Use live update tools** like Capgo for secure, instant deployments.
+-   **Use live update tools** like CodePushGo for secure, instant deployments.
     
 
 As one user shared:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)

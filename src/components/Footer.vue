@@ -28,9 +28,9 @@ const statusChecker = async () => {
   try {
     const response = await fetch('/status.json')
     if (response.ok) systemStatus.value = await response.json()
-    else console.error('Error fetching Capgo status:', response.statusText)
+    else console.error('Error fetching CodePushGo status:', response.statusText)
   } catch (error) {
-    console.error('Error fetching Capgo status:')
+    console.error('Error fetching CodePushGo status:')
     console.log(error)
   }
 }

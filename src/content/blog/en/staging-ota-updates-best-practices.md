@@ -43,7 +43,7 @@ A **staging environment** helps test OTA updates before they go live. It mimics 
 
 ### Tools for OTA Success
 
-Platforms like **[Capgo](https://capgo.app/)** simplify staging with features like encrypted updates, error tracking, and rollback options. With **750 apps in production** and **23.5M updates delivered**, it ensures updates are fast, secure, and reliable.
+Platforms like **[CodePushGo](https://capgo.app/)** simplify staging with features like encrypted updates, error tracking, and rollback options. With **750 apps in production** and **23.5M updates delivered**, it ensures updates are fast, secure, and reliable.
 
 **Key takeaway**: A robust staging environment ensures smooth OTA updates, reducing risks and improving user experience.
 
@@ -67,7 +67,7 @@ To properly replicate your production environment, you'll need the following com
 | **Version Control** | [Manage updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) | Use separate branches for staging. |
 | **CI/CD Pipeline** | Automate deployments | Replicate production deployment workflows. |
 
-Your staging environment should closely resemble production but remain isolated. Platforms like Capgo make this easier by offering dedicated testing channels, allowing for precise and reliable testing conditions.
+Your staging environment should closely resemble production but remain isolated. Platforms like CodePushGo make this easier by offering dedicated testing channels, allowing for precise and reliable testing conditions.
 
 ### How to Set Up a Staging Environment
 
@@ -121,7 +121,7 @@ Testing under different network conditions ensures that OTA updates perform reli
     -   Track how often updates complete successfully.
     -   Log bandwidth usage patterns for analysis.
 
-For instance, Capgo optimizes updates by downloading only necessary changes, saving both bandwidth and time.
+For instance, CodePushGo optimizes updates by downloading only necessary changes, saving both bandwidth and time.
 
 ### Error Handling and Recovery
 
@@ -133,7 +133,7 @@ Testing often uncovers issues that require robust recovery strategies to maintai
 | **Version Conflict** | Rollback protocol | Allow one-click reversion while keeping user data intact. |
 | **Storage Issues** | Space management practices | Perform pre-update checks and regular cleanups to free up space. |
 
-Capgo provides tools for error tracking and analytics to streamline recovery efforts:
+CodePushGo provides tools for error tracking and analytics to streamline recovery efforts:
 
 -   **Monitoring Update Health**  
     Track update success rates and identify potential problems early using real-time insights.
@@ -155,25 +155,25 @@ To make updates smaller and less demanding on bandwidth, consider methods like *
 
 ### Phased Rollouts
 
-A gradual release of updates, known as phased rollouts, helps minimize risks. By targeting specific groups, you can monitor performance and address issues before a full-scale release. Tools like Capgo’s channel system make this easier by allowing developers to distribute different update versions for beta testing or staged rollouts [\[1\]](https://capgo.app/).
+A gradual release of updates, known as phased rollouts, helps minimize risks. By targeting specific groups, you can monitor performance and address issues before a full-scale release. Tools like CodePushGo’s channel system make this easier by allowing developers to distribute different update versions for beta testing or staged rollouts [\[1\]](https://capgo.app/).
 
 ### App Store Rules Compliance
 
-Sticking to app store guidelines is crucial to avoid delays or disruptions during the review process. Both Apple and Google enforce strict security protocols, and tools like Capgo simplify this by ensuring updates align with these standards.
+Sticking to app store guidelines is crucial to avoid delays or disruptions during the review process. Both Apple and Google enforce strict security protocols, and tools like CodePushGo simplify this by ensuring updates align with these standards.
 
-> "App Store compliant" - Capgo [\[1\]](https://capgo.app/)
+> "App Store compliant" - CodePushGo [\[1\]](https://capgo.app/)
 
-## Using [Capgo](https://capgo.app/) for OTA Updates
+## Using [CodePushGo](https://capgo.app/) for OTA Updates
 
-![Capgo](https://assets.seobotai.com/capgo.app/67fda45772a40527486bdcbd/5667dd288bf82910fbf4a9affbd7b492.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67fda45772a40527486bdcbd/5667dd288bf82910fbf4a9affbd7b492.jpg)
 
-### Capgo Core Functions
+### CodePushGo Core Functions
 
-Capgo simplifies the process of managing OTA updates with its secure, encrypted system and advanced channel functionality. Updates are delivered quickly and securely, thanks to its global CDN, which achieves a **114ms download time for 5MB bundles** and an **average API response time of 434ms worldwide** [\[1\]](https://capgo.app/). The platform also uses a partial update system, downloading only the changed components. This approach has led to an impressive **95% update rate among active users within 24 hours** [\[1\]](https://capgo.app/).
+CodePushGo simplifies the process of managing OTA updates with its secure, encrypted system and advanced channel functionality. Updates are delivered quickly and securely, thanks to its global CDN, which achieves a **114ms download time for 5MB bundles** and an **average API response time of 434ms worldwide** [\[1\]](https://capgo.app/). The platform also uses a partial update system, downloading only the changed components. This approach has led to an impressive **95% update rate among active users within 24 hours** [\[1\]](https://capgo.app/).
 
 ### Developer Advantages
 
-Capgo provides a range of tools to make testing and deploying updates more efficient, especially in staging environments. It integrates seamlessly with CI/CD tools like **[GitHub Actions](https://docs.github.com/actions)** and **[GitLab CI](https://docs.gitlab.com/ee/ci/)**, enabling instant deployments. Developers also benefit from its detailed error tracking and analytics, which offer insights into update performance. Key metrics include:
+CodePushGo provides a range of tools to make testing and deploying updates more efficient, especially in staging environments. It integrates seamlessly with CI/CD tools like **[GitHub Actions](https://docs.github.com/actions)** and **[GitLab CI](https://docs.gitlab.com/ee/ci/)**, enabling instant deployments. Developers also benefit from its detailed error tracking and analytics, which offer insights into update performance. Key metrics include:
 
 | Metric | Details |
 | --- | --- |
@@ -182,23 +182,23 @@ Capgo provides a range of tools to make testing and deploying updates more effic
 | Download Performance | Measures CDN response times and bandwidth usage |
 | Error Logging | Provides detailed diagnostics for errors |
 
-These features make Capgo a powerful tool for developers, enabling them to test and refine updates effectively.
+These features make CodePushGo a powerful tool for developers, enabling them to test and refine updates effectively.
 
-### Capgo Setup Steps
+### CodePushGo Setup Steps
 
-Getting started with Capgo for staging is simple. First, install the Capgo plugin using this command:
+Getting started with CodePushGo for staging is simple. First, install the CodePushGo plugin using this command:
 
 ```bash
 npx @capgo/cli init
 ```
 
-Capgo works with both **[Capacitor](https://capacitorjs.com/) 6 and 7**, ensuring it fits into various development workflows. For staging environments, follow these steps:
+CodePushGo works with both **[Capacitor](https://capacitorjs.com/) 6 and 7**, ensuring it fits into various development workflows. For staging environments, follow these steps:
 
 -   **Set up separate update channels** for staging and production to keep environments distinct.
 -   **Enable detailed error tracking** to catch issues early.
 -   Use the **one-click rollback feature** to quickly revert updates if needed.
 
-With **750 apps in production** and **23.5 million updates delivered** [\[1\]](https://capgo.app/), Capgo has proven its reliability for managing OTA updates efficiently and securely.
+With **750 apps in production** and **23.5 million updates delivered** [\[1\]](https://capgo.app/), CodePushGo has proven its reliability for managing OTA updates efficiently and securely.
 
 ## Conclusion: OTA Update Guidelines
 
@@ -216,7 +216,7 @@ Testing OTA updates requires a structured approach to ensure both reliability an
 
 Practical examples highlight the importance of these priorities:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
 
 ### Next Steps
 
@@ -226,6 +226,6 @@ To make your OTA updates secure and efficient, consider these steps:
 -   **Set up monitoring tools** to track critical metrics in real time.
 -   **Implement phased rollouts** by starting with a small user group before expanding to all users.
 
-A well-prepared staging environment, supported by platforms like Capgo, can help you achieve these goals. For instance, 95% of active users can update within 24 hours, with an average global API response time of 434ms [\[1\]](https://capgo.app/).
+A well-prepared staging environment, supported by platforms like CodePushGo, can help you achieve these goals. For instance, 95% of active users can update within 24 hours, with an average global API response time of 434ms [\[1\]](https://capgo.app/).
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)

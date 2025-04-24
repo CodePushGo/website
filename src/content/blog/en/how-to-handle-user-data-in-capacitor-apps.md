@@ -23,7 +23,7 @@ next_blog: ''
 -   **Data Retention**: Automate deletion based on defined time limits.
 -   **User Rights**: Enable users to access, delete, or export their data.
 -   **Permission Management**: Request permissions contextually and provide alternatives for denied requests.
--   **OTA Updates**: Ensure secure over-the-air updates with tools like [Capgo](https://capgo.app/).
+-   **OTA Updates**: Ensure secure over-the-air updates with tools like [CodePushGo](https://capgo.app/).
 
 ## How to use Ionic [Capacitor](https://capacitorjs.com/) Secure Storage
 
@@ -310,11 +310,11 @@ Signing update packages is a critical step in protecting against unauthorized co
 | **Version Safety** | Signed version numbers |
 | **Failure Recovery** | Instant rollback capability |
 
-### [Capgo](https://capgo.app/) Update System
+### [CodePushGo](https://capgo.app/) Update System
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-18.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-18.jpg?auto=compress)
 
-Capgo simplifies secure OTA updates for Capacitor apps by offering automated security features. Here's an example of how to use Capgo's update system in your app:
+CodePushGo simplifies secure OTA updates for Capacitor apps by offering automated security features. Here's an example of how to use CodePushGo's update system in your app:
 
 ```typescript
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
@@ -389,9 +389,9 @@ To put these strategies into action:
 -   Set up automated deletion processes based on section 4.
 -   Establish and enforce permission controls detailed in section 5.
 
-### Leveraging Capgo
+### Leveraging CodePushGo
 
-For teams managing OTA updates, Capgo offers built-in security tools that align with these efforts:
+For teams managing OTA updates, CodePushGo offers built-in security tools that align with these efforts:
 
 -   **End-to-end encryption** to secure update packages.
 -   **Real-time monitoring** for quickly addressing potential security threats.

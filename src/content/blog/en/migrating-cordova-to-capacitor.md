@@ -62,28 +62,28 @@ Follow these steps to migrate your web app from Cordova to Capacitor:
 
 Congratulations! You've successfully migrated your web app from Cordova to Capacitor. To learn more about using Cordova plugins in a Capacitor project or the Capacitor development workflow, visit the [official Capacitor documentation](https://capacitorjs.com/docs/).
 
-## Live Updates with Our Capgo Service
+## Live Updates with Our CodePushGo Service
 
-We're proud to offer Capgo, our solution that enables live updates for your Capacitor apps, allowing you to deliver Over-The-Air (OTA) updates at a fair price. This feature is particularly useful for making quick fixes, deploying new features, and ensuring your users always have the latest version of your app without waiting for app store approval.
+We're proud to offer CodePushGo, our solution that enables live updates for your Capacitor apps, allowing you to deliver Over-The-Air (OTA) updates at a fair price. This feature is particularly useful for making quick fixes, deploying new features, and ensuring your users always have the latest version of your app without waiting for app store approval.
 
-### How Our Capgo Service Works
+### How Our CodePushGo Service Works
 
-Capgo is a cloud-based service that allows you to deploy live updates to your Capacitor apps. It consists of a web dashboard and a native SDK that you can integrate into your app. The SDK checks for updates on startup or at specific intervals and downloads them in the background. When an update is available, the SDK will prompt the user to install it. If the user accepts, the update will be installed and applied immediately.
+CodePushGo is a cloud-based service that allows you to deploy live updates to your Capacitor apps. It consists of a web dashboard and a native SDK that you can integrate into your app. The SDK checks for updates on startup or at specific intervals and downloads them in the background. When an update is available, the SDK will prompt the user to install it. If the user accepts, the update will be installed and applied immediately.
 
-### Benefits of Capgo Live Updates
+### Benefits of CodePushGo Live Updates
 
 - **Faster updates:** Deploy updates instantly without waiting for app store approval.
 - **Reduced Apple Store dependence:** Bypass app store restrictions and limitations.
 - **Improved user experience:** Keep users engaged with the latest features and bug fixes without requiring them to manually update the app.
 
 
-### How to Implement Capgo Live Updates
+### How to Implement CodePushGo Live Updates
 
-To implement Capgo live updates in your Capacitor project, follow these steps:
-- Sign up for a [Capgo account](https://web.capgo.app/).
-- Install the Capgo SDK in your project.
+To implement CodePushGo live updates in your Capacitor project, follow these steps:
+- Sign up for a [CodePushGo account](https://web.capgo.app/).
+- Install the CodePushGo SDK in your project.
 - Configure your app to check for updates on startup or at specific intervals.
-- Deploy updates to your app using the Capgo dashboard.
+- Deploy updates to your app using the CodePushGo dashboard.
 
 ## Conclusion
 

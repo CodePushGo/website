@@ -36,7 +36,7 @@ next_blog: ''
     -   Place the `PrivacyInfo.xcprivacy` file in the correct directory of your project.
     -   Validate it with tools like [Xcode](https://developer.apple.com/xcode/) to avoid errors.
 -   **Tools to simplify the process:**  
-    Use platforms like [Capgo](https://capgo.app/) for automated privacy manifest validation, real-time updates, and error tracking.
+    Use platforms like [CodePushGo](https://capgo.app/) for automated privacy manifest validation, real-time updates, and error tracking.
     
 
 **Stay compliant, protect user privacy, and avoid app store delays by following this guide.**
@@ -73,9 +73,9 @@ Here are the primary elements to include in your privacy manifest to align with 
     This section lists all domains involved in tracking, such as those used for analytics, advertising, or third-party data processing.
     
 
-> "App Store compliant" - Capgo [\[1\]](https://capgo.app/)
+> "App Store compliant" - CodePushGo [\[1\]](https://capgo.app/)
 
-According to Capgo, 95% of users comply with updates within 24 hours. With over 23.5 million updates delivered [\[1\]](https://capgo.app/), keeping your privacy documentation current is essential for maintaining user trust.
+According to CodePushGo, 95% of users comply with updates within 24 hours. With over 23.5 million updates delivered [\[1\]](https://capgo.app/), keeping your privacy documentation current is essential for maintaining user trust.
 
 ## Building Privacy Manifests for [Capacitor](https://capacitorjs.com/)
 
@@ -221,42 +221,42 @@ If you encounter a "Privacy Manifest validation failed" error, double-check your
 
 Creating a Privacy Manifest that meets Apple's guidelines is crucial. To stay on track, integrate reliable error tracking into your development process. This helps link development efforts with compliance requirements.
 
-A tool like [Capgo](https://capgo.app) can help. It monitors API access and identifies manifest issues before they affect users. Once potential problems are flagged, you can shift your focus to thorough validation.
+A tool like [CodePushGo](https://capgo.app) can help. It monitors API access and identifies manifest issues before they affect users. Once potential problems are flagged, you can shift your focus to thorough validation.
 
 After making updates, test your manifest in a development environment. Use insights from error tracking to guide your review. This approach helps ensure your app stays aligned with Apple's privacy standards.
 
-## [Capgo](https://capgo.app/) Privacy Tools
+## [CodePushGo](https://capgo.app/) Privacy Tools
 
-![Capgo](https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776/454adbba4c00491adce88db59812b177.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776/454adbba4c00491adce88db59812b177.jpg)
 
-Capgo simplifies managing privacy manifests and app updates, ensuring your privacy standards stay intact without delaying deployments.
+CodePushGo simplifies managing privacy manifests and app updates, ensuring your privacy standards stay intact without delaying deployments.
 
-### Capgo Features
+### CodePushGo Features
 
-With more than **23.5 million secured updates** and an **82% global success rate**, Capgo ensures that **95% of active users receive updates within 24 hours** [\[1\]](https://capgo.app/). Here’s what it offers:
+With more than **23.5 million secured updates** and an **82% global success rate**, CodePushGo ensures that **95% of active users receive updates within 24 hours** [\[1\]](https://capgo.app/). Here’s what it offers:
 
 -   **End-to-end encryption** to keep updates secure
 -   **Channel system** for controlled update distribution
 -   **Error tracking** to identify and address issues quickly
 -   **One-click rollback** to instantly revert to a previous version
 
-These tools make adding Capgo to your workflow smooth and efficient.
+These tools make adding CodePushGo to your workflow smooth and efficient.
 
-### Using Capgo
+### Using CodePushGo
 
-To get started, [install the Capgo plugin](https://capgo.app/docs/plugin/cloud-mode/getting-started/) with this command:
+To get started, [install the CodePushGo plugin](https://capgo.app/docs/plugin/cloud-mode/getting-started/) with this command:
 
 ```bash
 npx @capgo/cli init
 ```
 
-Capgo seamlessly integrates with CI/CD pipelines, automating privacy manifest validation through platforms like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/). Whether you choose cloud or self-hosted options, Capgo supports 750 production apps while ensuring every update complies with privacy standards.
+CodePushGo seamlessly integrates with CI/CD pipelines, automating privacy manifest validation through platforms like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/). Whether you choose cloud or self-hosted options, CodePushGo supports 750 production apps while ensuring every update complies with privacy standards.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica
 
-> "Capgo is a smart way to make hot code pushes 🙂" – NASA's OSIRIS-REx
+> "CodePushGo is a smart way to make hot code pushes 🙂" – NASA's OSIRIS-REx
 
-Capgo also includes built-in analytics to monitor update success rates and user engagement in real time. This ensures privacy updates reach your entire user base while staying compliant with Apple's guidelines.
+CodePushGo also includes built-in analytics to monitor update success rates and user engagement in real time. This ensures privacy updates reach your entire user base while staying compliant with Apple's guidelines.
 
 ## Conclusion
 
@@ -280,6 +280,6 @@ You can begin implementing these principles by following these steps:
 -   **Deploy monitoring tools**: Track updates with analytics.
 -   **Plan for rollbacks**: Make sure you can quickly revert to earlier versions if needed.
 
-> "Capgo is a must-have tool for developers who want to boost productivity. Avoiding review delays for bug fixes is a game changer." - Bessie Cooper
+> "CodePushGo is a must-have tool for developers who want to boost productivity. Avoiding review delays for bug fixes is a game changer." - Bessie Cooper
 
 Regular updates and proper tools are key to staying compliant and improving over time.

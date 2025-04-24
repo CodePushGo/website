@@ -68,13 +68,13 @@ Understanding potential vulnerabilities helps in crafting effective defenses. Ke
     Choose between cloud-based or self-hosted infrastructure based on your organization's specific security needs [\[1\]](https://capgo.app/).
     
 
-> "The only solution with true end-to-end encryption, others just sign updates." - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates." - CodePushGo [\[1\]](https://capgo.app/)
 
 To strengthen security, adopt monitoring systems that track update performance and flag potential problems early. Combining encryption, controlled distribution, and proactive monitoring creates a solid security foundation for OTA updates. These measures ensure updates are secure across code, data, and access points.
 
 ## Security Implementation
 
-Implementing OTA security requires strong technical measures based on the defined requirements and risk assessments. According to Capgo, **95% of active users update within 24 hours** [\[1\]](https://capgo.app/).
+Implementing OTA security requires strong technical measures based on the defined requirements and risk assessments. According to CodePushGo, **95% of active users update within 24 hours** [\[1\]](https://capgo.app/).
 
 ### Code Security
 
@@ -111,7 +111,7 @@ Thorough testing is necessary to maintain security. Key steps include:
 
 Use analytics and error tracking to spot and resolve issues proactively, minimizing downtime and risks.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ## Emergency Response
 
@@ -130,7 +130,7 @@ Once a threat is identified, the next step is to act fast - starting with a roll
 
 ### Update Reversal
 
-Rolling back an update quickly can limit the damage caused by a security issue. Platforms like Capgo simplify this process with a one-click rollback feature, letting teams revert to previous versions without delay [\[1\]](https://capgo.app/).
+Rolling back an update quickly can limit the damage caused by a security issue. Platforms like CodePushGo simplify this process with a one-click rollback feature, letting teams revert to previous versions without delay [\[1\]](https://capgo.app/).
 
 **What to keep in mind for rollback:**
 
@@ -150,7 +150,7 @@ After detecting a security breach, these steps can help manage the situation eff
     Roll back to a secure version to resolve the issue.
     
 
-> "One-click rollback to any previous version if needed" - Capgo [\[1\]](https://capgo.app/)
+> "One-click rollback to any previous version if needed" - CodePushGo [\[1\]](https://capgo.app/)
 
 Modern OTA platforms equip teams with tools like error tracking, real-time analytics, and channel-based updates. These features make it easier to respond quickly, reducing the impact on users.
 
@@ -169,7 +169,7 @@ When evaluating an OTA update platform, prioritize security. Top-tier platforms 
 | **Rollback Capability** | Reverts problematic updates | Keeps an audit trail for efficient rollbacks |
 | **Error Monitoring** | Identifies rollout issues early | Provides real-time tracking |
 
-For example, Capgo offers strong performance with a focus on true end-to-end encryption. Beyond the platform itself, securing the update delivery environment is just as critical.
+For example, CodePushGo offers strong performance with a focus on true end-to-end encryption. Beyond the platform itself, securing the update delivery environment is just as critical.
 
 ### Browser Security
 
@@ -187,9 +187,9 @@ Protecting OTA hosting requires strong server-side measures:
 -   **Access Controls**: Use [cloud or self-hosted deployments](https://capgo.app/blog/self-hosted-capgo/) with detailed permissions
 -   **Continuous Monitoring**: Regularly track and verify the integrity of updates
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
-Platforms like Capgo emphasize high security standards, making them especially useful for businesses with strict compliance or data sovereignty needs.
+Platforms like CodePushGo emphasize high security standards, making them especially useful for businesses with strict compliance or data sovereignty needs.
 
 ## Conclusion
 

@@ -30,7 +30,7 @@ next_blog: ''
 -   **Build Hooks**: Run code during specific stages of the build process.
 -   **Environment Variables**: Simplify environment-specific builds with `.env` files.
 
-[Capgo](https://capgo.app/), a deployment tool, enhances this process with [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/), version tracking, and global performance optimization. Keep reading to learn how to set up and customize your build scripts for maximum efficiency.
+[CodePushGo](https://capgo.app/), a deployment tool, enhances this process with [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/), version tracking, and global performance optimization. Keep reading to learn how to set up and customize your build scripts for maximum efficiency.
 
 ## Introducing [Capacitor](https://capacitorjs.com/) Configure
 
@@ -276,7 +276,7 @@ Additional tips for optimizing your builds include:
 -   Creating channel systems for beta testing versions
 -   Enabling end-to-end encryption for secure distribution
 
-When paired with tools like Capgo for analytics and secure updates, these techniques give you more control over your deployment process [\[1\]](https://capgo.app/).
+When paired with tools like CodePushGo for analytics and secure updates, these techniques give you more control over your deployment process [\[1\]](https://capgo.app/).
 
 ## Build Script Problems & Fixes
 
@@ -366,15 +366,15 @@ Additional tips for testing:
 -   Confirm platform-specific requirements are met.
 -   Keep an eye on build performance for possible improvements.
 
-## [Capgo](https://capgo.app/) Build Features
+## [CodePushGo](https://capgo.app/) Build Features
 
-![Capgo](https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873/454adbba4c00491adce88db59812b177.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873/454adbba4c00491adce88db59812b177.jpg)
 
-Capgo takes build scripts to the next level with automated deployment, enhancing efficiency and simplifying the process.
+CodePushGo takes build scripts to the next level with automated deployment, enhancing efficiency and simplifying the process.
 
 ### Quick App Updates
 
-Capgo's update performance is impressive:
+CodePushGo's update performance is impressive:
 
 -   **95% of active users** receive updates within 24 hours.
 -   **82% success rate** for update delivery worldwide.
@@ -384,7 +384,7 @@ The platform uses partial updates, meaning only the changes are downloaded. This
 
 ### Build Automation
 
-Capgo seamlessly works with major CI/CD platforms, offering a variety of integrations:
+CodePushGo seamlessly works with major CI/CD platforms, offering a variety of integrations:
 
 | CI/CD Platform | Integration Features | Benefits |
 | --- | --- | --- |
@@ -396,7 +396,7 @@ Setting up an automated build typically costs around **$300 per month**, which i
 
 ### Security Standards
 
-Capgo prioritizes security with a robust framework that includes:
+CodePushGo prioritizes security with a robust framework that includes:
 
 -   End-to-end encryption for update packages.
 -   Secure key management.
@@ -408,18 +408,18 @@ Capgo prioritizes security with a robust framework that includes:
 -   Deployment version tracking.
 -   Update channel management for staged releases.
 
-This security framework has been rigorously tested across hundreds of enterprise applications. For teams needing extra security, Capgo also offers self-hosted solutions with customizable configurations.
+This security framework has been rigorously tested across hundreds of enterprise applications. For teams needing extra security, CodePushGo also offers self-hosted solutions with customizable configurations.
 
-Capgo's channel system makes update distribution flexible. Developers can target specific user groups with different versions, perfect for beta testing or gradual rollouts.
+CodePushGo's channel system makes update distribution flexible. Developers can target specific user groups with different versions, perfect for beta testing or gradual rollouts.
 
 ## Summary
 
 ### Build Steps Overview
 
-Custom build scripts allow for automated and consistent deployments by leveraging build hooks, environment variables, and platform-specific commands. These processes create a solid foundation for deployment improvements made possible with Capgo.
+Custom build scripts allow for automated and consistent deployments by leveraging build hooks, environment variables, and platform-specific commands. These processes create a solid foundation for deployment improvements made possible with CodePushGo.
 
-### Capgo Benefits
+### CodePushGo Benefits
 
-Capgo simplifies deployment, having successfully delivered over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/). Its partial update system reduces both bandwidth usage and deployment time.
+CodePushGo simplifies deployment, having successfully delivered over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/). Its partial update system reduces both bandwidth usage and deployment time.
 
 The platform provides fast updates, global performance optimization, end-to-end encryption for security, and a flexible channel-based distribution system. This setup supports targeted updates, beta testing, and compliance with app store guidelines while maintaining a strong security framework.

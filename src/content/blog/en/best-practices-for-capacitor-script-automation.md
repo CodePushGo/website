@@ -30,7 +30,7 @@ next_blog: ''
 
 ### Tools to Consider:
 
--   **[Capgo](https://capgo.app/)**: Delivers instant updates, tracks performance, and ensures secure deployments.
+-   **[CodePushGo](https://capgo.app/)**: Delivers instant updates, tracks performance, and ensures secure deployments.
 -   **Global Success**: Achieves an 82% update success rate with 114ms download speed for 5MB bundles.
 
 Automation ensures faster, safer, and more reliable app updates. Dive into the details to optimize your workflow!
@@ -64,7 +64,7 @@ Version control is essential for tracking changes and fostering collaboration. I
 2.  **Feature branches**: Isolate changes to avoid conflicts.
 3.  **Code reviews**: Use peer reviews to maintain high standards.
 
-Many teams have seen deployment efficiencies improve by integrating Capgo's CI/CD tools with platforms like GitHub Actions and GitLab CI [\[1\]](https://capgo.app/).
+Many teams have seen deployment efficiencies improve by integrating CodePushGo's CI/CD tools with platforms like GitHub Actions and GitLab CI [\[1\]](https://capgo.app/).
 
 ### Script Monitoring
 
@@ -83,7 +83,7 @@ To enhance monitoring:
 -   Define clear incident response procedures.
 -   Regularly track deployment metrics.
 
-Capgo’s error tracking and analytics tools have helped teams quickly identify and resolve issues. This, combined with better organizational management, allows development teams to respond more effectively [\[1\]](https://capgo.app/).
+CodePushGo’s error tracking and analytics tools have helped teams quickly identify and resolve issues. This, combined with better organizational management, allows development teams to respond more effectively [\[1\]](https://capgo.app/).
 
 ## Script Speed and Efficiency
 
@@ -127,7 +127,7 @@ Good memory management keeps your app running smoothly by preventing leaks, opti
     | WeakMaps | Object references | Low |
     
 3.  **Monitoring and Profiling**  
-    Use tools like Capgo's analytics to pinpoint memory issues and optimize your app's performance. These tools can help you identify areas where memory leaks or inefficiencies might occur.
+    Use tools like CodePushGo's analytics to pinpoint memory issues and optimize your app's performance. These tools can help you identify areas where memory leaks or inefficiencies might occur.
     
 
 ## CI/CD Pipeline Setup
@@ -148,7 +148,7 @@ Keep environment-specific variables under version control to ensure consistency 
 
 ### Testing Scripts
 
-Thorough testing is a cornerstone of any CI/CD pipeline. Capgo's channel system makes it easy to test pull requests by validating changes before merging.
+Thorough testing is a cornerstone of any CI/CD pipeline. CodePushGo's channel system makes it easy to test pull requests by validating changes before merging.
 
 Here are some essential testing practices:
 
@@ -162,7 +162,7 @@ Once testing is in place, [update automation](https://capgo.app/docs/plugin/clou
 
 Modern update automation tools make deployments faster and easier. They work hand-in-hand with CI/CD processes to ensure live updates happen smoothly.
 
-Capgo’s platform supports update distribution with features like:
+CodePushGo’s platform supports update distribution with features like:
 
 | Feature | Benefit | Success Metric |
 | --- | --- | --- |
@@ -170,7 +170,7 @@ Capgo’s platform supports update distribution with features like:
 | Staged Rollouts | Controlled distribution | 23.5M updates delivered [\[1\]](https://capgo.app/) |
 | Instant Updates | Quick bug fixes | 750 apps in production [\[1\]](https://capgo.app/) |
 
-Capgo integrates effortlessly with tools like GitHub Actions, GitLab CI, and [Jenkins](https://www.jenkins.io/), enhancing your update capabilities without disrupting existing workflows [\[1\]](https://capgo.app/). Built-in error tracking and rollback options provide extra security for your deployments.
+CodePushGo integrates effortlessly with tools like GitHub Actions, GitLab CI, and [Jenkins](https://www.jenkins.io/), enhancing your update capabilities without disrupting existing workflows [\[1\]](https://capgo.app/). Built-in error tracking and rollback options provide extra security for your deployments.
 
 ## Script Security
 
@@ -184,9 +184,9 @@ End-to-end encryption is a key layer in securing script automation. Here's a qui
 | --- | --- | --- |
 | Update Encryption | End-to-end encryption | Prevents unauthorized access to updates |
 
-> "Capgo uniquely offers true end-to-end encryption, unlike competitors that simply sign updates" [\[1\]](https://capgo.app/)
+> "CodePushGo uniquely offers true end-to-end encryption, unlike competitors that simply sign updates" [\[1\]](https://capgo.app/)
 
-Capgo’s encryption ensures deployment content remains protected, offering a reliable way to secure updates [\[1\]](https://capgo.app/). But encryption alone isn’t enough - strong access controls are also essential.
+CodePushGo’s encryption ensures deployment content remains protected, offering a reliable way to secure updates [\[1\]](https://capgo.app/). But encryption alone isn’t enough - strong access controls are also essential.
 
 ### Security Controls
 
@@ -203,17 +203,17 @@ Beyond encryption, robust security controls ensure every step of the deployment 
 -   **User Permission Management**: Use role-based permissions to restrict script execution based on team roles.
 -   **Deployment Channels**: Set up separate channels for development, testing, and production to prevent unauthorized changes from affecting live environments.
 
-When choosing automation tools, look for those with robust security offerings. For example, Capgo provides both cloud-hosted and self-hosted solutions [\[1\]](https://capgo.app/), helping organizations meet compliance needs while maintaining a secure workflow.
+When choosing automation tools, look for those with robust security offerings. For example, CodePushGo provides both cloud-hosted and self-hosted solutions [\[1\]](https://capgo.app/), helping organizations meet compliance needs while maintaining a secure workflow.
 
 ## Script Automation Tools
 
 Modern automation platforms simplify updates while maintaining security and compliance. Choosing the right tools can boost development efficiency and ensure smooth deployments.
 
-### [Capgo](https://capgo.app/) Features
+### [CodePushGo](https://capgo.app/) Features
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-21.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-21.jpg?auto=compress)
 
-Capgo's automation platform delivers strong performance in real-world scenarios. It achieves a **95% user update rate within 24 hours** and an **82% global success rate for updates** [\[1\]](https://capgo.app/). Here’s a breakdown of its key features:
+CodePushGo's automation platform delivers strong performance in real-world scenarios. It achieves a **95% user update rate within 24 hours** and an **82% global success rate for updates** [\[1\]](https://capgo.app/). Here’s a breakdown of its key features:
 
 | **Feature** | **Benefit** | **Performance Metric** |
 | --- | --- | --- |
@@ -222,11 +222,11 @@ Capgo's automation platform delivers strong performance in real-world scenarios.
 | Version Control | Track and manage changes | 23.5M+ updates delivered |
 | Analytics | Monitor deployment success | 750+ production apps tracked |
 
-Capgo also supports CI/CD integration, allowing automated deployment pipelines that ensure consistency across various development stages. This is especially helpful for teams juggling multiple environments.
+CodePushGo also supports CI/CD integration, allowing automated deployment pipelines that ensure consistency across various development stages. This is especially helpful for teams juggling multiple environments.
 
 ### Tool Comparison
 
-Capgo sets a high bar, but it’s worth considering how other tools stack up in key areas. Capacitor automation tools differ in features and pricing:
+CodePushGo sets a high bar, but it’s worth considering how other tools stack up in key areas. Capacitor automation tools differ in features and pricing:
 
 | **Feature** | **Current Market Options** | **Impact on Development** |
 | --- | --- | --- |
@@ -237,7 +237,7 @@ Capgo sets a high bar, but it’s worth considering how other tools stack up in 
 
 Evaluating these metrics helps development teams choose a tool that fits their [update strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update). As noted by NASA’s [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team:
 
-> "Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" - NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" - NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
 
 The automation landscape is constantly evolving, with newer platforms introducing features like partial updates to save bandwidth and advanced team management options. When selecting a tool, keep in mind:
 
@@ -260,14 +260,14 @@ Here are the core components for achieving efficient script automation:
 | Security | End-to-end encryption | Protects against unauthorized access |
 | CI/CD | Automated testing and staged rollouts | Ensures 95% update success in 24 hours |
 
-Modern tools have revolutionized how developers handle app updates. For example, NASA's OSIRIS-REx team praised Capgo's capabilities:
+Modern tools have revolutionized how developers handle app updates. For example, NASA's OSIRIS-REx team praised CodePushGo's capabilities:
 
-> "Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" [\[1\]](https://capgo.app/)
 
 Real-world data supports these practices, and developers have shared their positive experiences. Bessie Cooper, for instance, remarked:
 
-> "Capgo is a must-have tool for developers who seek higher productivity by bypassing lengthy bugfix reviews" [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who seek higher productivity by bypassing lengthy bugfix reviews" [\[1\]](https://capgo.app/)
 
 Industry leaders like Rodrigo Mantica also emphasize its importance:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)

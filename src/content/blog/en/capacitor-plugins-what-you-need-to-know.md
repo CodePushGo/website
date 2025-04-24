@@ -130,11 +130,11 @@ When choosing plugins for your app, keep these criteria in mind:
 
 For features involving sensitive data or security, run tools like `npm audit` or use platforms like [Snyk](https://snyk.io/) to check for vulnerabilities. Pair this with web security best practices [\[7\]](https://ahrefs.com/blog/google-advanced-search-operators/)[\[8\]](https://www.w3.org/International/questions/qa-html-language-declarations).
 
-### [Capgo](https://capgo.app/): Live Updates for Apps
+### [CodePushGo](https://capgo.app/): Live Updates for Apps
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-10.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-10.jpg?auto=compress)
 
-Capgo provides a [live update plugin](https://capgo.app/docs/plugin/self-hosted/auto-update/) that works seamlessly with Capacitor. It allows you to deploy updates - like bug fixes or new features - directly to your app using encrypted channels, all while staying compliant with app store policies [\[3\]](https://github.com/riderx/awesome-capacitor).
+CodePushGo provides a [live update plugin](https://capgo.app/docs/plugin/self-hosted/auto-update/) that works seamlessly with Capacitor. It allows you to deploy updates - like bug fixes or new features - directly to your app using encrypted channels, all while staying compliant with app store policies [\[3\]](https://github.com/riderx/awesome-capacitor).
 
 ### Plugin Testing Methods
 
@@ -195,7 +195,7 @@ Having access to dependable support is key to effective plugin maintenance. The 
 
 > "The Capacitor GitHub Discussions community, with over 8,000 members, serves as the primary hub for plugin maintenance support and troubleshooting." [\[5\]](https://capacitorjs.com/docs/plugins)
 
-For teams using tools like Capgo for live updates, additional features include:
+For teams using tools like CodePushGo for live updates, additional features include:
 
 -   Real-time crash analytics
 -   Automated compatibility checks

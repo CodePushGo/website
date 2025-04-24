@@ -8,7 +8,7 @@ author_url: 'https://github.com/WcaleNieWolny/WcaleNieWolny'
 created_at: 2024-04-15T00:00:00.000Z
 updated_at: 2024-04-15T00:00:00.000Z
 head_image: /organization_system_blog.webp
-head_image_alt: Capgo organization system illusatration
+head_image_alt: CodePushGo organization system illusatration
 keywords: organization system, capgo, mobile app development, software engineering, backend development
 tag: Story
 published: true
@@ -18,11 +18,11 @@ next_blog: ''
 
 ## Introduction
 
-Hey, I am [WcaleNieWolny](https://github.com/WcaleNieWolny/WcaleNieWolny) - Capgo's lead software engineer.
+Hey, I am [WcaleNieWolny](https://github.com/WcaleNieWolny/WcaleNieWolny) - CodePushGo's lead software engineer.
 
 Over the past 8 months, I have been developing the [organization system](/docs/webapp/organization-system/), and as of April 14, I am happy to announce that the system has been completed 🎉 🎊
 
-Finally, after 8 months, every single part of Capgo is accessible to org members. This includes:
+Finally, after 8 months, every single part of CodePushGo is accessible to org members. This includes:
  - apps
  - statistics
  - billing

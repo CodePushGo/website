@@ -1,7 +1,7 @@
 ---
 slug: capgo-integration-with-github-actions-guide
-title: "Capgo Integration with GitHub Actions: Guide"
-description: Integrate Capgo with GitHub Actions for efficient, secure, and cost-effective app updates, enhancing your development workflow.
+title: "CodePushGo Integration with GitHub Actions: Guide"
+description: Integrate CodePushGo with GitHub Actions for efficient, secure, and cost-effective app updates, enhancing your development workflow.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,14 +9,14 @@ created_at: 2025-03-16T02:24:50.565Z
 updated_at: 2025-03-18T13:14:19.939Z
 head_image: https://assets.seobotai.com/capgo.app/67d61b378b902ec211cf87e9-1742091902582.jpg
 head_image_alt: Mobile Development
-keywords: Capgo, GitHub Actions, CI/CD, Capacitor apps, deployment, automation, updates, security
+keywords: CodePushGo, GitHub Actions, CI/CD, Capacitor apps, deployment, automation, updates, security
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-[Capgo](https://capgo.app/) and [GitHub Actions](https://docs.github.com/actions) together simplify deploying updates for [Capacitor](https://capacitorjs.com/) apps. Here's why this integration is worth your attention:
+[CodePushGo](https://capgo.app/) and [GitHub Actions](https://docs.github.com/actions) together simplify deploying updates for [Capacitor](https://capacitorjs.com/) apps. Here's why this integration is worth your attention:
 
 -   **Save Money**: Cut CI/CD costs by up to $26,100 over 5 years compared to [AppFlow](https://ionic.io/appflow/).
 -   **Fast Updates**: Push updates instantly with 95% of users receiving them in 24 hours.
@@ -25,15 +25,15 @@ next_blog: ''
 
 ### Quick Overview
 
-1.  **Requirements**: GitHub account, [Capgo account](https://capgo.app/disclaimer/) (from $12/month), Capacitor project, [Node.js](https://nodejs.org/en).
-2.  **Setup**: Install [Capgo CLI](https://capgo.app/docs/cli/commands) with `npx @capgo/cli init`, configure GitHub Actions with a YAML workflow.
+1.  **Requirements**: GitHub account, [CodePushGo account](https://capgo.app/disclaimer/) (from $12/month), Capacitor project, [Node.js](https://nodejs.org/en).
+2.  **Setup**: Install [CodePushGo CLI](https://capgo.app/docs/cli/commands) with `npx @capgo/cli init`, configure GitHub Actions with a YAML workflow.
 3.  **Deployment**: Use commands like `npx @capgo/cli deploy` to [automate updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
 4.  **Testing**: Deploy to test channels (e.g., beta, staging) before production.
 
 **Example Workflow (YAML)**:
 
 ```yaml
-name: Capgo Deploy  
+name: CodePushGo Deploy  
 on:  
   push:  
     branches:  
@@ -49,7 +49,7 @@ jobs:
           node-version: '18.x'  
       - name: Install Dependencies  
         run: npm install  
-      - name: Deploy to Capgo  
+      - name: Deploy to CodePushGo  
         run: npx @capgo/cli deploy  
         env:  
           CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}  
@@ -65,7 +65,7 @@ This integration ensures fast, secure, and cost-effective app updates, making it
 
 ## Setup Requirements
 
-[Integrating Capgo](https://capgo.app/docs/webapp/) with GitHub Actions involves setting up the necessary tools and configurations.
+[Integrating CodePushGo](https://capgo.app/docs/webapp/) with GitHub Actions involves setting up the necessary tools and configurations.
 
 ### Required Tools and Accounts
 
@@ -74,17 +74,17 @@ Make sure you have the following accounts and tools ready:
 | Requirement | Purpose | Details |
 | --- | --- | --- |
 | **GitHub Account** | Version Control & CI/CD | Active account with access to repositories |
-| **Capgo Account** | Manage Live Updates | Plans start at $12/month for the SOLO plan |
+| **CodePushGo Account** | Manage Live Updates | Plans start at $12/month for the SOLO plan |
 | **Capacitor Project** | App Development | A functional project ready for integration |
 | **Node.js** | Runtime Environment | Latest LTS version is recommended |
 
-Once these are in place, you can proceed to add Capgo to your project for automated live updates.
+Once these are in place, you can proceed to add CodePushGo to your project for automated live updates.
 
-### Adding [Capgo](https://capgo.app/) to Your Project
+### Adding [CodePushGo](https://capgo.app/) to Your Project
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-16.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-16.jpg?auto=compress)
 
-To integrate Capgo, install it in your Capacitor project using its CLI tool. According to Martin Donadieu, founder of Capgo:
+To integrate CodePushGo, install it in your Capacitor project using its CLI tool. According to Martin Donadieu, founder of CodePushGo:
 
 > "Run npx @capgo/cli init that it!" [\[1\]](https://capgo.app/)
 
@@ -92,30 +92,30 @@ This command will set up the plugin and its required dependencies.
 
 ### GitHub Repository Setup
 
-Prepare your GitHub repository to meet the requirements for CI/CD integration with Capgo. As mentioned in their documentation:
+Prepare your GitHub repository to meet the requirements for CI/CD integration with CodePushGo. As mentioned in their documentation:
 
 > "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." [\[1\]](https://capgo.app/)
 
-Capgo offers this setup for a one-time fee of $2,600 and ~$300/month, which is more affordable compared to AppFlow's $6,000 annual fee [\[1\]](https://capgo.app/).
+CodePushGo offers this setup for a one-time fee of $2,600 and ~$300/month, which is more affordable compared to AppFlow's $6,000 annual fee [\[1\]](https://capgo.app/).
 
 Here’s how to set up your repository:
 
 -   **Repository Structure**: Organize your repository with separate directories for source code, assets, and configuration files to keep everything clean and manageable.
 -   **Environment Configuration**: Create distinct environments for development, staging, and production, ensuring proper access controls and security measures are in place.
--   **Access Management**: Set repository permissions carefully to allow [Capgo integration](https://capgo.app/consulting/) while maintaining security.
+-   **Access Management**: Set repository permissions carefully to allow [CodePushGo integration](https://capgo.app/consulting/) while maintaining security.
 
 These steps will ensure your project is ready for the GitHub Actions workflow, which will be outlined in the next section.
 
 ## GitHub Actions Workflow Setup
 
-Automate your [Capgo deployments](https://capgo.app/docs/cli/commands/) using GitHub Actions to streamline your CI/CD process.
+Automate your [CodePushGo deployments](https://capgo.app/docs/cli/commands/) using GitHub Actions to streamline your CI/CD process.
 
 ### Creating the Workflow File
 
 Start by creating a YAML file in the `.github/workflows` directory of your repository. Here's an example:
 
 ```yaml
-name: Capgo Deploy
+name: CodePushGo Deploy
 on:
   push:
     branches:
@@ -134,7 +134,7 @@ jobs:
         run: npm install
       - name: Build App
         run: npm run build
-      - name: Deploy to Capgo
+      - name: Deploy to CodePushGo
         run: npx @capgo/cli deploy
         env:
           CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
@@ -162,26 +162,26 @@ To ensure secure deployments, you need to manage your secret keys properly. GitH
 1.  **Access Repository Settings**  
     Go to your repository's settings and find the "Secrets and variables" section under the "Security" tab.
     
-2.  **Add [Capgo Credentials](https://capgo.app/trust/)**  
-    Save your Capgo authentication token as a repository secret. Name it `CAPGO_TOKEN`.
+2.  **Add [CodePushGo Credentials](https://capgo.app/trust/)**  
+    Save your CodePushGo authentication token as a repository secret. Name it `CAPGO_TOKEN`.
     
 3.  **Reference Secrets in Workflows**  
     Use your stored secrets in the workflow by referencing them like this: `${{ secrets.CAPGO_TOKEN }}`.
     
 
-## Capgo Commands in Workflows
+## CodePushGo Commands in Workflows
 
-Once your GitHub Actions environment is set up, you can automate deployments by integrating Capgo CLI commands.
+Once your GitHub Actions environment is set up, you can automate deployments by integrating CodePushGo CLI commands.
 
-### Installing Capgo CLI
+### Installing CodePushGo CLI
 
-Add the following step to your workflow to install the Capgo CLI:
+Add the following step to your workflow to install the CodePushGo CLI:
 
 ```yaml
 steps:
-  - name: Install Capgo CLI
+  - name: Install CodePushGo CLI
     run: npm install -g @capgo/cli
-  - name: Initialize Capgo
+  - name: Initialize CodePushGo
     run: npx @capgo/cli init
 ```
 
@@ -190,7 +190,7 @@ steps:
 Securely authenticate the CLI using the `CAPGO_TOKEN`:
 
 ```yaml
-- name: Authenticate Capgo CLI
+- name: Authenticate CodePushGo CLI
   run: npx @capgo/cli login
   env:
     CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
@@ -203,7 +203,7 @@ Here are the key commands to handle building, versioning, and deploying your upd
 | Command | Purpose | Usage Example |
 | --- | --- | --- |
 | `build` | Generates a [production-ready bundle](https://capgo.app/docs/webapp/bundles/) | `npx @capgo/cli build` |
-| `deploy` | Pushes updates to Capgo | `npx @capgo/cli deploy` |
+| `deploy` | Pushes updates to CodePushGo | `npx @capgo/cli deploy` |
 | `version` | Sets the version for the update | `npx @capgo/cli version 1.2.0` |
 
 To automate the entire deployment process, use the commands together like this:
@@ -225,7 +225,7 @@ This setup ensures that your updates are automatically built, versioned, and dep
 
 ### Running Test Workflows
 
-You can test your GitHub Actions workflow by using a dedicated [Capgo testing channel](https://capgo.app/docs/plugin/cloud-mode/channel-system/). This allows you to validate updates before they go live.
+You can test your GitHub Actions workflow by using a dedicated [CodePushGo testing channel](https://capgo.app/docs/plugin/cloud-mode/channel-system/). This allows you to validate updates before they go live.
 
 ```yaml
 - name: Test Build Deployment
@@ -236,7 +236,7 @@ You can test your GitHub Actions workflow by using a dedicated [Capgo testing ch
     CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
 ```
 
-Capgo's channel system helps you create separate deployment paths for different stages:
+CodePushGo's channel system helps you create separate deployment paths for different stages:
 
 | Channel | Purpose | Target Audience |
 | --- | --- | --- |
@@ -256,7 +256,7 @@ Check the CAPGO\_TOKEN in GitHub Secrets. If it's expired, regenerate it to ensu
 
 Ensure your build configuration matches the requirements of your deployment environment.
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
 
 3\. **Version Conflicts**
 
@@ -264,33 +264,33 @@ Stick to semantic versioning and increment versions properly to prevent conflict
 
 ### Maintenance Tips
 
--   Use [Capgo analytics](https://capgo.app/dp/) to monitor update success rates.
+-   Use [CodePushGo analytics](https://capgo.app/dp/) to monitor update success rates.
 -   Enable automatic rollbacks for updates that might cause issues.
 -   Test pull requests (PRs) using channel selectors for better control.
--   Keep your workflow updated with the latest Capgo CLI commands.
+-   Keep your workflow updated with the latest CodePushGo CLI commands.
 
-For high-priority deployments, take advantage of Capgo's error tracking to spot potential issues early. If something goes wrong, the rollback feature allows you to revert to a stable version quickly, minimizing disruption. These practices will help keep your deployments running smoothly as you move closer to production.
+For high-priority deployments, take advantage of CodePushGo's error tracking to spot potential issues early. If something goes wrong, the rollback feature allows you to revert to a stable version quickly, minimizing disruption. These practices will help keep your deployments running smoothly as you move closer to production.
 
 ## Conclusion
 
 ### Key Highlights
 
-Capgo's integration with GitHub Actions simplifies the deployment process for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/), delivering major benefits to development teams. With an 82% global success rate for updates and 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/), this solution stands out for its efficiency.
+CodePushGo's integration with GitHub Actions simplifies the deployment process for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/), delivering major benefits to development teams. With an 82% global success rate for updates and 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/), this solution stands out for its efficiency.
 
 Here are some standout features:
 
 -   **Automated Workflows**: By configuring workflows directly in GitHub Actions, there's no need for external CI/CD hosting. This approach cuts operational costs, saving about $26,100 over five years compared to alternatives like AppFlow [\[1\]](https://capgo.app/).
 -   **Fast Deployment**: Updates can be pushed instantly, bypassing app store delays.
--   **Strong Security**: End-to-end encryption ensures updates are delivered securely, while Capgo's channel system allows for controlled, staged rollouts.
+-   **Strong Security**: End-to-end encryption ensures updates are delivered securely, while CodePushGo's channel system allows for controlled, staged rollouts.
 
 These features pave the way for more tailored solutions and improved performance, explored further below.
 
 ### Advanced Strategies
 
-To get the most out of your Capgo and GitHub Actions integration, explore these advanced tactics:
+To get the most out of your CodePushGo and GitHub Actions integration, explore these advanced tactics:
 
--   **Custom API Workflows**: Use Capgo's public API to design deployment workflows that fit your team's specific needs. This can enable white-label experiences and seamless integration with your current tools [\[1\]](https://capgo.app/).
--   **[Channel-Based Releases](https://capgo.app/docs/webapp/channels/)**: Optimize your deployment process by using Capgo's channel features for staged and controlled updates.
--   **Optimized Performance**: Utilize Capgo's partial updates to reduce bandwidth usage and speed up updates. With 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), the system has proven its capability to handle large-scale demands.
+-   **Custom API Workflows**: Use CodePushGo's public API to design deployment workflows that fit your team's specific needs. This can enable white-label experiences and seamless integration with your current tools [\[1\]](https://capgo.app/).
+-   **[Channel-Based Releases](https://capgo.app/docs/webapp/channels/)**: Optimize your deployment process by using CodePushGo's channel features for staged and controlled updates.
+-   **Optimized Performance**: Utilize CodePushGo's partial updates to reduce bandwidth usage and speed up updates. With 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), the system has proven its capability to handle large-scale demands.
 
-For even better results, consider using Capgo's self-hosting options or custom API setups. Check earlier sections for detailed setup and testing instructions to fully implement these strategies.
+For even better results, consider using CodePushGo's self-hosting options or custom API setups. Check earlier sections for detailed setup and testing instructions to fully implement these strategies.

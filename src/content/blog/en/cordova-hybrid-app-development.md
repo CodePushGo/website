@@ -99,17 +99,17 @@ Ionic has established itself as a leading open-source framework for crafting hig
 - **Vibrant and Supportive Community:** Ionic boasts a large and active community of developers worldwide. This vibrant community contributes to a wealth of resources, including extensive documentation, helpful tutorials, and active forums where developers can seek assistance and share their knowledge.
 - **Enterprise-Grade Support and Solutions:** Ionic offers enterprise-grade support and services for organizations with mission-critical app needs. This includes dedicated support channels, expert consulting, and tailored solutions to meet the specific requirements of enterprise clients.
 
-## Capgo: Streamlining Live Updates for Capacitor Apps
+## CodePushGo: Streamlining Live Updates for Capacitor Apps
 
-Capgo is a comprehensive platform explicitly designed to simplify and enhance the live update process for Capacitor-based mobile applications. 
+CodePushGo is a comprehensive platform explicitly designed to simplify and enhance the live update process for Capacitor-based mobile applications. 
 
-### Key Benefits of Integrating Capgo into Your Workflow:
+### Key Benefits of Integrating CodePushGo into Your Workflow:
 
-- **Seamless Over-the-Air Updates:** [Capgo](capgo.app) empowers you to deliver instant app updates to your users' devices without requiring them to go through the hassle of downloading new versions from app stores. This ensures that your users always have the latest features, bug fixes, and content at their fingertips.
-- **Simplified Update Workflow and Management:**  [Capgo](capgo.app) streamlines the entire update process, making it incredibly easy to push new features, critical bug fixes, and fresh content updates to your users. Its intuitive interface and automation capabilities free up developers to focus on building great apps rather than managing complex update procedures.
-- **Enhanced User Experience with Minimal Disruptions:**  [Capgo](capgo.app) prioritizes the user experience by delivering updates seamlessly and unobtrusively. This ensures that your users can enjoy the latest enhancements without interruptions or delays, keeping them engaged and satisfied.
-- **Accelerated Development Cycles and Rapid Iteration:** [Capgo](capgo.app) empowers development teams to iterate faster and more efficiently by enabling instant deployment and testing of app updates. This rapid feedback loop fosters innovation and allows for quicker response times to user feedback or changing market demands.
+- **Seamless Over-the-Air Updates:** [CodePushGo](capgo.app) empowers you to deliver instant app updates to your users' devices without requiring them to go through the hassle of downloading new versions from app stores. This ensures that your users always have the latest features, bug fixes, and content at their fingertips.
+- **Simplified Update Workflow and Management:**  [CodePushGo](capgo.app) streamlines the entire update process, making it incredibly easy to push new features, critical bug fixes, and fresh content updates to your users. Its intuitive interface and automation capabilities free up developers to focus on building great apps rather than managing complex update procedures.
+- **Enhanced User Experience with Minimal Disruptions:**  [CodePushGo](capgo.app) prioritizes the user experience by delivering updates seamlessly and unobtrusively. This ensures that your users can enjoy the latest enhancements without interruptions or delays, keeping them engaged and satisfied.
+- **Accelerated Development Cycles and Rapid Iteration:** [CodePushGo](capgo.app) empowers development teams to iterate faster and more efficiently by enabling instant deployment and testing of app updates. This rapid feedback loop fosters innovation and allows for quicker response times to user feedback or changing market demands.
 
-## Why Capgo Exclusively Supports Capacitor for Live Updates
+## Why CodePushGo Exclusively Supports Capacitor for Live Updates
 
-Capgo has made the strategic decision to focus solely on Capacitor, a modern and powerful hybrid app runtime, to deliver the best possible live update experience. Capacitor's modern architecture, deep integration with native SDKs, and commitment to web standards align perfectly with Capgo's vision of providing seamless, reliable, and efficient live updates for hybrid mobile applications.
+CodePushGo has made the strategic decision to focus solely on Capacitor, a modern and powerful hybrid app runtime, to deliver the best possible live update experience. Capacitor's modern architecture, deep integration with native SDKs, and commitment to web standards align perfectly with CodePushGo's vision of providing seamless, reliable, and efficient live updates for hybrid mobile applications.

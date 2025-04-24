@@ -19,7 +19,7 @@ next_blog: ''
 Delta updates make app updates faster and smaller by sending only the changed parts of the app instead of the entire file. Here's how:
 
 -   **Smaller Files Save Data**: Only the modified code is sent, reducing download sizes significantly.
--   **Faster Updates**: A 5MB update can be downloaded in just 114ms using [Capgo](https://capgo.app/)'s CDN.
+-   **Faster Updates**: A 5MB update can be downloaded in just 114ms using [CodePushGo](https://capgo.app/)'s CDN.
 -   **High Adoption Rates**: 95% of users update within 24 hours.
 -   **Reliable and Secure**: Includes features like rollback options and end-to-end encryption.
 
@@ -78,7 +78,7 @@ Before implementing delta updates, make sure you have the following:
 | --- | --- | --- |
 | **Capacitor Version** | Framework version | Version 6 or 7 |
 | **Development Environment** | Build tools | [Node.js](https://nodejs.org/en) and npm |
-| **[Update Service](https://capgo.app/docs/plugin/cloud-mode/manual-update/)** | Delta management | [Capgo CLI](https://capgo.app/docs/cli/commands) |
+| **[Update Service](https://capgo.app/docs/plugin/cloud-mode/manual-update/)** | Delta management | [CodePushGo CLI](https://capgo.app/docs/cli/commands) |
 | **CI/CD Integration** | Automated deployment | GitHub Actions, [GitLab CI](https://docs.gitlab.com/ee/ci/), or Jenkins |
 
 ### Code Setup Guide
@@ -87,7 +87,7 @@ You can set up delta updates in three simple steps:
 
 1.  **Install the Update Plugin**
     
-    Start by initializing Capgo in your project using the CLI:
+    Start by initializing CodePushGo in your project using the CLI:
     
     ```bash
     npx @capgo/cli init
@@ -123,7 +123,7 @@ Once these steps are complete, your app is ready for the next phase: testing the
 
 ### Test and Deploy
 
-Before rolling out updates, thoroughly test them. Capgo offers tools to ensure smooth deployment:
+Before rolling out updates, thoroughly test them. CodePushGo offers tools to ensure smooth deployment:
 
 **Channel-Based Testing**  
 Set up separate channels to test updates before releasing them to all users:
@@ -133,16 +133,16 @@ await CapacitorUpdater.setChannel('beta');
 ```
 
 **Monitoring and Safety**  
-Use Capgo's analytics to track update performance in real time. Key metrics include:
+Use CodePushGo's analytics to track update performance in real time. Key metrics include:
 
 -   Update success rates
 -   Download speeds
 -   User engagement
 -   Version distribution
 
-If an issue arises, Capgo's one-click rollback feature allows for quick recovery.
+If an issue arises, CodePushGo's one-click rollback feature allows for quick recovery.
 
-For enterprise apps, Capgo's CI/CD integration (priced at $2,600 one-time) can streamline testing and deployment, saving time and reducing errors.
+For enterprise apps, CodePushGo's CI/CD integration (priced at $2,600 one-time) can streamline testing and deployment, saving time and reducing errors.
 
 ## Delta Update Tips
 
@@ -171,9 +171,9 @@ Once you've reduced the [update size](https://capgo.app/docs/plugin/cloud-mode/h
 
 Keep updates secure with end-to-end encryption and detect version conflicts early.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
-You can also monitor update performance in real-time using tools like Capgo's analytics to track:
+You can also monitor update performance in real-time using tools like CodePushGo's analytics to track:
 
 -   Update success rates
 -   User engagement patterns
@@ -183,7 +183,7 @@ You can also monitor update performance in real-time using tools like Capgo's an
 Even with proper configuration, delta updates can encounter issues. Here's how to address some common problems:
 
 **Version Conflicts**  
-If there's a mismatch between versions, use Capgo's channel system for a fallback option:
+If there's a mismatch between versions, use CodePushGo's channel system for a fallback option:
 
 ```typescript
 const version = await CapacitorUpdater.getCurrentVersion();
@@ -193,9 +193,9 @@ if (version.mismatch) {
 ```
 
 **Failed Updates**  
-Capgo makes it easy to roll back to a previous version with just one click:
+CodePushGo makes it easy to roll back to a previous version with just one click:
 
-> "One-click rollback to any previous version if needed" - Capgo [\[1\]](https://capgo.app/)
+> "One-click rollback to any previous version if needed" - CodePushGo [\[1\]](https://capgo.app/)
 
 **Network Issues**  
 Network interruptions can disrupt updates, but these solutions help:
@@ -206,25 +206,25 @@ Network interruptions can disrupt updates, but these solutions help:
 | Partial Download | Resume support | Saves bandwidth |
 | Connection Loss | State persistence | Prevents corruption |
 
-For enterprise-level deployments, consider using staged rollouts. Capgo's channel system lets you test updates with a small group of users before rolling them out to everyone, reducing risks and ensuring a smoother experience.
+For enterprise-level deployments, consider using staged rollouts. CodePushGo's channel system lets you test updates with a small group of users before rolling them out to everyone, reducing risks and ensuring a smoother experience.
 
-## [Capgo](https://capgo.app/) Delta Update Features
+## [CodePushGo](https://capgo.app/) Delta Update Features
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
 
-Capgo builds on its delta update system with features designed to improve both performance and security. So far, the platform has managed an impressive **23.5 million updates** across **750 production apps** [\[1\]](https://capgo.app/).
+CodePushGo builds on its delta update system with features designed to improve both performance and security. So far, the platform has managed an impressive **23.5 million updates** across **750 production apps** [\[1\]](https://capgo.app/).
 
-### Key Capgo Features
+### Key CodePushGo Features
 
-Capgo's delta updates aim to deliver updates efficiently while prioritizing security. Here's what it offers:
+CodePushGo's delta updates aim to deliver updates efficiently while prioritizing security. Here's what it offers:
 
 -   **Fast Download Speed**: A 5MB bundle downloads in just 114ms through its global CDN.
 -   **High Update Success Rate**: Boasts an 82% success rate for updates worldwide.
 -   **Quick User Adoption**: 95% of active users update within 24 hours.
 
-(All figures are based on Capgo's internal data [\[1\]](https://capgo.app/).)
+(All figures are based on CodePushGo's internal data [\[1\]](https://capgo.app/).)
 
-To ensure security, Capgo uses true end-to-end encryption for all updates. This means only the intended users can decrypt the content - a step beyond competitors who typically rely on signing updates without full encryption.
+To ensure security, CodePushGo uses true end-to-end encryption for all updates. This means only the intended users can decrypt the content - a step beyond competitors who typically rely on signing updates without full encryption.
 
 | Feature | Advantage | Performance Metric |
 | --- | --- | --- |
@@ -232,15 +232,15 @@ To ensure security, Capgo uses true end-to-end encryption for all updates. This 
 | Global CDN | Faster downloads globally | 114ms for 5MB bundles |
 | E2E Encryption | Stronger data security | Full end-to-end encryption |
 
-### Comparing Capgo to Alternatives
+### Comparing CodePushGo to Alternatives
 
-Capgo offers a combination of cost savings and performance advantages that stand out in the delta update market. A cost analysis shows potential savings of **$26,100 over 5 years** when paired with CI/CD tools [\[1\]](https://capgo.app/).
+CodePushGo offers a combination of cost savings and performance advantages that stand out in the delta update market. A cost analysis shows potential savings of **$26,100 over 5 years** when paired with CI/CD tools [\[1\]](https://capgo.app/).
 
-NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team praised Capgo's efficiency:
+NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team praised CodePushGo's efficiency:
 
-> "Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
 
-Capgo also sets itself apart with features like:
+CodePushGo also sets itself apart with features like:
 
 -   **Flexible Deployment**: Supports both cloud-based and self-hosted options.
 -   **CI/CD Integration**: Works seamlessly with GitHub Actions, GitLab CI, and Jenkins.
@@ -248,11 +248,11 @@ Capgo also sets itself apart with features like:
 
 Its channel system allows for advanced update strategies, such as targeted beta tests and staged rollouts, while maintaining a high success rate across various user groups.
 
-For development teams in need of a reliable delta update solution, Capgo delivers a strong mix of performance, security, and flexibility.
+For development teams in need of a reliable delta update solution, CodePushGo delivers a strong mix of performance, security, and flexibility.
 
 ## Summary
 
-Delta updates significantly reduce payload sizes and speed up delivery for Capacitor apps. For instance, a typical 5MB bundle downloads in just 114ms via Capgo's global CDN [\[1\]](https://capgo.app/), showcasing the efficiency of this approach.
+Delta updates significantly reduce payload sizes and speed up delivery for Capacitor apps. For instance, a typical 5MB bundle downloads in just 114ms via CodePushGo's global CDN [\[1\]](https://capgo.app/), showcasing the efficiency of this approach.
 
 Performance metrics from real-world applications back up the value of delta updates:
 
@@ -265,7 +265,7 @@ Performance metrics from real-world applications back up the value of delta upda
 
 The user experience aligns with these numbers. For example, colenso, managing over 5,000 users, shared:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
 
 Key strategies for effective delta updates include:
 

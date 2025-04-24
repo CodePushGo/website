@@ -46,13 +46,13 @@ next_blog: ''
 | [Capacitor Web Updates](https://capgo.app/docs/) | Fast | Automatic | Free | Minor fixes/features |
 | External OTA Tools | Instant | Automatic | Depends on the platform | Secure, targeted updates |
 
-[Capacitor OTA updates](https://capgo.app/) are ideal for developers who want speed, security, and control. Platforms like [Capgo](https://capgo.app/) have delivered **23.5 million updates** with a **95% adoption rate within 24 hours**. Ready to transform your app maintenance? Dive in!
+[Capacitor OTA updates](https://capgo.app/) are ideal for developers who want speed, security, and control. Platforms like [CodePushGo](https://capgo.app/) have delivered **23.5 million updates** with a **95% adoption rate within 24 hours**. Ready to transform your app maintenance? Dive in!
 
-## [Capgo](https://capgo.app/) Platform Features
+## [CodePushGo](https://capgo.app/) Platform Features
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e88f5c283d21cbd67a8bd9/93c1d42fe1ebf1e9553e1e7f4f856f98.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e88f5c283d21cbd67a8bd9/93c1d42fe1ebf1e9553e1e7f4f856f98.jpg)
 
-The [Capgo platform](https://capgo.app/docs/webapp/) enhances Capacitor's update capabilities with added security and advanced deployment options. Having managed 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/), it provides key features to improve performance:
+The [CodePushGo platform](https://capgo.app/docs/webapp/) enhances Capacitor's update capabilities with added security and advanced deployment options. Having managed 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/), it provides key features to improve performance:
 
 | Feature | Capability | Performance Metric |
 | --- | --- | --- |
@@ -61,7 +61,7 @@ The [Capgo platform](https://capgo.app/docs/webapp/) enhances Capacitor's update
 | Security | End-to-end encryption | Full update protection |
 | Distribution | [Channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) | Targeted rollouts |
 
-Capgo's channel system enables precise update distribution, such as running beta tests or rolling out updates in stages, without compromising security. Teams can choose between cloud-hosted and self-hosted setups, gaining full control with tools like one-click rollbacks and proactive error monitoring.OTA Update Methods
+CodePushGo's channel system enables precise update distribution, such as running beta tests or rolling out updates in stages, without compromising security. Teams can choose between cloud-hosted and self-hosted setups, gaining full control with tools like one-click rollbacks and proactive error monitoring.OTA Update Methods
 
 ### App Store Updates
 
@@ -91,7 +91,7 @@ Key benefits of external OTA tools include:
 | Security | End-to-end encryption | Stronger protection |
 | Analytics | Tracks update performance | Real-time monitoring |
 
-> "NASA's OSIRIS-REx team noted: '@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂'" [\[1\]](https://capgo.app/)
+> "NASA's OSIRIS-REx team noted: '@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂'" [\[1\]](https://capgo.app/)
 
 These platforms also support partial updates, meaning only the changed assets are downloaded. This reduces both bandwidth usage and update times, ensuring smooth and compliant updates for users.
 
@@ -153,7 +153,7 @@ Ensuring the integrity of OTA updates requires strong security protocols. One of
 | Access Control | Manage update permissions | Define user roles and permissions |
 | Hosting Security | Secure update distribution | Opt for cloud or self-hosted solutions |
 
-Additionally, implement [multi-factor authentication](https://capgo.app/docs/webapp/mfa/) and regularly rotate credentials to strengthen security. Capgo, for example, uses end-to-end encryption to ensure updates are securely delivered. Rigorous testing is also crucial to confirm these measures don't interfere with update deployment.
+Additionally, implement [multi-factor authentication](https://capgo.app/docs/webapp/mfa/) and regularly rotate credentials to strengthen security. CodePushGo, for example, uses end-to-end encryption to ensure updates are securely delivered. Rigorous testing is also crucial to confirm these measures don't interfere with update deployment.
 
 ### Update Testing
 
@@ -168,7 +168,7 @@ Thorough testing is essential to maintain app stability and a smooth user experi
 -   **Rollback Planning**: Have a plan ready to revert to a stable version if necessary.
     
 
-> "Test PR directly from the app with channels selector" – Capgo [\[1\]](https://capgo.app/)
+> "Test PR directly from the app with channels selector" – CodePushGo [\[1\]](https://capgo.app/)
 
 Channel systems and error monitoring tools can help identify and address issues early. A well-executed rollback plan minimizes disruptions, while clear communication keeps users informed during the process.
 
@@ -195,7 +195,7 @@ Partial updates streamline OTA processes by sending only the files that have cha
 | Full Package | Ensures app consistency | Traditional app store updates |
 | Smart Differential | Saves bandwidth | Detects changes at the file level |
 
-Capgo uses smart differential updates to analyze file-level changes, reducing the size of update packages. This method is especially useful for apps with large assets that rarely change [\[1\]](https://capgo.app/).
+CodePushGo uses smart differential updates to analyze file-level changes, reducing the size of update packages. This method is especially useful for apps with large assets that rarely change [\[1\]](https://capgo.app/).
 
 ### Background Updates
 
@@ -209,9 +209,9 @@ Background updates allow users to continue using apps without interruptions. The
 
 ### Update Tracking
 
-[Optimizing update delivery](https://capgo.app/blog/optimise-your-images-for-updates/) is only part of the process - tracking updates is equally important. According to Capgo, 95% of active users are updated within 24 hours, with a global success rate of 82% [\[1\]](https://capgo.app/).
+[Optimizing update delivery](https://capgo.app/blog/optimise-your-images-for-updates/) is only part of the process - tracking updates is equally important. According to CodePushGo, 95% of active users are updated within 24 hours, with a global success rate of 82% [\[1\]](https://capgo.app/).
 
-> "Track update success rates and user engagement in real-time" - Capgo [\[1\]](https://capgo.app/)
+> "Track update success rates and user engagement in real-time" - CodePushGo [\[1\]](https://capgo.app/)
 
 Key metrics to monitor include:
 
@@ -221,7 +221,7 @@ Key metrics to monitor include:
 | User Adoption | Tracks how many users update | Analyze user behavior |
 | Error Logging | Identifies problems quickly | Resolve issues proactively |
 
-Modern OTA platforms, like Capgo, offer detailed dashboards for tracking these metrics. Features like error logging help developers identify and fix problems before they escalate.
+Modern OTA platforms, like CodePushGo, offer detailed dashboards for tracking these metrics. Features like error logging help developers identify and fix problems before they escalate.
 
 ## Summary
 
@@ -238,13 +238,13 @@ Here’s a quick overview of best practices for OTA updates:
 | Distribution | Minimize risks | Roll out updates using targeted channels |
 | Monitoring | Ensure reliability | Track update success and adoption rates |
 
-These practices are essential for platforms like Capgo to deliver fast and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
+These practices are essential for platforms like CodePushGo to deliver fast and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
 
-### [Capgo](https://capgo.app/) Features
+### [CodePushGo](https://capgo.app/) Features
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e211687856e801f1f2973e/248f5ad4814006d64d1f6a7ab727c6b9.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e211687856e801f1f2973e/248f5ad4814006d64d1f6a7ab727c6b9.jpg)
 
-Capgo stands out by following these best practices, enabling reliable OTA updates. Currently, Capgo supports 750 production apps and has successfully delivered 23.5 million updates [\[1\]](https://capgo.app/).
+CodePushGo stands out by following these best practices, enabling reliable OTA updates. Currently, CodePushGo supports 750 production apps and has successfully delivered 23.5 million updates [\[1\]](https://capgo.app/).
 
 | Feature | Benefit | Performance Metric |
 | --- | --- | --- |
@@ -252,6 +252,6 @@ Capgo stands out by following these best practices, enabling reliable OTA update
 | API Response | Quick synchronization | 434ms average worldwide response |
 | Update Distribution | Flexible deployment | 95% user adoption within 24 hours |
 
-> "NASA's OSIRIS-REx team noted: '@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂'" [\[1\]](https://capgo.app/)
+> "NASA's OSIRIS-REx team noted: '@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂'" [\[1\]](https://capgo.app/)
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden" [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden" [\[1\]](https://capgo.app/)

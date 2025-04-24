@@ -1,9 +1,9 @@
 ---
 slug: self-hosted-capgo
-title: Self hosted Capgo
+title: Self hosted CodePushGo
 description: >-
-  Self-hosting Capgo allows you to deploy Capacitor live updates to your users
-  without having to use the Capgo cloud service.
+  Self-hosting CodePushGo allows you to deploy Capacitor live updates to your users
+  without having to use the CodePushGo cloud service.
 author: Anik Dhabal Babu
 author_image_url: 'https://avatars.githubusercontent.com/u/81948346?v=4'
 author_url: 'https://x.com/anikdhabal'
@@ -18,13 +18,13 @@ locale: en
 next_blog: ''
 ---
 
-This article provides a step-by-step guide on how to self-host Capgo, as well as a discussion of the benefits and challenges of self-hosting.
+This article provides a step-by-step guide on how to self-host CodePushGo, as well as a discussion of the benefits and challenges of self-hosting.
 
 # Introduction
 
 Self Hosting is a form of running your own website or application by setting up a server and network yourself. Instead of using a Platform as a Service or a Public Cloud Provider, those who choose to self-host will run their own networks and be responsible for the maintenance and uptime in addition to building their website or application.
 
-The easiest way to get started with Capgo is with our [official managed service in the cloud](https://capgo.app/), but if you’re happy to manage your own, you can also self-host Capgo on your server.
+The easiest way to get started with CodePushGo is with our [official managed service in the cloud](https://capgo.app/), but if you’re happy to manage your own, you can also self-host CodePushGo on your server.
 
 ## What is self hosting?
 
@@ -44,28 +44,28 @@ There are many reasons why people choose to self-host. Some of the most common b
 
 * **Independence:** Self-hosting reduces your dependency on external providers. You're not at the mercy of their terms of service, pricing changes, or potential service disruptions. This independence can be crucial for businesses and individuals who rely on their online presence for critical functions.
 
-## What’s the difference between Capgo Cloud and Capgo Self-Hosted?
+## What’s the difference between CodePushGo Cloud and CodePushGo Self-Hosted?
 
-There is only one version of Capgo. Both my Cloud and my Self-Hosted products are completely equal. There’s no premium and exclusive commercial version with a better or more complete feature set.
+There is only one version of CodePushGo. Both my Cloud and my Self-Hosted products are completely equal. There’s no premium and exclusive commercial version with a better or more complete feature set.
 
 You get the same dashboard, same actionable metrics and same commitment to [respecting the privacy of your visitors](https://capgo.app/privacy/) with both.
 
-I started developing Capgo in December 2018, and I launched the SaaS subscription business in May 2019. The project is very much alive, actively developed and fast-growing. It is robust and battle-tested too.
+I started developing CodePushGo in December 2018, and I launched the SaaS subscription business in May 2019. The project is very much alive, actively developed and fast-growing. It is robust and battle-tested too.
 
-Here are the differences between Capgo Cloud and Capgo Self-Hosted:
+Here are the differences between CodePushGo Cloud and CodePushGo Self-Hosted:
 
 |   | Cloud | Self-hosted |
 | --- | --- | --- |
 | **Hosting** | Easy and convenient. It takes 2 minutes to start sending your first update, high availability, backups, security, and maintenance all done for you by me. I manage everything for you so you don’t have to worry about anything. | You do it all yourself. You need to get a server, and you need to manage your infrastructure. You are responsible for installation, maintenance, upgrades, server capacity, uptime, backup, security, stability, consistency, loading time and so on. |
-| **Storage** | All visitor data is exclusively processed on EU-owned cloud infrastructure. I keep your site data on a secure, encrypted and server in Germany. This ensures that your site data is protected by the strict European Union data privacy laws and ensures compliance with GDPR. Your website data never leaves the EU. | You have full control and can host your Capgo on any server in any country that you wish. Host it on a server in your basement or host it with any cloud provider wherever you want, even those that are not GDPR compliant. |
-| **Raw data** | You see all your site stats and metrics on my modern-looking, simple to use and fast loading dashboard. You can only see the stats aggregated in the dashboard. | Are you an analyst and want access to the raw data? Hosting Capgo yourself gives you that option. Take the data directly from the database and import it to a data analysis tool of your choice. |
+| **Storage** | All visitor data is exclusively processed on EU-owned cloud infrastructure. I keep your site data on a secure, encrypted and server in Germany. This ensures that your site data is protected by the strict European Union data privacy laws and ensures compliance with GDPR. Your website data never leaves the EU. | You have full control and can host your CodePushGo on any server in any country that you wish. Host it on a server in your basement or host it with any cloud provider wherever you want, even those that are not GDPR compliant. |
+| **Raw data** | You see all your site stats and metrics on my modern-looking, simple to use and fast loading dashboard. You can only see the stats aggregated in the dashboard. | Are you an analyst and want access to the raw data? Hosting CodePushGo yourself gives you that option. Take the data directly from the database and import it to a data analysis tool of your choice. |
 | **Costs** | There’s a cost associated with providing an updater service, so I charge a subscription fee. | You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to me, only to your cloud provider. |
-| **Premium Support** | Real support delivered by real human beings who build and maintain Capgo. | Premium support is not included. Self-hosted release is community supported only. |
+| **Premium Support** | Real support delivered by real human beings who build and maintain CodePushGo. | Premium support is not included. Self-hosted release is community supported only. |
 | **Releases** | Continuously developed and improved with new features and updates multiple times per week. | It’s a long term release published twice per year, so the latest features won’t be immediately available as they’re battled-tested in the cloud first. |
 
-# How to self-host Capgo
+# How to self-host CodePushGo
 
-We mainly use Supabase in Capgo, to self host you just need to follow the [Supabase self-hosting documentation](https://supabase.com/docs/guides/self-hosting/docker).
+We mainly use Supabase in CodePushGo, to self host you just need to follow the [Supabase self-hosting documentation](https://supabase.com/docs/guides/self-hosting/docker).
 
 # Using the CLI with self-hosted capgo
 To use the CLI with self-hosted capgo edit the capacitor.config.ts from your app directory and set it like this:
@@ -117,7 +117,7 @@ This will enable you to use local capgo in development. However, by default, thi
 
 # Conclusion
 
-In conclusion, self-hosting Capgo can be a good option for organizations that have the resources and expertise to do so. It offers a number of benefits, including control over the update process, security, and compliance. However, it is important to carefully weigh the benefits and challenges before deciding whether to self-host.
+In conclusion, self-hosting CodePushGo can be a good option for organizations that have the resources and expertise to do so. It offers a number of benefits, including control over the update process, security, and compliance. However, it is important to carefully weigh the benefits and challenges before deciding whether to self-host.
 
-If you are considering self-hosting Capgo, I recommend that you start by reading the Capgo [self-hosting documentation](https://capgo.app/docs/self-hosted/getting-started/). This will give you a good understanding of the requirements and risks of self-hosting. 
+If you are considering self-hosting CodePushGo, I recommend that you start by reading the CodePushGo [self-hosting documentation](https://capgo.app/docs/self-hosted/getting-started/). This will give you a good understanding of the requirements and risks of self-hosting. 
 

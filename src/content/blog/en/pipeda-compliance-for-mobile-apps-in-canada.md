@@ -127,7 +127,7 @@ Building on the risk assessment and privacy policy, focus on integrating privacy
 -   Schedule regular security audits.
 -   Monitor the success of updates to ensure smooth implementation.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 **Error Prevention**
 
@@ -193,13 +193,13 @@ Proper data storage and removal processes are key to staying compliant.
 -   Archive inactive data securely.
 -   Destroy data beyond the retention period in a secure and documented way.
 
-## [Capgo](https://capgo.app/)'s PIPEDA-Ready Updates
+## [CodePushGo](https://capgo.app/)'s PIPEDA-Ready Updates
 
-![Capgo](https://assets.seobotai.com/capgo.app/67eb5b27283d21cbd67d62bd/574f3a2cd27791454624262312a6c223.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67eb5b27283d21cbd67d62bd/574f3a2cd27791454624262312a6c223.jpg)
 
 ### Secure Update Features
 
-Capgo uses a fully encrypted update management system designed to align with PIPEDA requirements. Its security features include:
+CodePushGo uses a fully encrypted update management system designed to align with PIPEDA requirements. Its security features include:
 
 -   End-to-end encrypted update deployment
 -   Version control with detailed audit trails
@@ -212,13 +212,13 @@ This setup ensures updates are delivered quickly while maintaining compliance wi
 
 ### Quick App Updates
 
-Capgo combines strong security with fast update delivery to meet regulatory needs. Impressively, 95% of active users receive updates within 24 hours. To date, 23.5 million updates have been rolled out across 750 production apps [\[1\]](https://capgo.app/).
+CodePushGo combines strong security with fast update delivery to meet regulatory needs. Impressively, 95% of active users receive updates within 24 hours. To date, 23.5 million updates have been rolled out across 750 production apps [\[1\]](https://capgo.app/).
 
 The platform also provides real-time monitoring, instant deployment of security patches, and flexible hosting options to address data sovereignty concerns.
 
 ### Open-Source Benefits
 
-Capgo is entirely open source, allowing teams to avoid vendor lock-in and verify the platform's compliance capabilities [\[1\]](https://capgo.app/).
+CodePushGo is entirely open source, allowing teams to avoid vendor lock-in and verify the platform's compliance capabilities [\[1\]](https://capgo.app/).
 
 With this transparency, teams can:
 
@@ -227,7 +227,7 @@ With this transparency, teams can:
 -   Self-host for complete control over data
 -   Maintain comprehensive audit trails
 
-Capgo's channel system further supports controlled rollouts, enabling teams to test updates for compliance before full-scale deployment. This ensures every update adheres to PIPEDA standards.
+CodePushGo's channel system further supports controlled rollouts, enabling teams to test updates for compliance before full-scale deployment. This ensures every update adheres to PIPEDA standards.
 
 ## Long-term PIPEDA Compliance
 
@@ -278,10 +278,10 @@ Following PIPEDA guidelines for mobile apps builds trust and encourages user eng
 -   **Legal Safeguards**: Staying within PIPEDA regulations reduces the risk of privacy-related legal issues and fines.
 -   **Market Edge**: A focus on privacy helps boost a company's reputation in a marketplace where data protection matters.
 
-These benefits are evident in user feedback. Capgo's contributions highlight the value of compliance:
+These benefits are evident in user feedback. CodePushGo's contributions highlight the value of compliance:
 
-> "The community needed this and @Capgo is doing something really important!" [\[1\]](https://capgo.app/)
+> "The community needed this and @CodePushGo is doing something really important!" [\[1\]](https://capgo.app/)
 
-> "@Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." \[2\]
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." \[2\]
 
 Meeting PIPEDA standards not only builds trust but also ensures long-term success in a market where privacy is a priority.

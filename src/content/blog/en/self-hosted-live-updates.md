@@ -3,7 +3,7 @@ slug: self-hosted-live-updates
 title: Self-hosted Live Updates
 description: >-
   I'm excited to announce Self-hosted Live Updates, the next iteration of
-  Capgo’s Live Updates!
+  CodePushGo’s Live Updates!
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
@@ -18,7 +18,7 @@ locale: en
 next_blog: ''
 ---
 
-I am delighted to announce the release of Self-hosted Live Updates, which represents the latest evolution of Capgo's Live Updates.
+I am delighted to announce the release of Self-hosted Live Updates, which represents the latest evolution of CodePushGo's Live Updates.
 
 While many enterprises currently utilize the Live Updates SDK to access the most recent JavaScript, HTML, and CSS updates for their applications, some may encounter hindrances due to corporate policies, industry regulations, or geographical restrictions. With Self-hosted Live Updates, you can now distribute web build artifacts via your infrastructure.
 
@@ -26,17 +26,17 @@ This means you can avoid delays caused by Apple Store reviews, address bugs and 
 
 ## How do self-hosted live updates work?
 
-Deploying Capgo-hosted Live Updates is a breeze using the [Capgo SDK](https://github.com/Cap-go/capacitor-updater/). As for Self-hosted Live Updates, I have enhanced the Capgo CLI with the necessary functionalities to enable configuration on your infrastructure.
+Deploying CodePushGo-hosted Live Updates is a breeze using the [CodePushGo SDK](https://github.com/Cap-go/capacitor-updater/). As for Self-hosted Live Updates, I have enhanced the CodePushGo CLI with the necessary functionalities to enable configuration on your infrastructure.
 
-To ensure a safe and coordinated delivery of the latest web build artifacts to end-users, Capgo now allows the Capacitor Live Updates plugin to employ a public/private key pairing. When using Self-hosted Live Updates, an additional handshake is performed to provide reassurance that the artifacts downloaded via the plugin from the enterprise's infrastructure are unmodified.
+To ensure a safe and coordinated delivery of the latest web build artifacts to end-users, CodePushGo now allows the Capacitor Live Updates plugin to employ a public/private key pairing. When using Self-hosted Live Updates, an additional handshake is performed to provide reassurance that the artifacts downloaded via the plugin from the enterprise's infrastructure are unmodified.
 
-![Capgo encryption schema](/encryption_flow.webp)
+![CodePushGo encryption schema](/encryption_flow.webp)
 
 The following outlines the steps to establish the key pairing and the subsequent process for delivering the updated experience to end-users.
 
 ### One-time key pair setup
 
-To generate a public/private key pair, enterprises can utilize the following Capgo Cloud CLI command:
+To generate a public/private key pair, enterprises can utilize the following CodePushGo Cloud CLI command:
 
 ```shell
 npx @capgo/cli@latest key create
@@ -71,15 +71,15 @@ This command will print you an ivSessionKey, you need to save it for the next st
 
 Now upload your encrypted zip to your enterprise storage and get the URL of the zip file.
 
-Capgo must then be informed of a new Live Update that is ready for consumption. This is done via another CLI command:
+CodePushGo must then be informed of a new Live Update that is ready for consumption. This is done via another CLI command:
 
 ```shell
 npx @capgo/cli@latest bundle upload --external=https://abc.com/app/updates/abc123.zip --iv-session-key=YourKey
 ```
 
-Once the command is run, Capgo is aware of a new update ready to be distributed to the app’s users. Now, when the app is started, the Live Updates plugin checks with Capgo to see if any changes need to be brought down.
+Once the command is run, CodePushGo is aware of a new update ready to be distributed to the app’s users. Now, when the app is started, the Live Updates plugin checks with CodePushGo to see if any changes need to be brought down.
 
-Capgo responds back to the plugin with “Yes, an update is available” and the Live Updates plugin downloads the new live update using the URL location provided from the \`register\` CLI command:
+CodePushGo responds back to the plugin with “Yes, an update is available” and the Live Updates plugin downloads the new live update using the URL location provided from the \`register\` CLI command:
 
 ```shell
 https://abc.com/app/updates/abc123.zip
@@ -89,6 +89,6 @@ The organization’s API returns the Live Update bundle from the location, and t
 
 ## Get started
 
-I am thrilled to extend the reach of Live Updates to even more enterprises than before. Both organizations and Ionic app users will quickly recognize the advantages of Capgo's secure distribution of over-the-air app updates.
+I am thrilled to extend the reach of Live Updates to even more enterprises than before. Both organizations and Ionic app users will quickly recognize the advantages of CodePushGo's secure distribution of over-the-air app updates.
 
-For more information on Self-hosted Live Updates by Capgo, you can [check out the docs](/docs/cli/commands/#upload-version). Ready to deploy instant app updates directly to your users? [Register here today!](/register/)
+For more information on Self-hosted Live Updates by CodePushGo, you can [check out the docs](/docs/cli/commands/#upload-version). Ready to deploy instant app updates directly to your users? [Register here today!](/register/)

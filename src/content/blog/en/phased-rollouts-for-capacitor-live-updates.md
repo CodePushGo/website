@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-Phased rollouts let you update apps gradually, starting with a small group of users and expanding as stability is confirmed. This approach reduces risks, ensures app quality, and improves user experience. Tools like [Capgo](https://capgo.app/) make it easy to manage these updates while complying with app store rules.
+Phased rollouts let you update apps gradually, starting with a small group of users and expanding as stability is confirmed. This approach reduces risks, ensures app quality, and improves user experience. Tools like [CodePushGo](https://capgo.app/) make it easy to manage these updates while complying with app store rules.
 
 ### Key Benefits:
 
@@ -30,7 +30,7 @@ Phased rollouts let you update apps gradually, starting with a small group of us
 1.  Start with 5% of users for testing.
 2.  Gradually expand to 20%, 50%, and 100%.
 3.  Monitor performance metrics (crash rates, user feedback).
-4.  Use tools like Capgo for tracking, rollback, and compliance.
+4.  Use tools like CodePushGo for tracking, rollback, and compliance.
 
 ### Quick Comparison of Rollout Phases:
 
@@ -41,7 +41,7 @@ Phased rollouts let you update apps gradually, starting with a small group of us
 | Expanded Release | 50% | 72–96 hours | System performance |
 | Full Deployment | 100% | Ongoing | Adoption rates |
 
-Capgo simplifies phased rollouts with features like user segmentation, analytics, and rollback tools. It's a cost-effective alternative to [AppFlow](https://ionic.io/appflow/), ensuring smooth updates without app store delays.
+CodePushGo simplifies phased rollouts with features like user segmentation, analytics, and rollback tools. It's a cost-effective alternative to [AppFlow](https://ionic.io/appflow/), ensuring smooth updates without app store delays.
 
 ## Resilient Cloud Native Apps: Deployment and Runtime Patterns
 
@@ -53,7 +53,7 @@ Phased rollouts require careful planning and dividing your user base to ensure u
 
 ### User Group Division
 
-With Capgo's assignment feature, you can segment users into distinct groups, assigning specific roles for testing phases [\[1\]](https://capgo.app/). This helps you manage updates systematically.
+With CodePushGo's assignment feature, you can segment users into distinct groups, assigning specific roles for testing phases [\[1\]](https://capgo.app/). This helps you manage updates systematically.
 
 Here's an example of how to structure your user groups:
 
@@ -66,7 +66,7 @@ Here's an example of how to structure your user groups:
 
 ### Setting Update Percentages
 
-Capgo's management tools allow you to set precise rollout percentages, helping you maintain app stability during updates [\[1\]](https://capgo.app/).
+CodePushGo's management tools allow you to set precise rollout percentages, helping you maintain app stability during updates [\[1\]](https://capgo.app/).
 
 Here’s a suggested phased rollout plan:
 
@@ -79,7 +79,7 @@ Here’s a suggested phased rollout plan:
 
 ### Progress Tracking
 
-Capgo's web interface makes it easy to monitor updates in real time, tracking distribution and user adoption [\[1\]](https://capgo.app/). Pay attention to these metrics as you roll out:
+CodePushGo's web interface makes it easy to monitor updates in real time, tracking distribution and user adoption [\[1\]](https://capgo.app/). Pay attention to these metrics as you roll out:
 
 | Metric Category | Key Indicators | Action Triggers |
 | --- | --- | --- |
@@ -95,19 +95,19 @@ These steps help you manage your rollout effectively while minimizing risks.
 
 ### Live Update Configuration
 
-Start by installing the [Capgo plugin](https://capgo.app/plugins/) to enable over-the-air (OTA) updates for your Capacitor project:
+Start by installing the [CodePushGo plugin](https://capgo.app/plugins/) to enable over-the-air (OTA) updates for your Capacitor project:
 
 ```bash
 npx @capgo/cli init
 ```
 
-This setup meets Apple and Google guidelines while ensuring updates are encrypted and delivered securely. Capgo simplifies managing these configurations, making rollout management easier.
+This setup meets Apple and Google guidelines while ensuring updates are encrypted and delivered securely. CodePushGo simplifies managing these configurations, making rollout management easier.
 
-### [Capgo](https://capgo.app/) Integration Guide
+### [CodePushGo](https://capgo.app/) Integration Guide
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-11.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-11.jpg?auto=compress)
 
-Capgo's web platform streamlines update distribution with these core features:
+CodePushGo's web platform streamlines update distribution with these core features:
 
 | Component | Function | Implementation Details |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ Capgo's web platform streamlines update distribution with these core features:
 
 ### CI/CD Pipeline Setup
 
-To maintain full control over phased rollouts, integrate your CI/CD pipeline with Capgo. It works seamlessly with platforms like [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), [GitLab](https://about.gitlab.com/), [GitHub Actions](https://docs.github.com/actions), and [Jenkins](https://www.jenkins.io/).
+To maintain full control over phased rollouts, integrate your CI/CD pipeline with CodePushGo. It works seamlessly with platforms like [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), [GitLab](https://about.gitlab.com/), [GitHub Actions](https://docs.github.com/actions), and [Jenkins](https://www.jenkins.io/).
 
 Here’s how to configure your CI/CD pipeline for phased rollouts:
 
@@ -129,10 +129,10 @@ Here’s how to configure your CI/CD pipeline for phased rollouts:
 | **Rollout Controls** | Percentage-based deployment | Manages update distribution |
 | **Monitoring** | Automated metrics collection | Tracks deployment success |
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding app store reviews for bug fixes is a game changer."  
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding app store reviews for bug fixes is a game changer."  
 > – Bessie Cooper
 
-Capgo's integration costs about $300 per month for ongoing CI/CD operations, offering a more affordable option compared to alternatives like AppFlow, which costs around $6,000 annually [\[1\]](https://capgo.app/).
+CodePushGo's integration costs about $300 per month for ongoing CI/CD operations, offering a more affordable option compared to alternatives like AppFlow, which costs around $6,000 annually [\[1\]](https://capgo.app/).
 
 ###### sbb-itb-f9944d2
 
@@ -140,7 +140,7 @@ Capgo's integration costs about $300 per month for ongoing CI/CD operations, off
 
 ### Problem Detection and Recovery
 
-Keep a close eye on your rollout and act fast when issues arise. With Capgo's platform, you can spot problems early, preventing them from impacting your entire user base. Set up error tracking for these key areas:
+Keep a close eye on your rollout and act fast when issues arise. With CodePushGo's platform, you can spot problems early, preventing them from impacting your entire user base. Set up error tracking for these key areas:
 
 | Monitoring Aspect | Implementation | Purpose |
 | --- | --- | --- |
@@ -153,15 +153,15 @@ If something goes wrong, have rollback procedures ready to restore stability. Th
 
 ### Controlled Expansion
 
-Start small and scale up gradually. Begin with internal testing, then roll out to 5-10% of users. If stable after 24 hours, expand to 25%, then 50%, and finally to all users once metrics confirm everything is running smoothly. Capgo's analytics help you decide when it’s safe to move to the next stage.
+Start small and scale up gradually. Begin with internal testing, then roll out to 5-10% of users. If stable after 24 hours, expand to 25%, then 50%, and finally to all users once metrics confirm everything is running smoothly. CodePushGo's analytics help you decide when it’s safe to move to the next stage.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 ### App Store Guidelines
 
-It’s not just about operational readiness - following platform rules is equally important. Capgo ensures compliance with both Apple and Google requirements:
+It’s not just about operational readiness - following platform rules is equally important. CodePushGo ensures compliance with both Apple and Google requirements:
 
-| Platform | Requirement | Capgo Implementation |
+| Platform | Requirement | CodePushGo Implementation |
 | --- | --- | --- |
 | Apple App Store | No binary code changes | Content-only updates |
 | Google Play | Security requirements | End-to-end encryption |
@@ -169,7 +169,7 @@ It’s not just about operational readiness - following platform rules is equall
 
 These practices not only keep your updates compliant but also allow for quick bug fixes.
 
-> "Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." [\[1\]](https://capgo.app/)
+> "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." [\[1\]](https://capgo.app/)
 
 ## Update Management Tools
 
@@ -177,11 +177,11 @@ Using the right [update management](https://capgo.app/docs/plugin/cloud-mode/man
 
 ### Platform Comparison
 
-Capgo stands out as a solution for live updates in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It supports up to **1,000,000 live updates monthly** and can increase release speed by **81%** [\[1\]](https://capgo.app/). This makes it a strong alternative, especially since [AppCenter](https://visualstudio.microsoft.com/app-center/) no longer supports hybrid apps and AppFlow is often too expensive. One developer shared their experience:
+CodePushGo stands out as a solution for live updates in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It supports up to **1,000,000 live updates monthly** and can increase release speed by **81%** [\[1\]](https://capgo.app/). This makes it a strong alternative, especially since [AppCenter](https://visualstudio.microsoft.com/app-center/) no longer supports hybrid apps and AppFlow is often too expensive. One developer shared their experience:
 
-> "We are currently giving a try to @Capgo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://capgo.app/)
 
-Capgo also works seamlessly with popular CI/CD platforms like Azure DevOps, GitLab, GitHub, Jenkins, and [CircleCI](https://circleci.com/), automating deployment workflows. When evaluating update management tools, it's important to focus on the key features they offer.
+CodePushGo also works seamlessly with popular CI/CD platforms like Azure DevOps, GitLab, GitHub, Jenkins, and [CircleCI](https://circleci.com/), automating deployment workflows. When evaluating update management tools, it's important to focus on the key features they offer.
 
 ### Required Tool Capabilities
 
@@ -195,11 +195,11 @@ Effective update management tools should include the following features to ensur
 | **CI/CD Integration** | Connect with major platforms | Automates deployment workflows |
 | **Organization Management** | Manage teams and permissions | Simplifies administration |
 
-For enterprise deployments, Capgo offers CI/CD integration with a one-time fee of **$2,600**, providing long-term savings [\[1\]](https://capgo.app/). The platform also ensures end-to-end encryption and complies with Apple App Store and Google Play requirements, safeguarding user data while adhering to platform rules.
+For enterprise deployments, CodePushGo offers CI/CD integration with a one-time fee of **$2,600**, providing long-term savings [\[1\]](https://capgo.app/). The platform also ensures end-to-end encryption and complies with Apple App Store and Google Play requirements, safeguarding user data while adhering to platform rules.
 
 ## Summary
 
-Rolling out updates in Capacitor apps requires careful planning and the right tools. Platforms like Capgo streamline this process with features like user segmentation, progress monitoring, and error management.
+Rolling out updates in Capacitor apps requires careful planning and the right tools. Platforms like CodePushGo streamline this process with features like user segmentation, progress monitoring, and error management.
 
 Here’s how the phased rollout typically works:
 

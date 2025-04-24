@@ -21,8 +21,8 @@ This tutorial focuses on the GitHub hosting, but you can adapt it with little tw
 
 ## Preface 
 
-Be sure you have added your Capacitor app first to Capgo, this tutorial just focuses on the upload phase.
-If you need to add your app to Capgo, you can follow this [Tutorial](/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/)
+Be sure you have added your Capacitor app first to CodePushGo, this tutorial just focuses on the upload phase.
+If you need to add your app to CodePushGo, you can follow this [Tutorial](/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/)
 
 ## Commit convention
 
@@ -95,7 +95,7 @@ Create a file at this path: `.github/workflows/build.yml`
 with this content:
 
 ```yml
-name: Build source code and send to Capgo
+name: Build source code and send to CodePushGo
 
 on:
   push:
@@ -122,11 +122,11 @@ jobs:
         run: npx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} -c production
 ```
 
-This will install and build your dependency before sending it to Capgo.
+This will install and build your dependency before sending it to CodePushGo.
 
 If your command for build is different, you can change it in the `build_code` step.
 
-To make this work, you need to get your API key for Capgo, add it in the [secret of your GitHub repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets/) as `CAPGO_TOKEN`.
+To make this work, you need to get your API key for CodePushGo, add it in the [secret of your GitHub repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets/) as `CAPGO_TOKEN`.
 
 You can now commit this both files and see your first tag appear in GitHub!
 
@@ -134,7 +134,7 @@ Add the commit will generate a new build for the production channel.
 
 You should add your test in the build step to ensure your code is working.
 
-Go To your Capgo dashboard and check your build who just appeared, you now have your CI/CD system.
+Go To your CodePushGo dashboard and check your build who just appeared, you now have your CI/CD system.
 
 If you want to let all of your users get the update whenever it's available, go to your channel and set it to `public`.
 

@@ -81,7 +81,7 @@ With direct OTA updates, developers can push changes to JavaScript, HTML, and CS
 | **Seamless for Users** | Updates happen in the background without requiring user action. |
 | **More Control** | Lets developers test features with specific user groups. |
 
-These benefits make OTA updates an attractive option for teams focused on speed and adaptability. Tools like Capgo add extra layers of security with encryption and integrate with CI/CD pipelines for smooth, secure updates.
+These benefits make OTA updates an attractive option for teams focused on speed and adaptability. Tools like CodePushGo add extra layers of security with encryption and integrate with CI/CD pipelines for smooth, secure updates.
 
 ### Staying Compliant and Managing Risks
 
@@ -94,7 +94,7 @@ When using OTA updates, it’s essential to follow platform-specific guidelines:
 -   **Platform Policies**: Updates must use secure delivery mechanisms to comply with platform rules.
     
 
-Platforms such as Capgo include features like version control and rollback options, ensuring updates are both safe and compliant. These safeguards help developers avoid risks while taking advantage of the flexibility OTA updates provide.
+Platforms such as CodePushGo include features like version control and rollback options, ensuring updates are both safe and compliant. These safeguards help developers avoid risks while taking advantage of the flexibility OTA updates provide.
 
 That said, developers should carefully weigh the speed and convenience of OTA updates against the thoroughness and structure of app store updates to decide what works best for their app.
 
@@ -132,7 +132,7 @@ The table below breaks down the key differences between these two update methods
 | **Security Management** | Managed by the platform | Developer takes responsibility |
 | **Deployment Scope** | Global rollouts | Targeted distributions |
 
-Capgo provides secure OTA updates with encryption and management tools designed for developers. For those handling enterprise apps, tools like Capgo offer:
+CodePushGo provides secure OTA updates with encryption and management tools designed for developers. For those handling enterprise apps, tools like CodePushGo offer:
 
 -   Version control with rollback options
     
@@ -151,13 +151,13 @@ Choosing the right update method depends entirely on your needs. As highlighted 
 
 For developers considering direct OTA updates, weaving these updates into CI/CD workflows can help you take full advantage of their speed and flexibility.
 
-### Using Tools Like [Capgo](https://capgo.app/)
+### Using Tools Like [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5.jpg?auto=compress)
 
-Delivering updates quickly and efficiently is a must for modern development teams. Tools like **Capgo** simplify this by offering features like version control, analytics, and staged rollouts. These capabilities make it easier to manage OTA updates, especially for enterprise teams that deal with large-scale deployments. User targeting and flexible deployment options further enhance the process.
+Delivering updates quickly and efficiently is a must for modern development teams. Tools like **CodePushGo** simplify this by offering features like version control, analytics, and staged rollouts. These capabilities make it easier to manage OTA updates, especially for enterprise teams that deal with large-scale deployments. User targeting and flexible deployment options further enhance the process.
 
-By incorporating tools like Capgo, you can fine-tune your CI/CD pipeline to deliver OTA updates efficiently and reliably.
+By incorporating tools like CodePushGo, you can fine-tune your CI/CD pipeline to deliver OTA updates efficiently and reliably.
 
 ### CI/CD Integration Tips
 
@@ -189,7 +189,7 @@ On the other hand, direct OTA updates through tools like Capacitor work well for
 
 A great example is [Blackmagic Design](https://www.blackmagicdesign.com/)'s Resolve, which bypasses the App Store for direct downloads. This choice allows the app to deliver advanced features that might not fit within the App Store's restrictions [\[2\]](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=117780). It shows how specific industry needs - like supporting specialized functionality - can shape your update strategy.
 
-For industries like finance or healthcare, where regulations are strict, OTA updates through platforms like Capgo can be a game-changer. They let you quickly adapt to regulatory changes while staying compliant. This is especially useful for enterprise apps where speed and control over updates are crucial.
+For industries like finance or healthcare, where regulations are strict, OTA updates through platforms like CodePushGo can be a game-changer. They let you quickly adapt to regulatory changes while staying compliant. This is especially useful for enterprise apps where speed and control over updates are crucial.
 
 When deciding on your approach, think about these factors:
 

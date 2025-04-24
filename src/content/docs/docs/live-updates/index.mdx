@@ -8,7 +8,7 @@ next: false
 
 import { Steps, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 
-Use Capgo's Live Updates feature to update the JavaScript bundles of your app remotely, in real-time. Push JS updates directly to your users without going through the app store review process to instantly fix bugs and ship new features.
+Use CodePushGo's Live Updates feature to update the JavaScript bundles of your app remotely, in real-time. Push JS updates directly to your users without going through the app store review process to instantly fix bugs and ship new features.
 
 <Aside>
 
@@ -18,13 +18,13 @@ Live Updates are limited to JavaScript bundle changes. If you need to update nat
 
 ## How Live Updates Work
 
-Capgo's Live Update system has two key components:
+CodePushGo's Live Update system has two key components:
 
-1. The Capgo SDK, which you install in your app. The SDK checks for available updates and downloads them in the background.
+1. The CodePushGo SDK, which you install in your app. The SDK checks for available updates and downloads them in the background.
 
 2. Channels, which let you target updates to specific groups of users. You can use channels to manage different release tracks, such as `Production`, `Staging`, and `Dev`.
 
-When you upload a new JS bundle to Capgo and assign it to a channel, the Capgo SDK in apps configured for that channel will detect the update and download it. The next time the app restarts, the new bundle will be loaded.
+When you upload a new JS bundle to CodePushGo and assign it to a channel, the CodePushGo SDK in apps configured for that channel will detect the update and download it. The next time the app restarts, the new bundle will be loaded.
 
 ## Getting Started
 
@@ -32,11 +32,11 @@ To start using Live Updates, follow these steps:
 
 <Steps>
 
-1. Complete the [Capgo Quickstart](/docs/getting-started/quickstart) to set up your app in Capgo and install the Capgo SDK.
+1. Complete the [CodePushGo Quickstart](/docs/getting-started/quickstart) to set up your app in CodePushGo and install the CodePushGo SDK.
 
-2. In your app code, call `CapacitorUpdater.notifyAppReady()` after your app has finished initializing. This tells the Capgo SDK that your app is ready to receive updates.
+2. In your app code, call `CapacitorUpdater.notifyAppReady()` after your app has finished initializing. This tells the CodePushGo SDK that your app is ready to receive updates.
 
-3. Build your JS bundle and upload it to Capgo:
+3. Build your JS bundle and upload it to CodePushGo:
    ```shell
    npm run build
    npx @capgo/cli@latest bundle upload --channel=Production 

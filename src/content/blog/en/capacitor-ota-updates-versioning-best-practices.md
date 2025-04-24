@@ -26,7 +26,7 @@ Here’s what you’ll learn in this guide:
     
 -   **Common pitfalls to avoid:** Mismatched builds, failed configurations, and update traceability issues.
     
--   **Best tools for the job:** Tools like `capacitor-sync-version-cli` and [Capgo](https://capgo.app/) simplify versioning and deployment.
+-   **Best tools for the job:** Tools like `capacitor-sync-version-cli` and [CodePushGo](https://capgo.app/) simplify versioning and deployment.
     
 -   **Update strategies:** Choose between partial and complete updates, phased rollouts, and optional vs. required updates.
     
@@ -193,11 +193,11 @@ The UNECE has approved UN Regulations (UN R155/R156), which provide a framework 
 
 Choosing the right OTA update software is more than a security measure - it's key to ensuring smooth deployment, effective version control, and streamlined release cycles for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). The right tools make managing updates simpler and more efficient.
 
-### [Capgo: OTA Update Platform](https://capgo.app)
+### [CodePushGo: OTA Update Platform](https://capgo.app)
 
-![Capgo: OTA Update Platform](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-26.jpg?auto=compress)
+![CodePushGo: OTA Update Platform](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-26.jpg?auto=compress)
 
-Capgo has delivered **482.9 million updates** across **1,800 apps**, improving release efficiency by an impressive **81%** [\[1\]](https://capgo.app/). Here's what makes it stand out:
+CodePushGo has delivered **482.9 million updates** across **1,800 apps**, improving release efficiency by an impressive **81%** [\[1\]](https://capgo.app/). Here's what makes it stand out:
 
 -   **Security**: Features like end-to-end encryption and code-signing verification ensure updates are secure.
     
@@ -210,13 +210,13 @@ Capgo has delivered **482.9 million updates** across **1,800 apps**, improving r
 
 A great example? [Colenso](https://www.colensobbdo.co.nz/) successfully reached nearly all of its **5,000+ user base** in just minutes [\[1\]](https://capgo.app/). As Rodrigo Mantica shared:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 ### Alternative Update Tools
 
-While Capgo offers a robust solution, other tools bring different approaches to version management. Here's a quick comparison:
+While CodePushGo offers a robust solution, other tools bring different approaches to version management. Here's a quick comparison:
 
-| Tool Aspect | Capgo | Appflow |
+| Tool Aspect | CodePushGo | Appflow |
 | --- | --- | --- |
 | **Cost Structure** | ~$300/month for CI/CD costs | $6,000 annual subscription |
 | **Update Strategies** | Instant deployment, user assignment | Background, Always Latest, Force Update |
@@ -224,7 +224,7 @@ While Capgo offers a robust solution, other tools bring different approaches to 
 
 One user shared their experience:
 
-> "We are currently giving a try to @Capgo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://capgo.app/)
 
 ### Key Features to Look For
 

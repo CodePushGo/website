@@ -21,11 +21,11 @@ next_blog: ''
 -   **Core Tools:** Use SHA-256 digital signatures, runtime checks, and encryption (AES-256) to protect code.
 -   **Platform-Specific Features:** For Android, integrate the [Play Integrity API](https://developer.android.com/google/play/integrity) for app verification and device attestation. For iOS, follow App Store Guideline 3.1.2 for OTA updates.
 -   **OTA Update Security:** Implement end-to-end encryption, checksum validation, and compliance tracking to [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
--   **Recommended Tools:** Tools like [Capgo](https://capgo.app/) simplify secure OTA updates with encryption, version control, and compliance monitoring.
+-   **Recommended Tools:** Tools like [CodePushGo](https://capgo.app/) simplify secure OTA updates with encryption, version control, and compliance monitoring.
 
 ### Quick Comparison of Key Tools and Features
 
-| **Feature** | **Play Integrity API** | **Capgo** | **Other Tools** |
+| **Feature** | **Play Integrity API** | **CodePushGo** | **Other Tools** |
 | --- | --- | --- | --- |
 | Device Attestation | Yes | No  | Limited |
 | End-to-End Encryption | No  | Yes | Basic encryption |
@@ -112,11 +112,11 @@ Integrating these tracking methods with CI/CD pipelines strengthens both securit
 
 Capacitor's native security features serve as a strong foundation, but specialized tools can further enhance protection during update workflows.
 
-### [Capgo](https://capgo.app): Secure OTA Updates
+### [CodePushGo](https://capgo.app): Secure OTA Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-09.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-09.jpg?auto=compress)
 
-Capgo is designed specifically for managing secure over-the-air (OTA) updates in Capacitor applications. It ensures code integrity with features like:
+CodePushGo is designed specifically for managing secure over-the-air (OTA) updates in Capacitor applications. It ensures code integrity with features like:
 
 | **Security Feature** | **How It Works** | **Performance Impact** |
 | --- | --- | --- |
@@ -125,13 +125,13 @@ Capgo is designed specifically for managing secure over-the-air (OTA) updates in
 | **Version Control** | Uses cryptographic signatures | Enables real-time validation |
 | **Compliance Checks** | Verifies app store requirements | Offers continuous monitoring |
 
-Capgo also integrates seamlessly with CI/CD pipelines, automating verification during deployments. Its compliance checks directly address iOS 3.1.2 and Android Play Integrity rules, ensuring adherence to platform guidelines.
+CodePushGo also integrates seamlessly with CI/CD pipelines, automating verification during deployments. Its compliance checks directly address iOS 3.1.2 and Android Play Integrity rules, ensuring adherence to platform guidelines.
 
 ### Tool Comparison
 
 When choosing a code integrity tool for Capacitor apps, it's crucial to weigh their features and ease of implementation:
 
-| **Feature** | **Capgo** | **Other Tools** |
+| **Feature** | **CodePushGo** | **Other Tools** |
 | --- | --- | --- |
 | **Update Protection** | End-to-end encryption | Basic encryption |
 | **Runtime Security** | Optional add-ons available | Limited options |
@@ -141,9 +141,9 @@ When choosing a code integrity tool for Capacitor apps, it's crucial to weigh th
 
 Experts recommend using multiple tools to create a layered approach tailored to your specific security needs.
 
-> "The combination of Play Integrity for device attestation and specialized update validation through tools like Capgo creates a robust security framework."
+> "The combination of Play Integrity for device attestation and specialized update validation through tools like CodePushGo creates a robust security framework."
 
-When selecting a tool, consider the trade-offs between security features and operational demands. Open-source options like Capgo offer transparency and customization but require managing your own infrastructure. On the other hand, commercial solutions might simplify management but lack advanced features like update encryption.
+When selecting a tool, consider the trade-offs between security features and operational demands. Open-source options like CodePushGo offer transparency and customization but require managing your own infrastructure. On the other hand, commercial solutions might simplify management but lack advanced features like update encryption.
 
 ## Code Integrity Guidelines
 

@@ -24,7 +24,7 @@ API rate limiting ensures your app meets Apple and Google guidelines while prote
     -   Sliding Window: Smooths traffic but uses more memory.
     -   Token Bucket: Handles bursts but is complex to set up.
 -   **Compliance**: Use exponential backoff for retries and respond with a 429 status code when limits are exceeded.
--   **Tools**: Platforms like [Capgo](https://capgo.app/) simplify implementation with analytics, error tracking, and real-time monitoring.
+-   **Tools**: Platforms like [CodePushGo](https://capgo.app/) simplify implementation with analytics, error tracking, and real-time monitoring.
 
 **Quick Tip**: Test your limits under normal, burst, and recovery conditions to ensure stability and compliance.
 
@@ -136,28 +136,28 @@ When a client surpasses the rate limit, respond with a **429 status code**. Incl
 
 Regularly revisiting rate limits is essential for maintaining performance and meeting compliance requirements. Monitor factors like peak traffic, error rates, and server load to identify necessary adjustments. Incorporate user feedback to ensure your limits support both operational efficiency and app store guidelines.
 
-## [Capgo](https://capgo.app/)'s Rate Limiting Tools
+## [CodePushGo](https://capgo.app/)'s Rate Limiting Tools
 
-![Capgo](https://assets.seobotai.com/capgo.app/67ecaaaa7747adc4bca8d9b6/454adbba4c00491adce88db59812b177.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67ecaaaa7747adc4bca8d9b6/454adbba4c00491adce88db59812b177.jpg)
 
-Capgo offers integrated tools designed to enforce API rate limits while ensuring high performance and compliance with app store requirements.
+CodePushGo offers integrated tools designed to enforce API rate limits while ensuring high performance and compliance with app store requirements.
 
-### Capgo Compliance Features
+### CodePushGo Compliance Features
 
-Capgo provides a range of tools to help maintain API rate limits and meet app store guidelines. Its update delivery system achieves an impressive 82% update success rate with an average API response time of 434 ms [\[1\]](https://capgo.app/). Here’s what it includes:
+CodePushGo provides a range of tools to help maintain API rate limits and meet app store guidelines. Its update delivery system achieves an impressive 82% update success rate with an average API response time of 434 ms [\[1\]](https://capgo.app/). Here’s what it includes:
 
 -   **Real-Time Analytics**: Keep track of update distribution and API usage.
 -   **Error Tracking**: Quickly identify and fix rate limit issues.
 -   **[Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/)**: Manage update rollouts effectively.
 -   **Encryption**: Protect API communications.
 
-These tools work alongside standard rate limiting practices, offering real-time data and proactive error resolution. Capgo's system has been tested across 750 production apps, delivering 23.5 million updates while maintaining compliance and strong performance [\[1\]](https://capgo.app/).
+These tools work alongside standard rate limiting practices, offering real-time data and proactive error resolution. CodePushGo's system has been tested across 750 production apps, delivering 23.5 million updates while maintaining compliance and strong performance [\[1\]](https://capgo.app/).
 
-### Rate Limiting with Capgo
+### Rate Limiting with CodePushGo
 
-Capgo's rate limiting tools integrate seamlessly into your [Capacitor](https://capacitorjs.com/) workflow. They help achieve a 95% user update rate within 24 hours while keeping API performance stable [\[1\]](https://capgo.app/).
+CodePushGo's rate limiting tools integrate seamlessly into your [Capacitor](https://capacitorjs.com/) workflow. They help achieve a 95% user update rate within 24 hours while keeping API performance stable [\[1\]](https://capgo.app/).
 
-Here’s a breakdown of Capgo’s approach:
+Here’s a breakdown of CodePushGo’s approach:
 
 | Feature | Implementation | Benefit |
 | --- | --- | --- |
@@ -166,7 +166,7 @@ Here’s a breakdown of Capgo’s approach:
 | **Analytics Dashboard** | Real-time monitoring | Measures rate limit performance |
 | **Error Management** | Automatic issue detection | Avoids rate limit violations |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!"
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"
 
 To get started, run: `npx @capgo/cli init`. This command sets up the necessary rate limits, ensuring your app complies with Apple and Google store requirements.
 

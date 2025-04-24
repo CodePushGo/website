@@ -29,7 +29,7 @@ next_blog: ''
 
 -   Stick to **JavaScript and asset updates** only.
     
--   Use tools like [**Capgo**](https://capgo.app/) for encrypted delivery and rollback options.
+-   Use tools like [**CodePushGo**](https://capgo.app/) for encrypted delivery and rollback options.
     
 -   Follow **semantic versioning (**[**SemVer**](https://semver.org/)**)** for tracking and auditing updates.
     
@@ -94,7 +94,7 @@ Common reasons apps get rejected include:
 -   Using unencrypted update packages
     
 
-To avoid these issues, following Capacitor-specific implementation guidelines is crucial. Tools that offer automated compliance checks can make this process much easier. For example, Capgo’s end-to-end encryption feature secures update packages, helping meet the requirements of both app stores [\[7\]](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
+To avoid these issues, following Capacitor-specific implementation guidelines is crucial. Tools that offer automated compliance checks can make this process much easier. For example, CodePushGo’s end-to-end encryption feature secures update packages, helping meet the requirements of both app stores [\[7\]](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
 
 ## OTA Update Guidelines for [Capacitor](https://capacitorjs.com/)
 
@@ -142,19 +142,19 @@ Ensure secure delivery and data integrity with these practices:
 -   **Performance Monitoring:** Track key metrics like adoption rates, download times, and post-update performance [\[11\]](https://www.npmjs.com/package/@appmassive/capacitor-updater). Include automatic error reporting to quickly address issues [\[5\]](https://qwik.dev/docs/guides/capacitor/).
     
 
-These security measures align with Apple's code signing requirements and Google's abuse prevention policies. Tools like Capgo can assist in implementing these protocols [\[9\]](https://classic.yarnpkg.com/en/package/@remnote/capacitor-updater).
+These security measures align with Apple's code signing requirements and Google's abuse prevention policies. Tools like CodePushGo can assist in implementing these protocols [\[9\]](https://classic.yarnpkg.com/en/package/@remnote/capacitor-updater).
 
 ###### sbb-itb-f9944d2
 
-## [Capgo](https://capgo.app/) Update Management System
+## [CodePushGo](https://capgo.app/) Update Management System
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-15.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-15.jpg?auto=compress)
 
-Capgo provides a secure way to deliver and manage [Capacitor OTA updates](https://capgo.app/), ensuring smooth distribution while meeting compliance standards. It also offers advanced tools for enterprise-level [update management](https://capgo.app/it/docs/plugin/cloud-mode/manual-update/).
+CodePushGo provides a secure way to deliver and manage [Capacitor OTA updates](https://capgo.app/), ensuring smooth distribution while meeting compliance standards. It also offers advanced tools for enterprise-level [update management](https://capgo.app/it/docs/plugin/cloud-mode/manual-update/).
 
-### Key Features of Capgo
+### Key Features of CodePushGo
 
-Capgo's update system includes essential features like:
+CodePushGo's update system includes essential features like:
 
 -   **Encrypted update delivery**: Ensures updates meet app store security requirements.
     
@@ -165,18 +165,18 @@ Capgo's update system includes essential features like:
 
 This method ensures updates are seamless and allows developers to monitor performance effectively.
 
-### Tools for Compliance with Capgo
+### Tools for Compliance with CodePushGo
 
-Capgo's tools are designed to meet security and compliance needs:
+CodePushGo's tools are designed to meet security and compliance needs:
 
 -   **Rollout Management**: Developers can release updates to small user groups - starting as low as 1% - to test changes before a broader rollout.
     
 -   **Automatic Safeguards**: Built-in health checks confirm the integrity of updates before installation. If any issues arise, the system automatically rolls back to the last stable version, keeping the app functional and avoiding app store rejections [\[1\]](https://github.com/Cap-go/capacitor-updater).
     
 
-### How to Set Up Capgo
+### How to Set Up CodePushGo
 
-Follow these three simple steps to get started with Capgo:
+Follow these three simple steps to get started with CodePushGo:
 
 1.  **Initial Setup**
     
@@ -196,7 +196,7 @@ Follow these three simple steps to get started with Capgo:
     Update your `capacitor.config.json` file and include the necessary readiness check in your app's main logic [\[9\]](https://classic.yarnpkg.com/en/package/@remnote/capacitor-updater).
     
 
-For enterprise teams, Capgo also supports role-based access controls, ensuring that update authorizations meet strict compliance standards.
+For enterprise teams, CodePushGo also supports role-based access controls, ensuring that update authorizations meet strict compliance standards.
 
 ## App Store Rejection Prevention
 
@@ -204,7 +204,7 @@ To avoid app store rejections, it's crucial to address the most common triggers:
 
 ### Native Code Violations
 
-Native code violations account for 35% of OTA rejections [\[1\]](https://github.com/Cap-go/capacitor-updater). To tackle this, ensure updates rely strictly on **JavaScript, HTML, and CSS** by using automated file checks. Tools like [Capgo's compliance suite](https://capgo.app/consulting/) can help by implementing code signing and integrity checks, reducing rejection rates by up to 80% [\[13\]](https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/writing-a-journal-article/).
+Native code violations account for 35% of OTA rejections [\[1\]](https://github.com/Cap-go/capacitor-updater). To tackle this, ensure updates rely strictly on **JavaScript, HTML, and CSS** by using automated file checks. Tools like [CodePushGo's compliance suite](https://capgo.app/consulting/) can help by implementing code signing and integrity checks, reducing rejection rates by up to 80% [\[13\]](https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/writing-a-journal-article/).
 
 ### Feature Scope Issues
 

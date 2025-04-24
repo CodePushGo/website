@@ -23,7 +23,7 @@ Pipeline security for [Capacitor](https://capacitorjs.com/) apps is essential to
 -   **Update Integrity**: Encrypt OTA updates, verify authenticity with digital signatures, and enable staged rollouts with rollback options.
 -   **Security Tools**: Use automated security testing tools for static code analysis, dependency checks, and API testing.
 
-[Capgo](https://capgo.app/), a leading OTA platform, enhances Capacitor pipeline security with features like real-time monitoring, staged rollouts, and end-to-end encryption. These measures ensure secure app updates while protecting user data.
+[CodePushGo](https://capgo.app/), a leading OTA platform, enhances Capacitor pipeline security with features like real-time monitoring, staged rollouts, and end-to-end encryption. These measures ensure secure app updates while protecting user data.
 
 ## What is CI/CD Security? Strategies to strengthen your ...
 
@@ -111,18 +111,18 @@ To reduce risks, follow these pipeline security guidelines.
 
 New OTA platforms now prioritize security in their Capacitor pipelines. These tools implement the security measures previously discussed.
 
-### [Capgo](https://capgo.app/) Security Features
+### [CodePushGo](https://capgo.app/) Security Features
 
-![Capgo](https://assets.seobotai.com/capgo.app/68059152360079f947b84e10/12eddca90b08193253253ea10516a6c4.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/68059152360079f947b84e10/12eddca90b08193253253ea10516a6c4.jpg)
 
-Capgo provides a security-focused setup specifically designed for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). Its end-to-end encryption ensures that updates can only be decrypted by authorized users, going beyond the usual reliance on signed packages. Key features include:
+CodePushGo provides a security-focused setup specifically designed for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). Its end-to-end encryption ensures that updates can only be decrypted by authorized users, going beyond the usual reliance on signed packages. Key features include:
 
 -   **Real-time monitoring**: Tracks update successes and failures as they happen.
 -   **Granular access control**: Role-based permissions and organization management to restrict pipeline access.
 -   **Automated rollback**: Quickly reverts to a previous version if a security issue arises after deployment.
 -   **Staged rollouts and beta channels**: Targets specific user groups for controlled testing and releases.
 
-Capgo seamlessly integrates with CI/CD tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/), aligning with the access control, secrets management, and update integrity practices outlined earlier.
+CodePushGo seamlessly integrates with CI/CD tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/), aligning with the access control, secrets management, and update integrity practices outlined earlier.
 
 ### Security Platform Comparison
 
@@ -134,7 +134,7 @@ Here’s how modern OTA platforms stack up against older methods:
 -   **Integration**: Native CI/CD integration eliminates the need for manual setups.
 -   **Hosting**: Options for both cloud and self-hosted setups, unlike legacy systems that are often cloud-only.
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" – NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" – NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
 
 ## Industry Outlook
 

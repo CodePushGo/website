@@ -35,7 +35,7 @@ next_blog: ''
 | **Updates** | Immediate (local/hot reload) | Controlled rollouts |
 | **Performance** | Debug tools enabled | Optimized for end users |
 
-Capacitor tools like [Capgo](https://capgo.app/) can streamline both environments with features like live updates, CI/CD integration, and secure deployment practices. By understanding these differences, you can manage app lifecycles effectively and deliver better user experiences.
+Capacitor tools like [CodePushGo](https://capgo.app/) can streamline both environments with features like live updates, CI/CD integration, and secure deployment practices. By understanding these differences, you can manage app lifecycles effectively and deliver better user experiences.
 
 ## Ionic & Capacitor for Building Native Mobile Apps
 
@@ -56,7 +56,7 @@ Development mode focuses on making [testing and debugging](https://capgo.app/doc
 | Hot Reload | Instant code updates | Enable hot reload functionality |
 | Debug Tools | Testing and verification | Integrate developer console access |
 
-To speed up your workflow, use tools designed for developers. For example, the Capgo CLI simplifies the process with a single command: `npx @capgo/cli init` [\[1\]](https://capgo.app/).
+To speed up your workflow, use tools designed for developers. For example, the CodePushGo CLI simplifies the process with a single command: `npx @capgo/cli init` [\[1\]](https://capgo.app/).
 
 Once development mode is set, it's time to configure production mode for a polished, user-ready experience.
 
@@ -71,9 +71,9 @@ Production mode focuses on delivering a secure, high-performance app that provid
 | Build Optimization | Boost performance | Configure production build flags |
 | [Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) | Streamline deployments | Set up CI/CD integration |
 
-For production, automation tools like CI/CD make deployments more efficient. Platforms such as [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), [GitLab](https://about.gitlab.com/solutions/devops-platform/), and [GitHub](https://github.com/) work seamlessly with Capgo to manage updates [\[1\]](https://capgo.app/).
+For production, automation tools like CI/CD make deployments more efficient. Platforms such as [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), [GitLab](https://about.gitlab.com/solutions/devops-platform/), and [GitHub](https://github.com/) work seamlessly with CodePushGo to manage updates [\[1\]](https://capgo.app/).
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 Additionally, configure user assignments for controlled rollouts. This allows you to target a specific group for testing before deploying updates to everyone [\[1\]](https://capgo.app/).
 
@@ -96,7 +96,7 @@ In this mode, performance sacrifices are intentional to ensure developers can it
 
 ### Production Mode Performance
 
-When transitioning to production, the focus shifts to delivering a seamless user experience with efficient resource use. Capgo users have reported an **81% efficiency improvement** in production, highlighting the impact of proper configuration [\[1\]](https://capgo.app/).
+When transitioning to production, the focus shifts to delivering a seamless user experience with efficient resource use. CodePushGo users have reported an **81% efficiency improvement** in production, highlighting the impact of proper configuration [\[1\]](https://capgo.app/).
 
 | **Performance Aspect** | **Production Mode Approach** | **User Impact** |
 | --- | --- | --- |
@@ -107,11 +107,11 @@ When transitioning to production, the focus shifts to delivering a seamless user
 
 Feedback from users backs this up. For instance, @colenso shared:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
 
 Rodrigo Mantica (@manticarodrigo) emphasizes the importance of this approach:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 In short, development mode is all about speed and debugging, while production mode focuses on creating a polished, efficient experience for the end user. Each has its own purpose, and understanding these differences is crucial for effective app lifecycle management.
 
@@ -175,13 +175,13 @@ Releasing an app to production requires more stringent steps to ensure quality a
 | Release Testing | Conduct UAT and beta testing | Confirm the build is ready for release |
 | Version Management | Apply semantic versioning | Track and manage release history effectively |
 
-Capgo can streamline this process even further, especially when it comes to updates.
+CodePushGo can streamline this process even further, especially when it comes to updates.
 
-### Using [Capgo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://capgo.app/) for Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-09.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-09.jpg?auto=compress)
 
-Capgo simplifies the update process with features designed to save time and improve security.
+CodePushGo simplifies the update process with features designed to save time and improve security.
 
 | **Feature** | **Benefit** |
 | --- | --- |
@@ -189,9 +189,9 @@ Capgo simplifies the update process with features designed to save time and impr
 | CI/CD Integration | Automates deployments |
 | User Assignment | Allows controlled rollouts to specific groups |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo’s compliance with Apple and Google guidelines makes it a reliable tool for pushing updates without risking app store violations. This is especially helpful for deploying urgent fixes or new features without waiting for lengthy review processes.
+CodePushGo’s compliance with Apple and Google guidelines makes it a reliable tool for pushing updates without risking app store violations. This is especially helpful for deploying urgent fixes or new features without waiting for lengthy review processes.
 
 ## Managing Both Environments
 
@@ -210,7 +210,7 @@ Each environment serves a distinct role - development focuses on speed and flexi
 
 ### Tips for Managing Environments
 
-To keep things running smoothly, automation and security are essential. Integrating CI/CD pipelines ensures consistent deployments, while robust encryption protects data. For example, companies using tools like Capgo have reported saving up to $26,100 over five years compared to traditional methods [\[1\]](https://capgo.app/).
+To keep things running smoothly, automation and security are essential. Integrating CI/CD pipelines ensures consistent deployments, while robust encryption protects data. For example, companies using tools like CodePushGo have reported saving up to $26,100 over five years compared to traditional methods [\[1\]](https://capgo.app/).
 
 Here are some strategies to consider:
 
@@ -221,4 +221,4 @@ Here are some strategies to consider:
 | **User Assignment System** | Enables controlled feature rollouts |
 | **Organization Management** | Provides detailed access control |
 
-Platforms like Azure DevOps, GitLab, and GitHub are excellent choices for setting up CI/CD workflows. Pairing these with tools like Capgo can close the gap between development and production, ensuring reliable app performance across both environments.
+Platforms like Azure DevOps, GitLab, and GitHub are excellent choices for setting up CI/CD workflows. Pairing these with tools like CodePushGo can close the gap between development and production, ensuring reliable app performance across both environments.

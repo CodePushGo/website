@@ -25,7 +25,7 @@ Monitoring [Capacitor](https://capacitorjs.com/) app updates is crucial for main
     -   Enable automated rollbacks for faulty updates.
 -   **Key Monitoring Tools:**
     
-    -   **[Capgo](https://capgo.app/):** Advanced real-time tracking, error alerts, and CI/CD integration.
+    -   **[CodePushGo](https://capgo.app/):** Advanced real-time tracking, error alerts, and CI/CD integration.
     -   **Other Solutions:** Vary in features like rollback automation and user segmentation.
 -   **What to Track:**
     
@@ -52,7 +52,7 @@ Choosing the right tools to monitor updates is key to keeping Capacitor apps run
 
 When comparing monitoring tools, focus on features that align with your app's needs. Here's a quick breakdown:
 
-| Feature | Built-in Tools | Third-Party Solutions | Capgo |
+| Feature | Built-in Tools | Third-Party Solutions | CodePushGo |
 | --- | --- | --- | --- |
 | Real-time Tracking | Basic | Advanced | Advanced |
 | Performance Metrics | Limited | Comprehensive | Comprehensive |
@@ -61,15 +61,15 @@ When comparing monitoring tools, focus on features that align with your app's ne
 | CI/CD Integration | Basic | Varies | Full |
 | Security Features | Basic | Advanced | Advanced |
 
-### Using [Capgo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://capgo.app/) for Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-16.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-16.jpg?auto=compress)
 
-Capgo stands out as a reliable choice for teams that need detailed control over their app updates. It offers **version-specific performance analytics** and other advanced monitoring tools.
+CodePushGo stands out as a reliable choice for teams that need detailed control over their app updates. It offers **version-specific performance analytics** and other advanced monitoring tools.
 
-For example, a [Shopify Mobile](https://www.shopify.com/mobile) team leveraged Capgo’s real-time dashboards and achieved **98% monitored update adoption within just 4 hours** [\[4\]](https://app.studyraid.com/en/read/11146/345615/using-tools-for-performance-monitoring).
+For example, a [Shopify Mobile](https://www.shopify.com/mobile) team leveraged CodePushGo’s real-time dashboards and achieved **98% monitored update adoption within just 4 hours** [\[4\]](https://app.studyraid.com/en/read/11146/345615/using-tools-for-performance-monitoring).
 
-Here’s what Capgo brings to the table:
+Here’s what CodePushGo brings to the table:
 
 | Monitoring Aspect | Capability |
 | --- | --- |

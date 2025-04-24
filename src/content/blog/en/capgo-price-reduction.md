@@ -1,14 +1,14 @@
 ---
 slug: capgo-price-reduction
-title: "Capgo Price Reduction: Making Live Updates More Accessible"
-description: We're excited to announce significant price reductions across all Capgo plans, making live updates more accessible for developers of all sizes.
+title: "CodePushGo Price Reduction: Making Live Updates More Accessible"
+description: We're excited to announce significant price reductions across all CodePushGo plans, making live updates more accessible for developers of all sizes.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
 created_at: 2025-03-05T00:00:00.000Z
 updated_at: 2025-03-05T00:00:00.000Z
 head_image: /capgo-feature-image.webp
-head_image_alt: Capgo price reduction announcement
+head_image_alt: CodePushGo price reduction announcement
 keywords: capgo, price reduction, live updates, mobile app development, capacitor
 tag: News
 published: true
@@ -18,7 +18,7 @@ next_blog: ''
 
 Hey! 🎉
 
-Big news: We've upgraded your Capgo plan for free! 🚀
+Big news: We've upgraded your CodePushGo plan for free! 🚀
 
 ## What's New?
 

@@ -35,17 +35,17 @@ Rollback in [Capacitor](https://capacitorjs.com/) ensures your app stays stable 
 
 ### Platform Comparison:
 
-**[Capgo](https://capgo.app/)** offers one-click rollbacks, encryption, real-time analytics, and flexible hosting. Alternatives like **[Capawesome](https://cloud.capawesome.io/)** and **[Appflow](https://ionic.io/appflow/)** lack features or come with higher costs.
+**[CodePushGo](https://capgo.app/)** offers one-click rollbacks, encryption, real-time analytics, and flexible hosting. Alternatives like **[Capawesome](https://cloud.capawesome.io/)** and **[Appflow](https://ionic.io/appflow/)** lack features or come with higher costs.
 
 **Quick Comparison Table:**
 
 | Platform | Rollback Type | Analytics | Encryption | Hosting Options | Cost |
 | --- | --- | --- | --- | --- | --- |
-| **Capgo** | Auto/Manual | Yes | Yes | Flexible | Affordable |
+| **CodePushGo** | Auto/Manual | Yes | Yes | Flexible | Affordable |
 | Capawesome | Manual Only | No  | No  | Limited | Lower |
 | Appflow | Auto/Manual | Partial | No  | Limited | High |
 
-With proper setup and tools like Capgo, you can ensure smooth updates and quickly address issues to keep your app running seamlessly.
+With proper setup and tools like CodePushGo, you can ensure smooth updates and quickly address issues to keep your app running seamlessly.
 
 ## MAD24 304 Leveraging Atomic Upgrades with [OSTree](https://en.wikipedia.org/wiki/OSTree) for ...
 
@@ -102,7 +102,7 @@ const rollbackOptions = {
 };
 ```
 
-If you're using Capgo, you can initiate a rollback with just one click to any saved version.
+If you're using CodePushGo, you can initiate a rollback with just one click to any saved version.
 
 For reference:
 
@@ -123,7 +123,7 @@ Simulate rollback scenarios in a staging setup that mirrors production.
 
 To check rollback readiness:
 
--   Deploy beta updates to small groups using Capgo channels [\[1\]](https://capgo.app/).
+-   Deploy beta updates to small groups using CodePushGo channels [\[1\]](https://capgo.app/).
 -   If issues arise, trigger a rollback to the most recent stable version.
 
 After testing, focus on monitoring the update's performance in the live environment.
@@ -136,7 +136,7 @@ Stay on top of update performance to ensure smooth rollbacks:
 -   Keep an eye on errors to initiate rollbacks early, avoiding major disruptions.
 -   Leverage analytics to spot and resolve any bottlenecks.
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation and almost all our users are up to date within minutes of the OTA being deployed to @Capgo."
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation and almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo."
 > 
 > -   colenso [\[1\]](https://capgo.app/)
 
@@ -146,7 +146,7 @@ Once monitoring is in place, release updates incrementally.
 
 Distribute updates gradually: start with 10%, then 50%, and finally 100% of your users [\[1\]](https://capgo.app/).
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!"
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"
 > 
 > -   Rodrigo Mantica [\[1\]](https://capgo.app/)
 
@@ -154,14 +154,14 @@ Distribute updates gradually: start with 10%, then 50%, and finally 100% of your
 
 Now that we've discussed rollback setup and best practices, let’s look at how top platforms handle rollbacks. The tools they offer can make a big difference in how quickly and reliably you recover from problematic updates.
 
-**Capgo** stands out with its **one-click rollback** to any release. It also offers **end-to-end encryption**, **real-time analytics**, advanced deployment channels, and the flexibility of both cloud-hosted and self-hosted options [\[1\]](https://capgo.app/).
+**CodePushGo** stands out with its **one-click rollback** to any release. It also offers **end-to-end encryption**, **real-time analytics**, advanced deployment channels, and the flexibility of both cloud-hosted and self-hosted options [\[1\]](https://capgo.app/).
 
 On the other hand, **Capawesome** falls short, lacking encryption, analytics, and hosting flexibility. Meanwhile, **Appflow** has a steep annual fee and an unclear roadmap, which can make it less attractive [\[1\]](https://capgo.app/).
 
-When choosing a platform, key factors to weigh include **security**, the depth of analytics, deployment flexibility, and overall cost. Capgo combines rollback reliability, strong encryption, and cost-effectiveness, making it a solid option for teams of all sizes [\[1\]](https://capgo.app/).
+When choosing a platform, key factors to weigh include **security**, the depth of analytics, deployment flexibility, and overall cost. CodePushGo combines rollback reliability, strong encryption, and cost-effectiveness, making it a solid option for teams of all sizes [\[1\]](https://capgo.app/).
 
 ## Summary
 
 Ensuring smooth updates for your Capacitor app requires reliable rollback methods from the initial setup to phased releases. By configuring settings correctly and choosing the right platforms, teams can quickly address issues from faulty updates while keeping users happy.
 
-A solid rollback plan includes a mix of automatic and manual options, real-time monitoring, gradual rollouts, and secure update pipelines. Tools such as Capgo simplify this process with features like one-click rollbacks, encrypted updates, and integrated analytics. With these strategies, your app can deliver consistent and reliable updates without interruptions.
+A solid rollback plan includes a mix of automatic and manual options, real-time monitoring, gradual rollouts, and secure update pipelines. Tools such as CodePushGo simplify this process with features like one-click rollbacks, encrypted updates, and integrated analytics. With these strategies, your app can deliver consistent and reliable updates without interruptions.

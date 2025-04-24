@@ -24,11 +24,11 @@ next_blog: ''
 **Key Changes in the Market:**
 
 -   **Appflow shuts down in 2026.**
--   Alternatives like **[Capgo](https://capgo.app/)** offer live updates, starting at $12/month, with 95% updates delivered in 24 hours.
+-   Alternatives like **[CodePushGo](https://capgo.app/)** offer live updates, starting at $12/month, with 95% updates delivered in 24 hours.
 
 ### Quick Comparison
 
-| Feature | Capacitor (Manual) | Appflow (Automated) | Capgo (Alternative) |
+| Feature | Capacitor (Manual) | Appflow (Automated) | CodePushGo (Alternative) |
 | --- | --- | --- | --- |
 | **Versioning** | Manual edits | Automated via CI/CD | Live updates |
 | **Update Speed** | Slower (App Store delays) | Faster (Code-push) | Near-instant |
@@ -103,11 +103,11 @@ Appflow simplifies the process by automating version updates and deployments. Ho
 
 Managing version control for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) has always been a challenge, especially when balancing manual errors and the high costs of automation. Fortunately, the tools available for version control have grown, offering alternatives to traditional methods.
 
-### [Capgo](https://capgo.app/) Update System
+### [CodePushGo](https://capgo.app/) Update System
 
-![Capgo](https://assets.seobotai.com/capgo.app/6805c3ba360079f947b8c4ac/12eddca90b08193253253ea10516a6c4.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/6805c3ba360079f947b8c4ac/12eddca90b08193253253ea10516a6c4.jpg)
 
-Capgo offers a solution for teams looking to streamline version control without breaking the bank. It provides live updates while staying compliant with Apple and Google store policies. Some key features include:
+CodePushGo offers a solution for teams looking to streamline version control without breaking the bank. It provides live updates while staying compliant with Apple and Google store policies. Some key features include:
 
 -   **End-to-end encryption** to ensure secure update delivery
 -   **Real-time analytics**, boasting an 82% success rate globally
@@ -118,7 +118,7 @@ Capgo offers a solution for teams looking to streamline version control without 
 
 The version control market is shifting as older services phase out. Teams now need to focus on cost, speed, and compliance when choosing a strategy. Here's a snapshot of the current options:
 
--   **Capgo** (launched 2022): Active, starting at $12/month, supports live updates
+-   **CodePushGo** (launched 2022): Active, starting at $12/month, supports live updates
 -   **[Capawesome](https://capawesome.io/)** (launched 2024): Active, similar pricing, but with fewer update options
 -   **Appflow**: Shutting down in 2026, priced at $6,000/year [\[1\]](https://capgo.app/), offers [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/)
 
@@ -132,6 +132,6 @@ Managing version control for Capacitor apps involves a mix of manual workflows, 
 
 -   **Manual updates**: Offer detailed control but come with the risk of human error.
 -   **Appflow automation**: Simplifies releases but comes with a price tag of $6,000 per year [\[1\]](https://capgo.app/).
--   **Live-update platforms**: Tools like Capgo make it easier to roll out fixes and new features quickly.
+-   **Live-update platforms**: Tools like CodePushGo make it easier to roll out fixes and new features quickly.
 
 When deciding between manual updates, automated pipelines, or live-update platforms, teams should consider their release frequency, budget, and the need for speed and compliance. Each approach has its strengths and trade-offs.

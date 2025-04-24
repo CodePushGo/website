@@ -22,10 +22,10 @@ next_blog: ''
 
 -   **Smaller Updates**: Only download what’s changed, not the entire app.
 -   **Faster Rollouts**: Updates reach users in minutes, not days.
--   **Affordable**: [Capgo](https://capgo.app/)'s system costs ~$300/month compared to $6,000/month for alternatives.
+-   **Affordable**: [CodePushGo](https://capgo.app/)'s system costs ~$300/month compared to $6,000/month for alternatives.
 -   **Improved Performance**: Efficient resource use ensures smoother operation on devices with low RAM, storage, or weak networks.
 
-Capgo has already powered **947.6 million updates** across **1,400 apps**, boosting release efficiency by **81%**. Whether you’re dealing with limited storage, slow connections, or power constraints, OTA updates provide a smarter way to keep apps running smoothly.
+CodePushGo has already powered **947.6 million updates** across **1,400 apps**, boosting release efficiency by **81%**. Whether you’re dealing with limited storage, slow connections, or power constraints, OTA updates provide a smarter way to keep apps running smoothly.
 
 ## Performance Issues on Low-End Devices
 
@@ -75,13 +75,13 @@ One standout feature of OTA updates is **incremental (or delta) updates**. These
 
 Unlike traditional app store updates, which demand a full app download, OTA updates are designed to be lean. They send only the updated portions of the app, saving users time and data. This is especially helpful for users on limited data plans or those using older devices that might struggle with large downloads.
 
-### [Capgo](https://capgo.app/) Update System
+### [CodePushGo](https://capgo.app/) Update System
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-10.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-10.jpg?auto=compress)
 
-Capgo's system is built to address the hardware and network limitations many users face. This aligns with earlier performance insights [\[1\]](https://capgo.app/). As one developer shared:
+CodePushGo's system is built to address the hardware and network limitations many users face. This aligns with earlier performance insights [\[1\]](https://capgo.app/). As one developer shared:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
 
 This real-world example shows how OTA updates can quickly and reliably deliver fixes and improvements, ensuring apps run smoothly - even on devices with limited resources.
 
@@ -93,7 +93,7 @@ OTA updates play a key role in improving how low-end devices function by managin
 
 ### Component Loading Strategy
 
-Lazy loading through OTA updates helps reduce both app size and memory usage by loading components only when required. Tools like Capgo make it possible to deploy changes instantly without the need for full app updates - especially important in areas with limited internet access. Smaller update payloads are equally critical for better performance.
+Lazy loading through OTA updates helps reduce both app size and memory usage by loading components only when required. Tools like CodePushGo make it possible to deploy changes instantly without the need for full app updates - especially important in areas with limited internet access. Smaller update payloads are equally critical for better performance.
 
 ### File Size Reduction
 
@@ -101,13 +101,13 @@ OTA updates use techniques like image compression, selective font loading, code 
 
 ### Data Handling Improvements
 
-Efficient data handling is essential for devices with fewer resources. Capgo provides tools that reduce server calls and make [local data storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/) more efficient. As one developer put it:
+Efficient data handling is essential for devices with fewer resources. CodePushGo provides tools that reduce server calls and make [local data storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/) more efficient. As one developer put it:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ## Performance Test Results
 
-Capgo's OTA system was tested on 1,400 apps, delivering an impressive 947.6 million updates worldwide within minutes. This approach significantly cuts down update delivery times compared to the usual app store cycles, paving the way for even faster optimizations [\[1\]](https://capgo.app/).
+CodePushGo's OTA system was tested on 1,400 apps, delivering an impressive 947.6 million updates worldwide within minutes. This approach significantly cuts down update delivery times compared to the usual app store cycles, paving the way for even faster optimizations [\[1\]](https://capgo.app/).
 
 ### Speed Test Results
 
@@ -117,9 +117,9 @@ Capgo's OTA system was tested on 1,400 apps, delivering an impressive 947.6 mill
 
 A production deployment of the system successfully handled updates for over 5,000 users without any issues [\[1\]](https://capgo.app/). The use of end-to-end encryption ensures updates are delivered securely, while still maintaining high performance - an essential feature for devices with limited processing power [\[1\]](https://capgo.app/).
 
-### Capgo Results
+### CodePushGo Results
 
-Companies using Capgo's update system have seen an 81% boost in release efficiency. This is achieved through instant deployments, better resource management, and automated distribution [\[1\]](https://capgo.app/). Key features driving these results include:
+Companies using CodePushGo's update system have seen an 81% boost in release efficiency. This is achieved through instant deployments, better resource management, and automated distribution [\[1\]](https://capgo.app/). Key features driving these results include:
 
 -   Smaller update packages that reduce bandwidth usage
 -   Integration with CI/CD pipelines for a smoother process
@@ -131,16 +131,16 @@ These improvements align directly with the performance gains observed in speed t
 
 ### Main Points
 
-Capacitor OTA updates have shown to improve performance on low-end devices significantly. Capgo's system has already powered **947.6 million updates** across 1,400 apps, increasing release efficiency by 81% [\[1\]](https://capgo.app/). As Rodrigo Mantica puts it:
+Capacitor OTA updates have shown to improve performance on low-end devices significantly. CodePushGo's system has already powered **947.6 million updates** across 1,400 apps, increasing release efficiency by 81% [\[1\]](https://capgo.app/). As Rodrigo Mantica puts it:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!"
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"
 
 These achievements pave the way for even more advancements in OTA delivery systems.
 
 ### Future Development
 
-OTA updates for low-end devices continue to evolve. With **end-to-end encryption** ensuring [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) without impacting performance and integration with CI/CD platforms like [GitHub Actions](https://docs.github.com/actions) and [GitLab CI](https://docs.gitlab.com/ee/ci/) simplifying deployments, the process is becoming even smoother [\[1\]](https://capgo.app/). Cost is also a major factor: while [AppFlow](https://ionic.io/appflow/) costs $6,000 annually, Capgo's CI/CD setup is about $300 per month [\[1\]](https://capgo.app/). As NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team pointed out:
+OTA updates for low-end devices continue to evolve. With **end-to-end encryption** ensuring [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) without impacting performance and integration with CI/CD platforms like [GitHub Actions](https://docs.github.com/actions) and [GitLab CI](https://docs.gitlab.com/ee/ci/) simplifying deployments, the process is becoming even smoother [\[1\]](https://capgo.app/). Cost is also a major factor: while [AppFlow](https://ionic.io/appflow/) costs $6,000 annually, CodePushGo's CI/CD setup is about $300 per month [\[1\]](https://capgo.app/). As NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team pointed out:
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow)"
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow)"
 
 Looking ahead, advancements in package size reduction, bandwidth efficiency, resource management, and deployment speed are expected to further improve performance and user satisfaction, building on the robust benefits already demonstrated.

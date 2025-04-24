@@ -20,7 +20,7 @@ next_blog: ''
 
 -   **Quick Setup**: Install Capacitor CLI and initialize your project in minutes.
 -   **Platform Integration**: Add iOS and Android support with simple commands.
--   **Live Updates**: Use [Capgo](https://capgo.app/) for instant over-the-air updates.
+-   **Live Updates**: Use [CodePushGo](https://capgo.app/) for instant over-the-air updates.
 -   **Common Fixes**: Troubleshoot issues like sync errors or build failures.
 
 **Key Steps to Get Started:**
@@ -28,7 +28,7 @@ next_blog: ''
 1.  Install [Node.js](https://nodejs.org/en), npm, JDK, [Xcode](https://developer.apple.com/xcode/), and [Android Studio](https://developer.android.com/studio).
 2.  Run `npm install @capacitor/core @capacitor/cli` and initialize your project.
 3.  Add iOS and Android platforms using `npx cap add ios` and `npx cap add android`.
-4.  Optional: Set up Capgo for live [app updates](https://capgo.app/plugins/capacitor-updater/).
+4.  Optional: Set up CodePushGo for live [app updates](https://capgo.app/plugins/capacitor-updater/).
 
 This guide covers everything you need to set up Capacitor CLI, configure platforms, and deploy your app. Let’s dive in!
 
@@ -48,7 +48,7 @@ To get started, make sure you have the following tools installed:
 -   **Android Studio** (for Android builds)
 -   **Capacitor CLI** (version 6 or 7)
 
-_Optional:_ If you want to enable live updates, check out the "[Capgo Setup Guide](https://capgo.app/docs/plugin/cloud-mode/getting-started/)" below.
+_Optional:_ If you want to enable live updates, check out the "[CodePushGo Setup Guide](https://capgo.app/docs/plugin/cloud-mode/getting-started/)" below.
 
 ## CLI Installation Steps
 
@@ -147,15 +147,15 @@ npx cap open android # Opens Android Studio
 
 When everything is configured, build the projects using `npx cap build ios` or `npx cap build android`. Don’t forget to run `npx cap sync` again to ensure all assets are up to date.
 
-## [Capgo](https://capgo.app/) Setup Guide
+## [CodePushGo](https://capgo.app/) Setup Guide
 
-![Capgo](https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
 
-Set up Capgo to enable instant over-the-air updates for your app.
+Set up CodePushGo to enable instant over-the-air updates for your app.
 
-### Key Features of Capgo
+### Key Features of CodePushGo
 
-Capgo offers several tools to streamline app updates:
+CodePushGo offers several tools to streamline app updates:
 
 -   **End-to-end encryption** ensures secure delivery of updates.
 -   Updates run **in the background** when the app launches.
@@ -163,17 +163,17 @@ Capgo offers several tools to streamline app updates:
 -   A **one-click rollback** option lets you quickly recover from problematic updates.
 -   Use the **[channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/)** for staged rollouts and beta testing.
 
-### Installing Capgo
+### Installing CodePushGo
 
-Follow these steps to get started with Capgo:
+Follow these steps to get started with CodePushGo:
 
-1.  [Install the Capgo CLI](https://capgo.app/docs/self-hosted/local-dev/cli/):
+1.  [Install the CodePushGo CLI](https://capgo.app/docs/self-hosted/local-dev/cli/):
     
     ```bash
     npm install --save @capgo/cli
     ```
     
-2.  [Initialize Capgo](https://capgo.app/docs/webapp/) in your project:
+2.  [Initialize CodePushGo](https://capgo.app/docs/webapp/) in your project:
     
     ```bash
     npx capgo init
@@ -196,11 +196,11 @@ Follow these steps to get started with Capgo:
 -   Enable error tracking to catch and fix issues early.
 -   Keep the rollback feature ready to quickly address any problems.
 
-Capgo is compatible with Capacitor 6 and 7, integrates smoothly with CI/CD pipelines, and complies with Apple and Google store requirements.
+CodePushGo is compatible with Capacitor 6 and 7, integrates smoothly with CI/CD pipelines, and complies with Apple and Google store requirements.
 
 ## Common Issues and Tips
 
-Once you've completed the platform and Capgo setup, you might face some common errors. Here's how to address them quickly.
+Once you've completed the platform and CodePushGo setup, you might face some common errors. Here's how to address them quickly.
 
 ### Environment Setup Issues
 
@@ -237,23 +237,23 @@ Once you've completed the platform and Capgo setup, you might face some common e
 
 ### Live Update Issues
 
--   **[Capgo Update Failures](https://capgo.app/docs/plugin/cloud-mode/manual-update/)**  
+-   **[CodePushGo Update Failures](https://capgo.app/docs/plugin/cloud-mode/manual-update/)**  
     **Error**: Updates are not appearing in the production app.  
-    **Fix**: Double-check your [Capgo API key](https://capgo.app/docs/webapp/api-keys/) in `capacitor.config.json` and ensure you're targeting the correct channel.
+    **Fix**: Double-check your [CodePushGo API key](https://capgo.app/docs/webapp/api-keys/) in `capacitor.config.json` and ensure you're targeting the correct channel.
 
-For more details on platform-specific setup, revisit the Platform Setup section. If you're working with live updates, consult the Capgo Setup Guide for additional troubleshooting tips.
+For more details on platform-specific setup, revisit the Platform Setup section. If you're working with live updates, consult the CodePushGo Setup Guide for additional troubleshooting tips.
 
 ## Summary
 
 ### Setup Review
 
-Start your web app with Capacitor CLI, set up iOS and Android platforms, and optionally include Capgo for live updates.
+Start your web app with Capacitor CLI, set up iOS and Android platforms, and optionally include CodePushGo for live updates.
 
 Here's how to get started:
 
 -   Use the Capacitor CLI to initialize your project.
 -   Set up your app's package ID and define the web output directory.
 -   Add support for iOS and Android platforms.
--   Install and set up Capgo with the following command: `npm install --save @capgo/cli && npx capgo init`
+-   Install and set up CodePushGo with the following command: `npm install --save @capgo/cli && npx capgo init`
 
-For detailed setup instructions or troubleshooting, check out the official Capacitor and Capgo documentation.
+For detailed setup instructions or troubleshooting, check out the official Capacitor and CodePushGo documentation.

@@ -24,7 +24,7 @@ Key steps include:
 -   **User Consent**: Use App Tracking Transparency (ATT) for tracking permissions.
 -   **Data Access**: Clearly define permissions for features like camera, location, and contacts.
 -   **[Privacy Policy](https://capgo.app/dp/)**: Provide an accessible, clear policy outlining data usage.
--   **Testing & Updates**: Test compliance thoroughly and use secure update systems like [Capgo](https://capgo.app/).
+-   **Testing & Updates**: Test compliance thoroughly and use secure update systems like [CodePushGo](https://capgo.app/).
 
 These rules emphasize user control, transparency, and secure app updates. Developers can follow the guide to stay compliant and deliver privacy-conscious apps.
 
@@ -76,7 +76,7 @@ Before you begin, ensure the following:
 -   Your app includes a properly configured `Info.plist` file.
 -   You have an **Apple Developer account** with valid certificates.
 
-If you're using Capgo, set up end-to-end encryption to safeguard data privacy. Apps configured correctly with Capgo have achieved an 82% global success rate in updates [\[1\]](https://capgo.app/).
+If you're using CodePushGo, set up end-to-end encryption to safeguard data privacy. Apps configured correctly with CodePushGo have achieved an 82% global success rate in updates [\[1\]](https://capgo.app/).
 
 Once your environment is ready, proceed to create and configure your privacy manifest.
 
@@ -118,7 +118,7 @@ List the system APIs your app requires, including:
 After setting up the privacy manifest, make sure your data collection practices meet Apple's standards.
 
 **Data Minimization**  
-Only collect data necessary for your app's core features. Capgo users have reported a 95% active user update rate within 24 hours [\[1\]](https://capgo.app/), showing that privacy-conscious approaches keep users engaged.
+Only collect data necessary for your app's core features. CodePushGo users have reported a 95% active user update rate within 24 hours [\[1\]](https://capgo.app/), showing that privacy-conscious approaches keep users engaged.
 
 **User Transparency**  
 Clearly explain:
@@ -139,7 +139,7 @@ Before submission, test your app to ensure privacy compliance. Focus on these ar
 | User Controls | Test opt-out features. |
 | [Data Storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/) | Verify encryption is secure. |
 
-Capgo has successfully delivered 23.5M updates while maintaining privacy compliance [\[1\]](https://capgo.app/), proving that it's possible to balance updates and privacy effectively.
+CodePushGo has successfully delivered 23.5M updates while maintaining privacy compliance [\[1\]](https://capgo.app/), proving that it's possible to balance updates and privacy effectively.
 
 Follow these guidelines to ensure your app is ready for testing and App Store submission.
 
@@ -224,7 +224,7 @@ async function showPrivacyPolicy() {
 -   Provide a version history and notify users of updates.
 -   Allow users to export their data if requested.
 
-Ensure that updates to your app (e.g., via Capgo) comply with these privacy settings and maintain user trust.
+Ensure that updates to your app (e.g., via CodePushGo) comply with these privacy settings and maintain user trust.
 
 ## Testing and App Store Submission
 
@@ -276,15 +276,15 @@ When submitting your app, provide accurate information about your privacy practi
 -   Document privacy practices for any third-party SDKs used.
 -   Confirm all network transmissions are encrypted for security.
 
-## Using [Capgo](https://capgo.app/) for Updates
+## Using [CodePushGo](https://capgo.app/) for Updates
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e9dc69283d21cbd67b72cf/f3ac818a2fec22e90998e19561d68a19.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e9dc69283d21cbd67b72cf/f3ac818a2fec22e90998e19561d68a19.jpg)
 
-Capgo offers a secure system for live updates while adhering to Apple's privacy rules.
+CodePushGo offers a secure system for live updates while adhering to Apple's privacy rules.
 
-### Capgo Privacy Features
+### CodePushGo Privacy Features
 
-Capgo's update system is built with security and privacy in mind:
+CodePushGo's update system is built with security and privacy in mind:
 
 | Feature | Privacy Benefit |
 | --- | --- |
@@ -295,13 +295,13 @@ Capgo's update system is built with security and privacy in mind:
 
 These features safeguard updates and maintain user privacy.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
-### Update Deployment with Capgo
+### Update Deployment with CodePushGo
 
-Here's how to deploy privacy-compliant updates using Capgo:
+Here's how to deploy privacy-compliant updates using CodePushGo:
 
-1.  **Install the Capgo plugin**:
+1.  **Install the CodePushGo plugin**:
     
     Run the following command to get started:
     
@@ -311,27 +311,27 @@ Here's how to deploy privacy-compliant updates using Capgo:
     
 2.  **Configure your privacy settings**:
     
-    Update your privacy manifest to include Capgo's domains and APIs.
+    Update your privacy manifest to include CodePushGo's domains and APIs.
     
 3.  **Set up encrypted update channels**:
     
     Create separate channels for different deployment stages to ensure secure updates.
     
 
-Capgo ensures that 95% of active users receive updates within 24 hours, with a global success rate of 82% [\[1\]](https://capgo.app/). The channel system also makes managing update targeting straightforward.
+CodePushGo ensures that 95% of active users receive updates within 24 hours, with a global success rate of 82% [\[1\]](https://capgo.app/). The channel system also makes managing update targeting straightforward.
 
-### User Group Updates in Capgo
+### User Group Updates in CodePushGo
 
-Capgo allows you to securely target specific user groups during updates:
+CodePushGo allows you to securely target specific user groups during updates:
 
 | Update Type | Privacy Considerations | Implementation |
 | --- | --- | --- |
 | Beta Testing | Limits exposure to select users | Use a separate channel with restricted access |
 | Staged Rollouts | Gradual release to users | Distribute updates based on percentages |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo's detailed permissions ensure that only authorized team members can access and manage updates securely.
+CodePushGo's detailed permissions ensure that only authorized team members can access and manage updates securely.
 
 ## Summary
 
@@ -361,4 +361,4 @@ Follow this checklist to meet Apple's requirements:
     Use a privacy-compliant update solution, set up encrypted channels, and configure user targeting controls.
     
 
-Capgo's platform provides a reliable way to meet these privacy standards while keeping your app functional and user-focused [\[1\]](https://capgo.app/).
+CodePushGo's platform provides a reliable way to meet these privacy standards while keeping your app functional and user-focused [\[1\]](https://capgo.app/).

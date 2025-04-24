@@ -19,10 +19,10 @@ next_blog: ''
 Debugging platform-specific code in [Capacitor](https://capacitorjs.com/) can be challenging, but the right tools simplify the process. Here’s what you need to know:
 
 -   **Key Tools**: Use [VS Code](https://code.visualstudio.com/) with extensions, [Android Studio](https://developer.android.com/studio), [Xcode](https://developer.apple.com/xcode/), and browser dev tools like [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview) and [Safari Web Inspector](https://developer.apple.com/documentation/safari-developer-tools/web-inspector) for debugging across platforms.
--   **Live Updates**: Tools like [Capgo](https://capgo.app/) enable instant updates, error tracking, and rollback options without app store delays.
+-   **Live Updates**: Tools like [CodePushGo](https://capgo.app/) enable instant updates, error tracking, and rollback options without app store delays.
 -   **Platform-Specific Debugging**: Test native code with Android Studio and Xcode, debug WebView with browser tools, and utilize source maps for better error tracking.
 -   **Native Bridge Testing**: Debug JavaScript-to-native communication using `Capacitor.getPlatform()` and event listeners.
--   **Update Systems**: Capgo offers fast deployment (114ms delivery for 5MB bundles), high adoption rates (95% within 24 hours), and rollback support.
+-   **Update Systems**: CodePushGo offers fast deployment (114ms delivery for 5MB bundles), high adoption rates (95% within 24 hours), and rollback support.
 
 ### Quick Comparison
 
@@ -207,7 +207,7 @@ describe('Platform Tests', () => {
 });
 ```
 
-Additionally, live update tools like Capgo (https://capgo.app) can speed up testing and issue resolution. Capgo supports instant updates for Capacitor apps and includes integrated analytics, error tracking, and rollback options [\[1\]](https://capgo.app/).
+Additionally, live update tools like CodePushGo (https://capgo.app) can speed up testing and issue resolution. CodePushGo supports instant updates for Capacitor apps and includes integrated analytics, error tracking, and rollback options [\[1\]](https://capgo.app/).
 
 For critical scenarios, consider using feature detection with fallback mechanisms:
 
@@ -253,11 +253,11 @@ By combining platform-specific IDEs like Android Studio or Xcode with VS Code, d
 
 ### Update System Options
 
-Debugging tools help identify issues, but an efficient update system ensures fixes are deployed quickly. Capgo stands out by offering rapid update deployment. For instance, its global CDN delivers a 5MB bundle in just 114ms, with an average API response time of 434ms [\[1\]](https://capgo.app/).
+Debugging tools help identify issues, but an efficient update system ensures fixes are deployed quickly. CodePushGo stands out by offering rapid update deployment. For instance, its global CDN delivers a 5MB bundle in just 114ms, with an average API response time of 434ms [\[1\]](https://capgo.app/).
 
 Here's how update systems compare:
 
-| Key Metric | Capgo | [Appflow](https://ionic.io/appflow/) | [Capawesome](https://capawesome.io/) |
+| Key Metric | CodePushGo | [Appflow](https://ionic.io/appflow/) | [Capawesome](https://capawesome.io/) |
 | --- | --- | --- | --- |
 | Update Speed | 114ms avg delivery for a 5MB bundle [\[1\]](https://capgo.app/) | Not publicly disclosed | Not publicly disclosed |
 | User Adoption | 95% within 24h [\[1\]](https://capgo.app/) | Not publicly disclosed | Not publicly disclosed |
@@ -266,11 +266,11 @@ Here's how update systems compare:
 | Self-hosting | Available | Not available | Not available |
 | Pricing | $12–$249/month | Typically higher | Comparable |
 
-Capgo's instant updates help maintain app stability by avoiding app store delays. As Rodrigo Mantica, an industry leader, puts it:
+CodePushGo's instant updates help maintain app stability by avoiding app store delays. As Rodrigo Mantica, an industry leader, puts it:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
-With Microsoft's CodePush shutting down in 2024 and Appflow set to close in 2026, tools like Capgo are becoming increasingly important for maintaining continuous delivery and keeping users satisfied.
+With Microsoft's CodePush shutting down in 2024 and Appflow set to close in 2026, tools like CodePushGo are becoming increasingly important for maintaining continuous delivery and keeping users satisfied.
 
 ## Debugging Guidelines
 
@@ -278,7 +278,7 @@ Debugging platform-specific code requires a clear and structured approach across
 
 ### Multi-Platform Testing
 
-Run tests on simulators, physical devices, and across different OS versions. According to Capgo data, **95% of critical platform-specific issues are identified within the first 24 hours of deployment** [\[1\]](https://capgo.app/). Testing on multiple fronts ensures you catch issues early and allows for precise debugging tailored to each platform.
+Run tests on simulators, physical devices, and across different OS versions. According to CodePushGo data, **95% of critical platform-specific issues are identified within the first 24 hours of deployment** [\[1\]](https://capgo.app/). Testing on multiple fronts ensures you catch issues early and allows for precise debugging tailored to each platform.
 
 ### Platform Detection
 
@@ -298,14 +298,14 @@ This approach ensures accurate platform detection, making live updates more reli
 
 ### Live Update Systems
 
-Live updates play a crucial role in maintaining app performance and quickly resolving platform-specific bugs. Capgo has proven effective in production environments, as highlighted by user feedback:
+Live updates play a crucial role in maintaining app performance and quickly resolving platform-specific bugs. CodePushGo has proven effective in production environments, as highlighted by user feedback:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up-to-date within minutes of the OTA being deployed to @Capgo." – colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up-to-date within minutes of the OTA being deployed to @CodePushGo." – colenso [\[1\]](https://capgo.app/)
 
 Key features of live update systems include real-time error tracking, instant rollback capabilities, and beta channels for targeted fixes. These tools allow you to address issues quickly while keeping your app stable across platforms.
 
 ## Conclusion
 
-A well-thought-out mix of [effective debugging](https://capgo.app/docs/plugin/debugging/) tools and efficient live update systems is key to addressing platform-specific challenges. By combining traditional debugging methods with live update platforms like Capgo, developers can implement immediate fixes without waiting for app store approvals. With a global update success rate and the ability to reach most users within 24 hours, these tools make resolving issues faster and easier.
+A well-thought-out mix of [effective debugging](https://capgo.app/docs/plugin/debugging/) tools and efficient live update systems is key to addressing platform-specific challenges. By combining traditional debugging methods with live update platforms like CodePushGo, developers can implement immediate fixes without waiting for app store approvals. With a global update success rate and the ability to reach most users within 24 hours, these tools make resolving issues faster and easier.
 
 Key elements for success include accurate platform detection, secure update processes with end-to-end encryption, quick rollback options, and actionable analytics.

@@ -30,7 +30,7 @@ next_blog: ''
 3.  Add high-quality, platform-compliant visuals to attract users.
 4.  Regularly update metadata for new features, upgrades, or seasonal events.
 
-Metadata management is essential for app success. Tools like [Capgo](https://capgo.app/) can help you make instant updates, stay compliant, and track performance effectively.
+Metadata management is essential for app success. Tools like [CodePushGo](https://capgo.app/) can help you make instant updates, stay compliant, and track performance effectively.
 
 ## Optimizing Metadata to Rank in the App Store - Part 2
 
@@ -136,7 +136,7 @@ Maintaining a consistent brand identity is just as important as technical accura
 -   Inconsistent font choices
 -   Improper logo placement
 
-Capgo has achieved a global success rate of 82% [\[1\]](https://capgo.app/).
+CodePushGo has achieved a global success rate of 82% [\[1\]](https://capgo.app/).
 
 | Common Error | Impact | Solution |
 | --- | --- | --- |
@@ -159,7 +159,7 @@ After making updates, track their effectiveness using performance metrics.
 
 ### Tracking Performance
 
-Measuring the impact of metadata updates is essential. Use metrics like update success rates and user engagement to evaluate effectiveness. For example, apps using live update solutions like Capgo report a 95% update success rate among active users within 24 hours [\[1\]](https://capgo.app/). Regularly check user feedback to ensure your metadata is clear and resonates with your audience.
+Measuring the impact of metadata updates is essential. Use metrics like update success rates and user engagement to evaluate effectiveness. For example, apps using live update solutions like CodePushGo report a 95% update success rate among active users within 24 hours [\[1\]](https://capgo.app/). Regularly check user feedback to ensure your metadata is clear and resonates with your audience.
 
 These insights can help you select the right [tools for managing updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
 
@@ -167,24 +167,24 @@ These insights can help you select the right [tools for managing updates](https:
 
 Modern platforms simplify [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) with features like:
 
--   **Real-time deployment**: Push updates instantly without waiting for store approval. Capgo, for instance, has delivered 23.5 million updates with an 82% global success rate [\[1\]](https://capgo.app/).
+-   **Real-time deployment**: Push updates instantly without waiting for store approval. CodePushGo, for instance, has delivered 23.5 million updates with an 82% global success rate [\[1\]](https://capgo.app/).
 -   **Analytics integration**: Monitor update success, user engagement, and version history.
 -   **Rollback options**: Quickly undo changes if needed.
 -   **Controlled distribution**: Test updates with specific user groups before a full rollout.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo
 
-## [Capgo](https://capgo.app/) Features and Benefits
+## [CodePushGo](https://capgo.app/) Features and Benefits
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-28.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-28.jpg?auto=compress)
 
-### About Capgo
+### About CodePushGo
 
-Capgo simplifies managing [app updates](https://capgo.app/plugins/capacitor-updater/) by allowing instant changes without needing app store reviews. It's designed for [Capacitor](https://capacitorjs.com/) apps, helping teams quickly roll out critical fixes and new features. With 750 apps in production and over 23.5 million updates successfully delivered, Capgo has proven to be a dependable solution for handling app updates efficiently [\[1\]](https://capgo.app/).
+CodePushGo simplifies managing [app updates](https://capgo.app/plugins/capacitor-updater/) by allowing instant changes without needing app store reviews. It's designed for [Capacitor](https://capacitorjs.com/) apps, helping teams quickly roll out critical fixes and new features. With 750 apps in production and over 23.5 million updates successfully delivered, CodePushGo has proven to be a dependable solution for handling app updates efficiently [\[1\]](https://capgo.app/).
 
-### Capgo Update Process
+### CodePushGo Update Process
 
-Capgo's update system is built to comply with app store rules while speeding up deployment. Developers can instantly push updates using features like:
+CodePushGo's update system is built to comply with app store rules while speeding up deployment. Developers can instantly push updates using features like:
 
 -   **Partial Updates**: Only downloads the modified content, saving bandwidth and reducing update size.
 -   **End-to-End Encryption**: Provides [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) with true encryption, not just basic signing.
@@ -192,9 +192,9 @@ Capgo's update system is built to comply with app store rules while speeding up 
 
 The system achieves an 82% global success rate, delivers a 5 MB bundle from its global CDN in just 114 milliseconds, and ensures that 95% of active users receive updates within 24 hours [\[1\]](https://capgo.app/).
 
-### Capgo Main Tools
+### CodePushGo Main Tools
 
-Capgo provides key tools to manage app updates and metadata effectively:
+CodePushGo provides key tools to manage app updates and metadata effectively:
 
 | Feature | Purpose | Performance Metric |
 | --- | --- | --- |
@@ -202,13 +202,13 @@ Capgo provides key tools to manage app updates and metadata effectively:
 | Version Control | Quickly revert to previous versions | Instant rollback capability |
 | CI/CD Integration | Automate deployments through Git tools | Streamlined workflow integration |
 
-Capgo supports Capacitor 6 and 7 and offers both cloud-based and [self-hosted deployment](https://capgo.app/blog/self-hosted-capgo/) options. This flexibility ensures precise update management while staying compliant with app store requirements [\[1\]](https://capgo.app/).
+CodePushGo supports Capacitor 6 and 7 and offers both cloud-based and [self-hosted deployment](https://capgo.app/blog/self-hosted-capgo/) options. This flexibility ensures precise update management while staying compliant with app store requirements [\[1\]](https://capgo.app/).
 
 ## Summary
 
 Managing metadata effectively is essential for boosting visibility and achieving success. Traditional app updates often take time, but modern tools now allow instant changes - a key theme throughout this discussion. Developers are increasingly turning to these tools to simplify updates while staying compliant with Apple and Google guidelines.
 
-Capgo, for instance, has delivered 23.5 million updates with an 82% success rate, reaching 95% of active users within 24 hours [\[1\]](https://capgo.app/). This highlights the importance of using efficient metadata strategies and update practices.
+CodePushGo, for instance, has delivered 23.5 million updates with an 82% success rate, reaching 95% of active users within 24 hours [\[1\]](https://capgo.app/). This highlights the importance of using efficient metadata strategies and update practices.
 
 Here are some critical aspects to focus on for effective metadata management:
 
@@ -219,4 +219,4 @@ Here are some critical aspects to focus on for effective metadata management:
 | Security | E2E encryption | Safeguard data and updates |
 | Distribution | Targeted rollouts | Control how updates are deployed |
 
-The shift in app store metadata management shows the industry's push toward faster, more efficient solutions that prioritize rapid updates while maintaining strong security and compliance. As Bessie Cooper put it: "Capgo is a must-have tool for developers who want to be more productive. Bypassing app review for critical fixes provides a significant advantage." [\[1\]](https://capgo.app/)
+The shift in app store metadata management shows the industry's push toward faster, more efficient solutions that prioritize rapid updates while maintaining strong security and compliance. As Bessie Cooper put it: "CodePushGo is a must-have tool for developers who want to be more productive. Bypassing app review for critical fixes provides a significant advantage." [\[1\]](https://capgo.app/)

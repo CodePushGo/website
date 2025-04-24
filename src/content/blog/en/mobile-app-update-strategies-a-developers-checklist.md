@@ -109,22 +109,22 @@ Setting up a CI/CD pipeline for mobile apps starts with solid version control an
 
 Once your pipeline is ready, adding OTA updates makes delivering changes to users faster and easier.
 
-### Using [Capacitor](https://capacitorjs.com/) OTA Updates with [Capgo](https://capgo.app/)
+### Using [Capacitor](https://capacitorjs.com/) OTA Updates with [CodePushGo](https://capgo.app/)
 
 ![Capacitor](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d.jpg?auto=compress)
 
-Capgo makes OTA updates simple, secure, and fast with features like encryption and compliance. Here's how to get started:
+CodePushGo makes OTA updates simple, secure, and fast with features like encryption and compliance. Here's how to get started:
 
-1.  Install the [Capgo plugin](https://capgo.app/plugins/) in your Capacitor project.
+1.  Install the [CodePushGo plugin](https://capgo.app/plugins/) in your Capacitor project.
     
 2.  Set up your app's update settings and version tracking.
     
-3.  Use the [Capgo dashboard](https://capgo.app/docs/webapp/) to deploy updates directly to users.
+3.  Use the [CodePushGo dashboard](https://capgo.app/docs/webapp/) to deploy updates directly to users.
     
 
-### Capgo Pricing and Features Overview
+### CodePushGo Pricing and Features Overview
 
-Capgo offers flexible plans to match your app's needs as it grows. Pricing starts at $12/month (SOLO) for small apps and goes up to $249/month (PAYG) for larger, enterprise-level requirements. Each plan includes key features like instant updates, version control, and analytics.
+CodePushGo offers flexible plans to match your app's needs as it grows. Pricing starts at $12/month (SOLO) for small apps and goes up to $249/month (PAYG) for larger, enterprise-level requirements. Each plan includes key features like instant updates, version control, and analytics.
 
 | Plan | Monthly Cost | Updates/Month | Active Users |
 | --- | --- | --- | --- |
@@ -189,7 +189,7 @@ To manage [mobile app updates](https://capgo.app/plugins/capacitor-updater/) eff
 
 **Key Steps for Success**:
 
--   Use CI/CD pipelines and OTA update tools like GitHub Actions, Bitrise, and Capgo.
+-   Use CI/CD pipelines and OTA update tools like GitHub Actions, Bitrise, and CodePushGo.
     
 -   Run thorough tests across devices with platforms like AWS Device Farm.
     

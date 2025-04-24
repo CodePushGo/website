@@ -69,7 +69,7 @@ export default defineConfig({
     AstroPWA(pwa),
     starlight({
       disable404Route: true,
-      title: 'Capgo',
+      title: 'CodePushGo',
       favicon: '/favicon.svg',
       logo: { src: './logo.svg' },
       customCss: ['./src/css/global.css'],
@@ -85,7 +85,7 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'Welcome to Capgo',
+          label: 'Welcome to CodePushGo',
           link: '/docs/',
         },
         {
@@ -94,7 +94,7 @@ export default defineConfig({
           autogenerate: { directory: 'docs/getting-started' },
         },
         {
-          label: 'Capgo CLI',
+          label: 'CodePushGo CLI',
           collapsed: true,
           items: [
             { label: 'Overview', link: '/docs/cli/overview' },

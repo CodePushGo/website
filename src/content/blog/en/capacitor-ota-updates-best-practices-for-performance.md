@@ -31,7 +31,7 @@ OTA (Over-the-Air) updates allow [Capacitor](https://capacitorjs.com/) apps to u
 
 **Quick Comparison of OTA Tools**:
 
-| Feature | [capacitor-app-updater](https://www.npmjs.com/package/%40objekt%2Fcapacitor-app-updater) | [capacitor-app-update](https://github.com/capawesome-team/capacitor-app-update) | [Capgo](https://capgo.app/) |
+| Feature | [capacitor-app-updater](https://www.npmjs.com/package/%40objekt%2Fcapacitor-app-updater) | [capacitor-app-update](https://github.com/capawesome-team/capacitor-app-update) | [CodePushGo](https://capgo.app/) |
 | --- | --- | --- | --- |
 | Update Method | Checksum comparison | In-[app updates](https://capgo.app/plugins/capacitor-updater/) | JS bundle updates |
 | Performance Impact | Minimal | Medium | Low |
@@ -39,7 +39,7 @@ OTA (Over-the-Air) updates allow [Capacitor](https://capacitorjs.com/) apps to u
 | Rollback Support | Limited | Platform-dependent | Built-in |
 | CI/CD Integration | Manual | Manual | Automated |
 
-Capgo stands out with features like background updates, end-to-end encryption, and performance tracking, making it a strong choice for managing OTA updates in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
+CodePushGo stands out with features like background updates, end-to-end encryption, and performance tracking, making it a strong choice for managing OTA updates in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
 
 ## Ship real-time updates to your Ionic app users
 
@@ -84,7 +84,7 @@ Breaking updates into smaller steps reduces disruptions during startup. Incremen
 -   Use A/B partition systems to allow updates without interrupting app functionality [\[3\]](https://source.android.com/docs/core/ota/ab).
     
 
-Capgo provides built-in tools for secure, incremental updates, featuring end-to-end encryption and flexible deployment options.
+CodePushGo provides built-in tools for secure, incremental updates, featuring end-to-end encryption and flexible deployment options.
 
 ###### sbb-itb-f9944d2
 
@@ -119,13 +119,13 @@ To avoid issues with app store approvals, follow these platform-specific rules:
 
 > "This restriction does not apply to code that runs in a virtual machine or an interpreter where either provides indirect access to Android APIs (such as JavaScript in a webview or browser)." [\[4\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/)
 
-### Using [Capgo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://capgo.app/) for Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-22.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-22.jpg?auto=compress)
 
-After testing and ensuring compliance, deploying updates efficiently becomes the next step. Capgo is a tool that simplifies this process.
+After testing and ensuring compliance, deploying updates efficiently becomes the next step. CodePushGo is a tool that simplifies this process.
 
-In February 2025, Capgo managed **449 million updates** across **1.8K production apps** [\[5\]](https://capgo.app/). Key features include:
+In February 2025, CodePushGo managed **449 million updates** across **1.8K production apps** [\[5\]](https://capgo.app/). Key features include:
 
 -   **End-to-end encryption** to secure update delivery.
     
@@ -144,11 +144,11 @@ In February 2025, Capgo managed **449 million updates** across **1.8K production
 -   Tools to monitor compliance.
     
 
-By uploading only compiled code meant for app store distribution, Capgo minimizes overhead and boosts efficiency. This approach has reportedly led to an **81% improvement in release efficiency** for users [\[5\]](https://capgo.app/).
+By uploading only compiled code meant for app store distribution, CodePushGo minimizes overhead and boosts efficiency. This approach has reportedly led to an **81% improvement in release efficiency** for users [\[5\]](https://capgo.app/).
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[5\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[5\]](https://capgo.app/)
 
-Capgo also uses a custom Dart interpreter for iOS updates. This ensures updates remain within app store guidelines while still allowing for quick deployment [\[6\]](https://capgo.app/docs/faq/).
+CodePushGo also uses a custom Dart interpreter for iOS updates. This ensures updates remain within app store guidelines while still allowing for quick deployment [\[6\]](https://capgo.app/docs/faq/).
 
 ## OTA Update Tools Analysis
 
@@ -158,7 +158,7 @@ OTA tools for Capacitor differ in functionality and performance. Here's a breakd
 
 Here's a quick comparison of key features across popular OTA tools:
 
-| Feature | capacitor-app-updater | capacitor-app-update | Capgo |
+| Feature | capacitor-app-updater | capacitor-app-update | CodePushGo |
 | --- | --- | --- | --- |
 | Update Method | Checksum comparison | [In-app updates](https://capgo.app/plugins/capacitor-updater/) (Android) | JS bundle updates |
 | Performance Impact | Minimal (selective downloads) | Medium ([full app updates](https://capgo.app/plugins/capacitor-updater/)) | Low (background checks) |
@@ -168,26 +168,26 @@ Here's a quick comparison of key features across popular OTA tools:
 | Rollback Support | Limited | Platform-dependent | Built-in |
 | CI/CD Integration | Manual | Manual | Automated |
 
-For instance, while **capacitor-app-updater** uses selective downloads to minimize performance impact, **Capgo** employs a background update mechanism that keeps the app responsive during updates [\[6\]](https://capgo.app/docs/faq/). These distinctions are crucial when selecting the right tool.
+For instance, while **capacitor-app-updater** uses selective downloads to minimize performance impact, **CodePushGo** employs a background update mechanism that keeps the app responsive during updates [\[6\]](https://capgo.app/docs/faq/). These distinctions are crucial when selecting the right tool.
 
 ### Selection Criteria
 
 Based on the comparison, here are some important factors to consider when picking an OTA tool:
 
 -   **Update Efficiency**  
-    Capgo's background update system has handled 449 million updates across 1.8K production apps without affecting performance [\[5\]](https://capgo.app/).
+    CodePushGo's background update system has handled 449 million updates across 1.8K production apps without affecting performance [\[5\]](https://capgo.app/).
     
 -   [**Bundle Size Management**](https://capgo.app/docs/webapp/bundles/)  
     Look for tools that reduce update times by optimizing package sizes with differential downloads [\[7\]](https://github.com/objektlabs/capacitor-app-updater).
     
 -   **Native Code Handling**  
-    Ensure the tool excludes native code changes from updates. Capgo, for example, alerts developers if native code changes are detected [\[6\]](https://capgo.app/docs/faq/).
+    Ensure the tool excludes native code changes from updates. CodePushGo, for example, alerts developers if native code changes are detected [\[6\]](https://capgo.app/docs/faq/).
     
 -   **Startup Impact**  
     Choose tools that allow configurable delays for update checks to maintain smooth startup performance. This feature is available in **capacitor-app-updater** [\[7\]](https://github.com/objektlabs/capacitor-app-updater).
     
 -   **Update Verification**  
-    Reliable verification methods, like checksum systems, are essential to ensure update integrity. Both **capacitor-app-updater** and **Capgo** offer this, with Capgo adding end-to-end encryption for extra security [\[6\]](https://capgo.app/docs/faq/).
+    Reliable verification methods, like checksum systems, are essential to ensure update integrity. Both **capacitor-app-updater** and **CodePushGo** offer this, with CodePushGo adding end-to-end encryption for extra security [\[6\]](https://capgo.app/docs/faq/).
     
 
 ## Conclusion
@@ -213,6 +213,6 @@ To maximize the efficiency of OTA updates in your Capacitor app, make sure to:
 
 -   **Set up encryption**: Use digital signatures to verify updates [\[4\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/).
     
--   **Streamline update delivery**: Consider tools like Capgo for smooth, background updates.
+-   **Streamline update delivery**: Consider tools like CodePushGo for smooth, background updates.
     
 -   **Prepare fallback systems**: Ensure the app remains functional even if an update fails [\[9\]](https://dzone.com/articles/why-device-firmware-updates-are-critical-to-produc).

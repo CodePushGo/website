@@ -100,7 +100,7 @@ Yes, the [Ionic VS Code Extension](https://marketplace.visualstudio.com/items/?i
 
 ## Is there enterprise-specific support available?
 
-Yes, Capgo offers [Enterprise support and features](https://capgo.app/) for Capacitor, including dedicated support, native plugins for live update and authentication, and more.
+Yes, CodePushGo offers [Enterprise support and features](https://capgo.app/) for Capacitor, including dedicated support, native plugins for live update and authentication, and more.
 
 ## How do I get started with Capacitor?
 

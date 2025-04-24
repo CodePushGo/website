@@ -623,7 +623,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Flexible integration</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Manage Capgo from your own software and create white label experiences</p>
+                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Manage CodePushGo from your own software and create white label experiences</p>
               </div>
             </div>
           </div>

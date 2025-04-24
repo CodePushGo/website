@@ -31,7 +31,7 @@ next_blog: ''
     -   Align version numbers across all Capacitor components.
 -   **Tools for OTA Updates**:
     
-    -   Use platforms like **[Capgo](https://capgo.app/)** for encrypted, partial updates with background installation and channel-based rollouts.
+    -   Use platforms like **[CodePushGo](https://capgo.app/)** for encrypted, partial updates with background installation and channel-based rollouts.
 
 **Quick Fix Table**:
 
@@ -42,7 +42,7 @@ next_blog: ''
 | Gradle Sync Issues | Clear `.gradle` cache | Android |
 | Version Mismatch | Update all Capacitor packages | iOS & Android |
 
-**Bottom Line**: Managing CLI commands effectively ensures smooth updates and better app performance. Tools like Capgo simplify deployments and reduce errors. Follow these steps to keep your app running smoothly.
+**Bottom Line**: Managing CLI commands effectively ensures smooth updates and better app performance. Tools like CodePushGo simplify deployments and reduce errors. Follow these steps to keep your app running smoothly.
 
 ## How to Fix Quasar-Framework and [Capacitor](https://capacitorjs.com/) Dev Command ...
 
@@ -78,7 +78,7 @@ Build errors typically happen due to version mismatches between Capacitor compon
 
 ### Live Update Errors
 
-Deploying live updates can sometimes result in errors that affect app reliability and update delivery. Capgo’s encryption and intelligent update systems help reduce these issues, but they can still happen.
+Deploying live updates can sometimes result in errors that affect app reliability and update delivery. CodePushGo’s encryption and intelligent update systems help reduce these issues, but they can still happen.
 
 If you run into live update errors, try these steps:
 
@@ -110,7 +110,7 @@ Keeping your project in sync reduces the chance of running into CLI errors. Use 
 -   **`npx cap update`**: Updates your Capacitor installation when new versions are released.
 -   **`npx cap doctor`**: Verifies plugin installations and checks for potential issues.
 
-> "The community needed this and @Capgo is doing something really important!" - Lincoln Baxter [\[1\]](https://capgo.app/)
+> "The community needed this and @CodePushGo is doing something really important!" - Lincoln Baxter [\[1\]](https://capgo.app/)
 
 If you encounter persistent issues, clearing build caches is the next step.
 
@@ -144,11 +144,11 @@ Version mismatches can create subtle problems that may not show up immediately, 
 
 Managing OTA updates effectively requires tools that handle deployment, monitoring, and troubleshooting seamlessly. Since issues with command-line interfaces (CLI) often occur during updates, having the right tools is essential for smooth operations.
 
-### Using [Capgo](https://capgo.app/) Updates
+### Using [CodePushGo](https://capgo.app/) Updates
 
-![Capgo](https://assets.seobotai.com/capgo.app/67fdb53472a40527486bfab3/5667dd288bf82910fbf4a9affbd7b492.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67fdb53472a40527486bfab3/5667dd288bf82910fbf4a9affbd7b492.jpg)
 
-Capgo is a popular platform for handling Capacitor OTA updates, boasting an impressive delivery record of 1155.1 billion updates with an 82% global success rate [\[1\]](https://capgo.app/). It addresses common CLI challenges through the following features:
+CodePushGo is a popular platform for handling Capacitor OTA updates, boasting an impressive delivery record of 1155.1 billion updates with an 82% global success rate [\[1\]](https://capgo.app/). It addresses common CLI challenges through the following features:
 
 | **Feature** | **Benefit** | **Technical Impact** |
 | --- | --- | --- |
@@ -157,13 +157,13 @@ Capgo is a popular platform for handling Capacitor OTA updates, boasting an impr
 | Background Installation | Requires no user input | Updates install automatically in the background |
 | Channel System | Enables targeted rollouts | Distributes updates to specific user groups |
 
-To get started with Capgo updates:
+To get started with CodePushGo updates:
 
 1.  **Install the plugin**: Use the command `npx @capgo/cli init`.
 2.  **Build your app**: Proceed with your usual app build process.
-3.  **Deploy updates**: Use Capgo's CLI commands for deployment.
+3.  **Deploy updates**: Use CodePushGo's CLI commands for deployment.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 Once updates are deployed, rely on platform-specific debugging tools to ensure everything works as expected and to resolve any issues.
 
@@ -182,13 +182,13 @@ When diagnosing OTA update problems, platform-specific tools can be invaluable:
     -   _Network Inspector_: Monitors update download performance.
     -   _Safari Web Inspector_: Assists in debugging WebView issues.
 
-Additionally, keep an eye on global CDN performance. For instance, Capgo's CDN typically delivers 5MB bundles in just 114ms [\[1\]](https://capgo.app/). This benchmark can help determine whether issues are related to network conditions or implementation errors.
+Additionally, keep an eye on global CDN performance. For instance, CodePushGo's CDN typically delivers 5MB bundles in just 114ms [\[1\]](https://capgo.app/). This benchmark can help determine whether issues are related to network conditions or implementation errors.
 
 ## Conclusion
 
-Managing CLI commands effectively is key to ensuring smooth app updates and delivering a great user experience. With the fast pace of OTA updates today, tools like Capgo provide reliable solutions to address common CLI challenges.
+Managing CLI commands effectively is key to ensuring smooth app updates and delivering a great user experience. With the fast pace of OTA updates today, tools like CodePushGo provide reliable solutions to address common CLI challenges.
 
-The methods and tools mentioned earlier help resolve these issues while supporting stronger deployment processes. To sum up, well-organized CLI management directly impacts update security, speed, and recovery. Capgo's performance highlights the importance of efficient CLI practices [\[1\]](https://capgo.app/).
+The methods and tools mentioned earlier help resolve these issues while supporting stronger deployment processes. To sum up, well-organized CLI management directly impacts update security, speed, and recovery. CodePushGo's performance highlights the importance of efficient CLI practices [\[1\]](https://capgo.app/).
 
 | Aspect | Impact | Solution |
 | --- | --- | --- |

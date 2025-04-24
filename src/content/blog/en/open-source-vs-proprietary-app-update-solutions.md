@@ -67,7 +67,7 @@ These features work seamlessly with modern CI/CD workflows, making app updates m
 
 ### Common Tools and Plugins
 
-The open-source landscape offers trusted tools for app updates. [**Capgo**](https://capgo.app/) stands out as a top choice for live updates in Capacitor apps, offering end-to-end encryption, smooth CI/CD integration, and compliance with app store guidelines.
+The open-source landscape offers trusted tools for app updates. [**CodePushGo**](https://capgo.app/) stands out as a top choice for live updates in Capacitor apps, offering end-to-end encryption, smooth CI/CD integration, and compliance with app store guidelines.
 
 Another popular option is the [**Capacitor Live Update**](https://www.npmjs.com/package/%40capacitor%2Flive-updates) **plugin**, which simplifies the process of adding live update functionality [\[2\]](https://www.npmjs.com/package/@capawesome/capacitor-live-update), but requires Appflow a paid backend.
 

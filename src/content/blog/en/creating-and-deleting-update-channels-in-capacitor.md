@@ -25,7 +25,7 @@ next_blog: ''
     -   Roll back problematic updates instantly.
 -   **Setup**:
     
-    -   Use tools like Capacitor CLI, [Node.js](https://nodejs.org/en), and [Capgo](https://capgo.app/) CLI.
+    -   Use tools like Capacitor CLI, [Node.js](https://nodejs.org/en), and [CodePushGo](https://capgo.app/) CLI.
     -   Assign roles (Admin, Developer, Viewer) to manage permissions.
     -   Integrate with CI/CD tools for automated workflows.
 -   **Managing Channels**:
@@ -38,7 +38,7 @@ next_blog: ''
     -   Identify unused channels via analytics.
     -   Safely migrate users, archive data, and check dependencies before deletion.
 
-Capgo simplifies this process with tools like real-time analytics, user management, and rollback options. With proper channel setup and maintenance, you can deploy updates faster and more reliably.
+CodePushGo simplifies this process with tools like real-time analytics, user management, and rollback options. With proper channel setup and maintenance, you can deploy updates faster and more reliably.
 
 ## Continuous Deployment & Live Updates with Ionic Deploy
 
@@ -54,16 +54,16 @@ Make sure you have the following:
 
 -   **Capacitor CLI**: This is the core tool for handling app updates.
 -   **Node.js**: Version 14.0 or higher is required.
--   **[Capgo CLI](https://capgo.app/docs/cli/commands)**: Used for setting up and managing update channels.
+-   **[CodePushGo CLI](https://capgo.app/docs/cli/commands)**: Used for setting up and managing update channels.
 -   **Development Environment**: Choose an IDE that supports Capacitor.
 
-To initialize Capgo CLI, run this command:
+To initialize CodePushGo CLI, run this command:
 
 ```bash
 npx @capgo/cli init
 ```
 
-This sets up your project with the necessary configuration files and connects it to Capgo's [update service](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
+This sets up your project with the necessary configuration files and connects it to CodePushGo's [update service](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
 
 ### Configuring Access and Permissions
 
@@ -75,9 +75,9 @@ Set up permissions for secure and efficient channel management:
 | Developer | Limited access | Deploy and test updates |
 | Viewer | Read-only | Monitor update statuses |
 
-Assign roles to your team based on their responsibilities. Capgo works seamlessly with both Capacitor 6 and 7, ensuring it fits various project needs.
+Assign roles to your team based on their responsibilities. CodePushGo works seamlessly with both Capacitor 6 and 7, ensuring it fits various project needs.
 
-For added convenience, Capgo integrates with popular CI/CD tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/). Just make sure your build system is ready to handle update channel management.
+For added convenience, CodePushGo integrates with popular CI/CD tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/). Just make sure your build system is ready to handle update channel management.
 
 ## Setting Up Update Channels
 
@@ -85,7 +85,7 @@ Here's how you can create and manage update channels effectively. This guide cov
 
 ### Creating a New Channel
 
-To set up a channel using Capgo CLI, follow these steps:
+To set up a channel using CodePushGo CLI, follow these steps:
 
 1.  **Initialize the Channel**: Open your terminal and run the following command:
     
@@ -143,7 +143,7 @@ Using these naming patterns makes it easier to identify and manage your update s
 
 ## Channel Update Management
 
-Effectively managing channel updates ensures smooth and reliable deployments. This step builds on earlier channel creation processes, focusing on refining how updates are deployed. Capgo offers tools like targeted user assignments and analytics-based promotion to streamline this process.
+Effectively managing channel updates ensures smooth and reliable deployments. This step builds on earlier channel creation processes, focusing on refining how updates are deployed. CodePushGo offers tools like targeted user assignments and analytics-based promotion to streamline this process.
 
 ### Update Assignment
 
@@ -157,7 +157,7 @@ After assigning updates, conduct thorough testing to confirm their readiness.
 
 ### Update Testing
 
-Capgo provides tools to carry out detailed testing:
+CodePushGo provides tools to carry out detailed testing:
 
 | **Testing Phase** | **Purpose** | **Key Features** |
 | --- | --- | --- |
@@ -167,15 +167,15 @@ Capgo provides tools to carry out detailed testing:
 
 ### Moving Updates Between Channels
 
-Transition updates between channels carefully to maintain stability. Capgo simplifies this process with built-in safety measures.
+Transition updates between channels carefully to maintain stability. CodePushGo simplifies this process with built-in safety measures.
 
 Key points to consider:
 
 -   **Version Control**: Keep track of clear versioning across channels.
--   **Rollback Options**: Capgo offers a one-click rollback feature for quick issue resolution.
+-   **Rollback Options**: CodePushGo offers a one-click rollback feature for quick issue resolution.
 -   **Analytics Review**: Always review performance data before promoting an update to the next channel.
 
-> "Instant rollback if something goes wrong" - Capgo [\[1\]](https://capgo.app/)
+> "Instant rollback if something goes wrong" - CodePushGo [\[1\]](https://capgo.app/)
 
 ## Removing Update Channels
 
@@ -183,14 +183,14 @@ It's important to know how and when to remove unused update channels. Keeping yo
 
 ### Finding Unused Channels
 
-To spot inactive channels, use [Capgo's analytics dashboard](https://capgo.app/docs/webapp/) to analyze usage patterns. Focus on channels that meet these criteria:
+To spot inactive channels, use [CodePushGo's analytics dashboard](https://capgo.app/docs/webapp/) to analyze usage patterns. Focus on channels that meet these criteria:
 
 -   No active users in the last 30 days
 -   No recent updates deployed
 -   Beta testing phases fully completed
 -   Temporary channels used for testing or old features flagged as unnecessary
 
-Capgo's real-time analytics make it simple to identify channels that are no longer needed.
+CodePushGo's real-time analytics make it simple to identify channels that are no longer needed.
 
 ### Channel Removal Steps
 
@@ -216,19 +216,19 @@ Before finalizing the removal, consider these points:
     Double-check that no CI/CD pipelines or scripts still reference the channel.
     
 
-After removal, monitor system performance. If any issues arise, Capgo's rollback feature can help you quickly address them.
+After removal, monitor system performance. If any issues arise, CodePushGo's rollback feature can help you quickly address them.
 
-## [Capgo](https://capgo.app/) Features for Updates
+## [CodePushGo](https://capgo.app/) Features for Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-21.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-21.jpg?auto=compress)
 
-### Capgo Core Functions
+### CodePushGo Core Functions
 
-Capgo simplifies managing update channels with features tailored for Capacitor projects. Its channel system lets you target specific user groups with updates that suit their needs. On top of that, Capgo provides developers with tools to speed up deployment and improve workflows.
+CodePushGo simplifies managing update channels with features tailored for Capacitor projects. Its channel system lets you target specific user groups with updates that suit their needs. On top of that, CodePushGo provides developers with tools to speed up deployment and improve workflows.
 
 ### Developer Tools
 
-Capgo offers a range of tools to make updates easier and ensure everything stays compliant. With its CLI tool, you can deploy updates using just one command, saving time and effort.
+CodePushGo offers a range of tools to make updates easier and ensure everything stays compliant. With its CLI tool, you can deploy updates using just one command, saving time and effort.
 
 Here are some standout features for developers:
 
@@ -239,25 +239,25 @@ Here are some standout features for developers:
 | Analytics Dashboard | Monitor updates in real-time | Track performance easily |
 | Rollback Capability | Quickly fix issues | Keeps the app stable |
 
-These tools integrate smoothly with Capgo’s easy setup process, which is outlined below.
+These tools integrate smoothly with CodePushGo’s easy setup process, which is outlined below.
 
-### Capgo Setup Guide
+### CodePushGo Setup Guide
 
-Getting started with Capgo is simple and quick. Just follow these three steps:
+Getting started with CodePushGo is simple and quick. Just follow these three steps:
 
 1.  **Configure Authentication:** Enable end-to-end encryption to keep updates secure.
 2.  **Define Channel Structure:** Set up channels based on your deployment needs.
 3.  **Set User Permissions:** Assign specific access rights to team members.
 
-> "@Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
-Capgo supports over 30 plugins and works seamlessly with CI/CD pipelines, making it easy to fit into your existing development process. It enhances [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) while keeping everything efficient and straightforward.
+CodePushGo supports over 30 plugins and works seamlessly with CI/CD pipelines, making it easy to fit into your existing development process. It enhances [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) while keeping everything efficient and straightforward.
 
 ## Summary
 
 ### Main Points
 
-Managing channels effectively ensures app deployments run smoothly. Capgo's channel system showcases impressive results: **95% of updates are adopted within 24 hours**, supported by a global CDN that delivers a 5MB bundle in just 114ms, alongside an API response time of 434ms worldwide [\[1\]](https://capgo.app/).
+Managing channels effectively ensures app deployments run smoothly. CodePushGo's channel system showcases impressive results: **95% of updates are adopted within 24 hours**, supported by a global CDN that delivers a 5MB bundle in just 114ms, alongside an API response time of 434ms worldwide [\[1\]](https://capgo.app/).
 
 | Metric | Performance |
 | --- | --- |

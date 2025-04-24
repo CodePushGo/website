@@ -9,7 +9,7 @@ created_at: 2025-02-12T08:43:18.401Z
 updated_at: 2025-03-18T13:13:54.495Z
 head_image: https://assets.seobotai.com/capgo.app/67abf1dcdd71129bfb8de766-1739349815106.jpg
 head_image_alt: Mobile Development
-keywords: CI/CD, OTA updates, automation, app deployment, security, Capgo, Capacitor
+keywords: CI/CD, OTA updates, automation, app deployment, security, CodePushGo, Capacitor
 tag: Development, Mobile, Updates
 published: true
 locale: en
@@ -24,7 +24,7 @@ CI/CD tools make over-the-air (OTA) updates faster, safer, and more reliable by 
     -   **Security:** Use HTTPS, code signing, and encryption to protect updates.
     -   **Staged Rollouts:** Deploy updates to small groups first to catch issues early.
     -   **Rollback Options:** Automatically revert updates if error rates rise.
--   **Tools Highlighted:** [Capgo](https://capgo.app/) simplifies OTA updates with CLI commands, webhook integration, and detailed metrics tracking.
+-   **Tools Highlighted:** [CodePushGo](https://capgo.app/) simplifies OTA updates with CLI commands, webhook integration, and detailed metrics tracking.
 
 Automating OTA updates ensures faster delivery, fewer errors, and better app stability. Below, you'll find step-by-step instructions to set up [Capacitor](https://capacitorjs.com/) apps with CI/CD pipelines.
 
@@ -82,17 +82,17 @@ To apply these security features, include the following in your configuration:
 }
 ```
 
-### Configuring [Capgo](https://capgo.app/) for OTA Updates
+### Configuring [CodePushGo](https://capgo.app/) for OTA Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-12.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-12.jpg?auto=compress)
 
-Capgo simplifies the OTA update process. Begin by installing the required plugin:
+CodePushGo simplifies the OTA update process. Begin by installing the required plugin:
 
 ```bash
 npm install @capgo/capacitor-updater
 ```
 
-Next, add Capgo-specific settings to your `capacitor.config.json` file:
+Next, add CodePushGo-specific settings to your `capacitor.config.json` file:
 
 ```json
 {
@@ -106,11 +106,11 @@ Next, add Capgo-specific settings to your `capacitor.config.json` file:
 }
 ```
 
-Capgo uses semantic versioning with build identifiers like `2025.02.12-a1b2c3d` for precise update tracking. This makes it easier to manage and monitor your app's update lifecycle.
+CodePushGo uses semantic versioning with build identifiers like `2025.02.12-a1b2c3d` for precise update tracking. This makes it easier to manage and monitor your app's update lifecycle.
 
 ## Creating OTA Update Pipelines
 
-Once you've set up Capgo in your Capacitor environment, the next step is linking it with CI/CD tools to automate update delivery. This ensures updates are handled securely and efficiently while keeping your app stable.
+Once you've set up CodePushGo in your Capacitor environment, the next step is linking it with CI/CD tools to automate update delivery. This ensures updates are handled securely and efficiently while keeping your app stable.
 
 ### Webhook Setup for Auto-Updates
 
@@ -128,16 +128,16 @@ jobs:
       - name: Trigger OTA Update
         run: |
           curl -X POST \
-          -H "X-Capgo-Signature: sha256=${{ secrets.CAPGO_SECRET }}" \
+          -H "X-CodePushGo-Signature: sha256=${{ secrets.CAPGO_SECRET }}" \
           -H "Authorization: Bearer ${{ secrets.CAPGO_API_KEY }}" \
           https://api.capgo.app/deploy
 ```
 
 Make sure to store your API keys and secrets securely in your CI/CD platform's [encrypted storage](https://capgo.app/docs/cli/migrations/encryption/) to protect sensitive data.
 
-### Capgo CLI Update Commands
+### CodePushGo CLI Update Commands
 
-The Capgo CLI offers key commands to streamline update management within your pipeline. Here’s an example of a typical deployment workflow:
+The CodePushGo CLI offers key commands to streamline update management within your pipeline. Here’s an example of a typical deployment workflow:
 
 | Stage | Command | Purpose |
 | --- | --- | --- |
@@ -160,7 +160,7 @@ fi
 
 This approach helped [Gunnebo Safe Storage](https://www.gunnebosafestorage.com/) cut downtime from hours to minutes [\[6\]](https://mender.io/blog/mender-ota-updates-and-an-automated-ci-cd-pipeline-at-gunnebo-safe-storage).
 
-For high-risk updates, consider using Capgo's staged rollout feature. It allows you to deploy updates to smaller user groups first, reducing the chance of widespread issues before a full release.
+For high-risk updates, consider using CodePushGo's staged rollout feature. It allows you to deploy updates to smaller user groups first, reducing the chance of widespread issues before a full release.
 
 ###### sbb-itb-f9944d2
 
@@ -168,7 +168,7 @@ For high-risk updates, consider using Capgo's staged rollout feature. It allows 
 
 ### Staged Updates and User Groups
 
-Staged updates let you control how updates are rolled out, ensuring a smooth experience for users. For example, Capgo's _promote_ command (discussed earlier) helps manage beta groups. With enterprise data showing that nearly half of apps (49%) need monthly updates [\[4\]](https://capacitorjs.com/docs/guides/ci-cd), staged deployment becomes a key strategy to keep apps stable while rolling out changes gradually.
+Staged updates let you control how updates are rolled out, ensuring a smooth experience for users. For example, CodePushGo's _promote_ command (discussed earlier) helps manage beta groups. With enterprise data showing that nearly half of apps (49%) need monthly updates [\[4\]](https://capacitorjs.com/docs/guides/ci-cd), staged deployment becomes a key strategy to keep apps stable while rolling out changes gradually.
 
 ### Metric-Based Update Triggers
 

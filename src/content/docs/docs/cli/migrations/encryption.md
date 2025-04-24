@@ -67,7 +67,7 @@ npx @capgo/cli bundle upload --channel production
 ```
 
 :::tip
-Capacitor config is never uploaded to Capgo
+Capacitor config is never uploaded to CodePushGo
 :::
 
 ## 6. Cleanup (After 3-4 Months)

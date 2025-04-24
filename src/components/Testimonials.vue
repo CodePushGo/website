@@ -11,7 +11,7 @@ const featuredTestimonial = {
     handle: '_andypeacock',
     imageUrl: '/andrew.webp',
   },
-  body: "Here's my view:\nReact-native: Too many moving parts that eventually broke.\nFlutterflow: new language, stumbled on first attempt to add a plugin.\nNow: @Capacitor + @vue or @react + @VoltBuilder + @Capgo 🤘",
+  body: "Here's my view:\nReact-native: Too many moving parts that eventually broke.\nFlutterflow: new language, stumbled on first attempt to add a plugin.\nNow: @Capacitor + @vue or @react + @VoltBuilder + @CodePushGo 🤘",
 }
 
 // Define other testimonials
@@ -24,7 +24,7 @@ const testimonials = [
           handle: 'lincolnthree',
           imageUrl: '/lincoln.webp',
         },
-        body: 'The community needed this and @Capgo is doing something really important!',
+        body: 'The community needed this and @CodePushGo is doing something really important!',
       },
       {
         author: {
@@ -32,7 +32,7 @@ const testimonials = [
           handle: 'osirisrex',
           imageUrl: '/osirisrex.webp',
         },
-        body: '@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂',
+        body: '@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂',
       },
       {
         author: {
@@ -40,7 +40,7 @@ const testimonials = [
           handle: 'bessiecooper',
           imageUrl: '/avatar-female-1.webp',
         },
-        body: '@Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden.',
+        body: '@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden.',
       },
       {
         author: {
@@ -48,7 +48,7 @@ const testimonials = [
           handle: 'simonflack',
           imageUrl: '/simon.webp',
         },
-        body: 'We are currently giving a try to @Capgo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive.',
+        body: 'We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive.',
       },
     ],
     [
@@ -66,7 +66,7 @@ const testimonials = [
           handle: 'mallats',
           imageUrl: '/mallats.webp',
         },
-        body: 'We really appreciate @Capgo, will be supporting this project from the Mallats team.\nAwaiting approval from the App Stores.',
+        body: 'We really appreciate @CodePushGo, will be supporting this project from the Mallats team.\nAwaiting approval from the App Stores.',
       },
     ],
   ],
@@ -78,7 +78,7 @@ const testimonials = [
           handle: 'manticarodrigo',
           imageUrl: '/mantica.webp',
         },
-        body: 'We practice agile development and @Capgo is mission-critical in delivering continuously to our users!\n\nThanks @martindonadieu for your hard work and I will definitely be supporting this community as well.',
+        body: 'We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!\n\nThanks @martindonadieu for your hard work and I will definitely be supporting this community as well.',
       },
       {
         author: {
@@ -86,7 +86,7 @@ const testimonials = [
           handle: 'jaythegeek',
           imageUrl: '/jaythegeek.webp',
         },
-        body: 'Did setup @Capgo and testing out this awesome replacement for @AppFlow!\n\nThank you for the hard work, it has been easy so far. About to release to the app stores 🤞',
+        body: 'Did setup @CodePushGo and testing out this awesome replacement for @AppFlow!\n\nThank you for the hard work, it has been easy so far. About to release to the app stores 🤞',
       },
     ],
     [
@@ -96,7 +96,7 @@ const testimonials = [
           handle: 'colenso',
           imageUrl: '/colenso.webp',
         },
-        body: "We rolled out Capgo OTA updates in production for our user base of +5000.\nWe're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo.",
+        body: "We rolled out CodePushGo OTA updates in production for our user base of +5000.\nWe're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo.",
       },
       {
         author: {
@@ -104,7 +104,7 @@ const testimonials = [
           handle: 'SP-CMingay',
           imageUrl: '/avatar-male-3.webp',
         },
-        body: "I've got self hosted updates working with very little work on my part! \n\nI've proposed with my bosses that we consider @Capgo app for automated updates as well so I will begin giving that a go now too.",
+        body: "I've got self hosted updates working with very little work on my part! \n\nI've proposed with my bosses that we consider @CodePushGo app for automated updates as well so I will begin giving that a go now too.",
       },
       {
         author: {
@@ -112,7 +112,7 @@ const testimonials = [
           handle: 'jermaine',
           imageUrl: '/avatar-male-2.webp',
         },
-        body: "Jumped over to @Capgo after @AppFlow hit us with a $5000 bill for the year to continue.\n\nLoving CapoGo so far. Thanks for @Capgo, it's a great product.",
+        body: "Jumped over to @CodePushGo after @AppFlow hit us with a $5000 bill for the year to continue.\n\nLoving CapoGo so far. Thanks for @CodePushGo, it's a great product.",
       },
     ],
   ],

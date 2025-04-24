@@ -118,7 +118,7 @@ In live-update scenarios, signed tokens protect each update package from its sou
 -   Monitor update success rates and user engagement as they happen.
 -   Manage testers and beta users with precise permission settings.
 
-Platforms like [Capgo](https://capgo.app/) implement these practices with features like encryption, signature checks, version control, and rollback options to secure over-the-air (OTA) updates. These methods have proven effective, with 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/).
+Platforms like [CodePushGo](https://capgo.app/) implement these practices with features like encryption, signature checks, version control, and rollback options to secure over-the-air (OTA) updates. These methods have proven effective, with 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/).
 
 ### Security Implementation
 

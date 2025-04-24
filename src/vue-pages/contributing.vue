@@ -9,7 +9,7 @@ import * as m from '../paraglide/messages.js'
     <h2 id="projects">{{ m.projects() }}</h2>
     <p
       v-html="
-        m.there_are_numerous_repositories_in_the_capgo_organization_that_are_part_of_the_capgo().replace('Capgo', `<a href='https://github.com/Cap-go'><code>Capgo</code></a>`)
+        m.there_are_numerous_repositories_in_the_capgo_organization_that_are_part_of_the_capgo().replace('CodePushGo', `<a href='https://github.com/Cap-go'><code>CodePushGo</code></a>`)
       "
     />
     <p>{{ m.repositories_have_different_scopes_use_different_programming_languages_and_have_varying_level_when_it_comes_to_contributions() }}</p>
@@ -17,7 +17,7 @@ import * as m from '../paraglide/messages.js'
       {{
         m.to_help_you_decide_which_repository_might_be_the_best_to_start_contributing_and_or_falls_into_your_interest_here_s_a_short_comparison_languages_in_bold_comprise_most_of_the_codebase()
       }}
-      <a href="https://github.com/Cap-go"><code>Capgo</code></a>
+      <a href="https://github.com/Cap-go"><code>CodePushGo</code></a>
     </p>
 
     <h3 id="-capacitor-updater-https-github-com-cap-go-capacitor-updater-">

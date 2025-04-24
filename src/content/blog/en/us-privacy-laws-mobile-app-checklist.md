@@ -26,7 +26,7 @@ next_blog: ''
 -   **Regular Audits:** Conduct quarterly reviews of data practices and permissions.
 -   **Team Training:** Educate your team on privacy laws and secure data handling.
 
-Stay updated on changing laws and use tools like [Capgo](https://capgo.app/) to deploy secure updates efficiently. Privacy compliance isn’t just about avoiding penalties - it’s about building trust with your users.
+Stay updated on changing laws and use tools like [CodePushGo](https://capgo.app/) to deploy secure updates efficiently. Privacy compliance isn’t just about avoiding penalties - it’s about building trust with your users.
 
 ## [USENIX Security](https://www.usenix.org/conference/usenixsecurity25) '24 - Navigating the Privacy Compliance ...
 
@@ -135,7 +135,7 @@ Protecting user data requires multiple layers of encryption:
 
 -   Always use **end-to-end encryption** for data transmission.
 
-> "The only solution with true end-to-end encryption, others just sign updates" – Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" – CodePushGo [\[1\]](https://capgo.app/)
 
 Additionally, enhance user control by offering comprehensive privacy settings.
 
@@ -205,21 +205,21 @@ Automated compliance tools can simplify this process by:
 -   Generating detailed compliance reports.
 -   Documenting updates and their implementation.
 
-## [Capgo](https://capgo.app/) Privacy Features
+## [CodePushGo](https://capgo.app/) Privacy Features
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-23.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-23.jpg?auto=compress)
 
-When updating your mobile app to meet privacy requirements, speed and security are key. Capgo offers tools to help you stay compliant with U.S. privacy laws, ensuring updates are both fast and secure.
+When updating your mobile app to meet privacy requirements, speed and security are key. CodePushGo offers tools to help you stay compliant with U.S. privacy laws, ensuring updates are both fast and secure.
 
 ### Quick Update System
 
-Capgo's instant update system allows developers to address privacy issues without delay. With updates reaching 95% of active users within 24 hours, over 23.5M updates have already been deployed, achieving an 82% global success rate [\[1\]](https://capgo.app/). For critical privacy updates, Capgo's channel system lets you test changes with select user groups before rolling them out broadly. This ensures updates are tested and compliant when time is of the essence.
+CodePushGo's instant update system allows developers to address privacy issues without delay. With updates reaching 95% of active users within 24 hours, over 23.5M updates have already been deployed, achieving an 82% global success rate [\[1\]](https://capgo.app/). For critical privacy updates, CodePushGo's channel system lets you test changes with select user groups before rolling them out broadly. This ensures updates are tested and compliant when time is of the essence.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ### Update Security Features
 
-Fast updates mean nothing without strong security. Capgo ensures privacy updates are protected with features like:
+Fast updates mean nothing without strong security. CodePushGo ensures privacy updates are protected with features like:
 
 -   **End-to-end encryption:** Updates are encrypted throughout the entire process.
 -   **User-specific decryption:** Only authorized users can access and install updates.
@@ -230,7 +230,7 @@ This system safeguards sensitive data and aligns with U.S. privacy laws, includi
 
 ### Privacy Update Workflow
 
-Capgo's workflow tools integrate directly into your development process, making privacy compliance easier to manage. Key features include:
+CodePushGo's workflow tools integrate directly into your development process, making privacy compliance easier to manage. Key features include:
 
 -   **Automated Deployment:** Integrates with CI/CD pipelines to streamline privacy updates.
 -   **Version Control:** Tracks changes to privacy features across updates.
@@ -245,13 +245,13 @@ For those on the PAYG plan, additional privacy-focused tools are available:
 | Dedicated Support | Expert help with privacy-related updates |
 | Extended Storage | Store detailed logs for privacy compliance |
 
-Capgo is already supporting 750 apps in production, proving its dependability for managing privacy-compliant updates. These tools help developers maintain compliance while delivering timely updates to their users.
+CodePushGo is already supporting 750 apps in production, proving its dependability for managing privacy-compliant updates. These tools help developers maintain compliance while delivering timely updates to their users.
 
 ## Summary
 
 This section highlights the core elements necessary for adhering to U.S. privacy standards in mobile apps. Staying compliant requires constant monitoring and the ability to quickly adapt to changing regulations.
 
-To achieve this, privacy compliance relies on fast technical implementation and ongoing oversight. Systems must be able to respond swiftly to new requirements or address privacy concerns as they arise. As previously discussed, Capgo demonstrates how integrated update systems can strengthen compliance efforts.
+To achieve this, privacy compliance relies on fast technical implementation and ongoing oversight. Systems must be able to respond swiftly to new requirements or address privacy concerns as they arise. As previously discussed, CodePushGo demonstrates how integrated update systems can strengthen compliance efforts.
 
 Here’s a breakdown of key areas and their metrics for maintaining compliance:
 

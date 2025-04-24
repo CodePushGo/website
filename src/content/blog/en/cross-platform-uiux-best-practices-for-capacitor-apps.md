@@ -23,9 +23,9 @@ next_blog: ''
 -   **Optimize for Screen Sizes**: Use responsive grids, breakpoints, and scalable components for smooth layouts on all devices.
 -   **Leverage Tools Like [Ionic](https://ionicframework.com/)**: Pre-built components adapt to platform styles, saving time and effort.
 -   **Test Across Devices**: Cover different screen sizes, OS versions, and user interactions to ensure reliability.
--   **Use Live Updates**: Tools like [Capgo](https://capgo.app/) deliver updates instantly without app store delays, keeping users up-to-date.
+-   **Use Live Updates**: Tools like [CodePushGo](https://capgo.app/) deliver updates instantly without app store delays, keeping users up-to-date.
 
-**Quick Tip**: Capgo has enabled 23.5 million updates for 750+ apps, with 95% of users updated within 24 hours.
+**Quick Tip**: CodePushGo has enabled 23.5 million updates for 750+ apps, with 95% of users updated within 24 hours.
 
 ## Build Cross Platform Components with [Stencil](https://stenciljs.com/) and [Capacitor](https://capacitorjs.com/)
 
@@ -75,7 +75,7 @@ Designing for different screen sizes requires flexibility. Here are some strateg
     Ensure components scale proportionally. For touch targets, follow these guidelines: at least 44x44 pixels on iOS and 48x48 density-independent pixels on Android.
     
 
-With tools like Capgo's live update features, you can quickly refine and improve your design system.
+With tools like CodePushGo's live update features, you can quickly refine and improve your design system.
 
 ## Building UI Components
 
@@ -110,13 +110,13 @@ Custom components should be designed with flexibility in mind. Use a platform-ne
 
 Once your components are designed, it’s essential to optimize them for performance across all platforms. A seamless user experience depends on efficient performance.
 
-> "We rolled out [Capgo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." – colenso [\[1\]](https://capgo.app/)
+> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." – colenso [\[1\]](https://capgo.app/)
 
-Techniques like lazy loading, virtual scrolling, and hardware-accelerated animations can significantly reduce bundle sizes and improve responsiveness. For critical updates, Capgo’s live update system is a reliable tool, as highlighted by Rodrigo Mantica:
+Techniques like lazy loading, virtual scrolling, and hardware-accelerated animations can significantly reduce bundle sizes and improve responsiveness. For critical updates, CodePushGo’s live update system is a reliable tool, as highlighted by Rodrigo Mantica:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Use browser developer tools and Capgo’s analytics dashboard to monitor and validate your performance optimizations effectively.
+Use browser developer tools and CodePushGo’s analytics dashboard to monitor and validate your performance optimizations effectively.
 
 ## Handling Platform Differences
 
@@ -145,9 +145,9 @@ When adding platform-specific features, it's important to respect the unique des
 | Status Bar | iOS-style light/dark modes | Adapts to system themes |
 | Keyboard | Interactive dismissal | Handles Android soft keyboard behavior |
 
-> "Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
-Capgo's update mechanism simplifies the process of rolling out fixes across platforms [\[1\]](https://capgo.app/). Beyond coding tweaks, hardware limitations also play a big role in shaping how features should be implemented.
+CodePushGo's update mechanism simplifies the process of rolling out fixes across platforms [\[1\]](https://capgo.app/). Beyond coding tweaks, hardware limitations also play a big role in shaping how features should be implemented.
 
 ### Device Features and Limits
 
@@ -214,21 +214,21 @@ Automated testing is essential for maintaining quality across platforms. Here ar
     -   Verifying platform-specific behaviors
     -   State management testing
 
-When setting up automated tests, prioritize critical user paths first. For live updates and quick fixes, Capgo’s update mechanism integrates seamlessly with these tools. This allows you to roll out tested changes quickly without risking app stability. Together, automated testing and live updates ensure a smooth, reliable app experience.
+When setting up automated tests, prioritize critical user paths first. For live updates and quick fixes, CodePushGo’s update mechanism integrates seamlessly with these tools. This allows you to roll out tested changes quickly without risking app stability. Together, automated testing and live updates ensure a smooth, reliable app experience.
 
 ## App Updates and Maintenance
 
 Keeping your app updated is crucial for maintaining a smooth and consistent user experience across platforms. Timely updates, paired with secure delivery, ensure your app stays reliable and user-friendly.
 
-### Live Updates with [Capgo](https://capgo.app/)
+### Live Updates with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-24.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-24.jpg?auto=compress)
 
-After nailing the design and testing phases, the next challenge is rolling out updates smoothly. Capgo makes this process easier by allowing instant updates without waiting for app store approvals.
+After nailing the design and testing phases, the next challenge is rolling out updates smoothly. CodePushGo makes this process easier by allowing instant updates without waiting for app store approvals.
 
-Here’s how Capgo helps:
+Here’s how CodePushGo helps:
 
--   **Staged Rollouts**: Test UI changes with selected user groups using Capgo’s channel system before releasing them to everyone.
+-   **Staged Rollouts**: Test UI changes with selected user groups using CodePushGo’s channel system before releasing them to everyone.
 -   **Selective Deployment**: Push out specific fixes to reduce update sizes and speed up downloads.
 -   **Version Control**: Manage multiple app versions simultaneously, ensuring a consistent experience for all users.
 
@@ -244,7 +244,7 @@ To maintain a top-notch user experience, monitor these key metrics:
 | Response Time | API speed | Under 434ms globally |
 | User Experience | Interface interactions | Real-time feedback |
 
-Capgo’s built-in analytics provide real-time insights into user engagement, all while ensuring security with end-to-end encryption.
+CodePushGo’s built-in analytics provide real-time insights into user engagement, all while ensuring security with end-to-end encryption.
 
 ### App Store Guidelines
 
@@ -252,9 +252,9 @@ When rolling out cross-platform UI updates, complying with app store rules is no
 
 -   **Update Compliance**: Ensure all updates meet Apple and Android guidelines for UI changes.
 -   **Security Standards**: Use end-to-end encryption to securely deliver updates.
--   For enterprise apps, Capgo offers options like [self-hosted updates](https://capgo.app/docs/plugin/self-hosted/handling-updates/) and custom domain support. This gives organizations tighter control over the update process while ensuring compliance.
+-   For enterprise apps, CodePushGo offers options like [self-hosted updates](https://capgo.app/docs/plugin/self-hosted/handling-updates/) and custom domain support. This gives organizations tighter control over the update process while ensuring compliance.
 
-Capgo’s approach to updates has a proven track record - 95% of active users adopt updates within 24 hours. This quick uptake helps maintain a consistent experience and minimizes support issues caused by outdated versions.
+CodePushGo’s approach to updates has a proven track record - 95% of active users adopt updates within 24 hours. This quick uptake helps maintain a consistent experience and minimizes support issues caused by outdated versions.
 
 ## Summary
 

@@ -100,7 +100,7 @@ The results of these assessments will highlight the technical updates needed for
     -   Consistent security updates
     -   Automated threat detection systems
 
-For apps that require frequent updates, consider integrating compliant update systems. For example, [Capgo](https://capgo.app/)'s live update solution provides end-to-end encryption and supports instant security patches while meeting both Chinese and international standards.
+For apps that require frequent updates, consider integrating compliant update systems. For example, [CodePushGo](https://capgo.app/)'s live update solution provides end-to-end encryption and supports instant security patches while meeting both Chinese and international standards.
 
 -   **Data Management Features**:
     -   Tools for users to export their data
@@ -155,7 +155,7 @@ Use technical tools that align with China's security requirements. Key solutions
 -   **Automated compliance software** for streamlined processes
 -   **[Update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) systems** with version control capabilities
 
-Platforms like Capgo provide secure update deployment with features such as end-to-end encryption and user assignment. These tools simplify app maintenance while adhering to Chinese regulations.
+Platforms like CodePushGo provide secure update deployment with features such as end-to-end encryption and user assignment. These tools simplify app maintenance while adhering to Chinese regulations.
 
 ### Daily Compliance Steps
 
@@ -197,7 +197,7 @@ China is continuing to adjust its cybersecurity regulations, which means app dev
 
 Preparing early for regulatory changes can make entering the Chinese market smoother. Taking a proactive approach to compliance can speed up app reviews and gain regulatory approval more easily. It also helps avoid expensive last-minute changes and builds user confidence.
 
-Setting up a compliance framework that can handle future adjustments is key to long-term growth. Tools like Capgo's live update platform allow developers to implement secure updates quickly, ensuring apps stay compliant and competitive as rules change.
+Setting up a compliance framework that can handle future adjustments is key to long-term growth. Tools like CodePushGo's live update platform allow developers to implement secure updates quickly, ensuring apps stay compliant and competitive as rules change.
 
 ## Summary
 
@@ -210,6 +210,6 @@ Key steps for developers include:
 -   **Update Management**: Deliver updates using compliant, real-time tools.
 -   **Documentation**: Maintain detailed records of all data-related practices.
 
-Using tools designed for compliance can simplify this process. Platforms like Capgo offer live update features with end-to-end encryption, helping developers protect their apps while meeting regulatory standards.
+Using tools designed for compliance can simplify this process. Platforms like CodePushGo offer live update features with end-to-end encryption, helping developers protect their apps while meeting regulatory standards.
 
 Failing to comply can lead to significant penalties. Building strong compliance systems is essential for long-term success in one of the largest digital markets globally. As China's regulations continue to evolve, developers must stay informed and regularly update their security and data management practices to remain compliant.

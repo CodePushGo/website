@@ -41,7 +41,7 @@ next_blog: ''
 
 ### Key Features to Leverage:
 
--   **Live Updates**: Push updates instantly using tools like [Capgo](https://capgo.app/).
+-   **Live Updates**: Push updates instantly using tools like [CodePushGo](https://capgo.app/).
 -   **Native Features**: Access Android-specific APIs for advanced functionality.
 -   **Real-Time Monitoring**: Quickly address issues during development.
 
@@ -136,9 +136,9 @@ A few key configurations in Android Studio will make it work efficiently with th
     -   [Internal Storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/): 2048 MB
     -   SD Card: 512 MB
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-For more details on Capgo-specific configurations, check out the [Capgo Integration](https://capgo.app/consulting/) section later in this guide.
+For more details on CodePushGo-specific configurations, check out the [CodePushGo Integration](https://capgo.app/consulting/) section later in this guide.
 
 ## Android SDK Configuration
 
@@ -312,15 +312,15 @@ Here are some typical issues and how to resolve them:
     -   Turn on USB debugging and install the correct drivers for your device.
     -   Run `adb devices` to confirm the connection is recognized.
 
-Resolving these issues will prepare your environment for advanced features and smooth integration with Capgo. Once verified, your setup will be ready for the next steps in your project.
+Resolving these issues will prepare your environment for advanced features and smooth integration with CodePushGo. Once verified, your setup will be ready for the next steps in your project.
 
-## [Capgo](https://capgo.app/) Integration
+## [CodePushGo](https://capgo.app/) Integration
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
 
-Once your Android environment is ready, it's time to integrate Capgo. This tool simplifies your [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) by allowing you to push updates to your Capacitor app instantly - no Play Store review needed.
+Once your Android environment is ready, it's time to integrate CodePushGo. This tool simplifies your [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) by allowing you to push updates to your Capacitor app instantly - no Play Store review needed.
 
-### Key Capgo Features
+### Key CodePushGo Features
 
 -   **Real-time Updates**: Updates reach 95% of active users within 24 hours [\[1\]](https://capgo.app/).
 -   **End-to-End Encryption**: Ensures data security.
@@ -335,9 +335,9 @@ Once your Android environment is ready, it's time to integrate Capgo. This tool 
 | Active Production Apps | 750 |
 | GitHub Stars | 358 |
 
-### How to Set Up Capgo
+### How to Set Up CodePushGo
 
-1.  **Install the Capgo CLI**
+1.  **Install the CodePushGo CLI**
     
     Use the following command to get started:
     
@@ -350,16 +350,16 @@ Once your Android environment is ready, it's time to integrate Capgo. This tool 
     Configure channels for various needs like beta testing, staged rollouts, or A/B testing to experiment with new features.
     
 
-### Advanced Capgo Tools
+### Advanced CodePushGo Tools
 
-Capgo offers additional tools to enhance your app management:
+CodePushGo offers additional tools to enhance your app management:
 
 -   **Analytics Dashboard**: Track update performance and usage.
 -   **Rollback Options**: Quickly revert updates if needed.
 -   **Error Tracking**: Identify and resolve issues efficiently.
 -   **CI/CD Integration**: Works seamlessly with GitHub Actions, [GitLab](https://about.gitlab.com/) CI, and [Jenkins](https://www.jenkins.io/).
 
-Once everything is configured, run the command below to sync your setup and start managing updates with Capgo:
+Once everything is configured, run the command below to sync your setup and start managing updates with CodePushGo:
 
 ```bash
 npx cap sync
@@ -374,7 +374,7 @@ Here’s a quick breakdown of the main components:
 -   **Android Studio**: Use the latest stable version of this primary IDE.
 -   **Android SDK**: Ensure you have the development kit with the right API level for your app.
 -   **[Capacitor Platform](https://capgo.app/blog/capacitor-comprehensive-guide/)**: Check for version compatibility during integration.
--   **Optional Live Update Tools**: Tools like Capgo allow instant updates, but their integration is optional.
+-   **Optional Live Update Tools**: Tools like CodePushGo allow instant updates, but their integration is optional.
 
 A well-configured setup ensures efficient updates, with statistics showing 95% of active users receiving updates within 24 hours and an 82% success rate globally [\[1\]](https://capgo.app/). To confirm everything is ready:
 
@@ -383,6 +383,6 @@ A well-configured setup ensures efficient updates, with statistics showing 95% o
 -   Sync your Capacitor project without issues.
 -   Build and test a project to confirm there are no errors.
 
-Tools like Capgo are making deployment workflows easier, whether you're distributing through app stores or using live update solutions. Double-check your environment variables and SDK components to avoid any hiccups.
+Tools like CodePushGo are making deployment workflows easier, whether you're distributing through app stores or using live update solutions. Double-check your environment variables and SDK components to avoid any hiccups.
 
 With these steps complete, you’re ready to dive into Capacitor app development.

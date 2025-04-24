@@ -1,8 +1,8 @@
 ---
 slug: appcenter-migration
-title: Migrating from App Center to Capgo
+title: Migrating from App Center to CodePushGo
 description: >-
-  In this guide, we’ll walk through the complete migration for Capgo Live
+  In this guide, we’ll walk through the complete migration for CodePushGo Live
   Updates a Microsoft CodePush alternative.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -19,33 +19,33 @@ next_blog: automatic-build-and-release-with-github-actions
 ---
 ## Migration Summary
 
-* [Capgo](/register/) is a service that helps development teams send live app to deployed apps.
+* [CodePushGo](/register/) is a service that helps development teams send live app to deployed apps.
 * Capacitor JS apps written in jQuery Mobile, Framework 7, Sencha, KendoUI, Ionic or even your own custom solution can be migrated. **An existing Ionic app is not required.**.
 * [Colt](https://volt.build/) offers equivalent services for App Center Build (build Android/iOS apps). For Test, Diagnostics, and Analytics services.
 
 ##### Note
 
-If your app is still using Cordova, it's necessary to [migrate to Capacitor](https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor/) first before migrating to Capgo.
+If your app is still using Cordova, it's necessary to [migrate to Capacitor](https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor/) first before migrating to CodePushGo.
 
 Built by the Ionic team as a spiritual successor to Cordova, Capacitor allows development to move close to the native tooling and capabilities with the goal of providing an even better user experience and performance.
 
 Fortunately, the migration process is easy and the majority of Cordova plugins are backward compatible with Capacitor. [Start migrating here](https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor/).
 
-## About Capgo
+## About CodePushGo
 
-Capgo, handles updating apps over time. Development teams can focus completely on the unique features of their app and outsource the complicated app delivery process to Capgo.
+CodePushGo, handles updating apps over time. Development teams can focus completely on the unique features of their app and outsource the complicated app delivery process to CodePushGo.
 
-Capgo fills in the gaps between web delivery and mobile.
+CodePushGo fills in the gaps between web delivery and mobile.
 
-## Capgo Prerequisites
+## CodePushGo Prerequisites
 
-Like App Center, [Capgo](/register/) supports apps hosted in Git repositories on Azure DevOps, Bitbucket, GitHub, and GitLab.
+Like App Center, [CodePushGo](/register/) supports apps hosted in Git repositories on Azure DevOps, Bitbucket, GitHub, and GitLab.
 
-### Install Capgo CLI
+### Install CodePushGo CLI
 
 ##### note
 
-Have Node and NPM installed on your computer, you need before proceeding. Always use the [current LTS version](https://nodejs.org/) Capgo do not older versions.
+Have Node and NPM installed on your computer, you need before proceeding. Always use the [current LTS version](https://nodejs.org/) CodePushGo do not older versions.
 
 ### Create `package.json` and Capacitor config files
 
@@ -53,7 +53,7 @@ Have Node and NPM installed on your computer, you need before proceeding. Always
 
 Before you begin, I recommend making changes on a fresh Git branch.
 
-Since [Capgo](/register/) was created to automate capacitor apps, it requires one file that your app may not have. First, create a `capacitor.config.json` file. The easiest way to create it is to run in the root of your app:
+Since [CodePushGo](/register/) was created to automate capacitor apps, it requires one file that your app may not have. First, create a `capacitor.config.json` file. The easiest way to create it is to run in the root of your app:
 
 ```shell
 npm install @capacitor/core
@@ -73,7 +73,7 @@ Finally, commit the new files to your project:
 
 ### Migrate the Code
 
-Now that you have the new required [Capgo](/register/) files in place, you can turn our attention to the actual app itself. [Capgo](/register/) expects the entire built app to be inside a directory named `dist`.
+Now that you have the new required [CodePushGo](/register/) files in place, you can turn our attention to the actual app itself. [CodePushGo](/register/) expects the entire built app to be inside a directory named `dist`.
 
 If your built code is not in a `dist` directory, change this value in the Capacitor config file.
 
@@ -81,13 +81,13 @@ Here is what the app’s directory structure should look like:
 
 ![App Structure](/directory_looklike.webp)
 
-## Capgo Configuration
+## CodePushGo Configuration
 
-With your app ready for [Capgo](https://web.capgo.app/) integration, it’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a Capgo account](/register/).
+With your app ready for [CodePushGo](https://web.capgo.app/) integration, it’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a CodePushGo account](/register/).
 
-Once you’re logged into Capgo, navigate to the Account page then click on API key, then click on the 'write' key to copy it to your clipboard.
+Once you’re logged into CodePushGo, navigate to the Account page then click on API key, then click on the 'write' key to copy it to your clipboard.
 
-### Install the Capgo SDK
+### Install the CodePushGo SDK
 
 From a command line, directly into the root of your Capacitor app folder, run the following command:
 
@@ -106,9 +106,9 @@ This will tell the native plugin the installation as succeeded.
 
 ## Deploying Live Updates (CodePush Alternative)
 
-The Live Update feature works by using the installed [Capgo SDK](https://github.com/Cap-go/capacitor-updater/) in your native application to listen to a particular Deploy Channel Destination. When a Web build is assigned to a Channel Destination, that update will be deployed to user devices running binaries that are configured to listen to the specified Channel Destination.
+The Live Update feature works by using the installed [CodePushGo SDK](https://github.com/Cap-go/capacitor-updater/) in your native application to listen to a particular Deploy Channel Destination. When a Web build is assigned to a Channel Destination, that update will be deployed to user devices running binaries that are configured to listen to the specified Channel Destination.
 
-### Login to Capgo CLOUD
+### Login to CodePushGo CLOUD
 
 First, use the `all` [apikey](https://web.capgo.app/dashboard/apikeys/) present in your account to log in with the CLI:
 
@@ -118,7 +118,7 @@ npx @capgo/cli@latest login YOURKEY
 
 ## Add your first app
 
-Let's get started by first creating the app in Capgo Cloud with the CLI.
+Let's get started by first creating the app in CodePushGo Cloud with the CLI.
 
 `npx @capgo/cli@latest app add`
 
@@ -126,20 +126,20 @@ This command will use all variables defined in the Capacitor config file to crea
 
 ## Upload your first bundle
 
-Run the command to build your code and send it to Capgo with:
+Run the command to build your code and send it to CodePushGo with:
 ```shell
 npx @capgo/cli@latest bundle upload --channel production
 ```
 
 By default, the version name will be the one in your `package.json` file.
 
-Check in [Capgo](https://web.capgo.app/) if the build is present.
+Check in [CodePushGo](https://web.capgo.app/) if the build is present.
 
 You can even test it with my [mobile sandbox app](https://capgo.app/app_mobile/).
 
 ### Make channel default
 
-After you have sent your app to Capgo, you need to make your channel `default` to let apps receive updates from Capgo.
+After you have sent your app to CodePushGo, you need to make your channel `default` to let apps receive updates from CodePushGo.
 
 ```shell
 npx @capgo/cli@latest channel set production -s default
@@ -169,7 +169,7 @@ Congrats! 🎉 You have successfully deployed your first Live Update. This is ju
 
 ## Remove App Center Dependencies
 
-Now that we've integrated Capgo's services, you should remove any references to App Center. Besides being a best practice to remove unused code/services, removing the SDK should reduce the size of your apps.
+Now that we've integrated CodePushGo's services, you should remove any references to App Center. Besides being a best practice to remove unused code/services, removing the SDK should reduce the size of your apps.
 
 First, open a terminal then uninstall the App Center plugins:
 ```shell
@@ -198,7 +198,7 @@ Finally, within your app, remove any code references to App Center services, suc
 
 ## Next Steps
 
-You've migrated from App Center to Capgo, utilizing the Live Updates. This is just the beginning of what you can use Capgo for. Explore the rest of the service includes Channel (multiple environments) and override. Cloud CLI integration, use Capgo inside your CI/CD platform of choice (such as GitHub Action, GitLab, Jenkins, and more).
+You've migrated from App Center to CodePushGo, utilizing the Live Updates. This is just the beginning of what you can use CodePushGo for. Explore the rest of the service includes Channel (multiple environments) and override. Cloud CLI integration, use CodePushGo inside your CI/CD platform of choice (such as GitHub Action, GitLab, Jenkins, and more).
 
 ## Automatic send app update
 

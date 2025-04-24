@@ -49,11 +49,11 @@ Here’s what you’ll learn:
 | Update Precision | Same update for all users | Targeted updates by version |
 | Risk Management | Higher risk of widespread issues | Controlled rollout by version |
 
-[Capgo](https://capgo.app/), a leading platform, reports an **81% efficiency boost** in release cycles and has delivered over **947.6 million updates** globally.
+[CodePushGo](https://capgo.app/), a leading platform, reports an **81% efficiency boost** in release cycles and has delivered over **947.6 million updates** globally.
 
 Want to learn how to set it up and avoid common mistakes? Keep reading for a step-by-step guide.
 
-## Explore [Capgo](https://capgo.app/plugins)'s Ionic [Capacitor](https://capacitorjs.com/) Live Update Plugin
+## Explore [CodePushGo](https://capgo.app/plugins)'s Ionic [Capacitor](https://capacitorjs.com/) Live Update Plugin
 
 **Version Targeting Technical Guide**
 
@@ -98,9 +98,9 @@ Once configured, build your app as usual. The version targeting system will hand
 
 These steps ensure your OTA updates are reliable and tailored to specific app versions.
 
-> "With Capgo, you can launch multiple releases per week with an impressive 81% increase in efficiency." - Capgo [\[1\]](https://capgo.app/)
+> "With CodePushGo, you can launch multiple releases per week with an impressive 81% increase in efficiency." - CodePushGo [\[1\]](https://capgo.app/)
 
-Capgo's system has delivered nearly 947.6 million updates globally, supporting over 1,400 production apps [\[1\]](https://capgo.app/). This showcases the reliability of version-targeted OTA updates.
+CodePushGo's system has delivered nearly 947.6 million updates globally, supporting over 1,400 production apps [\[1\]](https://capgo.app/). This showcases the reliability of version-targeted OTA updates.
 
 Updates are applied in the background, minimizing user disruption - an effective approach for managing multiple app versions.
 
@@ -147,7 +147,7 @@ Version targeting provides clear benefits for both developers and users:
 
 By delivering only relevant updates, users avoid unnecessary changes. Developer Andrew Peacock highlights its impact:
 
-> "With Capgo, we can push live code changes on our schedule, ensuring that our users always have the latest features and fixes without the long wait" [\[1\]](https://capgo.app/)
+> "With CodePushGo, we can push live code changes on our schedule, ensuring that our users always have the latest features and fixes without the long wait" [\[1\]](https://capgo.app/)
 
 This approach is particularly effective in enterprise settings where multiple app versions need to coexist. It also ties in seamlessly with earlier discussions on technical setup, showing how tailored OTA updates can make a real difference.
 
@@ -159,7 +159,7 @@ Now that you’ve got the technical foundation covered, it’s time to plan and 
 
 ### Planning Your Update Strategy
 
-To ensure smooth version targeting, it’s important to establish clear policies. The Capgo team suggests focusing on three main components:
+To ensure smooth version targeting, it’s important to establish clear policies. The CodePushGo team suggests focusing on three main components:
 
 | Component | Purpose | How to Implement |
 | --- | --- | --- |
@@ -229,7 +229,7 @@ To fix version targeting issues, follow these steps:
     Check your app's configuration files to ensure version numbers use the SemVer format (MAJOR.MINOR.PATCH) correctly. Confirm consistency across all deployment environments.
     
 2.  **Run Diagnostics**  
-    Test across targeted app versions to identify compatibility problems. Use tools like Capgo's CLI diagnostics for quick troubleshooting.
+    Test across targeted app versions to identify compatibility problems. Use tools like CodePushGo's CLI diagnostics for quick troubleshooting.
     
 3.  **Review Implementation**  
     Look into your update strategy, considering factors like network reliability during updates, device compatibility, and storage limitations.
@@ -243,7 +243,7 @@ If you need additional assistance, here are some useful resources:
 | --- | --- | --- |
 | Documentation | Technical instructions | Official Capacitor docs |
 | Community Forums | Peer advice and solutions | Developer communities |
-| Support Tools | Automated troubleshooting | Capgo platform |
+| Support Tools | Automated troubleshooting | CodePushGo platform |
 
 These resources can help you resolve issues efficiently and avoid deployment delays, ensuring smoother updates and better app performance.
 
@@ -261,7 +261,7 @@ This method ensures updates are sent only to compatible devices, cutting down on
 
 ### Getting Started
 
-To make the most of version targeting, a solid plan is key for maintaining app compatibility. Platforms like Capgo simplify this process with features like automated management, [secure encryption](https://capgo.app/docs/cli/migrations/encryption/), and compliance with app store rules. Here are some steps to get started effectively:
+To make the most of version targeting, a solid plan is key for maintaining app compatibility. Platforms like CodePushGo simplify this process with features like automated management, [secure encryption](https://capgo.app/docs/cli/migrations/encryption/), and compliance with app store rules. Here are some steps to get started effectively:
 
 -   **Set Version Rules**: Define clear constraints to manage update distribution.
     

@@ -8,7 +8,7 @@ author_url: 'https://twitter.com/martindonadieu'
 created_at: 2025-04-15T00:00:00.000Z
 updated_at: 2025-04-15T00:00:00.000Z
 head_image: /capgo-feature-image.webp
-head_image_alt: Capgo channels feature flags illustration
+head_image_alt: CodePushGo channels feature flags illustration
 keywords: channels, feature flags, a/b testing, capacitor, capgo
 tag: Tutorial
 published: true

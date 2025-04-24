@@ -1,7 +1,7 @@
 ---
 slug: how-to-use-capgo-documentation-for-ota-updates
-title: How to Use Capgo Documentation for OTA Updates
-description: "Learn how to implement secure Over-the-Air updates in your Capacitor apps with Capgo's comprehensive documentation and step-by-step guidance."
+title: How to Use CodePushGo Documentation for OTA Updates
+description: "Learn how to implement secure Over-the-Air updates in your Capacitor apps with CodePushGo's comprehensive documentation and step-by-step guidance."
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,40 +9,40 @@ created_at: 2025-02-19T03:56:01.854Z
 updated_at: 2025-03-18T13:13:59.127Z
 head_image: https://assets.seobotai.com/capgo.app/67b53306eac600a2c6713dad-1740671704703.jpg
 head_image_alt: Mobile Development
-keywords: OTA updates, Capacitor, Capgo, mobile app updates, documentation, app deployment, security features, error handling
+keywords: OTA updates, Capacitor, CodePushGo, mobile app updates, documentation, app deployment, security features, error handling
 tag: Development, Mobile, Updates
 published: true
 locale: en
 next_blog: ''
 ---
 
-**Need faster [app updates](https://capgo.app/plugins/capacitor-updater/) without app store delays?** [Capgo](https://capgo.app/) lets you deliver secure Over-the-Air (OTA) updates instantly to your users. Skip app store reviews and keep your app up-to-date with ease.
+**Need faster [app updates](https://capgo.app/plugins/capacitor-updater/) without app store delays?** [CodePushGo](https://capgo.app/) lets you deliver secure Over-the-Air (OTA) updates instantly to your users. Skip app store reviews and keep your app up-to-date with ease.
 
 ### Key Takeaways:
 
--   **What is Capgo?** An open-source platform for live updates in [Capacitor](https://capacitorjs.com/) apps.
+-   **What is CodePushGo?** An open-source platform for live updates in [Capacitor](https://capacitorjs.com/) apps.
 -   **Why OTA Updates?** Save time, improve user experience, and fix bugs quickly.
 -   **How to Get Started?**
-    -   Install the [Capgo plugin](https://capgo.app/plugins/): `npm install @capgo/capacitor-updater`
+    -   Install the [CodePushGo plugin](https://capgo.app/plugins/): `npm install @capgo/capacitor-updater`
     -   Configure your app with an API key.
     -   Use channels like "production" or "beta" for targeted rollouts.
 -   **Advanced Features:** End-to-end encryption, error handling, and CI/CD integration.
 
-Capgo's documentation ([capgo.app/docs](https://capgo.app/docs)) provides step-by-step instructions for setup, security, and troubleshooting. From installation to advanced configurations, it's your go-to guide for seamless updates.
+CodePushGo's documentation ([capgo.app/docs](https://capgo.app/docs)) provides step-by-step instructions for setup, security, and troubleshooting. From installation to advanced configurations, it's your go-to guide for seamless updates.
 
-## [Capgo](https://capgo.app/), CapacitorJs plugin for Live update
+## [CodePushGo](https://capgo.app/), CapacitorJs plugin for Live update
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-19.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-19.jpg?auto=compress)
 
 <iframe src="https://www.youtube.com/embed/NzXXKoyhTIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## Using Capgo Documentation
+## Using CodePushGo Documentation
 
-Navigating documentation effectively is essential when working with OTA updates. Capgo's documentation offers detailed guidance for integrating live updates into Capacitor apps.
+Navigating documentation effectively is essential when working with OTA updates. CodePushGo's documentation offers detailed guidance for integrating live updates into Capacitor apps.
 
 ### Where to Find the Documentation
 
-You can access Capgo's documentation at [capgo.app/docs](https://capgo.app/docs) [\[1\]](https://github.com/Cap-go/capacitor-updater). It's organized into sections based on specific purposes:
+You can access CodePushGo's documentation at [capgo.app/docs](https://capgo.app/docs) [\[1\]](https://github.com/Cap-go/capacitor-updater). It's organized into sections based on specific purposes:
 
 | **Section** | **Purpose** | **Key Topics** |
 | --- | --- | --- |
@@ -85,18 +85,18 @@ For implementation details, check out the setup guide next.
 
 ## Setting Up OTA Updates
 
-Set up OTA updates in Capgo to streamline your deployment process. Follow these steps and tips for a hassle-free configuration.
+Set up OTA updates in CodePushGo to streamline your deployment process. Follow these steps and tips for a hassle-free configuration.
 
 ### Basic Setup Steps
 
-Start by installing the Capgo plugin in your Capacitor project:
+Start by installing the CodePushGo plugin in your Capacitor project:
 
 ```typescript
 npm install @capgo/capacitor-updater
 npx cap sync
 ```
 
-Next, update your `capacitor.config.json` file with your [Capgo API key](https://capgo.app/docs/webapp/api-keys/):
+Next, update your `capacitor.config.json` file with your [CodePushGo API key](https://capgo.app/docs/webapp/api-keys/):
 
 ```json
 {
@@ -128,7 +128,7 @@ Organize your [update channels](https://capgo.app/docs/webapp/channels/) to suit
 | Staging | Pre-release testing | QA team and beta testers |
 | Beta | Feature testing | Early adopters |
 
-To upload an update to a specific channel, use the [Capgo CLI](https://capgo.app/docs/cli/commands):
+To upload an update to a specific channel, use the [CodePushGo CLI](https://capgo.app/docs/cli/commands):
 
 ```bash
 npx @capgo/cli upload -c production
@@ -136,7 +136,7 @@ npx @capgo/cli upload -c production
 
 ### Update Methods
 
-Capgo provides two main ways to handle updates:
+CodePushGo provides two main ways to handle updates:
 
 **[Automatic Updates](https://capgo.app/docs/plugin/cloud-mode/auto-update/)**  
 Enable automatic updates by setting `autoUpdate: true` in your configuration. This ensures updates are applied in the background with no extra effort from developers.
@@ -189,11 +189,11 @@ With these steps, your OTA update system is ready to go. Explore advanced settin
 
 ## Advanced Settings
 
-Improve your [Capgo OTA update](https://web.capgo.app/resend_email) setup with added security measures and flexible update configurations. These options ensure a secure and smooth update experience while meeting app store guidelines.
+Improve your [CodePushGo OTA update](https://web.capgo.app/resend_email) setup with added security measures and flexible update configurations. These options ensure a secure and smooth update experience while meeting app store guidelines.
 
 ### Security Features
 
-Capgo provides strong security protocols to safeguard your update bundles and deliver them securely to users. The platform uses end-to-end encryption with public-key cryptography for all updates [\[1\]](https://github.com/Cap-go/capacitor-updater). Below is how you can enable key security features:
+CodePushGo provides strong security protocols to safeguard your update bundles and deliver them securely to users. The platform uses end-to-end encryption with public-key cryptography for all updates [\[1\]](https://github.com/Cap-go/capacitor-updater). Below is how you can enable key security features:
 
 ```typescript
 // Enable bundle verification
@@ -263,11 +263,11 @@ CapacitorUpdater.addListener('updateFailed', async (info) => {
 });
 ```
 
-These settings ensure updates are reliable while allowing you to tailor the process to your app's needs. Always test updates thoroughly in Capgo's staging environment before rolling them out to production [\[2\]](https://dev.to/arnosolo/ionic-appflow-live-update-alternative-55c3).
+These settings ensure updates are reliable while allowing you to tailor the process to your app's needs. Always test updates thoroughly in CodePushGo's staging environment before rolling them out to production [\[2\]](https://dev.to/arnosolo/ionic-appflow-live-update-alternative-55c3).
 
 ## Problem Solving Guide
 
-Capgo's error logs and built-in tools help tackle OTA update challenges while keeping your app compliant with store requirements.
+CodePushGo's error logs and built-in tools help tackle OTA update challenges while keeping your app compliant with store requirements.
 
 ### Common Issues and Solutions
 
@@ -335,9 +335,9 @@ await CapacitorUpdater.configure({
 
 This section pulls together the main ideas from the guide.
 
-Capgo's documentation provides clear instructions for integrating OTA updates into Capacitor apps while staying compliant with app store regulations.
+CodePushGo's documentation provides clear instructions for integrating OTA updates into Capacitor apps while staying compliant with app store regulations.
 
-Using Capgo's resources, developers can implement essential features like **end-to-end encryption** and **CI/CD integration**, covering everything from initial setup to advanced configurations [\[1\]](https://github.com/Cap-go/capacitor-updater).
+Using CodePushGo's resources, developers can implement essential features like **end-to-end encryption** and **CI/CD integration**, covering everything from initial setup to advanced configurations [\[1\]](https://github.com/Cap-go/capacitor-updater).
 
 ### Key Implementation Areas
 
@@ -348,8 +348,8 @@ Using Capgo's resources, developers can implement essential features like **end-
 | **[Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update/)** | Version control and rollback options | _[Update Methods](https://capgo.app/docs/plugin/cloud-mode/hybrid-update)_ guide |
 | **Error Handling** | Logging and troubleshooting steps | _Problem Solving Guide_ |
 
-These areas form the backbone of Capgo's update management system.
+These areas form the backbone of CodePushGo's update management system.
 
-Capgo's CLI and analytics tools simplify [managing updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) throughout your app's lifecycle [\[1\]](https://github.com/Cap-go/capacitor-updater).
+CodePushGo's CLI and analytics tools simplify [managing updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) throughout your app's lifecycle [\[1\]](https://github.com/Cap-go/capacitor-updater).
 
 For further support, you can explore additional resources like **API documentation**, **sample projects**, and **community forums** [\[2\]](https://dev.to/arnosolo/ionic-appflow-live-update-alternative-55c3).

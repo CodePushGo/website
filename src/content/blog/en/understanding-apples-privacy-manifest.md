@@ -9,7 +9,7 @@ created_at: 2025-04-18T02:23:31.365Z
 updated_at: 2025-04-18T02:26:28.853Z
 head_image: https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92-1744943188853.jpg
 head_image_alt: Mobile Development
-keywords: Privacy Manifest, iOS, data collection, App Store, compliance, Capgo, JSON, updates
+keywords: Privacy Manifest, iOS, data collection, App Store, compliance, CodePushGo, JSON, updates
 tag: Development, Mobile, Security
 published: true
 locale: en
@@ -23,9 +23,9 @@ next_blog: ''
     -   APIs and third-party SDKs used
     -   External domains accessed
 -   **Why it matters**: Ensures transparency and compliance with Apple’s privacy standards.
--   **How to comply**: Add the manifest to your iOS app bundle and update it regularly, especially if using live-update tools like [Capgo](https://capgo.app/).
+-   **How to comply**: Add the manifest to your iOS app bundle and update it regularly, especially if using live-update tools like [CodePushGo](https://capgo.app/).
 
-**Quick Tip**: Tools like Capgo simplify compliance by automating manifest updates, offering instant deployments, and providing analytics for tracking success.
+**Quick Tip**: Tools like CodePushGo simplify compliance by automating manifest updates, offering instant deployments, and providing analytics for tracking success.
 
 Keep reading to learn how to set up and verify your Privacy Manifest, avoid common pitfalls, and ensure smooth updates.
 
@@ -67,17 +67,17 @@ After creating this file, open [Xcode](https://developer.apple.com/xcode/) to en
 
 In Xcode, navigate to **Product > Analyze** to generate a Privacy Report. Carefully review the report for any warnings or undeclared APIs, and make necessary adjustments to avoid issues. Once everything checks out, proceed to deploy your updates.
 
-### Updates with [Capgo](https://capgo.app/)
+### Updates with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
 
-After passing Xcode analysis, use Capgo for live updates to keep your app's privacy manifest up-to-date. Capgo provides:
+After passing Xcode analysis, use CodePushGo for live updates to keep your app's privacy manifest up-to-date. CodePushGo provides:
 
 -   **Instant deployments**: 95% of users receive updates within 24 hours [\[1\]](https://capgo.app/).
 -   **One-click rollback** for quick fixes.
 -   **Analytics tools** to track update success and ensure compliance.
 
-Capgo's Team plan is priced at $83 per month (billed annually), supporting up to 100,000 monthly active users (MAU) and 2,000 GB of bandwidth.
+CodePushGo's Team plan is priced at $83 per month (billed annually), supporting up to 100,000 monthly active users (MAU) and 2,000 GB of bandwidth.
 
 ## Privacy Compliance Guidelines
 
@@ -85,7 +85,7 @@ After verifying your manifest in Xcode, it's important to ensure privacy complia
 
 ### Recommended Practices
 
-Consider using Capgo to push manifest updates instantly, avoiding delays caused by App Store reviews. This tool also supports staged rollouts, letting you test changes with real-time analytics before rolling them out to all users [\[1\]](https://capgo.app/).
+Consider using CodePushGo to push manifest updates instantly, avoiding delays caused by App Store reviews. This tool also supports staged rollouts, letting you test changes with real-time analytics before rolling them out to all users [\[1\]](https://capgo.app/).
 
 ### Common Pitfalls
 
@@ -108,7 +108,7 @@ Let's dive into a comparison of two popular live-update platforms and see how th
 
 ### Platform Features and Pricing
 
-| Feature | Capgo | [Appflow](https://ionic.io/appflow/) |
+| Feature | CodePushGo | [Appflow](https://ionic.io/appflow/) |
 | --- | --- | --- |
 | End-to-end encryption | **Yes** | \-  |
 | Update success rate | **82% worldwide** [\[1\]](https://capgo.app/) | \-  |
@@ -116,17 +116,17 @@ Let's dive into a comparison of two popular live-update platforms and see how th
 | Bundle download speed | **114 ms (5 MB)** [\[1\]](https://capgo.app/) | \-  |
 | Annual cost (Team plan) | **$996** | **$6,000** [\[1\]](https://capgo.app/) |
 
-**Quick takeaway**: Capgo offers a much lower first-year cost - $996 compared to Appflow’s $6,000.
+**Quick takeaway**: CodePushGo offers a much lower first-year cost - $996 compared to Appflow’s $6,000.
 
-Now, let’s look at how Capgo stands out specifically for Privacy Manifest updates.
+Now, let’s look at how CodePushGo stands out specifically for Privacy Manifest updates.
 
-### Privacy Manifest: Capgo Benefits
+### Privacy Manifest: CodePushGo Benefits
 
-Capgo’s open-source codebase makes it a strong choice for managing Privacy Manifest updates. It enables quick adjustments to meet evolving privacy standards, ensuring compliance stays manageable [\[1\]](https://capgo.app/).
+CodePushGo’s open-source codebase makes it a strong choice for managing Privacy Manifest updates. It enables quick adjustments to meet evolving privacy standards, ensuring compliance stays manageable [\[1\]](https://capgo.app/).
 
 ## Summary
 
-Since May 2024, all iOS apps must comply with mandatory manifest requirements. Automation can make managing these manifests much easier. For Capacitor projects, include your manifest in the iOS bundle and use tools like Capgo to automate updates securely, thanks to its end-to-end encryption.
+Since May 2024, all iOS apps must comply with mandatory manifest requirements. Automation can make managing these manifests much easier. For Capacitor projects, include your manifest in the iOS bundle and use tools like CodePushGo to automate updates securely, thanks to its end-to-end encryption.
 
 With your manifest set up and updates automated, here are some key practices to ensure smooth Privacy Manifest updates:
 

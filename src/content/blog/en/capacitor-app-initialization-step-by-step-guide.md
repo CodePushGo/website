@@ -23,7 +23,7 @@ next_blog: ''
 -   **Install Tools**: [Node.js](https://nodejs.org/en), npm, Git, and a code editor like [VS Code](https://code.visualstudio.com/).
 -   **Set Up Capacitor**: Install the Capacitor CLI and initialize your project.
 -   **Configure Platforms**: Add iOS and Android support, adjust settings, and sync your code.
--   **Test and Deploy**: Build, run on devices, and use live update tools like [Capgo](https://capgo.app/) for seamless updates.
+-   **Test and Deploy**: Build, run on devices, and use live update tools like [CodePushGo](https://capgo.app/) for seamless updates.
 
 Capacitor bridges web apps with native device features, ensuring smooth performance across platforms. Follow this guide to simplify your app development process!
 
@@ -69,7 +69,7 @@ Get the Capacitor CLI up and running with these steps:
     npm install -g @capacitor/cli
     ```
     
-2.  **Initialize Capgo plugin**
+2.  **Initialize CodePushGo plugin**
     
     If you haven't done this yet, run:
     
@@ -261,27 +261,27 @@ After installation, configure the plugins in your native projects. Here's a quic
 | Geolocation | Add Location Usage Description | Add Location Permissions |
 | Storage | No additional setup needed | No additional setup needed |
 
-### Live Updates with [Capgo](https://capgo.app/)
+### Live Updates with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-28.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-28.jpg?auto=compress)
 
-To simplify deployment and testing, you can integrate live update tools like Capgo. This service has already delivered over 23.5 million updates, with 95% of users receiving updates within 24 hours and an 82% global success rate [\[1\]](https://capgo.app/).
+To simplify deployment and testing, you can integrate live update tools like CodePushGo. This service has already delivered over 23.5 million updates, with 95% of users receiving updates within 24 hours and an 82% global success rate [\[1\]](https://capgo.app/).
 
-To add Capgo to your app:
+To add CodePushGo to your app:
 
 ```bash
 npm install @capgo/capacitor-updater
 npx cap sync
 ```
 
-Capgo offers several benefits during testing:
+CodePushGo offers several benefits during testing:
 
 -   Create separate channels for development, staging, and production environments.
 -   Push immediate bug fixes during testing.
 -   Track update success rates with built-in analytics.
 -   Roll back updates quickly if issues arise.
 
-Capgo also ensures secure update delivery with end-to-end encryption. Its channel system allows you to test updates with select user groups before rolling them out to everyone.
+CodePushGo also ensures secure update delivery with end-to-end encryption. Its channel system allows you to test updates with select user groups before rolling them out to everyone.
 
 ## Summary
 
@@ -291,7 +291,7 @@ This guide has walked through every phase of setting up and deploying a Capacito
 
 Creating a Capacitor app requires careful attention to setup, configuration, and platform-specific adjustments. Setting up your development environment - including tools like **Node.js** and the **Capacitor CLI** - is a crucial starting point. Configuring platforms like iOS and Android ensures the app works seamlessly on native systems.
 
-Using an update system such as **Capgo** can simplify release management and help maintain app stability [\[1\]](https://capgo.app/).
+Using an update system such as **CodePushGo** can simplify release management and help maintain app stability [\[1\]](https://capgo.app/).
 
 Here’s a breakdown of the key phases:
 

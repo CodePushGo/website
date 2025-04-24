@@ -51,7 +51,7 @@ next_blog: ''
         await FirebaseCrashlytics.crash();
         ```
         
--   **Bonus Tip:** Combine Crashlytics with **[Capgo](https://capgo.app/)** for instant live updates without app store delays.
+-   **Bonus Tip:** Combine Crashlytics with **[CodePushGo](https://capgo.app/)** for instant live updates without app store delays.
     
 
 This guide ensures your app is crash-free and user-friendly. Start by setting up Firebase Crashlytics today!
@@ -263,15 +263,15 @@ To ensure compliance and safeguard user data, follow these guidelines:
     -   Scrub sensitive information from your reports.
     -   Use non-identifiable custom keys to maintain user privacy while debugging.
 
-## [Capgo](https://capgo.app/) Integration
+## [CodePushGo](https://capgo.app/) Integration
 
-![Capgo](https://assets.seobotai.com/capgo.app/6805ba51360079f947b8a1bf/12eddca90b08193253253ea10516a6c4.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/6805ba51360079f947b8a1bf/12eddca90b08193253253ea10516a6c4.jpg)
 
-Streamline the process from crash detection to fix deployment by pairing Capgo's live update system with Crashlytics.
+Streamline the process from crash detection to fix deployment by pairing CodePushGo's live update system with Crashlytics.
 
-### About Capgo
+### About CodePushGo
 
-Capgo is a live update tool designed specifically for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). With over 1,900 apps in production and a 95% update rate within 24 hours, it ensures quick fixes without the delays of app store approvals [\[1\]](https://capgo.app/).
+CodePushGo is a live update tool designed specifically for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). With over 1,900 apps in production and a 95% update rate within 24 hours, it ensures quick fixes without the delays of app store approvals [\[1\]](https://capgo.app/).
 
 Key features include:
 
@@ -281,14 +281,14 @@ Key features include:
 -   **Seamless CI/CD integration**
 -   A **100% open-source platform**
 
-### Crashlytics and Capgo Together
+### Crashlytics and CodePushGo Together
 
-Using Crashlytics with Capgo creates an efficient workflow for identifying and resolving issues quickly.
+Using Crashlytics with CodePushGo creates an efficient workflow for identifying and resolving issues quickly.
 
 Here’s how it works:
 
 1.  **Crash Detection and Response**  
-    Crashlytics identifies a crash, and Capgo allows you to deploy fixes instantly without waiting for app store approval.
+    Crashlytics identifies a crash, and CodePushGo allows you to deploy fixes instantly without waiting for app store approval.
     
 2.  **Targeted Updates**
     
@@ -296,12 +296,12 @@ Here’s how it works:
     -   _Staged Rollout_: Gradually deploy updates to reduce risks.
     -   _Emergency Fix_: Quickly push critical patches to resolve urgent issues.
 3.  **Monitoring and Verification**  
-    After deploying updates with Capgo, use Crashlytics to track crash rates and confirm the issue is resolved.
+    After deploying updates with CodePushGo, use Crashlytics to track crash rates and confirm the issue is resolved.
     
 
 ### Security and App Store Rules
 
-Capgo adheres to Apple and Google’s policies while providing strong security features:
+CodePushGo adheres to Apple and Google’s policies while providing strong security features:
 
 -   82% global success rate for delivering updates [\[1\]](https://capgo.app/)
 -   Automatic version control for better organization
@@ -310,7 +310,7 @@ Capgo adheres to Apple and Google’s policies while providing strong security f
 For secure integration with Crashlytics:
 
 -   Enable error tracking in both systems.
--   Use Capgo’s monitoring tools alongside Crashlytics reports.
+-   Use CodePushGo’s monitoring tools alongside Crashlytics reports.
 -   Maintain version control for all updates.
 -   Keep detailed logs of updates for auditing purposes.
 
@@ -342,7 +342,7 @@ You’ve completed three key steps to get started:
 
 ### Why Integrate These Tools?
 
-Pairing Firebase Crashlytics with Capgo gives you a powerful system for error tracking and [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/). Here’s what this combo offers:
+Pairing Firebase Crashlytics with CodePushGo gives you a powerful system for error tracking and [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/). Here’s what this combo offers:
 
 -   **Quick fixes**: Push instant updates and roll back changes with just one click.
 -   **Reliable rollouts**: Ensure updates are widely adopted and smoothly delivered to users.
@@ -350,7 +350,7 @@ Pairing Firebase Crashlytics with Capgo gives you a powerful system for error tr
 ### What’s Next?
 
 1.  Turn on detailed crash analytics in the Firebase Console.
-2.  Add Capgo to your CI/CD pipeline for streamlined updates.
-3.  Use [Capgo channels](https://capgo.app/docs/webapp/channels/) to test and release fixes step by step.
+2.  Add CodePushGo to your CI/CD pipeline for streamlined updates.
+3.  Use [CodePushGo channels](https://capgo.app/docs/webapp/channels/) to test and release fixes step by step.
 
-With Crashlytics and Capgo in place, you’re set to keep your app running smoothly and improving over time.
+With Crashlytics and CodePushGo in place, you’re set to keep your app running smoothly and improving over time.

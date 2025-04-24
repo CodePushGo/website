@@ -24,11 +24,11 @@ Updating Capacitor JS apps without going through the App Store review process is
 - The code must not provide, unlock or enable additional features or functionality
 - The user must not be aware that an update is occurring
 
-The Capgo Capacitor plugin allows for updates and modifications to be made to HTML, CSS, and JavaScript, satisfying the first condition. 
+The CodePushGo Capacitor plugin allows for updates and modifications to be made to HTML, CSS, and JavaScript, satisfying the first condition. 
 The ability for apps to update themselves without going through the App Store review process has been available for some time for apps created using JavaScript frameworks such as Facebook's React Native and services like Expo.
 
-The second condition, not providing additional features or functionality, is determined by the developer. Capgo is intended for making small tweaks or fixes, rather than introducing new features or functionality. For significant changes, it is necessary to release updates through the App Store. It is worth noting that many other developers use live updates without any issues or rejection from Apple.
+The second condition, not providing additional features or functionality, is determined by the developer. CodePushGo is intended for making small tweaks or fixes, rather than introducing new features or functionality. For significant changes, it is necessary to release updates through the App Store. It is worth noting that many other developers use live updates without any issues or rejection from Apple.
 
 Google Play is less restrictive than Apple when it comes to updating apps. Google Play allows for apps installed from their store with JavaScript bundles to be updated by non-Google services. 
 
-For more information on how to install Capgo to bypass review, please refer to my next article.
+For more information on how to install CodePushGo to bypass review, please refer to my next article.

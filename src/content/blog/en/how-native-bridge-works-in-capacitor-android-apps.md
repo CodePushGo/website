@@ -24,7 +24,7 @@ next_blog: ''
 -   **Performance Highlights:**
     -   API response time: **434ms** (global average).
     -   Data transfer: **114ms** for 5MB bundles.
-    -   Update adoption: **95% completed within 24 hours** using tools like [Capgo](https://capgo.app/).
+    -   Update adoption: **95% completed within 24 hours** using tools like [CodePushGo](https://capgo.app/).
 -   **How it works:**
     -   **JavaScript to Android:** Sends serialized requests to native Android methods.
     -   **Android to JavaScript:** Uses callbacks for event broadcasting, direct responses, and state updates.
@@ -35,7 +35,7 @@ next_blog: ''
     -   Use partial updates to reduce bandwidth.
     -   Monitor bridge call latency, data sizes, and memory usage.
 
-Capgo, a tool for over-the-air updates, integrates with the native bridge to deliver updates efficiently and securely, ensuring apps stay responsive and up-to-date.
+CodePushGo, a tool for over-the-air updates, integrates with the native bridge to deliver updates efficiently and securely, ensuring apps stay responsive and up-to-date.
 
 **Want to build fast, responsive apps that combine the flexibility of web code with native Android performance? Read on to learn how the native bridge works and how to optimize it for your projects.**
 
@@ -166,7 +166,7 @@ Regular monitoring is essential to ensure the native bridge operates smoothly. T
 -   **Memory usage patterns**: How much memory the bridge consumes over time.
 -   **Update distribution metrics**: Insights into how updates are delivered.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 To maintain peak performance, adopt a thorough testing strategy that includes:
 
@@ -198,7 +198,7 @@ Here are some key security layers to focus on:
 
 Always validate data on both sides - JavaScript and native components - to reduce vulnerabilities. These practices, paired with secure update mechanisms, help maintain a reliable and safe app environment.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
 ### Plugin Updates and Support
 
@@ -210,23 +210,23 @@ Keeping plugins up-to-date is critical for ensuring compatibility with the lates
 
 A channel-based system allows you to test updates in smaller groups, minimizing the risk of widespread issues.
 
-> "We are currently giving a try to @Capgo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://capgo.app/)
 
 Partial updates are another great way to improve efficiency by reducing download sizes. They’re especially useful for quick bug fixes.
 
-> "@Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 Regular testing and monitoring are essential to catch compatibility issues early and ensure a seamless user experience.
 
-## [Capgo](https://capgo.app/) Integration
+## [CodePushGo](https://capgo.app/) Integration
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
 
-Capgo enhances native bridge performance by enabling instant over-the-air (OTA) updates. With 23.5 million updates delivered across 750 apps, it has become a dependable tool for managing updates through the native bridge.
+CodePushGo enhances native bridge performance by enabling instant over-the-air (OTA) updates. With 23.5 million updates delivered across 750 apps, it has become a dependable tool for managing updates through the native bridge.
 
-### Capgo Bridge Features
+### CodePushGo Bridge Features
 
-Capgo uses the native bridge to deliver updates efficiently while maintaining high performance. Here's a closer look at its features:
+CodePushGo uses the native bridge to deliver updates efficiently while maintaining high performance. Here's a closer look at its features:
 
 | **Feature** | **How It Works** | **Performance Impact** |
 | --- | --- | --- |
@@ -235,21 +235,21 @@ Capgo uses the native bridge to deliver updates efficiently while maintaining hi
 | Bridge Security | Uses end-to-end encryption for data transfers | Ensures secure data exchange |
 | Version Control | Checks compatibility with the native bridge | Achieves 82% success rate globally |
 
-By integrating seamlessly with the native bridge, Capgo allows developers to push updates while meeting platform requirements. This is especially important for Android apps, where the native bridge facilitates communication between JavaScript and native components. Capgo's system is built to leverage this functionality for efficient update management.
+By integrating seamlessly with the native bridge, CodePushGo allows developers to push updates while meeting platform requirements. This is especially important for Android apps, where the native bridge facilitates communication between JavaScript and native components. CodePushGo's system is built to leverage this functionality for efficient update management.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
-### Capgo Update Management
+### CodePushGo Update Management
 
-Capgo’s update management system is designed to work directly with the native bridge, ensuring smooth and reliable deployment of updates. It supports both Capacitor 6 and 7, providing developers with flexibility in their projects.
+CodePushGo’s update management system is designed to work directly with the native bridge, ensuring smooth and reliable deployment of updates. It supports both Capacitor 6 and 7, providing developers with flexibility in their projects.
 
-To get started with Capgo:
+To get started with CodePushGo:
 
 -   Install it using `npx @capgo/cli init`
 -   Maintain your existing build process
 -   Deploy updates through the CLI
 
-For enterprise applications, Capgo includes powerful features tailored to large-scale needs:
+For enterprise applications, CodePushGo includes powerful features tailored to large-scale needs:
 
 | **Feature** | **Functionality** | **Advantage** |
 | --- | --- | --- |
@@ -274,7 +274,7 @@ In Capacitor Android apps, the native bridge acts as a key communication link be
 
 These numbers highlight the importance of secure communication and reducing bridge load to maintain top performance.
 
-> "Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" - NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" - NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
 
 ### Getting Started Guide
 

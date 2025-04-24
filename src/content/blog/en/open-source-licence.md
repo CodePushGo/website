@@ -12,7 +12,7 @@ created_at: 2023-09-18T00:00:00.000Z
 updated_at: 2023-09-18T00:00:00.000Z
 head_image: /open_source_licence.webp
 head_image_alt: Open Source Licence
-keywords: Open Source, Capgo, philosophy, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+keywords: Open Source, CodePushGo, philosophy, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Open Source
 published: true
 locale: en
@@ -131,19 +131,19 @@ The [Eclipse Public License](https://www.eclipse.org/legal/epl-2.0/), is from th
 
 Choosing the correct license for your open source project is an important decision. By carefully considering your needs and goals, you can choose a license that will help you to achieve your desired outcomes.
 
-## Capgo new license
+## CodePushGo new license
 
 How do I accomplish all that? By changing my license. 
 
-Capgo has now changed the license from the MIT to a newer licensing scheme called GNU Affero General Public License V3 (AGPLv3) or any later version. Capgo version can be [found here](https://github.com/Cap-go/capgo/blob/main/LICENSE/).
+CodePushGo has now changed the license from the MIT to a newer licensing scheme called GNU Affero General Public License V3 (AGPLv3) or any later version. CodePushGo version can be [found here](https://github.com/Cap-go/capgo/blob/main/LICENSE/).
 
 Capacitor-updater (the plugin) has now changed the license from the LGPLv3 to a newer licensing scheme called Mozilla Public License Version 2.0 (MPLv2) or any later version. Capacitor-updater version can be [found here](https://github.com/Cap-go/capacitor-updater/blob/main/LICENCE/).
 
-This change makes no difference to any of you who subscribe to Capgo Cloud or who self-host Capgo, but it may upset a few corporations who tried to use my software to directly compete with me without contributing back.
+This change makes no difference to any of you who subscribe to CodePushGo Cloud or who self-host CodePushGo, but it may upset a few corporations who tried to use my software to directly compete with me without contributing back.
 
 AGPL is a license Google has a problem with, as they’re not prepared to divulge their closed source code. Google is opposed to the AGPL and [state](https://opensource.google/docs/using/agpl-policy/): “Code licensed under the GNU Affero General Public License (AGPL) MUST NOT be used at Google”.
 
-The goal of the AGPL is to maximize user freedom and to encourage companies to contribute to open-source. I'm a user facing, standalone application. I'm not a library or a piece of a bigger project. I'm not looking for Google’s donations, so we’re happy to be AGPL-licensed. It is the right license for Capgo.
+The goal of the AGPL is to maximize user freedom and to encourage companies to contribute to open-source. I'm a user facing, standalone application. I'm not a library or a piece of a bigger project. I'm not looking for Google’s donations, so we’re happy to be AGPL-licensed. It is the right license for CodePushGo.
 
 # Conclusion
 

@@ -40,7 +40,7 @@ Automated consent tracking is essential for [Capacitor](https://capacitorjs.com/
     
     -   Disclose data usage clearly.
     -   Allow users to withdraw consent and delete data.
-    -   Use tools like [Capgo](https://capgo.app/) for live updates to avoid app store delays.
+    -   Use tools like [CodePushGo](https://capgo.app/) for live updates to avoid app store delays.
 
 ## Apple app tracking transparency permission - Ionic or iOS ...
 
@@ -88,7 +88,7 @@ In addition to meeting platform-specific rules, adopting strong data privacy pra
 -   Provide clear "Accept" and "Decline" options.
 -   Enable users to update their consent preferences at any time.
 
-Services like Capgo can help by allowing live updates to consent-related features, avoiding the need for full app store reviews.
+Services like CodePushGo can help by allowing live updates to consent-related features, avoiding the need for full app store reviews.
 
 Effective consent tracking goes beyond just meeting legal requirements. It's about building trust with users by being transparent and respecting their privacy. Thoughtfully implementing these practices can improve user experience and strengthen your app's reputation.
 
@@ -414,13 +414,13 @@ class ConsentValidator {
 }
 ```
 
-It's critical to test consent flows across different OS versions and devices to confirm consistent behavior. Use tools like Capgo to implement live updates, avoiding app store delays while ensuring compliance.
+It's critical to test consent flows across different OS versions and devices to confirm consistent behavior. Use tools like CodePushGo to implement live updates, avoiding app store delays while ensuring compliance.
 
-### Using [Capgo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://capgo.app/) for Updates
 
-![Capgo](https://assets.seobotai.com/capgo.app/67ef2243ebbb9dc80641c5e1/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67ef2243ebbb9dc80641c5e1/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
 
-Capgo's live update capabilities allow you to make compliance adjustments efficiently. Here's an example:
+CodePushGo's live update capabilities allow you to make compliance adjustments efficiently. Here's an example:
 
 ```typescript
 interface ConsentUpdate {
@@ -433,7 +433,7 @@ interface ConsentUpdate {
 }
 
 async function applyConsentUpdate(update: ConsentUpdate) {
-  await Capgo.deploy({
+  await CodePushGo.deploy({
     version: update.version,
     channel: 'consent-updates',
     gradualRollout: true,
@@ -459,9 +459,9 @@ This approach ensures real-time updates to meet Apple and Google compliance requ
 
 To wrap up the detailed setup and management process, here's a quick overview. Automated consent tracking requires strict adherence to privacy regulations, secure data handling, and efficient [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
 
-Success hinges on accurate technical execution combined with fast update deployment. Tools like Capgo support this approach, achieving an impressive 82% global success rate for consent-related updates [\[1\]](https://capgo.app/). As Rodrigo Mantica puts it:
+Success hinges on accurate technical execution combined with fast update deployment. Tools like CodePushGo support this approach, achieving an impressive 82% global success rate for consent-related updates [\[1\]](https://capgo.app/). As Rodrigo Mantica puts it:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 Here’s a snapshot of the key metrics and strategies:
 
@@ -473,6 +473,6 @@ Here’s a snapshot of the key metrics and strategies:
 
 NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team underscores the importance of swift deployment:
 
-> "Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
 
 When managing consent tracking, focus on encryption and analytics monitoring to stay compliant and foster user trust. This strategy ensures quick responses to regulatory changes and evolving privacy standards.

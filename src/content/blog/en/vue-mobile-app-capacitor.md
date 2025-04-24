@@ -186,6 +186,6 @@ Wrap your app with the `App` component in the `pages/_app.vue` file, and use Kon
 
 ## Conclusion
 
-Capacitor is a great option for building native applications based on an existing web project. With the addition of Capgo, it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
+Capacitor is a great option for building native applications based on an existing web project. With the addition of CodePushGo, it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
 
-Learn how Capgo can help you build better apps faster, [sign up for a free account](/register/) today.
+Learn how CodePushGo can help you build better apps faster, [sign up for a free account](/register/) today.

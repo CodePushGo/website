@@ -3,7 +3,7 @@ slug: alternative-to-voltbuilder
 title: Alternative to Voltbuilder
 description: >-
   Voltbuilder offers an easy way to convert web projects into native apps, but
-  its pricing may not suit everyone. Capgo provides a cost-effective solution
+  its pricing may not suit everyone. CodePushGo provides a cost-effective solution
   for handling OTA updates with ease.
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -23,15 +23,15 @@ Voltbuilder is a cloud-based platform that allows developers to convert their we
 
 One of the standout features of Voltbuilder is its ability to generate store-ready apps for both Android and iOS platforms in a matter of minutes. This allows developers to quickly create and deploy their apps without the need for extensive knowledge of native app development or the complexities of app store submission processes.
 
-While Voltbuilder offers a convenient solution for many developers, its pricing structure may not be suitable for all projects or budgets. If you're looking for a more affordable option that still provides powerful features, particularly in terms of live updates, you might want to consider alternatives like Capgo.
+While Voltbuilder offers a convenient solution for many developers, its pricing structure may not be suitable for all projects or budgets. If you're looking for a more affordable option that still provides powerful features, particularly in terms of live updates, you might want to consider alternatives like CodePushGo.
 
-Capgo, an open-source Capacitor plugin developed by Digital Shift OU, offers live update functionality similar to what you might find in more expensive platforms, but at a more accessible price point. This allows you to keep your app updated in real-time without requiring users to download new versions from app stores.
+CodePushGo, an open-source Capacitor plugin developed by Digital Shift OU, offers live update functionality similar to what you might find in more expensive platforms, but at a more accessible price point. This allows you to keep your app updated in real-time without requiring users to download new versions from app stores.
 
-To help you make an informed decision, we've created a comparison table of features between Capgo and Voltbuilder.
+To help you make an informed decision, we've created a comparison table of features between CodePushGo and Voltbuilder.
 
 ## Features comparisons
 
-| Features | Capgo | Voltbuilder |
+| Features | CodePushGo | Voltbuilder |
 | --- | --- | --- |
 | Live updates | ✅ | ❌ |
 | Native app conversion | ❌ | ✅ |
@@ -52,24 +52,24 @@ To help you make an informed decision, we've created a comparison table of featu
 
 ## Continuous integration alternatives
 
-While Voltbuilder offers a streamlined process for building and deploying apps, it doesn't provide built-in continuous integration capabilities. If you're looking to implement a CI/CD pipeline alongside live updates, you might consider combining Capgo with a service like GitHub Actions.
+While Voltbuilder offers a streamlined process for building and deploying apps, it doesn't provide built-in continuous integration capabilities. If you're looking to implement a CI/CD pipeline alongside live updates, you might consider combining CodePushGo with a service like GitHub Actions.
 
-GitHub Actions is a free, built-in continuous integration and deployment service for GitHub repositories. By setting up a workflow with GitHub Actions and integrating Capgo for live updates, you can create a powerful, automated development pipeline.
+GitHub Actions is a free, built-in continuous integration and deployment service for GitHub repositories. By setting up a workflow with GitHub Actions and integrating CodePushGo for live updates, you can create a powerful, automated development pipeline.
 
-To set this up, you would first create a GitHub repository for your app's code. Then, you can create a workflow file that defines the steps to be run whenever code is pushed to the repository. These steps might include building and testing the app, and then using Capgo to create and deploy a live update.
+To set this up, you would first create a GitHub repository for your app's code. Then, you can create a workflow file that defines the steps to be run whenever code is pushed to the repository. These steps might include building and testing the app, and then using CodePushGo to create and deploy a live update.
 
-This setup allows you to automatically build, test, and deploy your app with minimal effort, while still taking advantage of the live update capabilities offered by Capgo. For detailed instructions on setting up CI/CD with Capgo, you can refer to our tutorials for [iOS](https://capgo.app/blog/automatic-capacitor-android-build-github-action/).
+This setup allows you to automatically build, test, and deploy your app with minimal effort, while still taking advantage of the live update capabilities offered by CodePushGo. For detailed instructions on setting up CI/CD with CodePushGo, you can refer to our tutorials for [iOS](https://capgo.app/blog/automatic-capacitor-android-build-github-action/).
 
 ## Let's go further
 
 While Voltbuilder offers a straightforward solution for converting web projects into native apps, it may not be the best fit for all developers, especially those who prioritize live update capabilities and open-source solutions.
 
-Capgo has matured into a robust platform suitable for teams of all sizes, offering a more affordable solution with a focus on live updates. If you're a larger team requiring dedicated support, don't hesitate to reach out - we're always ready to find tailored solutions.
+CodePushGo has matured into a robust platform suitable for teams of all sizes, offering a more affordable solution with a focus on live updates. If you're a larger team requiring dedicated support, don't hesitate to reach out - we're always ready to find tailored solutions.
 
-Even though Capgo is designed to be self-service, we pride ourselves on being highly responsive to our users' needs. We can assist you with configuring your build for native code, eliminating the need for more expensive solutions.
+Even though CodePushGo is designed to be self-service, we pride ourselves on being highly responsive to our users' needs. We can assist you with configuring your build for native code, eliminating the need for more expensive solutions.
 
-If you appreciate open-source, self-service, community-driven tools, Capgo might be the perfect fit for your project.
+If you appreciate open-source, self-service, community-driven tools, CodePushGo might be the perfect fit for your project.
 
 ## Register here to get your account
 
-[Capgo](/register/)
+[CodePushGo](/register/)

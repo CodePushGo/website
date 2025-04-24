@@ -2,7 +2,7 @@
 slug: manage-dev-and-prod-build-with-github-actions
 title: Manage development and production build with GitHub actions
 description: >-
-  Use Capgo to release your devbuild to specific channel, and let your team try
+  Use CodePushGo to release your devbuild to specific channel, and let your team try
   your Capacitor Ionic app, without waiting Apple and Google review
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
@@ -21,7 +21,7 @@ This tutorial focuses on the GitHub hosting, but you can adapt it with a little 
 
 ## Preface 
 
-Be sure you have added your Capacitor app first to Capgo, this tutorial just focuses on the upload phase
+Be sure you have added your Capacitor app first to CodePushGo, this tutorial just focuses on the upload phase
 
 ## Commit convention
 
@@ -103,7 +103,7 @@ Create a file at this path: `.github/workflows/build.yml`
 with this content:
 
 ```toml
-name: Build source code and send to Capgo
+name: Build source code and send to CodePushGo
 
 on:
   push:
@@ -135,18 +135,18 @@ jobs:
         run: npx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} -c production
 ```
 
-This will install and build your dependency before sending it to Capgo.
+This will install and build your dependency before sending it to CodePushGo.
 
 If your command for build is different, you can change it in the `build_code` step.
 
 If you need an environment variable, use the `MY_ENV_VAR` and set the `secret` in your GitHub project setting, then secret then GitHub Action.
 
-To make Capgo upload work, you need to get your API key for Capgo, add it in the [secret of your GitHub repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets/) as `CAPGO_TOKEN`.
+To make CodePushGo upload work, you need to get your API key for CodePushGo, add it in the [secret of your GitHub repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets/) as `CAPGO_TOKEN`.
 
-You can now commit this both files and see your first version appear in Capgo!
+You can now commit this both files and see your first version appear in CodePushGo!
 
 Add the commit will generate a new Capacitor build for production and development channel.
 
 You should add your test in the Ionic build step to be certain your code is working.
 
-Go To your Capgo dashboard and check your build who just appeared, you now have your CI/CD system.
+Go To your CodePushGo dashboard and check your build who just appeared, you now have your CI/CD system.

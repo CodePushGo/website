@@ -25,7 +25,7 @@ next_blog: ''
     -   Technical limits restrict algorithms, key lengths, and protocols.
 -   **Solutions**:
     -   Choose between on-premises, hybrid cloud, managed services, or self-hosted setups.
-    -   Use tools like [Capgo](https://capgo.app/) for local hosting, end-to-end encryption, and compliance automation.
+    -   Use tools like [CodePushGo](https://capgo.app/) for local hosting, end-to-end encryption, and compliance automation.
 -   **Tips**:
     -   Regularly check compliance.
     -   Collaborate with local experts.
@@ -88,11 +88,11 @@ These constraints can make it difficult to implement secure features, particular
 
 ### Local Storage and Compliance
 
-China's regulations demand that key management systems ensure data sovereignty through compliant self-hosting. Capgo's [self-hosting option](https://capgo.app/blog/self-hosted-capgo/) keeps all data within mainland China, offering a secure approach to managing encryption keys in line with these rules. This setup lays the groundwork for meeting encryption standards effectively.
+China's regulations demand that key management systems ensure data sovereignty through compliant self-hosting. CodePushGo's [self-hosting option](https://capgo.app/blog/self-hosted-capgo/) keeps all data within mainland China, offering a secure approach to managing encryption keys in line with these rules. This setup lays the groundwork for meeting encryption standards effectively.
 
 ### Update Systems and Encryption Security
 
-China's encryption laws require [app updates](https://capgo.app/plugins/capacitor-updater/) to be handled through approved platforms. Capgo addresses this by using end-to-end encryption, ensuring that only authorized users can decrypt data. Its CI/CD integration simplifies the process by automating compliance checks, while built-in version control offers detailed audit trails to monitor encryption changes.
+China's encryption laws require [app updates](https://capgo.app/plugins/capacitor-updater/) to be handled through approved platforms. CodePushGo addresses this by using end-to-end encryption, ensuring that only authorized users can decrypt data. Its CI/CD integration simplifies the process by automating compliance checks, while built-in version control offers detailed audit trails to monitor encryption changes.
 
 ## Key Management Methods
 
@@ -125,16 +125,16 @@ Navigating China's encryption requirements can be challenging. Partnering with l
 
 ### Choosing Compliant Tools
 
-Using tools that meet China's encryption requirements is key to maintaining security without sacrificing efficiency. For example, Capgo supports app updates with end-to-end encryption and local hosting options [\[1\]](https://capgo.app/). This aligns with earlier strategies for managing updates. When selecting tools, focus on features like [local data storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/), approved encryption methods, detailed audit trails, and strong access controls. Data shows that developers using tools like Capgo have achieved a 95% active user update rate within 24 hours while staying compliant [\[1\]](https://capgo.app/).
+Using tools that meet China's encryption requirements is key to maintaining security without sacrificing efficiency. For example, CodePushGo supports app updates with end-to-end encryption and local hosting options [\[1\]](https://capgo.app/). This aligns with earlier strategies for managing updates. When selecting tools, focus on features like [local data storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/), approved encryption methods, detailed audit trails, and strong access controls. Data shows that developers using tools like CodePushGo have achieved a 95% active user update rate within 24 hours while staying compliant [\[1\]](https://capgo.app/).
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 ## Summary
 
 Managing encryption keys in China requires local data storage, adherence to approved standards, and maintaining detailed audit trails. Balancing these strict rules with efficient operations is critical for success in the Chinese market.
 
-Since [Microsoft CodePush](https://microsoft.github.io/code-push/)'s shutdown in 2024, new tools have stepped in to address both technical and regulatory needs. One example is Capgo, which combines strong security practices with streamlined app deployment.
+Since [Microsoft CodePush](https://microsoft.github.io/code-push/)'s shutdown in 2024, new tools have stepped in to address both technical and regulatory needs. One example is CodePushGo, which combines strong security practices with streamlined app deployment.
 
 To stay compliant with China's encryption laws while maintaining development speed, it's crucial to use the right tools, keep documentation up to date, conduct regular audits, and collaborate with experts. These steps are key to navigating China's complex regulatory environment effectively.
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)

@@ -103,7 +103,7 @@ App.addListener('resume', async () => {
 });
 ```
 
-Capgo adds an extra layer of security with encryption and flexible deployment options. According to Martin Donadieu, Capgo's founder, these features are tailored to meet real-world developer needs and app store requirements.
+CodePushGo adds an extra layer of security with encryption and flexible deployment options. According to Martin Donadieu, CodePushGo's founder, these features are tailored to meet real-world developer needs and app store requirements.
 
 To refine your [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/), use **Ionic Appflow** to monitor deployment success rates and user adoption. This setup ensures your app stays responsive and current.
 
@@ -135,7 +135,7 @@ Several tools work seamlessly with Capacitor's live update workflows, helping de
 | **[Bitrise](https://bitrise.io/)** | Mobile-first CI/CD | Designed for mobile testing and code signing |
 | **[Jenkins](https://www.jenkins.io/)** | Self-hosted CI/CD | Offers custom pipelines and plugins |
 
-Capgo’s API integrates with these tools, providing [secure encryption](https://capgo.app/docs/cli/migrations/encryption/) for automated deployments, ensuring both efficiency and safety.
+CodePushGo’s API integrates with these tools, providing [secure encryption](https://capgo.app/docs/cli/migrations/encryption/) for automated deployments, ensuring both efficiency and safety.
 
 ### Building Update Pipelines
 
@@ -158,13 +158,13 @@ steps:
 
 2\. **Deploy Updates**
 
-Capgo’s CLI makes deployment straightforward with just one command, ensuring secure and efficient over-the-air (OTA) delivery.
+CodePushGo’s CLI makes deployment straightforward with just one command, ensuring secure and efficient over-the-air (OTA) delivery.
 
 Teams using automated CI/CD pipelines have reported a **75% reduction in deployment time** and an **80% improvement in app quality** thanks to consistent testing [\[1\]](https://www.kellton.com/kellton-tech-blog/mobile-ci-cd-challenges-in-app-development-lifecycle).
 
 > "Automating your CI/CD workflow minimizes errors and boosts efficiency."
 
-To monitor deployment performance, tools like Capgo’s dashboard can track success rates and pinpoint any bottlenecks. Once your CI/CD pipeline is set up, the next step is to focus on meeting security and compliance requirements for your live updates.
+To monitor deployment performance, tools like CodePushGo’s dashboard can track success rates and pinpoint any bottlenecks. Once your CI/CD pipeline is set up, the next step is to focus on meeting security and compliance requirements for your live updates.
 
 ## Live Update Safety and Standards
 
@@ -209,7 +209,7 @@ For [Capacitor developers](https://capgo.app/blog/capacitor-comprehensive-guide/
 
 Here’s a quick breakdown of popular live update tools and how they stack up:
 
-| Feature | Capgo | Ionic Appflow | Other Solutions |
+| Feature | CodePushGo | Ionic Appflow | Other Solutions |
 | --- | --- | --- | --- |
 | Integration Ease | Built for Capacitor | Focused on Ionic | Varies by platform |
 | Update Strategies | Background + Immediate | Background only | Limited options |
@@ -219,11 +219,11 @@ Here’s a quick breakdown of popular live update tools and how they stack up:
 | Cross-platform Support | Full | Partial | Limited |
 | Pricing (Monthly) | $12-$249 | Custom pricing | Variable |
 
-### [Capgo](https://capgo.app/) Features Overview
+### [CodePushGo](https://capgo.app/) Features Overview
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-07.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-07.jpg?auto=compress)
 
-Capgo handles over 150,000 live updates monthly, proving it’s built to scale for medium-sized enterprises. Here’s what sets it apart:
+CodePushGo handles over 150,000 live updates monthly, proving it’s built to scale for medium-sized enterprises. Here’s what sets it apart:
 
 **[Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update/)**
 
@@ -242,9 +242,9 @@ Capgo handles over 150,000 live updates monthly, proving it’s built to scale f
 -   Offers advanced analytics to track updates
 -   Supports custom domains for enterprise clients
 
-> "The platform independence and tailored configuration options make Capgo particularly effective for teams managing multiple app versions across different platforms", says Martin Donadieu, founder of Capgo.
+> "The platform independence and tailored configuration options make CodePushGo particularly effective for teams managing multiple app versions across different platforms", says Martin Donadieu, founder of CodePushGo.
 
-Capgo also provides dedicated support and secure API access, ensuring developers can work without interruptions. To keep updates running smoothly, it’s critical to follow platform-specific app store rules.
+CodePushGo also provides dedicated support and secure API access, ensuring developers can work without interruptions. To keep updates running smoothly, it’s critical to follow platform-specific app store rules.
 
 ## App Store Rules for Live Updates
 
@@ -298,7 +298,7 @@ Setting up live updates involves several key phases. Here's a simplified breakdo
 | Initial Setup | Install Live Updates SDK, Configure Capacitor | Capacitor CLI, Live Updates SDK |
 | CI/CD Integration | Configure build environments, Set up automated testing | Ionic Appflow, Jenkins |
 | Security Setup | Enable HTTPS, Configure encryption protocols | SSL certificates, Security tokens |
-| Deployment | Set up distribution channels, Configure user targeting | Capgo or similar platform |
+| Deployment | Set up distribution channels, Configure user targeting | CodePushGo or similar platform |
 
 > "Martin Donadieu highlights that starting with a secure and user-focused setup ensures long-term success for live updates."
 

@@ -27,9 +27,9 @@ next_blog: ''
 
 ### Tools to Use:
 
-Platforms like **[Capgo](https://capgo.app/)** offer robust features like encryption, rollback options, error tracking, and CI/CD integration. For example:
+Platforms like **[CodePushGo](https://capgo.app/)** offer robust features like encryption, rollback options, error tracking, and CI/CD integration. For example:
 
--   **Capgo’s Success Rates**: 95% update adoption in 24 hours, 82% global success rate.
+-   **CodePushGo’s Success Rates**: 95% update adoption in 24 hours, 82% global success rate.
 
 | Feature | Benefit |
 | --- | --- |
@@ -46,7 +46,7 @@ Start by choosing a secure OTA platform, integrate it with your CI/CD pipeline, 
 
 ## Secure OTA Update Setup
 
-Protecting your CI/CD OTA updates requires multiple layers of security. Capgo has shown a 95% success rate for updates within 24 hours when these strategies are implemented effectively[\[1\]](https://capgo.app/).
+Protecting your CI/CD OTA updates requires multiple layers of security. CodePushGo has shown a 95% success rate for updates within 24 hours when these strategies are implemented effectively[\[1\]](https://capgo.app/).
 
 ### Update Package Encryption
 
@@ -62,7 +62,7 @@ Secure your update delivery by using HTTPS and protected API access. This preven
 
 ### Update Rollback Options
 
-Rollback features are essential for addressing update failures. Capgo attributes part of its 82% global success rate to these capabilities[\[1\]](https://capgo.app/). Together, these layers of security create a dependable OTA update system that minimizes risks and ensures consistent performance.
+Rollback features are essential for addressing update failures. CodePushGo attributes part of its 82% global success rate to these capabilities[\[1\]](https://capgo.app/). Together, these layers of security create a dependable OTA update system that minimizes risks and ensures consistent performance.
 
 ## App Store and Privacy Rules
 
@@ -74,7 +74,7 @@ Apple requires a review for any changes to core app functionality, while Google 
 -   **Avoid altering core functionality**: Ensure updates don't change the app's primary features without approval.
 -   **Stick to platform UI/UX guidelines**: Any design changes should align with the platform's standards.
 
-Meeting these rules is essential to maintain your app's presence in the marketplace. As Capgo points out, staying "App Store compliant" is key to long-term success [\[1\]](https://capgo.app/).
+Meeting these rules is essential to maintain your app's presence in the marketplace. As CodePushGo points out, staying "App Store compliant" is key to long-term success [\[1\]](https://capgo.app/).
 
 ### Privacy Law Requirements
 
@@ -98,7 +98,7 @@ Privacy laws like GDPR and CCPA also influence how OTA update data is handled. T
 -   Keep detailed logs of update activities.
 -   Implement strict access controls to safeguard data.
 
-Strong security and a transparent update process are non-negotiable for compliance. Capgo emphasizes using end-to-end encryption as a core strategy to protect OTA updates [\[1\]](https://capgo.app/).
+Strong security and a transparent update process are non-negotiable for compliance. CodePushGo emphasizes using end-to-end encryption as a core strategy to protect OTA updates [\[1\]](https://capgo.app/).
 
 ## Security Tips for OTA Updates
 
@@ -159,7 +159,7 @@ Having a quick response strategy can reduce the impact of security issues. Here'
 -   Deploy emergency patches as needed.
 -   Notify users about the incident and resolution steps.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
 ## OTA Update Tools Review
 
@@ -177,13 +177,13 @@ Here are some essential features to prioritize:
 -   **Analytics**: Provides real-time tracking and monitoring of updates.
 -   **CI/CD Integration**: Seamlessly connects with your development pipeline.
 
-### [Capgo](https://capgo.app/) Platform Features
+### [CodePushGo](https://capgo.app/) Platform Features
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e7635c283d21cbd679bdb8/62c1b4dece964ef24ef070504a9b15e5.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e7635c283d21cbd679bdb8/62c1b4dece964ef24ef070504a9b15e5.jpg)
 
-Launched in 2022, Capgo delivers OTA updates designed with security in mind. Its features include end-to-end encryption, self-hosting capabilities, staged rollouts, error tracking, and version control.
+Launched in 2022, CodePushGo delivers OTA updates designed with security in mind. Its features include end-to-end encryption, self-hosting capabilities, staged rollouts, error tracking, and version control.
 
-Here’s a breakdown of Capgo’s key security features:
+Here’s a breakdown of CodePushGo’s key security features:
 
 | **Feature** | **Security Benefit** |
 | --- | --- |
@@ -195,17 +195,17 @@ Here’s a breakdown of Capgo’s key security features:
 
 ### Comparing OTA Platforms
 
-The OTA market is evolving, with new platforms offering competitive pricing and features. Here's how Capgo stacks up against other solutions:
+The OTA market is evolving, with new platforms offering competitive pricing and features. Here's how CodePushGo stacks up against other solutions:
 
-| **Cost Component** | **Other OTA Solutions** | **Capgo** |
+| **Cost Component** | **Other OTA Solutions** | **CodePushGo** |
 | --- | --- | --- |
 | Monthly Operations | $300 | Starting at $12 |
 | Annual Enterprise Cost | $6,000+ | $996 |
 | Setup Fee | Variable | $2,600 (one-time) |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" [\[1\]](https://capgo.app/)
 
 ## Summary
 

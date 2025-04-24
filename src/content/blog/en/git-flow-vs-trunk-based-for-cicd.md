@@ -154,13 +154,13 @@ Up next: How to set up CI/CD pipelines for either approach.
 -   **Feature Branch Pipeline**: Focuses on quick unit tests, code style checks, build verification, and deployment to a preview environment.
 -   **Main Branch Pipeline**: Covers thorough automated testing, security scans, production build creation, progressive deployment, and automated rollback features.
 
-### [Capgo](https://capgo.app/) CI/CD Integration
+### [CodePushGo](https://capgo.app/) CI/CD Integration
 
-![Capgo](https://assets.seobotai.com/capgo.app/68085193fe5cbf0502dde6ad/95506b8280be0626e7b237b754ba8f1b.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/68085193fe5cbf0502dde6ad/95506b8280be0626e7b237b754ba8f1b.jpg)
 
-To add live over-the-air updates to either CI/CD setup, Capgo can be integrated seamlessly:
+To add live over-the-air updates to either CI/CD setup, CodePushGo can be integrated seamlessly:
 
-Capgo works with [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/) to enable live updates, staged rollouts, and instant rollbacks in both Git Flow and Trunk-Based pipelines. It meets Apple and Google requirements while offering support for both cloud and self-hosted deployments [\[1\]](https://capgo.app/).
+CodePushGo works with [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/) to enable live updates, staged rollouts, and instant rollbacks in both Git Flow and Trunk-Based pipelines. It meets Apple and Google requirements while offering support for both cloud and self-hosted deployments [\[1\]](https://capgo.app/).
 
 ## Summary and Recommendations
 

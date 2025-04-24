@@ -25,7 +25,7 @@ next_blog: ''
 -   **Phased Rollouts**: Start small (5-10% of users), monitor performance, and scale gradually.
 -   **Performance Metrics**: Aim for a >98% update success rate, <0.1% crash rate, and <5MB package size.
 
-**Tools like [Capgo](https://capgo.app/)** make compliance easier with features like instant rollback, real-time monitoring, and secure update delivery.
+**Tools like [CodePushGo](https://capgo.app/)** make compliance easier with features like instant rollback, real-time monitoring, and secure update delivery.
 
 ### Quick Summary Table
 
@@ -61,7 +61,7 @@ This level of documentation makes troubleshooting much easier.
 
 Strong security measures are critical for OTA updates to meet Google Play's standards. Two essential practices include using end-to-end encryption and signing update packages.
 
-As Capgo's development team explains, _"The only solution with true end-to-end encryption, others just sign updates"_ [\[1\]](https://capgo.app/). Regular security audits and adherence to industry best practices help ensure updates remain secure and trustworthy.
+As CodePushGo's development team explains, _"The only solution with true end-to-end encryption, others just sign updates"_ [\[1\]](https://capgo.app/). Regular security audits and adherence to industry best practices help ensure updates remain secure and trustworthy.
 
 ## Update Distribution Safety
 
@@ -158,7 +158,7 @@ Roll out updates gradually, starting small and expanding as stability is confirm
 3.  **Expansion Phase**: Increase rollout in 20% increments.
 4.  **Full Release**: Deploy to all users after confirming stability.
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." - colenso, @colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." - colenso, @colenso [\[1\]](https://capgo.app/)
 
 ### Performance Tracking
 
@@ -173,19 +173,19 @@ Track these key metrics during and after deployment:
 
 Analytics and error tracking tools are essential for identifying and resolving issues quickly. Instant rollback features are critical to maintaining service quality if something goes wrong.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
 
 For beta testing and staged rollouts, use channel systems to target specific user groups with different versions. This controlled approach ensures thorough testing while staying compliant with Google Play Store requirements.
 
-## [Capgo](https://capgo.app/) Compliance Tools
+## [CodePushGo](https://capgo.app/) Compliance Tools
 
-![Capgo](https://assets.seobotai.com/capgo.app/67eb4a47283d21cbd67d2aae/574f3a2cd27791454624262312a6c223.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67eb4a47283d21cbd67d2aae/574f3a2cd27791454624262312a6c223.jpg)
 
-Capgo builds on strict update and security protocols to provide tools designed for compliance. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), Capgo ensures smooth updates while meeting key standards. These tools are grounded in principles like version control, security, and quality assurance.
+CodePushGo builds on strict update and security protocols to provide tools designed for compliance. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), CodePushGo ensures smooth updates while meeting key standards. These tools are grounded in principles like version control, security, and quality assurance.
 
 ### Security Features
 
-Capgo incorporates advanced security features tailored to meet Google Play's requirements:
+CodePushGo incorporates advanced security features tailored to meet Google Play's requirements:
 
 | **Security Feature** | **Implementation** | **Compliance Benefit** |
 | --- | --- | --- |
@@ -195,7 +195,7 @@ Capgo incorporates advanced security features tailored to meet Google Play's req
 
 ### Development Integration
 
-Capgo easily fits into existing development workflows while adhering to Google Play's compliance rules:
+CodePushGo easily fits into existing development workflows while adhering to Google Play's compliance rules:
 
 | **Integration Type** | **Feature** | **Compliance Aspect** |
 | --- | --- | --- |
@@ -208,7 +208,7 @@ CI/CD integration is available for approximately $300 per month.
 
 ### Update Management
 
-Capgo provides tools to manage updates effectively while aligning with Google Play's compliance standards:
+CodePushGo provides tools to manage updates effectively while aligning with Google Play's compliance standards:
 
 | **Management Tool** | **Success Metric** | **Compliance Impact** |
 | --- | --- | --- |
@@ -217,9 +217,9 @@ Capgo provides tools to manage updates effectively while aligning with Google Pl
 | Partial Updates | Average bundle size of 5MB | Improves delivery efficiency |
 | Organization Controls | Granular permissions | Secures update authority |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo also offers flexible hosting options, including cloud-based and self-hosted solutions. These options allow organizations to maintain control over their update infrastructure while meeting Google Play's security standards. Features like real-time monitoring and instant rollback help achieve the 82% global success rate benchmark.
+CodePushGo also offers flexible hosting options, including cloud-based and self-hosted solutions. These options allow organizations to maintain control over their update infrastructure while meeting Google Play's security standards. Features like real-time monitoring and instant rollback help achieve the 82% global success rate benchmark.
 
 ## Summary
 
@@ -236,11 +236,11 @@ Meeting Google Play OTA compliance requires attention to security, version contr
 
 Staying on top of these requirements helps avoid rejections and ensures smooth app operations.
 
-### Using Capgo
+### Using CodePushGo
 
-Capgo provides tools designed to streamline compliance with Google Play standards. With its features, developers can manage millions of updates across various apps seamlessly [\[1\]](https://capgo.app/).
+CodePushGo provides tools designed to streamline compliance with Google Play standards. With its features, developers can manage millions of updates across various apps seamlessly [\[1\]](https://capgo.app/).
 
-> "Capgo is essential for developers - enabling seamless bug fixes without store review" [\[1\]](https://capgo.app/)
+> "CodePushGo is essential for developers - enabling seamless bug fixes without store review" [\[1\]](https://capgo.app/)
 
 **Key Features and Advantages**:
 
@@ -251,4 +251,4 @@ Capgo provides tools designed to streamline compliance with Google Play standard
 | **Update Control** | Granular permissions for updates | User-specific deployment |
 | **Performance Tracking** | Real-time monitoring | Analytics dashboard |
 
-Capgo's channel system allows for controlled update distribution, ensuring updates are delivered efficiently while staying compliant with Google Play policies. Features like one-click rollback and error tracking help teams maintain update stability and quickly address any issues that arise.
+CodePushGo's channel system allows for controlled update distribution, ensuring updates are delivered efficiently while staying compliant with Google Play policies. Features like one-click rollback and error tracking help teams maintain update stability and quickly address any issues that arise.

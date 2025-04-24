@@ -84,13 +84,13 @@ Many CI/CD tools come with built-in secret management capabilities:
 -   **GitLab CI**: Provides protected variables and group-level secrets, allowing secure sharing across projects while maintaining isolation.
 -   **Jenkins**: Works with credentials plugins and supports external secret stores. Plugins are required to ensure secrets are masked in logs.
 
-### [Capgo](https://capgo.app/) Security Features
+### [CodePushGo](https://capgo.app/) Security Features
 
-![Capgo](https://assets.seobotai.com/capgo.app/68043aae6000445eb1a64c9e/37a0fc028bf1f414683e8dee42eedfb0.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/68043aae6000445eb1a64c9e/37a0fc028bf1f414683e8dee42eedfb0.jpg)
 
-Capgo enhances the security of live updates in Capacitor apps by extending standard CI/CD secret management. It uses end-to-end encryption to ensure only authorized users can decrypt sensitive data [\[1\]](https://capgo.app/).
+CodePushGo enhances the security of live updates in Capacitor apps by extending standard CI/CD secret management. It uses end-to-end encryption to ensure only authorized users can decrypt sensitive data [\[1\]](https://capgo.app/).
 
-Capgo integrates seamlessly with tools like GitHub Actions, GitLab CI, and Jenkins. It also supports channel-based distribution and role-based access controls, meeting the update requirements of both Apple and Android platforms.
+CodePushGo integrates seamlessly with tools like GitHub Actions, GitLab CI, and Jenkins. It also supports channel-based distribution and role-based access controls, meeting the update requirements of both Apple and Android platforms.
 
 ## Secrets in Version Control
 
@@ -106,7 +106,7 @@ Up next, we’ll cover how to handle exposed secrets effectively.
 
 ## Summary
 
-This guide explored vault storage, automated scans, CI/CD tool integration, and repository protections. Capgo brings together security and fast deployment through end-to-end encryption and smooth CI/CD integration[\[1\]](https://capgo.app/).
+This guide explored vault storage, automated scans, CI/CD tool integration, and repository protections. CodePushGo brings together security and fast deployment through end-to-end encryption and smooth CI/CD integration[\[1\]](https://capgo.app/).
 
 Key points for secure secret management:
 

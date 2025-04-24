@@ -22,7 +22,7 @@ Version tagging is essential for managing [Capacitor](https://capacitorjs.com/) 
 -   **Semantic Versioning**: Use **MAJOR.MINOR.PATCH** to indicate breaking changes, new features, or bug fixes.
 -   **Sync Across Platforms**: Align version numbers in `package.json`, iOS `Info.plist`, and Android `build.gradle`.
 -   **Automation**: [Automate updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) with npm scripts and CI/CD tools.
--   **Live Updates**: Tools like [Capgo](https://capgo.app/) deliver updates to 95% of users within 24 hours.
+-   **Live Updates**: Tools like [CodePushGo](https://capgo.app/) deliver updates to 95% of users within 24 hours.
 -   **Beta Management**: Use structured channels for alpha, beta, and production versions.
 
 ### Quick Comparison
@@ -32,7 +32,7 @@ Version tagging is essential for managing [Capacitor](https://capacitorjs.com/) 
 | **Semantic Versioning** | Tracks changes clearly | `1.2.3 → 2.0.0` |
 | **Sync Versions** | Align across platforms | `npx cap sync` |
 | **Automation** | Speeds up version updates | `npm version patch` |
-| **Live Updates** | Fast user adoption | Capgo's 95% in 24 hours |
+| **Live Updates** | Fast user adoption | CodePushGo's 95% in 24 hours |
 | **Beta Channels** | Controlled testing phases | `1.3.0-beta.1` |
 
 Version tagging simplifies [app updates](https://capgo.app/plugins/capacitor-updater/), keeps users happy, and ensures developers can manage releases effectively.
@@ -129,7 +129,7 @@ Here's how to decide which version number to update:
 | **Minor Update** | When introducing new features or marking features as deprecated | 1.2.3 → 1.3.0 |
 | **Patch Update** | For bug fixes or small performance tweaks | 1.2.3 → 1.2.4 |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 Now let’s look at automating these updates to simplify release management.
 
@@ -152,9 +152,9 @@ Add these scripts to your `package.json` file to manage version updates easily:
 ```
 
 2.  **CI/CD Integration**  
-    Incorporate version updates into your CI/CD pipeline. Capgo supports tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/), making it simple to automate the process.
+    Incorporate version updates into your CI/CD pipeline. CodePushGo supports tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/), making it simple to automate the process.
 
-> "@Capgo is a must-have tool for developers seeking productivity by bypassing lengthy bugfix reviews." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must-have tool for developers seeking productivity by bypassing lengthy bugfix reviews." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 ## Version Tag Methods
 
@@ -195,7 +195,7 @@ The build number should always increase, even if the version remains the same. T
 
 ### Beta Version Management
 
-Managing beta versions requires a structured process to distribute test builds. Capgo’s [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) simplifies this with the following steps:
+Managing beta versions requires a structured process to distribute test builds. CodePushGo’s [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) simplifies this with the following steps:
 
 1.  **Channel Setup**
 
@@ -290,7 +290,7 @@ In addition to displaying version info, integrating an update check system can i
 
 ### Update Check System
 
-An update check system ensures users have access to the latest features and fixes. Capgo provides real-time notifications and controlled update channels to manage this process:
+An update check system ensures users have access to the latest features and fixes. CodePushGo provides real-time notifications and controlled update channels to manage this process:
 
 ```typescript
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
@@ -307,7 +307,7 @@ async function checkForUpdates() {
 }
 ```
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 You can also add a user-facing update notification, like this:
 
@@ -323,7 +323,7 @@ You can also add a user-facing update notification, like this:
 })
 ```
 
-For enterprise apps, Capgo's channel system allows you to control update distribution:
+For enterprise apps, CodePushGo's channel system allows you to control update distribution:
 
 | Channel | Update Type | Target Audience |
 | --- | --- | --- |
@@ -331,7 +331,7 @@ For enterprise apps, Capgo's channel system allows you to control update distrib
 | Beta | Pre-release versions | Test group |
 | Critical | Emergency fixes | Affected users |
 
-This method ensures app reliability while tracking update performance through Capgo's analytics dashboard.
+This method ensures app reliability while tracking update performance through CodePushGo's analytics dashboard.
 
 ## Version Management Solutions
 
@@ -351,23 +351,23 @@ Here are some key features to look for:
 | CI/CD Integration | Useful | Streamlines deployment processes |
 | Cost Efficiency | Strategic | Influences long-term budget planning |
 
-One standout tool in this space is Capgo, which offers features specifically designed for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
+One standout tool in this space is CodePushGo, which offers features specifically designed for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
 
-### [Capgo](https://capgo.app/) Version Control Features
+### [CodePushGo](https://capgo.app/) Version Control Features
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
 
-Capgo provides robust version management capabilities, including:
+CodePushGo provides robust version management capabilities, including:
 
 -   **23.5M successful updates delivered**
 -   **95% of users updated within 24 hours**
 -   **82% global success rate**
 -   **434ms average API response time worldwide**
 
-Here’s an example of how to use Capgo for version control:
+Here’s an example of how to use CodePushGo for version control:
 
 ```typescript
-// Capgo version control example
+// CodePushGo version control example
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
 
 const versionControl = {
@@ -385,11 +385,11 @@ const versionControl = {
 };
 ```
 
-> "We are currently giving a try to @Capgo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://capgo.app/)
 
 ### Team Size Solutions
 
-Capgo offers flexible plans to accommodate teams of all sizes, making version management scalable and efficient.
+CodePushGo offers flexible plans to accommodate teams of all sizes, making version management scalable and efficient.
 
 | Team Size | Plan | Key Features |
 | --- | --- | --- |
@@ -398,7 +398,7 @@ Capgo offers flexible plans to accommodate teams of all sizes, making version ma
 | Medium Team (6-20) | Team plan | 100,000 MAU, permissions |
 | Enterprise | Custom PAYG | Unlimited MAU, dedicated support |
 
-For larger teams, Capgo’s channel system enables precise control over version deployment:
+For larger teams, CodePushGo’s channel system enables precise control over version deployment:
 
 ```typescript
 const enterpriseVersionControl = {
@@ -417,9 +417,9 @@ const enterpriseVersionControl = {
 };
 ```
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo also includes an analytics dashboard to monitor version adoption rates and detect potential issues early. With built-in encryption and customizable hosting options, teams can maintain security while scaling their deployment workflows.
+CodePushGo also includes an analytics dashboard to monitor version adoption rates and detect potential issues early. With built-in encryption and customizable hosting options, teams can maintain security while scaling their deployment workflows.
 
 ## Conclusion
 

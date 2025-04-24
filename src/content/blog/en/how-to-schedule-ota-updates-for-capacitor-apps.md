@@ -22,7 +22,7 @@ next_blog: ''
     
 -   **Why Schedule Updates?** To fix bugs quickly, roll out features gradually, and enhance user experience with minimal disruption.
     
--   **How to Get Started:** Install the [Capgo](https://capgo.app/) plugin using `npx @capgo/cli init`, integrate with your CI/CD pipeline, and configure secure connections and analytics.
+-   **How to Get Started:** Install the [CodePushGo](https://capgo.app/) plugin using `npx @capgo/cli init`, integrate with your CI/CD pipeline, and configure secure connections and analytics.
     
 -   **Best Practices:** Use phased rollouts, schedule updates during off-peak hours, and monitor performance with real-time metrics.
     
@@ -35,7 +35,7 @@ Read on to learn how to set up, schedule, and track OTA updates for your Capacit
 
 ### Required Tools and Settings
 
-To get started with scheduled OTA updates, you'll need to install some key tools and set up configurations. Begin by installing the [Capgo plugin](https://capgo.app/plugins/) using your package manager of choice:
+To get started with scheduled OTA updates, you'll need to install some key tools and set up configurations. Begin by installing the [CodePushGo plugin](https://capgo.app/plugins/) using your package manager of choice:
 
 ```bash
 npx @capgo/cli init
@@ -65,9 +65,9 @@ Integrating an OTA platform is crucial for managing scheduled updates efficientl
 -   **Integrate your CI/CD pipeline** into your existing workflow for smoother operations.
     
 
-> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." – Capgo [\[1\]](https://capgo.app/)
+> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." – CodePushGo [\[1\]](https://capgo.app/)
 
-For enterprise-level needs, Capgo supports integration with major CI/CD systems. Their platform has been successfully used in 750 production apps, managing over 23.5 million updates to date [\[1\]](https://capgo.app/).
+For enterprise-level needs, CodePushGo supports integration with major CI/CD systems. Their platform has been successfully used in 750 production apps, managing over 23.5 million updates to date [\[1\]](https://capgo.app/).
 
 Here are some performance benchmarks [\[1\]](https://capgo.app/):
 
@@ -78,7 +78,7 @@ Here are some performance benchmarks [\[1\]](https://capgo.app/):
 -   **Update success rate**: 82% worldwide
     
 
-## Explore [Capgo](https://capgo.app/)'s New Ionic [Capacitor](https://capacitorjs.com/) Live Update ...
+## Explore [CodePushGo](https://capgo.app/)'s New Ionic [Capacitor](https://capacitorjs.com/) Live Update ...
 
 **Planning Update Schedules**
 
@@ -92,7 +92,7 @@ Scheduling OTA updates requires analyzing user behavior and technical factors. F
 
 Using a phased rollout approach can make updates more manageable. Begin with a beta release to a small group of users, then gradually expand to the full user base. This method often relies on channel systems, allowing for controlled distribution. It also enables real-time monitoring and quick rollbacks if any issues arise.
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
 
 ## Update Management Steps
 
@@ -127,7 +127,7 @@ This script integrates directly with your OTA setup, ensuring updates are timed 
 
 ### Error and Rollback Handling
 
-Capgo offers built-in tools to handle errors and rollbacks, ensuring that any issues during updates are quickly resolved. If an update fails, the system can automatically revert to a stable version:
+CodePushGo offers built-in tools to handle errors and rollbacks, ensuring that any issues during updates are quickly resolved. If an update fails, the system can automatically revert to a stable version:
 
 ```typescript
 async function handleFailedUpdate() {
@@ -147,7 +147,7 @@ These features help maintain app stability by seamlessly restoring previous vers
 
 ### Pre-release Testing
 
-Once error-handling mechanisms are in place, testing becomes the next critical step. Capgo provides dedicated test channels for beta deployments, allowing you to:
+Once error-handling mechanisms are in place, testing becomes the next critical step. CodePushGo provides dedicated test channels for beta deployments, allowing you to:
 
 -   Release updates to internal testers first
     
@@ -156,9 +156,9 @@ Once error-handling mechanisms are in place, testing becomes the next critical s
 -   Gradually expand to a larger audience
     
 
-> "@Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
-Capgo also supports user access control, making it easier to assign permissions and monitor specific groups during testing. Use the platform’s analytics to track performance and decide the best time for a full rollout [\[1\]](https://capgo.app/).
+CodePushGo also supports user access control, making it easier to assign permissions and monitor specific groups during testing. Use the platform’s analytics to track performance and decide the best time for a full rollout [\[1\]](https://capgo.app/).
 
 ## Update Performance Tracking
 
@@ -166,7 +166,7 @@ Keeping an eye on OTA update performance helps refine your schedule and ensures 
 
 ### Update Metrics
 
-Measuring key performance indicators (KPIs) is essential for assessing your [update strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update). Recent data from Capgo's analytics platform highlights the following benchmarks for successful OTA updates:
+Measuring key performance indicators (KPIs) is essential for assessing your [update strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update). Recent data from CodePushGo's analytics platform highlights the following benchmarks for successful OTA updates:
 
 | Metric | Target Benchmark | Industry Average |
 | --- | --- | --- |
@@ -227,4 +227,4 @@ OTA updates can boost app performance by delivering updates quickly and securely
 -   **Rollback Protection**: Set up automated error tracking to enable quick rollbacks if needed [\[1\]](https://capgo.app/).
     
 
-Since 2022, the landscape of OTA update solutions has grown significantly. For instance, Capgo has managed over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/). When combined with CI/CD integration and real-time analytics, these practices provide a solid OTA update strategy for your Capacitor app workflow.
+Since 2022, the landscape of OTA update solutions has grown significantly. For instance, CodePushGo has managed over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/). When combined with CI/CD integration and real-time analytics, these practices provide a solid OTA update strategy for your Capacitor app workflow.

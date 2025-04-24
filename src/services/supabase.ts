@@ -5,19 +5,19 @@ import ky from 'ky'
 
 let supaClient: SupabaseClient<Database> = null as any
 
-interface CapgoConfig {
+interface CodePushGoConfig {
   supaHost: string
   supaKey: string
   supbaseId: string
 }
 
-const getLocalConfig = (): CapgoConfig => ({
+const getLocalConfig = (): CodePushGoConfig => ({
   supaHost: import.meta.env.VITE_SUPABASE_URL as string,
   supaKey: import.meta.env.VITE_SUPABASE_ANON_KEY as string,
   supbaseId: import.meta.env.VITE_SUPABASE_URL?.split('//')[1].split('.')[0].split(':')[0] as string,
 })
 
-let config: CapgoConfig = getLocalConfig()
+let config: CodePushGoConfig = getLocalConfig()
 
 export async function getRemoteConfig() {
   const runtimeConfig = useRuntimeConfig()
@@ -25,11 +25,11 @@ export async function getRemoteConfig() {
   const localConfig = getLocalConfig()
   const data = await ky
     .get(`${runtimeConfig.public.baseApiUrl}/private/config`)
-    .then((res) => res.json<CapgoConfig>())
-    .then((d) => ({ ...localConfig, ...d }) as CapgoConfig)
+    .then((res) => res.json<CodePushGoConfig>())
+    .then((d) => ({ ...localConfig, ...d }) as CodePushGoConfig)
     .catch(() => {
       console.log('Local config', localConfig)
-      return localConfig as CapgoConfig
+      return localConfig as CodePushGoConfig
     })
   config = data
   return data

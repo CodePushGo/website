@@ -26,7 +26,7 @@ next_blog: ''
     
 -   **Security**: Both platforms enforce strong security measures - iOS relies on hardware-backed encryption, while Android uses Verified Boot and [SELinux](https://en.wikipedia.org/wiki/Security-Enhanced_Linux).
     
--   [**Capgo**](https://capgo.app/): A platform that simplifies OTA updates, delivering over **947.6 million updates** globally with tools for efficient, secure, and compliant deployments.
+-   [**CodePushGo**](https://capgo.app/): A platform that simplifies OTA updates, delivering over **947.6 million updates** globally with tools for efficient, secure, and compliant deployments.
     
 
 ### Quick Comparison:
@@ -40,7 +40,7 @@ next_blog: ''
 | **Power Requirements** | 50% battery or plugged in | Flexible |
 | **Network** | Wi-Fi required | Supports various connections |
 
-Capgo helps streamline the process, ensuring updates are secure, efficient, and compliant across both platforms. Whether you're targeting iOS or Android, understanding these differences will help you create a better OTA [update strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update).
+CodePushGo helps streamline the process, ensuring updates are secure, efficient, and compliant across both platforms. Whether you're targeting iOS or Android, understanding these differences will help you create a better OTA [update strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update).
 
 ## How iOS and Android Handle OTA Updates
 
@@ -86,11 +86,11 @@ Operating system requirements play a key role in how updates are distributed. Fo
 | Current | Existing apps must target Android 13 (API 33+) |
 | Legacy | Apps targeting Android 12 or lower must comply with existing OS versions |
 
-For iOS, Apple uses Rapid Security Response (RSR) to deliver critical patches directly to the latest OS versions [\[10\]](https://support.apple.com/guide/deployment/about-software-updates-depc4c80847a/web). Capgo ensures compatibility with devices running iOS 13.0+ and Android API level 22+ [\[9\]](https://capgo.app/docs/faq/).
+For iOS, Apple uses Rapid Security Response (RSR) to deliver critical patches directly to the latest OS versions [\[10\]](https://support.apple.com/guide/deployment/about-software-updates-depc4c80847a/web). CodePushGo ensures compatibility with devices running iOS 13.0+ and Android API level 22+ [\[9\]](https://capgo.app/docs/faq/).
 
 ### Update Strategy Results
 
-Android's [Project Treble](https://android-developers.googleblog.com/2017/05/here-comes-treble-modular-base-for.html) has reduced the time required for security updates by about 7 days [\[11\]](https://dl.acm.org/doi/10.1145/3372297.3423346). To manage updates effectively, it's recommended to separate development and production [update channels](https://capgo.app/docs/webapp/channels/) [\[9\]](https://capgo.app/docs/faq/). Capgo simplifies the process with percentage-based deployments, allowing for controlled rollouts while staying within app store guidelines.
+Android's [Project Treble](https://android-developers.googleblog.com/2017/05/here-comes-treble-modular-base-for.html) has reduced the time required for security updates by about 7 days [\[11\]](https://dl.acm.org/doi/10.1145/3372297.3423346). To manage updates effectively, it's recommended to separate development and production [update channels](https://capgo.app/docs/webapp/channels/) [\[9\]](https://capgo.app/docs/faq/). CodePushGo simplifies the process with percentage-based deployments, allowing for controlled rollouts while staying within app store guidelines.
 
 The updater also caches downloaded bundles in platform-specific directories for efficient and secure updates:
 
@@ -107,7 +107,7 @@ The speed and efficiency of OTA (Over-the-Air) updates play a huge role in shapi
 
 ### File Size and Network Management
 
-Keeping file sizes optimized is crucial for smooth OTA updates. For instance, Capgo's updater runs update checks in a background thread during app startup, ensuring the user interface stays responsive [\[9\]](https://capgo.app/docs/faq/). It also supports JavaScript updates while locking native code (like Java/Kotlin or Objective-C/Swift) to maintain stability [\[9\]](https://capgo.app/docs/faq/).
+Keeping file sizes optimized is crucial for smooth OTA updates. For instance, CodePushGo's updater runs update checks in a background thread during app startup, ensuring the user interface stays responsive [\[9\]](https://capgo.app/docs/faq/). It also supports JavaScript updates while locking native code (like Java/Kotlin or Objective-C/Swift) to maintain stability [\[9\]](https://capgo.app/docs/faq/).
 
 ### Update Speed Comparison
 
@@ -143,19 +143,19 @@ Android builds its security on a Linux-based foundation, focusing on user isolat
 
 The differences in these frameworks highlight how each platform's architecture shapes its security approach. iOS operates within a "walled garden" model, offering tight control and standardized security measures. In contrast, Android's open ecosystem provides more flexibility in update mechanisms but can sometimes face fragmentation challenges [\[15\]](https://en.wikipedia.org/wiki/Over-the-air_update). These security structures directly influence the reliability of OTA updates.
 
-For developers working with tools like Capgo, understanding these distinctions is key. iOS enforces stricter app isolation and limits system API access [\[17\]](https://mas.owasp.org/MASTG/0x06a-Platform-Overview/), while Android's broader inter-process communication options demand careful security management [\[18\]](https://source.android.com/docs/security/features). As of February 2025, with iOS 18.3.1 and various Android versions in use [\[16\]](https://support.apple.com/en-us/100100), developers must ensure their OTA update strategies align with the latest security standards for each platform.
+For developers working with tools like CodePushGo, understanding these distinctions is key. iOS enforces stricter app isolation and limits system API access [\[17\]](https://mas.owasp.org/MASTG/0x06a-Platform-Overview/), while Android's broader inter-process communication options demand careful security management [\[18\]](https://source.android.com/docs/security/features). As of February 2025, with iOS 18.3.1 and various Android versions in use [\[16\]](https://support.apple.com/en-us/100100), developers must ensure their OTA update strategies align with the latest security standards for each platform.
 
-## [Capgo](https://capgo.app/) Platform Overview
+## [CodePushGo](https://capgo.app/) Platform Overview
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-01.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-01.jpg?auto=compress)
 
-Capgo brings together platform-specific OTA update rules into one streamlined update platform.
+CodePushGo brings together platform-specific OTA update rules into one streamlined update platform.
 
-By working with iOS and Android security protocols, Capgo ensures seamless OTA update management. To date, it has delivered **947.6 million updates** across **1,400 production apps** [\[1\]](https://capgo.app/).
+By working with iOS and Android security protocols, CodePushGo ensures seamless OTA update management. To date, it has delivered **947.6 million updates** across **1,400 production apps** [\[1\]](https://capgo.app/).
 
-### Capgo Key Functions
+### CodePushGo Key Functions
 
-Capgo focuses on solving update challenges with secure, efficient, and compliant delivery. Updates are protected with **end-to-end encryption**, and decryption happens only on user devices [\[1\]](https://capgo.app/). For iOS, it uses a custom Dart interpreter to align with Apple's interpreter-only update rule [\[9\]](https://capgo.app/docs/faq/). On Android, it supports API level 22 and above, in line with Capacitor's requirements [\[9\]](https://capgo.app/docs/faq/).
+CodePushGo focuses on solving update challenges with secure, efficient, and compliant delivery. Updates are protected with **end-to-end encryption**, and decryption happens only on user devices [\[1\]](https://capgo.app/). For iOS, it uses a custom Dart interpreter to align with Apple's interpreter-only update rule [\[9\]](https://capgo.app/docs/faq/). On Android, it supports API level 22 and above, in line with Capacitor's requirements [\[9\]](https://capgo.app/docs/faq/).
 
 | Feature | Implementation | Platform Support |
 | --- | --- | --- |
@@ -167,7 +167,7 @@ Capgo focuses on solving update challenges with secure, efficient, and compliant
 
 ### Cross-Platform Update Management
 
-Capgo's channel system gives developers precise control over updates for iOS and Android. This system allows for:
+CodePushGo's channel system gives developers precise control over updates for iOS and Android. This system allows for:
 
 -   Separate update channels for iOS and Android
     
@@ -178,14 +178,14 @@ Capgo's channel system gives developers precise control over updates for iOS and
 
 The platform's real-world impact is clear. For example, NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team shared:
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
 
-Capgo can adjust any JavaScript code, including app and generated code, but it strictly avoids modifying native code (such as Java/Kotlin for Android or Objective-C/Swift for iOS) [\[9\]](https://capgo.app/docs/faq/).
+CodePushGo can adjust any JavaScript code, including app and generated code, but it strictly avoids modifying native code (such as Java/Kotlin for Android or Objective-C/Swift for iOS) [\[9\]](https://capgo.app/docs/faq/).
 
 ## Conclusion
 
 OTA updates for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) require different approaches for iOS and Android due to platform-specific rules. For iOS, there are stricter controls, such as the file path restriction that limits server paths to "/Library/NoCloud/ionic\_built\_snapshots" [\[2\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). Meanwhile, Android allows more freedom, with fewer limitations on virtual machines and interpreters accessing APIs [\[2\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). These differences highlight the importance of creating update strategies that align with each platform's framework.
 
-Data from platforms like Capgo demonstrates how effective these strategies can be. Developers have successfully delivered 947.6 million updates across 1,400 production apps, proving the scalability of well-designed update systems [\[1\]](https://capgo.app/). However, success relies heavily on meeting each platform's requirements while maintaining strong security measures.
+Data from platforms like CodePushGo demonstrates how effective these strategies can be. Developers have successfully delivered 947.6 million updates across 1,400 production apps, proving the scalability of well-designed update systems [\[1\]](https://capgo.app/). However, success relies heavily on meeting each platform's requirements while maintaining strong security measures.
 
 For example, Apple mandates that interpreted code must not alter an app's core functionality or compromise its security [\[2\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). This rule is a clear reminder of the platform-specific guidelines developers must follow to implement OTA updates effectively.

@@ -37,7 +37,7 @@ Choosing between **staged rollouts** and **full releases** depends on your app�
 -   **Staged Rollouts**: Best for [complex updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update), large user bases, or when minimizing risks is a priority.
 -   **Full Releases**: Ideal for urgent bug fixes, security patches, or simple updates requiring broad adoption.
 
-Tools like **[Capgo](https://capgo.app/)** can support both methods, offering features like real-time analytics, instant rollback, and seamless deployment. Choose the method that aligns with your app’s goals and infrastructure.
+Tools like **[CodePushGo](https://capgo.app/)** can support both methods, offering features like real-time analytics, instant rollback, and seamless deployment. Choose the method that aligns with your app’s goals and infrastructure.
 
 ## Canary Deployment: Safer Releases Explained
 
@@ -49,7 +49,7 @@ Staged rollouts involve releasing updates gradually to specific groups of users.
 
 ### Key Features of Staged Rollouts
 
-The focus of staged rollouts is on controlled distribution and risk reduction. Tools like Capgo's channel system allow developers to deliver different app versions to selected user groups.
+The focus of staged rollouts is on controlled distribution and risk reduction. Tools like CodePushGo's channel system allow developers to deliver different app versions to selected user groups.
 
 | Feature | Purpose | Benefit |
 | --- | --- | --- |
@@ -75,7 +75,7 @@ These features are applied through two main approaches:
 | Update in the background | Requires more resources |
 | Easy rollback option | Initial setup can be challenging |
 
-To implement staged rollouts effectively, tools like Capgo provide real-time analytics to monitor success and user engagement [\[1\]](https://capgo.app/).
+To implement staged rollouts effectively, tools like CodePushGo provide real-time analytics to monitor success and user engagement [\[1\]](https://capgo.app/).
 
 ## Full Releases Explained
 
@@ -105,7 +105,7 @@ Older full release methods relied on lengthy app store reviews, often delaying u
 | **User Experience** | Manual updates by users | [Automatic background updates](https://capgo.app/docs/plugin/self-hosted/auto-update/) |
 | **Release Control** | Basic version handling | Advanced release controls |
 
-> "No more wait! Push live code changes directly to users without app store delays. Deploy critical fixes and features when they're ready." - Capgo [\[1\]](https://capgo.app/)
+> "No more wait! Push live code changes directly to users without app store delays. Deploy critical fixes and features when they're ready." - CodePushGo [\[1\]](https://capgo.app/)
 
 Modern approaches are reshaping how full releases are managed, offering better speed and control.
 
@@ -119,9 +119,9 @@ Modern approaches are reshaping how full releases are managed, offering better s
 | Easier to support and document | Limited rollback options |
 | Faster deployment process | Potential server load spikes |
 
-Capgo reports an 82% global success rate for updates, with an average API response time of 434ms worldwide [\[1\]](https://capgo.app/).
+CodePushGo reports an 82% global success rate for updates, with an average API response time of 434ms worldwide [\[1\]](https://capgo.app/).
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ## Direct Comparison: Staged vs Full Releases
 
@@ -142,7 +142,7 @@ Each approach has its own set of trade-offs when it comes to speed, cost, and ri
 
 The main distinction lies in _risk management_. Staged rollouts give developers the ability to monitor performance on a smaller scale before expanding to the full user base. Full releases, while faster, demand significant preparation to handle potential challenges across all users.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 Advancements in deployment platforms have improved both methods. Staged rollouts now include features like instant rollback and in-depth analytics, while full releases benefit from better error tracking and automated deployment tools. These enhancements make both strategies more reliable, allowing developers to choose based on their app's needs, complexity, and audience.
 
@@ -184,7 +184,7 @@ Here’s a breakdown of key factors to consider when deciding between staged rol
 | Resource Requirements | Moderate server load | High initial infrastructure demand |
 | Rollback Options | Instant, targeted rollback | Universal rollback only |
 
-Your choice should align with your team's processes and the tools at your disposal. Platforms like Capgo can support both methods by offering advanced update distribution channels and analytics to track deployment success [\[1\]](https://capgo.app/). Before proceeding, ensure your system is ready, assess potential user impact, and confirm you have the tools required to manage the release effectively.
+Your choice should align with your team's processes and the tools at your disposal. Platforms like CodePushGo can support both methods by offering advanced update distribution channels and analytics to track deployment success [\[1\]](https://capgo.app/). Before proceeding, ensure your system is ready, assess potential user impact, and confirm you have the tools required to manage the release effectively.
 
 ## Release Method Implementation Guide
 
@@ -221,21 +221,21 @@ To ensure smooth deployments, it's crucial to avoid common mistakes.
 
 ### Additional Tips for a Smooth Deployment
 
--   **Testing Environment Setup**: Your testing environment should closely resemble production. Tools like Capgo's channel system make beta testing and staged rollouts easier [\[1\]](https://capgo.app/).
--   **Rollback Preparation**: Always have a rollback plan ready. Many modern platforms, such as Capgo, offer instant rollback features to revert to previous versions if issues occur [\[1\]](https://capgo.app/).
--   **Integration Requirements**: Ensure proper CI/CD pipeline integration. While setup may involve an upfront cost (Capgo charges $2,600 [\[1\]](https://capgo.app/)), this investment minimizes deployment risks and reduces manual errors in the long run.
+-   **Testing Environment Setup**: Your testing environment should closely resemble production. Tools like CodePushGo's channel system make beta testing and staged rollouts easier [\[1\]](https://capgo.app/).
+-   **Rollback Preparation**: Always have a rollback plan ready. Many modern platforms, such as CodePushGo, offer instant rollback features to revert to previous versions if issues occur [\[1\]](https://capgo.app/).
+-   **Integration Requirements**: Ensure proper CI/CD pipeline integration. While setup may involve an upfront cost (CodePushGo charges $2,600 [\[1\]](https://capgo.app/)), this investment minimizes deployment risks and reduces manual errors in the long run.
 
-## [Capgo](https://capgo.app/) Release Management Features
+## [CodePushGo](https://capgo.app/) Release Management Features
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e8a654283d21cbd67ab720/93c1d42fe1ebf1e9553e1e7f4f856f98.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e8a654283d21cbd67ab720/93c1d42fe1ebf1e9553e1e7f4f856f98.jpg)
 
-Capgo provides tools designed to simplify and improve both staged and full release processes, building on effective release strategies.
+CodePushGo provides tools designed to simplify and improve both staged and full release processes, building on effective release strategies.
 
-### Capgo Staged Release Tools
+### CodePushGo Staged Release Tools
 
-Capgo's Channel System allows precise control over staged rollouts, ensuring high update success rates [\[1\]](https://capgo.app/).
+CodePushGo's Channel System allows precise control over staged rollouts, ensuring high update success rates [\[1\]](https://capgo.app/).
 
-Here’s what Capgo offers for staged releases:
+Here’s what CodePushGo offers for staged releases:
 
 | Feature | Function | Benefit |
 | --- | --- | --- |
@@ -244,9 +244,9 @@ Here’s what Capgo offers for staged releases:
 | **Instant Rollback** | Revert versions with one click | Reduce downtime if issues arise |
 | **Beta Channels** | Dedicated testing environment | Catch bugs early |
 
-### Capgo Full Release Tools
+### CodePushGo Full Release Tools
 
-Capgo makes full releases fast and secure, using a global CDN, background updates, and seamless CI/CD integration. The platform delivers a 5MB bundle in just 114ms, with an average API response time of 434ms [\[1\]](https://capgo.app/).
+CodePushGo makes full releases fast and secure, using a global CDN, background updates, and seamless CI/CD integration. The platform delivers a 5MB bundle in just 114ms, with an average API response time of 434ms [\[1\]](https://capgo.app/).
 
 Key features for full releases include:
 
@@ -259,18 +259,18 @@ These features ensure reliable and efficient deployment for apps of any scale.
 
 ### Market Position
 
-Capgo’s tools improve update performance while offering notable cost savings compared to other platforms. To date, Capgo has delivered 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
+CodePushGo’s tools improve update performance while offering notable cost savings compared to other platforms. To date, CodePushGo has delivered 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
 
-Here’s how Capgo stacks up against competitors:
+Here’s how CodePushGo stacks up against competitors:
 
 | Service | Setup Cost | Monthly Operating Cost |
 | --- | --- | --- |
-| **Capgo** | $2,600 one-time | ~$300 |
+| **CodePushGo** | $2,600 one-time | ~$300 |
 | **[Appflow](https://ionic.io/appflow)** | N/A | $500 ($6,000 annually) |
 
-> "Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @Appflow) :-)" – NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @Appflow) :-)" – NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
 
-Many organizations switching to Capgo report lower costs without compromising on deployment quality. Its use of true end-to-end encryption sets it apart from competitors that only sign updates [\[1\]](https://capgo.app/).
+Many organizations switching to CodePushGo report lower costs without compromising on deployment quality. Its use of true end-to-end encryption sets it apart from competitors that only sign updates [\[1\]](https://capgo.app/).
 
 ## Summary and Next Steps
 
@@ -295,13 +295,13 @@ Use these factors to decide the most suitable release strategy for your app:
 
 Apps with more than 5,000 users often benefit from staged rollouts. For example:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
 
 2.  **Consider Update Frequency**
 
 If your team follows agile development, continuous delivery is often a priority:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 3.  **Implementation Steps**
 

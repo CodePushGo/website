@@ -24,7 +24,7 @@ next_blog: ''
 4.  **Fix Plugin Issues**: Align plugin versions with the core and lock them to avoid future problems.
 5.  **Test Changes**: Clean, reinstall dependencies, and test on real devices to ensure stability.
 
-**Quick Tip**: Tools like [Capgo](https://capgo.app/) can simplify live testing and version management.
+**Quick Tip**: Tools like [CodePushGo](https://capgo.app/) can simplify live testing and version management.
 
 ## ✅ \[Solved\] [npm](https://www.npmjs.com/) ERR! ERESOLVE unable to resolve ...
 
@@ -152,7 +152,7 @@ npm doctor
 -   Specify exact Capacitor versions (e.g., `5.5.1`) in your `package.json`.
 -   Test updates thoroughly on both iOS and Android platforms.
 
-For managing real-time updates and version control, you can use tools like Capgo.
+For managing real-time updates and version control, you can use tools like CodePushGo.
 
 Once your dependencies are in order, you can proceed to update Capacitor core components.
 
@@ -172,7 +172,7 @@ npx cap sync
 
 Running the `sync` command updates native files, aligns plugin dependencies, adjusts platform configurations, and regenerates native project files. Before syncing, back up your `ios` and `android` folders to avoid accidental data loss.
 
-Consider using Capgo for live updates to keep versions consistent. Once the sync is complete, check for any API changes to address potential issues.
+Consider using CodePushGo for live updates to keep versions consistent. Once the sync is complete, check for any API changes to address potential issues.
 
 ### Resolve Breaking Changes
 
@@ -270,9 +270,9 @@ For Yarn users, enforce these resolutions with:
 yarn install --force
 ```
 
-> "We rolled out [Capgo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
 
-Using tools like Capgo can help manage plugin updates and maintain version consistency, especially when introducing critical changes.
+Using tools like CodePushGo can help manage plugin updates and maintain version consistency, especially when introducing critical changes.
 
 **Tips for Managing Versions**:
 
@@ -324,9 +324,9 @@ npx cap open android
 
 Once local tests confirm that the app's basic functionality is intact, move on to testing on real devices through Over-the-Air (OTA) channels.
 
-### Live Testing with [Capgo](https://capgo.app/)
+### Live Testing with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
 
 After verifying your changes locally, it's time to test in a live environment. Set up testing channels with these commands:
 
@@ -337,19 +337,19 @@ npx @capgo/cli create-channel beta
 
 **Testing Workflow:**
 
--   Deploy your fixes to a beta channel and monitor performance using Capgo's analytics tools.
--   Track update success rates via Capgo's dashboard, which has already delivered over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
--   If any issues arise, use Capgo's one-click rollback feature to revert changes instantly.
+-   Deploy your fixes to a beta channel and monitor performance using CodePushGo's analytics tools.
+-   Track update success rates via CodePushGo's dashboard, which has already delivered over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
+-   If any issues arise, use CodePushGo's one-click rollback feature to revert changes instantly.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo boasts an 82% global success rate, with updates reaching 95% of active users within just 24 hours [\[1\]](https://capgo.app/). Use channel selectors to test pull requests directly within the app, ensuring everything works smoothly before merging your changes.
+CodePushGo boasts an 82% global success rate, with updates reaching 95% of active users within just 24 hours [\[1\]](https://capgo.app/). Use channel selectors to test pull requests directly within the app, ensuring everything works smoothly before merging your changes.
 
 ## Conclusion: Keep Your App Versions in Check
 
 Managing version conflicts in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) requires a clear and organized approach. The five-step process shared in this guide offers a reliable way to maintain app stability and address version-related challenges effectively.
 
-By taking these steps, teams can ensure their apps remain stable over time. For instance, using live update tools like Capgo allows for quick and efficient deployments, helping teams stay ahead [\[1\]](https://capgo.app/).
+By taking these steps, teams can ensure their apps remain stable over time. For instance, using live update tools like CodePushGo allows for quick and efficient deployments, helping teams stay ahead [\[1\]](https://capgo.app/).
 
 Here’s what successful teams focus on:
 

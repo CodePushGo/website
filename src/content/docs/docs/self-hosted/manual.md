@@ -1,6 +1,6 @@
 ---
 title: "Manual"
-description: "How to use Capgo updater in manual mode"
+description: "How to use CodePushGo updater in manual mode"
 sidebar:
     order: 3
 ---
@@ -20,7 +20,7 @@ I do think it would make our world a better place by opening instead of fighting
 
 To make it possible, it is necessary for all of us to do our part, including you 🥹.
 
-If Capgo cloud offer can't suit you, back a bootstrapped Maker [HERE](https://github.com/sponsors/riderx/) on your terms.
+If CodePushGo cloud offer can't suit you, back a bootstrapped Maker [HERE](https://github.com/sponsors/riderx/) on your terms.
 :::
 
 ## Quick install

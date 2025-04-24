@@ -64,7 +64,7 @@ Ionic is the leading cross-platform development framework, powering over 15% of 
 - Ionic CLI tooling for project scaffolding, previews and deployments
 - Integrations with popular front-end frameworks like React, Vue and Angular
 - Capacitor and Cordova plugins for accessing any native device feature
-- Live app updates, auth and CI/CD with Capgo or Appflow
+- Live app updates, auth and CI/CD with CodePushGo or Appflow
 
 By leveraging web standards, Ionic enables developers to use their existing skills to build high-quality apps for any platform. A single codebase dramatically reduces development time and maintenance costs.
 
@@ -86,21 +86,21 @@ With Ionic, you'll be building engaging, high-performance apps for mobile and we
 
 The future is cross-platform - get started today and crush your mobile app goals in 2024!
 
-## Simplify App Updates with Capgo
+## Simplify App Updates with CodePushGo
 
 One of the key challenges of mobile app development is keeping your app up-to-date over time. Even with a cross-platform approach, publishing a new version for each update can be cumbersome.
 
-This is where solutions like [Capgo](https://capgo.app/) come in. Capgo is an open-source live update system for Capacitor apps. It allows you to push updates directly to users' devices without going through the app stores.
+This is where solutions like [CodePushGo](https://capgo.app/) come in. CodePushGo is an open-source live update system for Capacitor apps. It allows you to push updates directly to users' devices without going through the app stores.
 
-Key benefits of Capgo include:
+Key benefits of CodePushGo include:
 
 - **Instant Updates** - Push the latest version of your app in seconds without resubmitting to stores.
 - **Easy Rollbacks** - Revert to a previous version effortlessly if needed. 
 - **Phased Rollouts** - Release updates to a percentage of users for testing before rolling out more widely.
 - **Self-Hosted Option** - Host updates yourself for full control and privacy.
 
-Capgo integrates seamlessly with Capacitor, the native runtime that powers Ionic apps. It's easy to set up in any existing Ionic project.
+CodePushGo integrates seamlessly with Capacitor, the native runtime that powers Ionic apps. It's easy to set up in any existing Ionic project.
 
-By combining cross-platform development in Ionic with live updates in Capgo, you can maximize your agility. Ship new features faster and with less risk.
+By combining cross-platform development in Ionic with live updates in CodePushGo, you can maximize your agility. Ship new features faster and with less risk.
 
-To get started with Capgo, check out the [official documentation](https://docs.capgo.app/). Capgo is free and fully open source - so you can deploy it however you like!
+To get started with CodePushGo, check out the [official documentation](https://docs.capgo.app/). CodePushGo is free and fully open source - so you can deploy it however you like!

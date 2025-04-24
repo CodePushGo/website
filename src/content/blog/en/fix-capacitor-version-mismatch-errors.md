@@ -32,7 +32,7 @@ next_blog: ''
     
     -   Lock versions in `package.json` (e.g., `"@capacitor/core": "5.0.0"`).
     -   Automate version checks with CI/CD tools.
-    -   Use live update tools like [Capgo](https://capgo.app/) for faster fixes.
+    -   Use live update tools like [CodePushGo](https://capgo.app/) for faster fixes.
 
 ## Resolving the No Matching View Exception in [Capacitor](https://capacitorjs.com/) ...
 
@@ -158,7 +158,7 @@ When transitioning to a new major version, follow these steps:
     ```
     
 
-Capgo provides live updates for Capacitor 6 and 7, allowing you to apply fixes without needing app store approvals [\[1\]](https://capgo.app/).
+CodePushGo provides live updates for Capacitor 6 and 7, allowing you to apply fixes without needing app store approvals [\[1\]](https://capgo.app/).
 
 ## Avoiding Future Version Conflicts
 
@@ -184,24 +184,24 @@ Set up automated version checks in your CI/CD pipeline to flag conflicts early. 
 npm outdated @capacitor/*
 ```
 
-You can integrate this step into tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/) to ensure consistent builds. For even more control, consider using Capgo's update system to simplify the process.
+You can integrate this step into tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/) to ensure consistent builds. For even more control, consider using CodePushGo's update system to simplify the process.
 
-### Using [Capgo](https://capgo.app/) Updates
+### Using [CodePushGo](https://capgo.app/) Updates
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e9f504283d21cbd67ba572/f3ac818a2fec22e90998e19561d68a19.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e9f504283d21cbd67ba572/f3ac818a2fec22e90998e19561d68a19.jpg)
 
-Capgo provides a live update system that resolves version conflicts quickly. According to their data, 95% of active users install updates within 24 hours [\[1\]](https://capgo.app/).
+CodePushGo provides a live update system that resolves version conflicts quickly. According to their data, 95% of active users install updates within 24 hours [\[1\]](https://capgo.app/).
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." – colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." – colenso [\[1\]](https://capgo.app/)
 
-Here’s how to make the most of Capgo:
+Here’s how to make the most of CodePushGo:
 
 -   Configure multiple distribution channels for testing purposes.
 -   Set up automatic rollbacks in case critical issues arise.
 -   Monitor success rates to ensure updates are effective.
 -   Use staged rollouts to minimize risks.
 
-For teams handling multiple app versions, Capgo's channel system allows you to test updates with specific user groups before a wider release. This approach has achieved an 82% global success rate for updates [\[1\]](https://capgo.app/).
+For teams handling multiple app versions, CodePushGo's channel system allows you to test updates with specific user groups before a wider release. This approach has achieved an 82% global success rate for updates [\[1\]](https://capgo.app/).
 
 ## Summary
 
@@ -211,7 +211,7 @@ Facing version mismatch errors in [Capacitor apps](https://capgo.app/blog/capaci
 
 -   Lock dependency versions in your `package.json` file and use lock files to ensure consistency.
 -   Run `npm outdated @capacitor/*` to identify outdated dependencies.
--   Address conflicts by utilizing Capgo's staged rollouts [\[1\]](https://capgo.app/).
+-   Address conflicts by utilizing CodePushGo's staged rollouts [\[1\]](https://capgo.app/).
 
 These steps summarize the diagnostic methods discussed earlier.
 
@@ -227,7 +227,7 @@ To ensure long-term stability, consider these best practices for managing Capaci
 -   **[Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update/)**  
     Rodrigo Mantica shares:
     
-    > "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" \[2\]
+    > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" \[2\]
     
 -   **Monitoring and Recovery**  
     Regularly monitor dependencies to identify conflicts early. Proper monitoring has shown that 95% of active users can update within 24 hours [\[1\]](https://capgo.app/).

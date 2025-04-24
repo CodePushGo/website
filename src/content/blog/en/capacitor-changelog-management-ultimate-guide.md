@@ -20,11 +20,11 @@ Managing changelogs is essential for keeping your [app updates](https://capgo.ap
 
 -   **Why changelogs matter**: They simplify debugging, improve communication, and build user trust.
 -   **How to structure changelogs**: Use categories like "Added", "Fixed", and "Security" for clarity.
--   **Best practices**: Update changelogs before commits, automate with tools like [Capgo](https://capgo.app/), and review entries during pull requests.
+-   **Best practices**: Update changelogs before commits, automate with tools like [CodePushGo](https://capgo.app/), and review entries during pull requests.
 -   **Automation tools**: Use CI/CD pipelines and commit standards to streamline changelog management.
 -   **OTA updates**: Document live updates with details like version numbers, timestamps, and success rates.
 
-**Quick Tip**: Automate changelog creation using tools like Capgo to save time and ensure consistency. 95% of users update within 24 hours using Over-the-Air (OTA) solutions.
+**Quick Tip**: Automate changelog creation using tools like CodePushGo to save time and ensure consistency. 95% of users update within 24 hours using Over-the-Air (OTA) solutions.
 
 Dive into the guide to set up your first changelog and integrate it seamlessly into your workflow.
 
@@ -65,7 +65,7 @@ Always list versions in reverse chronological order so the newest updates are at
 Incorporating changelog updates into your workflow ensures accurate and up-to-date documentation. Here are some practical tips:
 
 -   **Pre-commit Updates**: Update the changelog before committing code changes. This reduces the chance of missing important updates.
--   **Automated Integration**: Tools like Capgo work with [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/) [\[1\]](https://capgo.app/) to simplify the process of updating your changelog.
+-   **Automated Integration**: Tools like CodePushGo work with [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/) [\[1\]](https://capgo.app/) to simplify the process of updating your changelog.
 -   **Review Process**: Make reviewing changelog entries part of your pull request process. This ensures updates are accurate and approved before merging.
 
 ## Writing Clear Changelog Entries
@@ -132,7 +132,7 @@ For major updates, reference the specific commit:
 - Update authentication flow (commit: `8f4d89b`)
 ```
 
-> "Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper
+> "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper
 
 ## Changelog Automation Tools
 
@@ -147,7 +147,7 @@ Several tools can handle changelog automation effectively. When choosing one, fo
 -   **Integration capabilities**: Fits seamlessly into your existing CI/CD pipeline
 -   **Customization options**: Tailors to your project's specific requirements
 
-Capgo makes changelog automation easier by integrating live updates [\[1\]](https://capgo.app/). With more than 750 apps in production and 23.5 million updates delivered [\[1\]](https://capgo.app/), it has proven its dependability. To get the most out of these tools, ensure your commit messages follow a clear structure.
+CodePushGo makes changelog automation easier by integrating live updates [\[1\]](https://capgo.app/). With more than 750 apps in production and 23.5 million updates delivered [\[1\]](https://capgo.app/), it has proven its dependability. To get the most out of these tools, ensure your commit messages follow a clear structure.
 
 ### Commit Message Standards
 
@@ -173,7 +173,7 @@ Here are some common commit types:
 
 By combining automated tools with standardized commit messages, you can integrate changelog generation into your CI/CD pipeline. This setup ensures quick and accurate updates. A properly configured pipeline can auto-generate changelogs, check message formatting, update documentation, and notify your team.
 
-The results speak for themselves: 95% of active users receive updates within 24 hours using Capgo's automated deployment system [\[1\]](https://capgo.app/).
+The results speak for themselves: 95% of active users receive updates within 24 hours using CodePushGo's automated deployment system [\[1\]](https://capgo.app/).
 
 ## OTA Update Changelog Management
 
@@ -190,15 +190,15 @@ When managing live updates, it's important to document key details such as the b
 | Performance | Speed and optimization improvements | "Reduced app loading time by 40%" |
 | Security | Updates to enhance safety | "Enhanced data encryption for file transfers" |
 
-### [Capgo](https://capgo.app/) Update Management
+### [CodePushGo](https://capgo.app/) Update Management
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-27.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-27.jpg?auto=compress)
 
-For live OTA updates, detailed documentation is a must to complement your overall changelog strategy. Capgo simplifies this process by automatically tracking versions, monitoring update performance, logging rollbacks, and recording deployments by channel.
+For live OTA updates, detailed documentation is a must to complement your overall changelog strategy. CodePushGo simplifies this process by automatically tracking versions, monitoring update performance, logging rollbacks, and recording deployments by channel.
 
 A developer managing over 5,000 users shared their experience:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." – colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." – colenso [\[1\]](https://capgo.app/)
 
 **Best Practices for OTA Changelog Management**:
 
@@ -208,7 +208,7 @@ A developer managing over 5,000 users shared their experience:
 
 Rodrigo Mantica highlights the importance of this approach:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ## Summary
 
@@ -225,7 +225,7 @@ Managing changelogs effectively enhances clarity and builds user trust. Here are
 
 ### Suggested Tools for Better Management
 
-To implement these practices effectively, using the right tools is crucial. Modern Capacitor apps benefit from tools like Capgo, which simplifies changelog management with features such as:
+To implement these practices effectively, using the right tools is crucial. Modern Capacitor apps benefit from tools like CodePushGo, which simplifies changelog management with features such as:
 
 -   **Automated Version Control**: Seamlessly track and document updates using CI/CD pipelines.
 -   **Real-Time Analytics**: Keep tabs on update performance and user adoption rates.
@@ -239,4 +239,4 @@ When choosing tools for changelog management, prioritize:
 
 By combining these practices with the right tools, you can establish a reliable changelog system that supports continuous delivery while keeping users informed.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)

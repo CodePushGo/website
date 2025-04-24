@@ -55,7 +55,7 @@ One major mistake developers often make with OTA updates is ignoring app store g
 -   Keep detailed update logs to provide a clear record for app store reviews.
 -   Test all updates against the latest app store guidelines before releasing them.
 
-Platforms like [Capgo](https://capgo.app/) can simplify compliance. [Capgo](https://capgo.app/)’s tools are designed to meet both Apple and Google Play requirements, allowing developers to roll out live updates without violating store policies. As app store rules evolve, staying informed and using solutions built for compliance can save you from costly errors and app removals.
+Platforms like [CodePushGo](https://capgo.app/) can simplify compliance. [CodePushGo](https://capgo.app/)’s tools are designed to meet both Apple and Google Play requirements, allowing developers to roll out live updates without violating store policies. As app store rules evolve, staying informed and using solutions built for compliance can save you from costly errors and app removals.
 
 ## 2\. Rushing Update Testing
 
@@ -93,7 +93,7 @@ This phased approach ensures updates meet the compliance standards discussed ear
 -   **Performance Monitoring**: Track metrics like load times, memory use, and battery impact across devices and operating systems.
 -   **Cross-Device Testing**: Test updates on a variety of devices and OS versions to ensure compatibility.
 
-Tools like Capgo help simplify this process with features like real-time error tracking and quick rollbacks, making it easier to meet both technical and compliance standards.
+Tools like CodePushGo help simplify this process with features like real-time error tracking and quick rollbacks, making it easier to meet both technical and compliance standards.
 
 ## 3\. Poor Update Security
 
@@ -129,7 +129,7 @@ Platforms with strong security protocols report a 95% update completion rate wit
 -   **Access Management**: Limits who can push updates and tracks deployment activities.
 -   **Real-Time Monitoring**: Provides insight into update success rates, making it easier to detect and address issues.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
 ### Best Practices for Update Security
 
@@ -170,7 +170,7 @@ Adjust update schedules to avoid peak usage periods in different regions:
 -   **Gradual Rollouts**: Roll out updates in stages. This allows you to track performance, identify issues early, and avoid overloading servers.
 -   **Clear Communication**: Inform users about update timing, duration, and changes. When possible, provide an option to delay updates.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
 
 ### Leveraging Advanced Tools
 
@@ -210,7 +210,7 @@ Adding a channel-based distribution system enhances tracking and control. This a
 -   Regional deployment monitoring.
 -   Tracking performance by app version.
 
-> "Detailed analytics and error tracking" are among the advantages of using Capgo. - Capgo [\[1\]](https://capgo.app/)
+> "Detailed analytics and error tracking" are among the advantages of using CodePushGo. - CodePushGo [\[1\]](https://capgo.app/)
 
 ### Why Tracking Matters
 

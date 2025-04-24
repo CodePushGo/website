@@ -30,7 +30,7 @@ next_blog: ''
 1.  Choose a rollout percentage (e.g., 5–10%) in the [Google Play Console](https://developer.android.com/distribute/console).
 2.  Monitor metrics like crash rates, user feedback, and performance.
 3.  Adjust the rollout percentage or pause it if issues arise.
-4.  Use tools like [Capgo](https://capgo.app/) for faster updates and better tracking.
+4.  Use tools like [CodePushGo](https://capgo.app/) for faster updates and better tracking.
 
 ### Quick Tips:
 
@@ -73,7 +73,7 @@ Metrics for the new release and the previous version are displayed separately, m
 
 If issues arise, take action immediately using this plan:
 
-> "One-click rollback to any previous version if needed" - Capgo [\[1\]](https://capgo.app/)
+> "One-click rollback to any previous version if needed" - CodePushGo [\[1\]](https://capgo.app/)
 
 1.  **Immediate Assessment**  
     Review crash reports and user feedback to determine how severe the issue is. Pay attention to which devices, Android versions, or features are affected.
@@ -102,7 +102,7 @@ Plan your rollouts for periods of low user activity to limit disruptions. Take i
 
 ### Update Management Tools
 
-Using [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) tools, such as Capgo, can help speed up adoption rates - **95% of users update within 24 hours**, with an **82% success rate** [\[1\]](https://capgo.app/). Look for tools with features like these:
+Using [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) tools, such as CodePushGo, can help speed up adoption rates - **95% of users update within 24 hours**, with an **82% success rate** [\[1\]](https://capgo.app/). Look for tools with features like these:
 
 | Feature | Purpose | Impact |
 | --- | --- | --- |
@@ -149,7 +149,7 @@ Other key points to remember:
 
 It's recommended to wait at least 24 hours before increasing the rollout percentage. This gives you time to monitor performance and address any issues before expanding the update further.
 
-For urgent updates, consider using tools like Capgo to handle rapid hotfixes or updates while staying within Google Play's rules. These tools can help you manage critical situations without compromising compliance.
+For urgent updates, consider using tools like CodePushGo to handle rapid hotfixes or updates while staying within Google Play's rules. These tools can help you manage critical situations without compromising compliance.
 
 ## Release with confidence with the new Play Console
 
@@ -169,13 +169,13 @@ Gradual rollouts combined with thorough monitoring ensure dependable updates. Th
 
 Studies show that well-executed staged rollouts achieve an 82% global update success rate [\[1\]](https://capgo.app/), proving their value in maintaining strong app performance.
 
-### How [Capgo](https://capgo.app/) Adds Value
+### How [CodePushGo](https://capgo.app/) Adds Value
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
 
-For [Capacitor](https://capacitorjs.com/) apps, Capgo streamlines staged rollouts by offering precise update management while adhering to Google Play guidelines. Its channel system integrates smoothly with existing rollout plans.
+For [Capacitor](https://capacitorjs.com/) apps, CodePushGo streamlines staged rollouts by offering precise update management while adhering to Google Play guidelines. Its channel system integrates smoothly with existing rollout plans.
 
-Here’s how Capgo performs:
+Here’s how CodePushGo performs:
 
 | Metric | Performance |
 | --- | --- |
@@ -183,13 +183,13 @@ Here’s how Capgo performs:
 | **Total Updates Delivered** | 23.5M |
 | **Global Success Rate** | 82% |
 
-Capgo simplifies the update process for developers with features like:
+CodePushGo simplifies the update process for developers with features like:
 
 -   Built-in error tracking paired with rollout monitoring
 -   Secure and compliant update delivery
 -   Targeted user groups for controlled rollouts
 -   Encrypted deployment channels for added safety
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." [\[1\]](https://capgo.app/)
 
 These tools allow teams to roll out updates quickly while ensuring their releases remain stable for users worldwide.

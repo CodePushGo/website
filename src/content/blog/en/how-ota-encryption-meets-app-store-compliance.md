@@ -51,7 +51,7 @@ Here’s how TLS features align with security and compliance needs:
 | Feature | Security Benefit | Compliance Impact |
 | --- | --- | --- |
 | Forward Secrecy | Safeguards past communications if keys are compromised | Required by Apple ATS [\[3\]](https://www.globalyo.com/exploring-advanced-encryption-techniques-for-esim-security/) |
-| Strong Cipher Suites | Protects against cryptographic attacks | Meets Google Play requirements [\[2\]](https://workers.cloudflare.com/built-with/projects/Capgo) |
+| Strong Cipher Suites | Protects against cryptographic attacks | Meets Google Play requirements [\[2\]](https://workers.cloudflare.com/built-with/projects/CodePushGo) |
 | Certificate Pinning | Prevents man-in-the-middle attacks | Mandatory for iOS apps [\[3\]](https://www.globalyo.com/exploring-advanced-encryption-techniques-for-esim-security/) |
 
 These transport-layer measures serve as the first line of defense, while end-to-end encryption secures updates throughout their lifecycle.
@@ -125,15 +125,15 @@ These measures are designed to meet Apple's code verification and Google's updat
 
 ###### sbb-itb-f9944d2
 
-## [Capgo](https://capgo.app/)'s OTA Encryption System
+## [CodePushGo](https://capgo.app/)'s OTA Encryption System
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-14.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-14.jpg?auto=compress)
 
-Capgo uses advanced encryption techniques to deliver secure OTA updates while fully adhering to app store regulations.
+CodePushGo uses advanced encryption techniques to deliver secure OTA updates while fully adhering to app store regulations.
 
 ### Encrypted Update Delivery
 
-Capgo employs FIPS 140-2 compliant encryption to safeguard update packages at every stage. Encryption keys are managed within a secure infrastructure, ensuring they remain isolated from Capgo's servers[\[1\]](https://www.cubtale.com/pages/compliance-data-security).
+CodePushGo employs FIPS 140-2 compliant encryption to safeguard update packages at every stage. Encryption keys are managed within a secure infrastructure, ensuring they remain isolated from CodePushGo's servers[\[1\]](https://www.cubtale.com/pages/compliance-data-security).
 
 The [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) includes specific security measures at each stage:
 
@@ -145,15 +145,15 @@ The [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) in
 
 ### Built-in Store Compliance
 
-Capgo’s system is designed to meet the security standards of both the Apple App Store and Google Play Store.
+CodePushGo’s system is designed to meet the security standards of both the Apple App Store and Google Play Store.
 
 > "The system automatically detects and prevents conflicting updates from being applied, while maintaining a complete history of all updates for auditing and rollback purposes."
 
-It adheres to Apple’s App Store Review Guideline 4.2.3 and Google’s Play Core Policies[\[4\]](https://github.com/Cap-go/capacitor-updater). Features like **versioning control** help block downgrade attacks[\[2\]](https://workers.cloudflare.com/built-with/projects/Capgo), and strict size management ensures update packages comply with app store limits[\[6\]](https://www.exponent.com/article/can-over-air-updates-help-improve-vehicle-recall-compliance). These measures align with Apple’s code verification and Google’s update integrity standards.
+It adheres to Apple’s App Store Review Guideline 4.2.3 and Google’s Play Core Policies[\[4\]](https://github.com/Cap-go/capacitor-updater). Features like **versioning control** help block downgrade attacks[\[2\]](https://workers.cloudflare.com/built-with/projects/CodePushGo), and strict size management ensures update packages comply with app store limits[\[6\]](https://www.exponent.com/article/can-over-air-updates-help-improve-vehicle-recall-compliance). These measures align with Apple’s code verification and Google’s update integrity standards.
 
 ### Update Automation Tools
 
-Capgo simplifies the update process with tools that enhance security and save time. The platform integrates easily with CI/CD systems, supporting secure and automated deployments.
+CodePushGo simplifies the update process with tools that enhance security and save time. The platform integrates easily with CI/CD systems, supporting secure and automated deployments.
 
 Highlighted automation features:
 
@@ -164,7 +164,7 @@ Highlighted automation features:
 
 ## Conclusion: Meeting App Store Security Standards
 
-To ensure OTA updates comply with app store requirements, developers should focus on **transport security**, **strong encryption**, and **automated compliance checks**. Capgo's system demonstrates how these elements can work together effectively. A solid approach includes transport encryption, package protection, and compliance automation, all layered to create a secure system.
+To ensure OTA updates comply with app store requirements, developers should focus on **transport security**, **strong encryption**, and **automated compliance checks**. CodePushGo's system demonstrates how these elements can work together effectively. A solid approach includes transport encryption, package protection, and compliance automation, all layered to create a secure system.
 
 These practices align with the requirements specified in Apple's App Store Review Guidelines and Google's Play Core Policies [\[1\]](https://www.cubtale.com/pages/compliance-data-security)[\[5\]](https://productlatest.com/?post=1837).
 

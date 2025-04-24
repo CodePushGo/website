@@ -9,7 +9,7 @@ created_at: 2025-04-23T00:48:58.202Z
 updated_at: 2025-04-23T00:49:09.370Z
 head_image: https://assets.seobotai.com/capgo.app/68082f5bfe5cbf0502dd901c-1745369349370.jpg
 head_image_alt: Mobile Development
-keywords: Capacitor, CI/CD, pipeline setup, app updates, Capgo, deployment automation, mobile development
+keywords: Capacitor, CI/CD, pipeline setup, app updates, CodePushGo, deployment automation, mobile development
 tag: Development, Mobile, Updates
 published: true
 locale: en
@@ -20,7 +20,7 @@ next_blog: ''
 
 -   **Live Updates**: Push updates instantly without app store delays. 95% of users receive updates in 24 hours.
 -   **Pipeline Essentials**: Automate builds triggered by branch activity (`main`, `staging`, `feature/*`) and define separate environments for staging and production.
--   **[Capgo](https://capgo.app/) Integration**: Use Capgo to deploy secure, encrypted updates, manage [update channels](https://capgo.app/docs/webapp/channels/), and monitor performance.
+-   **[CodePushGo](https://capgo.app/) Integration**: Use CodePushGo to deploy secure, encrypted updates, manage [update channels](https://capgo.app/docs/webapp/channels/), and monitor performance.
 -   **Affordable Plans**: Plans start at $12/month for live updates and analytics.
 
 Capacitor CI/CD pipelines simplify workflows, improve efficiency, and ensure your app stays up-to-date seamlessly. Let’s dive into the details.
@@ -33,7 +33,7 @@ Make sure you have the following installed and configured:
 
 -   **[Node.js](https://nodejs.org/en) LTS**, **Capacitor CLI**, and **Git**
 -   An account on your preferred CI platform (such as [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/))
--   A **Capgo account** for managing live updates
+-   A **CodePushGo account** for managing live updates
 
 Once these are ready, proceed to define your build triggers and steps within your CI platform.
 
@@ -80,17 +80,17 @@ LIVE_UPDATES_ENABLED=true
 
 For sensitive data like API keys and certificates, make sure to store them securely in your CI platform's secrets management system. This ensures your pipeline remains both functional and secure.
 
-## [Capgo](https://capgo.app/) Integration Guide
+## [CodePushGo](https://capgo.app/) Integration Guide
 
-![Capgo](https://assets.seobotai.com/capgo.app/68082f5bfe5cbf0502dd901c/95506b8280be0626e7b237b754ba8f1b.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/68082f5bfe5cbf0502dd901c/95506b8280be0626e7b237b754ba8f1b.jpg)
 
-Once you've set up your build and deploy stages, it's time to integrate Capgo. This allows you to push live updates directly to your app, bypassing app store approval delays.
+Once you've set up your build and deploy stages, it's time to integrate CodePushGo. This allows you to push live updates directly to your app, bypassing app store approval delays.
 
-### Capgo Setup Steps
+### CodePushGo Setup Steps
 
-After preparing your CI/CD pipeline, follow these steps to add Capgo to your project:
+After preparing your CI/CD pipeline, follow these steps to add CodePushGo to your project:
 
-First, install the [Capgo CLI](https://capgo.app/docs/cli/commands):
+First, install the [CodePushGo CLI](https://capgo.app/docs/cli/commands):
 
 ```bash
 npx @capgo/cli init
@@ -105,7 +105,7 @@ Then, proceed with these commands:
 Here’s an example of a GitHub Actions job for deploying updates:
 
 ```yaml
-- name: Deploy to Capgo
+- name: Deploy to CodePushGo
   run: |
     npm install @capgo/cli
     npx @capgo/cli deploy
@@ -113,24 +113,24 @@ Here’s an example of a GitHub Actions job for deploying updates:
     CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
 ```
 
-### Key Features of Capgo
+### Key Features of CodePushGo
 
-Capgo brings several benefits to Capacitor apps, including:
+CodePushGo brings several benefits to Capacitor apps, including:
 
 -   **Secure and efficient updates**: Encrypted, differential updates reduce payload sizes while ensuring secure delivery.
 -   **Channel management**: Create staging and production channels to control how updates are rolled out.
 -   **Analytics dashboard**: Track update success rates and monitor user adoption with detailed insights.
 
-### Capgo Plans and Pricing
+### CodePushGo Plans and Pricing
 
-Capgo offers flexible plans to suit different needs:
+CodePushGo offers flexible plans to suit different needs:
 
 -   **SOLO**: $12/month (1,000 MAU, 2 GB storage, 50 GB bandwidth)
 -   **MAKER**: $33/month (10,000 MAU, 5 GB storage, 500 GB bandwidth)
 -   **TEAM**: $83/month (100,000 MAU, 10 GB storage, 2,000 GB bandwidth)
 -   **PAYG**: Starting at $249/month, with options for custom scaling, API access, and custom domains.
 
-Currently, Capgo supports over 1,900 apps in production, making it a reliable choice for continuous deployment [\[1\]](https://capgo.app/).
+Currently, CodePushGo supports over 1,900 apps in production, making it a reliable choice for continuous deployment [\[1\]](https://capgo.app/).
 
 ## Pipeline Management
 
@@ -158,7 +158,7 @@ Store all documentation in version control and update it every time your pipelin
 
 ### Platform Guidelines
 
-Follow Apple and Android update policies using Capgo's channel system to ensure smooth and compliant rollouts:
+Follow Apple and Android update policies using CodePushGo's channel system to ensure smooth and compliant rollouts:
 
 -   **Beta Testing**: [Release updates to small user groups](https://capgo.app/blog/how-to-send-specific-version-to-users/) to validate changes.
 -   **Staged Rollouts**: Roll out updates gradually to catch issues early.
@@ -172,4 +172,4 @@ To get started, you'll need to install the CLI, configure builds and environment
 
 ### CI/CD Benefits
 
-The connection between setup and results showcases how Capgo boosts efficiency: updates reach **95% of users within just 24 hours**. Plus, Capgo's pricing - ranging from **$12/month to $83/month** - offers a massive cost advantage compared to legacy services that can charge over **$500/month**. Currently, Capgo supports more than **1,900 production apps** [\[1\]](https://capgo.app/).
+The connection between setup and results showcases how CodePushGo boosts efficiency: updates reach **95% of users within just 24 hours**. Plus, CodePushGo's pricing - ranging from **$12/month to $83/month** - offers a massive cost advantage compared to legacy services that can charge over **$500/month**. Currently, CodePushGo supports more than **1,900 production apps** [\[1\]](https://capgo.app/).

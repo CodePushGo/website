@@ -24,7 +24,7 @@ Managing dependencies in [Capacitor](https://capacitorjs.com/) projects is essen
     -   iOS: Use [CocoaPods](https://cocoapods.org/) and [Swift Package Manager](https://developer.apple.com/documentation/xcode/swift-packages) for dependencies.
     -   Android: Manage dependencies with [Gradle](https://gradle.org/) and ensure compatibility with API level 21+.
 -   **Handle Issues**: Resolve common problems like sync errors, plugin conflicts, and SDK mismatches by cleaning builds, updating repos, and testing thoroughly.
--   **Automate**: Tools like [Capgo](https://capgo.app/) enable live updates, version control, and CI/CD integration, streamlining the process.
+-   **Automate**: Tools like [CodePushGo](https://capgo.app/) enable live updates, version control, and CI/CD integration, streamlining the process.
 
 Dependency management impacts your app's stability and efficiency. Focus on consistent updates, testing, and automation to keep your project on track.
 
@@ -139,7 +139,7 @@ Here's a quick comparison of key tools:
 | capacitor-build-safety | Release safety checks | Avoids broken Android/iOS releases |
 | capacitor-sync-version-cli | Version synchronization | Simplifies version management |
 | npm audit | Security scanning | Detects vulnerabilities |
-| Capgo/capacitor-updater | Live updates | Enables quick feature deployments |
+| CodePushGo/capacitor-updater | Live updates | Enables quick feature deployments |
 
 ### Documenting and Testing Dependencies
 
@@ -161,17 +161,17 @@ When dealing with dependency conflicts, especially with NPM 7 or later, follow t
 
 To make testing and maintenance easier in the long run, export your dependencies into a `deps` object. This simplifies mocking during tests and helps detect issues before they affect production environments [\[10\]](https://hackeryarn.com/post/universally-testable-dependencies/).
 
-## Using [Capgo](https://capgo.app/) for Dependency Updates
+## Using [CodePushGo](https://capgo.app/) for Dependency Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-24.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-24.jpg?auto=compress)
 
-Capgo takes dependency management in Capacitor projects to the next level, making update deployment faster and more efficient. With over **464.4 million updates** delivered across **1,800 production apps** [\[14\]](https://capgo.app/), Capgo simplifies the process for developers.
+CodePushGo takes dependency management in Capacitor projects to the next level, making update deployment faster and more efficient. With over **464.4 million updates** delivered across **1,800 production apps** [\[14\]](https://capgo.app/), CodePushGo simplifies the process for developers.
 
-### Capgo Core Functions
+### CodePushGo Core Functions
 
-Capgo is all about quick updates and seamless code deployment. It allows developers to instantly push bug fixes, content changes, and new features while staying compliant with Apple and Google policies.
+CodePushGo is all about quick updates and seamless code deployment. It allows developers to instantly push bug fixes, content changes, and new features while staying compliant with Apple and Google policies.
 
-Here’s what Capgo offers:
+Here’s what CodePushGo offers:
 
 -   **End-to-End Encryption**: Updates are securely encrypted, ensuring only authorized users can access them.
 -   **CI/CD Integration**: Works smoothly with platforms like GitHub Actions, GitLab CI, and Azure DevOps to automate deployments.
@@ -180,7 +180,7 @@ Here’s what Capgo offers:
 
 These tools help developers save time and keep projects running smoothly.
 
-To set up Capgo in your Capacitor project, use the following command:
+To set up CodePushGo in your Capacitor project, use the following command:
 
 ```bash
 npx @capgo/cli@latest init [APIKEY]
@@ -188,15 +188,15 @@ npx @capgo/cli@latest init [APIKEY]
 
 ### Benefits for Development Teams
 
-Teams using Capgo have seen an **81% improvement in release efficiency** [\[14\]](https://capgo.app/). Here’s why it stands out:
+Teams using CodePushGo have seen an **81% improvement in release efficiency** [\[14\]](https://capgo.app/). Here’s why it stands out:
 
 -   **Fast Deployment**: Push updates quickly and manage them with features like user assignment and rollback options.
 -   **Affordable Pricing**: A one-time CI/CD setup fee of $2,600 makes it a budget-friendly choice compared to other tools.
 -   **Improved Workflow**: Real-time monitoring and flexible organization tools give teams better control over their projects.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[14\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[14\]](https://capgo.app/)
 
-> "Capgo is an essential tool for developers, enabling productivity by bypassing lengthy review cycles." – Bessie Cooper [\[14\]](https://capgo.app/)
+> "CodePushGo is an essential tool for developers, enabling productivity by bypassing lengthy review cycles." – Bessie Cooper [\[14\]](https://capgo.app/)
 
 ## Summary
 
@@ -206,7 +206,7 @@ Managing dependencies effectively is crucial for securing Capacitor projects and
 -   **Security Checks**: Regularly scan all dependencies for vulnerabilities [\[7\]](https://cap.cloud.sap/docs/node.js/best-practices).
 -   **Automation Tools**: Tools like Renovate or GitHub's Dependabot can simplify and automate dependency updates [\[7\]](https://cap.cloud.sap/docs/node.js/best-practices).
 
-Modern tools make these tasks easier. For example, Capgo helps teams implement updates quickly and securely while staying compliant with platform requirements.
+Modern tools make these tasks easier. For example, CodePushGo helps teams implement updates quickly and securely while staying compliant with platform requirements.
 
 > "Keeping your dependencies up to date will ensure you are using supported and secure products. Ignoring updates will increase your technical debt making it harder to update in the future." - Capacitor Documentation [\[1\]](https://capacitorjs.com/docs/vscode/dependencies)
 

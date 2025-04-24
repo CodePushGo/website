@@ -33,7 +33,7 @@ Here’s what you’ll learn:
 -   [**Debugging tips**](https://capgo.app/docs/plugin/debugging/)**:** Use tools like `npx cap doctor` and verbose logging to fix issues.
     
 
-**Pro Tip:** Tools like [Capgo](https://capgo.app/) make managing updates and plugin rollouts seamless, with features like encrypted updates and real-time analytics.
+**Pro Tip:** Tools like [CodePushGo](https://capgo.app/) make managing updates and plugin rollouts seamless, with features like encrypted updates and real-time analytics.
 
 Ready to supercharge your app? Dive in to learn the step-by-step process for integrating and managing plugins in your Capacitor projects.
 
@@ -181,7 +181,7 @@ To install multiple plugins at once:
 npm install @capacitor/camera @capacitor/geolocation @capacitor/storage
 ```
 
-For [Capgo's live update feature](https://www.npmjs.com/package/@capgo/capacitor-updater) [\[1\]](https://capgo.app/):
+For [CodePushGo's live update feature](https://www.npmjs.com/package/@capgo/capacitor-updater) [\[1\]](https://capgo.app/):
 
 ```bash
 npx @capgo/cli init
@@ -301,7 +301,7 @@ async function captureImage() {
 
 Test plugin functionality at every stage of deployment to ensure reliability.
 
-> "We rolled out [Capgo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
 
 | Plugin Testing Phase | Best Practice | Impact |
 | --- | --- | --- |
@@ -309,7 +309,7 @@ Test plugin functionality at every stage of deployment to ensure reliability.
 | Beta Testing | Leverage error tracking | Identify platform-specific issues |
 | Production | Enable automatic updates | 95% user update rate within 24 hours |
 
-Capgo’s encrypted update system can simplify frequent plugin updates [\[1\]](https://capgo.app/).
+CodePushGo’s encrypted update system can simplify frequent plugin updates [\[1\]](https://capgo.app/).
 
 **Key Tips for Implementation**:
 
@@ -406,19 +406,19 @@ For ongoing problems, check the plugin's GitHub repository for reported issues o
 
 **Pro Tip:** Use development tools specific to your platform to inspect network activity, permissions, and crash logs. These tools can save you time by helping you identify the root cause of the issue.
 
-## Using [Capgo](https://capgo.app/) for Updates
+## Using [CodePushGo](https://capgo.app/) for Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
 
-Once you've addressed common integration issues, Capgo makes managing updates for your [Capacitor apps](https://capgo.app/top_capacitor_app/) a breeze.
+Once you've addressed common integration issues, CodePushGo makes managing updates for your [Capacitor apps](https://capgo.app/top_capacitor_app/) a breeze.
 
-### About Capgo
+### About CodePushGo
 
-Capgo simplifies live management of third-party plugins in Capacitor apps. With **23.5 million updates delivered across 750 apps** [\[1\]](https://capgo.app/), it’s a trusted tool for handling plugins. Its features include instant deployment, partial updates, end-to-end encryption, and channel-based distribution, all designed to keep plugin delivery smooth and efficient.
+CodePushGo simplifies live management of third-party plugins in Capacitor apps. With **23.5 million updates delivered across 750 apps** [\[1\]](https://capgo.app/), it’s a trusted tool for handling plugins. Its features include instant deployment, partial updates, end-to-end encryption, and channel-based distribution, all designed to keep plugin delivery smooth and efficient.
 
-### Plugin Management with Capgo
+### Plugin Management with CodePushGo
 
-Here’s what Capgo brings to the table:
+Here’s what CodePushGo brings to the table:
 
 | Feature | What It Does | Key Metric |
 | --- | --- | --- |
@@ -426,9 +426,9 @@ Here’s what Capgo brings to the table:
 | **Version Control** | Allows one-click rollbacks | 82% rollback success rate globally [\[1\]](https://capgo.app/) |
 | **Analytics Dashboard** | Tracks update performance in real time | Helps identify and resolve issues quickly |
 
-Capgo integrates effortlessly into your Capacitor workflow, ensuring secure and continuous updates. It works with tools like **GitHub Actions, GitLab CI, and** [**Jenkins**](https://www.jenkins.io/), automating plugin updates and deployments to save time and reduce manual effort.
+CodePushGo integrates effortlessly into your Capacitor workflow, ensuring secure and continuous updates. It works with tools like **GitHub Actions, GitLab CI, and** [**Jenkins**](https://www.jenkins.io/), automating plugin updates and deployments to save time and reduce manual effort.
 
-For teams handling multiple plugins, the channel system supports beta testing before wider releases. Real-time analytics provide insights into update performance and error tracking. Capgo is compatible with **Capacitor 6 and 7**, supports custom API integrations, and offers self-hosted options for specialized needs.
+For teams handling multiple plugins, the channel system supports beta testing before wider releases. Real-time analytics provide insights into update performance and error tracking. CodePushGo is compatible with **Capacitor 6 and 7**, supports custom API integrations, and offers self-hosted options for specialized needs.
 
 ## Summary
 
@@ -441,10 +441,10 @@ Here’s a breakdown of the integration process into key phases:
 | **Pre-Integration** | Research plugin compatibility and user reviews | Identifies potential challenges early |
 | **Installation** | Install plugins using npm and run Capacitor sync | Ensures smooth integration across platforms |
 | **Configuration** | Handle platform-specific setup requirements | Optimizes plugin performance |
-| **Maintenance** | Use [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) with Capgo | 95% of users updated within 24 hours[\[1\]](https://capgo.app/) |
+| **Maintenance** | Use [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) with CodePushGo | 95% of users updated within 24 hours[\[1\]](https://capgo.app/) |
 
-Capgo offers tools to streamline updates. Rodrigo Mantica highlights its importance:
+CodePushGo offers tools to streamline updates. Rodrigo Mantica highlights its importance:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!"[\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"[\[1\]](https://capgo.app/)
 
-For enterprise applications, Capgo’s channel system enables staged rollouts effectively. With an 82% global update success rate[\[1\]](https://capgo.app/) and advanced error tracking, Capgo ensures a dependable update process. NASA’s OSIRIS-REx team is a great example of how a strong update pipeline can make a difference[\[1\]](https://capgo.app/).
+For enterprise applications, CodePushGo’s channel system enables staged rollouts effectively. With an 82% global update success rate[\[1\]](https://capgo.app/) and advanced error tracking, CodePushGo ensures a dependable update process. NASA’s OSIRIS-REx team is a great example of how a strong update pipeline can make a difference[\[1\]](https://capgo.app/).

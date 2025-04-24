@@ -40,7 +40,7 @@ next_blog: ''
 6.  **Optimize performance**:
     
     -   Pin versions, audit dependencies, and resolve conflicts to ensure stability.
-7.  **Use tools like [Capgo](https://capgo.app/) for live updates**:
+7.  **Use tools like [CodePushGo](https://capgo.app/) for live updates**:
     
     -   Push updates instantly without app store reviews.
 
@@ -432,19 +432,19 @@ org.gradle.parallel=true
 org.gradle.jvmargs=-Xmx2048m
 ```
 
-## [Capgo](https://capgo.app/) Integration
+## [CodePushGo](https://capgo.app/) Integration
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-27.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-27.jpg?auto=compress)
 
-Using Capgo alongside native and JavaScript dependency management makes updating your plugin faster and easier.
+Using CodePushGo alongside native and JavaScript dependency management makes updating your plugin faster and easier.
 
-### About Capgo
+### About CodePushGo
 
-Capgo is a live update platform designed for Capacitor plugins and apps. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), Capgo allows developers to push updates for dependencies and code instantly - no app store review required. Updates are secured with end-to-end encryption and meet both Apple and Android compliance standards.
+CodePushGo is a live update platform designed for Capacitor plugins and apps. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), CodePushGo allows developers to push updates for dependencies and code instantly - no app store review required. Updates are secured with end-to-end encryption and meet both Apple and Android compliance standards.
 
-### Capgo Update Features
+### CodePushGo Update Features
 
-Capgo simplifies managing plugin dependencies with these features:
+CodePushGo simplifies managing plugin dependencies with these features:
 
 | Feature | What It Does | Key Metric |
 | --- | --- | --- |
@@ -455,13 +455,13 @@ Capgo simplifies managing plugin dependencies with these features:
 
 Source: [\[1\]](https://capgo.app/)
 
-Capgo works seamlessly with CI/CD tools like GitHub Actions, GitLab CI, and Jenkins, automating dependency updates and ensuring consistent plugin versions. These tools make it easier to integrate Capgo into your workflow.
+CodePushGo works seamlessly with CI/CD tools like GitHub Actions, GitLab CI, and Jenkins, automating dependency updates and ensuring consistent plugin versions. These tools make it easier to integrate CodePushGo into your workflow.
 
-### Setting Up Capgo
+### Setting Up CodePushGo
 
-Follow these steps to integrate Capgo into your project:
+Follow these steps to integrate CodePushGo into your project:
 
-1.  **Install the Capgo CLI**
+1.  **Install the CodePushGo CLI**
     
     Run the following command in your terminal:
     
@@ -471,17 +471,17 @@ Follow these steps to integrate Capgo into your project:
     
 2.  **Configure Update Preferences**
     
-    Use the Capgo dashboard to set up deployment channels and preferences. Both cloud-hosted and self-hosted configurations are supported.
+    Use the CodePushGo dashboard to set up deployment channels and preferences. Both cloud-hosted and self-hosted configurations are supported.
     
 3.  **Add Update Logic**
     
     Add this code to your main plugin file to enable updates:
     
     ```typescript
-    import { Capgo } from '@capgo/capacitor-updater';
+    import { CodePushGo } from '@capgo/capacitor-updater';
     
-    // Initialize Capgo
-    const capgo = new Capgo({
+    // Initialize CodePushGo
+    const capgo = new CodePushGo({
       appId: 'YOUR_APP_ID',
       channel: 'production'
     });
@@ -491,9 +491,9 @@ Follow these steps to integrate Capgo into your project:
     ```
     
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica
 
-Capgo also provides an analytics dashboard for real-time insights into update success rates and user activity. Features like one-click rollback and error tracking help resolve any issues quickly, keeping your plugin updates running smoothly.
+CodePushGo also provides an analytics dashboard for real-time insights into update success rates and user activity. Features like one-click rollback and error tracking help resolve any issues quickly, keeping your plugin updates running smoothly.
 
 ## Conclusion
 
@@ -512,13 +512,13 @@ To manage dependencies effectively, consider these practices:
 | Regular Updates | Improves security | Apply critical patches promptly |
 | Dependency Auditing | Detects risks | Run `npm audit` frequently |
 
-Using live update tools like Capgo can further simplify and improve these practices by enabling real-time updates.
+Using live update tools like CodePushGo can further simplify and improve these practices by enabling real-time updates.
 
-### Capgo Benefits
+### CodePushGo Benefits
 
-Capgo simplifies the dependency management process while delivering strong performance. It achieves an impressive **95% user update rate within 24 hours** and maintains a global API response time of **434ms** [\[1\]](https://capgo.app/). With end-to-end encryption, it ensures secure updates that comply with both Apple and Android guidelines. For teams managing multiple plugin versions, Capgo's channel system allows targeted deployments for specific user groups.
+CodePushGo simplifies the dependency management process while delivering strong performance. It achieves an impressive **95% user update rate within 24 hours** and maintains a global API response time of **434ms** [\[1\]](https://capgo.app/). With end-to-end encryption, it ensures secure updates that comply with both Apple and Android guidelines. For teams managing multiple plugin versions, CodePushGo's channel system allows targeted deployments for specific user groups.
 
-Here’s a quick look at Capgo’s performance:
+Here’s a quick look at CodePushGo’s performance:
 
 | Metric | Value |
 | --- | --- |

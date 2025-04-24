@@ -200,20 +200,20 @@ Privacy management tools focus on four main areas:
 
 Solutions like [Usercentrics](https://usercentrics.com/) and [iubenda](https://www.iubenda.com/en/) deliver these features effectively. For instance, [iubenda](https://www.iubenda.com/en/), rated 4.5/5 on Capterra, is known for its ability to help apps stay compliant while minimizing operational efforts [\[7\]](https://usercentrics.com/knowledge-hub/ccpa-compliance-tools/).
 
-### [Capgo: CCPA-Compliant App Updates](https://capgo.app)
+### [CodePushGo: CCPA-Compliant App Updates](https://capgo.app)
 
-![Capgo: CCPA-Compliant App Updates](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-27.jpg?auto=compress)
+![CodePushGo: CCPA-Compliant App Updates](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-27.jpg?auto=compress)
 
-Beyond privacy management, platforms like [Capgo](https://capgo.app/) ensure your app remains CCPA-compliant during updates. [Capgo](https://capgo.app/) supports compliance by offering:
+Beyond privacy management, platforms like [CodePushGo](https://capgo.app/) ensure your app remains CCPA-compliant during updates. [CodePushGo](https://capgo.app/) supports compliance by offering:
 
 -   **End-to-end encryption** to safeguard user data during updates.
 -   **No cross-device tracking** or persistent identifiers.
 -   **Transparent data handling** with aggregated-only statistics.
 -   **User control** through immediate account and data deletion options.
 
-Capgo has successfully delivered over 492.4 million updates across 1,800 production apps, all while adhering to strict privacy guidelines [\[9\]](https://capgo.app/).
+CodePushGo has successfully delivered over 492.4 million updates across 1,800 production apps, all while adhering to strict privacy guidelines [\[9\]](https://capgo.app/).
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[9\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[9\]](https://capgo.app/)
 
 Using these tools alongside regular audits can help maintain consistent CCPA compliance.
 
@@ -239,9 +239,9 @@ Here are three main areas to focus on:
     
     -   Use end-to-end encryption to safeguard user data.
     -   Store user consent securely.
-    -   Opt for privacy-focused update tools, such as Capgo.
+    -   Opt for privacy-focused update tools, such as CodePushGo.
     -   Regularly run security audits and keep privacy policies updated.
 
-For ongoing compliance, consider using tools designed to meet CCPA rules. For example, colenso shared their experience with Capgo:
+For ongoing compliance, consider using tools designed to meet CCPA rules. For example, colenso shared their experience with CodePushGo:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." [\[9\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." [\[9\]](https://capgo.app/)

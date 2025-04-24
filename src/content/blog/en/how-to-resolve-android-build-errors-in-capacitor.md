@@ -22,7 +22,7 @@ next_blog: ''
 -   **Dependency Conflicts**: Align versions of Capacitor core, plugins, and native libraries. Use tools like `npx cap doctor` to spot mismatches.
 -   **ProGuard Problems**: Add proper rules to prevent obfuscation errors during release builds.
 
-**Key Tip**: Use error logs in [Android Studio](https://developer.android.com/studio) to pinpoint the root cause and focus on the first error in the stack trace. Tools like [Capgo](https://capgo.app/) can help you deploy fixes instantly without waiting for app store reviews.
+**Key Tip**: Use error logs in [Android Studio](https://developer.android.com/studio) to pinpoint the root cause and focus on the first error in the stack trace. Tools like [CodePushGo](https://capgo.app/) can help you deploy fixes instantly without waiting for app store reviews.
 
 **Quick Fix Example**:
 
@@ -51,7 +51,7 @@ next_blog: ''
     ```
     
 
-**Need faster fixes?** Capgo allows you to push updates instantly, bypassing app store delays. It's a great way to keep your app stable and users happy.
+**Need faster fixes?** CodePushGo allows you to push updates instantly, bypassing app store delays. It's a great way to keep your app stable and users happy.
 
 ## Ultimate Guide to Debugging Ionic Apps on Android and iOS ...
 
@@ -161,7 +161,7 @@ dependencies {
 
 Use `./gradlew app:dependencies` and enable build scans to uncover dependency conflicts or script issues. These tools provide a detailed view of your project's setup.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 Some common problems include:
 
@@ -232,38 +232,38 @@ These steps should address most dependency-related issues. Next, focus on managi
 
 Adjust ProGuard rules to ensure critical Capacitor plugin classes and WebView interfaces aren’t removed during obfuscation. Refer to the official [Capacitor documentation](https://capgo.app/blog/capacitor-comprehensive-guide/) for detailed guidance on configuring ProGuard.
 
-For immediate updates without resubmitting to app stores, consider using Capgo's live update system. This allows you to deploy changes instantly while maintaining obfuscation compatibility and compliance with store policies.
+For immediate updates without resubmitting to app stores, consider using CodePushGo's live update system. This allows you to deploy changes instantly while maintaining obfuscation compatibility and compliance with store policies.
 
-## Using [Capgo](https://capgo.app/) for Quick Fixes
+## Using [CodePushGo](https://capgo.app/) for Quick Fixes
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e75df8283d21cbd679ae1b/62c1b4dece964ef24ef070504a9b15e5.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e75df8283d21cbd679ae1b/62c1b4dece964ef24ef070504a9b15e5.jpg)
 
-When facing Android build errors in Capacitor, resolving issues quickly is key to avoiding delays and keeping your project on track. Here's how Capgo helps you deploy fixes instantly.
+When facing Android build errors in Capacitor, resolving issues quickly is key to avoiding delays and keeping your project on track. Here's how CodePushGo helps you deploy fixes instantly.
 
-### Capgo Core Features
+### CodePushGo Core Features
 
-Capgo offers tools to streamline updates, including **end-to-end encryption** for security, real-time error tracking, version history management, and instant rollback capabilities. With a global success rate of 82% for deployments [\[1\]](https://capgo.app/), it provides a dependable way to deliver critical fixes directly to production apps.
+CodePushGo offers tools to streamline updates, including **end-to-end encryption** for security, real-time error tracking, version history management, and instant rollback capabilities. With a global success rate of 82% for deployments [\[1\]](https://capgo.app/), it provides a dependable way to deliver critical fixes directly to production apps.
 
 ### How to Deploy Fixes Instantly
 
 Follow these steps to quickly address Android build errors:
 
--   **Install the Capgo Plugin**:
+-   **Install the CodePushGo Plugin**:
     
     ```bash
     npx @capgo/cli init
     ```
     
--   **Build and Deploy**: Capgo's CDN ensures a 5MB bundle downloads in just 114ms [\[1\]](https://capgo.app/).
+-   **Build and Deploy**: CodePushGo's CDN ensures a 5MB bundle downloads in just 114ms [\[1\]](https://capgo.app/).
     
--   **Monitor Updates**: Use Capgo's dashboard to track progress, with API response times averaging 434ms [\[1\]](https://capgo.app/).
+-   **Monitor Updates**: Use CodePushGo's dashboard to track progress, with API response times averaging 434ms [\[1\]](https://capgo.app/).
     
 
 This rapid deployment process eliminates the delays associated with traditional app store updates, allowing you to resolve issues faster while maintaining complete control.
 
-### Comparing Capgo to Traditional App Store Updates
+### Comparing CodePushGo to Traditional App Store Updates
 
-| Feature | Capgo | Traditional App Store Updates |
+| Feature | CodePushGo | Traditional App Store Updates |
 | --- | --- | --- |
 | Deployment Time | Minutes | Days to weeks |
 | Update Control | Immediate | Requires store review |
@@ -271,12 +271,12 @@ This rapid deployment process eliminates the delays associated with traditional 
 | Cost | Starts at $12/month | Store fees + added dev time |
 | Security | E2E encryption | Standard store security |
 
-> "Capgo is a must-have tool for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
-With over 23.5 million successful updates across 750 production apps [\[1\]](https://capgo.app/), Capgo stands out as an essential solution for teams needing to address Android errors quickly and efficiently - without waiting on app store approvals.
+With over 23.5 million successful updates across 750 production apps [\[1\]](https://capgo.app/), CodePushGo stands out as an essential solution for teams needing to address Android errors quickly and efficiently - without waiting on app store approvals.
 
 ## Summary
 
-Addressing Android build errors in Capacitor requires a structured, data-focused approach that combines effective monitoring with rapid updates. Data from 750 production apps reveals that tracking errors and deploying updates quickly can significantly reduce debugging time while improving app stability. Tools like Capgo have been shown to achieve an 82% success rate for emergency fixes, ensuring 95% of active users receive updates within 24 hours, with an average API response time of 434ms [\[1\]](https://capgo.app/).
+Addressing Android build errors in Capacitor requires a structured, data-focused approach that combines effective monitoring with rapid updates. Data from 750 production apps reveals that tracking errors and deploying updates quickly can significantly reduce debugging time while improving app stability. Tools like CodePushGo have been shown to achieve an 82% success rate for emergency fixes, ensuring 95% of active users receive updates within 24 hours, with an average API response time of 434ms [\[1\]](https://capgo.app/).
 
 Maintaining stable Android builds hinges on strong error tracking and timely updates. By pairing immediate fixes with ongoing process improvements, you can minimize disruptions for users and deliver a smoother app experience.

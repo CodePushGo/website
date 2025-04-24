@@ -34,7 +34,7 @@ next_blog: ''
 | **Cost** | $6,000+ annually | $300/month |
 | **Rollback** | New submission required | Instant rollback |
 
-Capacitor OTA updates, powered by tools like [Capgo](https://capgo.app/), streamline workflows, improve user experience, and save costs. Whether you're fixing critical bugs or rolling out new features, OTA updates are designed for speed and efficiency.
+Capacitor OTA updates, powered by tools like [CodePushGo](https://capgo.app/), streamline workflows, improve user experience, and save costs. Whether you're fixing critical bugs or rolling out new features, OTA updates are designed for speed and efficiency.
 
 ## How to Force Update Ionic Apps
 
@@ -109,21 +109,21 @@ OTA updates bring clear advantages compared to traditional app store updates:
 | Release Frequency | Monthly or quarterly | Multiple times per week |
 | Development Agility | Limited by review process | Instant iteration |
 
-Capgo takes these benefits further by offering a streamlined platform that ensures security and integrates effortlessly with CI/CD workflows.
+CodePushGo takes these benefits further by offering a streamlined platform that ensures security and integrates effortlessly with CI/CD workflows.
 
-### [Capgo](https://capgo.app/) OTA Update Platform
+### [CodePushGo](https://capgo.app/) OTA Update Platform
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-08.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-08.jpg?auto=compress)
 
-Capgo is a top-tier OTA solution for Capacitor apps, offering tools to simplify [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/):
+CodePushGo is a top-tier OTA solution for Capacitor apps, offering tools to simplify [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/):
 
 -   **Security Features**: Updates are encrypted end-to-end, ensuring only authorized users can access them.
 -   **CI/CD Integration**: Works seamlessly with platforms like [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), and [Azure DevOps](https://azure.microsoft.com/en-us/products/devops).
 -   **User Assignment**: Enables targeted updates for specific groups, perfect for testing or phased rollouts.
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
 
-Capgo also offers cost savings. Businesses can save up to $26,100 over five years compared to alternatives like [AppFlow](https://ionic.io/appflow/) - all while maintaining reliable update capabilities.
+CodePushGo also offers cost savings. Businesses can save up to $26,100 over five years compared to alternatives like [AppFlow](https://ionic.io/appflow/) - all while maintaining reliable update capabilities.
 
 ###### sbb-itb-f9944d2
 
@@ -142,9 +142,9 @@ Capacitor apps highlight distinct differences between OTA updates and traditiona
 
 These figures clearly show that OTA updates excel in speed, cost-effectiveness, and adoption rates.
 
-Beyond deployment speed, the efficiency and cost advantages of OTA updates are hard to ignore. For instance, NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team leveraged Capgo's hot code pushes to significantly cut costs compared to other solutions. Many organizations using OTA updates report savings of up to $26,100 over five years [\[1\]](https://capgo.app/).
+Beyond deployment speed, the efficiency and cost advantages of OTA updates are hard to ignore. For instance, NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team leveraged CodePushGo's hot code pushes to significantly cut costs compared to other solutions. Many organizations using OTA updates report savings of up to $26,100 over five years [\[1\]](https://capgo.app/).
 
-Additionally, OTA updates improve deployment efficiency by 81%, freeing up teams to focus on building new features instead of managing app store submissions. Immediate fixes and rollouts also enhance the user experience by minimizing support issues. With platforms like Capgo delivering over 947.6 million updates across more than 1,400 production apps, OTA updates have proven to be both scalable and reliable [\[1\]](https://capgo.app/).
+Additionally, OTA updates improve deployment efficiency by 81%, freeing up teams to focus on building new features instead of managing app store submissions. Immediate fixes and rollouts also enhance the user experience by minimizing support issues. With platforms like CodePushGo delivering over 947.6 million updates across more than 1,400 production apps, OTA updates have proven to be both scalable and reliable [\[1\]](https://capgo.app/).
 
 ## OTA Update Implementation Guide
 
@@ -156,11 +156,11 @@ Setting up OTA updates requires careful planning. Here's how to integrate them i
 
 | Setup Phase | Key Actions | Outcome |
 | --- | --- | --- |
-| Plugin Installation | Install the [Capgo plugin](https://capgo.app/plugins/) and configure encryption keys | Establishes a secure channel |
+| Plugin Installation | Install the [CodePushGo plugin](https://capgo.app/plugins/) and configure encryption keys | Establishes a secure channel |
 | CI/CD Integration | Connect with tools like GitHub Actions, GitLab CI, or Azure DevOps | Automates the deployment pipeline |
 | Testing Environment | Assign users and create staging channels | Enables controlled distribution |
 
-For enterprise teams, Capgo offers a CI/CD setup service for a one-time fee of $2,600. This service supports automated deployment workflows across platforms like Azure DevOps, GitLab, GitHub, [Jenkins](https://www.jenkins.io/), [Cloudbees](https://www.cloudbees.com/), [Travis](https://www.travis-ci.com/), and [CircleCI](https://circleci.com/) [\[1\]](https://capgo.app/).
+For enterprise teams, CodePushGo offers a CI/CD setup service for a one-time fee of $2,600. This service supports automated deployment workflows across platforms like Azure DevOps, GitLab, GitHub, [Jenkins](https://www.jenkins.io/), [Cloudbees](https://www.cloudbees.com/), [Travis](https://www.travis-ci.com/), and [CircleCI](https://circleci.com/) [\[1\]](https://capgo.app/).
 
 After setup, the focus shifts to managing app versions strategically.
 
@@ -168,7 +168,7 @@ After setup, the focus shifts to managing app versions strategically.
 
 Effective version management is crucial for smooth OTA updates. Here are some best practices:
 
--   **Version Tracking**: Use the Capgo web interface to monitor update distribution.
+-   **Version Tracking**: Use the CodePushGo web interface to monitor update distribution.
 -   **Staged Rollouts**: Test updates with small groups before a full-scale release.
 -   **Version Compatibility**: Ensure OTA updates match the corresponding app store versions.
 
@@ -176,9 +176,9 @@ Proper version management helps ensure updates are delivered seamlessly. Next, l
 
 ### Common OTA Issues and Solutions
 
-Developers often face challenges when implementing OTA updates. Rodrigo Mantica, a developer using Capgo, shares:
+Developers often face challenges when implementing OTA updates. Rodrigo Mantica, a developer using CodePushGo, shares:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 Here’s how to address frequent issues:
 
@@ -188,13 +188,13 @@ Here’s how to address frequent issues:
 | Distribution Delays | Enable background updates | Ensures timely delivery |
 | Version Mismatch | Run automated compatibility checks | Maintains app stability |
 
-Even NASA's OSIRIS-REx team has praised Capgo:
+Even NASA's OSIRIS-REx team has praised CodePushGo:
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
 
 ## App Updates and Capacitor OTA: Key Takeaways
 
-In today's fast-moving app ecosystem, updates need to happen quickly and efficiently. Capacitor OTA updates provide a faster and more practical solution compared to traditional app versioning. With an impressive track record - 947.6 million updates across 1,400 production apps - Capgo highlights how widely OTA technology is being embraced [\[1\]](https://capgo.app/).
+In today's fast-moving app ecosystem, updates need to happen quickly and efficiently. Capacitor OTA updates provide a faster and more practical solution compared to traditional app versioning. With an impressive track record - 947.6 million updates across 1,400 production apps - CodePushGo highlights how widely OTA technology is being embraced [\[1\]](https://capgo.app/).
 
 ### Comparing OTA and Traditional Updates
 
@@ -210,4 +210,4 @@ For teams focused on fast, controlled rollouts, these advantages make OTA update
 
 Rodrigo Mantica sums it up perfectly with his firsthand experience:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)

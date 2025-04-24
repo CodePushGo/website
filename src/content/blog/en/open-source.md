@@ -11,7 +11,7 @@ created_at: 2023-09-16T00:00:00.000Z
 updated_at: 2023-09-16T00:00:00.000Z
 head_image: /open_source_main.webp
 head_image_alt: open source
-keywords: Open Source, Capgo, philosophy, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
+keywords: Open Source, CodePushGo, philosophy, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Open Source
 published: true
 locale: en
@@ -131,11 +131,11 @@ Contributing to open source projects can be a rewarding way to gain experience, 
 
 Remember that contributing to open source is not just about code. You can also help with documentation, design, testing, and project management. The key is to find a way to contribute that aligns with your skills and interests.
 
-## Leverage the open-source technology behind Capgo
+## Leverage the open-source technology behind CodePushGo
 
 As you know, open-source technologies have multiple advantages. They are available at a portion of the price of proprietary software. They are also flexible and more secure due to frequent code revisions by the open-source community.
 
-These are all principles we adhere to in Capgo! We're an open source live update system for Capacitor apps whose mission is to live update the Capacitor apps. We allows you to deploy updates to your users without the need to re-install the app. We're a cloud-based service, but you can also self-host it.
+These are all principles we adhere to in CodePushGo! We're an open source live update system for Capacitor apps whose mission is to live update the Capacitor apps. We allows you to deploy updates to your users without the need to re-install the app. We're a cloud-based service, but you can also self-host it.
 
 Why not try it for yourself? [Try our free version](https://web.capgo.app/register/) and [contribute to our ever-evolving open-source project](https://github.com/Cap-go/) - we’d be happy to have you on board!
 

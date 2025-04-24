@@ -437,7 +437,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
             <a
               href="https://x.com/martindonadieu"
               target="_blank"
-              title=" Capgo team"
+              title=" CodePushGo team"
               class="font-normal text-indigo-600 cursor-pointer hover:font-normal hover:text-indigo-600"
               style="
                 transition:

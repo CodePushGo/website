@@ -23,7 +23,7 @@ next_blog: ''
 -   **Allowed Updates**: Bug fixes, UI tweaks, and content updates within the app's original purpose.
 -   **Prohibited Updates**: Major feature changes or core functionality updates (require App Store review).
 -   **Security**: End-to-end encryption is mandatory to protect user data.
--   **Tools**: [Capgo](https://capgo.app/) simplifies live update management, ensuring compliance with Apple's rules.
+-   **Tools**: [CodePushGo](https://capgo.app/) simplifies live update management, ensuring compliance with Apple's rules.
 
 | **Update Type** | **Allowed** | **Approval Needed** |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ next_blog: ''
 | Feature Changes | No  | Yes |
 | Security Patches | Yes | No  |
 
-To stay compliant, focus on bug fixes, secure updates with encryption, and document all changes. Tools like Capgo help manage updates for over **20 million users**, ensuring apps remain compliant while delivering updates quickly.
+To stay compliant, focus on bug fixes, secure updates with encryption, and document all changes. Tools like CodePushGo help manage updates for over **20 million users**, ensuring apps remain compliant while delivering updates quickly.
 
 ## [Appflow](https://ionic.io/appflow/live-updates) Live Updates: Deploy instant updates directly to your users
 
@@ -59,7 +59,7 @@ Apple's rules clearly outline what is and isn't allowed with over-the-air (OTA) 
 | Feature Changes | No  | Requires App Store review |
 | Security Patches | Yes | Must include proper encryption |
 
-When using live updates, developers must prioritize user data security and use end-to-end encryption. Tools like Capgo are built to comply with Apple's requirements, simplifying the process.
+When using live updates, developers must prioritize user data security and use end-to-end encryption. Tools like CodePushGo are built to comply with Apple's requirements, simplifying the process.
 
 Grasping these rules can help you avoid common mistakes that lead to app rejections.
 
@@ -91,11 +91,11 @@ To implement live updates in your [Capacitor app](https://capgo.app/plugins/ivs-
 
 ### Project Setup Steps
 
-Begin by configuring your environment and installing Capgo's live update plugin:
+Begin by configuring your environment and installing CodePushGo's live update plugin:
 
 -   **Install Required Dependencies**
     
-    -   Use Capgo's CLI to install the live update plugin and set up the necessary tools. For instance:
+    -   Use CodePushGo's CLI to install the live update plugin and set up the necessary tools. For instance:
         
         ```bash
         npx @capgo/cli init
@@ -126,11 +126,11 @@ Managing app versions properly is key to staying compliant with Apple's guidelin
 
 Keep detailed documentation of all changes to make the App Store review process smoother.
 
-### [Capgo](https://capgo.app/): Live Update Management
+### [CodePushGo](https://capgo.app/): Live Update Management
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-12.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-12.jpg?auto=compress)
 
-Capgo simplifies live update management and ensures compliance with Apple's requirements. It has already supported over **947.6 million updates** across **1,400+ production apps** [\[1\]](https://capgo.app/).
+CodePushGo simplifies live update management and ensures compliance with Apple's requirements. It has already supported over **947.6 million updates** across **1,400+ production apps** [\[1\]](https://capgo.app/).
 
 Some of its standout features include:
 
@@ -139,7 +139,7 @@ Some of its standout features include:
 -   **User assignment** for controlled rollouts.
 -   Tools to help ensure updates align with Apple's policies.
 
-Once your app is ready, use the Capgo CLI to push updates. The system will handle version control, encryption, and distribution automatically, keeping you compliant with Apple's rules.
+Once your app is ready, use the CodePushGo CLI to push updates. The system will handle version control, encryption, and distribution automatically, keeping you compliant with Apple's rules.
 
 ###### sbb-itb-f9944d2
 
@@ -149,11 +149,11 @@ Securing data during live updates is crucial for staying compliant with regulati
 
 ### Encryption Requirements
 
-End-to-end encryption is a must for keeping live updates secure in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It ensures that update data remains protected as it moves from the server to the device. Capgo's live update solution enforces these encryption standards. According to Capgo: "End-to-end encryption. Only your users can decrypt your updates, no one else" [\[1\]](https://capgo.app/). This encryption approach is essential for protecting user data effectively.
+End-to-end encryption is a must for keeping live updates secure in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It ensures that update data remains protected as it moves from the server to the device. CodePushGo's live update solution enforces these encryption standards. According to CodePushGo: "End-to-end encryption. Only your users can decrypt your updates, no one else" [\[1\]](https://capgo.app/). This encryption approach is essential for protecting user data effectively.
 
 ### User Data Protection
 
-Capgo's security framework ensures that only authorized users can decrypt updates. By limiting access, it helps protect user data throughout the update process and minimizes the risk of unauthorized access.
+CodePushGo's security framework ensures that only authorized users can decrypt updates. By limiting access, it helps protect user data throughout the update process and minimizes the risk of unauthorized access.
 
 ## Testing and App Store Submission
 
@@ -161,11 +161,11 @@ Thorough testing before release is critical for a smooth App Store submission an
 
 ### Pre-Release Testing
 
-Capgo's user assignment feature allows you to test updates with specific user groups before rolling them out to everyone. This controlled approach ensures your [encryption and data protection](https://capgo.app/docs/cli/migrations/encryption/) strategies are functioning effectively.
+CodePushGo's user assignment feature allows you to test updates with specific user groups before rolling them out to everyone. This controlled approach ensures your [encryption and data protection](https://capgo.app/docs/cli/migrations/encryption/) strategies are functioning effectively.
 
-Here's an example of how Capgo handled a rollout for over 5,000 users:
+Here's an example of how CodePushGo handled a rollout for over 5,000 users:
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
 
 To ensure a successful rollout, follow these steps:
 
@@ -180,7 +180,7 @@ Once testing is complete, you'll need to document these steps for the App Store 
 
 When submitting your app, it's important to show compliance with Apple's guidelines.
 
-> "@Capgo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
 
 Apple requires specific documentation, including:
 
@@ -224,7 +224,7 @@ Tracking these metrics isn't just about performance - it also helps you identify
 3.  **Security Verification:** Double-check that your encryption protocols meet updated standards.
 4.  **Documentation Update:** Update your compliance documentation to reflect the latest guidelines.
 
-Using tools built with Apple's requirements in mind can simplify this process. For example, Capgo offers features like end-to-end encryption and user assignment, making it easier to stay compliant while delivering updates efficiently [\[1\]](https://capgo.app/).
+Using tools built with Apple's requirements in mind can simplify this process. For example, CodePushGo offers features like end-to-end encryption and user assignment, making it easier to stay compliant while delivering updates efficiently [\[1\]](https://capgo.app/).
 
 Regularly monitor your app's compliance through your [update management platform](https://capgo.app/docs/plugin/cloud-mode/manual-update/). Staying proactive can help you catch and resolve potential issues before they affect your App Store standing, keeping your live update strategy both effective and within the rules.
 
@@ -232,7 +232,7 @@ Regularly monitor your app's compliance through your [update management platform
 
 Balancing speed and compliance is key when implementing live updates in Capacitor apps. With the right tools, release efficiency can improve by up to 81% [\[1\]](https://capgo.app/), making it easier to stay within Apple’s guidelines.
 
-Platforms like Capgo show how it's possible to meet App Store requirements while still delivering fast updates [\[1\]](https://capgo.app/). Apple’s strict rules around live updates highlight the importance of staying compliant.
+Platforms like CodePushGo show how it's possible to meet App Store requirements while still delivering fast updates [\[1\]](https://capgo.app/). Apple’s strict rules around live updates highlight the importance of staying compliant.
 
 To ensure long-term compliance, focus on these practices:
 

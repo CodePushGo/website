@@ -33,7 +33,7 @@ Here’s what you need to know:
 
 **Quick Comparison of OTA Platforms**:
 
-| **Feature** | **[Capgo](https://capgo.app/)** | **Others** |
+| **Feature** | **[CodePushGo](https://capgo.app/)** | **Others** |
 | --- | --- | --- |
 | End-to-end encryption | ✅ Yes | ❌ Often missing |
 | Rollback mechanisms | ✅ Supported | ⚠️ Limited |
@@ -53,9 +53,9 @@ The Privacy Act enforces strict guidelines for managing personal data collected 
 | Error Logs | Minimal data collection |
 | Version History | Secure storage |
 
-Capgo ensures sensitive data stays protected during OTA updates by using end-to-end encryption.
+CodePushGo ensures sensitive data stays protected during OTA updates by using end-to-end encryption.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
 ### Data Protection Standards
 
@@ -146,7 +146,7 @@ Global data transfers introduce further obligations, including:
 
 Developers must implement controls to keep sensitive data within approved jurisdictions while maintaining transparency about how it is processed.
 
-Capgo supports these requirements by offering live update solutions with strong encryption and options for server location, ensuring secure and compliant data management.
+CodePushGo supports these requirements by offering live update solutions with strong encryption and options for server location, ensuring secure and compliant data management.
 
 ## OTA Platform Comparison
 
@@ -163,7 +163,7 @@ When ensuring Privacy Act compliance, these security features are key:
 | **User Management** | Granular permissions | Controls access levels |
 | **Hosting Options** | Cloud/Self-hosted | Ensures data sovereignty |
 
-Capgo offers end-to-end encryption and achieves an 82% update success rate [\[1\]](https://capgo.app/). These features are essential for safeguarding data and ensuring compliance.
+CodePushGo offers end-to-end encryption and achieves an 82% update success rate [\[1\]](https://capgo.app/). These features are essential for safeguarding data and ensuring compliance.
 
 ### Cost Analysis
 
@@ -171,7 +171,7 @@ Here’s a breakdown of costs for different OTA solutions:
 
 -   **Standard CI/CD setup**: $300/month
 -   **Enterprise solutions (e.g., Appflow)**: $6,000/year
--   **One-time CI/CD setup with Capgo**: $2,600
+-   **One-time CI/CD setup with CodePushGo**: $2,600
 
 While cost is a factor, the platform's structure also impacts compliance and efficiency.
 
@@ -193,7 +193,7 @@ Different platform types cater to varying compliance needs:
 
 Performance can vary across these platform types, so it’s important to choose one that aligns with Privacy Act requirements.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 Organizations should weigh these factors carefully to meet their security and compliance obligations effectively.
 
@@ -231,6 +231,6 @@ Follow these steps to put compliance strategies into action:
     -   Implement rollback mechanisms to fix issues quickly during updates.
     -   Use version control systems that align with Privacy Act standards.
 
-> "The Most Secure Live Update System for Capacitor. Built for developers who value security and speed." - Capgo.app
+> "The Most Secure Live Update System for Capacitor. Built for developers who value security and speed." - CodePushGo.app
 
-Capgo offers live update security that aligns with these compliance needs.
+CodePushGo offers live update security that aligns with these compliance needs.

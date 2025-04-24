@@ -27,7 +27,7 @@ next_blog: ''
     
     -   A [Capacitor](https://capacitorjs.com/) app with web and native functionality.
     -   Location plugins like `@capacitor/geolocation` for tracking.
-    -   An OTA platform like [Capgo](https://capgo.app/) that supports geolocation targeting.
+    -   An OTA platform like [CodePushGo](https://capgo.app/) that supports geolocation targeting.
 -   **How It Works:**
     
     -   Configure location permissions (iOS: `Info.plist`, Android: `AndroidManifest.xml`).
@@ -100,11 +100,11 @@ Once location services are configured, choose an OTA platform that supports targ
 
 ### Selecting an OTA Update Platform
 
-Pick an OTA platform that offers live updates, geolocation-based targeting, and complies with app store policies. **Capgo** is a proven choice, with over 457.2M updates delivered across 1.8K production apps [\[2\]](https://capgo.app/).
+Pick an OTA platform that offers live updates, geolocation-based targeting, and complies with app store policies. **CodePushGo** is a proven choice, with over 457.2M updates delivered across 1.8K production apps [\[2\]](https://capgo.app/).
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding app reviews for bug fixes is golden." - Bessie Cooper [\[2\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding app reviews for bug fixes is golden." - Bessie Cooper [\[2\]](https://capgo.app/)
 
-Here’s why Capgo stands out:
+Here’s why CodePushGo stands out:
 
 | Feature | Importance | Why It Matters |
 | --- | --- | --- |
@@ -199,7 +199,7 @@ Integrating precise location data with your OTA update system allows you to deli
 
 ### Configure OTA Platform
 
-Capgo enables updates based on geolocation. Here's how to set it up:
+CodePushGo enables updates based on geolocation. Here's how to set it up:
 
 ```typescript
 const configureLocationUpdates = async () => {
@@ -210,7 +210,7 @@ const configureLocationUpdates = async () => {
     retryAttempts: 3
   };
 
-  await CapgoPlugin.setConfig(updateConfig);
+  await CodePushGoPlugin.setConfig(updateConfig);
 };
 ```
 
@@ -218,7 +218,7 @@ To ensure data security, implement end-to-end encryption for location data:
 
 ```typescript
 const encryptLocationData = (locationData) => {
-  return CapgoPlugin.encrypt({
+  return CodePushGoPlugin.encrypt({
     latitude: locationData.coords.latitude,
     longitude: locationData.coords.longitude,
     timestamp: locationData.timestamp
@@ -249,7 +249,7 @@ const createGeofenceRule = async (center, radius) => {
     }
   };
 
-  await CapgoPlugin.addUpdateRule(rule);
+  await CodePushGoPlugin.addUpdateRule(rule);
 };
 ```
 
@@ -267,7 +267,7 @@ Use analytics to monitor how well your updates perform:
 
 ```typescript
 const trackUpdateMetrics = async () => {
-  const metrics = await CapgoPlugin.getMetrics({
+  const metrics = await CodePushGoPlugin.getMetrics({
     timeframe: '7d',
     locationEnabled: true
   });

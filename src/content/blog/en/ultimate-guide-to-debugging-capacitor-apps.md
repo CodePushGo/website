@@ -36,7 +36,7 @@ Debugging [Capacitor](https://capacitorjs.com/) apps can be complex due to their
 ### Quick Tips:
 
 -   **Enable Source Maps**: Debug original code instead of minified versions.
--   **Use [Capgo](https://capgo.app/) for Updates**: Push fixes instantly without app store delays.
+-   **Use [CodePushGo](https://capgo.app/) for Updates**: Push fixes instantly without app store delays.
 -   **Set Up Error Tracking**: Capture issues in real-time for faster resolutions.
 
 This guide provides everything you need to identify and fix bugs, ensuring your Capacitor app runs smoothly across platforms.
@@ -133,7 +133,7 @@ Verbose logging is key when debugging plugins. Pay attention to the following ar
 -   The implementation of specific methods
 -   How errors are propagated
 
-Capgo's error tracking tools can catch plugin problems early, preventing them from affecting users. You can also set up automated error reporting with code like this:
+CodePushGo's error tracking tools can catch plugin problems early, preventing them from affecting users. You can also set up automated error reporting with code like this:
 
 ```javascript
 window.addEventListener('error', (event) => {
@@ -184,7 +184,7 @@ For **Android debugging**:
 -   Leverage **Android Studio's CPU Profiler** to analyze performance.
 -   Enable **strict mode** to flag disk or network operations running on the main thread.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica \[2\]
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica \[2\]
 
 ### Performance Issues
 
@@ -194,7 +194,7 @@ After resolving launch and platform-specific problems, turn your attention to pe
 -   **Memory Management**: Spot leaks with native profilers to ensure efficient memory usage.
 -   **UI Optimization**: Monitor frame rates and animations using built-in tools to ensure smooth user interactions.
 
-Capgo's error tracking tools make it easier to pinpoint these bottlenecks early. They also allow you to roll out fixes quickly, bypassing app store review delays \[3\].
+CodePushGo's error tracking tools make it easier to pinpoint these bottlenecks early. They also allow you to roll out fixes quickly, bypassing app store review delays \[3\].
 
 ## Debug Guidelines
 
@@ -249,9 +249,9 @@ window.onerror = function(message, source, lineno, colno, error) {
 };
 ```
 
-Capgo's error tracking tools can help monitor update deployments and assess their impact on users [\[1\]](https://capgo.app/). This integration provides crucial insights into update performance and user engagement.
+CodePushGo's error tracking tools can help monitor update deployments and assess their impact on users [\[1\]](https://capgo.app/). This integration provides crucial insights into update performance and user engagement.
 
-> "Detailed analytics and error tracking" – Capgo [\[1\]](https://capgo.app/)
+> "Detailed analytics and error tracking" – CodePushGo [\[1\]](https://capgo.app/)
 
 Source maps are another important tool to simplify debugging, especially for minified code.
 
@@ -287,20 +287,20 @@ const uploadSourceMaps = async (buildId) => {
 
 If you use source maps in production, restrict access to authorized developers to maintain security while still allowing effective debugging.
 
-## Using [Capgo](https://capgo.app/) for Quick Updates
+## Using [CodePushGo](https://capgo.app/) for Quick Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
 
-Building on solid [debugging techniques](https://capgo.app/docs/plugin/debugging), tools like Capgo make it easier to keep your app stable by allowing instant updates. Capgo lets developers push updates without waiting for app store approvals, all while keeping debugging features intact.
+Building on solid [debugging techniques](https://capgo.app/docs/plugin/debugging), tools like CodePushGo make it easier to keep your app stable by allowing instant updates. CodePushGo lets developers push updates without waiting for app store approvals, all while keeping debugging features intact.
 
-### Capgo Debug Features
+### CodePushGo Debug Features
 
-Fixing issues quickly is key to maintaining app quality. Capgo offers real-time insights into app performance, helping resolve bugs efficiently. It boasts an 82% global success rate for updates, with 95% of users receiving updates within 24 hours [\[1\]](https://capgo.app/).
+Fixing issues quickly is key to maintaining app quality. CodePushGo offers real-time insights into app performance, helping resolve bugs efficiently. It boasts an 82% global success rate for updates, with 95% of users receiving updates within 24 hours [\[1\]](https://capgo.app/).
 
 Here’s a look at some of its standout features:
 
 ```javascript
-// Initialize Capgo error tracking
+// Initialize CodePushGo error tracking
 import { CapacitorUpdater } from '@capgo/capacitor-updater'
 
 CapacitorUpdater.notifyListeners('download_failed', {
@@ -309,7 +309,7 @@ CapacitorUpdater.notifyListeners('download_failed', {
 });
 ```
 
-Capgo also supports staged rollouts using a channel system, which is great for testing updates:
+CodePushGo also supports staged rollouts using a channel system, which is great for testing updates:
 
 ```javascript
 // Deploy update to beta channel
@@ -323,9 +323,9 @@ async function deployBetaFix() {
 
 These tools can be seamlessly integrated into your workflow for smooth and efficient updates.
 
-### Adding Capgo to Your Debug Process
+### Adding CodePushGo to Your Debug Process
 
-Getting started with Capgo is simple. Begin by initializing it with the following command:
+Getting started with CodePushGo is simple. Begin by initializing it with the following command:
 
 ```bash
 npx @capgo/cli init
@@ -359,7 +359,7 @@ Here’s how you can make the most of it:
     | User Update Rate | 95% within 24 hours |
     
 
-Capgo’s partial update system only downloads changed files, reducing disruptions during debugging. With end-to-end encryption and compliance with app store guidelines, it’s a powerful tool for keeping your app stable and resolving issues quickly.
+CodePushGo’s partial update system only downloads changed files, reducing disruptions during debugging. With end-to-end encryption and compliance with app store guidelines, it’s a powerful tool for keeping your app stable and resolving issues quickly.
 
 ## Summary
 
@@ -385,6 +385,6 @@ You can enhance your debugging process by taking these steps:
 -   **Enable source maps** to track errors more accurately.
 -   **Integrate debugging tools** into your CI/CD pipeline for smoother workflows.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica[\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica[\[1\]](https://capgo.app/)
 
 Keep an eye on critical performance metrics to ensure your app runs smoothly.

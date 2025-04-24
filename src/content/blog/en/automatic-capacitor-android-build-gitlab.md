@@ -35,9 +35,9 @@ Before starting, you'll need to set up:
 - Knowledge of Fastlane configuration
 - Time to maintain and debug the pipeline
 
-## Professional CI/CD Setup by Capgo
+## Professional CI/CD Setup by CodePushGo
 
-Skip the complexity. [Capgo](https://capgo.app/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
+Skip the complexity. [CodePushGo](https://capgo.app/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
 
 - **Platform Independence**: Works with GitHub Actions, GitLab CI, or others
 - **Seamless Integration**: No platform switch needed, works with your current process

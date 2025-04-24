@@ -31,7 +31,7 @@ next_blog: ''
 | **File System** | `Filesystem.readFile()` | Manage device storage |
 | **Live Updates** | Delivered in 114ms | [Faster updates to users](https://capgo.app/blog/optimise-your-images-for-updates/) |
 
-[Capacitor](https://capacitorjs.com/) helps developers combine the flexibility of web development with the power of native apps. Keep reading to learn how it works and how tools like [Capgo](https://capgo.app/) make it even better.
+[Capacitor](https://capacitorjs.com/) helps developers combine the flexibility of web development with the power of native apps. Keep reading to learn how it works and how tools like [CodePushGo](https://capgo.app/) make it even better.
 
 ## Building Web Native Apps with [Capacitor](https://capacitorjs.com/) 3
 
@@ -58,7 +58,7 @@ The native bridge offers several advantages for cross-platform development:
 | Market Coverage | 82% global success rate [\[1\]](https://capgo.app/) | Reliable performance worldwide |
 | API Response Time | 434ms average globally [\[1\]](https://capgo.app/) | Smooth and efficient interactions |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
 
 ### Plugin Communication System
 
@@ -107,11 +107,11 @@ Capacitor's bridge allows real-time updates to the web layer with minimal effort
 | Location Updates | `Events.emit()` | Sending GPS coordinate changes |
 | Hardware Status | `Bridge.triggerWindowEvent()` | Reporting changes like battery or network status |
 
-Capgo ensures consistent event handling across different versions. Next, let’s dive into how native code delivers real-time data to web components.
+CodePushGo ensures consistent event handling across different versions. Next, let’s dive into how native code delivers real-time data to web components.
 
 ### Native Data Updates
 
-After triggering events, updating data from native code to the web is just as seamless. With Capgo's live update capabilities, this method becomes a reliable choice for dynamic applications.
+After triggering events, updating data from native code to the web is just as seamless. With CodePushGo's live update capabilities, this method becomes a reliable choice for dynamic applications.
 
 ```javascript
 // Native code triggering web updates
@@ -121,7 +121,7 @@ Capacitor.Bridge.triggerWindowEvent('dataUpdate', {
 });
 ```
 
-Capgo's CDN ensures quick delivery, handling a 5 MB bundle in just 114 ms, keeping updates smooth and efficient.
+CodePushGo's CDN ensures quick delivery, handling a 5 MB bundle in just 114 ms, keeping updates smooth and efficient.
 
 To make native data updates even better, consider these tips:
 
@@ -129,7 +129,7 @@ To make native data updates even better, consider these tips:
 -   **Event Debouncing**: Limit high-frequency native events to avoid overwhelming the system.
 -   **Error Handling**: Use strong error management strategies on both the native and web sides.
 
-Capacitor's bridge, paired with [Capgo's update system](https://capgo.app/docs/plugin/cloud-mode/manual-update/), creates a dependable setup for native-to-web communication.
+Capacitor's bridge, paired with [CodePushGo's update system](https://capgo.app/docs/plugin/cloud-mode/manual-update/), creates a dependable setup for native-to-web communication.
 
 ## Creating Custom Plugins
 
@@ -196,7 +196,7 @@ When creating custom plugins, keep these tips in mind:
 -   **Documentation**: Provide clear API documentation and maintain version history.
 -   **Version Management**: Follow semantic versioning to manage updates reliably.
 
-Capgo's update system simplifies plugin deployment, making it easy to distribute updates across your app's user base while ensuring compatibility and version control.
+CodePushGo's update system simplifies plugin deployment, making it easy to distribute updates across your app's user base while ensuring compatibility and version control.
 
 ## Testing and Performance
 
@@ -259,27 +259,27 @@ bridge.on('dataChange', () => {
 -   Use an LRU (Least Recently Used) cache for API responses.
 -   Regularly clear caches to prevent them from becoming too large.
 
-For real-time features, consider using a message queue to avoid bottlenecks. When deploying live updates, Capgo's performance monitoring tools can help reduce bridge overhead and ensure smoother feature rollouts.
+For real-time features, consider using a message queue to avoid bottlenecks. When deploying live updates, CodePushGo's performance monitoring tools can help reduce bridge overhead and ensure smoother feature rollouts.
 
-## Live Updates with [Capgo](https://capgo.app/)
+## Live Updates with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
 
-### Capgo Features
+### CodePushGo Features
 
-Capgo makes it easier to update [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by allowing instant code deployments, skipping the need for app store reviews. It provides updates with end-to-end encryption and uses an advanced channel system for targeted delivery.
+CodePushGo makes it easier to update [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by allowing instant code deployments, skipping the need for app store reviews. It provides updates with end-to-end encryption and uses an advanced channel system for targeted delivery.
 
-Performance data shows Capgo's reliability in real-world use, supporting 750 apps in production environments [\[1\]](https://capgo.app/). It works with both [cloud and self-hosted setups](https://capgo.app/blog/self-hosted-capgo/) and integrates seamlessly into CI/CD workflows for automated processes.
+Performance data shows CodePushGo's reliability in real-world use, supporting 750 apps in production environments [\[1\]](https://capgo.app/). It works with both [cloud and self-hosted setups](https://capgo.app/blog/self-hosted-capgo/) and integrates seamlessly into CI/CD workflows for automated processes.
 
-Let’s dive into how Capgo's update system brings these features to life.
+Let’s dive into how CodePushGo's update system brings these features to life.
 
-### Capgo Update System
+### CodePushGo Update System
 
 The update system operates in three steps:
 
 1.  **Installation and Setup**
     
-    Start by initializing Capgo with the following command:
+    Start by initializing CodePushGo with the following command:
     
     ```bash
     npx @capgo/cli init
@@ -287,23 +287,23 @@ The update system operates in three steps:
     
 2.  **Update Distribution**
     
-    Capgo's channel system makes distributing updates efficient by offering:
+    CodePushGo's channel system makes distributing updates efficient by offering:
     
     -   Partial updates to save bandwidth
     -   Background installations that don’t interrupt users
     -   Automatic version management with rollback options
 3.  **Security and Compliance**
     
-    Capgo ensures updates meet Apple and Google guidelines by using end-to-end encryption. It also includes built-in error tracking and analytics for added reliability.
+    CodePushGo ensures updates meet Apple and Google guidelines by using end-to-end encryption. It also includes built-in error tracking and analytics for added reliability.
     
 
-This system works seamlessly with Capacitor's native bridge, making app updates smooth and hassle-free. These features set Capgo apart in the live update market.
+This system works seamlessly with Capacitor's native bridge, making app updates smooth and hassle-free. These features set CodePushGo apart in the live update market.
 
 ### Update Service Options
 
-Capgo stands out among live update services for Capacitor apps thanks to several key factors:
+CodePushGo stands out among live update services for Capacitor apps thanks to several key factors:
 
-| Feature | Capgo | Market Context |
+| Feature | CodePushGo | Market Context |
 | --- | --- | --- |
 | Pricing Model | Starting at $12/month | Affordable for both small and large teams |
 | Update Delivery | 114ms average | Faster than most competitors |
@@ -311,12 +311,12 @@ Capgo stands out among live update services for Capacitor apps thanks to several
 | Storage | 2GB to 20GB | Flexible storage options |
 | Bandwidth | 50GB to 10TB | Built for enterprise needs |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-For teams switching from other platforms, Capgo offers smooth migration options and full support. With its strong presence in the Capacitor ecosystem, Capgo is a dependable choice for continuous deployment.
+For teams switching from other platforms, CodePushGo offers smooth migration options and full support. With its strong presence in the Capacitor ecosystem, CodePushGo is a dependable choice for continuous deployment.
 
 ## Summary
 
 Capacitor's bridge system streamlines hybrid app development by facilitating smooth communication between web and native layers. This makes accessing native features simpler, while also improving deployment processes and enhancing the overall user experience.
 
-Live update platforms like Capgo build on this efficiency. With 23.5 million updates delivered across 750 production apps, Capgo ensures 95% of active users receive updates within 24 hours, achieving an 82% global success rate [\[1\]](https://capgo.app/). The platform consistently delivers updates securely, with impressive speed and reliability [\[1\]](https://capgo.app/).
+Live update platforms like CodePushGo build on this efficiency. With 23.5 million updates delivered across 750 production apps, CodePushGo ensures 95% of active users receive updates within 24 hours, achieving an 82% global success rate [\[1\]](https://capgo.app/). The platform consistently delivers updates securely, with impressive speed and reliability [\[1\]](https://capgo.app/).

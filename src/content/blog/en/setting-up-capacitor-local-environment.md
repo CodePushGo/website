@@ -52,7 +52,7 @@ next_blog: ''
     -   Build web assets (`npm run build`) and sync them with native platforms (`npx cap sync`).
 8.  **Enable Live Updates**:
     
-    -   Use [Capgo](https://capgo.app/) for real-time updates with:
+    -   Use [CodePushGo](https://capgo.app/) for real-time updates with:
         
         ```bash
         npx @capgo/cli init
@@ -234,7 +234,7 @@ const config: CapacitorConfig = {
 };
 ```
 
-Enable live updates with **Capgo** for smoother update delivery:
+Enable live updates with **CodePushGo** for smoother update delivery:
 
 ```bash
 npx @capgo/cli init
@@ -256,19 +256,19 @@ For testing on physical devices:
 -   Enable USB debugging on Android devices.
 -   Verify that development certificates are correctly set up.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo's channel system is a great tool for beta testing and staged rollouts. It lets you target specific user groups with different versions, helping you identify and fix issues before a broader release [\[1\]](https://capgo.app/).
+CodePushGo's channel system is a great tool for beta testing and staged rollouts. It lets you target specific user groups with different versions, helping you identify and fix issues before a broader release [\[1\]](https://capgo.app/).
 
 ## Additional Features
 
 Expand your Capacitor setup with tools that improve update delivery, streamline automation, and allow for tailored configurations.
 
-### [Capgo](https://capgo.app/) Setup
+### [CodePushGo](https://capgo.app/) Setup
 
-![Capgo](https://assets.seobotai.com/capgo.app/67edd19cebbb9dc8064069d2/6f70cafcdfe95287b465212dfd047c63.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67edd19cebbb9dc8064069d2/6f70cafcdfe95287b465212dfd047c63.jpg)
 
-Simplify your workflow using Capgo's live update system. To get started, run:
+Simplify your workflow using CodePushGo's live update system. To get started, run:
 
 ```bash
 npx @capgo/cli init
@@ -287,11 +287,11 @@ Then, adjust your `capacitor.config.ts` file to enable live updates:
 }
 ```
 
-Capgo's global CDN delivers impressive speeds, with 5MB bundles downloading in just 114ms [\[1\]](https://capgo.app/). Once live updates are set up, you can automate your builds for smoother deployments.
+CodePushGo's global CDN delivers impressive speeds, with 5MB bundles downloading in just 114ms [\[1\]](https://capgo.app/). Once live updates are set up, you can automate your builds for smoother deployments.
 
 ### Build Automation
 
-Integrate Capgo with your CI/CD pipeline to automate builds and deployments. It supports popular platforms like:
+Integrate CodePushGo with your CI/CD pipeline to automate builds and deployments. It supports popular platforms like:
 
 | CI/CD Platform | Integration Method | Key Benefits |
 | --- | --- | --- |
@@ -309,7 +309,7 @@ build_and_deploy:
     - run: npx @capgo/cli deploy
 ```
 
-> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - Capgo [\[1\]](https://capgo.app/)
+> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - CodePushGo [\[1\]](https://capgo.app/)
 
 ### Custom Settings
 
@@ -439,7 +439,7 @@ These improvements come from following the setup and integration practices discu
 
 **Performance Highlights**
 
-[Capgo-enhanced Capacitor environments](https://capgo.app/blog/) show impressive results, including fast response times, quick downloads, and high success rates for updates [\[1\]](https://capgo.app/).
+[CodePushGo-enhanced Capacitor environments](https://capgo.app/blog/) show impressive results, including fast response times, quick downloads, and high success rates for updates [\[1\]](https://capgo.app/).
 
 **Benefits for Developers**
 

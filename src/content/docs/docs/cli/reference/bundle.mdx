@@ -18,7 +18,7 @@ Options:
 - `-a, --apikey <apikey>`: API key to link to your account
 - `-p, --path <path>`: Path to the folder to upload (defaults to the `webDir` in `capacitor.config`)
 - `-c, --channel <channel>`: Channel to link the bundle to
-- `-e, --external <url>`: Link to an external URL instead of uploading to Capgo Cloud
+- `-e, --external <url>`: Link to an external URL instead of uploading to CodePushGo Cloud
 - `--iv-session-key <key>`: Set the IV and session key for an external bundle URL
 - `--s3-region <region>`: Region for your S3 bucket
 - `--s3-apikey <apikey>`: API key for your S3 endpoint
@@ -44,8 +44,8 @@ Options:
 - `--multipart`: Use the multipart protocol to upload data to S3 (deprecated, use `--tus` instead)
 - `--tus`: Upload the bundle using the tus protocol
 - `--tus-chunk-size <tusChunkSize>`: Chunk size for the tus upload
-- `--partial`: Upload only changed files to Capgo Cloud
-- `--partial-only`: Upload only partial files to Capgo Cloud, skipping the zipped file (useful for large bundles)
+- `--partial`: Upload only changed files to CodePushGo Cloud
+- `--partial-only`: Upload only partial files to CodePushGo Cloud, skipping the zipped file (useful for large bundles)
 - `--encrypted-checksum <encryptedChecksum>`: Encrypted checksum (signature) for an external bundle
 - `--auto-set-bundle`: Automatically set the bundle version in `capacitor.config.json`
 - `--dry-upload`: Perform a dry run of the upload process without actually uploading files (useful for testing)

@@ -210,18 +210,18 @@ For plugins with complex features, simulate real-world user scenarios. For insta
 -   Accurate progress reporting
 -   Memory usage during large file transfers
 
-### OTA Testing with [Capgo](https://capgo.app/)
+### OTA Testing with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-17.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-17.jpg?auto=compress)
 
-Capgo’s open-source tools make it easy to deploy and test updates quickly. Here’s how to use it:
+CodePushGo’s open-source tools make it easy to deploy and test updates quickly. Here’s how to use it:
 
 1.  Set up [update channels](https://capgo.app/docs/webapp/channels/) like dev, staging, and production.
 2.  Automate deployments with CI/CD tools.
 3.  Push updates instantly.
-4.  Monitor performance and issues via the [Capgo dashboard](https://capgo.app/docs/webapp/).
+4.  Monitor performance and issues via the [CodePushGo dashboard](https://capgo.app/docs/webapp/).
 
-For phased rollouts, Capgo allows you to limit updates to a small percentage of users. For instance, you can roll out a new version to 25% of users every 24 hours:
+For phased rollouts, CodePushGo allows you to limit updates to a small percentage of users. For instance, you can roll out a new version to 25% of users every 24 hours:
 
 ```typescript
 // Example configuration for staged rollout
@@ -262,15 +262,15 @@ When collaborating, stick to these best practices:
 
 For larger changes, it's a good idea to create an issue first and discuss your approach. The Capacitor team relies on GitHub Actions for automated checks, and all checks must pass before your pull request can be reviewed.
 
-### Capgo Integration Guide
+### CodePushGo Integration Guide
 
-If your plugin involves live updates, ensure it works seamlessly with Capgo before submitting:
+If your plugin involves live updates, ensure it works seamlessly with CodePushGo before submitting:
 
 1.  **Version Control**  
-    Use clear semantic versioning for your plugin, and document all changes in the changelog. Capgo's system helps track version adoption across user devices.
+    Use clear semantic versioning for your plugin, and document all changes in the changelog. CodePushGo's system helps track version adoption across user devices.
     
 2.  **CI/CD Integration**  
-    Integrate Capgo into your CI/CD pipeline to automate update deployments.
+    Integrate CodePushGo into your CI/CD pipeline to automate update deployments.
     
 3.  **Update Monitoring**  
     Monitor deployment success rates and ensure compliance with app store guidelines.
@@ -280,7 +280,7 @@ If your plugin involves live updates, ensure it works seamlessly with Capgo befo
 
 To make a meaningful contribution with your plugin, it's important to follow the established process and meet community standards. This includes sticking to Capacitor's coding guidelines and thoroughly testing your work.
 
-The PR checklist highlights the need for high-quality submissions. If your plugin supports live updates, integrating with Capgo (as mentioned earlier) can help you release updates quickly without waiting for app store approvals.
+The PR checklist highlights the need for high-quality submissions. If your plugin supports live updates, integrating with CodePushGo (as mentioned earlier) can help you release updates quickly without waiting for app store approvals.
 
 Once your PR is merged, stay involved by tracking issues and releasing version updates. Regular interaction with the community, consistent maintenance, and [keeping up with Capacitor updates](https://capgo.app/plugins/capacitor-updater/) will ensure your plugin stays useful and relevant.
 

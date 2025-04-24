@@ -33,7 +33,7 @@ Custom attribute segmentation is crucial for improving user engagement and app p
     -   Follow data rules: Limit data collection, ensure transparency, and comply with regulations like [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
 -   **Why It Matters**:
     
-    -   Tools like [Capgo](https://capgo.app/) enable real-time updates, secure data handling, and fast rollouts, achieving up to 95% update success within 24 hours. Adopting the right tools and strategies can streamline segmentation and enhance user targeting.
+    -   Tools like [CodePushGo](https://capgo.app/) enable real-time updates, secure data handling, and fast rollouts, achieving up to 95% update success within 24 hours. Adopting the right tools and strategies can streamline segmentation and enhance user targeting.
 
 ## Data Attributes, Smart Lists and Segmentations, OH MY! | San ...
 
@@ -109,7 +109,7 @@ When choosing tools for custom attribute segmentation, look for features that mi
 
 ### Tool Comparison Chart
 
-| Feature | Capgo | Impact on Segmentation |
+| Feature | CodePushGo | Impact on Segmentation |
 | --- | --- | --- |
 | **Update Speed** | 114ms download (5MB bundle)[\[1\]](https://capgo.app/) | Faster updates reduce outdated data issues |
 | **Success Rate** | 95% update rate within 24 hours[\[1\]](https://capgo.app/) | Higher adoption ensures better segment accuracy |

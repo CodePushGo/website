@@ -248,4 +248,4 @@ While React Native has its advantages, Capacitor stands out as a powerful and fl
 Consider your specific needs, preferences, and goals when choosing the right framework for your project. Capacitor offers many benefits that make it an attractive option for developers looking to build high-quality mobile apps with a familiar web development workflow.
 
 
-Learn how Capgo can help you build better apps faster, [sign up for a free account](/register/) today.
+Learn how CodePushGo can help you build better apps faster, [sign up for a free account](/register/) today.

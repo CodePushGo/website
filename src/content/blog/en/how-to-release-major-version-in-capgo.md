@@ -10,7 +10,7 @@ author_url: 'https://x.com/martindonadieu'
 created_at: 2022-08-30T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /capgo-feature-image.webp
-head_image_alt: Capgo major version system
+head_image_alt: CodePushGo major version system
 keywords: mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
 published: true
@@ -37,28 +37,28 @@ For example, a new IOS target (15 to 16), or a new version of Capacitor (3 to 4)
 
 This change means all tooling has to be aligned to handle the breaking change.
 
-That why Capgo follows this system.
-So if you release a major version, Capgo will not send it to a user who doesn't have it installed from the store.\
+That why CodePushGo follows this system.
+So if you release a major version, CodePushGo will not send it to a user who doesn't have it installed from the store.\
 This behavior can be customized. You can learn more about it [here](/docs/cli/commands/#disable-updates-strategy)
 
 ### Versions
 
-Where Capgo find the version to compare
+Where CodePushGo find the version to compare
 
 #### IOS
-  > Will be used by Capgo to compare to JavaScript version and find Major upgrade
+  > Will be used by CodePushGo to compare to JavaScript version and find Major upgrade
 
  In IOS the var is set on your project here `ios/App/App/Info.plist` under the key`CFBundleShortVersionString` or `ios/App/App.xcodeproj/project.pbxproj` under the key `MARKETING_VERSION` if `MARKETING_VERSION` was set in your `Info.plist` file.
   > You can override this behavior by setting version key in `capacitor.config.json` file [docs here](/docs/plugin/auto-update#advanced-settings/)
 
 #### Android
-  > Will be uses by Capgo to compare to JavaScript version and find Major upgrade
+  > Will be uses by CodePushGo to compare to JavaScript version and find Major upgrade
 
   in Android, the var is set on your project here `android/app/build.gradle` under the key `defaultConfig.versionName`
   > You can override this behavior by setting version key in `capacitor.config.json` file [docs here](/docs/plugin/auto-update#advanced-settings/)
 
 #### JavaScript
-  > Will be used by Capgo to compare to Native version and find Major upgrade
+  > Will be used by CodePushGo to compare to Native version and find Major upgrade
 
   in JavaScript, the var is set on your project here `package.json` under the key `version`
 ## Example
@@ -67,21 +67,21 @@ Your Ionic app is currently released with the version `1.2.3` with Capacitor 3
 
 You are doing the upgrade to capacitor 4.
 
-You need to upgrade your version number to `2.2.3`, then all your packages include Capgo with notice this big change.
+You need to upgrade your version number to `2.2.3`, then all your packages include CodePushGo with notice this big change.
 
-When you release this version to Capgo and the App Store.
+When you release this version to CodePushGo and the App Store.
 
-All next live update in Capgo `2.2.4` will never be sent to user with `1.2.3` version. Only with `2.2.3` version.
+All next live update in CodePushGo `2.2.4` will never be sent to user with `1.2.3` version. Only with `2.2.3` version.
 
 If you follow this pattern, no need to worry more, all is well handled.
 
 
 ## If I don't follow this
 
-In this case, that means you have to send your new app with Capacitor 4 to Apple and Google, but don't to Capgo.
+In this case, that means you have to send your new app with Capacitor 4 to Apple and Google, but don't to CodePushGo.
 
 Then you have to wait 100% of your users, have the app or at least 90%, it will take months, probably.
 
-While during this time you cannot send any update with Capgo, since old user cannot get the new version.
+While during this time you cannot send any update with CodePushGo, since old user cannot get the new version.
 You don't have a way to select only some users to receive the update.
 

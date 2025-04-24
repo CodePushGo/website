@@ -36,7 +36,7 @@ next_blog: ''
 | Custom Metrics | Basic | Flexible |
 | Integration Complexity | Google-based workflows | Simple SDK setup |
 
-For live updates, integrate tools like **[Capgo](https://capgo.app/)** to push fixes instantly without app store delays. Start monitoring today to enhance your app's efficiency and user satisfaction.
+For live updates, integrate tools like **[CodePushGo](https://capgo.app/)** to push fixes instantly without app store delays. Start monitoring today to enhance your app's efficiency and user satisfaction.
 
 ## Optimize app health with [Firebase](https://firebase.google.com/) Performance Monitoring ...
 
@@ -69,7 +69,7 @@ When deciding between these tools, consider the following:
 -   **Budget Constraints**: Both tools offer free tiers, but compare the costs of scaling features to ensure they fit your budget.
 -   **Integration Goals**: Firebase integrates seamlessly with Google-based workflows, while Sentry is particularly strong in error tracking.
 -   **Regulatory Requirements**: Ensure the tool complies with standards like [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation), especially if your app handles sensitive user data.
--   **Update Frequency**: If frequent updates are critical, tools like Capgo can speed up live fixes, complementing your monitoring setup.
+-   **Update Frequency**: If frequent updates are critical, tools like CodePushGo can speed up live fixes, complementing your monitoring setup.
 
 ## Firebase Setup Guide
 
@@ -290,7 +290,7 @@ This dashboard makes diagnosing and fixing issues straightforward.
 
 ### Focus on Key Metrics
 
-Capgo's analysis of 750 production apps [\[1\]](https://capgo.app/) highlights key metrics to monitor:
+CodePushGo's analysis of 750 production apps [\[1\]](https://capgo.app/) highlights key metrics to monitor:
 
 -   **Update Success Rate**: Aim for at least 82%.
 -   **Update Speed**: Global CDN should deliver 5 MB in 114 ms.
@@ -337,13 +337,13 @@ Once your alerts are in place, focus on continuous monitoring and refinement:
 -   **Ongoing Optimization**: Investigate failed updates, identify slow-performing API endpoints, and evaluate user engagement following updates to ensure sustained improvements.
     
 
-## [Capgo](https://capgo.app/) Updates and Monitoring
+## [CodePushGo](https://capgo.app/) Updates and Monitoring
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-23.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-23.jpg?auto=compress)
 
-### Capgo Core Features
+### CodePushGo Core Features
 
-Capgo's live update system, tested on 750 production apps, delivers 5MB bundles in just 114ms [\[1\]](https://capgo.app/).
+CodePushGo's live update system, tested on 750 production apps, delivers 5MB bundles in just 114ms [\[1\]](https://capgo.app/).
 
 Key features include:
 
@@ -354,27 +354,27 @@ Key features include:
 
 This system integrates easily with existing monitoring tools, ensuring smooth operation.
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @Capgo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
 
-### Combine Tools with Capgo
+### Combine Tools with CodePushGo
 
-Capgo's analytics enable staged rollouts, helping teams ensure stability before a full release.
+CodePushGo's analytics enable staged rollouts, helping teams ensure stability before a full release.
 
-| Monitoring Aspect | Capgo Integration | Additional Tools |
+| Monitoring Aspect | CodePushGo Integration | Additional Tools |
 | --- | --- | --- |
 | Error Tracking | Built-in error monitoring | Pair with Sentry for detailed stack traces |
 | Performance Metrics | Tracks update success rates | Use Firebase for user interaction data |
 | Response Time | API response monitoring | Enhance with custom Firebase timing events |
 
-To configure Capgo’s channel system effectively:
+To configure CodePushGo’s channel system effectively:
 
 -   Deploy updates to beta testers first.
--   Use Capgo's analytics to monitor performance metrics.
+-   Use CodePushGo's analytics to monitor performance metrics.
 -   Gradually expand the rollout to the broader user base.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-With 23.5M updates delivered globally, Capgo’s real-time dashboard provides clear insights, empowering teams to make smart decisions about updates and performance improvements.
+With 23.5M updates delivered globally, CodePushGo’s real-time dashboard provides clear insights, empowering teams to make smart decisions about updates and performance improvements.
 
 ## Next Steps
 
@@ -386,7 +386,7 @@ Keeping an eye on key metrics is crucial for effective performance monitoring. U
 | --- | --- | --- |
 | App Performance | Response times, crashes | Firebase Performance |
 | Error Tracking | Exception rates, stack traces | Sentry |
-| Update Analytics | Distribution success | Capgo Analytics |
+| Update Analytics | Distribution success | CodePushGo Analytics |
 
 Dive deeper into these metrics and tools through the resources listed below.
 
@@ -400,4 +400,4 @@ Performance monitoring tools and practices are always advancing. Stay ahead by e
 -   Sentry's Capacitor integration guide
 -   Capacitor's official performance optimization guides
 
-**Advanced Implementation**: Explore Capgo's analytics system, successfully used in over 750 production apps [\[1\]](https://capgo.app/). Their documentation provides insights into monitoring patterns and live update strategies that work seamlessly with other performance tracking tools.
+**Advanced Implementation**: Explore CodePushGo's analytics system, successfully used in over 750 production apps [\[1\]](https://capgo.app/). Their documentation provides insights into monitoring patterns and live update strategies that work seamlessly with other performance tracking tools.

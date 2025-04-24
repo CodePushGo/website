@@ -30,7 +30,7 @@ next_blog: ''
 | **User Experience** | [Automatic background updates](https://capgo.app/docs/plugin/self-hosted/auto-update/) | Users manually update apps |
 | **Risk Management** | Instant rollback capabilities | Requires new submission for fixes |
 
-Capacitor OTA updates, supported by tools like [Capgo](https://capgo.app/), provide flexibility and speed, while traditional methods ensure comprehensive quality. Both have their place depending on your app's needs.
+Capacitor OTA updates, supported by tools like [CodePushGo](https://capgo.app/), provide flexibility and speed, while traditional methods ensure comprehensive quality. Both have their place depending on your app's needs.
 
 ## [Appflow](https://ionic.io/appflow/) Deploy: Ship real-time updates to your Ionic app users
 
@@ -57,17 +57,17 @@ Here’s a breakdown of key features:
 | Version Control | Manage and track update history | Keeps updates organized |
 | Rollback Support | Revert to previous versions easily | Reduces risks from faulty updates |
 
-These features provide developers with greater flexibility and control, especially when paired with tools like Capgo.
+These features provide developers with greater flexibility and control, especially when paired with tools like CodePushGo.
 
-### [Capgo](https://capgo.app/)'s Role in OTA Updates
+### [CodePushGo](https://capgo.app/)'s Role in OTA Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-21.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-21.jpg?auto=compress)
 
-Capgo simplifies the process of managing OTA updates for Capacitor apps. Its platform prioritizes security with end-to-end encryption, ensuring update content remains protected.
+CodePushGo simplifies the process of managing OTA updates for Capacitor apps. Its platform prioritizes security with end-to-end encryption, ensuring update content remains protected.
 
-By integrating with CI/CD pipelines, Capgo automates deployments. Developers can test updates with specific user groups, roll out changes gradually, and tailor updates based on user needs.
+By integrating with CI/CD pipelines, CodePushGo automates deployments. Developers can test updates with specific user groups, roll out changes gradually, and tailor updates based on user needs.
 
-With Capgo’s tools for organization, version control, and rollback, teams can handle updates smoothly and with confidence.
+With CodePushGo’s tools for organization, version control, and rollback, teams can handle updates smoothly and with confidence.
 
 ###### sbb-itb-f9944d2
 
@@ -142,10 +142,10 @@ The contrast between these approaches highlights how OTA updates can complement 
 -   Validation for regulatory compliance
 -   Comprehensive system-wide testing
 
-Platforms like Capgo demonstrate how secure OTA updates can integrate seamlessly with existing workflows. They allow developers to maintain app store compliance while deploying updates quickly.
+Platforms like CodePushGo demonstrate how secure OTA updates can integrate seamlessly with existing workflows. They allow developers to maintain app store compliance while deploying updates quickly.
 
 ## Conclusion
 
 OTA updates have changed the way developers address user needs and keep up with market demands. They allow apps to be updated and improved after release without the usual delays.
 
-With tools like Capgo, developers can deploy updates instantly and securely, avoiding the slowdowns of app store approvals. This creates a balance where both OTA updates and traditional testing methods play important roles.
+With tools like CodePushGo, developers can deploy updates instantly and securely, avoiding the slowdowns of app store approvals. This creates a balance where both OTA updates and traditional testing methods play important roles.

@@ -40,7 +40,7 @@ Profiling cross-platform apps built with [Capacitor](https://capacitorjs.com/) h
 -   **Optimizations**:
     
     -   Implement partial bundle updates and live updates to improve performance and user experience.
-    -   Track performance metrics and errors in real time using tools like [Capgo](https://capgo.app/).
+    -   Track performance metrics and errors in real time using tools like [CodePushGo](https://capgo.app/).
 
 This article walks you through using platform-specific tools, finding performance bottlenecks, and applying fixes to optimize your Capacitor apps.
 
@@ -76,7 +76,7 @@ For best results, test on at least one recent iOS device and one mid-range Andro
 Use these tools to monitor and analyze performance:
 
 -   **Instruments (iOS)**, **Android Studio CPU Profiler**, and **Chrome DevTools** for platform-specific profiling
--   **Capgo** for cross-platform analytics and real-time error tracking \[2\]
+-   **CodePushGo** for cross-platform analytics and real-time error tracking \[2\]
 
 Lastly, configure logging in both development and production environments to track consistent metrics.
 
@@ -134,11 +134,11 @@ To pinpoint performance problems, tools like **Chrome DevTools**, **Xcode Instru
 
 After gathering data from profiling tools, implement these targeted optimizations:
 
--   **Partial bundle updates**: Instead of full updates, deliver smaller, incremental updates. For example, Capgo's CDN can deliver a 5 MB update in just 114 ms [\[1\]](https://capgo.app/).
+-   **Partial bundle updates**: Instead of full updates, deliver smaller, incremental updates. For example, CodePushGo's CDN can deliver a 5 MB update in just 114 ms [\[1\]](https://capgo.app/).
 -   **Controlled rollouts**: Use user segmentation to roll out updates gradually. This method can achieve 95% update adoption within 24 hours [\[1\]](https://capgo.app/).
 -   **Error tracking**: Detect and fix errors early to maintain app stability and performance [\[1\]](https://capgo.app/).
 -   **Bridge call batching**: Reduce overhead by grouping JavaScript-to-native bridge calls.
--   **Live updates**: Push immediate fixes using live update solutions (e.g., Capgo), bypassing app store delays.
+-   **Live updates**: Push immediate fixes using live update solutions (e.g., CodePushGo), bypassing app store delays.
 
 ## Monitoring and Updates
 
@@ -148,11 +148,11 @@ Once you've made performance improvements, it's crucial to keep an eye on things
 
 Post-deployment, keep tabs on important metrics like API response times, update success rates, and user engagement. Use tools like automated dashboards or error-tracking software to gather this data in real time. This allows you to spot and address issues quickly, preventing them from impacting a large number of users.
 
-### Fast Updates with [Capgo](https://capgo.app/)
+### Fast Updates with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://assets.seobotai.com/capgo.app/6803080d9291ae98c5004a60/65550a0697b495ada9159b05fd8b2a91.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/6803080d9291ae98c5004a60/65550a0697b495ada9159b05fd8b2a91.jpg)
 
-Capgo simplifies the update process by offering encrypted, staged updates with automatic rollback features. It also provides real-time analytics, helping you bypass app store delays and ensuring updates reach your users quickly and efficiently.
+CodePushGo simplifies the update process by offering encrypted, staged updates with automatic rollback features. It also provides real-time analytics, helping you bypass app store delays and ensuring updates reach your users quickly and efficiently.
 
 ## Summary
 

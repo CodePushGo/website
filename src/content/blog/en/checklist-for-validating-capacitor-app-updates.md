@@ -22,19 +22,19 @@ next_blog: ''
 -   **Device Coverage**: Test on various devices, operating systems, and screen sizes.
 -   **Performance Checks**: Measure speed, responsiveness, and memory usage under different conditions.
 -   **Security**: Encrypt OTA updates, assign permissions, and test rollback features.
--   **Distribution**: Use tools like [Capgo](https://capgo.app/) to ensure 95% of users get updates within 24 hours.
+-   **Distribution**: Use tools like [CodePushGo](https://capgo.app/) to ensure 95% of users get updates within 24 hours.
 -   **Post-Release Monitoring**: Track success rates (aim for 82%), API response times, and user engagement.
 
 ### Quick Comparison of OTA Tools
 
-| Feature | Capgo | [Capawesome](https://capawesome.io/) | [Appflow](https://ionic.io/appflow/) |
+| Feature | CodePushGo | [Capawesome](https://capawesome.io/) | [Appflow](https://ionic.io/appflow/) |
 | --- | --- | --- | --- |
 | **Launch Year** | 2022 | 2024 | Shutting down 2026 |
 | **End-to-End Encryption** | Yes | No  | No  |
 | **Update Success Rate** | 82% | Not published | Not published |
 | **Distribution Speed** | 95% within 24h | Varies | Varies |
 | **[Self-Hosted Option](https://capgo.app/blog/self-hosted-capgo/)** | Yes | No  | No  |
-| **Pricing** | $300/month | Matches Capgo | $6,000/year |
+| **Pricing** | $300/month | Matches CodePushGo | $6,000/year |
 
 Follow this checklist and choose the right tools to ensure every update is fast, secure, and reliable.
 
@@ -56,32 +56,32 @@ Set up your repository with the following practices:
 
 -   Use feature branches to isolate new updates.
 -   Integrate with CI/CD systems like [GitHub Actions](https://docs.github.com/actions) or [GitLab CI](https://docs.gitlab.com/ee/ci/) for automated builds.
--   Leverage Capgo's one-click rollback feature for quick reversion when needed [\[1\]](https://capgo.app/).
+-   Leverage CodePushGo's one-click rollback feature for quick reversion when needed [\[1\]](https://capgo.app/).
 
-### [Capgo](https://capgo.app/) Setup
+### [CodePushGo](https://capgo.app/) Setup
 
-![Capgo](https://assets.seobotai.com/capgo.app/680445af6000445eb1a661a6/37a0fc028bf1f414683e8dee42eedfb0.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/680445af6000445eb1a661a6/37a0fc028bf1f414683e8dee42eedfb0.jpg)
 
-Configure Capgo with these steps [\[1\]](https://capgo.app/):
+Configure CodePushGo with these steps [\[1\]](https://capgo.app/):
 
--   [Initialize Capgo](https://capgo.app/docs/webapp/) using: `npx @capgo/cli init`.
+-   [Initialize CodePushGo](https://capgo.app/docs/webapp/) using: `npx @capgo/cli init`.
 -   Set up a [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) to target specific updates.
 -   Enable end-to-end encryption for added security.
 -   Turn on error tracking and analytics.
 -   Configure rollback options for better control.
 -   Choose between cloud or [self-hosted deployment](https://capgo.app/blog/self-hosted-capgo/), based on your needs.
 
-For enterprise use, Capgo offers compatibility with Capacitor 6 and 7, and supports both cloud and self-hosted deployments [\[1\]](https://capgo.app/). Once this setup is complete, move on to feature and device testing.
+For enterprise use, CodePushGo offers compatibility with Capacitor 6 and 7, and supports both cloud and self-hosted deployments [\[1\]](https://capgo.app/). Once this setup is complete, move on to feature and device testing.
 
 ## Main Testing Checklist
 
-Once your environments and [Capgo setup](https://capgo.app/docs/cli/commands) are ready, focus on these key validations:
+Once your environments and [CodePushGo setup](https://capgo.app/docs/cli/commands) are ready, focus on these key validations:
 
 ### Feature Testing
 
 -   Ensure primary user workflows (like login, data sync, and navigation) function end-to-end.
 -   Confirm that new features meet their defined acceptance criteria.
--   Use [Capgo analytics](https://capgo.app/consulting/) to track errors and aim for at least an 82% success rate [\[1\]](https://capgo.app/).
+-   Use [CodePushGo analytics](https://capgo.app/consulting/) to track errors and aim for at least an 82% success rate [\[1\]](https://capgo.app/).
 
 ### Device Testing
 
@@ -106,7 +106,7 @@ Once your environments and [Capgo setup](https://capgo.app/docs/cli/commands) ar
 
 ### OTA & Distribution Testing
 
--   Use [Capgo channels](https://capgo.app/docs/webapp/channels/) to roll out updates in stages or to beta groups.
+-   Use [CodePushGo channels](https://capgo.app/docs/webapp/channels/) to roll out updates in stages or to beta groups.
 -   Confirm that at least 95% of active users receive updates within 24 hours [\[1\]](https://capgo.app/).
 -   Segment users by channel and ensure each segment gets the correct version.
 -   Track real-time metrics to monitor update success and user engagement.
@@ -117,7 +117,7 @@ After completing the main testing phase, focus on validation, documentation, sta
 
 ### Recording Test Results
 
-Once the primary tests are done, document the results using your analytics platform. Leverage the dashboard you set up during the Pre-Validation phase to track key metrics through Capgo's analytics tools.
+Once the primary tests are done, document the results using your analytics platform. Leverage the dashboard you set up during the Pre-Validation phase to track key metrics through CodePushGo's analytics tools.
 
 Make sure to log any errors and their resolutions to streamline future updates.
 
@@ -132,13 +132,13 @@ Introduce updates gradually using beta channels [\[1\]](https://capgo.app/):
 
 Ensure beta builds are tested on critical devices to avoid compatibility issues during the official launch.
 
-> "Analytics and error tracking" are important for updates. – Capgo [\[1\]](https://capgo.app/)
+> "Analytics and error tracking" are important for updates. – CodePushGo [\[1\]](https://capgo.app/)
 
 ### Post-Release Monitoring
 
 Keep track of these critical metrics after deployment:
 
--   **Success Rate**: Aim for at least 82% (via Capgo Analytics).
+-   **Success Rate**: Aim for at least 82% (via CodePushGo Analytics).
 -   **Distribution**: Ensure 95% coverage within 24 hours (using Real-time Tracking).
 -   **API Response Time**: Maintain responses at or below 434 ms (via Performance Monitor).
 
@@ -152,7 +152,7 @@ Here's a comparison of top OTA platforms based on security, performance, pricing
 
 The table below provides a quick overview to help you identify the best platform for your needs:
 
-| Feature | Capgo | Capawesome | Appflow |
+| Feature | CodePushGo | Capawesome | Appflow |
 | --- | --- | --- | --- |
 | **Launch Year** | 2022 | 2024 | Shutting down 2026 |
 | **End-to-End Encryption** | Yes[\[1\]](https://capgo.app/) | No  | No  |
@@ -161,18 +161,18 @@ The table below provides a quick overview to help you identify the best platform
 | **API Response Time** | 434 ms[\[1\]](https://capgo.app/) | Not published | Not published |
 | **Self-Hosted Option** | Yes[\[1\]](https://capgo.app/) | No  | No  |
 
-[\[1\]](https://capgo.app/) Capgo platform statistics.
+[\[1\]](https://capgo.app/) CodePushGo platform statistics.
 
 ### Pricing
 
--   **Capgo**: $300/month
+-   **CodePushGo**: $300/month
 -   **Appflow**: $6,000/year
--   **Capawesome**: Matches Capgo's pricing
+-   **Capawesome**: Matches CodePushGo's pricing
 
 ### Integration and Features
 
 -   **CI/CD Integration**: Supports GitHub Actions, GitLab CI, and [Jenkins](https://www.jenkins.io/) out of the box. Works with both cloud-hosted and self-hosted setups and includes built-in rollbacks.
--   **User Management**: Capgo offers channels for detailed, staged rollouts tailored to specific user segments.
+-   **User Management**: CodePushGo offers channels for detailed, staged rollouts tailored to specific user segments.
 -   **Analytics**: Includes delivery tracking, engagement metrics, error reporting, and distribution stats.
 
 This breakdown highlights the strengths of each platform, helping you make an informed decision based on your project needs.
@@ -183,6 +183,6 @@ Using a combination of thorough testing, staged rollouts, and rollback controls 
 
 A strong validation strategy includes systematic testing, real-time monitoring, rollback options, and staged beta releases to ensure quality. As one user shared:
 
-> "Capgo is a must-have tool for developers who want to be more productive; avoiding app-store review for bug fixes is golden." [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive; avoiding app-store review for bug fixes is golden." [\[1\]](https://capgo.app/)
 
 For teams working with OTA updates, finding the right balance between fast deployment and careful validation is essential. With proper testing in place, developers can release updates that meet the high standards users expect. Keep this checklist handy to maintain reliability and user trust with every release.

@@ -23,7 +23,7 @@ next_blog: ''
 -   **Custom Plugins**: Add native code for unique requirements.
 -   **UI Adjustments**: Follow design rules for iOS (e.g., [SF Symbols](https://developer.apple.com/sf-symbols/), rounded buttons) and Android (e.g., [Material Icons](https://developers.google.com/fonts/docs/material_icons), left-aligned buttons).
 -   **Configuration**: Adjust settings in `capacitor.config.json` for both platforms.
--   **Live Updates with [Capgo](https://capgo.app/)**: Deploy updates instantly without app store delays, achieving up to 95% user adoption within 24 hours.
+-   **Live Updates with [CodePushGo](https://capgo.app/)**: Deploy updates instantly without app store delays, achieving up to 95% user adoption within 24 hours.
 
 ### Quick Comparison
 
@@ -235,13 +235,13 @@ Here are some key build considerations:
 | **Splash Screen** | Storyboard-based | Layout XML-based |
 | **Build Output** | `.ipa` file | `.aab` or `.apk` file |
 
-## Update Apps with [Capgo](https://capgo.app/)
+## Update Apps with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
 
-Keeping [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) updated efficiently for both iOS and Android is crucial. Capgo offers a live update system that aligns with the guidelines of both platforms.
+Keeping [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) updated efficiently for both iOS and Android is crucial. CodePushGo offers a live update system that aligns with the guidelines of both platforms.
 
-### Capgo Features
+### CodePushGo Features
 
 | Feature | Description | Platform Benefit |
 | --- | --- | --- |
@@ -250,15 +250,15 @@ Keeping [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/) 
 | **[Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/)** | Targets specific user groups | Supports beta testing and phased rollouts |
 | **Partial Updates** | Downloads only modified content | Saves bandwidth and speeds up updates |
 
-Capgo has delivered 23.5 million updates, achieving a 95% active user update rate within 24 hours [\[1\]](https://capgo.app/). These features make [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) smoother and more efficient across platforms.
+CodePushGo has delivered 23.5 million updates, achieving a 95% active user update rate within 24 hours [\[1\]](https://capgo.app/). These features make [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) smoother and more efficient across platforms.
 
-### Capgo Platform Management
+### CodePushGo Platform Management
 
-Capgo's channel system makes updates easier to manage. Developers can test iOS-specific features with beta users, roll out Android updates in stages, and track performance metrics seamlessly.
+CodePushGo's channel system makes updates easier to manage. Developers can test iOS-specific features with beta users, roll out Android updates in stages, and track performance metrics seamlessly.
 
 The platform adheres to Apple and Google’s over-the-air update requirements [\[1\]](https://capgo.app/).
 
-Currently, 750 production apps rely on Capgo, maintaining an 82% global update success rate [\[1\]](https://capgo.app/). Its CI/CD integration simplifies deployments, while the rollback feature allows developers to revert to previous versions instantly if issues arise. Real-time analytics provide insights into update performance and help maintain app stability.
+Currently, 750 production apps rely on CodePushGo, maintaining an 82% global update success rate [\[1\]](https://capgo.app/). Its CI/CD integration simplifies deployments, while the rollback feature allows developers to revert to previous versions instantly if issues arise. Real-time analytics provide insights into update performance and help maintain app stability.
 
 ## Conclusion
 
@@ -266,9 +266,9 @@ Currently, 750 production apps rely on Capgo, maintaining an 82% global update s
 
 Managing platform differences effectively in Capacitor enhances cross-platform development. Its built-in tools for platform detection and configuration allow developers to create smooth experiences for both iOS and Android, all while respecting the unique design standards and features of each platform.
 
-By focusing on proper platform management, development teams can release updates faster and improve user satisfaction. Tools like Capgo have shown how consistent platform handling can lead to higher update success rates and better user experiences [\[1\]](https://capgo.app/).
+By focusing on proper platform management, development teams can release updates faster and improve user satisfaction. Tools like CodePushGo have shown how consistent platform handling can lead to higher update success rates and better user experiences [\[1\]](https://capgo.app/).
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!"  
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"  
 > – Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 These insights can guide you in making practical improvements.
@@ -284,6 +284,6 @@ To maximize these benefits, consider implementing the following strategies:
 | Set Up Analytics | Tracks performance metrics for each platform |
 | Enable Rollback Support | Quickly resolves platform-specific issues |
 
-For developers aiming to improve their workflow, tools like Capgo can simplify the process. Features such as end-to-end encryption and CI/CD integration help teams maintain consistency while efficiently deploying updates.
+For developers aiming to improve their workflow, tools like CodePushGo can simplify the process. Features such as end-to-end encryption and CI/CD integration help teams maintain consistency while efficiently deploying updates.
 
 Success in platform management depends on using the right tools and adhering to platform-specific guidelines. By focusing on robust detection and management strategies, developers can ensure their apps perform seamlessly across both iOS and Android.

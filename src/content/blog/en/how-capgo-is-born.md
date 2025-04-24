@@ -1,14 +1,14 @@
 ---
 slug: how-capgo-is-born
-title: How Capgo is born
-description: Backstory on how i started this journey and builded Capgo
+title: How CodePushGo is born
+description: Backstory on how i started this journey and builded CodePushGo
 author: Martin Donadieu
 author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
 created_at: 2022-03-01T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
 head_image: /capgo_birth.webp
-head_image_alt: Capgo birth illusatration
+head_image_alt: CodePushGo birth illusatration
 keywords: mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Story
 published: true
@@ -41,7 +41,7 @@ After one month of trying, I found a way to download from one URL a zip and repl
 
 I shared about it and got huge interest on GitHub.
 
-That was too manual for most teams, so they asked for a paid service, that was where I started to work on Capgo as AppFlow alternative.
+That was too manual for most teams, so they asked for a paid service, that was where I started to work on CodePushGo as AppFlow alternative.
 
 The goal was to provide a simple and easy to use solution to push code updates to Capacitor JavaScript apps.
 

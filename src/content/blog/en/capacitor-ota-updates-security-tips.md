@@ -26,13 +26,13 @@ next_blog: ''
 
 ### Quick Comparison of OTA Platforms:
 
-| Feature | [Capgo](https://capgo.app/) | [AppFlow](https://ionic.io/appflow/) | [Capawesome](https://cloud.capawesome.io/) |
+| Feature | [CodePushGo](https://capgo.app/) | [AppFlow](https://ionic.io/appflow/) | [Capawesome](https://cloud.capawesome.io/) |
 | --- | --- | --- | --- |
 | End-to-End Encryption | Yes | No  | No  |
 | Rollback Capability | Instant | Manual | Manual |
 | Update Success Rate | 82% worldwide | Limited data | Limited data |
 
-**Pro Tip:** Capgo leads with 95% update adoption in 24 hours and advanced security features like real-time analytics and version control. Secure your OTA updates now by following these steps!
+**Pro Tip:** CodePushGo leads with 95% update adoption in 24 hours and advanced security features like real-time analytics and version control. Secure your OTA updates now by following these steps!
 
 ## Capacitor 2.0: Mobile apps & PWAs from one codebase
 
@@ -151,11 +151,11 @@ Pair rollback strategies with a phased deployment plan to minimize risk and test
 
 Building on secure deployment and testing, strong OTA management tools are crucial for protecting your Capacitor updates.
 
-### [Capgo](https://capgo.app/) Features Overview
+### [CodePushGo](https://capgo.app/) Features Overview
 
-![Capgo](https://assets.seobotai.com/capgo.app/67f1d348ebbb9dc80644cb8d/241c8f19433e01f315154c8988becf9c.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67f1d348ebbb9dc80644cb8d/241c8f19433e01f315154c8988becf9c.jpg)
 
-Capgo provides advanced security for [Capacitor OTA updates](https://capgo.app/ja/) with **end-to-end encryption**, ensuring that only authorized users can decrypt the updates.
+CodePushGo provides advanced security for [Capacitor OTA updates](https://capgo.app/ja/) with **end-to-end encryption**, ensuring that only authorized users can decrypt the updates.
 
 Here’s a breakdown of its key features:
 
@@ -173,7 +173,7 @@ Next, let’s see how major OTA platforms compare in terms of security and perfo
 
 When choosing an OTA platform for Capacitor apps, security and reliability are critical factors. Here’s how some of the top platforms measure up:
 
-| Feature | Capgo | AppFlow | Capawesome |
+| Feature | CodePushGo | AppFlow | Capawesome |
 | --- | --- | --- | --- |
 | End-to-End Encryption | Yes | No  | No  |
 | Update Success Rate | 82% worldwide | Limited data | Limited data |
@@ -182,15 +182,15 @@ When choosing an OTA platform for Capacitor apps, security and reliability are c
 | Update Distribution | Partial updates | Full bundle | Full bundle |
 | CI/CD Setup Cost | $2,600 one-time | Higher annual costs | Comparable |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo’s performance metrics further emphasize its reliability:
+CodePushGo’s performance metrics further emphasize its reliability:
 
--   **750 production apps** powered by Capgo
+-   **750 production apps** powered by CodePushGo
 -   **23.5 million updates** successfully delivered
 -   **95% of active users** complete updates within 24 hours [\[1\]](https://capgo.app/)
 
-These numbers showcase Capgo’s ability to deliver secure updates efficiently, making it an excellent choice for developers focused on both security and compliance with app store standards.
+These numbers showcase CodePushGo’s ability to deliver secure updates efficiently, making it an excellent choice for developers focused on both security and compliance with app store standards.
 
 ## Post-Release Security Steps
 
@@ -207,19 +207,19 @@ Automate alerts to catch unusual activity in update performance. This helps you 
 
 ### Security Maintenance
 
-Regularly review server logs and authentication systems to spot potential security threats early. Daily monitoring can uncover issues before they escalate - Capgo analytics back this up with data [\[1\]](https://capgo.app/). Also, make it a habit to check critical security components like SSL certificates, API authentication tokens, and access controls. This ensures your encryption and authentication setups stay up-to-date.
+Regularly review server logs and authentication systems to spot potential security threats early. Daily monitoring can uncover issues before they escalate - CodePushGo analytics back this up with data [\[1\]](https://capgo.app/). Also, make it a habit to check critical security components like SSL certificates, API authentication tokens, and access controls. This ensures your encryption and authentication setups stay up-to-date.
 
 ### User Security Guide
 
 Help users stay secure by encouraging them to accept updates promptly. Clear communication is essential - keep users informed and address their concerns through feedback channels.
 
-> "Track update success rates and user engagement in real-time" - Capgo [\[1\]](https://capgo.app/)
+> "Track update success rates and user engagement in real-time" - CodePushGo [\[1\]](https://capgo.app/)
 
 ## Summary
 
 Effective OTA security relies on encryption, file verification, and consistent monitoring. When implemented correctly, these strategies lead to impressive update success rates [\[1\]](https://capgo.app/).
 
-End-to-end encryption plays a critical role in protecting OTA updates, blocking unauthorized access and tampering. For example, Capgo achieves a 95% update rate among active users within 24 hours, highlighting the importance of strong encryption [\[1\]](https://capgo.app/). These elements form the backbone of a secure and reliable OTA update system.
+End-to-end encryption plays a critical role in protecting OTA updates, blocking unauthorized access and tampering. For example, CodePushGo achieves a 95% update rate among active users within 24 hours, highlighting the importance of strong encryption [\[1\]](https://capgo.app/). These elements form the backbone of a secure and reliable OTA update system.
 
 | Security Component | Key Implementation | Benefit |
 | --- | --- | --- |
@@ -228,6 +228,6 @@ End-to-end encryption plays a critical role in protecting OTA updates, blocking 
 | Monitoring | Real-time analytics | Detects issues quickly |
 | Access Control | Role-based permissions | Restricts unauthorized changes |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 Maintaining security requires continuous attention and the right tools. With proper monitoring, quick responses to threats, and regularly updated protocols, your OTA system can remain both secure and efficient. This aligns with thorough testing, careful management, and well-planned post-release processes.

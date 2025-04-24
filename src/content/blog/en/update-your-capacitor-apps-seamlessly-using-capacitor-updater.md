@@ -30,9 +30,9 @@ Moreover, it provides rollbacks if the new update crashes the app
 
 ## How does it work?
 
-Capgo keeps your app's JavaScript bundle in sync with the Capgo server, and every time the user opens the app, it checks with the Capgo server if a new update is available to the bundle. And of course, it comes with tons of awesome configurations which can help you fine-tune your user's experience.
+CodePushGo keeps your app's JavaScript bundle in sync with the CodePushGo server, and every time the user opens the app, it checks with the CodePushGo server if a new update is available to the bundle. And of course, it comes with tons of awesome configurations which can help you fine-tune your user's experience.
 
-I use Capgo in all my projects I build. That allows me to put less time in the App Store review process.
+I use CodePushGo in all my projects I build. That allows me to put less time in the App Store review process.
 
 You can read more about it [here](https://capgo.app/).
 
@@ -48,11 +48,11 @@ Even native app cannot update this part.
 
 But you can set up your CI/CD to handle this part, I made a tutorial on how to do it [here for IOS](https://capgo.app/blog/automatic-capacitor-android-build-github-action/).
 
-## Auto Capgo Configuration
+## Auto CodePushGo Configuration
 
-It’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a Capgo account](/register/).
+It’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a CodePushGo account](/register/).
 
-Once you’re logged into Capgo, You will have an onboarding page 
+Once you’re logged into CodePushGo, You will have an onboarding page 
 
 ![Onboarding page](/onboarding_1_new.webp)
 
@@ -63,11 +63,11 @@ Follow the steps on the onboarding page to add your first app.
 From a command line, directly into the root of your Capacitor app, run:
 
 `npx @capgo/cli@latest init`
-To install the Capgo into your Capacitor app, the CLI will walk you through the process of setting up your app with Capgo.
+To install the CodePushGo into your Capacitor app, the CLI will walk you through the process of setting up your app with CodePushGo.
 
 If you want to do it manually, you can follow the steps below.
 
-## Manual Capgo Configuration
+## Manual CodePushGo Configuration
 
 ### Install the plugin
 
@@ -88,7 +88,7 @@ This will tell the native plugin the installation as succeeded.
 
 Then do a `npm run build && npx cap copy` to update your app.
 
-### Login to Capgo CLOUD
+### Login to CodePushGo CLOUD
 
 First, use the `all` [apikey](https://web.capgo.app/dashboard/apikeys/) present in your account to log in with the CLI:
 
@@ -96,7 +96,7 @@ First, use the `all` [apikey](https://web.capgo.app/dashboard/apikeys/) present 
 
 ### Add your first app
 
-Let's get started by first creating an app in Capgo Cloud with the CLI.
+Let's get started by first creating an app in CodePushGo Cloud with the CLI.
 
 `npx @capgo/cli@latest app add`
 
@@ -104,18 +104,18 @@ This command will use all variables defined in the Capacitor config file to crea
 
 ### Upload your first version
 
-Run the command to build your code and send it to Capgo with:
+Run the command to build your code and send it to CodePushGo with:
 `npx @capgo/cli@latest bundle upload`
 
 By default, the version name will be the one in your `package.json` file.
 
-Check in [Capgo](https://web.capgo.app/) if the build is present.
+Check in [CodePushGo](https://web.capgo.app/) if the build is present.
 
 You can even test it with my [mobile sandbox app](https://capgo.app/app_mobile/).
 
 ### Make channel default
 
-After you have sent your app to Capgo, you need to make your channel `default` to let apps receive updates from Capgo.
+After you have sent your app to CodePushGo, you need to make your channel `default` to let apps receive updates from CodePushGo.
 
 `npx @capgo/cli@latest channel set production -s default`
 

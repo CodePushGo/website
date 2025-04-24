@@ -22,7 +22,7 @@ next_blog: ''
 -   **[Install Capacitor CLI](https://capgo.app/docs/cli/commands)**: Run `npm install @capacitor/cli @capacitor/core` and initialize your project with `npx cap init`.
 -   **Prepare Platforms**: Add support for iOS (`npx cap add ios`) and Android (`npx cap add android`) platforms.
 -   **Build and Sync**: Use `npm run build` and `npx cap sync` to transfer web assets to native projects.
--   **Optional Live Updates**: Use tools like [Capgo](https://capgo.app/) to push updates instantly without app store delays.
+-   **Optional Live Updates**: Use tools like [CodePushGo](https://capgo.app/) to push updates instantly without app store delays.
 
 Capacitor CLI simplifies app development and maintenance. Follow the guide for smooth setup and troubleshooting.
 
@@ -96,7 +96,7 @@ Once your Node.js and web project are ready, move on to installing platform-spec
     ```
     
 
-When integrating Capgo later, make sure you have a stable internet connection and valid SSL certificates.
+When integrating CodePushGo later, make sure you have a stable internet connection and valid SSL certificates.
 
 With these steps done, you're set for a smooth Capacitor development process. Next, you’ll install the Capacitor CLI.
 
@@ -267,7 +267,7 @@ If a plugin isn't behaving as expected, follow these steps:
     ```
     
 
-For those using [Capgo's native plugin](https://capgo.app/plugins/), it automatically synchronizes plugins and maintains compatibility during updates.
+For those using [CodePushGo's native plugin](https://capgo.app/plugins/), it automatically synchronizes plugins and maintains compatibility during updates.
 
 After applying these fixes, rebuild your project to verify the changes:
 
@@ -275,13 +275,13 @@ After applying these fixes, rebuild your project to verify the changes:
 npm run build && npx cap copy && npx cap sync
 ```
 
-Once everything is running smoothly, you can move forward with exploring live update options with Capgo.
+Once everything is running smoothly, you can move forward with exploring live update options with CodePushGo.
 
-## Live Updates with [Capgo](https://capgo.app/)
+## Live Updates with [CodePushGo](https://capgo.app/)
 
-![Capgo](https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
 
-Simplify [app updates](https://capgo.app/plugins/capacitor-updater/) using Capgo. It lets you push updates directly to users, skipping the need for app store reviews.
+Simplify [app updates](https://capgo.app/plugins/capacitor-updater/) using CodePushGo. It lets you push updates directly to users, skipping the need for app store reviews.
 
 **Getting started is simple.** First, install the necessary packages:
 
@@ -290,7 +290,7 @@ npm install @capgo/cli @capgo/capacitor-updater
 npx cap sync
 ```
 
-Then, initialize Capgo in your project:
+Then, initialize CodePushGo in your project:
 
 ```bash
 npx @capgo/cli init
@@ -298,7 +298,7 @@ npx @capgo/cli init
 
 ### Pricing Plans
 
-Capgo offers several pricing tiers to suit different needs:
+CodePushGo offers several pricing tiers to suit different needs:
 
 | Plan | Monthly Active Users | Bandwidth | Storage | Price (Annual) |
 | --- | --- | --- | --- | --- |
@@ -325,7 +325,7 @@ To enable live updates, add the following to your `capacitor.config.ts` file:
 
 ### Key Features
 
-Capgo provides several standout features:
+CodePushGo provides several standout features:
 
 -   **[Secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/)** with end-to-end encryption
 -   **Automated deployments** through integrated CI/CD
@@ -350,13 +350,13 @@ Test updates in development before deploying them live. Use the following comman
     ```
     
 
-Capgo ensures compliance with Apple and Android guidelines, so your live updates won't risk app store violations. It's an efficient way to manage Capacitor apps after installation.
+CodePushGo ensures compliance with Apple and Android guidelines, so your live updates won't risk app store violations. It's an efficient way to manage Capacitor apps after installation.
 
 ## Conclusion
 
 Setting up Capacitor CLI is simple when you have the right prerequisites in place. This setup ensures smoother app updates and efficient development workflows.
 
-Modern tools make app maintenance easier than ever. For example, Capgo now provides live updates, replacing older methods. Its integration with the CLI installation makes it a great option for developers working with Capacitor apps.
+Modern tools make app maintenance easier than ever. For example, CodePushGo now provides live updates, replacing older methods. Its integration with the CLI installation makes it a great option for developers working with Capacitor apps.
 
 The [Capacitor ecosystem](https://capgo.app/blog/capacitor-comprehensive-guide/) is constantly improving with new tools and features. Installing the CLI is just the starting point for [building mobile apps](https://capgo.app/blog/angular-mobile-app-capacitor/), and you'll benefit from detailed documentation and an active developer community.
 

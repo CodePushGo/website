@@ -31,7 +31,7 @@ Keeping your mobile app secure during live updates is critical to protecting use
 
 ### Why It Matters
 
-By following these practices, you can reduce security risks, comply with regulations like GDPR and HIPAA, and maintain user confidence. Tools like [Capgo](https://capgo.app/) and secure CI/CD pipelines can help streamline these processes while ensuring updates remain safe.
+By following these practices, you can reduce security risks, comply with regulations like GDPR and HIPAA, and maintain user confidence. Tools like [CodePushGo](https://capgo.app/) and secure CI/CD pipelines can help streamline these processes while ensuring updates remain safe.
 
 Let’s dive deeper into each practice to understand how they protect your app and users.
 
@@ -56,7 +56,7 @@ Here are some key measures to keep your updates secure:
 
 ### Authentication and Access Control
 
-Using tools like **Capgo**, encryption and role-based access control ensure only authorized personnel can manage updates. This layer of security minimizes risks from unauthorized changes or breaches.
+Using tools like **CodePushGo**, encryption and role-based access control ensure only authorized personnel can manage updates. This layer of security minimizes risks from unauthorized changes or breaches.
 
 ### Version Control and Integrity Checks
 

@@ -72,7 +72,7 @@ Make sure to gather these documents before starting your filing process:
 
 ### Platform-Specific Technical Information
 
-While iOS and Android share similar requirements, you'll need to provide detailed technical information about your app. This includes the app identifier, store URLs, server IPs, content security measures, and update mechanisms. Adhering to app store rules in China is critical for updates [\[1\]](https://capgo.app/). Tools like Capgo can help you manage compliant, live updates.
+While iOS and Android share similar requirements, you'll need to provide detailed technical information about your app. This includes the app identifier, store URLs, server IPs, content security measures, and update mechanisms. Adhering to app store rules in China is critical for updates [\[1\]](https://capgo.app/). Tools like CodePushGo can help you manage compliant, live updates.
 
 **Key Technical Tips:**
 
@@ -216,25 +216,25 @@ Be prepared for compliance issues by establishing a response plan:
 4.  Keep detailed records of any compliance incidents.
 5.  Develop procedures to address and resolve violations efficiently.
 
-## [Capgo](https://capgo.app/) for Chinese App Updates
+## [CodePushGo](https://capgo.app/) for Chinese App Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
 
-Capgo offers tools designed to simplify real-time updates while ensuring your app complies with Chinese regulations. These tools are essential for keeping your app running smoothly and meeting local requirements.
+CodePushGo offers tools designed to simplify real-time updates while ensuring your app complies with Chinese regulations. These tools are essential for keeping your app running smoothly and meeting local requirements.
 
-### Capgo ICP Compliance Tools
+### CodePushGo ICP Compliance Tools
 
-Capgo’s infrastructure is built to support ICP compliance with features like:
+CodePushGo’s infrastructure is built to support ICP compliance with features like:
 
 -   **Global CDN Performance:** Downloads 5MB bundles in just 114ms across China [\[1\]](https://capgo.app/).
 -   **Secure Delivery:** Provides end-to-end encryption for update packages [\[1\]](https://capgo.app/).
 -   **Compliance Monitoring:** Ensures 95% of users receive updates within 24 hours [\[1\]](https://capgo.app/).
 
-These features, combined with Capgo's developer tools, make app management in China more efficient.
+These features, combined with CodePushGo's developer tools, make app management in China more efficient.
 
 ### Developer Tools
 
-Capgo offers a suite of tools tailored for developers working in the Chinese market:
+CodePushGo offers a suite of tools tailored for developers working in the Chinese market:
 
 | Feature | Benefit | Performance Metric |
 | --- | --- | --- |
@@ -245,9 +245,9 @@ Capgo offers a suite of tools tailored for developers working in the Chinese mar
 
 ### Platform Comparison
 
-Capgo’s features provide a competitive advantage, as highlighted below:
+CodePushGo’s features provide a competitive advantage, as highlighted below:
 
-| Feature | Capgo | Market Alternatives |
+| Feature | CodePushGo | Market Alternatives |
 | --- | --- | --- |
 | Monthly Active Users | Up to 1,000,000 | Limited by plan |
 | Storage Capacity | Up to 20 GB | Variable |
@@ -255,9 +255,9 @@ Capgo’s features provide a competitive advantage, as highlighted below:
 | Update Speed | 434ms average response [\[1\]](https://capgo.app/) | Typically slower |
 | Cost Structure | Starts at $12/month | Generally higher |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
-Capgo currently supports 750 production apps and has delivered 23.5 million updates [\[1\]](https://capgo.app/).
+CodePushGo currently supports 750 production apps and has delivered 23.5 million updates [\[1\]](https://capgo.app/).
 
 ## Summary
 
@@ -278,14 +278,14 @@ When working on an ICP filing, these strategies can help:
 | Monitoring System | Tracks progress | Regularly check compliance requirements to stay updated with any changes. |
 | [Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) | Avoids violations | Keep app information and filings current with regulatory authorities. |
 
-### Capgo Benefits
+### CodePushGo Benefits
 
-Capgo simplifies the process of staying ICP-compliant by offering tools tailored for secure and quick app updates. The platform provides **end-to-end encryption**, a key requirement for meeting Chinese data security standards. Its live update feature allows developers to implement regulatory changes immediately, skipping the need for app store reviews. Capgo reports a global update success rate of 82%, ensuring 95% of active users receive updates within 24 hours [\[1\]](https://capgo.app/).
+CodePushGo simplifies the process of staying ICP-compliant by offering tools tailored for secure and quick app updates. The platform provides **end-to-end encryption**, a key requirement for meeting Chinese data security standards. Its live update feature allows developers to implement regulatory changes immediately, skipping the need for app store reviews. CodePushGo reports a global update success rate of 82%, ensuring 95% of active users receive updates within 24 hours [\[1\]](https://capgo.app/).
 
-Capgo also offers a channel system that lets developers test compliance updates with specific user groups before rolling them out widely. The analytics dashboard provides insights into update performance. Key features include:
+CodePushGo also offers a channel system that lets developers test compliance updates with specific user groups before rolling them out widely. The analytics dashboard provides insights into update performance. Key features include:
 
 -   **Instant Updates**: Apply regulatory changes immediately without app store delays.
 -   **Secure Delivery**: Updates are encrypted end-to-end to meet Chinese security requirements.
 -   **Flexible Hosting**: Choose between cloud-based or self-hosted options to meet localization needs.
 
-These tools make Capgo a valuable resource for developers navigating the Chinese market, where fast responses to regulatory changes are critical to staying compliant.
+These tools make CodePushGo a valuable resource for developers navigating the Chinese market, where fast responses to regulatory changes are critical to staying compliant.

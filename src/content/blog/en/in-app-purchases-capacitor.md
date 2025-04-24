@@ -315,4 +315,4 @@ Join use here 👇
 
 ## Register here to get your account
 
-[Capgo](/register/)
+[CodePushGo](/register/)

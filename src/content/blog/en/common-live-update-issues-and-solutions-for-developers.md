@@ -21,10 +21,10 @@ Live updates allow developers to push changes directly to users without app stor
 -   **Network Problems**: Use retry mechanisms, chunk-based downloads, and delta updates.
 -   **Version Conflicts**: Follow semantic versioning, test compatibility, and ensure proper data migration.
 -   **Device Compatibility**: Test across devices using tools like [BrowserStack](https://www.browserstack.com/app-live) and optimize updates for different hardware and OS versions.
--   **Build Errors in CI/CD**: Fix dependency conflicts, validate environment variables, and automate builds with tools like [Capgo](https://capgo.app/).
+-   **Build Errors in CI/CD**: Fix dependency conflicts, validate environment variables, and automate builds with tools like [CodePushGo](https://capgo.app/).
 -   **Security**: Protect updates with encryption, validation, and access control.
 
-**Quick Tip**: Tools like Capgo simplify over-the-air (OTA) updates with features like rollback options, staged rollouts, and real-time monitoring.
+**Quick Tip**: Tools like CodePushGo simplify over-the-air (OTA) updates with features like rollback options, staged rollouts, and real-time monitoring.
 
 Want smoother updates? Start by addressing these common issues to save time and improve user experience.
 
@@ -57,13 +57,13 @@ Here’s how to approach version control:
 -   Ensure data migration paths exist between versions.
 -   Use automated testing to confirm version compatibility.
 
-### Using [Capgo](https://capgo.app/) for OTA Updates
+### Using [CodePushGo](https://capgo.app/) for OTA Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-06.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-06.jpg?auto=compress)
 
-Capgo is a powerful tool for managing OTA updates. It offers features like built-in monitoring, rollback options, and secure delivery through end-to-end encryption. Plus, its CI/CD integration makes deployments smoother [\[3\]](https://appinventiv.com/blog/how-ci-cd-helps-mobile-app-development/).
+CodePushGo is a powerful tool for managing OTA updates. It offers features like built-in monitoring, rollback options, and secure delivery through end-to-end encryption. Plus, its CI/CD integration makes deployments smoother [\[3\]](https://appinventiv.com/blog/how-ci-cd-helps-mobile-app-development/).
 
-Key features of Capgo include:
+Key features of CodePushGo include:
 
 -   **Real-time monitoring** to keep track of updates.
 -   **Instant rollback** to resolve issues quickly.
@@ -115,18 +115,18 @@ Track key metrics during the update process, including:
 -   App startup time after updates
 -   Battery consumption while updating
 
-### Capgo CI/CD Setup Guide
+### CodePushGo CI/CD Setup Guide
 
-Capgo makes CI/CD workflows easier by solving common pipeline challenges, from automating builds to monitoring updates. Here's how you can set up a reliable pipeline:
+CodePushGo makes CI/CD workflows easier by solving common pipeline challenges, from automating builds to monitoring updates. Here's how you can set up a reliable pipeline:
 
 1\. **Automate Builds**  
-Set up triggers - like code pushes or pull requests - to handle builds automatically. Capgo's integration supports multiple deployment channels, allowing for controlled rollouts depending on the environment.
+Set up triggers - like code pushes or pull requests - to handle builds automatically. CodePushGo's integration supports multiple deployment channels, allowing for controlled rollouts depending on the environment.
 
 2\. **Use Version Control**  
 Adopt semantic versioning and a branching strategy (e.g., `main`, `staging`, `development`) to streamline deployments and maintain order.
 
 3\. **Monitor Updates**  
-Track key metrics with Capgo's analytics tools to keep tabs on:
+Track key metrics with CodePushGo's analytics tools to keep tabs on:
 
 -   Success rates of updates
 -   Download completion rates
@@ -197,7 +197,7 @@ Securing live updates requires multiple layers of protection. Here are the three
 | **Update Validation** | Cryptographic signatures | Confirms updates are genuine |
 | **Access Control** | Token-based authentication | Prevents unauthorized updates |
 
-Capgo's tools make securing updates easier by automating key processes:
+CodePushGo's tools make securing updates easier by automating key processes:
 
 -   **[Package Encryption](https://capgo.app/docs/cli/migrations/encryption/)**: Automatically encrypt update bundles.
 -   **Secure Transmission**: Ensure updates use HTTPS protocols.
@@ -230,7 +230,7 @@ With these security protocols in place, you're ready to explore solutions for st
 
 ### Solution Overview
 
-Using tools like Capgo helps address challenges in OTA updates, CI/CD pipelines, and device compatibility. These tools focus on solving common issues like network reliability, version control, and cross-platform compatibility, ensuring smooth updates for users.
+Using tools like CodePushGo helps address challenges in OTA updates, CI/CD pipelines, and device compatibility. These tools focus on solving common issues like network reliability, version control, and cross-platform compatibility, ensuring smooth updates for users.
 
 | **Challenge** | **Solution** | **Outcome** |
 | --- | --- | --- |
@@ -241,13 +241,13 @@ Using tools like Capgo helps address challenges in OTA updates, CI/CD pipelines,
 
 AI-powered tools are paving the way for smarter updates, offering features like real-time issue detection and automated fixes. Other trends include blockchain-based security, real-time monitoring, advanced compatibility checks, and better synchronization across platforms. Adopting these methods can help developers make their update processes more reliable and future-ready.
 
-### Starting with Capgo
+### Starting with CodePushGo
 
-Capgo makes implementing live update solutions simple, boosting deployment speed and reliability while reducing integration time.
+CodePushGo makes implementing live update solutions simple, boosting deployment speed and reliability while reducing integration time.
 
 Here’s how to begin:
 
--   Use Capgo’s CI/CD tools to automate testing.
+-   Use CodePushGo’s CI/CD tools to automate testing.
 -   Set up encryption and validate versions.
 -   Configure updates for specific user groups.
 

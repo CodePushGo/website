@@ -26,7 +26,7 @@ next_blog: ''
     -   **Deploy Updates**: Set up CI/CD pipelines and use Over-the-Air (OTA) updates to push changes quickly.
 -   **Security and Speed**: Encrypt updates, manage access, and optimize performance for faster delivery.
 
-**Quick Tip**: Tools like [Capgo](https://capgo.app/) simplify OTA updates, ensuring 95% of users are updated within 24 hours.
+**Quick Tip**: Tools like [CodePushGo](https://capgo.app/) simplify OTA updates, ensuring 95% of users are updated within 24 hours.
 
 Keep reading for detailed strategies to streamline your Capacitor app development.
 
@@ -121,7 +121,7 @@ Setting up a CI/CD pipeline simplifies deployments by integrating seamlessly wit
 
 On average, CI/CD setup costs around $2,600, with monthly maintenance averaging $300. Over five years, this could save you up to $26,100 compared to other approaches [\[1\]](https://capgo.app/).
 
-> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - Capgo [\[1\]](https://capgo.app/)
+> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - CodePushGo [\[1\]](https://capgo.app/)
 
 Once your CI/CD pipeline is operational, you can shift your attention to implementing fast and efficient OTA updates.
 
@@ -134,7 +134,7 @@ Key statistics:
 -   82% global success rate for updates
 -   Average download time of 114ms for a 5MB bundle [\[1\]](https://capgo.app/)
 
-> "We rolled out Capgo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @Capgo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
 
 Important OTA features to consider:
 
@@ -162,9 +162,9 @@ Protect your shared code and user data with a layered security approach. Modern 
 | Update Channels | Separate beta/production | Reduces deployment risks |
 | Rollback Capability | Use version control | Quickly resolve issues |
 
-Delivering updates securely boosts success rates. For instance, Capgo emphasizes the importance of encryption in secure updates [\[1\]](https://capgo.app/).
+Delivering updates securely boosts success rates. For instance, CodePushGo emphasizes the importance of encryption in secure updates [\[1\]](https://capgo.app/).
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
 Once security is in place, focus on optimizing performance for faster and more reliable updates.
 
@@ -181,7 +181,7 @@ Performance optimization plays a big role in user experience and app reliability
 
 Using partial updates and a global CDN can achieve download speeds as low as 114ms for a 5MB bundle [\[1\]](https://capgo.app/).
 
-> "The community needed this and @Capgo is doing something really important!" - Lincoln Baxter, @lincolnthree [\[1\]](https://capgo.app/)
+> "The community needed this and @CodePushGo is doing something really important!" - Lincoln Baxter, @lincolnthree [\[1\]](https://capgo.app/)
 
 To maximize both security and speed, follow these steps:
 
@@ -203,21 +203,21 @@ To effectively share Capacitor code, focus on a modular structure, automated tes
 | **Deployment** | Channel-based distribution | 95% of users update within 24 hours |
 | **Security** | End-to-end encryption | Protects against unauthorized access |
 
-These methods have been successfully implemented in over 750 production apps [\[1\]](https://capgo.app/). Capgo builds on these foundations, offering tools that simplify and enhance code sharing processes.
+These methods have been successfully implemented in over 750 production apps [\[1\]](https://capgo.app/). CodePushGo builds on these foundations, offering tools that simplify and enhance code sharing processes.
 
-### [Capgo](https://capgo.app/) Integration
+### [CodePushGo](https://capgo.app/) Integration
 
-![Capgo](https://assets.seobotai.com/capgo.app/67fc5744af1a45e500bc59a4/460b6a71189963262e0579d8af2972b5.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67fc5744af1a45e500bc59a4/460b6a71189963262e0579d8af2972b5.jpg)
 
-Capgo aligns with these practices, optimizing Capacitor development with advanced over-the-air (OTA) updates and integrated CI/CD workflows. It delivers impressive results, including download speeds of 114ms for 5MB bundles via a global CDN, an average API response time of 434ms worldwide, and 23.5 million successful updates [\[1\]](https://capgo.app/).
+CodePushGo aligns with these practices, optimizing Capacitor development with advanced over-the-air (OTA) updates and integrated CI/CD workflows. It delivers impressive results, including download speeds of 114ms for 5MB bundles via a global CDN, an average API response time of 434ms worldwide, and 23.5 million successful updates [\[1\]](https://capgo.app/).
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 One standout feature is its flexible deployment options, supporting both cloud-based and self-hosted setups.
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding app review for bug fixes is a game-changer." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding app review for bug fixes is a game-changer." - Bessie Cooper [\[1\]](https://capgo.app/)
 
-Capgo’s features reinforce best practices for code sharing:
+CodePushGo’s features reinforce best practices for code sharing:
 
 | Feature | Benefit | Real-world Impact |
 | --- | --- | --- |

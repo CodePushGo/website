@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**End-to-end encryption (E2EE)** is the best way to secure over-the-air (OTA) updates for apps. It ensures that only the intended user can decrypt and install updates, protecting against risks like tampering, code injection, and data breaches. Platforms like [Capgo](https://capgo.app/) have implemented E2EE to safeguard app integrity while meeting security standards like those required by Apple and Google.
+**End-to-end encryption (E2EE)** is the best way to secure over-the-air (OTA) updates for apps. It ensures that only the intended user can decrypt and install updates, protecting against risks like tampering, code injection, and data breaches. Platforms like [CodePushGo](https://capgo.app/) have implemented E2EE to safeguard app integrity while meeting security standards like those required by Apple and Google.
 
 ### Key Benefits of Encrypted OTA Updates:
 
@@ -31,7 +31,7 @@ next_blog: ''
 2.  Secure key exchange ensures only authorized devices can decrypt.
 3.  Devices verify authenticity and install the update safely.
 
-Capgo's solution has delivered 23.5 million updates globally, achieving a **95% adoption rate within 24 hours** and an **82% success rate worldwide**. By [encrypting updates](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/), developers can deploy faster, safer, and more reliably.
+CodePushGo's solution has delivered 23.5 million updates globally, achieving a **95% adoption rate within 24 hours** and an **82% success rate worldwide**. By [encrypting updates](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/), developers can deploy faster, safer, and more reliably.
 
 ## Secure OTA updates for [ESP32](https://en.wikipedia.org/wiki/ESP32) – Set up code signing with ...
 
@@ -43,7 +43,7 @@ End-to-end encryption (E2EE) ensures that OTA update packages stay private and p
 
 ### Core Concepts of End-to-End Encryption
 
-E2EE establishes a secure connection between the developer's build system and the user's device. This means that even if someone intercepts the update, they won’t be able to access its contents. As Capgo explains:
+E2EE establishes a secure connection between the developer's build system and the user's device. This means that even if someone intercepts the update, they won’t be able to access its contents. As CodePushGo explains:
 
 > "Only your users can decrypt your updates, no one else." [\[1\]](https://capgo.app/)
 
@@ -61,7 +61,7 @@ The process of securing an OTA update involves several steps:
 2.  A secure key exchange ensures only authorized devices can access the decryption keys.
 3.  When the device downloads the update, it runs cryptographic checks to confirm the update’s authenticity and detect any tampering.
 
-Capgo emphasizes this approach, stating:
+CodePushGo emphasizes this approach, stating:
 
 > "The only solution with true end-to-end encryption, others just sign updates" [\[1\]](https://capgo.app/)
 
@@ -73,11 +73,11 @@ This multi-step process ensures that updates are protected from the moment they�
 
 This section explains how to implement end-to-end encryption in [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/), building on the concepts covered earlier.
 
-To ensure secure over-the-air (OTA) updates in Capacitor, use encryption protocols designed for high security. Capgo's platform simplifies managing encryption keys while adhering to leading security standards.
+To ensure secure over-the-air (OTA) updates in Capacitor, use encryption protocols designed for high security. CodePushGo's platform simplifies managing encryption keys while adhering to leading security standards.
 
 ### Encrypting Update Packages
 
-Start by preparing your update package using Capgo's CLI tool. This tool automates the encryption process, making it easier to secure your updates. Install the Capgo plugin with the following command:
+Start by preparing your update package using CodePushGo's CLI tool. This tool automates the encryption process, making it easier to secure your updates. Install the CodePushGo plugin with the following command:
 
 ```
 npx @capgo/cli init
@@ -89,13 +89,13 @@ Once the package is encrypted, ensure that encryption keys are securely exchange
 
 ### Exchanging Keys Securely
 
-Capgo integrates key management systems that comply with Apple and Google security requirements [\[1\]](https://capgo.app/). This ensures that encryption keys are exchanged securely and reliably.
+CodePushGo integrates key management systems that comply with Apple and Google security requirements [\[1\]](https://capgo.app/). This ensures that encryption keys are exchanged securely and reliably.
 
 After the keys are in place, the encrypted package can be sent using a secure data transfer protocol.
 
 ### Secure Data Transfer
 
-Capgo's platform ensures fast and secure data delivery. For example, a 5MB bundle is transmitted in just 114ms, and the system has successfully delivered 23.5 million updates [\[1\]](https://capgo.app/).
+CodePushGo's platform ensures fast and secure data delivery. For example, a 5MB bundle is transmitted in just 114ms, and the system has successfully delivered 23.5 million updates [\[1\]](https://capgo.app/).
 
 Here’s a quick look at its performance metrics:
 
@@ -105,7 +105,7 @@ Here’s a quick look at its performance metrics:
 | Bundle Download Speed | 114ms for 5MB |
 | Update Success Rate | 95% within 24 hours |
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 ## Advantages of Encrypted OTA Updates
 
@@ -132,7 +132,7 @@ In addition to compliance, encryption directly supports user trust by demonstrat
 
 Encrypted updates not only reinforce user confidence but also simplify and speed up deployment. This combination of trust and automation is particularly useful for teams practicing continuous deployment, leading many developers to move away from older update methods.
 
-> "Only your users can decrypt your updates, no one else." – Capgo [\[1\]](https://capgo.app/)
+> "Only your users can decrypt your updates, no one else." – CodePushGo [\[1\]](https://capgo.app/)
 
 ## Security Guidelines for OTA Updates
 
@@ -152,7 +152,7 @@ After securing keys, rigorous testing is necessary to validate the integrity of 
 
 ### Update Testing and Tracking
 
-Testing and tracking are essential to ensure updates are safe and effective. According to Capgo's analytics, updates that are thoroughly tested see a 95% user adoption rate within 24 hours [\[1\]](https://capgo.app/).
+Testing and tracking are essential to ensure updates are safe and effective. According to CodePushGo's analytics, updates that are thoroughly tested see a 95% user adoption rate within 24 hours [\[1\]](https://capgo.app/).
 
 To keep updates secure:
 
@@ -173,13 +173,13 @@ Once testing confirms the security of an update, controlled distribution helps r
 
 Careful channel management ensures updates are deployed successfully worldwide [\[1\]](https://capgo.app/).
 
-> "Target specific user groups with different versions using channels for beta testing and staged rollouts" - Capgo [\[1\]](https://capgo.app/)
+> "Target specific user groups with different versions using channels for beta testing and staged rollouts" - CodePushGo [\[1\]](https://capgo.app/)
 
 ## Conclusion
 
 End-to-end encryption plays a crucial role in securing OTA updates. By using strong encryption protocols, updates stay protected while adhering to app store guidelines.
 
-The numbers speak for themselves. With Capgo's implementation of end-to-end encryption, developers achieve an impressive 82% global success rate [\[1\]](https://capgo.app/). This not only ensures secure delivery but also boosts user confidence and speeds up deployments.
+The numbers speak for themselves. With CodePushGo's implementation of end-to-end encryption, developers achieve an impressive 82% global success rate [\[1\]](https://capgo.app/). This not only ensures secure delivery but also boosts user confidence and speeds up deployments.
 
 The benefits of secure OTA updates go beyond just security. Developers have successfully delivered over 23.5 million updates worldwide [\[1\]](https://capgo.app/), showing how encryption can scale efficiently without compromising on safety.
 

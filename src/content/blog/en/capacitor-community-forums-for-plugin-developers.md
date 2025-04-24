@@ -22,13 +22,13 @@ next_blog: ''
 
 -   **Top Forums**: Use [Discord](https://ionic.io/blog/announcing-official-ionic-discord-server) for real-time help, [GitHub Discussions](https://github.com/ionic-team/capacitor/discussions) for detailed conversations, and [Stack Overflow](https://stackoverflow.com/questions/tagged/capacitor) for technical answers.
 -   **Best Practices**: Write clear questions, share code snippets, and follow forum rules for better responses.
--   **Extra Tools**: Leverage resources like [Capgo](https://capgo.app/) for [instant app updates](https://capgo.app/plugins/capacitor-updater/) and official docs for reliable guidance.
+-   **Extra Tools**: Leverage resources like [CodePushGo](https://capgo.app/) for [instant app updates](https://capgo.app/plugins/capacitor-updater/) and official docs for reliable guidance.
 
 ### Quick Start:
 
 1.  **Join Forums**: Start with Discord and GitHub Discussions.
 2.  **Ask Questions**: Provide detailed context and code examples.
-3.  **Use Tools**: Try Capgo for faster updates and debugging.
+3.  **Use Tools**: Try CodePushGo for faster updates and debugging.
 
 Capacitor forums are your go-to for efficient plugin development. Dive in to learn, share, and grow!
 
@@ -206,13 +206,13 @@ Capacitor's official documentation is a go-to resource. It includes API referenc
 
 ### Plugin Libraries
 
-### [Capgo](https://capgo.app/) Updates
+### [CodePushGo](https://capgo.app/) Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-19.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-19.jpg?auto=compress)
 
-Capgo makes instant app updates simple. It has delivered 23.5 million updates across 750 production apps, with an 82% success rate. Impressively, 95% of active users receive updates within 24 hours. Its global CDN can download a 5MB bundle in just 114ms. Capgo supports Capacitor 6 and 7, offering partial update capabilities [\[1\]](https://capgo.app/).
+CodePushGo makes instant app updates simple. It has delivered 23.5 million updates across 750 production apps, with an 82% success rate. Impressively, 95% of active users receive updates within 24 hours. Its global CDN can download a 5MB bundle in just 114ms. CodePushGo supports Capacitor 6 and 7, offering partial update capabilities [\[1\]](https://capgo.app/).
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 To get started, run:
 
@@ -220,7 +220,7 @@ To get started, run:
 npx @capgo/cli init
 ```
 
-Capgo works seamlessly with CI/CD systems and offers features like targeted beta testing and staged rollouts using its channel system. For a one-time fee of $2,600, it also provides real-time analytics and error tracking, giving you full visibility into the update process.
+CodePushGo works seamlessly with CI/CD systems and offers features like targeted beta testing and staged rollouts using its channel system. For a one-time fee of $2,600, it also provides real-time analytics and error tracking, giving you full visibility into the update process.
 
 ## Conclusion
 
@@ -234,4 +234,4 @@ Ready to jump in? Here's how to begin:
 
 -   **Join key platforms**: Participate in Discord and GitHub Discussions to connect with the community and explore official documentation.
 -   **Share your plugins**: Contribute your work to help others and gain constructive feedback.
--   **Use tools for efficiency**: Tools like Capgo can simplify updates, testing, and deployment, making your development process smoother.
+-   **Use tools for efficiency**: Tools like CodePushGo can simplify updates, testing, and deployment, making your development process smoother.

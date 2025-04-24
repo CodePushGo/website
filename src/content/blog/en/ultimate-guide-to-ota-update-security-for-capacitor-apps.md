@@ -31,7 +31,7 @@ Over-the-air (OTA) updates are a fast way to improve [Capacitor](https://capacit
 | Code Injection | App compromise | Bundle signing, file checks |
 | Downgrade Attacks | Exploitation of old flaws | Version control, integrity checks |
 
-To stay compliant with App Store and [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) rules, ensure updates are secure, transparent, and protect user data. Tools like [Capgo](https://capgo.app/) can automate encryption, signing, and monitoring for safer OTA updates.
+To stay compliant with App Store and [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) rules, ensure updates are secure, transparent, and protect user data. Tools like [CodePushGo](https://capgo.app/) can automate encryption, signing, and monitoring for safer OTA updates.
 
 ## [Capacitor](https://capacitorjs.com/) for Enterprise
 
@@ -45,7 +45,7 @@ In 2022, researchers discovered that 78% of devices with OTA capabilities had vu
 
 ### Update Bundle Signing
 
-Bundle signing is the first step to ensure only authorized updates are distributed. Developers use private keys to sign update bundles, while apps verify them using embedded public keys. For example, Capgo integrates public keys during the app build process, adhering to platform-specific security protocols.
+Bundle signing is the first step to ensure only authorized updates are distributed. Developers use private keys to sign update bundles, while apps verify them using embedded public keys. For example, CodePushGo integrates public keys during the app build process, adhering to platform-specific security protocols.
 
 | Signing Component | Purpose | Security Advantage |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ Bundle signing is the first step to ensure only authorized updates are distribut
 
 ### Secure Data Transfer
 
-Secure data transfer is critical for protecting updates during transmission. TLS 1.3 is the standard for this, reducing handshake times by 40% compared to TLS 1.2 [\[6\]](https://interrupt.memfault.com/blog/firmware-encryption-with-python). It also incorporates features like certificate pinning and mutual TLS (mTLS) authentication to block man-in-the-middle attacks and establish trust between the app and update server. Capgo enforces TLS 1.3 by default and supports custom certificate pinning setups, ensuring robust protection during data transfer.
+Secure data transfer is critical for protecting updates during transmission. TLS 1.3 is the standard for this, reducing handshake times by 40% compared to TLS 1.2 [\[6\]](https://interrupt.memfault.com/blog/firmware-encryption-with-python). It also incorporates features like certificate pinning and mutual TLS (mTLS) authentication to block man-in-the-middle attacks and establish trust between the app and update server. CodePushGo enforces TLS 1.3 by default and supports custom certificate pinning setups, ensuring robust protection during data transfer.
 
 ### Update File Verification
 
@@ -74,7 +74,7 @@ A two-step encryption process is used, combining **AES-256** for encrypting the 
 | Package Content | AES-256 | Protects the actual update files |
 | Key Exchange | RSA-2048 | Secures the delivery of encryption keys |
 
-Each update package is encrypted with a unique AES key, which is then encrypted using the device's public RSA key. Capgo applies this method automatically, generating fresh encryption keys for every update distribution [\[4\]](https://parsers.vc/news/250207-navigating-the-new-frontier-of-mobile-app/).
+Each update package is encrypted with a unique AES key, which is then encrypted using the device's public RSA key. CodePushGo applies this method automatically, generating fresh encryption keys for every update distribution [\[4\]](https://parsers.vc/news/250207-navigating-the-new-frontier-of-mobile-app/).
 
 ### Encryption Key Security
 
@@ -143,7 +143,7 @@ In 2024, **41% of organizations** faced security incidents tied to OTA updates [
 | Network Surveillance | Spot unauthorized access attempts | Traffic filtering |
 | User Behavior Analytics | Identify suspicious update behaviors | Behavioral models |
 
-To stay ahead of attackers, detection systems need constant updates. Machine learning plays a key role by adapting to new attack methods [\[1\]](https://github.com/capacitor-community/android-security-provider)[\[2\]](https://www.iotinsider.com/industries/security/over-the-air-updates-ota-best-practices-for-device-safety/). Capgo strengthens this process with real-time integrity checks and behavioral analysis [\[4\]](https://parsers.vc/news/250207-navigating-the-new-frontier-of-mobile-app/).
+To stay ahead of attackers, detection systems need constant updates. Machine learning plays a key role by adapting to new attack methods [\[1\]](https://github.com/capacitor-community/android-security-provider)[\[2\]](https://www.iotinsider.com/industries/security/over-the-air-updates-ota-best-practices-for-device-safety/). CodePushGo strengthens this process with real-time integrity checks and behavioral analysis [\[4\]](https://parsers.vc/news/250207-navigating-the-new-frontier-of-mobile-app/).
 
 ### Security Response Plan
 
@@ -156,15 +156,15 @@ For Capacitor apps using OTA updates, having a clear response plan is essential.
 | Investigation | Conduct root cause analysis |
 | Recovery | Restore systems and services |
 
-Capgo streamlines responses for Capacitor apps by automating actions like quarantining suspicious updates and creating forensic logs for deeper analysis [\[4\]](https://parsers.vc/news/250207-navigating-the-new-frontier-of-mobile-app/).
+CodePushGo streamlines responses for Capacitor apps by automating actions like quarantining suspicious updates and creating forensic logs for deeper analysis [\[4\]](https://parsers.vc/news/250207-navigating-the-new-frontier-of-mobile-app/).
 
 These detection and response measures work hand-in-hand with encryption and signing protocols to provide a multi-layered defense system.
 
-## [Capgo](https://capgo.app/) Security Features
+## [CodePushGo](https://capgo.app/) Security Features
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-13.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-13.jpg?auto=compress)
 
-Capgo ensures security through three key approaches that work alongside its monitoring systems:
+CodePushGo ensures security through three key approaches that work alongside its monitoring systems:
 
 ### Encryption and Standards
 
@@ -173,18 +173,18 @@ Capgo ensures security through three key approaches that work alongside its moni
 | Package Protection | AES-256 and RSA-2048 hybrid encryption |
 | Platform Compliance | Automated content validation |
 
-Capgo enforces update restrictions required by the App Store using automated content validation.
+CodePushGo enforces update restrictions required by the App Store using automated content validation.
 
 ### CI/CD Security
 
-Security is built into Capgo's CI/CD pipeline with:
+Security is built into CodePushGo's CI/CD pipeline with:
 
 -   **Token-based deployment authentication** to secure the process
 -   **Phased rollouts** that include an emergency pause option for quick issue mitigation
 
 ### Open-Source Advantages
 
-Capgo's open-source framework allows for community-driven improvements, which are critical for OTA system security.
+CodePushGo's open-source framework allows for community-driven improvements, which are critical for OTA system security.
 
 -   A **public codebase** enables independent audits
 -   Over **180 contributors** help identify and address vulnerabilities
@@ -212,7 +212,7 @@ Here’s a quick guide to setting up a secure OTA system:
     Continuously adhere to platform guidelines and privacy regulations, like those outlined in App Store Rules.
     
 
-Capgo’s automated validation tools and phased rollouts make it easier to put these strategies into action while staying compliant.
+CodePushGo’s automated validation tools and phased rollouts make it easier to put these strategies into action while staying compliant.
 
 ## FAQs
 

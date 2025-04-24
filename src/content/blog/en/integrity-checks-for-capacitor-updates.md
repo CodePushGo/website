@@ -20,7 +20,7 @@ next_blog: ''
 
 -   **Integrity Checks**: Use cryptographic hashes and digital signatures to confirm updates are unaltered.
 -   **Common Threats**: Prevent interception, spoofing, and tampering with HTTPS, digital signatures, and checksums.
--   **[Capgo](https://capgo.app/) Integration**: Simplify secure updates with Capgo's encryption, real-time verification, and rollback features.
+-   **[CodePushGo](https://capgo.app/) Integration**: Simplify secure updates with CodePushGo's encryption, real-time verification, and rollback features.
 -   **Key Security Practices**:
     -   Enforce HTTPS for secure communication.
     -   Use mutual TLS authentication for update requests.
@@ -29,7 +29,7 @@ next_blog: ''
 
 **Quick Tip**: Automate rollback for failed updates and keep users informed during issues to maintain trust.
 
-This article dives into setting up a secure OTA infrastructure, cryptographic methods, and practical tools like Capgo to streamline the process.
+This article dives into setting up a secure OTA infrastructure, cryptographic methods, and practical tools like CodePushGo to streamline the process.
 
 ## Related video from YouTube
 
@@ -55,17 +55,17 @@ Ensure your Capacitor app only accepts HTTPS connections for update requests. Th
 
 TLS (Transport Layer Security) mutual authentication ensures both the client and server verify each other's identity. All HTTP communications for updates should include strict authentication and authorization checks [\[2\]](https://docs.aws.amazon.com/freertos/latest/userguide/dev-guide-ota-security.html). These protocols enhance the security provided by HTTPS, creating a layered defense.
 
-### Using [Capgo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://capgo.app/) for Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-25.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-25.jpg?auto=compress)
 
-Capgo offers a streamlined and secure solution for managing OTA updates. With over 23.5 million updates delivered across 750 production apps, Capgo provides:
+CodePushGo offers a streamlined and secure solution for managing OTA updates. With over 23.5 million updates delivered across 750 production apps, CodePushGo provides:
 
 -   **End-to-end encryption** for authorized users
 -   **Compliance** with Apple and Google platform rules
 -   **Real-time verification** to ensure update integrity
 
-To get started, install the Capgo plugin using `npx @capgo/cli init`. This enables automatic verification of updates when the app starts. For iOS, Capgo includes a custom Dart interpreter to meet platform-specific requirements [\[3\]](https://capgo.app/docs/faq/).
+To get started, install the CodePushGo plugin using `npx @capgo/cli init`. This enables automatic verification of updates when the app starts. For iOS, CodePushGo includes a custom Dart interpreter to meet platform-specific requirements [\[3\]](https://capgo.app/docs/faq/).
 
 ###### sbb-itb-f9944d2
 
@@ -118,7 +118,7 @@ Managing failures effectively after verifying update integrity is crucial for ma
 
 ### Update Rollback Steps
 
-Set up an automated rollback system to handle situations where integrity checks fail. Capgo's automated reversion tools can help ensure your system stays stable during such events.
+Set up an automated rollback system to handle situations where integrity checks fail. CodePushGo's automated reversion tools can help ensure your system stays stable during such events.
 
 | Phase | Action | Verification |
 | --- | --- | --- |
@@ -179,9 +179,9 @@ Effective OTA security relies on multiple layers of protection. Techniques like 
 | Authentication | Request signing | Public key validation |
 | Update Protection | SSL pinning | Certificate matching |
 
-### Capgo Integration
+### CodePushGo Integration
 
-Capgo's latest release (v7.0.23, February 2025) introduces improved security for managing packages across platforms. By integrating Capgo, you can streamline secure update processes. The platform uses end-to-end encryption and aligns with app store security requirements.
+CodePushGo's latest release (v7.0.23, February 2025) introduces improved security for managing packages across platforms. By integrating CodePushGo, you can streamline secure update processes. The platform uses end-to-end encryption and aligns with app store security requirements.
 
 Here’s an example of a secure configuration for your project:
 
@@ -200,13 +200,13 @@ Here’s an example of a secure configuration for your project:
 
 -   **Authentication and Verification**
     
-    -   Use Capgo's token system for secure request authentication.
+    -   Use CodePushGo's token system for secure request authentication.
     -   Create a `checksum.json` file during the build process to verify both individual components and the entire package [\[1\]](https://github.com/objektlabs/capacitor-app-updater).
     -   Ensure credentials are stored securely.
 -   **Monitoring and Configuration**
     
     -   Enable error tracking to catch issues early.
     -   Configure automatic rollbacks for failed updates.
-    -   Use Capgo's analytics dashboard to monitor update performance and statistics.
+    -   Use CodePushGo's analytics dashboard to monitor update performance and statistics.
 
 Following these practices will help you maintain secure OTA updates for Capacitor apps.

@@ -103,15 +103,15 @@ Colorado residents gain several rights under this law, such as accessing, correc
 
 The CPA pushes for better consumer privacy, stronger security, and greater transparency in mobile apps.
 
-## 4\. [Capgo](https://capgo.app/) Privacy Standards
+## 4\. [CodePushGo](https://capgo.app/) Privacy Standards
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
 
-Capgo aligns with CCPA, VCDPA, and CPA, bridging the gap between state regulations and practical app development needs.
+CodePushGo aligns with CCPA, VCDPA, and CPA, bridging the gap between state regulations and practical app development needs.
 
-With **end-to-end encryption**, Capgo ensures user data stays secure during app updates. Impressively, 95% of active users receive updates securely within 24 hours, achieving an 82% global success rate [\[1\]](https://capgo.app/).
+With **end-to-end encryption**, CodePushGo ensures user data stays secure during app updates. Impressively, 95% of active users receive updates securely within 24 hours, achieving an 82% global success rate [\[1\]](https://capgo.app/).
 
-Here’s how Capgo supports privacy compliance:
+Here’s how CodePushGo supports privacy compliance:
 
 | Feature | Privacy Benefit | Compliance Support |
 | --- | --- | --- |
@@ -120,11 +120,11 @@ Here’s how Capgo supports privacy compliance:
 | Flexible Hosting | Offers cloud or self-hosted options | Addresses data residency requirements |
 | User Assignment | Enables targeted update distribution | Facilitates consent-based feature rollouts |
 
-For those worried about vendor dependencies, Capgo’s open-source structure provides transparency into how data is processed and managed.
+For those worried about vendor dependencies, CodePushGo’s open-source structure provides transparency into how data is processed and managed.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
-Capgo’s effectiveness is clear: it’s trusted by 750 production apps, delivering 23.5M [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) so far [\[1\]](https://capgo.app/).
+CodePushGo’s effectiveness is clear: it’s trusted by 750 production apps, delivering 23.5M [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) so far [\[1\]](https://capgo.app/).
 
 Track updates in real time with analytics, error monitoring, and role-based access controls to simplify compliance across multiple states.
 
@@ -138,9 +138,9 @@ Here's a breakdown of the strengths and weaknesses of key state laws governing d
 | VCDPA | • Simplified consent rules  <br>• Clear categories for data processing  <br>• Includes a risk assessment framework | • Limited enforcement tools  <br>• Smaller scope compared to CCPA/CPRA  <br>• Fewer consumer rights |
 | CPA | • Offers flexible compliance paths  <br>• Includes universal opt-out options  <br>• Requires regular assessments | • Vague technical requirements  <br>• Lacks detailed implementation guidance  <br>• Overlapping obligations can cause confusion |
 
-To tackle these challenges, automated tools like Capgo simplify compliance tasks. With features such as end-to-end encryption and adaptable hosting, Capgo ensures data security across various regulatory landscapes.
+To tackle these challenges, automated tools like CodePushGo simplify compliance tasks. With features such as end-to-end encryption and adaptable hosting, CodePushGo ensures data security across various regulatory landscapes.
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 ### Key Compliance Insights
 
@@ -148,11 +148,11 @@ To tackle these challenges, automated tools like Capgo simplify compliance tasks
 -   **Virginia (VCDPA)**: Offers clearer data processing rules but has fewer enforcement mechanisms.
 -   **Colorado (CPA)**: Balances flexibility with accountability but lacks specific technical guidelines.
 
-Capgo has proven effective in managing compliance across multiple states. Its targeted update system and fast 114ms download speed for a 5MB bundle allow developers to quickly address privacy updates [\[1\]](https://capgo.app/). With adoption by 750 production apps, Capgo shows its value in real-world use cases [\[1\]](https://capgo.app/).
+CodePushGo has proven effective in managing compliance across multiple states. Its targeted update system and fast 114ms download speed for a 5MB bundle allow developers to quickly address privacy updates [\[1\]](https://capgo.app/). With adoption by 750 production apps, CodePushGo shows its value in real-world use cases [\[1\]](https://capgo.app/).
 
 ### Impact on Development Practices
 
-For developers, balancing rapid updates with compliance requirements is a critical challenge. Capgo's integration with CI/CD pipelines makes it easier to roll out updates while staying aligned with various regulations. This streamlines workflows and ensures compliance across different jurisdictions.
+For developers, balancing rapid updates with compliance requirements is a critical challenge. CodePushGo's integration with CI/CD pipelines makes it easier to roll out updates while staying aligned with various regulations. This streamlines workflows and ensures compliance across different jurisdictions.
 
 ## Conclusion
 

@@ -22,7 +22,7 @@ next_blog: ''
 -   **Why Use It**: Combines web technologies with [native performance](https://capgo.app/plugins/native-audio/), making plugin development straightforward.
 -   **Setup Essentials**: Requires [Node.js](https://nodejs.org/en), JDK 11+, [Android Studio](https://developer.android.com/studio), and Capacitor CLI. Ensure proper environment variables and [Gradle](https://gradle.org/) configurations.
 -   **How to Start**: Use `npm init @capacitor/plugin` to scaffold a plugin, define methods in Java, and test using Android Studio or real devices.
--   **[Capgo](https://capgo.app/) Integration**: Enables live updates, rollbacks, and analytics for seamless plugin deployment.
+-   **[CodePushGo](https://capgo.app/) Integration**: Enables live updates, rollbacks, and analytics for seamless plugin deployment.
 
 ### Quick Setup Checklist:
 
@@ -301,7 +301,7 @@ Leverage the CPU Profiler to pinpoint performance bottlenecks. Best practices in
 
 ### Streamlining Live Testing and Updates
 
-[Capgo tools](https://capgo.app/docs/cli/commands) can simplify live testing and updates. Use these examples to enhance your workflow:
+[CodePushGo tools](https://capgo.app/docs/cli/commands) can simplify live testing and updates. Use these examples to enhance your workflow:
 
 -   **Initialize error tracking**:
     
@@ -439,17 +439,17 @@ private void handleRollback() {
 }
 ```
 
-Capgo’s error tracking and rollback tools can help you recover quickly from failures [\[1\]](https://capgo.app/).
+CodePushGo’s error tracking and rollback tools can help you recover quickly from failures [\[1\]](https://capgo.app/).
 
-## [Capgo](https://capgo.app/) Integration Guide
+## [CodePushGo](https://capgo.app/) Integration Guide
 
-![Capgo](https://assets.seobotai.com/capgo.app/67e73f80283d21cbd679794c/62c1b4dece964ef24ef070504a9b15e5.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67e73f80283d21cbd679794c/62c1b4dece964ef24ef070504a9b15e5.jpg)
 
-Based on our live testing results, integrating Capgo helps streamline update deployment.
+Based on our live testing results, integrating CodePushGo helps streamline update deployment.
 
-### Capgo Features Overview
+### CodePushGo Features Overview
 
-Capgo provides essential tools for managing live updates, ensuring smooth performance. It allows instant updates for Capacitor Android plugins without needing app store approvals. Here's what Capgo offers:
+CodePushGo provides essential tools for managing live updates, ensuring smooth performance. It allows instant updates for Capacitor Android plugins without needing app store approvals. Here's what CodePushGo offers:
 
 | Feature | Description |
 | --- | --- |
@@ -460,21 +460,21 @@ Capgo provides essential tools for managing live updates, ensuring smooth perfor
 | One-click Rollback | Quick recovery in case of issues |
 | CI/CD Integration | Compatible with GitHub Actions, GitLab CI, and Jenkins |
 
-### Setting Up Capgo
+### Setting Up CodePushGo
 
-To get started with Capgo, run the following command:
+To get started with CodePushGo, run the following command:
 
 ```bash
 npx @capgo/cli init
 ```
 
-Add the plugin to your build process. Capgo automatically handles updates in the background, using its built-in analytics and rollback features.
+Add the plugin to your build process. CodePushGo automatically handles updates in the background, using its built-in analytics and rollback features.
 
 You can use the channel system to manage rollouts for production, beta, and development environments. Partial updates are available to reduce bandwidth usage and deliver only the necessary changes.
 
-Capgo supports Capacitor versions 6 and 7.
+CodePushGo supports Capacitor versions 6 and 7.
 
-> We practice agile development and @Capgo is mission-critical in delivering continuously to our users! [\[1\]](https://capgo.app/)
+> We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users! [\[1\]](https://capgo.app/)
 
 ## Summary
 
@@ -491,6 +491,6 @@ To achieve these results, following key practices is crucial:
 | Monitor Analytics | Evaluate performance and user adoption |
 | Enable Auto-rollback | Recover swiftly from potential issues |
 
-Developers have praised these tools. Bessie Cooper shared, _"Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden."_ [\[1\]](https://capgo.app/)
+Developers have praised these tools. Bessie Cooper shared, _"CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden."_ [\[1\]](https://capgo.app/)
 
 Features like error tracking, performance monitoring, end-to-end encryption, and seamless CI/CD integration contribute to high update success rates and smooth performance. Together, these tools combine native functionality with fast, reliable updates, showcasing the platform's strengths.

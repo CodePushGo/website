@@ -16,14 +16,14 @@ locale: en
 next_blog: ''
 ---
 
-**Want faster, error-free app releases for iOS and Android?** CI/CD pipelines for [Capacitor](https://capacitorjs.com/) apps automate building, testing, and deployment, cutting release times by up to 70% and reducing errors by 60%. This guide covers everything you need to know, from setting up your environment to automating live updates with [Capgo](https://capgo.app/).
+**Want faster, error-free app releases for iOS and Android?** CI/CD pipelines for [Capacitor](https://capacitorjs.com/) apps automate building, testing, and deployment, cutting release times by up to 70% and reducing errors by 60%. This guide covers everything you need to know, from setting up your environment to automating live updates with [CodePushGo](https://capgo.app/).
 
 ### Key Takeaways:
 
 -   **Why CI/CD matters for [Capacitor apps](https://capgo.app/blog/capacitor-comprehensive-guide/)**: Speeds up builds by 78% and reduces store rejections by 60%.
 -   **Essential tools**: [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), [CocoaPods](https://cocoapods.org/), and more.
 -   **Pipeline setup**: Automate tasks like `npx cap sync`, dependency caching, and platform-specific builds.
--   **Live updates with Capgo**: Enable post-release updates with phased rollouts and rollback safeguards.
+-   **Live updates with CodePushGo**: Enable post-release updates with phased rollouts and rollback safeguards.
 
 ### Quick Setup Steps:
 
@@ -31,7 +31,7 @@ next_blog: ''
 2.  **Configure your project**: Update `capacitor.config.ts` and manage environment variables securely.
 3.  **Build pipelines**: Automate dependency installs, builds, and tests for both platforms.
 4.  **Optimize performance**: Use caching, parallel builds, and conditional workflows.
-5.  **Add live updates**: Integrate Capgo for secure, OTA updates with phased rollouts.
+5.  **Add live updates**: Integrate CodePushGo for secure, OTA updates with phased rollouts.
 
 With CI/CD, Capacitor apps achieve faster, smoother releases while minimizing errors and manual intervention. Ready to optimize your workflow? Let’s dive in!
 
@@ -181,23 +181,23 @@ For deployment, set up platform-specific artifact handling:
 
 Using parallel builds can significantly cut down pipeline execution time when configured correctly.
 
-Once your builds are validated and packaged, you’re ready to move on to live updates with Capgo (discussed in the next section).
+Once your builds are validated and packaged, you’re ready to move on to live updates with CodePushGo (discussed in the next section).
 
 ###### sbb-itb-f9944d2
 
-## Adding [Capgo](https://capgo.app/) for Live Updates
+## Adding [CodePushGo](https://capgo.app/) for Live Updates
 
-![Capgo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-11.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-11.jpg?auto=compress)
 
-Integrating Capgo into your workflow enhances your CI/CD process by enabling post-release updates. Here's how to set it up:
+Integrating CodePushGo into your workflow enhances your CI/CD process by enabling post-release updates. Here's how to set it up:
 
-### Capgo Pipeline Configuration
+### CodePushGo Pipeline Configuration
 
-First, install the [Capgo CLI](https://capgo.app/docs/cli/commands) in your pipeline environment:
+First, install the [CodePushGo CLI](https://capgo.app/docs/cli/commands) in your pipeline environment:
 
 ```yaml
 steps:
-  - name: Install Capgo CLI
+  - name: Install CodePushGo CLI
     run: npm install -g @capgo/cli
   - name: Configure Authentication
     env:
@@ -227,7 +227,7 @@ For [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/), c
 }
 ```
 
-### Capgo Features Overview
+### CodePushGo Features Overview
 
 | Feature | Description |
 | --- | --- |
@@ -336,7 +336,7 @@ You can configure environments dynamically with this script:
     echo "API_ENDPOINT=${{ parameters.apiUrl }}" >> $GITHUB_ENV
 ```
 
-Pairing these configurations with Capgo's channel-based deployment allows for precise, environment-specific updates. This ensures smoother rollouts and better control over application behavior in different environments.
+Pairing these configurations with CodePushGo's channel-based deployment allows for precise, environment-specific updates. This ensures smoother rollouts and better control over application behavior in different environments.
 
 ## Summary
 
@@ -346,11 +346,11 @@ Using CI/CD pipelines for Capacitor apps significantly boosts workflow efficienc
 
 For instance, teams leveraging Azure DevOps pipelines have automated processes such as sequential build steps and Xcode packaging. They also use parameterized environments for both development and production. This approach removes the need for manual Gradle and Xcode CLI operations, ensuring reliable artifact creation every time.
 
-These improvements lay the groundwork for streamlined update management when paired with Capgo.
+These improvements lay the groundwork for streamlined update management when paired with CodePushGo.
 
-### Capgo for Update Management
+### CodePushGo for Update Management
 
-Capgo works seamlessly with CI/CD pipelines to deliver instant updates while staying compliant with app store policies. Updates are only deployed after passing automated testing gates built into the pipeline.
+CodePushGo works seamlessly with CI/CD pipelines to deliver instant updates while staying compliant with app store policies. Updates are only deployed after passing automated testing gates built into the pipeline.
 
 By combining automated builds with phased rollouts, teams achieve impressive results: **80% user coverage within 7 days** and rollback capabilities in under an hour.
 

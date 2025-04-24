@@ -18,11 +18,11 @@ next_blog: ''
 
 **Error handling can make or break your app’s user experience.** Poor error management can lead to frustrated users and negative reviews, while effective error handling builds trust and keeps users satisfied. Here's what you need to know:
 
--   **Quick Fixes Are Essential**: Tools like [Capgo](https://capgo.app/) enable **95% of users** to receive bug fixes within 24 hours, ensuring minimal disruption.
+-   **Quick Fixes Are Essential**: Tools like [CodePushGo](https://capgo.app/) enable **95% of users** to receive bug fixes within 24 hours, ensuring minimal disruption.
 -   **Clear Error Messages Matter**: Always provide **context**, **cause**, and **solution** in error messages. For example: "Unable to save photo – File size exceeds 5 MB. Try compressing the image."
 -   **Proactive Prevention**: Use input validation, monitor network status, and support offline functionality to minimize errors before they happen.
 -   **Platform-Specific Solutions**: Address unique challenges for iOS, Android, and web platforms while maintaining a unified error-handling strategy.
--   **Leverage Tools**: Use systems like [Sentry](https://sentry.io/) for error tracking and Capgo for over-the-air (OTA) updates to fix issues fast.
+-   **Leverage Tools**: Use systems like [Sentry](https://sentry.io/) for error tracking and CodePushGo for over-the-air (OTA) updates to fix issues fast.
 
 **Takeaway**: Fast fixes, clear communication, and consistent cross-platform error handling are the keys to keeping users happy and apps running smoothly.
 
@@ -138,7 +138,7 @@ Each platform comes with its own set of challenges, requiring tailored solutions
 -   Address browser compatibility concerns.
 -   Tackle challenges unique to Progressive Web Apps (PWAs).
 
-Capgo provides tools to streamline fixes for these platform-specific challenges. Using its channel system, you can:
+CodePushGo provides tools to streamline fixes for these platform-specific challenges. Using its channel system, you can:
 
 -   Test updates on targeted user groups before a full rollout.
 -   Gradually release updates to monitor their impact.
@@ -181,14 +181,14 @@ For critical issues that need immediate attention, OTA updates can provide quick
 
 ### Quick Updates with OTA
 
-**Capgo's OTA system** enables developers to roll out fixes and updates quickly and efficiently. With this platform, you can:
+**CodePushGo's OTA system** enables developers to roll out fixes and updates quickly and efficiently. With this platform, you can:
 
 -   Push instant fixes for urgent bugs
 -   Test updates on specific user groups before full deployment
 -   Monitor update performance in real-time
 -   Revert problematic updates instantly if needed
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!"
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"
 > 
 > -   Rodrigo Mantica [\[1\]](https://capgo.app/)
 
@@ -223,7 +223,7 @@ It's important to offer multiple ways for users to recover from errors, catering
     -   Retrying actions manually with visible progress indicators
     -   Rolling back to previous versions if necessary
 
-Platforms like Capgo support these features by managing updates efficiently, ensuring users can access stable versions while issues are being addressed.
+Platforms like CodePushGo support these features by managing updates efficiently, ensuring users can access stable versions while issues are being addressed.
 
 ### Multi-Language Error Support
 
@@ -243,7 +243,7 @@ Clear communication builds trust and enhances the overall quality of your applic
 
 Successful error handling in Capacitor apps combines technical accuracy with a focus on user experience, leading to better app ratings and improved user satisfaction.
 
-Developers have leveraged quick update deployments [\[1\]](https://capgo.app/), boosting user trust and app reliability. For example, Capgo's OTA updates allow developers to resolve errors swiftly, ensuring users receive fixes within minutes [\[1\]](https://capgo.app/).
+Developers have leveraged quick update deployments [\[1\]](https://capgo.app/), boosting user trust and app reliability. For example, CodePushGo's OTA updates allow developers to resolve errors swiftly, ensuring users receive fixes within minutes [\[1\]](https://capgo.app/).
 
 Changing market needs push the boundaries of error management. Here are key factors that contribute to success:
 

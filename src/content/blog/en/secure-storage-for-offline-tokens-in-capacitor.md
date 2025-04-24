@@ -66,10 +66,10 @@ Here’s a quick overview of the key practices and tools for offline token stora
 -   **Encrypt tokens** using hardware-backed key stores, [secured with biometrics](https://capgo.app/plugins/capacitor-native-biometric/).
 -   Implement strict policies for token issuance, expiration, rotation, and refresh.
 
-For cross-platform encryption, tools like **@capacitor-community/secure-storage** and **Ionic Identity Vault** are excellent options. Additionally, **[Capgo](https://capgo.app/)** offers end-to-end encryption, CI/CD integration, and user-targeted rollouts while meeting Apple and Android store requirements.
+For cross-platform encryption, tools like **@capacitor-community/secure-storage** and **Ionic Identity Vault** are excellent options. Additionally, **[CodePushGo](https://capgo.app/)** offers end-to-end encryption, CI/CD integration, and user-targeted rollouts while meeting Apple and Android store requirements.
 
 ### Tools and Resources
 
 -   **@capacitor-community/secure-storage**: Encrypted key-value storage for iOS and Android.
 -   **Ionic Identity Vault**: Enterprise-level storage with biometric security.
--   **Capgo**: Provides live updates with encrypted CI/CD delivery.
+-   **CodePushGo**: Provides live updates with encrypted CI/CD delivery.

@@ -1,7 +1,7 @@
 ---
 slug: how-live-updates-for-capacitor-work
-title: 'How Live Updates Work in Capgo'
-description: 'Deep dive into the technical implementation of live updates in Capgo, understanding how it works under the hood for both iOS and Android.'
+title: 'How Live Updates Work in CodePushGo'
+description: 'Deep dive into the technical implementation of live updates in CodePushGo, understanding how it works under the hood for both iOS and Android.'
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -9,16 +9,16 @@ created_at: 2025-03-18T06:14:25.862Z
 updated_at: 2025-03-18T15:14:16.781Z
 head_image: /capgo_banner.webp
 head_image_alt: 'Live Updates Architecture'
-keywords: 'Capgo live updates, OTA updates, Capacitor updates, mobile app development, app updates'
+keywords: 'CodePushGo live updates, OTA updates, Capacitor updates, mobile app development, app updates'
 tag: 'Development, Mobile, Updates'
 published: true
 locale: en
 next_blog: ''
 ---
 
-# Understanding Live Updates in Capgo
+# Understanding Live Updates in CodePushGo
 
-Live updates are one of the most powerful features in Capacitor apps, allowing real-time updates without app store submissions. Let's dive deep into how Capgo implements this functionality.
+Live updates are one of the most powerful features in Capacitor apps, allowing real-time updates without app store submissions. Let's dive deep into how CodePushGo implements this functionality.
 
 ## Core Concepts
 
@@ -27,20 +27,20 @@ A Capacitor app consists of two main layers:
 1. **Web Layer**: Contains HTML, CSS, and JavaScript files loaded in the WebView
 2. **Native Layer**: Contains platform-specific code (Java/Kotlin for Android, Swift for iOS)
 
-Capgo's live update system works by replacing the web layer at runtime, as these files aren't compiled into the app binary.
+CodePushGo's live update system works by replacing the web layer at runtime, as these files aren't compiled into the app binary.
 
 ## Technical Implementation
 
 ### Server Paths in Capacitor
 
-Capgo manages two critical paths:
+CodePushGo manages two critical paths:
 
 - **Current Server Path**: Points to files currently loaded in WebView
 - **Next Server Path**: Points to files that will load on next app restart
 
 ### Android Implementation
 
-On Android, Capgo manages paths through:
+On Android, CodePushGo manages paths through:
 
 ```java
 // Store next server path
@@ -76,25 +76,25 @@ private func setCurrentCapacitorServerPath(path: String) {
 
 ## Security Measures
 
-Capgo implements military-grade security through end-to-end encryption, ensuring your app updates remain completely secure from development to deployment. Our encryption system goes beyond traditional code signing to provide true zero-knowledge security.
+CodePushGo implements military-grade security through end-to-end encryption, ensuring your app updates remain completely secure from development to deployment. Our encryption system goes beyond traditional code signing to provide true zero-knowledge security.
 
 ### End-to-End Encryption Architecture
 
 1. **End-to-End Encryption (E2EE)**: Every update bundle is encrypted using AES-256-GCM encryption before leaving your development environment. This military-grade encryption ensures that your app updates remain completely private and secure throughout the entire delivery process.
 
-2. **Zero-Knowledge Architecture**: Unlike other OTA update solutions that only sign updates, Capgo employs true zero-knowledge encryption. This means:
+2. **Zero-Knowledge Architecture**: Unlike other OTA update solutions that only sign updates, CodePushGo employs true zero-knowledge encryption. This means:
    - Update contents are encrypted before upload
-   - Capgo servers only store encrypted data
+   - CodePushGo servers only store encrypted data
    - Decryption only happens on end-user devices
    - No intermediary can access your update content
 
 3. **Secure Key Management**: 
    - Encryption keys are generated and stored securely in your CI/CD environment
-   - Private keys never touch Capgo's servers
+   - Private keys never touch CodePushGo's servers
    - Each app version can use unique encryption keys
    - Key rotation support for enhanced security
 
-Learn more about our encryption system in our detailed guide: [End-to-End Encryption in Capgo Live Updates](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/)
+Learn more about our encryption system in our detailed guide: [End-to-End Encryption in CodePushGo Live Updates](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/)
 
 ### Update Security Process
 
@@ -104,7 +104,7 @@ Learn more about our encryption system in our detailed guide: [End-to-End Encryp
    - Metadata is also encrypted for complete privacy
 
 2. **Secure Storage**:
-   - Encrypted bundles are stored on Capgo's global CDN
+   - Encrypted bundles are stored on CodePushGo's global CDN
    - No plain text data ever touches our servers
    - Even in case of server breach, data remains secure
 
@@ -127,7 +127,7 @@ This comprehensive security approach ensures that your app updates remain protec
 
 ## Update Lifecycle
 
-Capgo's update process is designed to be automatic by default. Here's how the automatic process works:
+CodePushGo's update process is designed to be automatic by default. Here's how the automatic process works:
 
 ### 1. Automatic Update Check
 
@@ -258,7 +258,7 @@ Live Updates are fully compliant with the Apple App Store policies. As stated in
 
 > "Interpreted code may be downloaded to an Application but only so long as such code: (a) does not change the primary purpose of the Application by providing features or functionality that are inconsistent with the intended and advertised purpose of the Application as submitted to the App Store, (b) does not create a store or storefront for other code or applications, and (c) does not bypass signing, sandbox, or other security features of the OS."
 
-Capgo updates only modify the web layer while respecting all platform security boundaries.
+CodePushGo updates only modify the web layer while respecting all platform security boundaries.
 
 ### Google Play Store ✅
 
@@ -266,7 +266,7 @@ Live Updates comply with Google Play Policies. The Device and Network Abuse poli
 
 > "This restriction does not apply to code that runs in a virtual machine or an interpreter where either provides indirect access to Android APIs (such as JavaScript in a webview or browser)."
 
-Since Capgo only updates WebView content, it falls within these permitted guidelines.
+Since CodePushGo only updates WebView content, it falls within these permitted guidelines.
 
 ## Best Practices
 

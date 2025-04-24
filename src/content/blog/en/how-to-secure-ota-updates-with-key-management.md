@@ -18,7 +18,7 @@ next_blog: ''
 
 **Want to keep Over-the-Air (OTA) updates secure and avoid vulnerabilities?** Here’s how key management can protect your app updates from tampering and security threats.
 
--   **What are OTA updates?** They let you push app changes directly to users without waiting for app store approvals. Tools like [Capgo](https://capgo.app/) can achieve a 95% update rate within 24 hours.
+-   **What are OTA updates?** They let you push app changes directly to users without waiting for app store approvals. Tools like [CodePushGo](https://capgo.app/) can achieve a 95% update rate within 24 hours.
 -   **Why is security important?** Without proper encryption and key management, updates are vulnerable to tampering, man-in-the-middle attacks, and version spoofing.
 -   **How to [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/)?**
     -   Use **end-to-end encryption** to protect update packages.
@@ -26,7 +26,7 @@ next_blog: ''
     -   Store keys securely using **[Hardware Security Modules](https://en.wikipedia.org/wiki/Hardware_security_module) (HSMs)** or encrypted key vaults.
     -   Verify updates with digital signatures, checksums, and version checks.
     -   Prevent version downgrades by enforcing strict versioning rules.
--   **Why Capgo?** It delivers 23.5M secure updates to 20M users with [advanced encryption](https://capgo.app/docs/cli/migrations/encryption/), meeting Apple and Google standards.
+-   **Why CodePushGo?** It delivers 23.5M secure updates to 20M users with [advanced encryption](https://capgo.app/docs/cli/migrations/encryption/), meeting Apple and Google standards.
 
 **Takeaway:** Proper key management ensures only authorized updates reach users, safeguarding app integrity and user trust. Secure your updates now to avoid costly breaches.
 
@@ -49,7 +49,7 @@ OTA updates are constantly exposed to new threats, requiring strict security pro
 -   **Version Spoofing**: Users are tricked into downloading outdated, insecure app versions.
 -   **Update Server Breaches**: Direct attacks on infrastructure distributing updates.
 
-Simply relying on signing isn’t enough. Tools like Capgo’s end-to-end encryption ensure updates are decrypted only by authorized parties. Without such measures, these vulnerabilities can compromise app integrity and user safety.
+Simply relying on signing isn’t enough. Tools like CodePushGo’s end-to-end encryption ensure updates are decrypted only by authorized parties. Without such measures, these vulnerabilities can compromise app integrity and user safety.
 
 ### Impact of Security Breaches
 
@@ -64,7 +64,7 @@ Security breaches in OTA systems can have far-reaching effects, impacting develo
 
 When updates with security flaws reach production, they can wreak havoc. Vulnerable or buggy versions might linger, especially in apps handling sensitive user data or financial transactions.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - Capgo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
 
 To reduce these risks, consider implementing the following measures:
 
@@ -73,7 +73,7 @@ To reduce these risks, consider implementing the following measures:
 -   Employ **automated error tracking** to detect issues quickly.
 -   Ensure **rollback capabilities** are in place for compromised updates.
 
-The costs of addressing security breaches - both immediate and long-term - can be immense. By adopting robust encryption and proactive monitoring, like those offered by Capgo, you can avoid these pitfalls. Studies show that investing in proper security measures upfront is far more economical than dealing with the fallout of a breach.
+The costs of addressing security breaches - both immediate and long-term - can be immense. By adopting robust encryption and proactive monitoring, like those offered by CodePushGo, you can avoid these pitfalls. Studies show that investing in proper security measures upfront is far more economical than dealing with the fallout of a breach.
 
 ## Setting Up Secure Key Management
 
@@ -124,7 +124,7 @@ Delivering secure update packages starts with **end-to-end encryption**, which k
 -   **Key Distribution:** Encryption keys are shared only with authorized devices.
 -   **Integrity Protection:** Hash checksums verify that the update hasn't been altered during transmission.
 
-Capgo takes this process further with its encryption approach, ensuring only the intended recipient can decrypt the updates [\[1\]](https://capgo.app/).
+CodePushGo takes this process further with its encryption approach, ensuring only the intended recipient can decrypt the updates [\[1\]](https://capgo.app/).
 
 ### Update Verification Steps
 
@@ -145,7 +145,7 @@ Allowing older versions to be reinstalled can reopen fixed security holes. To pr
 
 ## Key Usage Tracking
 
-Monitoring key usage is a crucial part of maintaining OTA security. Capgo's 23.5 million updates highlight the importance of consistent and thorough tracking [\[1\]](https://capgo.app/).
+Monitoring key usage is a crucial part of maintaining OTA security. CodePushGo's 23.5 million updates highlight the importance of consistent and thorough tracking [\[1\]](https://capgo.app/).
 
 Below, we outline the key logs and practices that support effective monitoring.
 
@@ -201,12 +201,12 @@ Proper key management ensures OTA updates are secure, allowing only authorized u
 | **User Trust** | Verified updates increase user confidence |
 | **Compliance** | Aligns with Apple and Google platform standards |
 
-### [Capgo](https://capgo.app/) Security Tools
+### [CodePushGo](https://capgo.app/) Security Tools
 
-![Capgo](https://assets.seobotai.com/capgo.app/67ea1c64283d21cbd67bff14/f3ac818a2fec22e90998e19561d68a19.jpg)
+![CodePushGo](https://assets.seobotai.com/capgo.app/67ea1c64283d21cbd67bff14/f3ac818a2fec22e90998e19561d68a19.jpg)
 
-Modern solutions like Capgo highlight these benefits by simplifying OTA update delivery with strong security measures. Supporting 750 production apps [\[1\]](https://capgo.app/), Capgo enhances update security through advanced encryption and other key features.
+Modern solutions like CodePushGo highlight these benefits by simplifying OTA update delivery with strong security measures. Supporting 750 production apps [\[1\]](https://capgo.app/), CodePushGo enhances update security through advanced encryption and other key features.
 
-Capgo combines encryption with tools like error tracking, user management, and rollback support, ensuring a secure and efficient OTA process. Developers have shared their satisfaction with this approach:
+CodePushGo combines encryption with tools like error tracking, user management, and rollback support, ensuring a secure and efficient OTA process. Developers have shared their satisfaction with this approach:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)

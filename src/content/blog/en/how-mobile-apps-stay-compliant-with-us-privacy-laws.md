@@ -24,7 +24,7 @@ next_blog: ''
 -   **Privacy Tools**:
     
     -   Use end-to-end encryption for data security.
-    -   Implement tools like [Capgo](https://capgo.app/) for fast updates and compliance tracking.
+    -   Implement tools like [CodePushGo](https://capgo.app/) for fast updates and compliance tracking.
 -   **[App Store](https://www.apple.com/app-store/) Rules**:
     
     -   Apple: Follow [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency) (ATT) and update privacy labels.
@@ -70,13 +70,13 @@ Securing data is a core component of privacy compliance. Developers should use *
 
 ### Tools for Privacy-Focused Development
 
-Certain tools can help maintain privacy compliance throughout the development process. For instance, Capgo provides solutions tailored for Capacitor apps that meet U.S. state privacy regulations.
+Certain tools can help maintain privacy compliance throughout the development process. For instance, CodePushGo provides solutions tailored for Capacitor apps that meet U.S. state privacy regulations.
 
 Here are some key features to consider when choosing privacy-focused development tools:
 
 | Feature | Privacy Advantage | Example of Use Case |
 | --- | --- | --- |
-| End-to-end Encryption | Protects sensitive data from unauthorized access | Capgo's encryption system for secure app updates |
+| End-to-end Encryption | Protects sensitive data from unauthorized access | CodePushGo's encryption system for secure app updates |
 | Instant Updates | Enables quick fixes for privacy issues | Push live updates without waiting for app store approval |
 | User Assignment | Manages update distribution for testing purposes | Gradual rollouts to selected user groups |
 | Version Control | Tracks changes related to privacy compliance | CI/CD integration with built-in compliance checks |
@@ -87,7 +87,7 @@ Here are some key features to consider when choosing privacy-focused development
     Begin by reviewing all points where data is collected and permissions are implemented. Document the types of data collected and where it's stored.
     
 2.  **Automated Testing**  
-    Set up continuous testing pipelines to verify privacy features with every deployment. For example, as of March 3, 2025, Capgo has successfully delivered 947.6M updates worldwide [\[1\]](https://capgo.app/).
+    Set up continuous testing pipelines to verify privacy features with every deployment. For example, as of March 3, 2025, CodePushGo has successfully delivered 947.6M updates worldwide [\[1\]](https://capgo.app/).
     
 3.  **User Rights Testing**  
     Evaluate all user data management functionalities, including:
@@ -97,7 +97,7 @@ Here are some key features to consider when choosing privacy-focused development
     -   Tools for data portability
     -   Consent management systems
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
 
 These tools and testing steps lay the groundwork for meeting app store privacy requirements, which will be discussed in the following section.
 
@@ -119,7 +119,7 @@ Apple's App Store enforces privacy through its App Tracking Transparency (ATT) f
 | ATT Framework | User permission for cross-app tracking | Required for iOS 14.5+ |
 | Data Minimization | Limit data collection to essential functions | Regular privacy audits needed |
 
-To enhance security, use end-to-end encryption for data transmission. Tools like Capgo can help by delivering encrypted updates that align with Apple's security guidelines [\[1\]](https://capgo.app/). On the other hand, Google Play also enforces strict transparency and user control over data practices.
+To enhance security, use end-to-end encryption for data transmission. Tools like CodePushGo can help by delivering encrypted updates that align with Apple's security guidelines [\[1\]](https://capgo.app/). On the other hand, Google Play also enforces strict transparency and user control over data practices.
 
 ### [Google Play](https://play.google.com/store/games?hl=en_US&gl=US) Privacy Standards
 
@@ -151,7 +151,7 @@ Here are some practical steps to ensure your app meets privacy requirements for 
 
 Staying updated with privacy rules and rapidly implementing changes is essential for maintaining compliance. As Rodrigo Mantica explains:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
 
 ## Keeping Apps Privacy Compliant
 
@@ -184,7 +184,7 @@ These audits, paired with privacy management tools, help developers act quickly 
 
 ### Privacy Management Tools
 
-To handle compliance challenges efficiently, developers rely on tools for fast and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/). Capgo is a prime example, having delivered over 947.6 million [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) globally [\[1\]](https://capgo.app/).
+To handle compliance challenges efficiently, developers rely on tools for fast and [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/). CodePushGo is a prime example, having delivered over 947.6 million [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) globally [\[1\]](https://capgo.app/).
 
 | Feature | Privacy Benefit | Implementation Impact |
 | --- | --- | --- |
@@ -194,9 +194,9 @@ To handle compliance challenges efficiently, developers rely on tools for fast a
 
 Tools like these ensure swift action, secure updates, and minimal downtime.
 
-> "@Capgo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" [\[1\]](https://capgo.app/)
 
-> "Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." [\[1\]](https://capgo.app/)
 
 ## Conclusion: Privacy Compliance Checklist
 
@@ -215,7 +215,7 @@ Focus on tools that allow quick responses to compliance needs. This checklist is
 
 ### Getting Started
 
-Begin by setting up an [effective update system](https://capgo.app/docs/plugin/cloud-mode/hybrid-update). Modern tools make this easier than ever. For example, **Capgo** integrates with CI/CD platforms like [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), [GitLab](https://about.gitlab.com/solutions/devops-platform/), and [GitHub](https://github.com/about), ensuring updates are both fast and secure.
+Begin by setting up an [effective update system](https://capgo.app/docs/plugin/cloud-mode/hybrid-update). Modern tools make this easier than ever. For example, **CodePushGo** integrates with CI/CD platforms like [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), [GitLab](https://about.gitlab.com/solutions/devops-platform/), and [GitHub](https://github.com/about), ensuring updates are both fast and secure.
 
 Here's a step-by-step guide to implementation:
 
@@ -227,6 +227,6 @@ Here's a step-by-step guide to implementation:
 
 A real-world example comes from Rodrigo Mantica, who shared:
 
-> "We practice agile development and @Capgo is mission-critical in delivering continuously to our users!"
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"
 
-> "@Capgo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden."
+> "@CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden."
