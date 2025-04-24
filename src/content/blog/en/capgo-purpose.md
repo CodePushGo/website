@@ -1,5 +1,5 @@
 ---
-slug: capgo-purpose
+slug: codepushgo-purpose
 title: Purpose of CodePushGo
 description: >-
   The blog article should be described as a comprehensive guide for developers
@@ -9,8 +9,8 @@ author_image_url: 'https://avatars.githubusercontent.com/u/81948346?v=4'
 author_url: 'https://x.com/anikdhabal'
 created_at: 2023-09-10T00:00:00.000Z
 updated_at: 2023-09-10T00:00:00.000Z
-head_image: /capgo_banner.webp
-head_image_alt: capgo banner
+head_image: /codepushgo_banner.webp
+head_image_alt: codepushgo banner
 keywords: mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: SOLUTION
 published: true

@@ -20,23 +20,23 @@ const props = defineProps<{ locale: Locales }>()
         </p>
         <p>
           🇫🇷 {{ m.im_a_french_software_engineer() }}<br />
-          {{ m.living_best_life() }} 🏝️. <br />{{ m.made_capgo_with_passion() }}
+          {{ m.living_best_life() }} 🏝️. <br />{{ m.made_codepushgo_with_passion() }}
         </p>
         <p>
           <span class="font-bold">🌟 {{ m.i_m_a_huge_believer_in_open_source() }}</span
           ><br />
-          {{ m.capgo_proudly_stands_as_the_largest_ecosystem_of_open_source_plugins_for_capacitor() }} <br />{{
+          {{ m.codepushgo_proudly_stands_as_the_largest_ecosystem_of_open_source_plugins_for_capacitor() }} <br />{{
             m.we_re_committed_to_fostering_a_community_where_developers_can_learn_contribute_and_grow_together()
           }}
         </p>
         <p>
-          📧 {{ m.each_time_you_contact_capgo_you_re_reaching_out_to_me_directly() }}<br />
+          📧 {{ m.each_time_you_contact_codepushgo_you_re_reaching_out_to_me_directly() }}<br />
           {{ m.i_personally_handle_all_support_through_email_chat_or_discord_because_i_believe_in_real_connections() }} <br /><span class="font-bold"
             >🫶 {{ m.your_challenges_are_my_challenges() }}</span
           >
         </p>
         <p>
-          {{ m.when_im_not_working_on_capgo_you_ll_find_me_scaling_climbing_walls_dancing_to_zouk_rhythms_or_exploring_madeiras_stunning_nature() }}
+          {{ m.when_im_not_working_on_codepushgo_you_ll_find_me_scaling_climbing_walls_dancing_to_zouk_rhythms_or_exploring_madeiras_stunning_nature() }}
         </p>
         <p>
           🐦 {{ m.my_commitment_to_transparency_extends_to_everything_i_do() }} <br />{{ m.you_can_see_my_entire_process_unfold_on_twitter() }}

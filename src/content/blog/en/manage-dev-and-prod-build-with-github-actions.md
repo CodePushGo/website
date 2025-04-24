@@ -9,7 +9,7 @@ author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
 created_at: 2022-06-16T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
-head_image: /capgo_ci-cd-illustration.webp
+head_image: /codepushgo_ci-cd-illustration.webp
 head_image_alt: Channel builds illustration
 keywords: GitHub Actions, CI/CD, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: CI/CD
@@ -128,11 +128,11 @@ jobs:
       - name: Create Release Alpha
         if: "contains(github.ref, '-alpha.')"
         id: create_release_prepro
-        run: npx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} -c development
+        run: npx @codepushgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} -c development
       - name: Create Release Production
         if: "!contains(github.ref, '-alpha.')"
         id: create_release_prod
-        run: npx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} -c production
+        run: npx @codepushgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} -c production
 ```
 
 This will install and build your dependency before sending it to CodePushGo.

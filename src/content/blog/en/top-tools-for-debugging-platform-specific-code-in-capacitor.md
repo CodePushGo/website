@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-17T11:27:03.103Z
 updated_at: 2025-04-17T11:31:36.415Z
-head_image: https://assets.seobotai.com/capgo.app/680053ff28980901df1e733b-1744889496415.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/680053ff28980901df1e733b-1744889496415.jpg
 head_image_alt: Mobile Development
 keywords: React Native, debugging tools, platform-specific code, VS Code, Android Studio, Xcode, live updates, web debugging
 tag: Development, Mobile, Updates
@@ -19,7 +19,7 @@ next_blog: ''
 Debugging platform-specific code in [React Native](https://capacitorjs.com/) can be challenging, but the right tools simplify the process. Here’s what you need to know:
 
 -   **Key Tools**: Use [VS Code](https://code.visualstudio.com/) with extensions, [Android Studio](https://developer.android.com/studio), [Xcode](https://developer.apple.com/xcode/), and browser dev tools like [Chrome DevTools](https://developer.chrome.com/docs/devtools/overview) and [Safari Web Inspector](https://developer.apple.com/documentation/safari-developer-tools/web-inspector) for debugging across platforms.
--   **Live Updates**: Tools like [CodePushGo](https://capgo.app/) enable instant updates, error tracking, and rollback options without app store delays.
+-   **Live Updates**: Tools like [CodePushGo](https://codepushgo.com/) enable instant updates, error tracking, and rollback options without app store delays.
 -   **Platform-Specific Debugging**: Test native code with Android Studio and Xcode, debug WebView with browser tools, and utilize source maps for better error tracking.
 -   **Native Bridge Testing**: Debug JavaScript-to-native communication using `React Native.getPlatform()` and event listeners.
 -   **Update Systems**: CodePushGo offers fast deployment (114ms delivery for 5MB bundles), high adoption rates (95% within 24 hours), and rollback support.
@@ -46,7 +46,7 @@ Debugging platform-specific code in React Native requires using the right tools 
 
 ### [VS Code](https://code.visualstudio.com/) Setup and Features
 
-![VS Code](https://assets.seobotai.com/capgo.app/680053ff28980901df1e733b/1524a26c3096afc672477088da108f23.jpg)
+![VS Code](https://assets.seobotai.com/codepushgo.com/680053ff28980901df1e733b/1524a26c3096afc672477088da108f23.jpg)
 
 Visual Studio Code is the go-to IDE for React Native development. Make sure to configure these tools and extensions for smoother debugging:
 
@@ -109,7 +109,7 @@ For secure and efficient updates, modern tools provide these capabilities:
 | End-to-End Encryption | Secures data transmission during updates. |
 | Analytics and Error Tracking | Tracks update performance and issues. |
 | Rollback Support | Quickly recover from problematic updates. |
-| [Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/) | Allows targeted updates for specific users. |
+| [Channel System](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) | Allows targeted updates for specific users. |
 
 To support remote inspection, configure your app as shown below:
 
@@ -133,7 +133,7 @@ Setting up these tools ensures a reliable debugging environment, speeding up dev
 
 ## Platform-Specific Debugging Methods
 
-Building on core [debugging tools](https://capgo.app/docs/plugin/debugging/), platform-specific techniques help fine-tune your [debugging process](https://capgo.app/docs/plugin/debugging/) for greater accuracy.
+Building on core [debugging tools](https://codepushgo.com/docs/plugin/debugging/), platform-specific techniques help fine-tune your [debugging process](https://codepushgo.com/docs/plugin/debugging/) for greater accuracy.
 
 ### Native Bridge Testing
 
@@ -179,7 +179,7 @@ To debug production issues more effectively, configure source maps for each plat
 
 The table below highlights how source map settings impact debugging across platforms:
 
-| Platform | Source Map Type | [Debugging Tool](https://capgo.app/docs/plugin/debugging/) |
+| Platform | Source Map Type | [Debugging Tool](https://codepushgo.com/docs/plugin/debugging/) |
 | --- | --- | --- |
 | iOS | Inline | Safari Web Inspector |
 | Android | Hidden | Chrome DevTools |
@@ -207,7 +207,7 @@ describe('Platform Tests', () => {
 });
 ```
 
-Additionally, live update tools like CodePushGo (https://capgo.app) can speed up testing and issue resolution. CodePushGo supports instant updates for React Native apps and includes integrated analytics, error tracking, and rollback options [\[1\]](https://capgo.app/).
+Additionally, live update tools like CodePushGo (https://codepushgo.com) can speed up testing and issue resolution. CodePushGo supports instant updates for React Native apps and includes integrated analytics, error tracking, and rollback options [\[1\]](https://codepushgo.com/).
 
 For critical scenarios, consider using feature detection with fallback mechanisms:
 
@@ -249,26 +249,26 @@ Each debugging tool provides unique insights depending on the platform:
 | Source Map Support | ✓   | Limited | Limited | ✓   |
 | Hot Reload | ✓   | Native only | Native only | ✓   |
 
-By combining platform-specific IDEs like Android Studio or Xcode with VS Code, developers can leverage [native debugging capabilities](https://capgo.app/docs/plugin/debugging/) while maintaining cross-platform flexibility.
+By combining platform-specific IDEs like Android Studio or Xcode with VS Code, developers can leverage [native debugging capabilities](https://codepushgo.com/docs/plugin/debugging/) while maintaining cross-platform flexibility.
 
 ### Update System Options
 
-Debugging tools help identify issues, but an efficient update system ensures fixes are deployed quickly. CodePushGo stands out by offering rapid update deployment. For instance, its global CDN delivers a 5MB bundle in just 114ms, with an average API response time of 434ms [\[1\]](https://capgo.app/).
+Debugging tools help identify issues, but an efficient update system ensures fixes are deployed quickly. CodePushGo stands out by offering rapid update deployment. For instance, its global CDN delivers a 5MB bundle in just 114ms, with an average API response time of 434ms [\[1\]](https://codepushgo.com/).
 
 Here's how update systems compare:
 
 | Key Metric | CodePushGo | [Appflow](https://ionic.io/appflow/) | [Capawesome](https://capawesome.io/) |
 | --- | --- | --- | --- |
-| Update Speed | 114ms avg delivery for a 5MB bundle [\[1\]](https://capgo.app/) | Not publicly disclosed | Not publicly disclosed |
-| User Adoption | 95% within 24h [\[1\]](https://capgo.app/) | Not publicly disclosed | Not publicly disclosed |
-| Success Rate | 82% worldwide [\[1\]](https://capgo.app/) | Not publicly disclosed | Not publicly disclosed |
+| Update Speed | 114ms avg delivery for a 5MB bundle [\[1\]](https://codepushgo.com/) | Not publicly disclosed | Not publicly disclosed |
+| User Adoption | 95% within 24h [\[1\]](https://codepushgo.com/) | Not publicly disclosed | Not publicly disclosed |
+| Success Rate | 82% worldwide [\[1\]](https://codepushgo.com/) | Not publicly disclosed | Not publicly disclosed |
 | Encryption | End-to-end | Standard encryption | Standard encryption |
 | Self-hosting | Available | Not available | Not available |
 | Pricing | $12–$249/month | Typically higher | Comparable |
 
 CodePushGo's instant updates help maintain app stability by avoiding app store delays. As Rodrigo Mantica, an industry leader, puts it:
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://codepushgo.com/)
 
 With Microsoft's CodePush shutting down in 2024 and Appflow set to close in 2026, tools like CodePushGo are becoming increasingly important for maintaining continuous delivery and keeping users satisfied.
 
@@ -278,7 +278,7 @@ Debugging platform-specific code requires a clear and structured approach across
 
 ### Multi-Platform Testing
 
-Run tests on simulators, physical devices, and across different OS versions. According to CodePushGo data, **95% of critical platform-specific issues are identified within the first 24 hours of deployment** [\[1\]](https://capgo.app/). Testing on multiple fronts ensures you catch issues early and allows for precise debugging tailored to each platform.
+Run tests on simulators, physical devices, and across different OS versions. According to CodePushGo data, **95% of critical platform-specific issues are identified within the first 24 hours of deployment** [\[1\]](https://codepushgo.com/). Testing on multiple fronts ensures you catch issues early and allows for precise debugging tailored to each platform.
 
 ### Platform Detection
 
@@ -300,12 +300,12 @@ This approach ensures accurate platform detection, making live updates more reli
 
 Live updates play a crucial role in maintaining app performance and quickly resolving platform-specific bugs. CodePushGo has proven effective in production environments, as highlighted by user feedback:
 
-> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up-to-date within minutes of the OTA being deployed to @CodePushGo." – colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up-to-date within minutes of the OTA being deployed to @CodePushGo." – colenso [\[1\]](https://codepushgo.com/)
 
 Key features of live update systems include real-time error tracking, instant rollback capabilities, and beta channels for targeted fixes. These tools allow you to address issues quickly while keeping your app stable across platforms.
 
 ## Conclusion
 
-A well-thought-out mix of [effective debugging](https://capgo.app/docs/plugin/debugging/) tools and efficient live update systems is key to addressing platform-specific challenges. By combining traditional debugging methods with live update platforms like CodePushGo, developers can implement immediate fixes without waiting for app store approvals. With a global update success rate and the ability to reach most users within 24 hours, these tools make resolving issues faster and easier.
+A well-thought-out mix of [effective debugging](https://codepushgo.com/docs/plugin/debugging/) tools and efficient live update systems is key to addressing platform-specific challenges. By combining traditional debugging methods with live update platforms like CodePushGo, developers can implement immediate fixes without waiting for app store approvals. With a global update success rate and the ability to reach most users within 24 hours, these tools make resolving issues faster and easier.
 
 Key elements for success include accurate platform detection, secure update processes with end-to-end encryption, quick rollback options, and actionable analytics.

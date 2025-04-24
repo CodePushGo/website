@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-01-15T02:51:44.404Z
 updated_at: 2025-03-24T13:10:12.007Z
-head_image: https://assets.seobotai.com/capgo.app/678709f9070e33f74859cb89-1736909518284.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/678709f9070e33f74859cb89-1736909518284.jpg
 head_image_alt: Technology
 keywords: mobile app updates, CI/CD pipeline, OTA updates, user engagement, app performance, testing strategies, bug fixes, app security
 tag: Development, Mobile, Updates
@@ -80,7 +80,7 @@ With a clear roadmap in place, it’s time to select the right tools to streamli
 
 Picking the right tools for your Continuous Integration/Continuous Deployment (CI/CD) pipeline is essential. Popular options like [GitHub Actions](https://docs.github.com/actions), [Bitrise](https://bitrise.io/), and [CircleCI](https://circleci.com/) each have unique benefits. For example, [GitHub Actions](https://docs.github.com/actions) integrates directly with your GitHub repositories, making it a convenient choice for many developers [\[2\]](https://www.poppinslabs.com/blog/mobile-app-ci-cd-pipeline).
 
-For Over-the-Air (OTA) updates, tools like React Native allow you to deliver changes directly to users without waiting for app store approvals [\[3\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). When choosing an OTA solution, consider these factors:
+For Over-the-Air (OTA) updates, tools like React Native allow you to deliver changes directly to users without waiting for app store approvals [\[3\]](https://codepushgo.com/blog/how-live-updates-for-capacitor-work/). When choosing an OTA solution, consider these factors:
 
 -   **Deployment speed** to minimize downtime.
     
@@ -109,17 +109,17 @@ Setting up a CI/CD pipeline for mobile apps starts with solid version control an
 
 Once your pipeline is ready, adding OTA updates makes delivering changes to users faster and easier.
 
-### Using [React Native](https://capacitorjs.com/) OTA Updates with [CodePushGo](https://capgo.app/)
+### Using [React Native](https://capacitorjs.com/) OTA Updates with [CodePushGo](https://codepushgo.com/)
 
 ![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d.jpg?auto=compress)
 
 CodePushGo makes OTA updates simple, secure, and fast with features like encryption and compliance. Here's how to get started:
 
-1.  Install the [CodePushGo plugin](https://capgo.app/plugins/) in your React Native project.
+1.  Install the [CodePushGo plugin](https://codepushgo.com/plugins/) in your React Native project.
     
 2.  Set up your app's update settings and version tracking.
     
-3.  Use the [CodePushGo dashboard](https://capgo.app/docs/webapp/) to deploy updates directly to users.
+3.  Use the [CodePushGo dashboard](https://codepushgo.com/docs/webapp/) to deploy updates directly to users.
     
 
 ### CodePushGo Pricing and Features Overview
@@ -185,7 +185,7 @@ Taking a structured approach to updates can lead to clear advantages - like high
 
 ### Developer's Checklist in a Nutshell
 
-To manage [mobile app updates](https://capgo.app/plugins/capacitor-updater/) effectively, developers need solid processes and the right tools. Modern practices like automated testing, phased rollouts, and constant monitoring are critical.
+To manage [mobile app updates](https://codepushgo.com/plugins/capacitor-updater/) effectively, developers need solid processes and the right tools. Modern practices like automated testing, phased rollouts, and constant monitoring are critical.
 
 **Key Steps for Success**:
 

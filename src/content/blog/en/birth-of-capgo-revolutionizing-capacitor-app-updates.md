@@ -1,5 +1,5 @@
 ---
-slug: birth-of-capgo-my-challenging-journey-as-a-solo-maker
+slug: birth-of-codepushgo-my-challenging-journey-as-a-solo-maker
 title: How a GitHub Issue Evolved into a business
 description: >-
   Discover the trials and triumphs behind creating CodePushGo, an innovative live
@@ -10,7 +10,7 @@ author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://twitter.com/martindonadieu'
 created_at: 2024-07-13T00:00:00.000Z
 updated_at: 2024-07-13T00:00:00.000Z
-head_image: /capgo-birth-story.webp
+head_image: /codepushgo-birth-story.webp
 head_image_alt: A visual representation of CodePushGo's evolution from idea to product
 keywords: mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: development
@@ -23,7 +23,7 @@ next_blog: ''
 
 The seeds of CodePushGo were actually planted long before I began my journey as a solo maker. On July 8, 2020, a community member named alexcroox submitted a plugin request that would eventually become the blueprint for CodePushGo.
 
-![Initial plugin request](/capgo-initial-request.webp)
+![Initial plugin request](/codepushgo-initial-request.webp)
 
 This request outlined the need for a "React Native Hot Code Push" plugin with the following key points:
 
@@ -46,7 +46,7 @@ The community's enthusiasm for this proposed plugin, combined with my personal e
 
 Before diving into the CodePushGo story, it's important to set the stage. In 2021, I made a life-changing decision to quit my role as CTO of Cashstory and sell my shares. This marked the beginning of my journey as a solo maker, a path filled with uncertainty but also endless possibilities.
 
-![Lisbon digital nomad life](/capgo-lisbon-nomad.webp)
+![Lisbon digital nomad life](/codepushgo-lisbon-nomad.webp)
 
 With my savings as a safety net, I embarked on a new adventure. I was living as a digital nomad in Lisbon, Portugal, embracing the vibrant tech scene and culture of the city while focusing on my passion projects. My primary focus was Captime, a mobile app crossfit timer. Little did I know that this project would lead me to create something much bigger.
 
@@ -59,7 +59,7 @@ This revision accurately reflects your living situation in Lisbon as a digital n
 
 While working on Captime, I encountered a significant hurdle - the lack of an affordable and flexible update solution for React Native apps. In October 2021, I voiced these concerns on a GitHub thread.
 
-![Initial proposal for CodePushGo](/capgo-initial-proposal.webp)
+![Initial proposal for CodePushGo](/codepushgo-initial-proposal.webp)
 
 The main pain points I identified were:
 
@@ -71,7 +71,7 @@ The main pain points I identified were:
 
 My concerns struck a chord with other developers. Many echoed the sentiment that existing solutions were overpriced for indie developers and small teams.
 
-![Community feedback](/capgo-community-feedback.webp)
+![Community feedback](/codepushgo-community-feedback.webp)
 
 One developer summarized the community's feelings:
 
@@ -81,7 +81,7 @@ One developer summarized the community's feelings:
 
 Motivated by the community's response, I decided to take matters into my own hands. On October 24, 2021, I announced my plan to build a module that would allow developers to download updates from a given URL.
 
-![Initial code snippet](/capgo-initial-code.webp)
+![Initial code snippet](/codepushgo-initial-code.webp)
 
 The initial goals were simple:
 - Download data from a URL
@@ -100,7 +100,7 @@ Many nights were spent in my van, poring over documentation and experimenting wi
 
 Fortunately, I wasn't alone in this journey. The developer community, particularly on Discord, proved to be an invaluable resource. Fellow developers offered their insights, helped debug issues, and provided encouragement when the going got tough.
 
-![Discord community support](/capgo-discord-support.webp)
+![Discord community support](/codepushgo-discord-support.webp)
 
 This collaborative effort was crucial in overcoming the technical hurdles. It reinforced my belief in the power of open source and community-driven development.
 
@@ -108,14 +108,14 @@ This collaborative effort was crucial in overcoming the technical hurdles. It re
 
 With the help of the community, development began to accelerate. By November 22, 2021, I had a working version for iOS and was improving the developer experience.
 
-![Improved code snippet](/capgo-improved-code.webp)
+![Improved code snippet](/codepushgo-improved-code.webp)
 
 As development progressed, I added more features:
 - Android support
 - Persistence between app kills
 - The ability to revert to the original app version
 
-![New features announcement](/capgo-new-features.webp)
+![New features announcement](/codepushgo-new-features.webp)
 
 Each new feature brought its own set of challenges, but also a sense of accomplishment as the project grew beyond its initial scope.
 
@@ -123,7 +123,7 @@ Each new feature brought its own set of challenges, but also a sense of accompli
 
 By March 2022, the project had evolved into a full-fledged product: CodePushGo. I announced the release of an auto-update mode, allowing developers to connect to their own backend or use CodePushGo's backend service.
 
-![CodePushGo launch announcement](/capgo-launch-announcement.webp)
+![CodePushGo launch announcement](/codepushgo-launch-announcement.webp)
 
 The community's response was overwhelmingly positive, with developers praising this much-needed solution.
 
@@ -135,7 +135,7 @@ Developers were expressing a willingness to pay for a solution that met their ne
 
 On June 11, 2022, I announced that CodePushGo would start charging for usage in 15 days, marking its transition from a community project to a sustainable business.
 
-![CodePushGo pricing announcement](/capgo-pricing-announcement.webp)
+![CodePushGo pricing announcement](/codepushgo-pricing-announcement.webp)
 
 However, staying true to the project's roots, I maintained CodePushGo's open-source core by allowing free use of the plugin in manual mode or with a custom server.
 

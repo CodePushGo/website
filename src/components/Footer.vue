@@ -81,14 +81,14 @@ const navigation: Record<string, NavigationItem[]> = {
     { name: m.guides(), href: getRelativeLocaleUrl(props.locale, 'blog') },
     {
       name: () => (systemStatus.value.indicator === 'up' ? m.all_systems_normal() : m.systems_are_disturbed()),
-      href: 'https://status.capgo.app/',
+      href: 'https://status.codepushgo.com/',
       target: '_blank',
       icon: () => (systemStatus.value.indicator === 'up' ? '🟢' : '🟠'),
     },
-    { name: m.status(), href: 'https://status.capgo.app/', target: '_blank' },
+    { name: m.status(), href: 'https://status.codepushgo.com/', target: '_blank' },
     {
       name: m.chat(),
-      href: 'mailto:support@capgo.app',
+      href: 'mailto:support@codepushgo.com',
       rel: 'nofollow',
     },
     {
@@ -99,7 +99,7 @@ const navigation: Record<string, NavigationItem[]> = {
   company: [
     { name: m.about(), href: getRelativeLocaleUrl(props.locale, 'about') },
     { name: m.imprint(), href: getRelativeLocaleUrl(props.locale, 'imprint') },
-    { name: m.jobs(), href: 'https://console.algora.io/org/capgo/bounties?status=open/' },
+    { name: m.jobs(), href: 'https://console.algora.io/org/codepushgo/bounties?status=open/' },
     { name: m.contributing(), href: getRelativeLocaleUrl(props.locale, 'contributing') },
     { name: m.trust(), href: getRelativeLocaleUrl(props.locale, 'trust') },
     { name: m.consulting(), href: getRelativeLocaleUrl(props.locale, 'consulting') },
@@ -113,7 +113,7 @@ const navigation: Record<string, NavigationItem[]> = {
     { name: m.security_txt(), href: getRelativeLocaleUrl(props.locale, 'security'), rel: 'nofollow' },
     {
       name: m.privacy(),
-      href: 'https://www.privacyboard.co/company/capgo/',
+      href: 'https://www.privacyboard.co/company/codepushgo/',
       target: '_blank',
     },
     { name: m.dp(), href: getRelativeLocaleUrl(props.locale, 'dp'), rel: 'nofollow' },

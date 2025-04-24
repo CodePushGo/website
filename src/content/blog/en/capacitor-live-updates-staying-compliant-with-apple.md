@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-12T03:03:33.472Z
 updated_at: 2025-03-18T13:14:16.420Z
-head_image: https://assets.seobotai.com/capgo.app/67d0d3f9cf9d4dc0b2c0bff2-1741748627082.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67d0d3f9cf9d4dc0b2c0bff2-1741748627082.jpg
 head_image_alt: Mobile Development
 keywords: React Native, live updates, app compliance, Apple guidelines, encryption, bug fixes, mobile development
 tag: Development, Mobile, Updates
@@ -23,7 +23,7 @@ next_blog: ''
 -   **Allowed Updates**: Bug fixes, UI tweaks, and content updates within the app's original purpose.
 -   **Prohibited Updates**: Major feature changes or core functionality updates (require App Store review).
 -   **Security**: End-to-end encryption is mandatory to protect user data.
--   **Tools**: [CodePushGo](https://capgo.app/) simplifies live update management, ensuring compliance with Apple's rules.
+-   **Tools**: [CodePushGo](https://codepushgo.com/) simplifies live update management, ensuring compliance with Apple's rules.
 
 | **Update Type** | **Allowed** | **Approval Needed** |
 | --- | --- | --- |
@@ -71,7 +71,7 @@ Many apps are rejected for violating Apple's update guidelines. Here are some fr
 -   **Privacy Issues**: Failing to secure user data during updates.
 -   **Core Functionality Changes**: Using live updates to significantly alter how the app works.
 
-> "Avoiding review for bugfix is golden." - Bessie Cooper, @bessiecooper [\[1\]](https://capgo.app/)
+> "Avoiding review for bugfix is golden." - Bessie Cooper, @bessiecooper [\[1\]](https://codepushgo.com/)
 
 This highlights that live updates should focus on bug fixes, not introducing new features.
 
@@ -87,7 +87,7 @@ Following these steps will help ensure your app updates remain within Apple's st
 
 ## Setting Up Compliant Live Updates
 
-To implement live updates in your [React Native app](https://capgo.app/plugins/ivs-player/) while meeting Apple's compliance rules, you'll need a structured setup. Here's how you can get started.
+To implement live updates in your [React Native app](https://codepushgo.com/plugins/ivs-player/) while meeting Apple's compliance rules, you'll need a structured setup. Here's how you can get started.
 
 ### Project Setup Steps
 
@@ -98,7 +98,7 @@ Begin by configuring your environment and installing CodePushGo's live update pl
     -   Use CodePushGo's CLI to install the live update plugin and set up the necessary tools. For instance:
         
         ```bash
-        npx @capgo/cli init
+        npx @codepushgo/cli init
         ```
         
     -   Make sure your app includes end-to-end encryption and secure storage for update files.
@@ -126,11 +126,11 @@ Managing app versions properly is key to staying compliant with Apple's guidelin
 
 Keep detailed documentation of all changes to make the App Store review process smoother.
 
-### [CodePushGo](https://capgo.app/): Live Update Management
+### [CodePushGo](https://codepushgo.com/): Live Update Management
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-12.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-12.jpg?auto=compress)
 
-CodePushGo simplifies live update management and ensures compliance with Apple's requirements. It has already supported over **947.6 million updates** across **1,400+ production apps** [\[1\]](https://capgo.app/).
+CodePushGo simplifies live update management and ensures compliance with Apple's requirements. It has already supported over **947.6 million updates** across **1,400+ production apps** [\[1\]](https://codepushgo.com/).
 
 Some of its standout features include:
 
@@ -149,7 +149,7 @@ Securing data during live updates is crucial for staying compliant with regulati
 
 ### Encryption Requirements
 
-End-to-end encryption is a must for keeping live updates secure in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It ensures that update data remains protected as it moves from the server to the device. CodePushGo's live update solution enforces these encryption standards. According to CodePushGo: "End-to-end encryption. Only your users can decrypt your updates, no one else" [\[1\]](https://capgo.app/). This encryption approach is essential for protecting user data effectively.
+End-to-end encryption is a must for keeping live updates secure in [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/). It ensures that update data remains protected as it moves from the server to the device. CodePushGo's live update solution enforces these encryption standards. According to CodePushGo: "End-to-end encryption. Only your users can decrypt your updates, no one else" [\[1\]](https://codepushgo.com/). This encryption approach is essential for protecting user data effectively.
 
 ### User Data Protection
 
@@ -161,11 +161,11 @@ Thorough testing before release is critical for a smooth App Store submission an
 
 ### Pre-Release Testing
 
-CodePushGo's user assignment feature allows you to test updates with specific user groups before rolling them out to everyone. This controlled approach ensures your [encryption and data protection](https://capgo.app/docs/cli/migrations/encryption/) strategies are functioning effectively.
+CodePushGo's user assignment feature allows you to test updates with specific user groups before rolling them out to everyone. This controlled approach ensures your [encryption and data protection](https://codepushgo.com/docs/cli/migrations/encryption/) strategies are functioning effectively.
 
 Here's an example of how CodePushGo handled a rollout for over 5,000 users:
 
-> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." [\[1\]](https://codepushgo.com/)
 
 To ensure a successful rollout, follow these steps:
 
@@ -180,7 +180,7 @@ Once testing is complete, you'll need to document these steps for the App Store 
 
 When submitting your app, it's important to show compliance with Apple's guidelines.
 
-> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
 Apple requires specific documentation, including:
 
@@ -224,15 +224,15 @@ Tracking these metrics isn't just about performance - it also helps you identify
 3.  **Security Verification:** Double-check that your encryption protocols meet updated standards.
 4.  **Documentation Update:** Update your compliance documentation to reflect the latest guidelines.
 
-Using tools built with Apple's requirements in mind can simplify this process. For example, CodePushGo offers features like end-to-end encryption and user assignment, making it easier to stay compliant while delivering updates efficiently [\[1\]](https://capgo.app/).
+Using tools built with Apple's requirements in mind can simplify this process. For example, CodePushGo offers features like end-to-end encryption and user assignment, making it easier to stay compliant while delivering updates efficiently [\[1\]](https://codepushgo.com/).
 
-Regularly monitor your app's compliance through your [update management platform](https://capgo.app/docs/plugin/cloud-mode/manual-update/). Staying proactive can help you catch and resolve potential issues before they affect your App Store standing, keeping your live update strategy both effective and within the rules.
+Regularly monitor your app's compliance through your [update management platform](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/). Staying proactive can help you catch and resolve potential issues before they affect your App Store standing, keeping your live update strategy both effective and within the rules.
 
 ## Conclusion
 
-Balancing speed and compliance is key when implementing live updates in React Native apps. With the right tools, release efficiency can improve by up to 81% [\[1\]](https://capgo.app/), making it easier to stay within Apple’s guidelines.
+Balancing speed and compliance is key when implementing live updates in React Native apps. With the right tools, release efficiency can improve by up to 81% [\[1\]](https://codepushgo.com/), making it easier to stay within Apple’s guidelines.
 
-Platforms like CodePushGo show how it's possible to meet App Store requirements while still delivering fast updates [\[1\]](https://capgo.app/). Apple’s strict rules around live updates highlight the importance of staying compliant.
+Platforms like CodePushGo show how it's possible to meet App Store requirements while still delivering fast updates [\[1\]](https://codepushgo.com/). Apple’s strict rules around live updates highlight the importance of staying compliant.
 
 To ensure long-term compliance, focus on these practices:
 

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-01T03:16:07.896Z
 updated_at: 2025-04-01T03:16:19.769Z
-head_image: https://assets.seobotai.com/capgo.app/67eb4a47283d21cbd67d2aae-1743477379769.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67eb4a47283d21cbd67d2aae-1743477379769.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, Google Play compliance, security, version control, user communication, app updates, testing, performance metrics
 tag: Development, Security, Updates
@@ -25,7 +25,7 @@ next_blog: ''
 -   **Phased Rollouts**: Start small (5-10% of users), monitor performance, and scale gradually.
 -   **Performance Metrics**: Aim for a >98% update success rate, <0.1% crash rate, and <5MB package size.
 
-**Tools like [CodePushGo](https://capgo.app/)** make compliance easier with features like instant rollback, real-time monitoring, and secure update delivery.
+**Tools like [CodePushGo](https://codepushgo.com/)** make compliance easier with features like instant rollback, real-time monitoring, and secure update delivery.
 
 ### Quick Summary Table
 
@@ -61,7 +61,7 @@ This level of documentation makes troubleshooting much easier.
 
 Strong security measures are critical for OTA updates to meet Google Play's standards. Two essential practices include using end-to-end encryption and signing update packages.
 
-As CodePushGo's development team explains, _"The only solution with true end-to-end encryption, others just sign updates"_ [\[1\]](https://capgo.app/). Regular security audits and adherence to industry best practices help ensure updates remain secure and trustworthy.
+As CodePushGo's development team explains, _"The only solution with true end-to-end encryption, others just sign updates"_ [\[1\]](https://codepushgo.com/). Regular security audits and adherence to industry best practices help ensure updates remain secure and trustworthy.
 
 ## Update Distribution Safety
 
@@ -71,7 +71,7 @@ These measures help protect user data and ensure updates remain stable. By imple
 
 Encryption is key to secure over-the-air (OTA) distribution. The most reliable approach is **end-to-end encryption**, which safeguards update packages throughout the entire transmission process. Simply signing updates isn't enough - end-to-end encryption ensures only your users can access the updates.
 
-> "End-to-end encryption. Only your users can decrypt your updates, no one else." [\[1\]](https://capgo.app/)
+> "End-to-end encryption. Only your users can decrypt your updates, no one else." [\[1\]](https://codepushgo.com/)
 
 Pair encryption with strong recovery strategies to maintain seamless service.
 
@@ -104,10 +104,10 @@ Google Play requires clear notifications for pending updates to keep users infor
 
 Different types of over-the-air (OTA) updates require specific levels of user permissions:
 
-**[Automatic Updates](https://capgo.app/docs/plugin/cloud-mode/auto-update/)**
+**[Automatic Updates](https://codepushgo.com/docs/plugin/cloud-mode/auto-update/)**
 
 -   Used for smaller patches and minor fixes.
--   No action needed from the user [\[1\]](https://capgo.app/).
+-   No action needed from the user [\[1\]](https://codepushgo.com/).
 
 **Manual Approval**
 
@@ -128,7 +128,7 @@ Always provide brief and clear update notes that include essential details such 
 -   Feature changes
 -   Bug fixes
 
-> "End-to-end encryption. Only your users can decrypt your updates, no one else." [\[1\]](https://capgo.app/)
+> "End-to-end encryption. Only your users can decrypt your updates, no one else." [\[1\]](https://codepushgo.com/)
 
 This approach keeps users informed and ensures updates are both efficient and compliant with Google Play standards.
 
@@ -158,7 +158,7 @@ Roll out updates gradually, starting small and expanding as stability is confirm
 3.  **Expansion Phase**: Increase rollout in 20% increments.
 4.  **Full Release**: Deploy to all users after confirming stability.
 
-> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." - colenso, @colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." - colenso, @colenso [\[1\]](https://codepushgo.com/)
 
 ### Performance Tracking
 
@@ -173,15 +173,15 @@ Track these key metrics during and after deployment:
 
 Analytics and error tracking tools are essential for identifying and resolving issues quickly. Instant rollback features are critical to maintaining service quality if something goes wrong.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica, @manticarodrigo [\[1\]](https://codepushgo.com/)
 
 For beta testing and staged rollouts, use channel systems to target specific user groups with different versions. This controlled approach ensures thorough testing while staying compliant with Google Play Store requirements.
 
-## [CodePushGo](https://capgo.app/) Compliance Tools
+## [CodePushGo](https://codepushgo.com/) Compliance Tools
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67eb4a47283d21cbd67d2aae/574f3a2cd27791454624262312a6c223.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67eb4a47283d21cbd67d2aae/574f3a2cd27791454624262312a6c223.jpg)
 
-CodePushGo builds on strict update and security protocols to provide tools designed for compliance. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), CodePushGo ensures smooth updates while meeting key standards. These tools are grounded in principles like version control, security, and quality assurance.
+CodePushGo builds on strict update and security protocols to provide tools designed for compliance. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://codepushgo.com/), CodePushGo ensures smooth updates while meeting key standards. These tools are grounded in principles like version control, security, and quality assurance.
 
 ### Security Features
 
@@ -202,7 +202,7 @@ CodePushGo easily fits into existing development workflows while adhering to Goo
 | CI/CD Pipeline | Supports [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), [Jenkins](https://www.jenkins.io/) | Automates compliance checks |
 | CLI Tools | One-command deployments | Standardizes the update process |
 | API Access | Public API for custom setups | Offers flexible compliance management |
-| [Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/) | Beta testing and staged rollouts | Enables controlled update releases |
+| [Channel System](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) | Beta testing and staged rollouts | Enables controlled update releases |
 
 CI/CD integration is available for approximately $300 per month.
 
@@ -217,7 +217,7 @@ CodePushGo provides tools to manage updates effectively while aligning with Goog
 | Partial Updates | Average bundle size of 5MB | Improves delivery efficiency |
 | Organization Controls | Granular permissions | Secures update authority |
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 CodePushGo also offers flexible hosting options, including cloud-based and self-hosted solutions. These options allow organizations to maintain control over their update infrastructure while meeting Google Play's security standards. Features like real-time monitoring and instant rollback help achieve the 82% global success rate benchmark.
 
@@ -238,9 +238,9 @@ Staying on top of these requirements helps avoid rejections and ensures smooth a
 
 ### Using CodePushGo
 
-CodePushGo provides tools designed to streamline compliance with Google Play standards. With its features, developers can manage millions of updates across various apps seamlessly [\[1\]](https://capgo.app/).
+CodePushGo provides tools designed to streamline compliance with Google Play standards. With its features, developers can manage millions of updates across various apps seamlessly [\[1\]](https://codepushgo.com/).
 
-> "CodePushGo is essential for developers - enabling seamless bug fixes without store review" [\[1\]](https://capgo.app/)
+> "CodePushGo is essential for developers - enabling seamless bug fixes without store review" [\[1\]](https://codepushgo.com/)
 
 **Key Features and Advantages**:
 

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-04T02:49:29.961Z
 updated_at: 2025-04-04T02:49:43.341Z
-head_image: https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f-1743734983341.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ef362eebbb9dc80641f34f-1743734983341.jpg
 head_image_alt: Mobile Development
 keywords: React Native, CLI, mobile app development, Node.js, Android, iOS, live updates
 tag: Development, Mobile, Updates
@@ -19,16 +19,16 @@ next_blog: ''
 **[React Native](https://capacitorjs.com/) CLI helps you transform web apps into native iOS and Android apps with one codebase.** Here's how to set it up quickly:
 
 -   **Prerequisites**: Install [Node.js](https://nodejs.org/en) (v16+), npm, and a web framework (React, Vue, Angular, etc.).
--   **[Install React Native CLI](https://capgo.app/docs/cli/commands)**: Run `npm install @capacitor/cli @capacitor/core` and initialize your project with `npx cap init`.
+-   **[Install React Native CLI](https://codepushgo.com/docs/cli/commands)**: Run `npm install @capacitor/cli @capacitor/core` and initialize your project with `npx cap init`.
 -   **Prepare Platforms**: Add support for iOS (`npx cap add ios`) and Android (`npx cap add android`) platforms.
 -   **Build and Sync**: Use `npm run build` and `npx cap sync` to transfer web assets to native projects.
--   **Optional Live Updates**: Use tools like [CodePushGo](https://capgo.app/) to push updates instantly without app store delays.
+-   **Optional Live Updates**: Use tools like [CodePushGo](https://codepushgo.com/) to push updates instantly without app store delays.
 
 React Native CLI simplifies app development and maintenance. Follow the guide for smooth setup and troubleshooting.
 
 ## Build a Mobile App Fast! React + [React Native](https://capacitorjs.com/) + [Tailwind](https://tailwindcss.com/) + [DaisyUI](https://daisyui.com/)
 
-![React Native](https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/codepushgo.com/67ef362eebbb9dc80641f34f/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/PPXktTJXMPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -38,7 +38,7 @@ Get your environment ready by following these steps:
 
 ### Set Up [Node.js](https://nodejs.org/en) and npm
 
-![Node.js](https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f/a74739743b1f15b8d0bf124a9c30cba9.jpg)
+![Node.js](https://assets.seobotai.com/codepushgo.com/67ef362eebbb9dc80641f34f/a74739743b1f15b8d0bf124a9c30cba9.jpg)
 
 You'll need Node.js version 16 or higher. The latest LTS version is recommended. To check your setup, run:
 
@@ -112,7 +112,7 @@ Start by installing the React Native CLI and Core packages using npm:
 npm install @capacitor/cli @capacitor/core
 ```
 
-Once installed, confirm the setup by checking the [React Native version](https://capgo.app/plugins/ivs-player/):
+Once installed, confirm the setup by checking the [React Native version](https://codepushgo.com/plugins/ivs-player/):
 
 ```bash
 npx cap --version
@@ -170,7 +170,7 @@ npm run build
 npx cap sync
 ```
 
-This process compiles your web assets and transfers them to the native projects, including any installed [React Native plugins](https://capgo.app/plugins/).
+This process compiles your web assets and transfers them to the native projects, including any installed [React Native plugins](https://codepushgo.com/plugins/).
 
 To open the native projects for further customization:
 
@@ -267,7 +267,7 @@ If a plugin isn't behaving as expected, follow these steps:
     ```
     
 
-For those using [CodePushGo's native plugin](https://capgo.app/plugins/), it automatically synchronizes plugins and maintains compatibility during updates.
+For those using [CodePushGo's native plugin](https://codepushgo.com/plugins/), it automatically synchronizes plugins and maintains compatibility during updates.
 
 After applying these fixes, rebuild your project to verify the changes:
 
@@ -277,23 +277,23 @@ npm run build && npx cap copy && npx cap sync
 
 Once everything is running smoothly, you can move forward with exploring live update options with CodePushGo.
 
-## Live Updates with [CodePushGo](https://capgo.app/)
+## Live Updates with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67ef362eebbb9dc80641f34f/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67ef362eebbb9dc80641f34f/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
 
-Simplify [app updates](https://capgo.app/plugins/capacitor-updater/) using CodePushGo. It lets you push updates directly to users, skipping the need for app store reviews.
+Simplify [app updates](https://codepushgo.com/plugins/capacitor-updater/) using CodePushGo. It lets you push updates directly to users, skipping the need for app store reviews.
 
 **Getting started is simple.** First, install the necessary packages:
 
 ```bash
-npm install @capgo/cli @capgo/capacitor-updater
+npm install @codepushgo/cli @codepushgo/capacitor-updater
 npx cap sync
 ```
 
 Then, initialize CodePushGo in your project:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 ### Pricing Plans
@@ -317,7 +317,7 @@ To enable live updates, add the following to your `capacitor.config.ts` file:
   plugins: {
     React NativeUpdater: {
       autoUpdate: true,
-      updateUrl: 'https://api.capgo.app/updates'
+      updateUrl: 'https://api.codepushgo.com/updates'
     }
   }
 }
@@ -327,7 +327,7 @@ To enable live updates, add the following to your `capacitor.config.ts` file:
 
 CodePushGo provides several standout features:
 
--   **[Secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/)** with end-to-end encryption
+-   **[Secure updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/)** with end-to-end encryption
 -   **Automated deployments** through integrated CI/CD
 -   **Targeted updates** via user assignment
 -   **Instant rollback** with version control
@@ -340,13 +340,13 @@ Test updates in development before deploying them live. Use the following comman
 -   Deploy to staging:
     
     ```bash
-    npx @capgo/cli deploy --channel staging
+    npx @codepushgo/cli deploy --channel staging
     ```
     
 -   Deploy to production:
     
     ```bash
-    npx @capgo/cli deploy --channel production
+    npx @codepushgo/cli deploy --channel production
     ```
     
 
@@ -358,6 +358,6 @@ Setting up React Native CLI is simple when you have the right prerequisites in p
 
 Modern tools make app maintenance easier than ever. For example, CodePushGo now provides live updates, replacing older methods. Its integration with the CLI installation makes it a great option for developers working with React Native apps.
 
-The [React Native ecosystem](https://capgo.app/blog/capacitor-comprehensive-guide/) is constantly improving with new tools and features. Installing the CLI is just the starting point for [building mobile apps](https://capgo.app/blog/angular-mobile-app-capacitor/), and you'll benefit from detailed documentation and an active developer community.
+The [React Native ecosystem](https://codepushgo.com/blog/capacitor-comprehensive-guide/) is constantly improving with new tools and features. Installing the CLI is just the starting point for [building mobile apps](https://codepushgo.com/blog/angular-mobile-app-capacitor/), and you'll benefit from detailed documentation and an active developer community.
 
 Be sure to keep the React Native CLI and its packages up to date to avoid compatibility issues.

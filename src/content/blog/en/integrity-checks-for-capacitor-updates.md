@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-25T02:39:56.412Z
 updated_at: 2025-03-18T13:14:05.745Z
-head_image: https://assets.seobotai.com/capgo.app/67bd178e258ce8f57ea75e3e-1740451235493.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67bd178e258ce8f57ea75e3e-1740451235493.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, React Native, security, integrity checks, encryption, mobile apps, update management
 tag: Development, Mobile, Updates
@@ -20,7 +20,7 @@ next_blog: ''
 
 -   **Integrity Checks**: Use cryptographic hashes and digital signatures to confirm updates are unaltered.
 -   **Common Threats**: Prevent interception, spoofing, and tampering with HTTPS, digital signatures, and checksums.
--   **[CodePushGo](https://capgo.app/) Integration**: Simplify secure updates with CodePushGo's encryption, real-time verification, and rollback features.
+-   **[CodePushGo](https://codepushgo.com/) Integration**: Simplify secure updates with CodePushGo's encryption, real-time verification, and rollback features.
 -   **Key Security Practices**:
     -   Enforce HTTPS for secure communication.
     -   Use mutual TLS authentication for update requests.
@@ -37,7 +37,7 @@ This article dives into setting up a secure OTA infrastructure, cryptographic me
 
 ## Secure OTA Update Infrastructure
 
-Build a reliable OTA (Over-The-Air) update system for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by incorporating HTTPS, strong authentication, and real-time update tools.
+Build a reliable OTA (Over-The-Air) update system for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) by incorporating HTTPS, strong authentication, and real-time update tools.
 
 ### HTTPS Setup for Updates
 
@@ -55,9 +55,9 @@ Ensure your React Native app only accepts HTTPS connections for update requests.
 
 TLS (Transport Layer Security) mutual authentication ensures both the client and server verify each other's identity. All HTTP communications for updates should include strict authentication and authorization checks [\[2\]](https://docs.aws.amazon.com/freertos/latest/userguide/dev-guide-ota-security.html). These protocols enhance the security provided by HTTPS, creating a layered defense.
 
-### Using [CodePushGo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://codepushgo.com/) for Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-25.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-25.jpg?auto=compress)
 
 CodePushGo offers a streamlined and secure solution for managing OTA updates. With over 23.5 million updates delivered across 750 production apps, CodePushGo provides:
 
@@ -65,7 +65,7 @@ CodePushGo offers a streamlined and secure solution for managing OTA updates. Wi
 -   **Compliance** with Apple and Google platform rules
 -   **Real-time verification** to ensure update integrity
 
-To get started, install the CodePushGo plugin using `npx @capgo/cli init`. This enables automatic verification of updates when the app starts. For iOS, CodePushGo includes a custom Dart interpreter to meet platform-specific requirements [\[3\]](https://capgo.app/docs/faq/).
+To get started, install the CodePushGo plugin using `npx @codepushgo/cli init`. This enables automatic verification of updates when the app starts. For iOS, CodePushGo includes a custom Dart interpreter to meet platform-specific requirements [\[3\]](https://codepushgo.com/docs/faq/).
 
 ###### sbb-itb-f9944d2
 
@@ -126,7 +126,7 @@ Set up an automated rollback system to handle situations where integrity checks 
 | Execution | Restore previous working version | Confirm successful restoration |
 | Post-rollback | Validate app functionality | Run critical path tests |
 
-Here's how you can configure your [React Native updater](https://capgo.app/plugins/capacitor-updater/) with suitable timeout settings for smoother rollbacks:
+Here's how you can configure your [React Native updater](https://codepushgo.com/plugins/capacitor-updater/) with suitable timeout settings for smoother rollbacks:
 
 ```javascript
 {
@@ -188,7 +188,7 @@ Here’s an example of a secure configuration for your project:
 ```javascript
 {
   autoUpdate: true,
-  updateUrl: "https://api.capgo.app/updates",
+  updateUrl: "https://api.codepushgo.com/updates",
   autoDeleteFailed: true,
   responseTimeout: 15000
 }

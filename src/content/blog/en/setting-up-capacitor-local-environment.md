@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-03T01:01:07.065Z
 updated_at: 2025-04-03T01:01:18.509Z
-head_image: https://assets.seobotai.com/capgo.app/67edd19cebbb9dc8064069d2-1743642078509.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67edd19cebbb9dc8064069d2-1743642078509.jpg
 head_image_alt: Mobile Development
 keywords: React Native, mobile development, iOS setup, Android setup, app development, web technologies, local environment
 tag: Development, Mobile, Updates
@@ -52,13 +52,13 @@ next_blog: ''
     -   Build web assets (`npm run build`) and sync them with native platforms (`npx cap sync`).
 8.  **Enable Live Updates**:
     
-    -   Use [CodePushGo](https://capgo.app/) for real-time updates with:
+    -   Use [CodePushGo](https://codepushgo.com/) for real-time updates with:
         
         ```bash
-        npx @capgo/cli init
+        npx @codepushgo/cli init
         ```
         
-9.  **[Test Your App](https://capgo.app/docs/plugin/debugging/)**:
+9.  **[Test Your App](https://codepushgo.com/docs/plugin/debugging/)**:
     
     -   Use iOS Simulator (`npx cap open ios`) or Android Emulator (`npx cap open android`).
 
@@ -237,7 +237,7 @@ const config: React NativeConfig = {
 Enable live updates with **CodePushGo** for smoother update delivery:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 ### Testing Setup
@@ -256,22 +256,22 @@ For testing on physical devices:
 -   Enable USB debugging on Android devices.
 -   Verify that development certificates are correctly set up.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
-CodePushGo's channel system is a great tool for beta testing and staged rollouts. It lets you target specific user groups with different versions, helping you identify and fix issues before a broader release [\[1\]](https://capgo.app/).
+CodePushGo's channel system is a great tool for beta testing and staged rollouts. It lets you target specific user groups with different versions, helping you identify and fix issues before a broader release [\[1\]](https://codepushgo.com/).
 
 ## Additional Features
 
 Expand your React Native setup with tools that improve update delivery, streamline automation, and allow for tailored configurations.
 
-### [CodePushGo](https://capgo.app/) Setup
+### [CodePushGo](https://codepushgo.com/) Setup
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67edd19cebbb9dc8064069d2/6f70cafcdfe95287b465212dfd047c63.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67edd19cebbb9dc8064069d2/6f70cafcdfe95287b465212dfd047c63.jpg)
 
 Simplify your workflow using CodePushGo's live update system. To get started, run:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 Then, adjust your `capacitor.config.ts` file to enable live updates:
@@ -287,7 +287,7 @@ Then, adjust your `capacitor.config.ts` file to enable live updates:
 }
 ```
 
-CodePushGo's global CDN delivers impressive speeds, with 5MB bundles downloading in just 114ms [\[1\]](https://capgo.app/). Once live updates are set up, you can automate your builds for smoother deployments.
+CodePushGo's global CDN delivers impressive speeds, with 5MB bundles downloading in just 114ms [\[1\]](https://codepushgo.com/). Once live updates are set up, you can automate your builds for smoother deployments.
 
 ### Build Automation
 
@@ -306,10 +306,10 @@ build_and_deploy:
   steps:
     - run: npm run build
     - run: npx cap sync
-    - run: npx @capgo/cli deploy
+    - run: npx @codepushgo/cli deploy
 ```
 
-> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - CodePushGo [\[1\]](https://capgo.app/)
+> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - CodePushGo [\[1\]](https://codepushgo.com/)
 
 ### Custom Settings
 
@@ -342,7 +342,7 @@ For better performance, consider these options:
 -   Set up analytics tracking
 -   Use rollback features
 
-These tools contribute to an 82% success rate across 750 production apps worldwide [\[1\]](https://capgo.app/).
+These tools contribute to an 82% success rate across 750 production apps worldwide [\[1\]](https://codepushgo.com/).
 
 ## Problem Solving
 
@@ -392,8 +392,8 @@ Here are some ways to improve stability and avoid recurring problems.
 
 **Best Practices**
 
--   Use built-in error tracking to quickly identify and fix problems [\[1\]](https://capgo.app/).
--   Set up [update channels](https://capgo.app/docs/webapp/channels/) for controlled rollouts:
+-   Use built-in error tracking to quickly identify and fix problems [\[1\]](https://codepushgo.com/).
+-   Set up [update channels](https://codepushgo.com/docs/webapp/channels/) for controlled rollouts:
 
 ```typescript
 {
@@ -424,7 +424,7 @@ Here are some ways to improve stability and avoid recurring problems.
 }
 ```
 
--   Use end-to-end encryption to [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) [\[1\]](https://capgo.app/).
+-   Use end-to-end encryption to [secure updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) [\[1\]](https://codepushgo.com/).
 
 ## Summary
 
@@ -439,7 +439,7 @@ These improvements come from following the setup and integration practices discu
 
 **Performance Highlights**
 
-[CodePushGo-enhanced React Native environments](https://capgo.app/blog/) show impressive results, including fast response times, quick downloads, and high success rates for updates [\[1\]](https://capgo.app/).
+[CodePushGo-enhanced React Native environments](https://codepushgo.com/blog/) show impressive results, including fast response times, quick downloads, and high success rates for updates [\[1\]](https://codepushgo.com/).
 
 **Benefits for Developers**
 

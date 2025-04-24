@@ -18,7 +18,7 @@ await fetch(`${config.public.baseApiUrl}/private/plans`)
   .then((r) => r.json() as Promise<Array<Database['public']['Tables']['plans']['Row']>>)
   .then((res) => plansAll.value.push(...res))
 
-// https://cal.com/martindonadieu/capgo-enterprise-inquiry
+// https://cal.com/martindonadieu/codepushgo-enterprise-inquiry
 const plans = computed(() => (plansAll.value.length ? plansAll.value.filter((p) => p.name !== 'Pay as you go' && p.name !== 'Free') : []))
 const payg = computed(() => (plansAll.value.length ? plansAll.value.filter((p) => p.name === 'Pay as you go')[0] : undefined))
 
@@ -94,7 +94,7 @@ const payg_units = computed(() =>
               </p>
             </div>
             <a
-              href="https://cal.com/martindonadieu/capgo-enterprise-inquiry"
+              href="https://cal.com/martindonadieu/codepushgo-enterprise-inquiry"
               target="_blank"
               class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-[#0A0B2C] hover:bg-[#1A1B4C] rounded-full transition-colors duration-200"
             >

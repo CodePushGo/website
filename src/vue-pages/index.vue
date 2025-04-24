@@ -147,7 +147,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
           <div class="px-8 text-center md:mx-auto md:max-w-2xl xl:max-w-none xl:pr-16 xl:text-left">
             <h2 class="text-3xl font-bold text-gray-900 font-pj sm:text-4xl xl:text-5xl">{{ m.youre_in_good_company() }}</h2>
             <p class="mt-6 text-lg font-normal text-gray-800 font-pj">
-              {{ m.capgo_enables_development_teams_at_some_of_the_most_innovative_companies() }}
+              {{ m.codepushgo_enables_development_teams_at_some_of_the_most_innovative_companies() }}
             </p>
           </div>
           <div class="relative mt-8 sm:mt-12 lg:mx-auto lg:max-w-4xl xl:mt-0 xl:max-w-none">
@@ -220,7 +220,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
             {{ m.apps_with_20m_users() }}
           </h2>
           <h2 class="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-7xl">
-            {{ m.use_capgo() }}
+            {{ m.use_codepushgo() }}
           </h2>
           <p class="mt-3 text-base leading-relaxed text-gray-300 md:mt-8">
             {{ m.our_numbers_are_shared_transparently_since_december_2021() }}
@@ -308,7 +308,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               <h3 class="mt-6 text-xl font-semibold leading-tight text-black md:mt-10">
                 {{ m.install_the_plugin() }}
               </h3>
-              <p class="mt-4 text-base text-gray-600">Run <span class="font-bold text-gray-900">npx @capgo/cli init</span> that it !</p>
+              <p class="mt-4 text-base text-gray-600">Run <span class="font-bold text-gray-900">npx @codepushgo/cli init</span> that it !</p>
             </div>
             <div>
               <div class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
@@ -432,13 +432,13 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
           <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl">
-            {{ m.with_and_without_capgo_title() }}
+            {{ m.with_and_without_codepushgo_title() }}
           </h2>
-          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">{{ m.with_and_without_capgo_subtitle() }}</p>
+          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">{{ m.with_and_without_codepushgo_subtitle() }}</p>
         </div>
         <div class="grid grid-cols-1 gap-8 mt-12 lg:grid-cols-2">
           <div class="p-8 border-2 border-red-200 bg-red-50 rounded-xl">
-            <h3 class="mb-6 text-2xl font-bold text-red-900">{{ m.without_capgo() }}</h3>
+            <h3 class="mb-6 text-2xl font-bold text-red-900">{{ m.without_codepushgo() }}</h3>
             <ul class="space-y-4">
               <li class="flex items-start">
                 <svg class="w-6 h-6 mr-2 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -473,7 +473,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
             </ul>
           </div>
           <div class="p-8 transition-transform duration-200 transform border-2 border-blue-200 shadow-lg bg-gradient-to-br from-blue-50 to-green-50 rounded-xl hover:scale-105">
-            <h3 class="mb-6 text-2xl font-bold text-blue-900">{{ m.with_capgo() }}</h3>
+            <h3 class="mb-6 text-2xl font-bold text-blue-900">{{ m.with_codepushgo() }}</h3>
             <ul class="space-y-4">
               <li class="flex items-start">
                 <svg class="w-6 h-6 mr-2 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

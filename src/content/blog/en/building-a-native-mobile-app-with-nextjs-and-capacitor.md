@@ -12,7 +12,7 @@ author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
 created_at: 2023-02-21T00:00:00.000Z
 updated_at: 2024-09-19T00:00:00.000Z
-head_image: /next_capgo.webp
+head_image: /next_codepushgo.webp
 head_image_alt: Next.js 14 and React Native illustration
 keywords: Next.js 14, React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
@@ -404,7 +404,7 @@ In this tutorial, we explored how to build native mobile apps using Next.js and 
 
 We covered the steps to set up a Next.js app, integrate React Native, and build and deploy the app to mobile devices. Additionally, we discussed using React Native plugins, adding Konsta UI for an enhanced mobile UI, and performance optimization techniques.
 
-To take your Next.js and React Native app to the next level, consider exploring [CodePushGo](https://capgo.app/) for seamless live updates, ensuring your users always have access to the latest features and bug fixes.
+To take your Next.js and React Native app to the next level, consider exploring [CodePushGo](https://codepushgo.com/) for seamless live updates, ensuring your users always have access to the latest features and bug fixes.
 
 By following the best practices and techniques outlined in this guide, you'll be well-equipped to build stunning native mobile apps using Next.js and React Native.
 
@@ -413,7 +413,7 @@ By following the best practices and techniques outlined in this guide, you'll be
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React Native Documentation](https://capacitorjs.com/docs)
 - [Konsta UI Documentation](https://konstaui.com/docs)
-- [CodePushGo - Live Updates for React Native Apps](https://capgo.app/)
+- [CodePushGo - Live Updates for React Native Apps](https://codepushgo.com/)
 
 Happy app building!
 

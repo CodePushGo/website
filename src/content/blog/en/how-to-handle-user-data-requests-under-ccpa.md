@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-06T01:02:16.662Z
 updated_at: 2025-04-06T01:02:28.104Z
-head_image: https://assets.seobotai.com/capgo.app/67f1c538ebbb9dc80644b1ad-1743901348104.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67f1c538ebbb9dc80644b1ad-1743901348104.jpg
 head_image_alt: Mobile Development
 keywords: CCPA, user data requests, compliance, privacy rights, data access, data deletion, opt-out, data protection
 tag: Development, Security, Updates
@@ -27,10 +27,10 @@ The California Consumer Privacy Act ([CCPA](https://en.wikipedia.org/wiki/Califo
 -   **Key Steps for Compliance**:
     -   Create a secure system for data requests (web forms, email, or in-app).
     -   Verify user identity before processing requests.
-    -   Use clear [privacy policies](https://capgo.app/dp/) and provide an easy "Do Not Sell My Personal Information" option.
+    -   Use clear [privacy policies](https://codepushgo.com/dp/) and provide an easy "Do Not Sell My Personal Information" option.
     -   Protect data with encryption and secure storage.
 
-**Quick Tip**: Use tools like [CodePushGo](https://capgo.app/) for instant updates to your app's privacy features, ensuring fast compliance with changing regulations.
+**Quick Tip**: Use tools like [CodePushGo](https://codepushgo.com/) for instant updates to your app's privacy features, ensuring fast compliance with changing regulations.
 
 ## How To Comply With California Consumer Privacy Act ...
 
@@ -100,7 +100,7 @@ Once the user's identity is verified, stick to these steps to meet CCPA deadline
 
 ### Privacy Policy Updates
 
-Keep your [privacy policy](https://capgo.app/privacy/) current with CCPA requirements. Clearly outline:
+Keep your [privacy policy](https://codepushgo.com/privacy/) current with CCPA requirements. Clearly outline:
 
 -   The types of personal information you collect
 -   How you use and share this information
@@ -160,11 +160,11 @@ Consider creating a dedicated privacy settings interface that includes:
 
 Place these controls in a spot that's easy to find within your app's settings menu. Be transparent - clearly explain what data is collected, why it's needed, how it's used, and who it’s shared with. This approach ensures users can quickly update their preferences whenever needed.
 
-### Using [CodePushGo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://codepushgo.com/) for Updates
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67f1c538ebbb9dc80644b1ad/241c8f19433e01f315154c8988becf9c.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67f1c538ebbb9dc80644b1ad/241c8f19433e01f315154c8988becf9c.jpg)
 
-Once you’ve established strong in-app controls, keeping your app updated is key to staying compliant. That’s where CodePushGo comes in. It lets you deploy updates instantly - no waiting for app store approvals. In fact, 95% of active users receive updates within 24 hours of release [\[1\]](https://capgo.app/).
+Once you’ve established strong in-app controls, keeping your app updated is key to staying compliant. That’s where CodePushGo comes in. It lets you deploy updates instantly - no waiting for app store approvals. In fact, 95% of active users receive updates within 24 hours of release [\[1\]](https://codepushgo.com/).
 
 Here’s what CodePushGo offers:
 
@@ -172,9 +172,9 @@ Here’s what CodePushGo offers:
 -   **Secure Implementation**: Uses end-to-end encryption, ensuring only users can decrypt updates.
 -   **Version Control**: Roll back updates if necessary to maintain consistency.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
-CodePushGo’s channel system also lets you test privacy updates with specific user groups before rolling them out to everyone. Currently, 750 apps rely on CodePushGo in production environments [\[1\]](https://capgo.app/).
+CodePushGo’s channel system also lets you test privacy updates with specific user groups before rolling them out to everyone. Currently, 750 apps rely on CodePushGo in production environments [\[1\]](https://codepushgo.com/).
 
 ## Summary
 
@@ -189,10 +189,10 @@ Handling CCPA data requests involves balancing user privacy rights with technica
 | Data Sale Opt-Out | Clear process with user verification |
 | Data Protection | End-to-end encryption |
 
-For mobile apps, strong permission controls are essential. **CodePushGo** simplifies compliance by enabling instant updates, already supporting 750 production apps [\[1\]](https://capgo.app/).
+For mobile apps, strong permission controls are essential. **CodePushGo** simplifies compliance by enabling instant updates, already supporting 750 production apps [\[1\]](https://codepushgo.com/).
 
-> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
-Speed matters: 95% of users receive updates within 24 hours through **CodePushGo** [\[1\]](https://capgo.app/), ensuring fast compliance with regulations.
+Speed matters: 95% of users receive updates within 24 hours through **CodePushGo** [\[1\]](https://codepushgo.com/), ensuring fast compliance with regulations.
 
 CCPA compliance isn't a one-time task. Regular audits and updates are necessary to keep up with changing rules and protect user privacy.

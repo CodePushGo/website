@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-19T03:53:13.485Z
 updated_at: 2025-03-19T03:53:59.850Z
-head_image: https://assets.seobotai.com/capgo.app/67da3972cfd1b2222c56f23a-1742356439850.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67da3972cfd1b2222c56f23a-1742356439850.jpg
 head_image_alt: Mobile Development
 keywords: React Native, OTA updates, testing, mock scenarios, app reliability, network conditions, failure recovery, analytics
 tag: Development, Mobile, Updates
@@ -22,7 +22,7 @@ Here’s what you need to know:
 
 -   **Why It Matters**: Unreliable updates can harm user trust and app performance.
 -   **How to Test Safely**: Use mock tests to simulate real-world conditions like poor networks or corrupted files.
--   **Tools You Need**: [Node.js](https://nodejs.org/en), React Native CLI, and [CodePushGo](https://capgo.app/) CLI for managing updates.
+-   **Tools You Need**: [Node.js](https://nodejs.org/en), React Native CLI, and [CodePushGo](https://codepushgo.com/) CLI for managing updates.
 -   **Key Scenarios to Test**: Normal updates, failed installations, and network issues.
 -   **Metrics to Monitor**: Download rates, installation success, and version accuracy.
 
@@ -38,18 +38,18 @@ This section covers the key tools and steps required to set up your environment.
 
 ### Required Software
 
-To test [React Native OTA updates](https://capgo.app/ja/), you'll need the following tools:
+To test [React Native OTA updates](https://codepushgo.com/ja/), you'll need the following tools:
 
 | Software | Purpose | Version Requirements |
 | --- | --- | --- |
 | **Node.js** | Runtime environment | Latest LTS version |
 | **React Native CLI** | App development | React Native 6 or 7 |
-| **[CodePushGo CLI](https://capgo.app/docs/cli/commands)** | OTA management | Latest version |
+| **[CodePushGo CLI](https://codepushgo.com/docs/cli/commands)** | OTA management | Latest version |
 
 Install the CodePushGo CLI by running:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 After installation, configure your project to simulate production conditions effectively.
@@ -58,7 +58,7 @@ After installation, configure your project to simulate production conditions eff
 
 Create a test project that mirrors production conditions. Use CodePushGo's channel system to isolate testing scenarios.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 CodePushGo offers end-to-end encryption to keep your test updates secure. You can also choose between cloud-based or self-hosted environments, depending on your requirements.
 
@@ -68,11 +68,11 @@ To implement Over-The-Air (OTA) updates, follow these three steps:
 
 -   **Plugin Installation**
 -   **Build Configuration**
--   **[Update Integration](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/)**
+-   **[Update Integration](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/)**
 
 CodePushGo's CI/CD tools make automated testing seamless. Platforms like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/) are supported, allowing you to test updates across various environments before deployment. The channel system is especially helpful for managing different test scenarios.
 
-> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" - NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" - NASA's OSIRIS-REx [\[1\]](https://codepushgo.com/)
 
 For better control during testing, integrate CodePushGo's analytics to get real-time insights.
 
@@ -85,7 +85,7 @@ Set up test scenarios to ensure OTA updates are reliable. Let's look at some pra
 Check standard update processes to establish a baseline:
 
 ```bash
-capgo build && capgo deploy --channel beta
+codepushgo build && codepushgo deploy --channel beta
 ```
 
 Focus on these key metrics:
@@ -120,7 +120,7 @@ CodePushGo's system minimizes the impact of slow or unstable networks by downloa
 You can configure these scenarios with:
 
 ```bash
-capgo deploy --channel test --network-condition slow
+codepushgo deploy --channel test --network-condition slow
 ```
 
 Track progress using CodePushGo's real-time analytics. All tests maintain end-to-end encryption, so security remains intact even during troubleshooting.
@@ -133,8 +133,8 @@ Set up a clear testing workflow by creating separate test channels to keep thing
 
 ```bash
 # Create test channels
-capgo channel create beta-test
-capgo channel create staging-test
+codepushgo channel create beta-test
+codepushgo channel create staging-test
 ```
 
 Keep track of each test case with a structured approach:
@@ -156,12 +156,12 @@ CodePushGo's analytics dashboard offers insights into your update performance:
 -   Timeline showing how quickly users adopt the new version
 -   Frequency of errors during the update process
 
-> "We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
+> "We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://codepushgo.com/)
 
 For real-time error tracking, use the following command:
 
 ```bash
-capgo monitor --channel beta-test --verbose
+codepushgo monitor --channel beta-test --verbose
 ```
 
 ### Checking Results
@@ -171,7 +171,7 @@ Ensure everything is functioning as expected by verifying:
 -   **Version accuracy** using the built-in checker:
 
 ```bash
-capgo version --check --channel beta-test
+codepushgo version --check --channel beta-test
 ```
 
 -   **Data integrity**, including local storage and cached content
@@ -210,12 +210,12 @@ Data conflicts can emerge when updates involve changes to existing schemas. To a
 
 ### Testing Impact
 
-Comprehensive OTA update testing has achieved an 82% success rate globally, improving both app reliability and user satisfaction [\[1\]](https://capgo.app/). Mock testing is especially useful in challenging scenarios like network interruptions, data migrations, and storage limitations. By replicating these conditions, development teams can ensure updates perform reliably across various environments. This methodical approach helps deliver consistent updates that encourage user adoption.
+Comprehensive OTA update testing has achieved an 82% success rate globally, improving both app reliability and user satisfaction [\[1\]](https://codepushgo.com/). Mock testing is especially useful in challenging scenarios like network interruptions, data migrations, and storage limitations. By replicating these conditions, development teams can ensure updates perform reliably across various environments. This methodical approach helps deliver consistent updates that encourage user adoption.
 
-### Using [CodePushGo](https://capgo.app/)
+### Using [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-19.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-19.jpg?auto=compress)
 
-The advantages of testing are amplified with a platform like **CodePushGo**. It simplifies OTA update testing through advanced validation tools and integrates proven testing results to provide secure and efficient updates. CodePushGo’s channel system supports beta testing and staged rollouts, allowing updates to be thoroughly vetted before full deployment. With features like detailed analytics, error tracking, and global CDN performance, CodePushGo delivers impressive download speeds - 114ms for a 5MB bundle [\[1\]](https://capgo.app/).
+The advantages of testing are amplified with a platform like **CodePushGo**. It simplifies OTA update testing through advanced validation tools and integrates proven testing results to provide secure and efficient updates. CodePushGo’s channel system supports beta testing and staged rollouts, allowing updates to be thoroughly vetted before full deployment. With features like detailed analytics, error tracking, and global CDN performance, CodePushGo delivers impressive download speeds - 114ms for a 5MB bundle [\[1\]](https://codepushgo.com/).
 
-CodePushGo also offers end-to-end encryption and instant rollback options, ensuring app stability. These capabilities have supported 750 production apps, delivering 23.5 million updates [\[1\]](https://capgo.app/).
+CodePushGo also offers end-to-end encryption and instant rollback options, ensuring app stability. These capabilities have supported 750 production apps, delivering 23.5 million updates [\[1\]](https://codepushgo.com/).

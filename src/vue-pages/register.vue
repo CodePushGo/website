@@ -36,7 +36,7 @@ const handleSubmit = async () => {
   const { data: deleted, error: errorDeleted } = await supabase.rpc('is_not_deleted', { email_check: email.value })
   if (errorDeleted) console.error(errorDeleted)
   if (!deleted) {
-    toast.error('Account is in error, please contact support at support@capgo.app')
+    toast.error('Account is in error, please contact support at support@codepushgo.com')
     return
   }
 
@@ -56,7 +56,7 @@ const handleSubmit = async () => {
           optForNewsletters: false,
         },
       },
-      emailRedirectTo: 'https://web.capgo.app/onboarding/verify_email',
+      emailRedirectTo: 'https://web.codepushgo.com/onboarding/verify_email',
     },
   })
   if (error) {
@@ -79,7 +79,7 @@ const handleSubmit = async () => {
   if ((window as any).datafast) {
     ;(window as any).datafast('signup', { email: email.value })
   }
-  window.location.href = `https://web.capgo.app/login/?access_token=${session.data.session?.access_token}&refresh_token=${session.data.session?.refresh_token}`
+  window.location.href = `https://web.codepushgo.com/login/?access_token=${session.data.session?.access_token}&refresh_token=${session.data.session?.refresh_token}`
 }
 </script>
 
@@ -107,7 +107,7 @@ const handleSubmit = async () => {
             <h2 class="text-4xl font-bold text-gray-900">{{ m.register_title() }}</h2>
             <p class="text-sm text-gray-500">
               {{ m.already_have_account() }}
-              <a href="https://web.capgo.app/login/" target="_blank" class="text-blue-500 hover:underline">{{ m.sign_in() }}</a>
+              <a href="https://web.codepushgo.com/login/" target="_blank" class="text-blue-500 hover:underline">{{ m.sign_in() }}</a>
             </p>
           </div>
           <form @submit.prevent="handleSubmit" class="space-y-4 text-black">
@@ -188,7 +188,7 @@ const handleSubmit = async () => {
             </div>
           </div>
           <a
-            href="mailto:support@capgo.app"
+            href="mailto:support@codepushgo.com"
             class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

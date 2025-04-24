@@ -87,7 +87,7 @@ async function main() {
 `,
           '',
         )
-        const transformedMarkdown = cleanMarkdown.replace(iframeRegex, iframe).replace(/https:\/\/capgo\.app\/(de|en|es|fr|id|it|ja|ko)\/(.*?)\//g, 'https://capgo.app/$2/')
+        const transformedMarkdown = cleanMarkdown.replace(iframeRegex, iframe).replace(/https:\/\/codepushgo\.app\/(de|en|es|fr|id|it|ja|ko)\/(.*?)\//g, 'https://codepushgo.com/$2/')
         // Combine frontmatter with markdown content
         const content = `${frontmatter}${transformedMarkdown}`
 

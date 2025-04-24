@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-17T01:02:12.522Z
 updated_at: 2025-04-17T01:04:06.737Z
-head_image: https://assets.seobotai.com/capgo.app/6800475b28980901df1e541b-1744851846737.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/6800475b28980901df1e541b-1744851846737.jpg
 head_image_alt: Mobile Development
 keywords: React Native, OTA updates, CI/CD, app deployment, automation, mobile development, versioning, error tracking
 tag: Development, Mobile, Updates
@@ -21,7 +21,7 @@ next_blog: ''
 ### Key Takeaways:
 
 -   **Why OTA + CI/CD?** Automates updates, enables rollbacks, and ensures faster bug fixes.
--   **What You Need:** React Native app, Git repository, CI/CD platform (e.g., [GitHub Actions](https://docs.github.com/actions)), and an OTA service like [CodePushGo](https://capgo.app/).
+-   **What You Need:** React Native app, Git repository, CI/CD platform (e.g., [GitHub Actions](https://docs.github.com/actions)), and an OTA service like [CodePushGo](https://codepushgo.com/).
 -   **Setup Costs:** Expect ~$300/month for CI/CD operations; CodePushGo's one-time setup fee is $2,600.
 -   **Best Practices:** Use versioning (major, minor, patch), staged rollouts, and error tracking to ensure smooth updates.
 -   **Top OTA Platforms:** CodePushGo stands out with fast updates (114ms), high success rates (82%), and global support.
@@ -70,11 +70,11 @@ Keeping credentials secure is critical for maintaining the integrity of your CI/
 
 CodePushGo emphasizes the importance of proper configuration in CI/CD pipelines:
 
-> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." – CodePushGo[\[1\]](https://capgo.app/)
+> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." – CodePushGo[\[1\]](https://codepushgo.com/)
 
 When selecting tools, prioritize platform independence, scalability, and strong security measures like end-to-end encryption for updates.
 
-Running CI/CD operations typically costs around $300 per month[\[1\]](https://capgo.app/), but this investment pays off by speeding up deployments and reducing manual work.
+Running CI/CD operations typically costs around $300 per month[\[1\]](https://codepushgo.com/), but this investment pays off by speeding up deployments and reducing manual work.
 
 Once these components are in place, you’re ready to integrate them into your CI/CD pipeline.
 
@@ -86,8 +86,8 @@ To get started, you'll need to add specific OTA packages and configurations to y
 
 | **Component** | **Installation Command** | **Purpose** |
 | --- | --- | --- |
-| CodePushGo CLI | `npm install @capgo/cli` | Handles update builds and deployments |
-| Configuration File | `npx @capgo/cli init` | Sets up project-specific settings |
+| CodePushGo CLI | `npm install @codepushgo/cli` | Handles update builds and deployments |
+| Configuration File | `npx @codepushgo/cli init` | Sets up project-specific settings |
 | Environment Variables | Configured via your CI/CD platform | Stores API keys and sensitive information |
 
 Once these components are installed, you can move on to configuring your CI/CD pipeline.
@@ -98,7 +98,7 @@ Set up your pipeline to trigger actions based on changes in the main branch or t
 
 -   **Build**: Triggered by code changes to compile and prepare your app.
 -   **Test**: Automates functionality checks to ensure stability.
--   **[Update Generation](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/)**: Bundles and optimizes assets for deployment.
+-   **[Update Generation](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/)**: Bundles and optimizes assets for deployment.
 
 When your pipeline is ready, you can seamlessly deploy your update bundles.
 
@@ -109,7 +109,7 @@ Deploying updates involves pushing your bundles through an Over-The-Air (OTA) se
 | **Stage** | **Action** | **Verification** |
 | --- | --- | --- |
 | Pre-deployment | Version check | Confirms correct versioning |
-| Deployment | [Bundle upload](https://capgo.app/docs/webapp/bundles/) | Sends the update to the distribution system |
+| Deployment | [Bundle upload](https://codepushgo.com/docs/webapp/bundles/) | Sends the update to the distribution system |
 | Post-deployment | Health check | Monitors and verifies the update's status |
 
 **Pro Tips for Deployment:**
@@ -118,9 +118,9 @@ Deploying updates involves pushing your bundles through an Over-The-Air (OTA) se
 -   Configure **automatic rollbacks** to handle issues quickly.
 -   Integrate **error tracking** for better debugging.
 
-> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." – CodePushGo [\[1\]](https://capgo.app/)
+> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." – CodePushGo [\[1\]](https://codepushgo.com/)
 
-CodePushGo offers a one-time setup fee of $2,600 [\[1\]](https://capgo.app/), making deployment efficient while keeping costs under control.
+CodePushGo offers a one-time setup fee of $2,600 [\[1\]](https://codepushgo.com/), making deployment efficient while keeping costs under control.
 
 ## OTA Update Guidelines
 
@@ -137,7 +137,7 @@ Use a structured versioning system to manage OTA updates. This system should dif
 | Patch Version | Covers bug fixes | 2.1.1 |
 | Build Number | Identifies the CI/CD build | 2.1.1-build.123 |
 
-Incorporate [update channels](https://capgo.app/docs/webapp/channels/) for managing beta and production rollouts. Once your versioning system is in place, ensure all updates comply with platform-specific guidelines.
+Incorporate [update channels](https://codepushgo.com/docs/webapp/channels/) for managing beta and production rollouts. Once your versioning system is in place, ensure all updates comply with platform-specific guidelines.
 
 ### App Store Rules
 
@@ -159,7 +159,7 @@ Once you've set your OTA update guidelines, the next step is choosing an OTA pla
 
 ### Platform Comparison
 
-Here’s a breakdown of key features across popular OTA platforms for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/):
+Here’s a breakdown of key features across popular OTA platforms for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/):
 
 | Feature | CodePushGo | Capawesome | Appflow | CodePush |
 | --- | --- | --- | --- | --- |
@@ -172,12 +172,12 @@ Here’s a breakdown of key features across popular OTA platforms for [React Nat
 | CI/CD Integration | Native support | Basic | Advanced | N/A |
 | Monthly Cost | From $12 | Similar to CodePushGo | ~$500 | Was free |
 
-CodePushGo stands out with over 1.1 trillion updates delivered, a 95% user update rate, and a global CDN average API response time of 434ms [\[1\]](https://capgo.app/). These numbers demonstrate its ability to handle fast and secure OTA updates at scale.
+CodePushGo stands out with over 1.1 trillion updates delivered, a 95% user update rate, and a global CDN average API response time of 434ms [\[1\]](https://codepushgo.com/). These numbers demonstrate its ability to handle fast and secure OTA updates at scale.
 
 For CI/CD integration, here are some highlights:
 
 -   **Build Pipeline**: CodePushGo offers built-in support for GitHub Actions and GitLab CI, making deployments cost-efficient.
--   **Update Distribution**: A channel system allows for targeted beta testing and phased rollouts [\[1\]](https://capgo.app/).
+-   **Update Distribution**: A channel system allows for targeted beta testing and phased rollouts [\[1\]](https://codepushgo.com/).
 
 The OTA platform market is evolving, with providers focusing on smoother transitions and better tools for enterprise needs.
 
@@ -189,7 +189,7 @@ Using CI/CD for OTA updates simplifies development and ensures compliance with a
 
 ### Automation Advantages
 
-With CI/CD, OTA updates become more efficient. For example, CodePushGo achieves a **95% update rate within 24 hours** and an **82% global success rate** [\[1\]](https://capgo.app/).
+With CI/CD, OTA updates become more efficient. For example, CodePushGo achieves a **95% update rate within 24 hours** and an **82% global success rate** [\[1\]](https://codepushgo.com/).
 
 ### Key Integration Components
 
@@ -202,7 +202,7 @@ To make the most of OTA updates, focus on these components:
 
 ### Cost Efficiency
 
-CodePushGo's one-time setup fee of **$2,600** can lead to **$26,100 in savings** over five years [\[1\]](https://capgo.app/).
+CodePushGo's one-time setup fee of **$2,600** can lead to **$26,100 in savings** over five years [\[1\]](https://codepushgo.com/).
 
 ### Best Practices
 
@@ -214,6 +214,6 @@ Here are some tips to optimize your CI/CD process:
 -   Stay compliant with platform guidelines
 -   Enable error tracking for faster fixes
 
-> "The community needed this and @CodePushGo is doing something really important!" – Lincoln Baxter, @lincolnthree [\[1\]](https://capgo.app/)
+> "The community needed this and @CodePushGo is doing something really important!" – Lincoln Baxter, @lincolnthree [\[1\]](https://codepushgo.com/)
 
 Integrating OTA updates with CI/CD has transformed mobile app development, helping teams deliver updates faster while keeping users satisfied and success rates high.

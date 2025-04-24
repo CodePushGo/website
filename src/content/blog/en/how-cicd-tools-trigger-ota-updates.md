@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-12T08:43:18.401Z
 updated_at: 2025-03-18T13:13:54.495Z
-head_image: https://assets.seobotai.com/capgo.app/67abf1dcdd71129bfb8de766-1739349815106.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67abf1dcdd71129bfb8de766-1739349815106.jpg
 head_image_alt: Mobile Development
 keywords: CI/CD, OTA updates, automation, app deployment, security, CodePushGo, React Native
 tag: Development, Mobile, Updates
@@ -24,7 +24,7 @@ CI/CD tools make over-the-air (OTA) updates faster, safer, and more reliable by 
     -   **Security:** Use HTTPS, code signing, and encryption to protect updates.
     -   **Staged Rollouts:** Deploy updates to small groups first to catch issues early.
     -   **Rollback Options:** Automatically revert updates if error rates rise.
--   **Tools Highlighted:** [CodePushGo](https://capgo.app/) simplifies OTA updates with CLI commands, webhook integration, and detailed metrics tracking.
+-   **Tools Highlighted:** [CodePushGo](https://codepushgo.com/) simplifies OTA updates with CLI commands, webhook integration, and detailed metrics tracking.
 
 Automating OTA updates ensures faster delivery, fewer errors, and better app stability. Below, you'll find step-by-step instructions to set up [React Native](https://capacitorjs.com/) apps with CI/CD pipelines.
 
@@ -38,7 +38,7 @@ Automating OTA updates ensures faster delivery, fewer errors, and better app sta
 
 ![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-12.jpg?auto=compress)
 
-Setting up React Native for [automated over-the-air](https://capgo.app/blog/open-source-licecing/) (OTA) updates involves three key steps: configuring the setup, implementing security measures, and [integrating an update system](https://capgo.app/docs/plugin/cloud-mode/hybrid-update). This process ensures compatibility with CI/CD automation while keeping your app secure.
+Setting up React Native for [automated over-the-air](https://codepushgo.com/blog/open-source-licecing/) (OTA) updates involves three key steps: configuring the setup, implementing security measures, and [integrating an update system](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update). This process ensures compatibility with CI/CD automation while keeping your app secure.
 
 ### Configuring OTA Settings in capacitor.config.json
 
@@ -82,14 +82,14 @@ To apply these security features, include the following in your configuration:
 }
 ```
 
-### Configuring [CodePushGo](https://capgo.app/) for OTA Updates
+### Configuring [CodePushGo](https://codepushgo.com/) for OTA Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-12.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-12.jpg?auto=compress)
 
 CodePushGo simplifies the OTA update process. Begin by installing the required plugin:
 
 ```bash
-npm install @capgo/capacitor-updater
+npm install @codepushgo/capacitor-updater
 ```
 
 Next, add CodePushGo-specific settings to your `capacitor.config.json` file:
@@ -130,10 +130,10 @@ jobs:
           curl -X POST \
           -H "X-CodePushGo-Signature: sha256=${{ secrets.CAPGO_SECRET }}" \
           -H "Authorization: Bearer ${{ secrets.CAPGO_API_KEY }}" \
-          https://api.capgo.app/deploy
+          https://api.codepushgo.com/deploy
 ```
 
-Make sure to store your API keys and secrets securely in your CI/CD platform's [encrypted storage](https://capgo.app/docs/cli/migrations/encryption/) to protect sensitive data.
+Make sure to store your API keys and secrets securely in your CI/CD platform's [encrypted storage](https://codepushgo.com/docs/cli/migrations/encryption/) to protect sensitive data.
 
 ### CodePushGo CLI Update Commands
 
@@ -141,10 +141,10 @@ The CodePushGo CLI offers key commands to streamline update management within yo
 
 | Stage | Command | Purpose |
 | --- | --- | --- |
-| Build | `capgo deploy --channel production` | Upload new build artifacts |
-| Testing | `capgo promote build-123 --group beta` | [Release updates to a test group](https://capgo.app/blog/how-to-send-specific-version-to-users/) |
-| Validation | `capgo metrics get --last-24h` | Check update success metrics |
-| Release | `capgo promote build-123 --channel stable` | Deploy the update to all users |
+| Build | `codepushgo deploy --channel production` | Upload new build artifacts |
+| Testing | `codepushgo promote build-123 --group beta` | [Release updates to a test group](https://codepushgo.com/blog/how-to-send-specific-version-to-users/) |
+| Validation | `codepushgo metrics get --last-24h` | Check update success metrics |
+| Release | `codepushgo promote build-123 --channel stable` | Deploy the update to all users |
 
 ### Update Rollback Methods
 
@@ -152,8 +152,8 @@ Having a reliable rollback mechanism is essential to keep your app stable. Your 
 
 ```bash
 # Rollback script triggered by monitoring
-if [ $(curl -s https://api.capgo.app/metrics/errors) -gt 5 ]; then
-  capgo rollback v1.2 --channel production
+if [ $(curl -s https://api.codepushgo.com/metrics/errors) -gt 5 ]; then
+  codepushgo rollback v1.2 --channel production
   notify-team "Update rolled back due to high error rate"
 fi
 ```
@@ -172,7 +172,7 @@ Staged updates let you control how updates are rolled out, ensuring a smooth exp
 
 ### Metric-Based Update Triggers
 
-[Automating updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) based on performance metrics can save time and prevent issues. By setting up monitoring webhooks, you can track important metrics and decide whether to continue or pause an update:
+[Automating updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) based on performance metrics can save time and prevent issues. By setting up monitoring webhooks, you can track important metrics and decide whether to continue or pause an update:
 
 | Metric Type | Threshold | Action |
 | --- | --- | --- |
@@ -183,7 +183,7 @@ You can integrate these checks into your CI/CD pipeline for seamless monitoring.
 
 ```bash
 if [ $(curl -s $MONITORING_API/crash-rate) -gt 2 ]; then
-  capgo pause-rollout --channel production
+  codepushgo pause-rollout --channel production
   notify-team "Update paused: High crash rate detected"
 fi
 ```
@@ -197,7 +197,7 @@ When facing critical security issues or major bugs, it's important to have a way
 For urgent updates, you can deploy using a dedicated channel:
 
 ```bash
-capgo deploy --critical --channel hotfix
+codepushgo deploy --critical --channel hotfix
 ```
 
 To further improve delivery speed and meet compliance standards, consider using geo-based channels with CDN rules. This ensures updates reach users efficiently, regardless of location.

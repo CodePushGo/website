@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-11T06:22:21.536Z
 updated_at: 2025-03-18T13:13:54.034Z
-head_image: https://assets.seobotai.com/capgo.app/67aa9923b771216988320bf2-1739254956493.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67aa9923b771216988320bf2-1739254956493.jpg
 head_image_alt: Mobile Development
 keywords: CI/CD, React Native apps, mobile development, automation, build process, live updates
 tag: Development, Mobile, Updates
@@ -16,11 +16,11 @@ locale: en
 next_blog: ''
 ---
 
-**Want faster, error-free app releases for iOS and Android?** CI/CD pipelines for [React Native](https://capacitorjs.com/) apps automate building, testing, and deployment, cutting release times by up to 70% and reducing errors by 60%. This guide covers everything you need to know, from setting up your environment to automating live updates with [CodePushGo](https://capgo.app/).
+**Want faster, error-free app releases for iOS and Android?** CI/CD pipelines for [React Native](https://capacitorjs.com/) apps automate building, testing, and deployment, cutting release times by up to 70% and reducing errors by 60%. This guide covers everything you need to know, from setting up your environment to automating live updates with [CodePushGo](https://codepushgo.com/).
 
 ### Key Takeaways:
 
--   **Why CI/CD matters for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/)**: Speeds up builds by 78% and reduces store rejections by 60%.
+-   **Why CI/CD matters for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/)**: Speeds up builds by 78% and reduces store rejections by 60%.
 -   **Essential tools**: [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), [CocoaPods](https://cocoapods.org/), and more.
 -   **Pipeline setup**: Automate tasks like `npx cap sync`, dependency caching, and platform-specific builds.
 -   **Live updates with CodePushGo**: Enable post-release updates with phased rollouts and rollback safeguards.
@@ -111,7 +111,7 @@ Properly managing keys and credentials can significantly lower the chances of ap
 
 ## Creating Your CI/CD Pipeline
 
-Once your environment is ready, the next step is setting up a CI/CD pipeline for your [React Native app](https://capgo.app/plugins/ivs-player/). This pipeline should efficiently manage both web assets and native platform builds.
+Once your environment is ready, the next step is setting up a CI/CD pipeline for your [React Native app](https://codepushgo.com/plugins/ivs-player/). This pipeline should efficiently manage both web assets and native platform builds.
 
 ### Installing and Updating Dependencies
 
@@ -185,37 +185,37 @@ Once your builds are validated and packaged, you’re ready to move on to live u
 
 ###### sbb-itb-f9944d2
 
-## Adding [CodePushGo](https://capgo.app/) for Live Updates
+## Adding [CodePushGo](https://codepushgo.com/) for Live Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-11.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-11.jpg?auto=compress)
 
 Integrating CodePushGo into your workflow enhances your CI/CD process by enabling post-release updates. Here's how to set it up:
 
 ### CodePushGo Pipeline Configuration
 
-First, install the [CodePushGo CLI](https://capgo.app/docs/cli/commands) in your pipeline environment:
+First, install the [CodePushGo CLI](https://codepushgo.com/docs/cli/commands) in your pipeline environment:
 
 ```yaml
 steps:
   - name: Install CodePushGo CLI
-    run: npm install -g @capgo/cli
+    run: npm install -g @codepushgo/cli
   - name: Configure Authentication
     env:
       CAPGO_KEY: ${{ secrets.CAPGO_API_KEY }}
 ```
 
-This addition extends your CI/CD lifecycle by incorporating [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) into your automated build and deployment process.
+This addition extends your CI/CD lifecycle by incorporating [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) into your automated build and deployment process.
 
 Next, include the upload command after your build steps:
 
 ```yaml
 - name: Upload Update
   run: |
-    capgo upload --api-key $CAPGO_KEY --bundle ./build/app-release.apk
-    capgo deploy v${VERSION} --channel production
+    codepushgo upload --api-key $CAPGO_KEY --bundle ./build/app-release.apk
+    codepushgo deploy v${VERSION} --channel production
 ```
 
-For [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/), configure validation settings like this:
+For [secure updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/), configure validation settings like this:
 
 ```json
 {
@@ -246,8 +246,8 @@ Use a staged rollout to control how updates are distributed:
 ```yaml
 - name: Staged Rollout
   run: |
-    capgo deploy v1.2.3 --group "beta-users" --rollout 10%
-    capgo deploy v1.2.3 --rollout 50%
+    codepushgo deploy v1.2.3 --group "beta-users" --rollout 10%
+    codepushgo deploy v1.2.3 --rollout 50%
 ```
 
 **Update Monitoring**
@@ -263,8 +263,8 @@ If crashes exceed acceptable levels, automate a rollback:
 ```yaml
 - name: Rollback Check
   run: |
-    if [ $(capgo stats --version v1.2.3 --metric crashes) -gt 2 ]; then
-      capgo rollback --channel production
+    if [ $(codepushgo stats --version v1.2.3 --metric crashes) -gt 2 ]; then
+      codepushgo rollback --channel production
     fi
 ```
 

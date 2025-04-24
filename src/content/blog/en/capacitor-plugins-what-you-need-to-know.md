@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-10T22:09:04.610Z
 updated_at: 2025-03-18T13:13:53.302Z
-head_image: https://assets.seobotai.com/capgo.app/67a9581f762bb46adb44912d-1739225358216.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67a9581f762bb46adb44912d-1739225358216.jpg
 head_image_alt: Mobile Development
 keywords: React Native plugins, mobile development, cross-platform apps, native features, custom plugins, community plugins
 tag: Development, Mobile, Updates
@@ -19,7 +19,7 @@ next_blog: ''
 [React Native](https://capacitorjs.com/) plugins are essential for building cross-platform apps, letting you use native device features like cameras, file systems, and notifications with minimal effort. They combine JavaScript APIs and native code for seamless integration across iOS, Android, and web platforms. Here's what you need to know:
 
 -   **Core Plugins**: Built by the [Ionic](https://ionicframework.com/) team, these cover basics like file storage (`Filesystem.writeFile`) and network checks (`Network.getStatus`).
--   **Community Plugins**: Offer specialized features like [Firebase Analytics](https://firebase.google.com/docs/analytics), [in-app purchases](https://capgo.app/plugins/native-purchases/), and live updates.
+-   **Community Plugins**: Offer specialized features like [Firebase Analytics](https://firebase.google.com/docs/analytics), [in-app purchases](https://codepushgo.com/plugins/native-purchases/), and live updates.
 -   **Custom Plugins**: Create your own for unique hardware or business needs.
 
 ### Quick Overview
@@ -28,7 +28,7 @@ next_blog: ''
 | --- | --- | --- |
 | Development Speed | Faster feature implementation | Add camera functionality easily |
 | Code Efficiency | Reuse across platforms | Shared APIs for iOS and Android |
-| [Native Performance](https://capgo.app/plugins/native-audio/) | Direct access to device capabilities | Platform-specific optimizations |
+| [Native Performance](https://codepushgo.com/plugins/native-audio/) | Direct access to device capabilities | Platform-specific optimizations |
 
 React Native's plugin system simplifies app development while maintaining native performance. Whether you're using pre-built plugins or creating custom ones, they help you focus on building features, not handling platform-specific complexities.
 
@@ -40,7 +40,7 @@ React Native's plugin system simplifies app development while maintaining native
 
 ## Plugin Technical Structure
 
-[React Native plugins](https://capgo.app/plugins/) are built on a cross-platform bridge design, allowing smooth interaction between web and native environments. Knowing how this works can help developers build and debug plugins more efficiently.
+[React Native plugins](https://codepushgo.com/plugins/) are built on a cross-platform bridge design, allowing smooth interaction between web and native environments. Knowing how this works can help developers build and debug plugins more efficiently.
 
 ### Plugin Components: Web and Native
 
@@ -130,11 +130,11 @@ When choosing plugins for your app, keep these criteria in mind:
 
 For features involving sensitive data or security, run tools like `npm audit` or use platforms like [Snyk](https://snyk.io/) to check for vulnerabilities. Pair this with web security best practices [\[7\]](https://ahrefs.com/blog/google-advanced-search-operators/)[\[8\]](https://www.w3.org/International/questions/qa-html-language-declarations).
 
-### [CodePushGo](https://capgo.app/): Live Updates for Apps
+### [CodePushGo](https://codepushgo.com/): Live Updates for Apps
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-10.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-10.jpg?auto=compress)
 
-CodePushGo provides a [live update plugin](https://capgo.app/docs/plugin/self-hosted/auto-update/) that works seamlessly with React Native. It allows you to deploy updates - like bug fixes or new features - directly to your app using encrypted channels, all while staying compliant with app store policies [\[3\]](https://github.com/riderx/awesome-capacitor).
+CodePushGo provides a [live update plugin](https://codepushgo.com/docs/plugin/self-hosted/auto-update/) that works seamlessly with React Native. It allows you to deploy updates - like bug fixes or new features - directly to your app using encrypted channels, all while staying compliant with app store policies [\[3\]](https://github.com/riderx/awesome-capacitor).
 
 ### Plugin Testing Methods
 
@@ -174,7 +174,7 @@ When upgrading major versions, follow these steps:
 
 Document any customizations or workarounds you’ve implemented.
 
-2\. **[Update Strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update)**
+2\. **[Update Strategy](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update)**
 
 Develop a detailed update plan that includes:
 
@@ -221,7 +221,7 @@ Using `capacitor doctor` regularly can help catch potential problems early, ensu
 
 ## Summary
 
-React Native plugins connect web and native capabilities through their core design, making [cross-platform app development](https://capgo.app/blog/cross-platform-mobile-app-development-guide-2024/) more efficient [\[6\]](https://capacitorjs.jp/blog/how-capacitor-works). This architecture equips developers with the tools they need to build advanced applications while maintaining the speed and performance of native apps.
+React Native plugins connect web and native capabilities through their core design, making [cross-platform app development](https://codepushgo.com/blog/cross-platform-mobile-app-development-guide-2024/) more efficient [\[6\]](https://capacitorjs.jp/blog/how-capacitor-works). This architecture equips developers with the tools they need to build advanced applications while maintaining the speed and performance of native apps.
 
 To keep plugins running smoothly, it's important to understand their categories and how they are maintained:
 

@@ -83,7 +83,7 @@ Here is what the app’s directory structure should look like:
 
 ## CodePushGo Configuration
 
-With your app ready for [CodePushGo](https://web.capgo.app/) integration, it’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a CodePushGo account](/register/).
+With your app ready for [CodePushGo](https://web.codepushgo.com/) integration, it’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a CodePushGo account](/register/).
 
 Once you’re logged into CodePushGo, navigate to the Account page then click on API key, then click on the 'write' key to copy it to your clipboard.
 
@@ -91,13 +91,13 @@ Once you’re logged into CodePushGo, navigate to the Account page then click on
 
 From a command line, directly into the root of your React Native app folder, run the following command:
 
-`npm i @capgo/capacitor-updater && npx cap sync`
+`npm i @codepushgo/capacitor-updater && npx cap sync`
 To install the plugin into your React Native app.
 
 And then add to your app this code as replacement of CodePush one:
 
 ```js
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 React NativeUpdater.notifyAppReady()
 ```
@@ -110,17 +110,17 @@ The Live Update feature works by using the installed [CodePushGo SDK](https://gi
 
 ### Login to CodePushGo CLOUD
 
-First, use the `all` [apikey](https://web.capgo.app/dashboard/apikeys/) present in your account to log in with the CLI:
+First, use the `all` [apikey](https://web.codepushgo.com/dashboard/apikeys/) present in your account to log in with the CLI:
 
 ```shell
-npx @capgo/cli@latest login YOURKEY
+npx @codepushgo/cli@latest login YOURKEY
 ```
 
 ## Add your first app
 
 Let's get started by first creating the app in CodePushGo Cloud with the CLI.
 
-`npx @capgo/cli@latest app add`
+`npx @codepushgo/cli@latest app add`
 
 This command will use all variables defined in the React Native config file to create the app.
 
@@ -128,21 +128,21 @@ This command will use all variables defined in the React Native config file to c
 
 Run the command to build your code and send it to CodePushGo with:
 ```shell
-npx @capgo/cli@latest bundle upload --channel production
+npx @codepushgo/cli@latest bundle upload --channel production
 ```
 
 By default, the version name will be the one in your `package.json` file.
 
-Check in [CodePushGo](https://web.capgo.app/) if the build is present.
+Check in [CodePushGo](https://web.codepushgo.com/) if the build is present.
 
-You can even test it with my [mobile sandbox app](https://capgo.app/app_mobile/).
+You can even test it with my [mobile sandbox app](https://codepushgo.com/app_mobile/).
 
 ### Make channel default
 
 After you have sent your app to CodePushGo, you need to make your channel `default` to let apps receive updates from CodePushGo.
 
 ```shell
-npx @capgo/cli@latest channel set production -s default
+npx @codepushgo/cli@latest channel set production -s default
 ```
 
 ## Configure app to validate updates
@@ -150,7 +150,7 @@ npx @capgo/cli@latest channel set production -s default
 Add this config to your main JavaScript file.
 
 ```js
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 React NativeUpdater.notifyAppReady()
 ```

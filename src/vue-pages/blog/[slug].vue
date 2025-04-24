@@ -190,7 +190,7 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
         <div class="max-w-xl mx-auto text-center">
           <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">{{ m.latest_from_news() }}</h2>
           <p class="mt-4 text-base font-normal leading-7 text-gray-400 lg:mt-6 lg:text-lg lg:leading-8">
-            {{ m.capgo_gives_you_the_best_insights_you_need_to_create_a_truly_professional_mobile_app() }}
+            {{ m.codepushgo_gives_you_the_best_insights_you_need_to_create_a_truly_professional_mobile_app() }}
           </p>
         </div>
         <div v-if="related" class="grid max-w-md grid-cols-1 gap-5 mx-auto mt-12 sm:mt-16 lg:max-w-none lg:grid-cols-3 xl:gap-6">

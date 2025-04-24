@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-20T03:57:39.512Z
 updated_at: 2025-03-20T03:57:50.357Z
-head_image: https://assets.seobotai.com/capgo.app/67db8c5296fa813b295022c3-1742443070357.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67db8c5296fa813b295022c3-1742443070357.jpg
 head_image_alt: Mobile Development
 keywords: React Native, Android development, Android Studio, SDK, mobile apps, Node.js, JDK, environment setup
 tag: Development, Mobile, Updates
@@ -41,7 +41,7 @@ next_blog: ''
 
 ### Key Features to Leverage:
 
--   **Live Updates**: Push updates instantly using tools like [CodePushGo](https://capgo.app/).
+-   **Live Updates**: Push updates instantly using tools like [CodePushGo](https://codepushgo.com/).
 -   **Native Features**: Access Android-specific APIs for advanced functionality.
 -   **Real-Time Monitoring**: Quickly address issues during development.
 
@@ -133,12 +133,12 @@ A few key configurations in Android Studio will make it work efficiently with th
     -   **Target**: x86\_64
 5.  Adjust the AVD settings:
     -   RAM: 2048 MB
-    -   [Internal Storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/): 2048 MB
+    -   [Internal Storage](https://codepushgo.com/plugins/capacitor-data-storage-sqlite/): 2048 MB
     -   SD Card: 512 MB
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
-For more details on CodePushGo-specific configurations, check out the [CodePushGo Integration](https://capgo.app/consulting/) section later in this guide.
+For more details on CodePushGo-specific configurations, check out the [CodePushGo Integration](https://codepushgo.com/consulting/) section later in this guide.
 
 ## Android SDK Configuration
 
@@ -243,7 +243,7 @@ Here’s an example configuration:
 **Important configurations to focus on:**
 
 -   **Security**: Ensure live updates are encrypted end-to-end.
--   **[Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update/)**: Set up controlled rollouts with specific [update channels](https://capgo.app/docs/webapp/channels/).
+-   **[Update Management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/)**: Set up controlled rollouts with specific [update channels](https://codepushgo.com/docs/webapp/channels/).
 -   **Performance**: Fine-tune WebView settings. For example:
 
 ```json
@@ -314,17 +314,17 @@ Here are some typical issues and how to resolve them:
 
 Resolving these issues will prepare your environment for advanced features and smooth integration with CodePushGo. Once verified, your setup will be ready for the next steps in your project.
 
-## [CodePushGo](https://capgo.app/) Integration
+## [CodePushGo](https://codepushgo.com/) Integration
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
 
-Once your Android environment is ready, it's time to integrate CodePushGo. This tool simplifies your [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) by allowing you to push updates to your React Native app instantly - no Play Store review needed.
+Once your Android environment is ready, it's time to integrate CodePushGo. This tool simplifies your [update process](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) by allowing you to push updates to your React Native app instantly - no Play Store review needed.
 
 ### Key CodePushGo Features
 
--   **Real-time Updates**: Updates reach 95% of active users within 24 hours [\[1\]](https://capgo.app/).
+-   **Real-time Updates**: Updates reach 95% of active users within 24 hours [\[1\]](https://codepushgo.com/).
 -   **End-to-End Encryption**: Ensures data security.
--   **Fast API Response**: Global average response time is 434ms, with an 82% success rate [\[1\]](https://capgo.app/).
+-   **Fast API Response**: Global average response time is 434ms, with an 82% success rate [\[1\]](https://codepushgo.com/).
 -   **Partial Updates**: Minimizes data usage by transferring only necessary changes.
 
 **Performance Snapshot**:
@@ -342,7 +342,7 @@ Once your Android environment is ready, it's time to integrate CodePushGo. This 
     Use the following command to get started:
     
     ```bash
-    npx @capgo/cli init
+    npx @codepushgo/cli init
     ```
     
 2.  **Set Up Update Channels**
@@ -367,16 +367,16 @@ npx cap sync
 
 ## Summary
 
-Setting up an Android development environment for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) involves a few key steps to ensure everything runs smoothly. You'll need to install Android Studio, configure the Android SDK, and integrate tools essential for building and testing your app.
+Setting up an Android development environment for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) involves a few key steps to ensure everything runs smoothly. You'll need to install Android Studio, configure the Android SDK, and integrate tools essential for building and testing your app.
 
 Here’s a quick breakdown of the main components:
 
 -   **Android Studio**: Use the latest stable version of this primary IDE.
 -   **Android SDK**: Ensure you have the development kit with the right API level for your app.
--   **[React Native Platform](https://capgo.app/blog/capacitor-comprehensive-guide/)**: Check for version compatibility during integration.
+-   **[React Native Platform](https://codepushgo.com/blog/capacitor-comprehensive-guide/)**: Check for version compatibility during integration.
 -   **Optional Live Update Tools**: Tools like CodePushGo allow instant updates, but their integration is optional.
 
-A well-configured setup ensures efficient updates, with statistics showing 95% of active users receiving updates within 24 hours and an 82% success rate globally [\[1\]](https://capgo.app/). To confirm everything is ready:
+A well-configured setup ensures efficient updates, with statistics showing 95% of active users receiving updates within 24 hours and an 82% success rate globally [\[1\]](https://codepushgo.com/). To confirm everything is ready:
 
 -   Verify Android Studio is installed correctly.
 -   Ensure SDK paths are properly configured.

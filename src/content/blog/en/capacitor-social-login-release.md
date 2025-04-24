@@ -43,7 +43,7 @@ Next, I attempted to implement Google Login on Android. As it turns out, [Codetr
 ## Documentation
 
 Lastly, I wrote some amazing ✨ documentation. I spent a lot of time making sure that the docs were accurate and extensive.
-The docs include a detailed guide on setting both Apple and Google. I also provided an [example backend](https://github.com/WcaleNieWolny/capgo-social-login-backend-demo) for Login with Apple 🍎
+The docs include a detailed guide on setting both Apple and Google. I also provided an [example backend](https://github.com/WcaleNieWolny/codepushgo-social-login-backend-demo) for Login with Apple 🍎
 
 Feel free to check out the [Apple](https://github.com/Cap-go/capacitor-social-login/blob/main/docs/setup_apple.md) and [Google](https://github.com/Cap-go/capacitor-social-login/blob/main/docs/setup_google.md) guides!
 

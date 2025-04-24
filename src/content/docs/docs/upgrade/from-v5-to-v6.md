@@ -15,7 +15,7 @@ First follow the migration guide of React Native:
 
 ## Install
 
-`npm i @capgo/capacitor-updater@6`
+`npm i @codepushgo/capacitor-updater@6`
 
 `Then sync the native code update:`
 

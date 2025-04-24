@@ -1,14 +1,14 @@
 export const actions = [
   {
-    name: '@capgo/cli',
+    name: '@codepushgo/cli',
     author: 'github.com/riderx',
-    description: 'A CLI to upload to capgo servers',
-    href: 'https://github.com/Cap-go/capgo-cli/',
+    description: 'A CLI to upload to codepushgo servers',
+    href: 'https://github.com/Cap-go/codepushgo-cli/',
     title: 'CLI',
     // icon: CommandLineIcon,
   },
   {
-    name: '@capgo/standard-version',
+    name: '@codepushgo/standard-version',
     author: 'Martin Donadieu',
     description: 'replacement for `npm version` with automatic CHANGELOG generation',
     href: 'https://github.com/Cap-go/standard-version/',
@@ -16,7 +16,7 @@ export const actions = [
     // icon: AdjustmentsHorizontalIcon,
   },
   {
-    name: '@capgo/native-market',
+    name: '@codepushgo/native-market',
     author: 'Martin Donadieu',
     description: 'A native market plugin for linking to google play or app store.',
     href: 'https://github.com/riderx/native-market/',
@@ -24,7 +24,7 @@ export const actions = [
     // icon: ArchiveBoxArrowDownIcon,
   },
   {
-    name: '@capgo/capacitor-native-biometric',
+    name: '@codepushgo/capacitor-native-biometric',
     author: 'Jose Martinez',
     description: 'This plugin gives access to the native biometric apis for android and iOS',
     href: 'https://github.com/Cap-go/capacitor-native-biometric/',
@@ -32,7 +32,7 @@ export const actions = [
     // icon: FingerPrintIcon,
   },
   {
-    name: '@capgo/camera-preview',
+    name: '@codepushgo/camera-preview',
     author: 'Martin Donadieu',
     description: 'Camera preview',
     href: 'https://github.com/Cap-go/camera-preview/',
@@ -40,7 +40,7 @@ export const actions = [
     // icon: CameraIcon,
   },
   {
-    name: '@capgo/google-play-scraper',
+    name: '@codepushgo/google-play-scraper',
     author: 'Facundo Olano',
     description: 'scrapes app data from google play store',
     href: 'https://github.com/facundoolano/google-play-scraper/',
@@ -48,7 +48,7 @@ export const actions = [
     // icon: PlayIcon,
   },
   {
-    name: '@capgo/ngx-intl-tel-input-app',
+    name: '@codepushgo/ngx-intl-tel-input-app',
     author: 'Unknown',
     description: '[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)',
     href: 'N/A',
@@ -56,7 +56,7 @@ export const actions = [
     // icon: PhoneIcon,
   },
   {
-    name: '@capgo/konsta',
+    name: '@codepushgo/konsta',
     author: 'Vladimir Kharlampidi',
     description: 'Mobile UI components made with Tailwind CSS',
     href: 'https://github.com/konstaui/konsta/',
@@ -64,7 +64,7 @@ export const actions = [
     // icon: PaintBrushIcon,
   },
   {
-    name: '@capgo/capacitor-updater',
+    name: '@codepushgo/capacitor-updater',
     author: 'Martin Donadieu',
     description: 'Live update for capacitor apps',
     href: 'https://github.com/Cap-go/capacitor-updater/',
@@ -72,7 +72,7 @@ export const actions = [
     // icon: ArrowPathIcon,
   },
   {
-    name: '@capgo/capacitor-purchases',
+    name: '@codepushgo/capacitor-purchases',
     author: 'Martin Donadieu',
     description: 'In-app Subscriptions Made Easy with RevenueCat sdk',
     href: 'https://github.com/Cap-go/capacitor-purchases/',
@@ -80,7 +80,7 @@ export const actions = [
     // icon: CurrencyDollarIcon,
   },
   {
-    name: '@capgo/capacitor-flash',
+    name: '@codepushgo/capacitor-flash',
     author: 'Martin Donadieu',
     description: 'Switch the Flashlight / Torch of your device.',
     href: 'https://github.com/riderx/capacitor-flash/',
@@ -88,7 +88,7 @@ export const actions = [
     // icon: BoltIcon,
   },
   {
-    name: '@capgo/capacitor-screen-recorder',
+    name: '@codepushgo/capacitor-screen-recorder',
     author: 'Martin Donadieu',
     // prettier-ignore
     description: 'Record device\'s screen',
@@ -97,7 +97,7 @@ export const actions = [
     // icon: VideoCameraIcon,
   },
   {
-    name: '@capgo/capacitor-crisp',
+    name: '@codepushgo/capacitor-crisp',
     author: 'Martin Donadieu',
     description: 'Crisp native SDK for capacitor',
     href: 'https://github.com/Cap-go/capacitor-crisp/',
@@ -105,7 +105,7 @@ export const actions = [
     // icon: ChatBubbleLeftIcon,
   },
   {
-    name: '@capgo/nativegeocoder',
+    name: '@codepushgo/nativegeocoder',
     author: 'Martin Donadieu',
     description: 'React Native plugin for native forward and reverse geocoding',
     href: 'https://github.com/Cap-go/capacitor-nativegeocoder/',
@@ -113,7 +113,7 @@ export const actions = [
     // icon: MapPinIcon,
   },
   {
-    name: '@capgo/inappbrowser',
+    name: '@codepushgo/inappbrowser',
     author: 'Martin Donadieu',
     description: 'React Native plugin in app browser',
     href: 'https://github.com/Cap-go/capacitor-inappbrowser/',
@@ -121,7 +121,7 @@ export const actions = [
     // icon: GlobeAltIcon,
   },
   {
-    name: '@capgo/capacitor-mute',
+    name: '@codepushgo/capacitor-mute',
     author: 'Martin donadieu',
     description: 'Detect if the mute switch is enabled/disabled on a device',
     href: 'https://github.com/riderx/capacitor-mute/',
@@ -129,7 +129,7 @@ export const actions = [
     // icon: SpeakerXMarkIcon,
   },
   {
-    name: '@capgo/angular-ng-stepper',
+    name: '@codepushgo/angular-ng-stepper',
     author: 'Giorgi Merabishvili',
     description: 'Angular stepper',
     href: 'https://github.com/gmerabishvili/angular-ng-stepper/',
@@ -137,7 +137,7 @@ export const actions = [
     // icon: EllipsisHorizontalIcon,
   },
   {
-    name: '@capgo/native-audio',
+    name: '@codepushgo/native-audio',
     author: 'Martin Donadieu',
     description: 'A native plugin for native audio engine',
     href: 'https://github.com/Cap-go/native-audio/',
@@ -145,7 +145,7 @@ export const actions = [
     // icon: SpeakerWaveIcon,
   },
   {
-    name: '@capgo/capacitor-shake',
+    name: '@codepushgo/capacitor-shake',
     author: 'Martin Donadieu',
     description: 'Detect shake gesture in device',
     href: 'https://github.com/Cap-go/capacitor-shake/',
@@ -153,7 +153,7 @@ export const actions = [
     // icon: DevicePhoneMobileIcon,
   },
   {
-    name: '@capgo/capacitor-navigation-bar',
+    name: '@codepushgo/capacitor-navigation-bar',
     author: 'Martin Donadieu',
     description: 'Set navigation bar color for android lolipop and higher',
     href: 'https://github.com/Cap-go/capacitor-navigation-bar/',
@@ -161,7 +161,7 @@ export const actions = [
     // icon: Bars3Icon,
   },
   {
-    name: '@capgo/ivs-player',
+    name: '@codepushgo/ivs-player',
     author: 'Martin Donadieu',
     description: 'Ivs player for capacitor app',
     href: 'https://github.com/Cap-go/ivs-player/',
@@ -169,7 +169,7 @@ export const actions = [
     // icon: PlayCircleIcon,
   },
   {
-    name: '@capgo/home-indicator',
+    name: '@codepushgo/home-indicator',
     author: 'Martin Donadieu',
     description: 'hide and show home button indicator in React Native app',
     href: 'https://github.com/Cap-go/home-indicator/',
@@ -177,7 +177,7 @@ export const actions = [
     // icon: HomeIcon,
   },
   {
-    name: '@capgo/find-package-manager',
+    name: '@codepushgo/find-package-manager',
     author: 'github.com/riderx',
     description: 'Live update for capacitor apps',
     href: 'https://github.com/Cap-go/find-package-manager/',
@@ -185,7 +185,7 @@ export const actions = [
     // icon: DocumentMagnifyingGlassIcon,
   },
   {
-    name: '@capgo/native-purchases',
+    name: '@codepushgo/native-purchases',
     author: 'Martin donadieu',
     description: 'In-app Subscriptions Made Easy',
     href: 'https://github.com/Cap-go/native-purchases/',
@@ -193,7 +193,7 @@ export const actions = [
     // icon: CurrencyDollarIcon,
   },
   {
-    name: '@capgo/capacitor-fingerprint',
+    name: '@codepushgo/capacitor-fingerprint',
     author: 'Martin Donadieu',
     description: 'React Native client for Fingerprint PRO. 100% accurate device identification for fraud detection.',
     href: 'https://github.com/Cap-go/capacitor-fingerprint/',
@@ -201,7 +201,7 @@ export const actions = [
     // icon: FingerPrintIcon,
   },
   {
-    name: '@capgo/capacitor-callkit-voip',
+    name: '@codepushgo/capacitor-callkit-voip',
     author: 'Martin Donadieu',
     description: 'Provide PushKit functionality to ionic capacitor',
     href: 'https://github.com/Cap-go/capacitor-callkit-voip/',
@@ -209,7 +209,7 @@ export const actions = [
     // icon: PhoneArrowUpRightIcon,
   },
   {
-    name: '@capgo/logsnag',
+    name: '@codepushgo/logsnag',
     author: 'Shayan',
     description: 'LogSnag Client',
     href: 'https://github.com/LogSnag/logsnag.js/',
@@ -217,7 +217,7 @@ export const actions = [
     // icon: StopIcon,
   },
   {
-    name: '@capgo/walletconnect',
+    name: '@codepushgo/walletconnect',
     author: 'Martin Donadieu',
     description: 'WIP: React Native plugin for WalletConnect',
     href: 'N/A',

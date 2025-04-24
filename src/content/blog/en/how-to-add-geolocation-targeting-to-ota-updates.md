@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-23T04:39:40.995Z
 updated_at: 2025-03-18T13:14:02.272Z
-head_image: https://assets.seobotai.com/capgo.app/67ba891fbfa83cf6a92e8bd2-1740285846827.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ba891fbfa83cf6a92e8bd2-1740285846827.jpg
 head_image_alt: Mobile Development
 keywords: geolocation targeting, OTA updates, mobile app updates, user engagement, location-based features, background location tracking, app development, analytics
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Want to deliver [app updates](https://capgo.app/plugins/capacitor-updater/) tailored to users' locations?** Geolocation targeting in Over-the-Air (OTA) updates makes this possible. Here's a quick breakdown of how you can combine geolocation with OTA updates to improve user experience and engagement:
+**Want to deliver [app updates](https://codepushgo.com/plugins/capacitor-updater/) tailored to users' locations?** Geolocation targeting in Over-the-Air (OTA) updates makes this possible. Here's a quick breakdown of how you can combine geolocation with OTA updates to improve user experience and engagement:
 
 -   **Why Geolocation Targeting?**
     
@@ -27,7 +27,7 @@ next_blog: ''
     
     -   A [React Native](https://capacitorjs.com/) app with web and native functionality.
     -   Location plugins like `@capacitor/geolocation` for tracking.
-    -   An OTA platform like [CodePushGo](https://capgo.app/) that supports geolocation targeting.
+    -   An OTA platform like [CodePushGo](https://codepushgo.com/) that supports geolocation targeting.
 -   **How It Works:**
     
     -   Configure location permissions (iOS: `Info.plist`, Android: `AndroidManifest.xml`).
@@ -55,7 +55,7 @@ Before diving into geolocation-targeted OTA updates, make sure the following set
 
 ![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-23.jpg?auto=compress)
 
-To build a location-aware [React Native app](https://capgo.app/plugins/ivs-player/) with OTA updates, you'll need:
+To build a location-aware [React Native app](https://codepushgo.com/plugins/ivs-player/) with OTA updates, you'll need:
 
 -   **[Node.js](https://nodejs.org/en) and npm** installed on your machine.
 -   A React Native project initialized with native platforms (iOS/Android).
@@ -65,7 +65,7 @@ Your app should support both web and native functionalities to enable dynamic OT
 
 ### Setting Up Location Services
 
-To configure the [React Native Geolocation plugin](https://capgo.app/plugins/capacitor-nativegeocoder/), follow these steps:
+To configure the [React Native Geolocation plugin](https://codepushgo.com/plugins/capacitor-nativegeocoder/), follow these steps:
 
 **For iOS:**
 
@@ -100,9 +100,9 @@ Once location services are configured, choose an OTA platform that supports targ
 
 ### Selecting an OTA Update Platform
 
-Pick an OTA platform that offers live updates, geolocation-based targeting, and complies with app store policies. **CodePushGo** is a proven choice, with over 457.2M updates delivered across 1.8K production apps [\[2\]](https://capgo.app/).
+Pick an OTA platform that offers live updates, geolocation-based targeting, and complies with app store policies. **CodePushGo** is a proven choice, with over 457.2M updates delivered across 1.8K production apps [\[2\]](https://codepushgo.com/).
 
-> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding app reviews for bug fixes is golden." - Bessie Cooper [\[2\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding app reviews for bug fixes is golden." - Bessie Cooper [\[2\]](https://codepushgo.com/)
 
 Here’s why CodePushGo stands out:
 

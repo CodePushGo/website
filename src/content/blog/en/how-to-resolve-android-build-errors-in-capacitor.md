@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-29T03:02:04.382Z
 updated_at: 2025-03-29T03:02:15.938Z
-head_image: https://assets.seobotai.com/capgo.app/67e75df8283d21cbd679ae1b-1743217335938.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e75df8283d21cbd679ae1b-1743217335938.jpg
 head_image_alt: Mobile Development
 keywords: React Native, Android build errors, ProGuard, dependency conflicts, mobile development, troubleshooting
 tag: Development, Mobile, Updates
@@ -22,7 +22,7 @@ next_blog: ''
 -   **Dependency Conflicts**: Align versions of React Native core, plugins, and native libraries. Use tools like `npx cap doctor` to spot mismatches.
 -   **ProGuard Problems**: Add proper rules to prevent obfuscation errors during release builds.
 
-**Key Tip**: Use error logs in [Android Studio](https://developer.android.com/studio) to pinpoint the root cause and focus on the first error in the stack trace. Tools like [CodePushGo](https://capgo.app/) can help you deploy fixes instantly without waiting for app store reviews.
+**Key Tip**: Use error logs in [Android Studio](https://developer.android.com/studio) to pinpoint the root cause and focus on the first error in the stack trace. Tools like [CodePushGo](https://codepushgo.com/) can help you deploy fixes instantly without waiting for app store reviews.
 
 **Quick Fix Example**:
 
@@ -101,7 +101,7 @@ Here’s an example of a proper dependency configuration:
 
 ### [ProGuard](https://www.guardsquare.com/manual/home) Setup Problems
 
-![ProGuard](https://assets.seobotai.com/capgo.app/67e75df8283d21cbd679ae1b/caf1031c54e5e4608a41f5a1b5bef282.jpg)
+![ProGuard](https://assets.seobotai.com/codepushgo.com/67e75df8283d21cbd679ae1b/caf1031c54e5e4608a41f5a1b5bef282.jpg)
 
 ProGuard, used in release builds, can introduce additional issues:
 
@@ -157,11 +157,11 @@ dependencies {
 
 ### Understanding [Gradle](https://gradle.org/) Outputs
 
-![Gradle](https://assets.seobotai.com/capgo.app/67e75df8283d21cbd679ae1b/ea42b2d6446e3f23d9417eaa9ba23d71.jpg)
+![Gradle](https://assets.seobotai.com/codepushgo.com/67e75df8283d21cbd679ae1b/ea42b2d6446e3f23d9417eaa9ba23d71.jpg)
 
 Use `./gradlew app:dependencies` and enable build scans to uncover dependency conflicts or script issues. These tools provide a detailed view of your project's setup.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 Some common problems include:
 
@@ -230,19 +230,19 @@ These steps should address most dependency-related issues. Next, focus on managi
 
 ### ProGuard Rule Management
 
-Adjust ProGuard rules to ensure critical React Native plugin classes and WebView interfaces aren’t removed during obfuscation. Refer to the official [React Native documentation](https://capgo.app/blog/capacitor-comprehensive-guide/) for detailed guidance on configuring ProGuard.
+Adjust ProGuard rules to ensure critical React Native plugin classes and WebView interfaces aren’t removed during obfuscation. Refer to the official [React Native documentation](https://codepushgo.com/blog/capacitor-comprehensive-guide/) for detailed guidance on configuring ProGuard.
 
 For immediate updates without resubmitting to app stores, consider using CodePushGo's live update system. This allows you to deploy changes instantly while maintaining obfuscation compatibility and compliance with store policies.
 
-## Using [CodePushGo](https://capgo.app/) for Quick Fixes
+## Using [CodePushGo](https://codepushgo.com/) for Quick Fixes
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67e75df8283d21cbd679ae1b/62c1b4dece964ef24ef070504a9b15e5.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67e75df8283d21cbd679ae1b/62c1b4dece964ef24ef070504a9b15e5.jpg)
 
 When facing Android build errors in React Native, resolving issues quickly is key to avoiding delays and keeping your project on track. Here's how CodePushGo helps you deploy fixes instantly.
 
 ### CodePushGo Core Features
 
-CodePushGo offers tools to streamline updates, including **end-to-end encryption** for security, real-time error tracking, version history management, and instant rollback capabilities. With a global success rate of 82% for deployments [\[1\]](https://capgo.app/), it provides a dependable way to deliver critical fixes directly to production apps.
+CodePushGo offers tools to streamline updates, including **end-to-end encryption** for security, real-time error tracking, version history management, and instant rollback capabilities. With a global success rate of 82% for deployments [\[1\]](https://codepushgo.com/), it provides a dependable way to deliver critical fixes directly to production apps.
 
 ### How to Deploy Fixes Instantly
 
@@ -251,12 +251,12 @@ Follow these steps to quickly address Android build errors:
 -   **Install the CodePushGo Plugin**:
     
     ```bash
-    npx @capgo/cli init
+    npx @codepushgo/cli init
     ```
     
--   **Build and Deploy**: CodePushGo's CDN ensures a 5MB bundle downloads in just 114ms [\[1\]](https://capgo.app/).
+-   **Build and Deploy**: CodePushGo's CDN ensures a 5MB bundle downloads in just 114ms [\[1\]](https://codepushgo.com/).
     
--   **Monitor Updates**: Use CodePushGo's dashboard to track progress, with API response times averaging 434ms [\[1\]](https://capgo.app/).
+-   **Monitor Updates**: Use CodePushGo's dashboard to track progress, with API response times averaging 434ms [\[1\]](https://codepushgo.com/).
     
 
 This rapid deployment process eliminates the delays associated with traditional app store updates, allowing you to resolve issues faster while maintaining complete control.
@@ -271,12 +271,12 @@ This rapid deployment process eliminates the delays associated with traditional 
 | Cost | Starts at $12/month | Store fees + added dev time |
 | Security | E2E encryption | Standard store security |
 
-> "CodePushGo is a must-have tool for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
-With over 23.5 million successful updates across 750 production apps [\[1\]](https://capgo.app/), CodePushGo stands out as an essential solution for teams needing to address Android errors quickly and efficiently - without waiting on app store approvals.
+With over 23.5 million successful updates across 750 production apps [\[1\]](https://codepushgo.com/), CodePushGo stands out as an essential solution for teams needing to address Android errors quickly and efficiently - without waiting on app store approvals.
 
 ## Summary
 
-Addressing Android build errors in React Native requires a structured, data-focused approach that combines effective monitoring with rapid updates. Data from 750 production apps reveals that tracking errors and deploying updates quickly can significantly reduce debugging time while improving app stability. Tools like CodePushGo have been shown to achieve an 82% success rate for emergency fixes, ensuring 95% of active users receive updates within 24 hours, with an average API response time of 434ms [\[1\]](https://capgo.app/).
+Addressing Android build errors in React Native requires a structured, data-focused approach that combines effective monitoring with rapid updates. Data from 750 production apps reveals that tracking errors and deploying updates quickly can significantly reduce debugging time while improving app stability. Tools like CodePushGo have been shown to achieve an 82% success rate for emergency fixes, ensuring 95% of active users receive updates within 24 hours, with an average API response time of 434ms [\[1\]](https://codepushgo.com/).
 
 Maintaining stable Android builds hinges on strong error tracking and timely updates. By pairing immediate fixes with ongoing process improvements, you can minimize disruptions for users and deliver a smoother app experience.

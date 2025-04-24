@@ -108,7 +108,7 @@ Default: `true`
 
 Only available for Android and iOS.
 
-Default: `https://api.capgo.app/updates`
+Default: `https://api.codepushgo.com/updates`
 
 ```json
 // capacitor.config.json
@@ -127,7 +127,7 @@ Default: `https://api.capgo.app/updates`
 
 Only available for Android and iOS. Set to "" to disable stats reporting.
 
-Default: `https://api.capgo.app/stats`
+Default: `https://api.codepushgo.com/stats`
 
 ```json
 // capacitor.config.json
@@ -146,7 +146,7 @@ Default: `https://api.capgo.app/stats`
 
 Only available for Android and iOS.
 
-Create the private key with the command `npx @capgo/cli key create`
+Create the private key with the command `npx @codepushgo/cli key create`
 
 Default: `undefined`
 
@@ -187,7 +187,7 @@ Default: `undefined`
 When an store update happens, disable force reset to the native version
 :::
 
-There are many more settings avaialble only on the [web app](https://web.capgo.app/login)
+There are many more settings avaialble only on the [web app](https://web.codepushgo.com/login)
 
 
 To configure the plugin, use these settings:

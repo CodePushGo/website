@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-18T06:14:25.862Z
 updated_at: 2025-03-18T15:14:16.781Z
-head_image: /capgo_banner.webp
+head_image: /codepushgo_banner.webp
 head_image_alt: 'Live Updates Architecture'
 keywords: 'CodePushGo live updates, OTA updates, React Native updates, mobile app development, app updates'
 tag: 'Development, Mobile, Updates'
@@ -94,7 +94,7 @@ CodePushGo implements military-grade security through end-to-end encryption, ens
    - Each app version can use unique encryption keys
    - Key rotation support for enhanced security
 
-Learn more about our encryption system in our detailed guide: [End-to-End Encryption in CodePushGo Live Updates](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/)
+Learn more about our encryption system in our detailed guide: [End-to-End Encryption in CodePushGo Live Updates](https://codepushgo.com/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/)
 
 ### Update Security Process
 

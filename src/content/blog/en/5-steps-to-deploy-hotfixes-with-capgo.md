@@ -1,5 +1,5 @@
 ---
-slug: 5-steps-to-deploy-hotfixes-with-capgo
+slug: 5-steps-to-deploy-hotfixes-with-codepushgo
 title: 5 Steps to Deploy Hotfixes with CodePushGo
 description: Learn how to deploy hotfixes quickly and securely using a streamlined process that avoids app store delays and ensures compliance.
 author: Martin Donadieu
@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-13T03:37:11.567Z
 updated_at: 2025-03-18T13:14:18.244Z
-head_image: https://assets.seobotai.com/capgo.app/67d22ca8233d3a01105fd278-1741837059847.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67d22ca8233d3a01105fd278-1741837059847.jpg
 head_image_alt: Mobile Development
 keywords: hotfix deployment, CodePushGo, app updates, CI/CD tools, mobile development
 tag: Development, Mobile, Updates
@@ -16,10 +16,10 @@ locale: en
 next_blog: ''
 ---
 
-[CodePushGo](https://capgo.app/) makes deploying hotfixes fast and easy, skipping app store delays while keeping updates secure and compliant with Apple and Google guidelines. Here’s a quick overview of the process:
+[CodePushGo](https://codepushgo.com/) makes deploying hotfixes fast and easy, skipping app store delays while keeping updates secure and compliant with Apple and Google guidelines. Here’s a quick overview of the process:
 
 1.  **Create and Test Your Hotfix**: Write precise code changes, test thoroughly on devices, and ensure compatibility.
-2.  **[Set Up CodePushGo](https://capgo.app/docs/webapp/)**: Install the [CodePushGo CLI](https://capgo.app/docs/cli/commands) with `npx @capgo/cli init`, configure encryption, and integrate with CI/CD tools.
+2.  **[Set Up CodePushGo](https://codepushgo.com/docs/webapp/)**: Install the [CodePushGo CLI](https://codepushgo.com/docs/cli/commands) with `npx @codepushgo/cli init`, configure encryption, and integrate with CI/CD tools.
 3.  **Upload Your Hotfix**: Use the CLI to securely upload your update, label it clearly, and prepare for deployment.
 4.  **Choose Update Settings**: Target specific users or groups, schedule rollouts, and define version requirements.
 5.  **Track Your Update**: Monitor delivery rates, update speed, and user coverage. Roll back instantly if needed.
@@ -43,7 +43,7 @@ Here’s a quick guide to structuring your hotfix:
 
 With CodePushGo's instant update capability, you can zero in on fixing the bug without worrying about bundling unrelated changes. This method has proven effective, as highlighted by colenso:
 
-> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo" [\[1\]](https://capgo.app/).
+> "We rolled out [CodePushGo OTA updates](https://web.codepushgo.com/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo" [\[1\]](https://codepushgo.com/).
 
 ### Test on Your Device
 
@@ -55,25 +55,25 @@ Thorough testing is critical to ensure the hotfix works seamlessly. Use these st
 
 Automate as much of the testing process as possible using CI/CD tools.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 Once your hotfix has passed all tests, you’re ready to set up CodePushGo for deployment.
 
-## Step 2: Set Up [CodePushGo](https://capgo.app/)
+## Step 2: Set Up [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-13.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-13.jpg?auto=compress)
 
 ### Install Required Packages
 
 To get started with CodePushGo in your React Native project, use its CLI tool. Simply run the following command:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 This command does the heavy lifting for you:
 
--   Installs the [CodePushGo plugin](https://capgo.app/plugins/)
+-   Installs the [CodePushGo plugin](https://codepushgo.com/plugins/)
 -   Configures your project automatically
 -   Prepares your project for CodePushGo services
 
@@ -91,11 +91,11 @@ CodePushGo ensures your project is ready with encryption and compliance standard
 
 This setup has been validated by developers. As Bessie Cooper explains:
 
-> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." [\[1\]](https://codepushgo.com/)
 
 For larger teams, CodePushGo offers features like multi-organization setups and detailed permission management. It integrates with platforms like [GitHub](https://github.com/about), [GitLab](https://about.gitlab.com/), [Azure DevOps](https://azure.microsoft.com/en-us/products/devops), and [Jenkins](https://www.jenkins.io/), making automated deployment workflows straightforward. Rodrigo Mantica highlights its importance for agile teams:
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://codepushgo.com/)
 
 With your project fully set up, you're ready to upload your hotfix and deploy it instantly.
 
@@ -103,7 +103,7 @@ With your project fully set up, you're ready to upload your hotfix and deploy it
 
 ### Send Files to CodePushGo
 
-After setting up your project, it's time to upload your hotfix using the [CodePushGo CLI tool](https://capgo.app/docs/cli/commands/). This ensures a secure and efficient transfer of your update. Start by building your app as you normally would during development.
+After setting up your project, it's time to upload your hotfix using the [CodePushGo CLI tool](https://codepushgo.com/docs/cli/commands/). This ensures a secure and efficient transfer of your update. Start by building your app as you normally would during development.
 
 Here’s how it works:
 
@@ -123,7 +123,7 @@ Clear labeling is key for managing and tracking your hotfixes. When uploading yo
 
 Martin Donadieu, CodePushGo's founder, has designed a versioning system that integrates smoothly with CI/CD workflows. This system makes it easy to track updates and roll back if necessary.
 
-CodePushGo’s [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) also includes features like end-to-end encryption and instant deployment, ensuring your hotfixes are secure while reaching users quickly.
+CodePushGo’s [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) also includes features like end-to-end encryption and instant deployment, ensuring your hotfixes are secure while reaching users quickly.
 
 Once your hotfix is uploaded and labeled, move on to Step 4 to configure your update settings.
 
@@ -192,20 +192,20 @@ After reviewing these metrics, be ready to address any challenges quickly.
 
 Rodrigo Mantica, a business developer, highlights CodePushGo's importance:
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://codepushgo.com/)
 
-CodePushGo's web interface makes it easy to monitor your update's progress with detailed logs and performance metrics. Its tracking features have helped organizations improve release efficiency by up to 81% [\[1\]](https://capgo.app/), ensuring stable app performance while quickly addressing any problems.
+CodePushGo's web interface makes it easy to monitor your update's progress with detailed logs and performance metrics. Its tracking features have helped organizations improve release efficiency by up to 81% [\[1\]](https://codepushgo.com/), ensuring stable app performance while quickly addressing any problems.
 
 ## Summary
 
 ### Main Points
 
-CodePushGo simplifies the process of deploying hotfixes quickly and effectively, with a proven track record of delivering **947.6 million updates** across **1,400 production apps** [\[1\]](https://capgo.app/).
+CodePushGo simplifies the process of deploying hotfixes quickly and effectively, with a proven track record of delivering **947.6 million updates** across **1,400 production apps** [\[1\]](https://codepushgo.com/).
 
 | Step | Action | Goal |
 | --- | --- | --- |
 | Create & Test | Develop and verify hotfix locally | Ensure code quality |
-| Set Up CodePushGo | Install the plugin using `npx @capgo/cli init` | Simplify configuration |
+| Set Up CodePushGo | Install the plugin using `npx @codepushgo/cli init` | Simplify configuration |
 | Upload | Transfer files via the CLI | Enable fast distribution |
 | Configure | Assign users and set rules | Deploy updates precisely |
 | Monitor | Track performance and resolve issues | Improve efficiency |

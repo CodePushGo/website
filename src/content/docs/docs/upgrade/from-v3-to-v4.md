@@ -13,7 +13,7 @@ Meanwhile, I took this as an opportunity to give more freedom to you, and remove
 
 ## Install
 
-`npm i @capgo/capacitor-updater@4`
+`npm i @codepushgo/capacitor-updater@4`
 
 ## Auto-update cloud
 

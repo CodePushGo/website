@@ -26,7 +26,7 @@ const props = defineProps<{ locale: Locales }>()
               {{ m.mau_counting_explanation() }}
             </p>
             <p class="mt-4 text-base text-gray-400">
-              {{ m.capgo_usage_explanation() }}
+              {{ m.codepushgo_usage_explanation() }}
               <a class="border-b-2 border-blue-600 hover:text-blue-600 focus:text-blue-600" :href="getRelativeLocaleUrl(props.locale, 'blog/how-your-usage-is-counted')">{{
                 m.here()
               }}</a>
@@ -71,7 +71,7 @@ const props = defineProps<{ locale: Locales }>()
         <div class="px-8 py-4 text-center bg-gray-800 rounded-full">
           <p class="text-gray-50">
             {{ m.didnt_find_answer() }}
-            <a class="text-yellow-300 transition-all duration-200 hover:text-yellow-400 hover:underline focus:text-yellow-400" href="mailto:support@capgo.app">
+            <a class="text-yellow-300 transition-all duration-200 hover:text-yellow-400 hover:underline focus:text-yellow-400" href="mailto:support@codepushgo.com">
               {{ m.contact_support() }}
             </a>
           </p>

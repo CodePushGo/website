@@ -5,14 +5,14 @@ import { ref } from 'vue'
 import * as m from '../paraglide/messages.js'
 
 const config = useRuntimeConfig()
-const description = m.top_app_using_capgo_cloud_or_self_hosted()
+const description = m.top_app_using_codepushgo_cloud_or_self_hosted()
 
 const apps = ref<any[]>([])
 const usage = ref(7.21)
 
 const others = ref(['top_cordova_app', 'top_react_native_app', 'top_flutter_app', 'top_capacitor_app'])
 
-fetch(`${config.public.baseApiUrl}/private/store_top?mode=capgo`).then((res) => {
+fetch(`${config.public.baseApiUrl}/private/store_top?mode=codepushgo`).then((res) => {
   if (res.ok) {
     res.json().then((data) => {
       apps.value = data.apps

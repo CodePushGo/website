@@ -22,20 +22,20 @@ const config = useRuntimeConfig()
             <li>{{ m.trust_soc2_certification() }}</li>
             <li>
               {{ m.source_code_protection_1() }}
-              <a href="https://github.com/Cap-go/capgo" class="text-blue-500 underline underline-current" target="_blank">GitHub</a>.
+              <a href="https://github.com/Cap-go/codepushgo" class="text-blue-500 underline underline-current" target="_blank">GitHub</a>.
               {{ m.source_code_protection_2() }}
-              <a href="https://sonarcloud.io/summary/overall?id=Cap-go_capgo&branch=main" class="text-blue-500 underline underline-current" target="_blank">SonarCloud</a>
+              <a href="https://sonarcloud.io/summary/overall?id=Cap-go_codepushgo&branch=main" class="text-blue-500 underline underline-current" target="_blank">SonarCloud</a>
               {{ m.and() }}
-              <a href="https://snyk.io/test/github/Cap-go/capgo" class="text-blue-500 underline underline-current" target="_blank">Snyk</a>
+              <a href="https://snyk.io/test/github/Cap-go/codepushgo" class="text-blue-500 underline underline-current" target="_blank">Snyk</a>
               {{ m.source_code_protection_3() }}
             </li>
             <li class="flex items-center gap-2">
               SonarCloud:
-              <a href="https://sonarcloud.io/summary/new_code?id=Cap-go_capgo" target="_blank">
-                <img src="https://sonarcloud.io/api/project_badges/measure?project=Cap-go_capgo&metric=security_rating" alt="Security Rating" />
+              <a href="https://sonarcloud.io/summary/new_code?id=Cap-go_codepushgo" target="_blank">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=Cap-go_codepushgo&metric=security_rating" alt="Security Rating" />
               </a>
-              <a href="https://sonarcloud.io/summary/new_code?id=Cap-go_capgo" target="_blank">
-                <img src="https://sonarcloud.io/api/project_badges/measure?project=Cap-go_capgo&metric=vulnerabilities" alt="Vulnerabilities" />
+              <a href="https://sonarcloud.io/summary/new_code?id=Cap-go_codepushgo" target="_blank">
+                <img src="https://sonarcloud.io/api/project_badges/measure?project=Cap-go_codepushgo&metric=vulnerabilities" alt="Vulnerabilities" />
               </a>
             </li>
             <li>{{ m.access_control() }}</li>
@@ -62,8 +62,8 @@ const config = useRuntimeConfig()
           <h2 class="text-3xl font-bold text-gray-900">{{ m.application_security() }}</h2>
           <ul class="mt-8 space-y-5 text-lg text-gray-600 list-disc list-inside">
             <li>{{ m.secure_coding() }}</li>
-            <li>{{ m.site_reliability() }} <a href="https://status.capgo.app/" class="text-blue-500 underline underline-current" target="_blank">Uptime Monitoring</a>.</li>
-            <!-- link to update monitoring: https://status.capgo.app/ -->
+            <li>{{ m.site_reliability() }} <a href="https://status.codepushgo.com/" class="text-blue-500 underline underline-current" target="_blank">Uptime Monitoring</a>.</li>
+            <!-- link to update monitoring: https://status.codepushgo.com/ -->
             <li>{{ m.application_penetration_testing() }}</li>
           </ul>
         </div>

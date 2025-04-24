@@ -22,9 +22,9 @@ React NativeUpdater can be configured with these options:
 | **`autoDeletePrevious`**     | <code>boolean</code> | Configure whether the plugin should use automatically delete previous bundles after a successful update. Only available for Android and iOS.                                                    | <code>true</code>                                  |         |
 | **`autoUpdate`**             | <code>boolean</code> | Configure whether the plugin should use Auto Update via an update server. Only available for Android and iOS.                                                                                   | <code>true</code>                                  |         |
 | **`resetWhenUpdate`**        | <code>boolean</code> | Automatically delete previous downloaded bundles when a newer native app bundle is installed to the device. Only available for Android and iOS.                                                 | <code>true</code>                                  |         |
-| **`updateUrl`**              | <code>string</code>  | Configure the URL / endpoint to which update checks are sent. Only available for Android and iOS.                                                                                               | <code>https://plugin.capgo.app/updates</code>      |         |
-| **`channelUrl`**             | <code>string</code>  | Configure the URL / endpoint for channel operations. Only available for Android and iOS.                                                                                                        | <code>https://plugin.capgo.app/channel_self</code> |         |
-| **`statsUrl`**               | <code>string</code>  | Configure the URL / endpoint to which update statistics are sent. Only available for Android and iOS. Set to "" to disable stats reporting.                                                     | <code>https://plugin.capgo.app/stats</code>        |         |
+| **`updateUrl`**              | <code>string</code>  | Configure the URL / endpoint to which update checks are sent. Only available for Android and iOS.                                                                                               | <code>https://plugin.codepushgo.com/updates</code>      |         |
+| **`channelUrl`**             | <code>string</code>  | Configure the URL / endpoint for channel operations. Only available for Android and iOS.                                                                                                        | <code>https://plugin.codepushgo.com/channel_self</code> |         |
+| **`statsUrl`**               | <code>string</code>  | Configure the URL / endpoint to which update statistics are sent. Only available for Android and iOS. Set to "" to disable stats reporting.                                                     | <code>https://plugin.codepushgo.com/stats</code>        |         |
 | **`publicKey`**              | <code>string</code>  | Configure the public key for end to end live update encryption Version 2 Only available for Android and iOS.                                                                                    | <code>undefined</code>                             | 6.2.0   |
 | **`version`**                | <code>string</code>  | Configure the current version of the app. This will be used for the first update request. If not set, the plugin will get the version from the native code. Only available for Android and iOS. | <code>undefined</code>                             | 4.17.48 |
 | **`directUpdate`**           | <code>boolean</code> | Make the plugin direct install the update when the app what just updated/installed. Only for autoUpdate mode. Only available for Android and iOS.                                               | <code>undefined</code>                             | 5.1.0   |
@@ -81,7 +81,7 @@ In `capacitor.config.json`:
 In `capacitor.config.ts`:
 
 ```ts
-/// <reference types="@capgo/capacitor-updater" />
+/// <reference types="@codepushgo/capacitor-updater" />
 
 import { React NativeConfig } from '@capacitor/cli';
 

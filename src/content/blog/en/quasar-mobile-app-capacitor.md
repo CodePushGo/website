@@ -7,7 +7,7 @@ author_image_url: 'https://avatars.githubusercontent.com/u/81948346?v=4'
 author_url: 'https://x.com/anikDhabal'
 created_at: 2023-09-14T00:00:00.000Z
 updated_at: 2023-09-14T00:00:00.000Z
-head_image: /quasar_capgo.webp
+head_image: /quasar_codepushgo.webp
 head_image_alt: Quasar and CodePushGo illustration
 keywords: Quasar, React Native, mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Tutorial
@@ -19,7 +19,7 @@ In this tutorial, we will begin with creating a new web app using [Quasar](https
 
 With React Native, you can change your Quasar web app into a mobile app without needing to do lots of hard things or learn a completely new way of making apps like you would with something called React Native. 
 
-This tutorial will guide you through the process, starting with a new Quasar app and then incorporating React Native to move into the realm of native mobile apps. Additionally, you will use [CodePushGo](https://capgo.app/) to send live update to your app in seconds.
+This tutorial will guide you through the process, starting with a new Quasar app and then incorporating React Native to move into the realm of native mobile apps. Additionally, you will use [CodePushGo](https://codepushgo.com/) to send live update to your app in seconds.
 
 ## About React Native
 
@@ -147,18 +147,18 @@ Integrating CodePushGo into your Quasar app is a straightforward process that em
 
 **Sign Up and Access the CodePushGo Dashboard**:
 
-It’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a CodePushGo account](https://web.capgo.app/register/).
+It’s time to sign up, and get your API key to upload your first version! Begin by [signing up for a CodePushGo account](https://web.codepushgo.com/register/).
 
 **Install the CodePushGo SDK**:
 
 From a command line, directly into the root of your React Native app, run:
 
-`npm i @capgo/capacitor-updater && npx cap sync` To install the plugin into your React Native app.
+`npm i @codepushgo/capacitor-updater && npx cap sync` To install the plugin into your React Native app.
 
 And then add to your app this code as a replacement of CodePush one:
 
 ```js
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 React NativeUpdater.notifyAppReady()
 ```
@@ -167,16 +167,16 @@ This will tell the native plugin the installation as succeeded.
 
 **Login to CodePushGo CLOUD**:
 
-First, use the `all` [apikey](https://web.capgo.app/dashboard/apikeys/) present in your account to log in with the CLI:
+First, use the `all` [apikey](https://web.codepushgo.com/dashboard/apikeys/) present in your account to log in with the CLI:
 
-    `npx @capgo/cli@latest login YOU_KEY`
+    `npx @codepushgo/cli@latest login YOU_KEY`
 
 **Add your first App**:
 
 Let’s get started by first creating an app in CodePushGo Cloud with the CLI.
 
 ```shell
-    npx @capgo/cli@latest app add
+    npx @codepushgo/cli@latest app add
 ```
 This command will use all variables defined in the React Native config file to create the app.
 
@@ -185,27 +185,27 @@ This command will use all variables defined in the React Native config file to c
 Run the command to build your code and send it to CodePushGo with: 
 
 ```shell
-npx @capgo/cli@latest bundle upload`
+npx @codepushgo/cli@latest bundle upload`
 ```
 
 By default, the version name will be the one in your package.json file.
 
-Check in [CodePushGo](https://web.capgo.app/login/) if the build is present.
+Check in [CodePushGo](https://web.codepushgo.com/login/) if the build is present.
 
-You can even test it with my [mobile sandbox app](https://capgo.app/app_mobile/).
+You can even test it with my [mobile sandbox app](https://codepushgo.com/app_mobile/).
 
 **Make channel default**:
 
 After you have sent your app to CodePushGo, you need to make your channel default to let apps receive updates from CodePushGo.
 
-`npx @capgo/cli@latest channel set production -s default`
+`npx @codepushgo/cli@latest channel set production -s default`
 
 **Configure app to validate updates**:
 
 Add this config to your main JavaScript file.
 
 ```js
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 React NativeUpdater.notifyAppReady()
 ```
@@ -220,7 +220,7 @@ For your application to receive a live update from Deploy, you’ll need to run 
 
 Open the app, put it in the background and open it again, you should see in the logs the app did the update.
 
-Congrats! 🎉 You have successfully deployed your first Live Update. This is just the start of what you can do with Live Updates. To learn more, view the complete [Live Updates docs](https://capgo.app/docs/plugin/cloud-mode/getting-started/).
+Congrats! 🎉 You have successfully deployed your first Live Update. This is just the start of what you can do with Live Updates. To learn more, view the complete [Live Updates docs](https://codepushgo.com/docs/plugin/cloud-mode/getting-started/).
 
 ## Using React Native Plugins
 
@@ -361,6 +361,6 @@ If the live reload is out of sync after installing all the necessary components,
 
 React Native is an excellent option for building native applications based on an existing web project, offering a simple way to share code and maintain a consistent UI. 
 
-And with the addition of [CodePushGo](https://capgo.app/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
+And with the addition of [CodePushGo](https://codepushgo.com/), it's even easier to add live updates to your app, ensuring that your users always have access to the latest features and bug fixes.
 
 If you would like to learn how to add CodePushGo to your Next.js app, take a look at the next article :

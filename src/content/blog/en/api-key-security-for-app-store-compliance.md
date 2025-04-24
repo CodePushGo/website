@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-30T02:43:03.273Z
 updated_at: 2025-03-30T02:43:13.642Z
-head_image: https://assets.seobotai.com/capgo.app/67e8ac6c283d21cbd67ac65e-1743302593642.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e8ac6c283d21cbd67ac65e-1743302593642.jpg
 head_image_alt: Mobile Development
 keywords: API keys, security, encryption, app store compliance, HTTPS, key management, mobile security, transport security
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Keeping your [API keys](https://capgo.app/docs/webapp/api-keys/) secure is critical for protecting user data and meeting app store rules.** Exposing keys can lead to data breaches, service abuse, and account compromise.
+**Keeping your [API keys](https://codepushgo.com/docs/webapp/api-keys/) secure is critical for protecting user data and meeting app store rules.** Exposing keys can lead to data breaches, service abuse, and account compromise.
 
 ### Key Takeaways:
 
@@ -147,9 +147,9 @@ In addition to securing transport, encrypt API keys at the application level.
 
 ### API Key Encryption
 
-[Encrypting API keys](https://capgo.app/docs/webapp/api-keys/) adds another layer of security. CodePushGo, for example, uses end-to-end encryption for app updates.
+[Encrypting API keys](https://codepushgo.com/docs/webapp/api-keys/) adds another layer of security. CodePushGo, for example, uses end-to-end encryption for app updates.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://codepushgo.com/)
 
 To encrypt API keys, use reliable encryption algorithms. Below is an example of encrypting an API key with AES-256-GCM in Node.js:
 
@@ -244,18 +244,18 @@ const accessControl = {
 
 Regularly review who has access, adjust permissions as needed, and set up automated alerts for unusual activity. These measures will help you maintain strong security while staying compliant with app store rules.
 
-## [CodePushGo](https://capgo.app/) Security Features
+## [CodePushGo](https://codepushgo.com/) Security Features
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67e8ac6c283d21cbd67ac65e/93c1d42fe1ebf1e9553e1e7f4f856f98.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67e8ac6c283d21cbd67ac65e/93c1d42fe1ebf1e9553e1e7f4f856f98.jpg)
 
 CodePushGo strengthens app security by combining secure storage and transport methods with advanced features built into its platform.
 
 ### CodePushGo Security Architecture
 
-CodePushGo's system has successfully delivered over 23.5 million [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) to 750 production apps [\[1\]](https://capgo.app/). It uses **end-to-end encryption**, ensuring that only authorized users can decrypt updates. Here’s a look at its security setup:
+CodePushGo's system has successfully delivered over 23.5 million [secure updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) to 750 production apps [\[1\]](https://codepushgo.com/). It uses **end-to-end encryption**, ensuring that only authorized users can decrypt updates. Here’s a look at its security setup:
 
 ```javascript
-const capgoSecurity = {
+const codepushgoSecurity = {
     encryptionType: 'end-to-end',
     keyStorage: {
         separate: true,
@@ -274,7 +274,7 @@ This design not only safeguards API keys but also simplifies compliance with app
 
 ### App Store Guidelines Compliance
 
-CodePushGo ensures updates are delivered quickly and securely, achieving an 82% global success rate, with 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/). Its features help tackle potential vulnerabilities:
+CodePushGo ensures updates are delivered quickly and securely, achieving an 82% global success rate, with 95% of active users receiving updates within 24 hours [\[1\]](https://codepushgo.com/). Its features help tackle potential vulnerabilities:
 
 -   Automated key rotation aligned with app store policies
 -   Deployment controls tailored to specific environments
@@ -285,7 +285,7 @@ CodePushGo ensures updates are delivered quickly and securely, achieving an 82% 
 CodePushGo works seamlessly with CI/CD platforms to enhance API key protection. Here's an example of its integration:
 
 ```yaml
-capgo_deployment:
+codepushgo_deployment:
     environment:
         - CAPGO_API_KEY: ${SECURED_API_KEY}
         - APP_ENV: production
@@ -302,7 +302,7 @@ capgo_deployment:
 | Audit Logging | Comprehensive logs of all deployment activities |
 | Version Control | Secure tracking of deployed updates |
 
-> "End-to-end encryption. Only your users can decrypt your updates, no one else." [\[1\]](https://capgo.app/) - CodePushGo
+> "End-to-end encryption. Only your users can decrypt your updates, no one else." [\[1\]](https://codepushgo.com/) - CodePushGo
 
 ## Summary
 
@@ -316,7 +316,7 @@ The table below highlights important steps to protect API keys while staying ali
 | --- | --- | --- |
 | **Storage Security** | Use end-to-end encryption and separate environments | Aligns with Apple/Google data protection rules |
 | **Transport Layer** | Enforce HTTPS and use SSL certificate pinning | Secures data during transmission |
-| **Access Control** | Apply role-based permissions and track [access logs](https://capgo.app/docs/webapp/logs/) | Blocks unauthorized access |
+| **Access Control** | Apply role-based permissions and track [access logs](https://codepushgo.com/docs/webapp/logs/) | Blocks unauthorized access |
 | **Key Management** | Rotate keys automatically and use environment-specific keys | Maintains strong, ongoing security |
 
 Refer to this checklist as a guide for securing your API keys.
@@ -336,4 +336,4 @@ Refer to this checklist as a guide for securing your API keys.
     Set up automated alerts and conduct regular audits to ensure continued security.
     
 
-> "App Store compliant" - CodePushGo [\[1\]](https://capgo.app/)
+> "App Store compliant" - CodePushGo [\[1\]](https://codepushgo.com/)

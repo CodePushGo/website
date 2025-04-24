@@ -37,7 +37,7 @@ Before starting, you'll need to set up:
 
 ## Professional CI/CD Setup by CodePushGo
 
-Skip the complexity. [CodePushGo](https://capgo.app/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
+Skip the complexity. [CodePushGo](https://codepushgo.com/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
 
 - **Platform Independence**: Works with GitHub Actions, GitLab CI, or others
 - **Seamless Integration**: No platform switch needed, works with your current process
@@ -210,7 +210,7 @@ image: mingc/android-build-box:latest
 
 stages:
   - build
-  - upload_to_capgo
+  - upload_to_codepushgo
   - build_and_upload_android
 
 build:
@@ -233,12 +233,12 @@ build:
   only:
     - master
 
-upload_to_capgo:
-  stage: upload_to_capgo
+upload_to_codepushgo:
+  stage: upload_to_codepushgo
   tags:
     - saas-linux-xlarge-amd64
   script:
-    - npx @capgo/cli@latest bundle upload -a $CAPGO_TOKEN -c dev
+    - npx @codepushgo/cli@latest bundle upload -a $CAPGO_TOKEN -c dev
   dependencies:
     - build
   when: manual

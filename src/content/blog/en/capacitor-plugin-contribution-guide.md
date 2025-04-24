@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-17T05:00:51.296Z
 updated_at: 2025-03-18T13:13:57.261Z
-head_image: https://assets.seobotai.com/capgo.app/67b290a70d4a761ccc9919b5-1739768465938.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67b290a70d4a761ccc9919b5-1739768465938.jpg
 head_image_alt: Mobile Development
 keywords: React Native, plugins, development, mobile, coding standards, testing, documentation, contribution, open source
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-[React Native](https://capacitorjs.com/) plugins connect web technologies with native device features, enabling [cross-platform app development](https://capgo.app/blog/cross-platform-mobile-app-development-guide-2024/). This guide helps you:
+[React Native](https://capacitorjs.com/) plugins connect web technologies with native device features, enabling [cross-platform app development](https://codepushgo.com/blog/cross-platform-mobile-app-development-guide-2024/). This guide helps you:
 
 -   **Set Up Your Environment**: Tools like [Node.js](https://nodejs.org/en), [Xcode](https://developer.apple.com/xcode/), and [Android Studio](https://developer.android.com/studio) are essential.
 -   **Follow Code Standards**: Use [TypeScript](https://www.typescriptlang.org/), [Swift](https://developer.apple.com/swift/), and [Kotlin](https://kotlinlang.org/) with consistent naming conventions and error handling.
@@ -47,7 +47,7 @@ You should also be comfortable with TypeScript for web development and either Sw
 
 ### Setting Up the Monorepo
 
-The [React Native plugins](https://capgo.app/plugins/) ecosystem relies on a monorepo structure. This approach ensures your work aligns with community standards right from the start.
+The [React Native plugins](https://codepushgo.com/plugins/) ecosystem relies on a monorepo structure. This approach ensures your work aligns with community standards right from the start.
 
 1.  **Fork and Clone the Repository**  
     Start by forking the React Native plugins repository on GitHub. Then, clone your forked repository:
@@ -108,7 +108,7 @@ Now that your development environment is set up, stick to these guidelines to bu
 
 ### Style Guide Compliance
 
-The [React Native plugin ecosystem](https://capgo.app/blog/capacitor-comprehensive-guide/) enforces strict coding standards using tools like [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and SwiftLint. Here’s a quick overview of the required formatting:
+The [React Native plugin ecosystem](https://codepushgo.com/blog/capacitor-comprehensive-guide/) enforces strict coding standards using tools like [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), and SwiftLint. Here’s a quick overview of the required formatting:
 
 | Component | Format |
 | --- | --- |
@@ -210,16 +210,16 @@ For plugins with complex features, simulate real-world user scenarios. For insta
 -   Accurate progress reporting
 -   Memory usage during large file transfers
 
-### OTA Testing with [CodePushGo](https://capgo.app/)
+### OTA Testing with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-17.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-17.jpg?auto=compress)
 
 CodePushGo’s open-source tools make it easy to deploy and test updates quickly. Here’s how to use it:
 
-1.  Set up [update channels](https://capgo.app/docs/webapp/channels/) like dev, staging, and production.
+1.  Set up [update channels](https://codepushgo.com/docs/webapp/channels/) like dev, staging, and production.
 2.  Automate deployments with CI/CD tools.
 3.  Push updates instantly.
-4.  Monitor performance and issues via the [CodePushGo dashboard](https://capgo.app/docs/webapp/).
+4.  Monitor performance and issues via the [CodePushGo dashboard](https://codepushgo.com/docs/webapp/).
 
 For phased rollouts, CodePushGo allows you to limit updates to a small percentage of users. For instance, you can roll out a new version to 25% of users every 24 hours:
 
@@ -282,6 +282,6 @@ To make a meaningful contribution with your plugin, it's important to follow the
 
 The PR checklist highlights the need for high-quality submissions. If your plugin supports live updates, integrating with CodePushGo (as mentioned earlier) can help you release updates quickly without waiting for app store approvals.
 
-Once your PR is merged, stay involved by tracking issues and releasing version updates. Regular interaction with the community, consistent maintenance, and [keeping up with React Native updates](https://capgo.app/plugins/capacitor-updater/) will ensure your plugin stays useful and relevant.
+Once your PR is merged, stay involved by tracking issues and releasing version updates. Regular interaction with the community, consistent maintenance, and [keeping up with React Native updates](https://codepushgo.com/plugins/capacitor-updater/) will ensure your plugin stays useful and relevant.
 
 Pay attention to user feedback and make updates as needed. This ongoing effort helps maintain the overall quality of the ecosystem and keeps your plugin valuable for developers.

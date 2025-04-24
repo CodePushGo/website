@@ -42,7 +42,7 @@ Using React Native Purchases plugin and RevenueCat, developers can easily manage
 Be sure to use the latest version of React Native and the React Native Purchases plugin. You can check the latest version of React Native and the React Native Purchases plugin on the React Native website.
 
 To install the React Native Purchases plugin, run the following command:
-`npm i @capgo/capacitor-purchases`
+`npm i @codepushgo/capacitor-purchases`
 add the plugin to your app native code
 `npx cap sync`
 
@@ -164,7 +164,7 @@ Make sure you configure _Purchases_ with your public SDK key only. You can read 
 
 
 ```javascript
-import { React NativePurchases } from '@capgo/capacitor-purchases'
+import { React NativePurchases } from '@codepushgo/capacitor-purchases'
 import { isPlatform } from '@ionic/vue' // use the right one for your framework
 
 React NativePurchases.setDebugLogsEnabled({ enabled: import.meta.env.DEV }) // Enable to get debug logs in dev mode

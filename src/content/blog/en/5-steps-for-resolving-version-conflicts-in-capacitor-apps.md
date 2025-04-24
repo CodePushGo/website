@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-25T00:59:24.268Z
 updated_at: 2025-03-25T00:59:37.185Z
-head_image: https://assets.seobotai.com/capgo.app/67e1f3a47856e801f1f25733-1742864377185.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e1f3a47856e801f1f25733-1742864377185.jpg
 head_image_alt: Mobile Development
 keywords: React Native, version conflicts, mobile development, plugin issues, app stability
 tag: Development, Mobile, Updates
@@ -24,7 +24,7 @@ next_blog: ''
 4.  **Fix Plugin Issues**: Align plugin versions with the core and lock them to avoid future problems.
 5.  **Test Changes**: Clean, reinstall dependencies, and test on real devices to ensure stability.
 
-**Quick Tip**: Tools like [CodePushGo](https://capgo.app/) can simplify live testing and version management.
+**Quick Tip**: Tools like [CodePushGo](https://codepushgo.com/) can simplify live testing and version management.
 
 ## ✅ \[Solved\] [npm](https://www.npmjs.com/) ERR! ERESOLVE unable to resolve ...
 
@@ -270,7 +270,7 @@ For Yarn users, enforce these resolutions with:
 yarn install --force
 ```
 
-> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out [CodePushGo OTA updates](https://web.codepushgo.com/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://codepushgo.com/)
 
 Using tools like CodePushGo can help manage plugin updates and maintain version consistency, especially when introducing critical changes.
 
@@ -324,32 +324,32 @@ npx cap open android
 
 Once local tests confirm that the app's basic functionality is intact, move on to testing on real devices through Over-the-Air (OTA) channels.
 
-### Live Testing with [CodePushGo](https://capgo.app/)
+### Live Testing with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
 
 After verifying your changes locally, it's time to test in a live environment. Set up testing channels with these commands:
 
 ```bash
-npx @capgo/cli init
-npx @capgo/cli create-channel beta
+npx @codepushgo/cli init
+npx @codepushgo/cli create-channel beta
 ```
 
 **Testing Workflow:**
 
 -   Deploy your fixes to a beta channel and monitor performance using CodePushGo's analytics tools.
--   Track update success rates via CodePushGo's dashboard, which has already delivered over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
+-   Track update success rates via CodePushGo's dashboard, which has already delivered over 23.5 million updates across 750 production apps [\[1\]](https://codepushgo.com/).
 -   If any issues arise, use CodePushGo's one-click rollback feature to revert changes instantly.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
-CodePushGo boasts an 82% global success rate, with updates reaching 95% of active users within just 24 hours [\[1\]](https://capgo.app/). Use channel selectors to test pull requests directly within the app, ensuring everything works smoothly before merging your changes.
+CodePushGo boasts an 82% global success rate, with updates reaching 95% of active users within just 24 hours [\[1\]](https://codepushgo.com/). Use channel selectors to test pull requests directly within the app, ensuring everything works smoothly before merging your changes.
 
 ## Conclusion: Keep Your App Versions in Check
 
-Managing version conflicts in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) requires a clear and organized approach. The five-step process shared in this guide offers a reliable way to maintain app stability and address version-related challenges effectively.
+Managing version conflicts in [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) requires a clear and organized approach. The five-step process shared in this guide offers a reliable way to maintain app stability and address version-related challenges effectively.
 
-By taking these steps, teams can ensure their apps remain stable over time. For instance, using live update tools like CodePushGo allows for quick and efficient deployments, helping teams stay ahead [\[1\]](https://capgo.app/).
+By taking these steps, teams can ensure their apps remain stable over time. For instance, using live update tools like CodePushGo allows for quick and efficient deployments, helping teams stay ahead [\[1\]](https://codepushgo.com/).
 
 Here’s what successful teams focus on:
 

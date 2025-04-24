@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-05T02:35:09.479Z
 updated_at: 2025-04-05T02:35:35.214Z
-head_image: https://assets.seobotai.com/capgo.app/67f08966ebbb9dc80643aea5-1743820535214.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67f08966ebbb9dc80643aea5-1743820535214.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, React Native CLI, mobile app updates, app deployment, CodePushGo, version management
 tag: Development, Mobile, Updates
@@ -16,12 +16,12 @@ locale: en
 next_blog: ''
 ---
 
-Over-The-Air (OTA) updates let you deliver app fixes and features directly to users without waiting for app store approvals. Using [React Native](https://capacitorjs.com/) CLI and tools like [CodePushGo](https://capgo.app/), you can push updates instantly, track performance, and even roll back if needed. Here's what you need to know:
+Over-The-Air (OTA) updates let you deliver app fixes and features directly to users without waiting for app store approvals. Using [React Native](https://capacitorjs.com/) CLI and tools like [CodePushGo](https://codepushgo.com/), you can push updates instantly, track performance, and even roll back if needed. Here's what you need to know:
 
 ### Key Benefits of OTA Updates:
 
 -   **Instant Deployment**: Push updates immediately without app store delays.
--   **[Automatic Updates](https://capgo.app/docs/plugin/cloud-mode/auto-update/)**: Users get updates in the background.
+-   **[Automatic Updates](https://codepushgo.com/docs/plugin/cloud-mode/auto-update/)**: Users get updates in the background.
 -   **Version Management**: Easily manage and roll back versions.
 -   **Selective Distribution**: Target specific user groups like beta testers.
 
@@ -31,7 +31,7 @@ Over-The-Air (OTA) updates let you deliver app fixes and features directly to us
 
 ### Steps to Get Started:
 
-1.  **Install [CodePushGo Plugin](https://capgo.app/plugins/)**: Run `npx @capgo/cli init` in your project.
+1.  **Install [CodePushGo Plugin](https://codepushgo.com/plugins/)**: Run `npx @codepushgo/cli init` in your project.
 2.  **Configure Platforms**:
     -   For Android: Enable native builds and update Gradle.
     -   For iOS: Adjust Xcode settings and enable background updates.
@@ -46,7 +46,7 @@ Over-The-Air (OTA) updates let you deliver app fixes and features directly to us
 | **Security** | End-to-end encryption | Basic signing | Basic signing | \-  |
 | **Cost** | From $12/mo | Comparable | ~$500/mo | Was free |
 
-CodePushGo stands out with fast updates (95% within 24 hours), strong security, and CI/CD integration. With other tools phasing out, it’s a reliable choice for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
+CodePushGo stands out with fast updates (95% within 24 hours), strong security, and CI/CD integration. With other tools phasing out, it’s a reliable choice for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/).
 
 ### Why It Matters:
 
@@ -54,7 +54,7 @@ OTA updates save time, improve user experience, and ensure app stability. By lev
 
 ## Explore [Capawesome](https://capawesome.io/)'s New Ionic [React Native](https://capacitorjs.com/) Live Update ...
 
-![Capawesome](https://assets.seobotai.com/capgo.app/67f08966ebbb9dc80643aea5/5b1313ba32c189efb1a18534f5d1b0bc.jpg)
+![Capawesome](https://assets.seobotai.com/codepushgo.com/67f08966ebbb9dc80643aea5/5b1313ba32c189efb1a18534f5d1b0bc.jpg)
 
 <iframe src="https://www.youtube.com/embed/pCDPwItv_ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -69,7 +69,7 @@ Make sure to install these tools:
 | Software | Version | Purpose |
 | --- | --- | --- |
 | **Node.js** | 14.0+ | JavaScript runtime environment |
-| **React Native CLI** | 6.0+ or 7.0+ | [Core framework for React Native app development](https://capgo.app/blog/) |
+| **React Native CLI** | 6.0+ or 7.0+ | [Core framework for React Native app development](https://codepushgo.com/blog/) |
 | **Android Studio** | Latest | Android app development |
 | **Xcode** | 14.0+ | iOS app development (Mac only) |
 
@@ -78,7 +78,7 @@ Make sure to install these tools:
 Start by adding the CodePushGo plugin for OTA updates. Run the following command:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 After that, set up your Android and iOS environments to support OTA updates.
@@ -99,7 +99,7 @@ Follow these steps to configure platform-specific settings:
 -   Configure provisioning profiles.
 -   Enable background update capabilities.
 
-> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://codepushgo.com/)
 
 These steps ensure your project is compatible with React Native v6/v7 and ready for seamless OTA updates.
 
@@ -133,7 +133,7 @@ After deploying, ensure the update functions as intended by performing targeted 
     Set up separate channels for different user groups. This allows you to test updates systematically, monitor real-time performance, and gather insights on user engagement across versions.
     
 -   **Analytics Monitoring**  
-    Use CodePushGo's analytics dashboard to track update performance. According to CodePushGo, updates achieve an 82% success rate globally [\[1\]](https://capgo.app/).
+    Use CodePushGo's analytics dashboard to track update performance. According to CodePushGo, updates achieve an 82% success rate globally [\[1\]](https://codepushgo.com/).
     
 
 ### Managing Failed Updates
@@ -144,10 +144,10 @@ To maintain app stability, implement error handling and rollback measures. CodeP
 
 ### Update Security
 
-Protect OTA updates by using **end-to-end encryption** [\[1\]](https://capgo.app/). Key steps include:
+Protect OTA updates by using **end-to-end encryption** [\[1\]](https://codepushgo.com/). Key steps include:
 
 -   Using strong encryption protocols like CodePushGo's live update encryption.
--   Verifying digital signatures to ensure updates are legitimate [\[1\]](https://capgo.app/).
+-   Verifying digital signatures to ensure updates are legitimate [\[1\]](https://codepushgo.com/).
 
 These practices help meet both App Store requirements and version control standards.
 
@@ -155,11 +155,11 @@ These practices help meet both App Store requirements and version control standa
 
 Apple App Store and Google Play Store have strict requirements for OTA updates. Make sure your updates align with platform guidelines, such as restrictions on altering binaries or core app functions, while adhering to their security standards.
 
-Understanding these rules is essential for ensuring compliance and maintaining a [smooth update process](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
+Understanding these rules is essential for ensuring compliance and maintaining a [smooth update process](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/).
 
 ### Version Management
 
-Keep your app stable by managing versions effectively. Use separate channels for development, staging, and production. Include rollback mechanisms and track metrics like success rates, installation times, and error occurrences [\[1\]](https://capgo.app/). This approach ensures thorough testing and seamless transitions during deployment.
+Keep your app stable by managing versions effectively. Use separate channels for development, staging, and production. Include rollback mechanisms and track metrics like success rates, installation times, and error occurrences [\[1\]](https://codepushgo.com/). This approach ensures thorough testing and seamless transitions during deployment.
 
 ## OTA Tools Overview
 
@@ -177,15 +177,15 @@ Here’s a breakdown of the top OTA update tools for React Native apps:
 | Market Focus | Global | German Market | Enterprise | \-  |
 | Launch Year | 2022 | 2024 | \-  | \-  |
 | Security | End-to-end encryption | Basic signing | Basic signing | \-  |
-| [Self-hosting Option](https://capgo.app/blog/self-hosted-capgo/) | Yes | No  | No  | \-  |
+| [Self-hosting Option](https://codepushgo.com/blog/self-hosted-codepushgo/) | Yes | No  | No  | \-  |
 | CI/CD Integration | Yes | Limited | Yes | \-  |
 | Monthly Cost | From $12 | Comparable | ~$500 | Was free |
 
-This comparison helps developers identify the best tool for delivering [fast and secure OTA updates](https://capgo.app/blog/open-source-licecing/) in their React Native apps.
+This comparison helps developers identify the best tool for delivering [fast and secure OTA updates](https://codepushgo.com/blog/open-source-licecing/) in their React Native apps.
 
 The OTA tool landscape is changing rapidly. With Microsoft CodePush ending in 2024 and Appflow set to shut down by 2026, developers are exploring more sustainable options. Capawesome, launched in 2024, has carved out a space in the German market.
 
-> "Cancelled my @Appflow subscription after 4 years. Code-Push never seemed to work well, hopefully @CapGO has it figured out" - LeVar Berry [\[1\]](https://capgo.app/)
+> "Cancelled my @Appflow subscription after 4 years. Code-Push never seemed to work well, hopefully @CapGO has it figured out" - LeVar Berry [\[1\]](https://codepushgo.com/)
 
 When choosing an OTA tool, prioritize factors like performance, security, integration capabilities, cost, and platform support to ensure a smooth update process.
 
@@ -193,16 +193,16 @@ When choosing an OTA tool, prioritize factors like performance, security, integr
 
 Here’s a quick look at the key takeaways from the setup and implementation process.
 
-React Native CLI simplifies OTA updates. CodePushGo has successfully delivered 23.5 million updates across 750 apps, with 95% of updates completed within 24 hours [\[1\]](https://capgo.app/).
+React Native CLI simplifies OTA updates. CodePushGo has successfully delivered 23.5 million updates across 750 apps, with 95% of updates completed within 24 hours [\[1\]](https://codepushgo.com/).
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
-With CodePushGo, OTA updates offer fast deployment, strong security through end-to-end encryption, and easy integration into CI/CD pipelines, achieving an 82% global success rate [\[1\]](https://capgo.app/).
+With CodePushGo, OTA updates offer fast deployment, strong security through end-to-end encryption, and easy integration into CI/CD pipelines, achieving an 82% global success rate [\[1\]](https://codepushgo.com/).
 
 Key developer priorities include:
 
 -   **Security**: End-to-end encryption ensures safe update delivery.
--   **Performance**: Achieving an impressive 82% success rate worldwide for updates [\[1\]](https://capgo.app/).
+-   **Performance**: Achieving an impressive 82% success rate worldwide for updates [\[1\]](https://codepushgo.com/).
 -   **Flexibility**: Options for both cloud-based and self-hosted infrastructures.
 -   **Integration**: Smooth compatibility with CI/CD pipelines.
 

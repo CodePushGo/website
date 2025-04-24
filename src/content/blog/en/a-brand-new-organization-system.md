@@ -1,7 +1,7 @@
 ---
 slug: a-brand-new-organization-system
 title: A brand new organization system
-description: A backstory on how the capgo team added a organization system
+description: A backstory on how the codepushgo team added a organization system
 author: WcaleNieWolny
 author_image_url: 'https://avatars.githubusercontent.com/u/50914789?v=4'
 author_url: 'https://github.com/WcaleNieWolny/WcaleNieWolny'
@@ -9,7 +9,7 @@ created_at: 2024-04-15T00:00:00.000Z
 updated_at: 2024-04-15T00:00:00.000Z
 head_image: /organization_system_blog.webp
 head_image_alt: CodePushGo organization system illusatration
-keywords: organization system, capgo, mobile app development, software engineering, backend development
+keywords: organization system, codepushgo, mobile app development, software engineering, backend development
 tag: Story
 published: true
 locale: en
@@ -54,7 +54,7 @@ The organization system was working rather well despite all of the challenges. U
  - add support for the entire CLI
  - ensure that admin users have the same access as the owner
 
-After [a lot of discussions](https://github.com/Cap-go/capgo/issues/564) with Martin, we decided that the best way to move forward was to rewrite the entire security rules and to move all the resource ownership to organizations and not users.
+After [a lot of discussions](https://github.com/Cap-go/codepushgo/issues/564) with Martin, we decided that the best way to move forward was to rewrite the entire security rules and to move all the resource ownership to organizations and not users.
 This would allow for easier integration with the new organization system, and it would also remove a lot of legacy code.
 
 Writing the new RLS code was very tedious, but after a week and a half, the entire migration was ready.
@@ -80,7 +80,7 @@ The migration was rather smooth. It took a week of work but compared to V1 and V
 
 After all of this hard work I think it's time to focus on something else for now 😎
 
-It was not easy but I learned a lot and capgo has recived a very nice and important feature
+It was not easy but I learned a lot and codepushgo has recived a very nice and important feature
 I still have to deperecate the legacy functions, improve the webapp user experiance, monitor for bugs, 
 but there should not be any major changes to this system.
 

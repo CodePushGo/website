@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-14T05:12:26.952Z
 updated_at: 2025-03-18T13:13:55.519Z
-head_image: https://assets.seobotai.com/capgo.app/67ae8c28192afc208a60fcea-1739509966039.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ae8c28192afc208a60fcea-1739509966039.jpg
 head_image_alt: Mobile Development
 keywords: OTA encryption, app store compliance, app updates security, AES-256, TLS, code signing, mobile security
 tag: Development, Mobile, Updates
@@ -125,9 +125,9 @@ These measures are designed to meet Apple's code verification and Google's updat
 
 ###### sbb-itb-f9944d2
 
-## [CodePushGo](https://capgo.app/)'s OTA Encryption System
+## [CodePushGo](https://codepushgo.com/)'s OTA Encryption System
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-14.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-14.jpg?auto=compress)
 
 CodePushGo uses advanced encryption techniques to deliver secure OTA updates while fully adhering to app store regulations.
 
@@ -135,7 +135,7 @@ CodePushGo uses advanced encryption techniques to deliver secure OTA updates whi
 
 CodePushGo employs FIPS 140-2 compliant encryption to safeguard update packages at every stage. Encryption keys are managed within a secure infrastructure, ensuring they remain isolated from CodePushGo's servers[\[1\]](https://www.cubtale.com/pages/compliance-data-security).
 
-The [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) includes specific security measures at each stage:
+The [update process](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) includes specific security measures at each stage:
 
 | Stage | Security Measure |
 | --- | --- |
@@ -170,7 +170,7 @@ These practices align with the requirements specified in Apple's App Store Revie
 
 ### Implementation Guide
 
-Here’s how developers can [implement encryption](https://capgo.app/docs/cli/migrations/encryption/) for OTA updates that meet app store standards:
+Here’s how developers can [implement encryption](https://codepushgo.com/docs/cli/migrations/encryption/) for OTA updates that meet app store standards:
 
 -   **Use TLS 1.2 or higher** for secure server communications and **AES-256 encryption** for protecting update packages.
 -   **Incorporate automated compliance checks** to manage code signing and version control.
@@ -190,15 +190,15 @@ Encryption that's integrated into the operating system usually doesn't need expo
 | HTTPS connections using URLSession | ✓   |
 | Native TLS/SSL implementations | ✓   |
 | Built-in OS cryptographic functions | ✓   |
-| [Custom encryption solutions](https://capgo.app/docs/cli/migrations/encryption/) | ✗   |
+| [Custom encryption solutions](https://codepushgo.com/docs/cli/migrations/encryption/) | ✗   |
 | Modified standard algorithms | ✗   |
 
-According to U.S. export guidelines (BIS), [encryption methods](https://capgo.app/docs/cli/migrations/encryption/) with key lengths up to 128 bits are typically unrestricted for export [\[5\]](https://productlatest.com/?post=1837).
+According to U.S. export guidelines (BIS), [encryption methods](https://codepushgo.com/docs/cli/migrations/encryption/) with key lengths up to 128 bits are typically unrestricted for export [\[5\]](https://productlatest.com/?post=1837).
 
 For secure over-the-air (OTA) implementation:
 
 -   Use platform-native TLS and AES-256 through system APIs
 -   Keep detailed records of all encryption methods applied
--   Perform regular audits of your [encryption practices](https://capgo.app/docs/cli/migrations/encryption/)
+-   Perform regular audits of your [encryption practices](https://codepushgo.com/docs/cli/migrations/encryption/)
 
 Routine reviews of your encryption methods help ensure compliance with Apple and Google’s security requirements.

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-16T01:10:13.731Z
 updated_at: 2025-04-16T01:11:27.424Z
-head_image: https://assets.seobotai.com/capgo.app/67fef684b0912f75a97ee71d-1744765887424.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67fef684b0912f75a97ee71d-1744765887424.jpg
 head_image_alt: Mobile Development
 keywords: React Native, data transfer, JSON serialization, mobile apps, Android, performance optimization, encryption, error handling
 tag: Development, Mobile, Security
@@ -22,13 +22,13 @@ next_blog: ''
 -   **Performance Tips:** Break large data into chunks, compress it, and cache frequently used data to improve speed and memory usage.
 -   **Error Handling & Security:** Use encryption, runtime permissions, and cross-layer error tracking for secure and reliable transfers.
 -   **Bridge Features:** Supports two-way messaging, event batching, and type validation to ensure smooth communication.
--   **[CodePushGo](https://capgo.app/) Tools:** Offers real-time updates, intelligent chunking, and end-to-end encryption for seamless data handling.
+-   **[CodePushGo](https://codepushgo.com/) Tools:** Offers real-time updates, intelligent chunking, and end-to-end encryption for seamless data handling.
 
 **Quick Tip:** Use [TypeScript](https://www.typescriptlang.org/) for strict typing, validate JSON on both ends, and consider custom plugins for complex data needs. CodePushGo’s platform enhances performance with live updates and secure synchronization, making it a great choice for hybrid apps.
 
 ## How to create a [React Native](https://capacitorjs.com/) plugin for iOS/Android
 
-![React Native](https://assets.seobotai.com/capgo.app/67fef684b0912f75a97ee71d/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/codepushgo.com/67fef684b0912f75a97ee71d/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/Dq_BmheGAig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -164,23 +164,23 @@ Focus on efficient data processing by incorporating robust error handling, prope
 
 Integrate error recovery mechanisms, such as automatic retries for network issues and validation errors. Provide real-time feedback on transfer progress to enhance reliability.
 
-## [CodePushGo](https://capgo.app/) Platform Features
+## [CodePushGo](https://codepushgo.com/) Platform Features
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67fef684b0912f75a97ee71d/bff1fb0606ef072e3c605788ba21e2a7.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67fef684b0912f75a97ee71d/bff1fb0606ef072e3c605788ba21e2a7.jpg)
 
 CodePushGo tackles previous challenges with a live update system designed for smooth data transfers between web and Android layers. Its architecture ensures secure and high-performance data handling.
 
 ### Main CodePushGo Functions
 
-A global CDN supports real-time data transfers with impressive performance metrics [\[1\]](https://capgo.app/). Key features include:
+A global CDN supports real-time data transfers with impressive performance metrics [\[1\]](https://codepushgo.com/). Key features include:
 
 -   **Real-time Synchronization**: Quick data transfers across web and Android layers.
 -   **Intelligent Chunking**: Sends only updated components, reducing bandwidth and memory usage.
 -   **End-to-end Encryption**: Ensures secure communication between web and Android.
 
-Currently, 1.9K production apps rely on CodePushGo for their data transfer needs [\[1\]](https://capgo.app/). Developer Rodrigo Mantica shared:
+Currently, 1.9K production apps rely on CodePushGo for their data transfer needs [\[1\]](https://codepushgo.com/). Developer Rodrigo Mantica shared:
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://codepushgo.com/)
 
 These capabilities set CodePushGo apart from older solutions, as shown below.
 
@@ -196,9 +196,9 @@ CodePushGo’s advanced features provide a clear advantage over traditional meth
 | Security | End-to-end encryption | Basic signing |
 | Storage | 2-20 GB (plan dependent) | Variable |
 
-CodePushGo has powered over 1.1 trillion successful updates, showcasing its reliability [\[1\]](https://capgo.app/). The NASA [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team commented:
+CodePushGo has powered over 1.1 trillion successful updates, showcasing its reliability [\[1\]](https://codepushgo.com/). The NASA [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team commented:
 
-> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://codepushgo.com/)
 
 The platform also supports flexible hosting and integrates seamlessly with CI/CD pipelines for data-heavy applications. Built-in analytics provide insights into update success rates and user engagement, helping teams fine-tune their data transfer processes.
 
@@ -208,4 +208,4 @@ Smooth data transfer between web and Android layers is a key aspect of modern ap
 
 Features like end-to-end encryption, partial updates for performance boosts, and active error monitoring play a big role in ensuring reliable data handling.
 
-> "The community needed this and @CodePushGo is doing something really important!" [\[1\]](https://capgo.app/)
+> "The community needed this and @CodePushGo is doing something really important!" [\[1\]](https://codepushgo.com/)

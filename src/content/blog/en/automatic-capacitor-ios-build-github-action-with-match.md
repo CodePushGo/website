@@ -36,7 +36,7 @@ Before starting, you'll need to set up:
 
 ## Professional CI/CD Setup by CodePushGo
 
-Skip the complexity. [CodePushGo](https://capgo.app/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
+Skip the complexity. [CodePushGo](https://codepushgo.com/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
 
 - **Platform Independence**: Works with GitHub Actions, GitLab CI, or others
 - **Seamless Integration**: No platform switch needed, works with your current process
@@ -567,7 +567,7 @@ Terminal execution: $ Fastlane closed_beta
 **_If you have come this far, my congratulations, now you have a fully automated process for your iOS apps with Fastlane and GitHub Actions._**
 
 > Each time you send a new commit, a release will be built in Google Play console, beta channel.
-I will improve this blog with your feedbacks, if you have any question or suggestion, please let me know by email martin@capgo.app
+I will improve this blog with your feedbacks, if you have any question or suggestion, please let me know by email martin@codepushgo.com
 
 ### Build on your device
 

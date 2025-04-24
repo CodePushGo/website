@@ -60,7 +60,7 @@ If using AppFlow's force update strategy:
 }
 
 // Required JavaScript code
-import { React NativeUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';
 import { SplashScreen } from '@capacitor/splash-screen';
 
 React NativeUpdater.addListener('appReady', () => {
@@ -74,7 +74,7 @@ React NativeUpdater.notifyAppReady();
 If using AppFlow's always latest strategy, implement with CodePushGo:
 
 ```typescript
-import { React NativeUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';
 import { App } from '@capacitor/app';
 
 async function setupAlwaysLatest() {
@@ -108,7 +108,7 @@ if (result.activeApplicationPathChanged) {
 }
 
 // CodePushGo equivalent
-import { React NativeUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';
 const bundle = await React NativeUpdater.download({
   url: 'your-update-url'
 });
@@ -141,7 +141,7 @@ npm uninstall @ionic/appflow
 
 #### Install CodePushGo
 ```bash
-npm install @capgo/capacitor-updater
+npm install @codepushgo/capacitor-updater
 npx cap sync
 ```
 
@@ -163,9 +163,9 @@ CodePushGo provides flexible CI/CD options:
 
 #### Option 1: Use Your Existing CI/CD
 Follow our detailed tutorials for setting up CI/CD with popular platforms:
-- [iOS Build Setup](https://capgo.app/blog/automatic-capacitor-ios-build-github-action/)
-- [Android Build Setup](https://capgo.app/blog/automatic-capacitor-android-build-github-action/)
-- [GitHub Actions Integration](https://capgo.app/blog/github-action-capacitor/)
+- [iOS Build Setup](https://codepushgo.com/blog/automatic-capacitor-ios-build-github-action/)
+- [Android Build Setup](https://codepushgo.com/blog/automatic-capacitor-android-build-github-action/)
+- [GitHub Actions Integration](https://codepushgo.com/blog/github-action-capacitor/)
 
 #### Option 2: CI/CD Done For You
 Let us handle your CI/CD setup with our [managed service](https://cal.com/martindonadieu/mobile-ci-cd-done-for-you).
@@ -174,17 +174,17 @@ Let us handle your CI/CD setup with our [managed service](https://cal.com/martin
 
 1. Create channels in CodePushGo dashboard:
 ```bash
-npx @capgo/cli channel create production
-npx @capgo/cli channel create staging
+npx @codepushgo/cli channel create production
+npx @codepushgo/cli channel create staging
 ```
 
 2. Configure channel settings:
 ```bash
 # Set up production channel
-npx @capgo/cli channel update production --no-downgrade --no-upgrade
+npx @codepushgo/cli channel update production --no-downgrade --no-upgrade
 
 # Set up staging channel
-npx @capgo/cli channel update staging
+npx @codepushgo/cli channel update staging
 ```
 
 ### 4. Testing the Migration
@@ -192,7 +192,7 @@ npx @capgo/cli channel update staging
 1. **Test Live Updates**
 ```bash
 # Create and upload a test bundle
-npx @capgo/cli bundle create --channel staging
+npx @codepushgo/cli bundle create --channel staging
 ```
 
 2. **Verify Update Reception**
@@ -235,6 +235,6 @@ npx @capgo/cli bundle create --channel staging
 3. Set up [CI/CD integration](/docs/getting-started/cicd-integration/)
 4. Configure [live updates](/docs/live-updates/)
 
-For enterprise teams requiring dedicated support during migration, [schedule a call with our team](https://cal.com/martindonadieu/capgo-enterprise-inquiry).
+For enterprise teams requiring dedicated support during migration, [schedule a call with our team](https://cal.com/martindonadieu/codepushgo-enterprise-inquiry).
 
 Remember to test thoroughly in a staging environment before deploying to production. Our support team is available to help if you encounter any issues during migration.

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-12T02:57:37.246Z
 updated_at: 2025-04-12T02:57:57.476Z
-head_image: https://assets.seobotai.com/capgo.app/67f9cbd22e221594daf2fc62-1744426677476.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67f9cbd22e221594daf2fc62-1744426677476.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, React Native, testing, CodePushGo, mobile app deployment, security, performance, version control
 tag: Development, Security, Updates
@@ -20,7 +20,7 @@ next_blog: ''
 
 -   **What Are OTA Updates?** They push live changes directly to users' devices, skipping app store reviews. This saves time and quickly addresses issues.
 -   **Why Testing Matters:** Poorly tested updates can crash apps or break compliance. With proper testing, 95% of updates succeed within 24 hours.
--   **Tools You'll Need:** React Native CLI (v6+), [Node.js](https://nodejs.org/en) (v16+), [CodePushGo](https://capgo.app/) Plugin, and a testing framework like [Cypress](https://www.cypress.io/).
+-   **Tools You'll Need:** React Native CLI (v6+), [Node.js](https://nodejs.org/en) (v16+), [CodePushGo](https://codepushgo.com/) Plugin, and a testing framework like [Cypress](https://www.cypress.io/).
 -   **Steps to Test:**
     1.  Configure your test environment and CodePushGo settings.
     2.  Validate update processes like detection, download, installation, and rollback.
@@ -31,14 +31,14 @@ next_blog: ''
 
 -   End-to-end encryption for secure updates.
 -   Rollback options for quick fixes.
--   [Channel-based rollouts](https://capgo.app/docs/webapp/channels/) for phased testing.
+-   [Channel-based rollouts](https://codepushgo.com/docs/webapp/channels/) for phased testing.
 -   Fast updates via a global CDN (5MB in ~114ms).
 
 **Pro Tip:** Use staged rollouts to test updates on small user groups before full deployment. CodePushGo's tools make this process smooth and secure.
 
 ## Explore [Capawesome](https://capawesome.io/)'s New Ionic [React Native](https://capacitorjs.com/) Live Update ...
 
-![Capawesome](https://assets.seobotai.com/capgo.app/67f9cbd22e221594daf2fc62/04d155e1ac5e3041660c0e8da59e2e54.jpg)
+![Capawesome](https://assets.seobotai.com/codepushgo.com/67f9cbd22e221594daf2fc62/04d155e1ac5e3041660c0e8da59e2e54.jpg)
 
 <iframe src="https://www.youtube.com/embed/pCDPwItv_ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -54,17 +54,17 @@ Here are the essential tools you'll need for OTA testing:
 | --- | --- | --- |
 | React Native CLI | Core development tools | 6.0 or higher |
 | Node.js | Runtime environment | 16.0+ |
-| [CodePushGo Plugin](https://capgo.app/plugins/) | Manages OTA updates | Latest version |
+| [CodePushGo Plugin](https://codepushgo.com/plugins/) | Manages OTA updates | Latest version |
 | Testing Framework | Automated testing (e.g., Cypress or [Appium](http://appium.io/)) | N/A |
 
 ### Environment Configuration
 
 Start by updating the `capacitor.config.json` file with the appropriate staging server settings and update preferences.
 
-Next, [initialize CodePushGo configurations](https://capgo.app/docs/cli/commands) by running the following command:
+Next, [initialize CodePushGo configurations](https://codepushgo.com/docs/cli/commands) by running the following command:
 
 ```
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 Once configured, you're ready to integrate OTA updates into your app.
@@ -90,11 +90,11 @@ This step focuses on verifying individual update mechanisms and their interactio
 | Test Type | Focus Area | Success Criteria |
 | --- | --- | --- |
 | Update Detection | Version checking | ~434ms response time |
-| Download Process | [Bundle download](https://capgo.app/docs/webapp/bundles/) | 5MB bundle in ~114ms |
+| Download Process | [Bundle download](https://codepushgo.com/docs/webapp/bundles/) | 5MB bundle in ~114ms |
 | Installation | Update application | Successful integration |
 | Rollback | Version reversion | Successful rollback |
 
-CodePushGo’s global CDN helps maintain steady download speeds, with an average API response time of 434ms [\[1\]](https://capgo.app/). These tests at the component level form the groundwork for evaluating overall system performance.
+CodePushGo’s global CDN helps maintain steady download speeds, with an average API response time of 434ms [\[1\]](https://codepushgo.com/). These tests at the component level form the groundwork for evaluating overall system performance.
 
 ### Full System Tests
 
@@ -106,13 +106,13 @@ Comprehensive testing using production data should confirm the following:
 -   The app handles network issues effectively
 
 > "We rolled out CodePushGo OTA updates in production for our user base of +5000. We're seeing very smooth operation; almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo."  
-> – colenso [\[1\]](https://capgo.app/)
+> – colenso [\[1\]](https://codepushgo.com/)
 
 ### App Store Compliance
 
 Once functionality is verified, ensure updates comply with app store guidelines. OTA updates must meet requirements such as size limits, content standards, performance expectations, and user consent.
 
-To stay compliant and improve efficiency, consider staged rollouts. CodePushGo’s [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) allows you to target specific user groups for beta testing before a full deployment. For enterprise apps, its end-to-end encryption ensures that only authorized users can decrypt and apply updates, keeping sensitive content secure.
+To stay compliant and improve efficiency, consider staged rollouts. CodePushGo’s [channel system](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) allows you to target specific user groups for beta testing before a full deployment. For enterprise apps, its end-to-end encryption ensures that only authorized users can decrypt and apply updates, keeping sensitive content secure.
 
 ## Testing Guidelines
 
@@ -126,21 +126,21 @@ Managing risks in OTA updates involves implementing several protective measures.
 | Staged Rollouts | Distributes updates in phases | Limits risk exposure |
 | Rollback Mechanism | Allows reverting to previous versions | Quick problem resolution |
 
-[CodePushGo's channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) makes it easier for developers to distribute updates to specific user groups, such as beta testers, before rolling them out widely [\[1\]](https://capgo.app/). This phased approach ensures updates are validated in smaller groups, reducing the chance of widespread issues. Once risks are under control, developers can then prioritize securing the updates themselves.
+[CodePushGo's channel system](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) makes it easier for developers to distribute updates to specific user groups, such as beta testers, before rolling them out widely [\[1\]](https://codepushgo.com/). This phased approach ensures updates are validated in smaller groups, reducing the chance of widespread issues. Once risks are under control, developers can then prioritize securing the updates themselves.
 
 ### Security Checks
 
 Security is a top priority when testing OTA updates. Using **end-to-end encryption** ensures that only authorized users can access and install updates, keeping sensitive data safe during deployment.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://codepushgo.com/)
 
 Key security steps include:
 
--   [Encrypting updates](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/) from start to finish
+-   [Encrypting updates](https://codepushgo.com/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/) from start to finish
 -   Verifying the authenticity of updates before installation
 -   Restricting access to updates to authorized users only
 
-CodePushGo's error tracking tools further assist by identifying security-related problems early, allowing developers to fix vulnerabilities before they affect users [\[1\]](https://capgo.app/).
+CodePushGo's error tracking tools further assist by identifying security-related problems early, allowing developers to fix vulnerabilities before they affect users [\[1\]](https://codepushgo.com/).
 
 ### Version Control
 
@@ -154,13 +154,13 @@ Best practices for version control in OTA updates include:
 
 CodePushGo's channel system also simplifies managing versions, ensuring updates are deployed accurately and efficiently.
 
-## [CodePushGo](https://capgo.app/) Testing Tools
+## [CodePushGo](https://codepushgo.com/) Testing Tools
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67f9cbd22e221594daf2fc62/c9663ca23e94ac8ce625337d9d850085.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67f9cbd22e221594daf2fc62/c9663ca23e94ac8ce625337d9d850085.jpg)
 
 ### CodePushGo Features
 
-CodePushGo provides specialized tools for testing [React Native OTA updates](https://capgo.app/ja/), ensuring secure delivery with **end-to-end encryption** and offering **real-time analytics** to monitor update performance. These tools allow developers to deploy updates accurately while maintaining strong security measures.
+CodePushGo provides specialized tools for testing [React Native OTA updates](https://codepushgo.com/ja/), ensuring secure delivery with **end-to-end encryption** and offering **real-time analytics** to monitor update performance. These tools allow developers to deploy updates accurately while maintaining strong security measures.
 
 | Feature | Description |
 | --- | --- |
@@ -184,7 +184,7 @@ Using the CodePushGo CLI, developers can automate build and deployment tasks, ma
 
 ### Debug with CodePushGo
 
-CodePushGo includes a robust [debugging suite](https://capgo.app/docs/plugin/debugging/) with real-time analytics and error tracking, helping developers quickly identify and address issues during testing. A **one-click rollback** feature makes it easy to revert to previous versions, reducing downtime.
+CodePushGo includes a robust [debugging suite](https://codepushgo.com/docs/plugin/debugging/) with real-time analytics and error tracking, helping developers quickly identify and address issues during testing. A **one-click rollback** feature makes it easy to revert to previous versions, reducing downtime.
 
 The error tracking system provides insights such as:
 
@@ -192,7 +192,7 @@ The error tracking system provides insights such as:
 -   Metrics for user engagement
 -   Identification of performance bottlenecks
 
-With its debugging tools and seamless CI/CD integration, CodePushGo supports efficient testing for both cloud-based and self-hosted setups [\[1\]](https://capgo.app/).
+With its debugging tools and seamless CI/CD integration, CodePushGo supports efficient testing for both cloud-based and self-hosted setups [\[1\]](https://codepushgo.com/).
 
 ## Common Issues
 
@@ -216,15 +216,15 @@ Network glitches or incomplete downloads are often behind update failures. CodeP
 -   Incomplete bundle transfers
 -   Server delays
 
-Thanks to robust error handling and a reliable CDN, CodePushGo ensures that updates reach 95% of active users within 24 hours [\[1\]](https://capgo.app/).
+Thanks to robust error handling and a reliable CDN, CodePushGo ensures that updates reach 95% of active users within 24 hours [\[1\]](https://codepushgo.com/).
 
-> "Detailed analytics and error tracking" capabilities ensure developers can "instantly rollback if something goes wrong" during updates [\[1\]](https://capgo.app/).
+> "Detailed analytics and error tracking" capabilities ensure developers can "instantly rollback if something goes wrong" during updates [\[1\]](https://codepushgo.com/).
 
 ### Speed Issues
 
-CodePushGo’s global CDN delivers 5MB bundles in just 114ms, with an average API response time of 434ms. The platform’s smart differential updates further reduce bandwidth usage by downloading only the changed parts [\[1\]](https://capgo.app/).
+CodePushGo’s global CDN delivers 5MB bundles in just 114ms, with an average API response time of 434ms. The platform’s smart differential updates further reduce bandwidth usage by downloading only the changed parts [\[1\]](https://codepushgo.com/).
 
-> "Partial Updates: Smart differential updates. Only download what's changed, saving bandwidth and time" [\[1\]](https://capgo.app/).
+> "Partial Updates: Smart differential updates. Only download what's changed, saving bandwidth and time" [\[1\]](https://codepushgo.com/).
 
 To keep updates fast and efficient, developers should:
 
@@ -256,6 +256,6 @@ To improve your OTA testing process, keep these practical tips in mind:
 -   **Enable Rollbacks**: Ensure you can quickly revert updates if needed.
 -   **Automate Testing**: Integrate testing into your CI/CD pipeline for efficiency.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://codepushgo.com/)
 
-> "CodePushGo streamlines development by eliminating app store delays for bug fixes." [\[1\]](https://capgo.app/)
+> "CodePushGo streamlines development by eliminating app store delays for bug fixes." [\[1\]](https://codepushgo.com/)

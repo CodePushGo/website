@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-13T08:04:34.421Z
 updated_at: 2025-03-18T13:13:54.895Z
-head_image: https://assets.seobotai.com/capgo.app/67ad4d12971060b04c742b83-1739433897515.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ad4d12971060b04c742b83-1739433897515.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, security, encryption, mobile apps, compliance, data protection, update integrity, app store rules
 tag: Development, Mobile, Updates
@@ -31,7 +31,7 @@ Over-the-air (OTA) updates are a fast way to improve [React Native](https://capa
 | Code Injection | App compromise | Bundle signing, file checks |
 | Downgrade Attacks | Exploitation of old flaws | Version control, integrity checks |
 
-To stay compliant with App Store and [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) rules, ensure updates are secure, transparent, and protect user data. Tools like [CodePushGo](https://capgo.app/) can automate encryption, signing, and monitoring for safer OTA updates.
+To stay compliant with App Store and [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) rules, ensure updates are secure, transparent, and protect user data. Tools like [CodePushGo](https://codepushgo.com/) can automate encryption, signing, and monitoring for safer OTA updates.
 
 ## [React Native](https://capacitorjs.com/) for Enterprise
 
@@ -41,7 +41,7 @@ To stay compliant with App Store and [GDPR](https://en.wikipedia.org/wiki/Genera
 
 ## Security Basics for OTA Updates
 
-In 2022, researchers discovered that 78% of devices with OTA capabilities had vulnerabilities in their update processes [\[5\]](https://sigmaos.com/tips/startups/internet-of-things-iot-terms-explained-over-the-air-ota-update). To address this, a strong security framework is crucial, focusing on three key areas: **bundle signing**, **secure data transfer**, and **file verification**. These elements are the backbone of the [encryption methods](https://capgo.app/docs/cli/migrations/encryption/) discussed later.
+In 2022, researchers discovered that 78% of devices with OTA capabilities had vulnerabilities in their update processes [\[5\]](https://sigmaos.com/tips/startups/internet-of-things-iot-terms-explained-over-the-air-ota-update). To address this, a strong security framework is crucial, focusing on three key areas: **bundle signing**, **secure data transfer**, and **file verification**. These elements are the backbone of the [encryption methods](https://codepushgo.com/docs/cli/migrations/encryption/) discussed later.
 
 ### Update Bundle Signing
 
@@ -98,7 +98,7 @@ These standards rely on core security practices like encryption and signing, pai
 
 ### App Store Rules
 
-Apple's App Store guideline 2.5.2 imposes clear restrictions on OTA updates for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). Updates can only modify web content like HTML, CSS, and JavaScript within the app container - changing native functionality is not allowed [\[1\]](https://github.com/capacitor-community/android-security-provider).
+Apple's App Store guideline 2.5.2 imposes clear restrictions on OTA updates for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/). Updates can only modify web content like HTML, CSS, and JavaScript within the app container - changing native functionality is not allowed [\[1\]](https://github.com/capacitor-community/android-security-provider).
 
 | Platform | Requirements |
 | --- | --- |
@@ -116,7 +116,7 @@ Privacy regulations further complicate OTA update compliance. Laws like GDPR and
 | Data Collection | Minimal necessary data | Full disclosure required |
 | User Rights | Explicit consent needed | Opt-out option mandatory |
 | Security Measures | End-to-end encryption | Reasonable security |
-| Documentation | [Update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/) documentation | Update process documentation |
+| Documentation | [Update process](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) documentation | Update process documentation |
 
 > "The key to maintaining compliance is implementing privacy by design principles from the outset", explains a European Data Protection Board guidance document. "This includes incorporating data protection considerations into every aspect of the update process." [\[8\]](https://essaypro.com/blog/article-review)
 
@@ -160,9 +160,9 @@ CodePushGo streamlines responses for React Native apps by automating actions lik
 
 These detection and response measures work hand-in-hand with encryption and signing protocols to provide a multi-layered defense system.
 
-## [CodePushGo](https://capgo.app/) Security Features
+## [CodePushGo](https://codepushgo.com/) Security Features
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-13.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-13.jpg?auto=compress)
 
 CodePushGo ensures security through three key approaches that work alongside its monitoring systems:
 

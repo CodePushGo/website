@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-20T02:15:22.429Z
 updated_at: 2025-04-20T02:15:38.258Z
-head_image: https://assets.seobotai.com/capgo.app/680454b86000445eb1a68ab2-1745115338258.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/680454b86000445eb1a68ab2-1745115338258.jpg
 head_image_alt: Mobile Development
 keywords: token signing, React Native apps, data integrity, security standards, compliance, JWT, cryptographic library
 tag: Mobile, Security, Updates
@@ -35,7 +35,7 @@ Token signing is essential for securing [React Native](https://capacitorjs.com/)
 
 **Live Updates:**
 
--   Use signed tokens to [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
+-   Use signed tokens to [secure updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/).
 -   Enable rollback options for compromised updates.
 -   Monitor user engagement and update success rates.
 
@@ -69,7 +69,7 @@ To ensure secure token signing, focus on two key areas:
 
 These decisions play a critical role in maintaining **authentication** and **integrity**. They ensure that every signed token aligns with U.S. compliance standards and supports both current and future security needs.
 
-In systems requiring live updates, following these practices has shown a 95% success rate in deployments [\[1\]](https://capgo.app/).
+In systems requiring live updates, following these practices has shown a 95% success rate in deployments [\[1\]](https://codepushgo.com/).
 
 ## Token Signing Implementation Steps
 
@@ -118,7 +118,7 @@ In live-update scenarios, signed tokens protect each update package from its sou
 -   Monitor update success rates and user engagement as they happen.
 -   Manage testers and beta users with precise permission settings.
 
-Platforms like [CodePushGo](https://capgo.app/) implement these practices with features like encryption, signature checks, version control, and rollback options to secure over-the-air (OTA) updates. These methods have proven effective, with 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/).
+Platforms like [CodePushGo](https://codepushgo.com/) implement these practices with features like encryption, signature checks, version control, and rollback options to secure over-the-air (OTA) updates. These methods have proven effective, with 95% of active users receiving updates within 24 hours [\[1\]](https://codepushgo.com/).
 
 ### Security Implementation
 
@@ -133,16 +133,16 @@ This ensures only authenticated and properly signed updates are delivered to use
 
 ## U.S. Standards and Requirements
 
-To comply with U.S. regulatory requirements, integrate live-update token practices into your processes. Ensure your token signing methods align with key U.S. mandates like **CCPA** for consumer privacy, **HIPAA** for health data protection, **NIST SP 800‑63** for identity verification, and **FIPS 140‑2** for cryptographic modules [\[1\]](https://capgo.app/).
+To comply with U.S. regulatory requirements, integrate live-update token practices into your processes. Ensure your token signing methods align with key U.S. mandates like **CCPA** for consumer privacy, **HIPAA** for health data protection, **NIST SP 800‑63** for identity verification, and **FIPS 140‑2** for cryptographic modules [\[1\]](https://codepushgo.com/).
 
 Here’s how these standards apply to token signing:
 
 -   **CCPA**: Ensure token payloads respect user consent and support data deletion requests.
 -   **HIPAA**: Encrypt tokens containing Protected Health Information (PHI) both at rest and during transmission.
--   **NIST SP 800‑63**: Use [multi-factor authentication](https://capgo.app/docs/webapp/mfa/) to secure access to signing keys.
+-   **NIST SP 800‑63**: Use [multi-factor authentication](https://codepushgo.com/docs/webapp/mfa/) to secure access to signing keys.
 -   **FIPS 140‑2**: Confirm that your signing library uses validated cryptographic modules.
 
-[\[1\]](https://capgo.app/) Developers should stay informed about U.S. federal and state data protection laws, including CCPA.
+[\[1\]](https://codepushgo.com/) Developers should stay informed about U.S. federal and state data protection laws, including CCPA.
 
 ## Conclusion
 

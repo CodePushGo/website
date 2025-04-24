@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-20T01:23:29.243Z
 updated_at: 2025-03-20T01:25:05.119Z
-head_image: https://assets.seobotai.com/capgo.app/67db5cb48d9574929cf1042f-1742433905119.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67db5cb48d9574929cf1042f-1742433905119.jpg
 head_image_alt: Mobile Development
 keywords: real-time updates, user segmentation, app engagement, feature testing, CodePushGo
 tag: Development, Mobile, Updates
@@ -21,10 +21,10 @@ Real-time updates let you deliver app changes instantly without waiting for app 
 -   **Real-Time Updates**: Send bug fixes and new features directly to users, reaching 95% within 24 hours.
 -   **User Segmentation**: Group users (e.g., beta testers, power users) to test updates, roll out gradually, and tailor app experiences.
 -   **Key Metrics to Track**: Session duration, feature usage, update adoption, and error rates.
--   **Tools**: [CodePushGo](https://capgo.app/) ensures fast, secure updates with global success rates of 82% and detailed analytics.
+-   **Tools**: [CodePushGo](https://codepushgo.com/) ensures fast, secure updates with global success rates of 82% and detailed analytics.
 -   **Benefits**: Faster updates, reduced risks, personalized features, and improved engagement.
 
-Start by defining user segments, installing CodePushGo (`npx @capgo/cli init`), and tracking update performance to refine your strategy.
+Start by defining user segments, installing CodePushGo (`npx @codepushgo/cli init`), and tracking update performance to refine your strategy.
 
 ## Building Blocks of User Segmentation
 
@@ -39,24 +39,24 @@ To create meaningful user segments, you first need to track how users interact w
 | **Update Response** | Measure update adoption | Refine rollout strategies |
 | **Error Rates** | Monitor app stability | Pinpoint and address issues for segments |
 
-Using CodePushGo's analytics, you can track update success rates and user engagement, offering detailed insights into how different users interact with your app [\[1\]](https://capgo.app/). This data forms the backbone of effective user segmentation.
+Using CodePushGo's analytics, you can track update success rates and user engagement, offering detailed insights into how different users interact with your app [\[1\]](https://codepushgo.com/). This data forms the backbone of effective user segmentation.
 
 ### Creating User Segments
 
 Once you've collected the data, the next step is to group users into segments using CodePushGo's channel system. This allows developers to manage updates and test features with precision.
 
-> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of 5,000. We're seeing very smooth operation; almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." – colenso, @colenso [\[1\]](https://capgo.app/)
+> "We rolled out [CodePushGo OTA updates](https://web.codepushgo.com/resend_email) in production for our user base of 5,000. We're seeing very smooth operation; almost all our users are up to date within minutes of the OTA being deployed to @CodePushGo." – colenso, @colenso [\[1\]](https://codepushgo.com/)
 
 Developers can organize users into categories like beta testers, power users, new users, or enterprise accounts. This segmentation helps in testing updates, rolling them out gradually, or tailoring features for specific groups.
 
-| **Segment Type** | **Description** | **[Update Strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update)** |
+| **Segment Type** | **Description** | **[Update Strategy](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update)** |
 | --- | --- | --- |
 | **Beta Testers** | Early adopters testing features | Get updates first |
 | **Power Users** | Highly engaged, frequent users | Prioritize performance improvements |
 | **New Users** | Recently joined the platform | Simplify feature rollouts |
 | **Enterprise** | Business or organizational accounts | Use scheduled maintenance windows |
 
-CodePushGo's tools make it easy to adjust these segments as user behavior changes, ensuring your updates and features stay relevant [\[1\]](https://capgo.app/).
+CodePushGo's tools make it easy to adjust these segments as user behavior changes, ensuring your updates and features stay relevant [\[1\]](https://codepushgo.com/).
 
 ## Setting Up Segmented Updates
 
@@ -109,17 +109,17 @@ With real-time segmentation, developers can adjust app features to suit differen
 
 Send notifications that matter, when they matter. By tailoring both the message and timing to match the habits of specific user groups, you can keep active users informed and bring inactive ones back into the fold. This targeted approach ensures your notifications make an impact.
 
-### [CodePushGo](https://capgo.app/)'s Update Management System
+### [CodePushGo](https://codepushgo.com/)'s Update Management System
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-20.jpg?auto=compress)
 
-To support these personalized interactions, effective [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) is key. CodePushGo’s channel system provides precise control over updates, allowing for beta testing, phased rollouts, and feature releases targeted to specific user segments. With real-time analytics and detailed permission settings, CodePushGo ensures compliance with app store rules - especially important for enterprise apps.
+To support these personalized interactions, effective [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) is key. CodePushGo’s channel system provides precise control over updates, allowing for beta testing, phased rollouts, and feature releases targeted to specific user segments. With real-time analytics and detailed permission settings, CodePushGo ensures compliance with app store rules - especially important for enterprise apps.
 
 ## Tracking Results and Success
 
 ### Performance Metrics
 
-Analytics play a crucial role in tracking how updates perform. Key indicators include update success rates, how quickly users adopt updates, and levels of engagement. For example, 95% of active users install updates within 24 hours, and the global success rate for updates stands at 82% [\[1\]](https://capgo.app/).
+Analytics play a crucial role in tracking how updates perform. Key indicators include update success rates, how quickly users adopt updates, and levels of engagement. For example, 95% of active users install updates within 24 hours, and the global success rate for updates stands at 82% [\[1\]](https://codepushgo.com/).
 
 ### Testing Different Approaches
 
@@ -131,7 +131,7 @@ Using these metrics, systematic testing helps fine-tune your update strategy. [A
 | Segment Criteria | User engagement within each segment | Confirms the effectiveness of segmentation |
 | Feature Rollouts | Usage rates across user groups | Validates the value of new features |
 
-During testing, tracking errors is essential. It allows you to catch issues early, fix them quickly, and maintain app stability [\[1\]](https://capgo.app/).
+During testing, tracking errors is essential. It allows you to catch issues early, fix them quickly, and maintain app stability [\[1\]](https://codepushgo.com/).
 
 ### Measuring Business Impact
 
@@ -154,11 +154,11 @@ Ready to put segmented real-time updates into action? Here’s a step-by-step gu
 
 ### Main Points
 
-Start by installing the [CodePushGo plugin](https://capgo.app/plugins/) (`npx @capgo/cli init`), then define user segments based on behavior and your business goals. Finally, set up a monitoring system to ensure a global update success rate of 82% [\[1\]](https://capgo.app/). This setup allows you to deploy updates instantly without app store reviews, all while staying within platform guidelines.
+Start by installing the [CodePushGo plugin](https://codepushgo.com/plugins/) (`npx @codepushgo/cli init`), then define user segments based on behavior and your business goals. Finally, set up a monitoring system to ensure a global update success rate of 82% [\[1\]](https://codepushgo.com/). This setup allows you to deploy updates instantly without app store reviews, all while staying within platform guidelines.
 
 Here are the three key elements to focus on:
 
--   **Technical Setup**: Install the CodePushGo plugin using the command: `npx @capgo/cli init`.
+-   **Technical Setup**: Install the CodePushGo plugin using the command: `npx @codepushgo/cli init`.
 -   **Segmentation Strategy**: Group users based on engagement, behavior, and objectives. This allows you to send targeted updates to specific user channels.
 -   **Monitoring Framework**: Track update performance and fine-tune delivery for better results.
 
@@ -173,7 +173,7 @@ Here’s a quick implementation breakdown:
 | Phase | Action Items | Expected Outcome |
 | --- | --- | --- |
 | Initial Setup | Install the CodePushGo plugin and configure it | A strong update foundation |
-| Segmentation | Define user channels and target groups | [Organized update delivery](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) |
+| Segmentation | Define user channels and target groups | [Organized update delivery](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) |
 | Deployment | Use the CLI to roll out updates and monitor | Fast and controlled rollout |
 | Optimization | Analyze performance and adjust targeting | Improved efficiency |
 

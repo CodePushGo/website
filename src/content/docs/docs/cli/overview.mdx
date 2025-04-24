@@ -39,12 +39,12 @@ To start using Live Updates, follow these steps:
 3. Build your JS bundle and upload it to CodePushGo:
    ```shell
    npm run build
-   npx @capgo/cli@latest bundle upload --channel=Production 
+   npx @codepushgo/cli@latest bundle upload --channel=Production 
    ```
 
 4. Open your app and wait for the update to download. You can check the status with:
    ```shell
-   npx @capgo/cli@latest app debug
+   npx @codepushgo/cli@latest app debug
    ```
 
 5. Once the update is downloaded, close and reopen your app to load the new bundle.
@@ -72,7 +72,7 @@ To use the CodePushGo CLI, you'll need to authenticate with your API key. You ca
 To log in and securely store your API key, run:
 
 ```shell
-npx @capgo/cli@latest login [API_KEY]
+npx @codepushgo/cli@latest login [API_KEY]
 ```
 
 This command will then be saved for future use. You won't need to provide your API key with each command after logging in.
@@ -83,7 +83,7 @@ If you're familiar with other live update CLI tools, there are a few key things 
 
 - CodePushGo uses a single CLI for both development and CI/CD use cases, as CodePushGo is focused solely on the live update feature set.
 
-- The CodePushGo CLI doesn't require a separate installation step. It's bundled with the `@capgo/cli` package and can be run directly using `npx`.
+- The CodePushGo CLI doesn't require a separate installation step. It's bundled with the `@codepushgo/cli` package and can be run directly using `npx`.
 
 - CodePushGo's CLI is designed specifically for the live update workflow, so it may not include some features or commands found in more general-purpose CLI tools.
 

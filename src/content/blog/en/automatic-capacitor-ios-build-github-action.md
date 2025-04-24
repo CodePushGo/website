@@ -36,7 +36,7 @@ Before starting, you'll need to set up:
 
 ## Professional CI/CD Setup by CodePushGo
 
-Skip the complexity. [CodePushGo](https://capgo.app/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
+Skip the complexity. [CodePushGo](https://codepushgo.com/ci-cd/) configures your CI/CD pipeline directly in your preferred platform:
 
 - **Platform Independence**: Works with GitHub Actions, GitLab CI, or others
 - **Seamless Integration**: No platform switch needed, works with your current process

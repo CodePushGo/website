@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-18T02:23:31.365Z
 updated_at: 2025-04-18T02:26:28.853Z
-head_image: https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92-1744943188853.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/68019d453c6b972ab5063e92-1744943188853.jpg
 head_image_alt: Mobile Development
 keywords: Privacy Manifest, iOS, data collection, App Store, compliance, CodePushGo, JSON, updates
 tag: Development, Mobile, Security
@@ -23,7 +23,7 @@ next_blog: ''
     -   APIs and third-party SDKs used
     -   External domains accessed
 -   **Why it matters**: Ensures transparency and compliance with Apple’s privacy standards.
--   **How to comply**: Add the manifest to your iOS app bundle and update it regularly, especially if using live-update tools like [CodePushGo](https://capgo.app/).
+-   **How to comply**: Add the manifest to your iOS app bundle and update it regularly, especially if using live-update tools like [CodePushGo](https://codepushgo.com/).
 
 **Quick Tip**: Tools like CodePushGo simplify compliance by automating manifest updates, offering instant deployments, and providing analytics for tracking success.
 
@@ -48,7 +48,7 @@ Next, we’ll walk through creating and verifying your manifest in a React Nativ
 
 ## Setting Up Privacy Manifest in [React Native](https://capacitorjs.com/)
 
-![React Native](https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/codepushgo.com/68019d453c6b972ab5063e92/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 ### Creating the Manifest File
 
@@ -67,13 +67,13 @@ After creating this file, open [Xcode](https://developer.apple.com/xcode/) to en
 
 In Xcode, navigate to **Product > Analyze** to generate a Privacy Report. Carefully review the report for any warnings or undeclared APIs, and make necessary adjustments to avoid issues. Once everything checks out, proceed to deploy your updates.
 
-### Updates with [CodePushGo](https://capgo.app/)
+### Updates with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/68019d453c6b972ab5063e92/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/68019d453c6b972ab5063e92/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
 
 After passing Xcode analysis, use CodePushGo for live updates to keep your app's privacy manifest up-to-date. CodePushGo provides:
 
--   **Instant deployments**: 95% of users receive updates within 24 hours [\[1\]](https://capgo.app/).
+-   **Instant deployments**: 95% of users receive updates within 24 hours [\[1\]](https://codepushgo.com/).
 -   **One-click rollback** for quick fixes.
 -   **Analytics tools** to track update success and ensure compliance.
 
@@ -85,22 +85,22 @@ After verifying your manifest in Xcode, it's important to ensure privacy complia
 
 ### Recommended Practices
 
-Consider using CodePushGo to push manifest updates instantly, avoiding delays caused by App Store reviews. This tool also supports staged rollouts, letting you test changes with real-time analytics before rolling them out to all users [\[1\]](https://capgo.app/).
+Consider using CodePushGo to push manifest updates instantly, avoiding delays caused by App Store reviews. This tool also supports staged rollouts, letting you test changes with real-time analytics before rolling them out to all users [\[1\]](https://codepushgo.com/).
 
 ### Common Pitfalls
 
-Relying on [manual updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) can be slow, as they depend on App Store review times, which can take days or even weeks. This often leaves documentation outdated. On the other hand, automated tools allow for instant updates, provide analytics to monitor deployments, and make it easy to roll back changes if something goes wrong [\[1\]](https://capgo.app/).
+Relying on [manual updates](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) can be slow, as they depend on App Store review times, which can take days or even weeks. This often leaves documentation outdated. On the other hand, automated tools allow for instant updates, provide analytics to monitor deployments, and make it easy to roll back changes if something goes wrong [\[1\]](https://codepushgo.com/).
 
 ### Manual vs. Automated Updates
 
 Here's a quick comparison of manual and automated update methods:
 
--   **Delivery Speed**: Manual updates can take days or weeks, while [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) reach 95% of users within 24 hours [\[1\]](https://capgo.app/).
--   **Tracking Success**: Manual methods vary, but automated updates achieve an 82% success rate worldwide [\[1\]](https://capgo.app/).
+-   **Delivery Speed**: Manual updates can take days or weeks, while [automated updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) reach 95% of users within 24 hours [\[1\]](https://codepushgo.com/).
+-   **Tracking Success**: Manual methods vary, but automated updates achieve an 82% success rate worldwide [\[1\]](https://codepushgo.com/).
 -   **Rollback Options**: Manual updates offer limited recovery, while automated updates allow immediate rollbacks.
--   **Monitoring**: Manual checks are time-consuming, whereas automated tools provide real-time analytics [\[1\]](https://capgo.app/).
--   **Distribution**: Manual systems are basic, while automated tools support advanced distribution channels [\[1\]](https://capgo.app/).
--   **Security**: Manual updates lack built-in encryption, whereas automated systems use end-to-end encryption [\[1\]](https://capgo.app/).
+-   **Monitoring**: Manual checks are time-consuming, whereas automated tools provide real-time analytics [\[1\]](https://codepushgo.com/).
+-   **Distribution**: Manual systems are basic, while automated tools support advanced distribution channels [\[1\]](https://codepushgo.com/).
+-   **Security**: Manual updates lack built-in encryption, whereas automated systems use end-to-end encryption [\[1\]](https://codepushgo.com/).
 
 ## Live Update Tools Comparison
 
@@ -111,10 +111,10 @@ Let's dive into a comparison of two popular live-update platforms and see how th
 | Feature | CodePushGo | [Appflow](https://ionic.io/appflow/) |
 | --- | --- | --- |
 | End-to-end encryption | **Yes** | \-  |
-| Update success rate | **82% worldwide** [\[1\]](https://capgo.app/) | \-  |
-| Update delivery time | **95% within 24h** [\[1\]](https://capgo.app/) | \-  |
-| Bundle download speed | **114 ms (5 MB)** [\[1\]](https://capgo.app/) | \-  |
-| Annual cost (Team plan) | **$996** | **$6,000** [\[1\]](https://capgo.app/) |
+| Update success rate | **82% worldwide** [\[1\]](https://codepushgo.com/) | \-  |
+| Update delivery time | **95% within 24h** [\[1\]](https://codepushgo.com/) | \-  |
+| Bundle download speed | **114 ms (5 MB)** [\[1\]](https://codepushgo.com/) | \-  |
+| Annual cost (Team plan) | **$996** | **$6,000** [\[1\]](https://codepushgo.com/) |
 
 **Quick takeaway**: CodePushGo offers a much lower first-year cost - $996 compared to Appflow’s $6,000.
 
@@ -122,7 +122,7 @@ Now, let’s look at how CodePushGo stands out specifically for Privacy Manifest
 
 ### Privacy Manifest: CodePushGo Benefits
 
-CodePushGo’s open-source codebase makes it a strong choice for managing Privacy Manifest updates. It enables quick adjustments to meet evolving privacy standards, ensuring compliance stays manageable [\[1\]](https://capgo.app/).
+CodePushGo’s open-source codebase makes it a strong choice for managing Privacy Manifest updates. It enables quick adjustments to meet evolving privacy standards, ensuring compliance stays manageable [\[1\]](https://codepushgo.com/).
 
 ## Summary
 

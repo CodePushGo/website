@@ -4,10 +4,10 @@
       "pattern": "^https://developer.android.com/studio/*"
     },
     {
-      "pattern": "^https://api.capgo.app/stats"
+      "pattern": "^https://api.codepushgo.com/stats"
     },
     {
-      "pattern": "^https://api.capgo.app/updates"
+      "pattern": "^https://api.codepushgo.com/updates"
     },
     {
       "pattern": "^https://x.com/*"
@@ -49,7 +49,7 @@
   "replacementPatterns": [
     {
       "pattern": "^/",
-      "replacement": "https://capgo.app/"
+      "replacement": "https://codepushgo.com/"
     }
   ]
 }

@@ -26,10 +26,10 @@ Before getting started with CodePushGo, make sure you have:
 
 <Steps>
 
-1. Create your account at [https://capgo.app/register](https://capgo.app/register).
+1. Create your account at [https://codepushgo.com/register](https://codepushgo.com/register).
 ![signup screenshot](/signup.webp "signup screenshot")
 
-2. Use the Init commands to get started <Code code={`npx @capgo/cli@latest init [APIKEY]`} lang="bash" /> You will be presented with a series of questions. Provide the necessary answers to complete the automated setup.<Aside type="tip">By following these steps, you'll be up and running in no time. If you need any further assistance during the process, our support team is [here to help](mailto:support@capgo.app). Happy onboarding!</Aside>
+2. Use the Init commands to get started <Code code={`npx @codepushgo/cli@latest init [APIKEY]`} lang="bash" /> You will be presented with a series of questions. Provide the necessary answers to complete the automated setup.<Aside type="tip">By following these steps, you'll be up and running in no time. If you need any further assistance during the process, our support team is [here to help](mailto:support@codepushgo.com). Happy onboarding!</Aside>
 
 3. Deploy a live update <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Learn how to deploy a live update to your app" />
 
@@ -41,13 +41,13 @@ In case the init command doesn't work for you, you can manually add an app.
 
 <Steps>
 
-1. Connect the CLI to your account: <Code code={`npx @capgo/cli@latest login [APIKEY]`} lang="bash" />
+1. Connect the CLI to your account: <Code code={`npx @codepushgo/cli@latest login [APIKEY]`} lang="bash" />
 
-2. Add the app to your account with this command: <Code code={`npx @capgo/cli@latest app add [APP_NAME]`} lang="bash" />
+2. Add the app to your account with this command: <Code code={`npx @codepushgo/cli@latest app add [APP_NAME]`} lang="bash" />
 
-3. Install the plugin in your app: <Code code={`npm i @capgo/capacitor-updater`} lang="bash" />
+3. Install the plugin in your app: <Code code={`npm i @codepushgo/capacitor-updater`} lang="bash" />
 
-4. Call the init method as early as possible in your app: <Code code={`import { React NativeUpdater } from '@capgo/capacitor-updater';\nReact NativeUpdater.notifyAppReady();`} lang="typescript" />
+4. Call the init method as early as possible in your app: <Code code={`import { React NativeUpdater } from '@codepushgo/capacitor-updater';\nReact NativeUpdater.notifyAppReady();`} lang="typescript" />
 
 5. Deploy a live update <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Learn how to deploy a live update to your app" />
 

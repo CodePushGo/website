@@ -11,12 +11,12 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 Starting with version 4.15.0 the plugin allows you to send encrypted updates.
 To begin start by creating a private key.
 ```bash title='Create a private key'
-npx @capgo/cli key create
+npx @codepushgo/cli key create
 ```
 
 Then you encrypt your zip
 ```bash title="Encrypt bundled zip"
-npx @capgo/cli encrypt [path/to/zip]
+npx @codepushgo/cli encrypt [path/to/zip]
 ```
 
 The command will print you a `ivSessionKey` it has to be sent with your update payload in the key `session_key`.
@@ -36,5 +36,5 @@ Learn more about it here:
 
 <LinkCard
 	title="Self-hosted Live Updates"
-	href="https://capgo.app/blog/self-hosted-live-updates/"
+	href="https://codepushgo.com/blog/self-hosted-live-updates/"
 />

@@ -20,15 +20,15 @@ next_blog: ''
 
 Universal links on iOS and App Links on Android allow users to be taken directly into your app from a link, bypassing the browser. This is particularly useful for improving user experience and maintaining the context from a web page to an app. In this guide, we'll walk through the process of setting up these deep links for a Next.js app using React Native.
 
-Setting up deep links doesn't require a lot of code, but it does involve some configuration. By the end of this guide, you'll be able to click a link like `https://www.capgo.app/details/22` and have your app open to the correct page if it's installed.
+Setting up deep links doesn't require a lot of code, but it does involve some configuration. By the end of this guide, you'll be able to click a link like `https://www.codepushgo.com/details/22` and have your app open to the correct page if it's installed.
 
 ## Next.js Deep Link Setup
 
 First, we'll create a new Next.js app and a details page for testing:
 
 ```sh
-npx create-next-app@latest capgoLinks
-cd capgoLinks
+npx create-next-app@latest codepushgoLinks
+cd codepushgoLinks
 mkdir pages/details
 touch pages/details/[id].js
 npm run build
@@ -40,8 +40,8 @@ Ensure your **bundle ID** is correctly set in the **capacitor.config.json** file
 
 ```json
 {
-  "appId": "com.capgo.deeplinks",
-  "appName": "capgoLinks",
+  "appId": "com.codepushgo.deeplinks",
+  "appName": "codepushgoLinks",
   "webDir": "out",
   "bundledWebRuntime": false
 }
@@ -110,9 +110,9 @@ For iOS, you'll need an app ID with Associated Domains enabled. Create an **appl
 }
 ```
 
-Upload this file to the `.well-known` directory on your domain, making it accessible at `https://www.capgo.app/.well-known/apple-app-site-association`.
+Upload this file to the `.well-known` directory on your domain, making it accessible at `https://www.codepushgo.com/.well-known/apple-app-site-association`.
 
-In Xcode, add the domain to your app's entitlements using the format `applinks:capgo.app`.
+In Xcode, add the domain to your app's entitlements using the format `applinks:codepushgo.com`.
 
 ## Android Configuration
 
@@ -131,7 +131,7 @@ In your `AndroidManifest.xml`, add an `intent-filter` to the `activity` element 
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.DEFAULT" />
     <category android:name="android.intent.category.BROWSABLE" />
-    <data android:scheme="https" android:host="capgo.app" />
+    <data android:scheme="https" android:host="codepushgo.com" />
   </intent-filter>
 </activity>
 ```
@@ -145,8 +145,8 @@ cd android
 ./gradlew assembleRelease
 cd ..
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore android/app/build/outputs/apk/release/app-release-unsigned.apk alias_name
-zipalign -v 4 android/app/build/outputs/apk/release/app-release-unsigned.apk capgo.apk
-adb install capgo.apk
+zipalign -v 4 android/app/build/outputs/apk/release/app-release-unsigned.apk codepushgo.apk
+adb install codepushgo.apk
 ```
 
 This will install the signed app on your connected Android device.
@@ -163,15 +163,15 @@ Create a `capacitor.config.yaml` file at the root of your project:
 
 ```yaml
 vars:
-  BUNDLE_ID: com.capgo.deeplinks
-  PACKAGE_NAME: com.capgo.deeplinks
+  BUNDLE_ID: com.codepushgo.deeplinks
+  PACKAGE_NAME: com.codepushgo.deeplinks
 platforms:
   ios:
     targets:
       App:
         bundleId: $BUNDLE_ID
     entitlements:
-      - com.apple.developer.associated-domains: ['applinks:capgo.app']
+      - com.apple.developer.associated-domains: ['applinks:codepushgo.com']
   android:
     packageName: $PACKAGE_NAME
 ```

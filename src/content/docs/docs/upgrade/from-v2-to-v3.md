@@ -10,11 +10,11 @@ This documentation will explain how to upgrade to the version 3 of auto-update.
 ## First migrate to the last tooling:
 
 ```bash
-npm remove -g capgo
+npm remove -g codepushgo
 npm remove capacitor-updater
 
-npm i @capgo/cli
-npm i @capgo/capacitor-updater@3
+npm i @codepushgo/cli
+npm i @codepushgo/capacitor-updater@3
 npx cap sync
 ```
 
@@ -76,7 +76,7 @@ import { React NativeUpdater } from 'capacitor-updater'
 to
 
 ```
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 ```
 
 Then build your code again `npm run build` and copy assets once more `npx cap copy`.
@@ -86,13 +86,13 @@ You should be able now to test the last auto-update system
 Send your version with:
 
 ```
-npx @capgo/cli@latest bundle upload
+npx @codepushgo/cli@latest bundle upload
 ```
 
 instead of
 
 ```
-npx capgo upload
+npx codepushgo upload
 ```
 
 ## Future evolution

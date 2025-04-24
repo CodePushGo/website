@@ -27,7 +27,7 @@ Each device has unique characteristics and states:
 
 ### POST
 
-`https://api.capgo.app/device/`
+`https://api.codepushgo.com/device/`
 
 Link a device to a specific version or channel.
 
@@ -53,7 +53,7 @@ curl -X POST \
     "device_id": "device_456",
     "channel": "beta"
   }' \
-  https://api.capgo.app/device/
+  https://api.codepushgo.com/device/
 ```
 
 #### Success Response
@@ -66,7 +66,7 @@ curl -X POST \
 
 ### GET
 
-`https://api.capgo.app/device/`
+`https://api.codepushgo.com/device/`
 
 Retrieve device information. Returns 50 devices per page.
 
@@ -80,15 +80,15 @@ Retrieve device information. Returns 50 devices per page.
 ```bash
 # Get all devices
 curl -H "authorization: your-api-key" \
-  "https://api.capgo.app/device/?app_id=app_123"
+  "https://api.codepushgo.com/device/?app_id=app_123"
 
 # Get specific device
 curl -H "authorization: your-api-key" \
-  "https://api.capgo.app/device/?app_id=app_123&device_id=device_456"
+  "https://api.codepushgo.com/device/?app_id=app_123&device_id=device_456"
 
 # Get next page
 curl -H "authorization: your-api-key" \
-  "https://api.capgo.app/device/?app_id=app_123&page=1"
+  "https://api.codepushgo.com/device/?app_id=app_123&page=1"
 ```
 
 #### Response Type
@@ -141,7 +141,7 @@ interface Device {
 
 ### DELETE
 
-`https://api.capgo.app/device/`
+`https://api.codepushgo.com/device/`
 
 Unlink a device from its channel and version override. This resets the device to use its default channel.
 
@@ -164,7 +164,7 @@ curl -X DELETE \
     "app_id": "app_123",
     "device_id": "device_456"
   }' \
-  https://api.capgo.app/device/
+  https://api.codepushgo.com/device/
 ```
 
 #### Success Response

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-16T02:14:06.413Z
 updated_at: 2025-03-18T13:13:57.762Z
-head_image: https://assets.seobotai.com/capgo.app/67b133684899b66d1dc8f1ac-1739672065689.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67b133684899b66d1dc8f1ac-1739672065689.jpg
 head_image_alt: Mobile Development
 keywords: React Native, app updates, monitoring tools, performance metrics, user experience, security compliance
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-Monitoring [React Native](https://capacitorjs.com/) app updates is crucial for maintaining app stability and ensuring a seamless user experience. [React Native](https://capacitorjs.com/)'s OTA (Over-the-Air) updates simplify the process, allowing developers to [push updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update) without app store delays. Here's what you need to know:
+Monitoring [React Native](https://capacitorjs.com/) app updates is crucial for maintaining app stability and ensuring a seamless user experience. [React Native](https://capacitorjs.com/)'s OTA (Over-the-Air) updates simplify the process, allowing developers to [push updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update) without app store delays. Here's what you need to know:
 
 -   **Why Monitor Updates?**
     
@@ -25,7 +25,7 @@ Monitoring [React Native](https://capacitorjs.com/) app updates is crucial for m
     -   Enable automated rollbacks for faulty updates.
 -   **Key Monitoring Tools:**
     
-    -   **[CodePushGo](https://capgo.app/):** Advanced real-time tracking, error alerts, and CI/CD integration.
+    -   **[CodePushGo](https://codepushgo.com/):** Advanced real-time tracking, error alerts, and CI/CD integration.
     -   **Other Solutions:** Vary in features like rollback automation and user segmentation.
 -   **What to Track:**
     
@@ -46,7 +46,7 @@ Set up a robust monitoring system to ensure updates run smoothly, improve user r
 
 ## Update Monitoring Tools
 
-Choosing the right tools to monitor updates is key to keeping React Native apps running smoothly. According to recent data, **78% of [React Native developers](https://capgo.app/blog/capacitor-comprehensive-guide/) rely on dedicated monitoring solutions** to track updates effectively [\[1\]](https://ionic.io/blog/capacitor-live-updates-sdk-is-now-ga).
+Choosing the right tools to monitor updates is key to keeping React Native apps running smoothly. According to recent data, **78% of [React Native developers](https://codepushgo.com/blog/capacitor-comprehensive-guide/) rely on dedicated monitoring solutions** to track updates effectively [\[1\]](https://ionic.io/blog/capacitor-live-updates-sdk-is-now-ga).
 
 ### Tool Comparison Chart
 
@@ -61,9 +61,9 @@ When comparing monitoring tools, focus on features that align with your app's ne
 | CI/CD Integration | Basic | Varies | Full |
 | Security Features | Basic | Advanced | Advanced |
 
-### Using [CodePushGo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://codepushgo.com/) for Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-16.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-16.jpg?auto=compress)
 
 CodePushGo stands out as a reliable choice for teams that need detailed control over their app updates. It offers **version-specific performance analytics** and other advanced monitoring tools.
 
@@ -92,14 +92,14 @@ Once your monitoring tools are in place, the next step is setting up technical t
 
 ## Setting Up Update Monitoring
 
-To keep [React Native updates](https://capgo.app/plugins/capacitor-updater/) running smoothly, you'll need three main elements: **update listeners**, **performance metrics**, and **CI/CD integration**.
+To keep [React Native updates](https://codepushgo.com/plugins/capacitor-updater/) running smoothly, you'll need three main elements: **update listeners**, **performance metrics**, and **CI/CD integration**.
 
 ### Configuring Update Listeners
 
 Here's how to set up your update listeners:
 
 ```typescript
-import { React NativeUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';
 
 // Set up listeners for update events
 React NativeUpdater.addListener('updateAvailable', (info) => {

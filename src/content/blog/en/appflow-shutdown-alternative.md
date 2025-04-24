@@ -45,7 +45,7 @@ Instead of being locked into a proprietary CI/CD system, CodePushGo allows you t
 - Integrate with your existing CI/CD infrastructure
 - Use popular platforms like GitHub Actions
 - Maintain full control over your build process
-- Follow our detailed tutorials for [iOS](https://capgo.app/blog/github-action-capacitor/) setup
+- Follow our detailed tutorials for [iOS](https://codepushgo.com/blog/github-action-capacitor/) setup
 - Or let us handle it all with our [CI/CD Done For You](https://cal.com/martindonadieu/mobile-ci-cd-done-for-you) service
 
 ## Why Choose CodePushGo?
@@ -58,14 +58,14 @@ Instead of being locked into a proprietary CI/CD system, CodePushGo allows you t
 
 ## Making the Switch
 
-Transitioning from AppFlow to CodePushGo is straightforward. Follow our [detailed migration guide](/docs/upgrade/from-appflow-to-capgo) to ensure a smooth transition:
+Transitioning from AppFlow to CodePushGo is straightforward. Follow our [detailed migration guide](/docs/upgrade/from-appflow-to-codepushgo) to ensure a smooth transition:
 
 1. [Register for a CodePushGo account](/register/)
 2. Follow our migration guides
 3. Set up your CI/CD pipeline using our tutorials
 4. Start deploying updates through CodePushGo
 
-For enterprise teams requiring dedicated support, [contact our sales team](https://cal.com/martindonadieu/capgo-enterprise-inquiry) to discuss your specific needs and migration strategy.
+For enterprise teams requiring dedicated support, [contact our sales team](https://cal.com/martindonadieu/codepushgo-enterprise-inquiry) to discuss your specific needs and migration strategy.
 
 ## Beyond Basic Functionality
 
@@ -97,6 +97,6 @@ We're not just an alternative – we're actively building the future of mobile a
 
 Don't let AppFlow's shutdown disrupt your development workflow. [Start your journey with CodePushGo today](/register/) and experience a more efficient, cost-effective solution for your mobile app development needs.
 
-For enterprise solutions and dedicated support, [schedule a call with our team](https://cal.com/martindonadieu/capgo-enterprise-inquiry) to discuss your migration strategy.
+For enterprise solutions and dedicated support, [schedule a call with our team](https://cal.com/martindonadieu/codepushgo-enterprise-inquiry) to discuss your migration strategy.
 
 Remember, CodePushGo isn't just an alternative – it's an upgrade to your mobile app development workflow, offering more features, better performance, and significant cost savings compared to AppFlow.

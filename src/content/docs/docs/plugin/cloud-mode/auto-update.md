@@ -41,24 +41,24 @@ In 3 files in your project:
 
 Setup your app in 5 mins
 
-[Update your capacitor apps seamlessly using capacitor updater](https://capgo.app/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater)
+[Update your capacitor apps seamlessly using capacitor updater](https://codepushgo.com/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater)
 
 Setup your CI in 5 mins
 
-[Automatic build and release with GitHub actions](https://capgo.app/blog/automatic-build-and-release-with-github-actions)
+[Automatic build and release with GitHub actions](https://codepushgo.com/blog/automatic-build-and-release-with-github-actions)
 
 
 
 ### Install
 
 ```bash
-npm install @capgo/capacitor-updater
+npm install @codepushgo/capacitor-updater
 npx cap sync
 ```
 
 ### Intro
 
-Click on [register](https://capgo.app) to create your account.
+Click on [register](https://codepushgo.com) to create your account.
 
 The server allows you to manage channels and versions and much more.
 
@@ -77,7 +77,7 @@ This can be done by calling within your app `notifyAppReady`.
 Do it as soon as possible.
 
 ```ts
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 React NativeUpdater.notifyAppReady()
 ```
@@ -95,7 +95,7 @@ React NativeUpdater.notifyAppReady()
 
 #### Dev flow
 
-When you develop new features, be sure to block `autoUpdate`, as capgo will constatly overwrite your work with the latest update bundle.
+When you develop new features, be sure to block `autoUpdate`, as codepushgo will constatly overwrite your work with the latest update bundle.
 Set `autoUpdate` to false in your config. 
 If for some reason you are stuck on an update, you can delete the app and reinstall it.
 Be sure to set `autoUpdate` to false in your config before doing so.
@@ -103,14 +103,14 @@ And then build it again with Xcode or Android studio.
 
 To upload the version at each commit setup CI/CD with this guide
 
-[Automatic build and release with GitHub actions](https://capgo.app/blog/automatic-build-and-release-with-github-actions)
+[Automatic build and release with GitHub actions](https://codepushgo.com/blog/automatic-build-and-release-with-github-actions)
 
 #### Major Available event
 
 When `disableAutoUpdateBreaking` is set to true, you can listen to the event to know when the app refuses to do a major braking update.
 
 ```jsx
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 React NativeUpdater.addListener('majorAvailable', (info: any) => {
   console.log('majorAvailable was fired', info.version)

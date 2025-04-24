@@ -19,7 +19,7 @@ Let's say you have:
 
 ```bash
 # Create channel for version 2.x
-npx @capgo/cli channel create v2
+npx @codepushgo/cli channel create v2
 ```
 
 ## 2. Update React Native Config
@@ -46,17 +46,17 @@ export default config;
 
 ```bash
 # Upload 1.2.4 to production channel (for 1.2.3 users)
-npx @capgo/cli bundle upload --channel production
+npx @codepushgo/cli bundle upload --channel production
 
 # Upload 2.0.1 to v2 channel (for 2.0.0 users)
-npx @capgo/cli bundle upload --channel v2
+npx @codepushgo/cli bundle upload --channel v2
 ```
 
 ## 4. Enable Self-Assignment
 
 ```bash
 # Allow apps to self-assign to v2 channel
-npx @capgo/cli channel set v2 --self-assign
+npx @codepushgo/cli channel set v2 --self-assign
 ```
 
 ## 5. Update App Code
@@ -65,7 +65,7 @@ Add version check in your app to assign users to the correct channel:
 
 ```ts
 // src/utils/updater.ts
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 export async function setupUpdater() {
   const { appVersion } = await React NativeUpdater.getCurrentVersion()
@@ -87,7 +87,7 @@ Once all users have migrated to version 2.x ( count 3/4 months):
 2. Delete the v2 channel:
 
 ```bash
-npx @capgo/cli channel delete v2
+npx @codepushgo/cli channel delete v2
 ```
 
 :::tip
@@ -119,7 +119,7 @@ git checkout v1.2.4
 
 3. Build and upload to production channel:
 ```bash
-npx @capgo/cli bundle upload --channel production
+npx @codepushgo/cli bundle upload --channel production
 ```
 
 :::tip

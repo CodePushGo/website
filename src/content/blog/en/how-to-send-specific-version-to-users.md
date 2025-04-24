@@ -9,7 +9,7 @@ author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://x.com/martindonadieu'
 created_at: 2022-06-17T00:00:00.000Z
 updated_at: 2023-06-29T00:00:00.000Z
-head_image: /capgo_select_update.webp
+head_image: /codepushgo_select_update.webp
 head_image_alt: TestFlight alternative illustration
 keywords: mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: alternatives
@@ -41,9 +41,9 @@ And for Google this is even worse, the big mystery of my life, releasing a produ
 
 To fix this, I crated the Channel system in CodePushGo.
 
-`npx @capgo/cli@latest bundle upload -c production` will update to all users (if production channel is set to default)
+`npx @codepushgo/cli@latest bundle upload -c production` will update to all users (if production channel is set to default)
 
-If you do `npx @capgo/cli@latest bundle upload -c development` then the version land to a different channel, this can be automatized in [GitHub action](/blog/manage-dev-and-prod-build-with-github-actions/). 
+If you do `npx @codepushgo/cli@latest bundle upload -c development` then the version land to a different channel, this can be automatized in [GitHub action](/blog/manage-dev-and-prod-build-with-github-actions/). 
 
 Then you have 2 way to let users get the updates from the channel
 
@@ -57,7 +57,7 @@ With that one, the only thing you need to do is allow one of your channels to be
 
 And then add this in the code of your Ionic app, for best experience, use this after the user clicks on a button like "register for beta"
 ```js
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 const deviceId = await React NativeUpdater.setChannel({ channel: 'beta' })
 ```
@@ -67,7 +67,7 @@ const deviceId = await React NativeUpdater.setChannel({ channel: 'beta' })
 This can be useful for your internal team, this is fast to implement.
 Allow users to copy their deviceID from your app and send it to you manually, this code will help you to get it:
 ```js
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 const deviceId = await React NativeUpdater.getDeviceId()
 ```
@@ -86,7 +86,7 @@ This can be useful for your beta testers, this is longer to implement.
 
 Same as the manual way, you have to get the deviceID
 ```js
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 const deviceId = await React NativeUpdater.getDeviceId()
 ```
@@ -102,7 +102,7 @@ Then in your backend you have to send it to CodePushGo backend too. Below two co
 ```js
 import axios from 'axios'
 
-await axios.post('https://api.capgo.app/device', {
+await axios.post('https://api.codepushgo.com/device', {
   app_id: 'YOUR_APP_ID',
   device_id: 'DEVICE_ID',
   channel: 'CHANNEL_NAME', // The name of the channel, or undefined if version_id provided
@@ -136,7 +136,7 @@ async function handleRequest(request) {
     device_id: body.device_id,
     channel: 'alpha'
   })
-  const newUrl = new URL('https://api.capgo.app/device')
+  const newUrl = new URL('https://api.codepushgo.com/device')
   const options = {
     headers: {
       authorization: 'YOUR_API_KEY',
@@ -166,7 +166,7 @@ If you need to check programmatically what override is set on a device, you can 
 ```js
 import axios from 'axios'
 
-const res = await axios.get('https://api.capgo.app/device?app_id=YOUR_APP_ID&device_id=DEVICE_ID', {
+const res = await axios.get('https://api.codepushgo.com/device?app_id=YOUR_APP_ID&device_id=DEVICE_ID', {
   headers: {
     authorization: 'YOUR_API_KEY' // choose a key with 'write' or 'all' rights
   }

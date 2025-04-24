@@ -1,5 +1,5 @@
 ---
-slug: how-to-use-semantic-versioning-with-capgo-ota-updates
+slug: how-to-use-semantic-versioning-with-codepushgo-ota-updates
 title: How to Use Semantic Versioning with CodePushGo OTA Updates
 description: "Learn how to streamline app updates and version control using Semantic Versioning with CodePushGo's OTA updates for React Native apps."
 author: Martin Donadieu
@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-03T04:48:38.491Z
 updated_at: 2025-03-18T13:14:09.597Z
-head_image: https://assets.seobotai.com/capgo.app/67c4f6356c9ebce91891f4e6-1740977344964.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67c4f6356c9ebce91891f4e6-1740977344964.jpg
 head_image_alt: Mobile Development
 keywords: Semantic Versioning, CodePushGo, OTA updates, React Native apps, version control, app updates, deployment, CI/CD
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Want to simplify [app updates](https://capgo.app/plugins/capacitor-updater/) and version control?** Semantic Versioning (SemVer) combined with [CodePushGo](https://capgo.app/)'s Over-The-Air (OTA) updates makes managing [React Native](https://capacitorjs.com/) apps easier and faster. Here's how:
+**Want to simplify [app updates](https://codepushgo.com/plugins/capacitor-updater/) and version control?** Semantic Versioning (SemVer) combined with [CodePushGo](https://codepushgo.com/)'s Over-The-Air (OTA) updates makes managing [React Native](https://capacitorjs.com/) apps easier and faster. Here's how:
 
 -   **Semantic Versioning Basics:** Versions use the format `MAJOR.MINOR.PATCH`:
     
@@ -29,13 +29,13 @@ next_blog: ''
     -   Smarter version management.
     -   Avoid dependency conflicts.
     -   Organized release planning.
--   **[CodePushGo Setup](https://capgo.app/docs/cli/commands/) Steps:**
+-   **[CodePushGo Setup](https://codepushgo.com/docs/cli/commands/) Steps:**
     
     1.  Install CodePushGo's updater plugin.
     2.  Configure your app's version in `capacitor.config.json` and other files.
     3.  Initialize with your API key.
-    4.  Use [CodePushGo CLI](https://capgo.app/docs/cli/commands) to bundle and upload updates.
--   **[Manage Versions and Channels](https://capgo.app/docs/webapp/channels/):**
+    4.  Use [CodePushGo CLI](https://codepushgo.com/docs/cli/commands) to bundle and upload updates.
+-   **[Manage Versions and Channels](https://codepushgo.com/docs/webapp/channels/):**
     
     -   Use separate channels (e.g., "beta" for testing, "production" for stable releases).
     -   Control update policies (auto-update patches, manual approval for major changes).
@@ -54,18 +54,18 @@ CodePushGo ensures updates reach users quickly and reliably, with tools to handl
 
 <iframe src="https://www.youtube.com/embed/FNmzO-8Pu0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
-## [CodePushGo](https://capgo.app/) Setup Guide
+## [CodePushGo](https://codepushgo.com/) Setup Guide
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-03.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-03.jpg?auto=compress)
 
 Here's how to set up CodePushGo for managing OTA updates and version control with ease.
 
 ### Initial Setup Steps
 
-Start by installing the [CodePushGo updater plugin](https://capgo.app/docs/plugin/self-hosted/manual-update/):
+Start by installing the [CodePushGo updater plugin](https://codepushgo.com/docs/plugin/self-hosted/manual-update/):
 
 ```bash
-npm install @capgo/capacitor-updater  
+npm install @codepushgo/capacitor-updater  
 npx cap sync
 ```
 
@@ -88,7 +88,7 @@ For older projects, update version details in these locations:
 Once configured, initialize CodePushGo with your API key:
 
 ```bash
-npx @capgo/cli@latest init YOUR_API_KEY
+npx @codepushgo/cli@latest init YOUR_API_KEY
 ```
 
 **Quick Reference Table:**
@@ -102,7 +102,7 @@ npx @capgo/cli@latest init YOUR_API_KEY
 
 ### Version Control Integration
 
-CodePushGo works well with CI/CD platforms, making [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) simple. Supported platforms include:
+CodePushGo works well with CI/CD platforms, making [automated updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) simple. Supported platforms include:
 
 -   [GitHub Actions](https://docs.github.com/actions)
 -   [GitLab CI](https://docs.gitlab.com/ee/ci/)
@@ -125,14 +125,14 @@ If you're working on local development, you can disable auto-updates by adding t
 This ensures CodePushGo won't overwrite your local changes. Once your setup is ready, upload your first version:
 
 ```bash
-npx @capgo/cli@latest bundle upload  
-npx @capgo/cli@latest channel set production -s default
+npx @codepushgo/cli@latest bundle upload  
+npx @codepushgo/cli@latest channel set production -s default
 ```
 
 Finally, notify the native plugin about the bundle's health in your app's main file:
 
 ```javascript
-import { React NativeUpdater } from '@capgo/capacitor-updater';  
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';  
 React NativeUpdater.notifyAppReady();
 ```
 
@@ -148,7 +148,7 @@ CodePushGo uses Semantic Versioning (SemVer) to manage app versions, formatted a
 -   **Minor Version (1.X.0)**: Increase the MINOR number for new features that remain compatible.
 -   **Patch Version (1.0.X)**: Increase the PATCH number for bug fixes that don't affect compatibility.
 
-| Version Type | When to Increment | [Auto-Update Behavior](https://capgo.app/docs/plugin/cloud-mode/auto-update/) |
+| Version Type | When to Increment | [Auto-Update Behavior](https://codepushgo.com/docs/plugin/cloud-mode/auto-update/) |
 | --- | --- | --- |
 | Major (X.0.0) | For breaking API changes | Requires manual approval |
 | Minor (1.X.0) | For new features | Configurable in CodePushGo |
@@ -160,7 +160,7 @@ By sticking to SemVer rules, you can simplify version management and ensure smoo
 
 CodePushGo allows you to manage deployments effectively by setting up distinct channels for different stages of your workflow.
 
--   **[Channel-Based Version Management](https://capgo.app/docs/webapp/channels/)**: Organize your deployment process by creating separate channels for testing and production. For example:
+-   **[Channel-Based Version Management](https://codepushgo.com/docs/webapp/channels/)**: Organize your deployment process by creating separate channels for testing and production. For example:
     
     -   Use a "beta" channel (e.g., 1.2.0-beta) for testing new features.
     -   Keep a "production" channel (e.g., 1.2.0) for stable releases.
@@ -200,7 +200,7 @@ Start by updating the version in **package.json** and **capacitor.config.json**.
 
 Thoroughly test your build and confirm the app communicates with the server using `notifyAppReady`.
 
-Next, decide on your [update strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update). You can choose from:
+Next, decide on your [update strategy](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update). You can choose from:
 
 -   **Auto-Update**: Automatically enforce minimum version requirements.
 -   **Manual Control**: Specify exact version requirements for updates.
@@ -212,13 +212,13 @@ Use CodePushGo's CLI to deploy your update with ease. Here's how:
 
 ```bash
 # Initialize CodePushGo in your project
-npx @capgo/cli@latest init [apikey]
+npx @codepushgo/cli@latest init [apikey]
 
 # Upload your update bundle
-npx @capgo/cli bundle upload [appId]
+npx @codepushgo/cli bundle upload [appId]
 
 # Add a new distribution channel
-npx @capgo/cli channel add [channelId] [appId]
+npx @codepushgo/cli channel add [channelId] [appId]
 ```
 
 CodePushGo ensures secure deployment with end-to-end encryption and safe key management.
@@ -299,18 +299,18 @@ Even with precautions, updates can fail. If that happens, follow these recovery 
 2.  Increment version numbers for any new fixes (note: version numbers cannot be reused after deletion) [\[2\]](https://github.com/Cap-go/CLI).
 3.  Verify updates during app startup to ensure they work as expected.
 
-CodePushGo's updater is designed to handle disruptions. For example, if the server is unreachable or an update is deleted, the app continues to function normally [\[3\]](https://capgo.app/docs/faq/). Additionally, failed network requests are automatically retried during the next app launch [\[3\]](https://capgo.app/docs/faq/). This built-in resilience minimizes downtime and ensures smoother operations.
+CodePushGo's updater is designed to handle disruptions. For example, if the server is unreachable or an update is deleted, the app continues to function normally [\[3\]](https://codepushgo.com/docs/faq/). Additionally, failed network requests are automatically retried during the next app launch [\[3\]](https://codepushgo.com/docs/faq/). This built-in resilience minimizes downtime and ensures smoother operations.
 
 ## Summary
 
-Semantic Versioning, combined with CodePushGo, has made OTA updates for React Native apps more efficient. With 947.6 million updates delivered and 1,400 production apps using this system [\[1\]](https://capgo.app/), deployment processes have become 81% more efficient [\[1\]](https://capgo.app/). This setup allows developers to push updates quickly and in a controlled manner, bypassing app store delays.
+Semantic Versioning, combined with CodePushGo, has made OTA updates for React Native apps more efficient. With 947.6 million updates delivered and 1,400 production apps using this system [\[1\]](https://codepushgo.com/), deployment processes have become 81% more efficient [\[1\]](https://codepushgo.com/). This setup allows developers to push updates quickly and in a controlled manner, bypassing app store delays.
 
 Here’s what developers are saying:
 
-> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out [CodePushGo OTA updates](https://web.codepushgo.com/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://codepushgo.com/)
 
 The MAJOR.MINOR.PATCH versioning system makes it easy to communicate breaking changes, new features, and bug fixes [\[5\]](https://aws.amazon.com/blogs/devops/using-semantic-versioning-to-simplify-release-management/). This is especially helpful for teams managing several releases each week through CodePushGo's platform.
 
-CodePushGo’s [encrypted solution](https://capgo.app/docs/cli/migrations/encryption/), integrated with CI/CD tools, is also budget-friendly - cutting costs by up to $26,100 over five years [\[1\]](https://capgo.app/). Its customizable channels ensure updates reach the right users at the right time.
+CodePushGo’s [encrypted solution](https://codepushgo.com/docs/cli/migrations/encryption/), integrated with CI/CD tools, is also budget-friendly - cutting costs by up to $26,100 over five years [\[1\]](https://codepushgo.com/). Its customizable channels ensure updates reach the right users at the right time.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)

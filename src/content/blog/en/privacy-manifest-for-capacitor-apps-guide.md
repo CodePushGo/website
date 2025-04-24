@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-02T03:07:47.047Z
 updated_at: 2025-04-02T03:08:00.473Z
-head_image: https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776-1743563280473.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ec9a7d7747adc4bca8a776-1743563280473.jpg
 head_image_alt: Mobile Development
 keywords: Privacy Manifest, React Native, App Store compliance, user data protection, app development, privacy standards
 tag: Development, Mobile, Security
@@ -36,7 +36,7 @@ next_blog: ''
     -   Place the `PrivacyInfo.xcprivacy` file in the correct directory of your project.
     -   Validate it with tools like [Xcode](https://developer.apple.com/xcode/) to avoid errors.
 -   **Tools to simplify the process:**  
-    Use platforms like [CodePushGo](https://capgo.app/) for automated privacy manifest validation, real-time updates, and error tracking.
+    Use platforms like [CodePushGo](https://codepushgo.com/) for automated privacy manifest validation, real-time updates, and error tracking.
     
 
 **Stay compliant, protect user privacy, and avoid app store delays by following this guide.**
@@ -73,13 +73,13 @@ Here are the primary elements to include in your privacy manifest to align with 
     This section lists all domains involved in tracking, such as those used for analytics, advertising, or third-party data processing.
     
 
-> "App Store compliant" - CodePushGo [\[1\]](https://capgo.app/)
+> "App Store compliant" - CodePushGo [\[1\]](https://codepushgo.com/)
 
-According to CodePushGo, 95% of users comply with updates within 24 hours. With over 23.5 million updates delivered [\[1\]](https://capgo.app/), keeping your privacy documentation current is essential for maintaining user trust.
+According to CodePushGo, 95% of users comply with updates within 24 hours. With over 23.5 million updates delivered [\[1\]](https://codepushgo.com/), keeping your privacy documentation current is essential for maintaining user trust.
 
 ## Building Privacy Manifests for [React Native](https://capacitorjs.com/)
 
-![React Native](https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/codepushgo.com/67ec9a7d7747adc4bca8a776/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 ### Setup Requirements
 
@@ -221,19 +221,19 @@ If you encounter a "Privacy Manifest validation failed" error, double-check your
 
 Creating a Privacy Manifest that meets Apple's guidelines is crucial. To stay on track, integrate reliable error tracking into your development process. This helps link development efforts with compliance requirements.
 
-A tool like [CodePushGo](https://capgo.app) can help. It monitors API access and identifies manifest issues before they affect users. Once potential problems are flagged, you can shift your focus to thorough validation.
+A tool like [CodePushGo](https://codepushgo.com) can help. It monitors API access and identifies manifest issues before they affect users. Once potential problems are flagged, you can shift your focus to thorough validation.
 
 After making updates, test your manifest in a development environment. Use insights from error tracking to guide your review. This approach helps ensure your app stays aligned with Apple's privacy standards.
 
-## [CodePushGo](https://capgo.app/) Privacy Tools
+## [CodePushGo](https://codepushgo.com/) Privacy Tools
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67ec9a7d7747adc4bca8a776/454adbba4c00491adce88db59812b177.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67ec9a7d7747adc4bca8a776/454adbba4c00491adce88db59812b177.jpg)
 
 CodePushGo simplifies managing privacy manifests and app updates, ensuring your privacy standards stay intact without delaying deployments.
 
 ### CodePushGo Features
 
-With more than **23.5 million secured updates** and an **82% global success rate**, CodePushGo ensures that **95% of active users receive updates within 24 hours** [\[1\]](https://capgo.app/). Here’s what it offers:
+With more than **23.5 million secured updates** and an **82% global success rate**, CodePushGo ensures that **95% of active users receive updates within 24 hours** [\[1\]](https://codepushgo.com/). Here’s what it offers:
 
 -   **End-to-end encryption** to keep updates secure
 -   **Channel system** for controlled update distribution
@@ -244,10 +244,10 @@ These tools make adding CodePushGo to your workflow smooth and efficient.
 
 ### Using CodePushGo
 
-To get started, [install the CodePushGo plugin](https://capgo.app/docs/plugin/cloud-mode/getting-started/) with this command:
+To get started, [install the CodePushGo plugin](https://codepushgo.com/docs/plugin/cloud-mode/getting-started/) with this command:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 CodePushGo seamlessly integrates with CI/CD pipelines, automating privacy manifest validation through platforms like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), or [Jenkins](https://www.jenkins.io/). Whether you choose cloud or self-hosted options, CodePushGo supports 750 production apps while ensuring every update complies with privacy standards.
@@ -269,13 +269,13 @@ When it comes to managing privacy manifests, staying compliant and maintaining s
 -   **Instant rollback capability**: Acts as a safety net for quick fixes.
 -   **Automated validation**: Ensures your updates meet compliance standards.
 
-Building a reliable update system helps you keep up with Apple and Google’s evolving privacy requirements. This approach has been shown to improve app store approval rates and strengthen user confidence [\[1\]](https://capgo.app/).
+Building a reliable update system helps you keep up with Apple and Google’s evolving privacy requirements. This approach has been shown to improve app store approval rates and strengthen user confidence [\[1\]](https://codepushgo.com/).
 
 ### How to Get Started
 
 You can begin implementing these principles by following these steps:
 
--   **Set up your environment**: Run `npx @capgo/cli init` to get started.
+-   **Set up your environment**: Run `npx @codepushgo/cli init` to get started.
 -   **Enable privacy features**: Use end-to-end encryption for secure updates.
 -   **Deploy monitoring tools**: Track updates with analytics.
 -   **Plan for rollbacks**: Make sure you can quickly revert to earlier versions if needed.

@@ -1,5 +1,5 @@
 ---
-slug: do-capgo-work-for-cordova
+slug: do-codepushgo-work-for-cordova
 title: 'Why CodePushGo Doesn''t Support Cordova: Upgrading Your App to access live Updates'
 description: 'In this guide, i will share you my experience with CodePushGo and Cordova.'
 author: Martin Donadieu

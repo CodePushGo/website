@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-22T02:26:08.446Z
 updated_at: 2025-03-22T02:26:20.581Z
-head_image: https://assets.seobotai.com/capgo.app/67de087b13cee397379a0b94-1742610380581.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67de087b13cee397379a0b94-1742610380581.jpg
 head_image_alt: Mobile Development
 keywords: React Native, Android, native bridge, JavaScript, mobile development, app performance, updates, communication
 tag: Development, Mobile, Updates
@@ -24,7 +24,7 @@ next_blog: ''
 -   **Performance Highlights:**
     -   API response time: **434ms** (global average).
     -   Data transfer: **114ms** for 5MB bundles.
-    -   Update adoption: **95% completed within 24 hours** using tools like [CodePushGo](https://capgo.app/).
+    -   Update adoption: **95% completed within 24 hours** using tools like [CodePushGo](https://codepushgo.com/).
 -   **How it works:**
     -   **JavaScript to Android:** Sends serialized requests to native Android methods.
     -   **Android to JavaScript:** Uses callbacks for event broadcasting, direct responses, and state updates.
@@ -47,7 +47,7 @@ CodePushGo, a tool for over-the-air updates, integrates with the native bridge t
 
 ## Native Bridge Communication Flow
 
-The native bridge in [React Native Android apps](https://capgo.app/top_capacitor_app/) allows two-way communication between the web and native layers. This message-passing system ensures smooth and real-time data exchange without compromising performance. Below, we break down how communication flows in both directions and how data is managed.
+The native bridge in [React Native Android apps](https://codepushgo.com/top_capacitor_app/) allows two-way communication between the web and native layers. This message-passing system ensures smooth and real-time data exchange without compromising performance. Below, we break down how communication flows in both directions and how data is managed.
 
 ### JavaScript to Android Communication
 
@@ -99,7 +99,7 @@ Start by setting up both the native Android project and the web application laye
 
 | Setup Component | Required Configuration |
 | --- | --- |
-| **[React Native Version](https://capgo.app/plugins/ivs-player/)** | Use version 6.x or 7.x |
+| **[React Native Version](https://codepushgo.com/plugins/ivs-player/)** | Use version 6.x or 7.x |
 | **[Android Studio](https://developer.android.com/studio)** | Install the latest stable version |
 | **Gradle Dependencies** | Include the `capacitor-android` library |
 | **Project Structure** | Properly configure `AndroidManifest.xml` |
@@ -166,7 +166,7 @@ Regular monitoring is essential to ensure the native bridge operates smoothly. T
 -   **Memory usage patterns**: How much memory the bridge consumes over time.
 -   **Update distribution metrics**: Insights into how updates are delivered.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 To maintain peak performance, adopt a thorough testing strategy that includes:
 
@@ -175,7 +175,7 @@ To maintain peak performance, adopt a thorough testing strategy that includes:
 -   **Error Monitoring**: Keep tabs on and analyze any bridge failures.
 -   **User Experience Metrics**: Ensure the app remains responsive during bridge operations.
 
-For more advanced optimization, try using a [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) for update distribution. This method allows you to test updates with smaller user groups first, making it easier to monitor performance before rolling out changes to everyone.
+For more advanced optimization, try using a [channel system](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) for update distribution. This method allows you to test updates with smaller user groups first, making it easier to monitor performance before rolling out changes to everyone.
 
 These strategies not only validate the bridge's performance but also help fine-tune it to meet the demands of real-world applications.
 
@@ -191,14 +191,14 @@ Here are some key security layers to focus on:
 
 | Security Layer | Implementation | Purpose |
 | --- | --- | --- |
-| [Data Encryption](https://capgo.app/docs/cli/migrations/encryption/) | End-to-end encryption | Protect data during transmission |
+| [Data Encryption](https://codepushgo.com/docs/cli/migrations/encryption/) | End-to-end encryption | Protect data during transmission |
 | Access Control | Granular permissions | Manage user and team access |
 | Update Security | Signed updates | Verify update authenticity |
 | Error Handling | Rollback capability | Ensure app stability |
 
 Always validate data on both sides - JavaScript and native components - to reduce vulnerabilities. These practices, paired with secure update mechanisms, help maintain a reliable and safe app environment.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://codepushgo.com/)
 
 ### Plugin Updates and Support
 
@@ -206,21 +206,21 @@ Keeping plugins up-to-date is critical for ensuring compatibility with the lates
 
 -   **Version Control**: Keep track of plugin versions across different app releases.
 -   **Compatibility Testing**: Test plugins with the target Android API levels to ensure proper functionality.
--   **Controlled Rollouts**: Use [channel-based update systems](https://capgo.app/docs/plugin/cloud-mode/channel-system/) to distribute updates to specific user groups before releasing them widely.
+-   **Controlled Rollouts**: Use [channel-based update systems](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) to distribute updates to specific user groups before releasing them widely.
 
 A channel-based system allows you to test updates in smaller groups, minimizing the risk of widespread issues.
 
-> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://codepushgo.com/)
 
 Partial updates are another great way to improve efficiency by reducing download sizes. They’re especially useful for quick bug fixes.
 
-> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
 Regular testing and monitoring are essential to catch compatibility issues early and ensure a seamless user experience.
 
-## [CodePushGo](https://capgo.app/) Integration
+## [CodePushGo](https://codepushgo.com/) Integration
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-22.jpg?auto=compress)
 
 CodePushGo enhances native bridge performance by enabling instant over-the-air (OTA) updates. With 23.5 million updates delivered across 750 apps, it has become a dependable tool for managing updates through the native bridge.
 
@@ -237,7 +237,7 @@ CodePushGo uses the native bridge to deliver updates efficiently while maintaini
 
 By integrating seamlessly with the native bridge, CodePushGo allows developers to push updates while meeting platform requirements. This is especially important for Android apps, where the native bridge facilitates communication between JavaScript and native components. CodePushGo's system is built to leverage this functionality for efficient update management.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://codepushgo.com/)
 
 ### CodePushGo Update Management
 
@@ -245,7 +245,7 @@ CodePushGo’s update management system is designed to work directly with the na
 
 To get started with CodePushGo:
 
--   Install it using `npx @capgo/cli init`
+-   Install it using `npx @codepushgo/cli init`
 -   Maintain your existing build process
 -   Deploy updates through the CLI
 
@@ -274,7 +274,7 @@ In React Native Android apps, the native bridge acts as a key communication link
 
 These numbers highlight the importance of secure communication and reducing bridge load to maintain top performance.
 
-> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" - NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) 🙂" - NASA's OSIRIS-REx [\[1\]](https://codepushgo.com/)
 
 ### Getting Started Guide
 

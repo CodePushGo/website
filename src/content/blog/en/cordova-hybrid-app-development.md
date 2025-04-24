@@ -105,10 +105,10 @@ CodePushGo is a comprehensive platform explicitly designed to simplify and enhan
 
 ### Key Benefits of Integrating CodePushGo into Your Workflow:
 
-- **Seamless Over-the-Air Updates:** [CodePushGo](capgo.app) empowers you to deliver instant app updates to your users' devices without requiring them to go through the hassle of downloading new versions from app stores. This ensures that your users always have the latest features, bug fixes, and content at their fingertips.
-- **Simplified Update Workflow and Management:**  [CodePushGo](capgo.app) streamlines the entire update process, making it incredibly easy to push new features, critical bug fixes, and fresh content updates to your users. Its intuitive interface and automation capabilities free up developers to focus on building great apps rather than managing complex update procedures.
-- **Enhanced User Experience with Minimal Disruptions:**  [CodePushGo](capgo.app) prioritizes the user experience by delivering updates seamlessly and unobtrusively. This ensures that your users can enjoy the latest enhancements without interruptions or delays, keeping them engaged and satisfied.
-- **Accelerated Development Cycles and Rapid Iteration:** [CodePushGo](capgo.app) empowers development teams to iterate faster and more efficiently by enabling instant deployment and testing of app updates. This rapid feedback loop fosters innovation and allows for quicker response times to user feedback or changing market demands.
+- **Seamless Over-the-Air Updates:** [CodePushGo](codepushgo.com) empowers you to deliver instant app updates to your users' devices without requiring them to go through the hassle of downloading new versions from app stores. This ensures that your users always have the latest features, bug fixes, and content at their fingertips.
+- **Simplified Update Workflow and Management:**  [CodePushGo](codepushgo.com) streamlines the entire update process, making it incredibly easy to push new features, critical bug fixes, and fresh content updates to your users. Its intuitive interface and automation capabilities free up developers to focus on building great apps rather than managing complex update procedures.
+- **Enhanced User Experience with Minimal Disruptions:**  [CodePushGo](codepushgo.com) prioritizes the user experience by delivering updates seamlessly and unobtrusively. This ensures that your users can enjoy the latest enhancements without interruptions or delays, keeping them engaged and satisfied.
+- **Accelerated Development Cycles and Rapid Iteration:** [CodePushGo](codepushgo.com) empowers development teams to iterate faster and more efficiently by enabling instant deployment and testing of app updates. This rapid feedback loop fosters innovation and allows for quicker response times to user feedback or changing market demands.
 
 ## Why CodePushGo Exclusively Supports React Native for Live Updates
 

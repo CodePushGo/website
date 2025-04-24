@@ -1,5 +1,5 @@
 ---
-slug: self-hosted-capgo
+slug: self-hosted-codepushgo
 title: Self hosted CodePushGo
 description: >-
   Self-hosting CodePushGo allows you to deploy React Native live updates to your users
@@ -9,8 +9,8 @@ author_image_url: 'https://avatars.githubusercontent.com/u/81948346?v=4'
 author_url: 'https://x.com/anikdhabal'
 created_at: 2023-09-20T00:00:00.000Z
 updated_at: 2023-09-20T00:00:00.000Z
-head_image: /self-hosted-capgo.webp
-head_image_alt: self-hosted capgo
+head_image: /self-hosted-codepushgo.webp
+head_image_alt: self-hosted codepushgo
 keywords: mobile app development, live updates, OTA updates, continuous integration, mobile app updates
 tag: Solution
 published: true
@@ -24,7 +24,7 @@ This article provides a step-by-step guide on how to self-host CodePushGo, as we
 
 Self Hosting is a form of running your own website or application by setting up a server and network yourself. Instead of using a Platform as a Service or a Public Cloud Provider, those who choose to self-host will run their own networks and be responsible for the maintenance and uptime in addition to building their website or application.
 
-The easiest way to get started with CodePushGo is with our [official managed service in the cloud](https://capgo.app/), but if you’re happy to manage your own, you can also self-host CodePushGo on your server.
+The easiest way to get started with CodePushGo is with our [official managed service in the cloud](https://codepushgo.com/), but if you’re happy to manage your own, you can also self-host CodePushGo on your server.
 
 ## What is self hosting?
 
@@ -48,7 +48,7 @@ There are many reasons why people choose to self-host. Some of the most common b
 
 There is only one version of CodePushGo. Both my Cloud and my Self-Hosted products are completely equal. There’s no premium and exclusive commercial version with a better or more complete feature set.
 
-You get the same dashboard, same actionable metrics and same commitment to [respecting the privacy of your visitors](https://capgo.app/privacy/) with both.
+You get the same dashboard, same actionable metrics and same commitment to [respecting the privacy of your visitors](https://codepushgo.com/privacy/) with both.
 
 I started developing CodePushGo in December 2018, and I launched the SaaS subscription business in May 2019. The project is very much alive, actively developed and fast-growing. It is robust and battle-tested too.
 
@@ -67,8 +67,8 @@ Here are the differences between CodePushGo Cloud and CodePushGo Self-Hosted:
 
 We mainly use Supabase in CodePushGo, to self host you just need to follow the [Supabase self-hosting documentation](https://supabase.com/docs/guides/self-hosting/docker).
 
-# Using the CLI with self-hosted capgo
-To use the CLI with self-hosted capgo edit the capacitor.config.ts from your app directory and set it like this:
+# Using the CLI with self-hosted codepushgo
+To use the CLI with self-hosted codepushgo edit the capacitor.config.ts from your app directory and set it like this:
 
 ```ts
 const config: React NativeConfig = {
@@ -87,15 +87,15 @@ const config: React NativeConfig = {
 };
 ```
 
-Note: To get localSupaAnon please follow this [tutorial](https://capgo.app/docs/self-hosted/local-dev/getting-started/) and copy the anon key into localSupaAnon
+Note: To get localSupaAnon please follow this [tutorial](https://codepushgo.com/docs/self-hosted/local-dev/getting-started/) and copy the anon key into localSupaAnon
 
-# Using the capacitor updater with self-hosted capgo
+# Using the capacitor updater with self-hosted codepushgo
 
 **Requirement**
 
-Cloned [capgo](https://github.com/Cap-go/capgo/)
+Cloned [codepushgo](https://github.com/Cap-go/codepushgo/)
 
-To use the capacitor updater with self-hosted capgo edit the `capacitor.config.ts` from your app directory and set it like this:
+To use the capacitor updater with self-hosted codepushgo edit the `capacitor.config.ts` from your app directory and set it like this:
 
 ```ts
 const config: React NativeConfig = {
@@ -113,11 +113,11 @@ const config: React NativeConfig = {
 };
 ```
 
-This will enable you to use local capgo in development. However, by default, this is not enough.
+This will enable you to use local codepushgo in development. However, by default, this is not enough.
 
 # Conclusion
 
 In conclusion, self-hosting CodePushGo can be a good option for organizations that have the resources and expertise to do so. It offers a number of benefits, including control over the update process, security, and compliance. However, it is important to carefully weigh the benefits and challenges before deciding whether to self-host.
 
-If you are considering self-hosting CodePushGo, I recommend that you start by reading the CodePushGo [self-hosting documentation](https://capgo.app/docs/self-hosted/getting-started/). This will give you a good understanding of the requirements and risks of self-hosting. 
+If you are considering self-hosting CodePushGo, I recommend that you start by reading the CodePushGo [self-hosting documentation](https://codepushgo.com/docs/self-hosted/getting-started/). This will give you a good understanding of the requirements and risks of self-hosting. 
 

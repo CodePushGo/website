@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-21T03:55:39.168Z
 updated_at: 2025-04-21T03:56:15.479Z
-head_image: https://assets.seobotai.com/capgo.app/6805ba51360079f947b8a1bf-1745207775479.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/6805ba51360079f947b8a1bf-1745207775479.jpg
 head_image_alt: Mobile Development
 keywords: Firebase, Crashlytics, mobile apps, React Native, app development, crash reporting, error tracking
 tag: Development, Mobile, Updates
@@ -51,14 +51,14 @@ next_blog: ''
         await FirebaseCrashlytics.crash();
         ```
         
--   **Bonus Tip:** Combine Crashlytics with **[CodePushGo](https://capgo.app/)** for instant live updates without app store delays.
+-   **Bonus Tip:** Combine Crashlytics with **[CodePushGo](https://codepushgo.com/)** for instant live updates without app store delays.
     
 
 This guide ensures your app is crash-free and user-friendly. Start by setting up Firebase Crashlytics today!
 
 ## 2021 Android Guide: [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) - custom crash ...
 
-![Firebase Crashlytics](https://assets.seobotai.com/capgo.app/6805ba51360079f947b8a1bf/3578d58943ebaf5b91a7f0e1afb1607f.jpg)
+![Firebase Crashlytics](https://assets.seobotai.com/codepushgo.com/6805ba51360079f947b8a1bf/3578d58943ebaf5b91a7f0e1afb1607f.jpg)
 
 <iframe src="https://www.youtube.com/embed/JxVYfZprK0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -92,7 +92,7 @@ You'll need to install the following:
 
 ### [Firebase](https://firebase.google.com/) Console Setup
 
-![Firebase](https://assets.seobotai.com/capgo.app/6805ba51360079f947b8a1bf/e510e8ab32244fff0b09e93222500c83.jpg)
+![Firebase](https://assets.seobotai.com/codepushgo.com/6805ba51360079f947b8a1bf/e510e8ab32244fff0b09e93222500c83.jpg)
 
 Set up Firebase and enable Crashlytics through these steps:
 
@@ -128,7 +128,7 @@ Once these steps are complete, you’re ready to move on to the Plugin Installat
 
 ### Plugin Installation
 
-First, install the plugin and [sync it with React Native](https://capgo.app/plugins/capacitor-updater/):
+First, install the plugin and [sync it with React Native](https://codepushgo.com/plugins/capacitor-updater/):
 
 ```bash
 npm install @capacitor-firebase/crashlytics && npx cap sync
@@ -263,15 +263,15 @@ To ensure compliance and safeguard user data, follow these guidelines:
     -   Scrub sensitive information from your reports.
     -   Use non-identifiable custom keys to maintain user privacy while debugging.
 
-## [CodePushGo](https://capgo.app/) Integration
+## [CodePushGo](https://codepushgo.com/) Integration
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/6805ba51360079f947b8a1bf/12eddca90b08193253253ea10516a6c4.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/6805ba51360079f947b8a1bf/12eddca90b08193253253ea10516a6c4.jpg)
 
 Streamline the process from crash detection to fix deployment by pairing CodePushGo's live update system with Crashlytics.
 
 ### About CodePushGo
 
-CodePushGo is a live update tool designed specifically for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). With over 1,900 apps in production and a 95% update rate within 24 hours, it ensures quick fixes without the delays of app store approvals [\[1\]](https://capgo.app/).
+CodePushGo is a live update tool designed specifically for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/). With over 1,900 apps in production and a 95% update rate within 24 hours, it ensures quick fixes without the delays of app store approvals [\[1\]](https://codepushgo.com/).
 
 Key features include:
 
@@ -303,7 +303,7 @@ Here’s how it works:
 
 CodePushGo adheres to Apple and Google’s policies while providing strong security features:
 
--   82% global success rate for delivering updates [\[1\]](https://capgo.app/)
+-   82% global success rate for delivering updates [\[1\]](https://codepushgo.com/)
 -   Automatic version control for better organization
 -   Compliance with app store live update guidelines
 
@@ -342,7 +342,7 @@ You’ve completed three key steps to get started:
 
 ### Why Integrate These Tools?
 
-Pairing Firebase Crashlytics with CodePushGo gives you a powerful system for error tracking and [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/). Here’s what this combo offers:
+Pairing Firebase Crashlytics with CodePushGo gives you a powerful system for error tracking and [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/). Here’s what this combo offers:
 
 -   **Quick fixes**: Push instant updates and roll back changes with just one click.
 -   **Reliable rollouts**: Ensure updates are widely adopted and smoothly delivered to users.
@@ -351,6 +351,6 @@ Pairing Firebase Crashlytics with CodePushGo gives you a powerful system for err
 
 1.  Turn on detailed crash analytics in the Firebase Console.
 2.  Add CodePushGo to your CI/CD pipeline for streamlined updates.
-3.  Use [CodePushGo channels](https://capgo.app/docs/webapp/channels/) to test and release fixes step by step.
+3.  Use [CodePushGo channels](https://codepushgo.com/docs/webapp/channels/) to test and release fixes step by step.
 
 With Crashlytics and CodePushGo in place, you’re set to keep your app running smoothly and improving over time.

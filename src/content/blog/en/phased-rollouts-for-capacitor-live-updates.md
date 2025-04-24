@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-11T03:53:42.225Z
 updated_at: 2025-03-18T13:14:16.154Z
-head_image: https://assets.seobotai.com/capgo.app/67cf83b3179e95469ad527be-1741665244026.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67cf83b3179e95469ad527be-1741665244026.jpg
 head_image_alt: Mobile Development
 keywords: phased rollouts, app updates, user segmentation, risk reduction, performance monitoring, CI/CD integration
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-Phased rollouts let you update apps gradually, starting with a small group of users and expanding as stability is confirmed. This approach reduces risks, ensures app quality, and improves user experience. Tools like [CodePushGo](https://capgo.app/) make it easy to manage these updates while complying with app store rules.
+Phased rollouts let you update apps gradually, starting with a small group of users and expanding as stability is confirmed. This approach reduces risks, ensures app quality, and improves user experience. Tools like [CodePushGo](https://codepushgo.com/) make it easy to manage these updates while complying with app store rules.
 
 ### Key Benefits:
 
@@ -53,7 +53,7 @@ Phased rollouts require careful planning and dividing your user base to ensure u
 
 ### User Group Division
 
-With CodePushGo's assignment feature, you can segment users into distinct groups, assigning specific roles for testing phases [\[1\]](https://capgo.app/). This helps you manage updates systematically.
+With CodePushGo's assignment feature, you can segment users into distinct groups, assigning specific roles for testing phases [\[1\]](https://codepushgo.com/). This helps you manage updates systematically.
 
 Here's an example of how to structure your user groups:
 
@@ -66,7 +66,7 @@ Here's an example of how to structure your user groups:
 
 ### Setting Update Percentages
 
-CodePushGo's management tools allow you to set precise rollout percentages, helping you maintain app stability during updates [\[1\]](https://capgo.app/).
+CodePushGo's management tools allow you to set precise rollout percentages, helping you maintain app stability during updates [\[1\]](https://codepushgo.com/).
 
 Here’s a suggested phased rollout plan:
 
@@ -79,7 +79,7 @@ Here’s a suggested phased rollout plan:
 
 ### Progress Tracking
 
-CodePushGo's web interface makes it easy to monitor updates in real time, tracking distribution and user adoption [\[1\]](https://capgo.app/). Pay attention to these metrics as you roll out:
+CodePushGo's web interface makes it easy to monitor updates in real time, tracking distribution and user adoption [\[1\]](https://codepushgo.com/). Pay attention to these metrics as you roll out:
 
 | Metric Category | Key Indicators | Action Triggers |
 | --- | --- | --- |
@@ -95,17 +95,17 @@ These steps help you manage your rollout effectively while minimizing risks.
 
 ### Live Update Configuration
 
-Start by installing the [CodePushGo plugin](https://capgo.app/plugins/) to enable over-the-air (OTA) updates for your React Native project:
+Start by installing the [CodePushGo plugin](https://codepushgo.com/plugins/) to enable over-the-air (OTA) updates for your React Native project:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 This setup meets Apple and Google guidelines while ensuring updates are encrypted and delivered securely. CodePushGo simplifies managing these configurations, making rollout management easier.
 
-### [CodePushGo](https://capgo.app/) Integration Guide
+### [CodePushGo](https://codepushgo.com/) Integration Guide
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-11.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-11.jpg?auto=compress)
 
 CodePushGo's web platform streamlines update distribution with these core features:
 
@@ -132,7 +132,7 @@ Here’s how to configure your CI/CD pipeline for phased rollouts:
 > "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding app store reviews for bug fixes is a game changer."  
 > – Bessie Cooper
 
-CodePushGo's integration costs about $300 per month for ongoing CI/CD operations, offering a more affordable option compared to alternatives like AppFlow, which costs around $6,000 annually [\[1\]](https://capgo.app/).
+CodePushGo's integration costs about $300 per month for ongoing CI/CD operations, offering a more affordable option compared to alternatives like AppFlow, which costs around $6,000 annually [\[1\]](https://codepushgo.com/).
 
 ###### sbb-itb-f9944d2
 
@@ -155,7 +155,7 @@ If something goes wrong, have rollback procedures ready to restore stability. Th
 
 Start small and scale up gradually. Begin with internal testing, then roll out to 5-10% of users. If stable after 24 hours, expand to 25%, then 50%, and finally to all users once metrics confirm everything is running smoothly. CodePushGo's analytics help you decide when it’s safe to move to the next stage.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://codepushgo.com/)
 
 ### App Store Guidelines
 
@@ -169,17 +169,17 @@ It’s not just about operational readiness - following platform rules is equall
 
 These practices not only keep your updates compliant but also allow for quick bug fixes.
 
-> "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." [\[1\]](https://capgo.app/)
+> "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." [\[1\]](https://codepushgo.com/)
 
 ## Update Management Tools
 
-Using the right [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) tools is crucial for rolling out updates securely and efficiently. These tools simplify deployment while ensuring stability, compliance, and security.
+Using the right [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) tools is crucial for rolling out updates securely and efficiently. These tools simplify deployment while ensuring stability, compliance, and security.
 
 ### Platform Comparison
 
-CodePushGo stands out as a solution for live updates in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). It supports up to **1,000,000 live updates monthly** and can increase release speed by **81%** [\[1\]](https://capgo.app/). This makes it a strong alternative, especially since [AppCenter](https://visualstudio.microsoft.com/app-center/) no longer supports hybrid apps and AppFlow is often too expensive. One developer shared their experience:
+CodePushGo stands out as a solution for live updates in [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/). It supports up to **1,000,000 live updates monthly** and can increase release speed by **81%** [\[1\]](https://codepushgo.com/). This makes it a strong alternative, especially since [AppCenter](https://visualstudio.microsoft.com/app-center/) no longer supports hybrid apps and AppFlow is often too expensive. One developer shared their experience:
 
-> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://codepushgo.com/)
 
 CodePushGo also works seamlessly with popular CI/CD platforms like Azure DevOps, GitLab, GitHub, Jenkins, and [CircleCI](https://circleci.com/), automating deployment workflows. When evaluating update management tools, it's important to focus on the key features they offer.
 
@@ -195,7 +195,7 @@ Effective update management tools should include the following features to ensur
 | **CI/CD Integration** | Connect with major platforms | Automates deployment workflows |
 | **Organization Management** | Manage teams and permissions | Simplifies administration |
 
-For enterprise deployments, CodePushGo offers CI/CD integration with a one-time fee of **$2,600**, providing long-term savings [\[1\]](https://capgo.app/). The platform also ensures end-to-end encryption and complies with Apple App Store and Google Play requirements, safeguarding user data while adhering to platform rules.
+For enterprise deployments, CodePushGo offers CI/CD integration with a one-time fee of **$2,600**, providing long-term savings [\[1\]](https://codepushgo.com/). The platform also ensures end-to-end encryption and complies with Apple App Store and Google Play requirements, safeguarding user data while adhering to platform rules.
 
 ## Summary
 

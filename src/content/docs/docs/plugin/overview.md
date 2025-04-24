@@ -18,7 +18,7 @@ Self-Hosted Manual Mode mixes control and autonomy. You decide when to update th
 
 
 :::note 
-If you chose to self host you're missing out on all the great features capgo cloud has to offer such as: auto reverts, email alerts, channels, statistics, encryption and more.
+If you chose to self host you're missing out on all the great features codepushgo cloud has to offer such as: auto reverts, email alerts, channels, statistics, encryption and more.
 :::
 
 :::danger

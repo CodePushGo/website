@@ -57,7 +57,7 @@ async function handleResend() {
         </a>
       </div>
       <div class="px-4 py-3 text-center bg-gray-50">
-        <p class="font-semibold text-blue-600">{{ m.thank_you_for_choosing_capgo() }}</p>
+        <p class="font-semibold text-blue-600">{{ m.thank_you_for_choosing_codepushgo() }}</p>
       </div>
     </div>
   </div>

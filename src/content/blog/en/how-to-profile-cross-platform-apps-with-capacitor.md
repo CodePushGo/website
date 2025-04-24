@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-19T02:37:04.938Z
 updated_at: 2025-04-19T02:37:25.432Z
-head_image: https://assets.seobotai.com/capgo.app/6803080d9291ae98c5004a60-1745030245432.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/6803080d9291ae98c5004a60-1745030245432.jpg
 head_image_alt: Mobile Development
 keywords: React Native, profiling, cross-platform apps, performance optimization, iOS, Android, web development, memory leaks, error tracking
 tag: Development, Mobile, Updates
@@ -40,7 +40,7 @@ Profiling cross-platform apps built with [React Native](https://capacitorjs.com/
 -   **Optimizations**:
     
     -   Implement partial bundle updates and live updates to improve performance and user experience.
-    -   Track performance metrics and errors in real time using tools like [CodePushGo](https://capgo.app/).
+    -   Track performance metrics and errors in real time using tools like [CodePushGo](https://codepushgo.com/).
 
 This article walks you through using platform-specific tools, finding performance bottlenecks, and applying fixes to optimize your React Native apps.
 
@@ -98,7 +98,7 @@ Once web profiling is complete, move on to iOS performance analysis.
 
 ### iOS Profiling with [Xcode](https://developer.apple.com/xcode/)
 
-![Xcode](https://assets.seobotai.com/capgo.app/6803080d9291ae98c5004a60/15516018a4284df8a7d0585815c62b4c.jpg)
+![Xcode](https://assets.seobotai.com/codepushgo.com/6803080d9291ae98c5004a60/15516018a4284df8a7d0585815c62b4c.jpg)
 
 In Xcode, navigate to **Product > Profile (⌘I)** and select a profiling template:
 
@@ -134,9 +134,9 @@ To pinpoint performance problems, tools like **Chrome DevTools**, **Xcode Instru
 
 After gathering data from profiling tools, implement these targeted optimizations:
 
--   **Partial bundle updates**: Instead of full updates, deliver smaller, incremental updates. For example, CodePushGo's CDN can deliver a 5 MB update in just 114 ms [\[1\]](https://capgo.app/).
--   **Controlled rollouts**: Use user segmentation to roll out updates gradually. This method can achieve 95% update adoption within 24 hours [\[1\]](https://capgo.app/).
--   **Error tracking**: Detect and fix errors early to maintain app stability and performance [\[1\]](https://capgo.app/).
+-   **Partial bundle updates**: Instead of full updates, deliver smaller, incremental updates. For example, CodePushGo's CDN can deliver a 5 MB update in just 114 ms [\[1\]](https://codepushgo.com/).
+-   **Controlled rollouts**: Use user segmentation to roll out updates gradually. This method can achieve 95% update adoption within 24 hours [\[1\]](https://codepushgo.com/).
+-   **Error tracking**: Detect and fix errors early to maintain app stability and performance [\[1\]](https://codepushgo.com/).
 -   **Bridge call batching**: Reduce overhead by grouping JavaScript-to-native bridge calls.
 -   **Live updates**: Push immediate fixes using live update solutions (e.g., CodePushGo), bypassing app store delays.
 
@@ -148,9 +148,9 @@ Once you've made performance improvements, it's crucial to keep an eye on things
 
 Post-deployment, keep tabs on important metrics like API response times, update success rates, and user engagement. Use tools like automated dashboards or error-tracking software to gather this data in real time. This allows you to spot and address issues quickly, preventing them from impacting a large number of users.
 
-### Fast Updates with [CodePushGo](https://capgo.app/)
+### Fast Updates with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/6803080d9291ae98c5004a60/65550a0697b495ada9159b05fd8b2a91.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/6803080d9291ae98c5004a60/65550a0697b495ada9159b05fd8b2a91.jpg)
 
 CodePushGo simplifies the update process by offering encrypted, staged updates with automatic rollback features. It also provides real-time analytics, helping you bypass app store delays and ensuring updates reach your users quickly and efficiently.
 

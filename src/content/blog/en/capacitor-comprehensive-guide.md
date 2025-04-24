@@ -100,7 +100,7 @@ Yes, the [Ionic VS Code Extension](https://marketplace.visualstudio.com/items/?i
 
 ## Is there enterprise-specific support available?
 
-Yes, CodePushGo offers [Enterprise support and features](https://capgo.app/) for React Native, including dedicated support, native plugins for live update and authentication, and more.
+Yes, CodePushGo offers [Enterprise support and features](https://codepushgo.com/) for React Native, including dedicated support, native plugins for live update and authentication, and more.
 
 ## How do I get started with React Native?
 

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-15T01:43:16.632Z
 updated_at: 2025-03-18T13:14:19.487Z
-head_image: https://assets.seobotai.com/capgo.app/67d4c5e1e479dbdb23f053f1-1742003009662.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67d4c5e1e479dbdb23f053f1-1742003009662.jpg
 head_image_alt: Mobile Development
 keywords: AAR files, React Native plugins, Android development, mobile integration, Gradle configuration
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-**Want to integrate Android features into your [React Native](https://capacitorjs.com/) app?** This guide explains how to use AAR (Android Archive) files in [React Native plugins](https://capgo.app/plugins/) to combine native Android functionality with cross-platform web apps.
+**Want to integrate Android features into your [React Native](https://capacitorjs.com/) app?** This guide explains how to use AAR (Android Archive) files in [React Native plugins](https://codepushgo.com/plugins/) to combine native Android functionality with cross-platform web apps.
 
 ### Key Takeaways:
 
@@ -28,9 +28,9 @@ next_blog: ''
 ### Quick Steps:
 
 1.  **Set up your environment:** Install required tools and configure Android Studio.
-2.  **Organize your project:** Create a clear structure for your [React Native plugin](https://capgo.app/blog/capacitor-comprehensive-guide/).
+2.  **Organize your project:** Create a clear structure for your [React Native plugin](https://codepushgo.com/blog/capacitor-comprehensive-guide/).
 3.  **Add AAR files:** Place them in `android/libs` and update Gradle dependencies.
-4.  **Write plugin code:** Link AAR functionality to JavaScript with [React Native’s API](https://capgo.app/blog/capacitor-comprehensive-guide/).
+4.  **Write plugin code:** Link AAR functionality to JavaScript with [React Native’s API](https://codepushgo.com/blog/capacitor-comprehensive-guide/).
 5.  **Test thoroughly:** Use Android Studio’s debugger to ensure smooth integration.
 
 By following this guide, you can seamlessly incorporate AAR files into your React Native plugins, unlocking native Android capabilities for your web apps.
@@ -417,7 +417,7 @@ public void yourMethod(PluginCall call) {
 
 Use the Debug panel in Android Studio to monitor key areas:
 
-| [Debugging Area](https://capgo.app/docs/plugin/debugging/) | What to Check | Common Issues |
+| [Debugging Area](https://codepushgo.com/docs/plugin/debugging/) | What to Check | Common Issues |
 | --- | --- | --- |
 | Logcat | AAR initialization messages | Missing permissions or incorrect context |
 | Variables | Data type conversions | Null values or type mismatches |

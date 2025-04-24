@@ -10,7 +10,7 @@ This documentation explains how to migrate to the new encryption system. Learn m
 ## 1. Create Key Pair
 
 ```bash
-npx @capgo/cli key create
+npx @codepushgo/cli key create
 ```
 
 :::warning
@@ -47,7 +47,7 @@ export default config;
 ## 3. Upload Bundle to New Channel
 
 ```bash
-npx @capgo/cli bundle upload --channel encryption_v2
+npx @codepushgo/cli bundle upload --channel encryption_v2
 ```
 
 ## 4. Enable Self-Assignment
@@ -57,13 +57,13 @@ Required for the `defaultChannel` option to work
 :::
 
 ```bash
-npx @capgo/cli channel set encryption_v2 --self-assign
+npx @codepushgo/cli channel set encryption_v2 --self-assign
 ```
 
 ## 5. Upload to Old Channel
 
 ```bash
-npx @capgo/cli bundle upload --channel production
+npx @codepushgo/cli bundle upload --channel production
 ```
 
 :::tip
@@ -78,7 +78,7 @@ Once all users have updated their apps:
 2. Delete the old channel:
 
 ```bash
-npx @capgo/cli channel delete encryption_v2
+npx @codepushgo/cli channel delete encryption_v2
 ```
 
 :::note

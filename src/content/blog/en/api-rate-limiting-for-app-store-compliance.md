@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-02T03:23:39.305Z
 updated_at: 2025-04-02T03:23:51.231Z
-head_image: https://assets.seobotai.com/capgo.app/67ecaaaa7747adc4bca8d9b6-1743564231231.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ecaaaa7747adc4bca8d9b6-1743564231231.jpg
 head_image_alt: Mobile Development
 keywords: API rate limiting, app store compliance, security, performance, overload protection, request management
 tag: Development, Mobile, Security
@@ -24,7 +24,7 @@ API rate limiting ensures your app meets Apple and Google guidelines while prote
     -   Sliding Window: Smooths traffic but uses more memory.
     -   Token Bucket: Handles bursts but is complex to set up.
 -   **Compliance**: Use exponential backoff for retries and respond with a 429 status code when limits are exceeded.
--   **Tools**: Platforms like [CodePushGo](https://capgo.app/) simplify implementation with analytics, error tracking, and real-time monitoring.
+-   **Tools**: Platforms like [CodePushGo](https://codepushgo.com/) simplify implementation with analytics, error tracking, and real-time monitoring.
 
 **Quick Tip**: Test your limits under normal, burst, and recovery conditions to ensure stability and compliance.
 
@@ -136,26 +136,26 @@ When a client surpasses the rate limit, respond with a **429 status code**. Incl
 
 Regularly revisiting rate limits is essential for maintaining performance and meeting compliance requirements. Monitor factors like peak traffic, error rates, and server load to identify necessary adjustments. Incorporate user feedback to ensure your limits support both operational efficiency and app store guidelines.
 
-## [CodePushGo](https://capgo.app/)'s Rate Limiting Tools
+## [CodePushGo](https://codepushgo.com/)'s Rate Limiting Tools
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67ecaaaa7747adc4bca8d9b6/454adbba4c00491adce88db59812b177.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67ecaaaa7747adc4bca8d9b6/454adbba4c00491adce88db59812b177.jpg)
 
 CodePushGo offers integrated tools designed to enforce API rate limits while ensuring high performance and compliance with app store requirements.
 
 ### CodePushGo Compliance Features
 
-CodePushGo provides a range of tools to help maintain API rate limits and meet app store guidelines. Its update delivery system achieves an impressive 82% update success rate with an average API response time of 434 ms [\[1\]](https://capgo.app/). Here’s what it includes:
+CodePushGo provides a range of tools to help maintain API rate limits and meet app store guidelines. Its update delivery system achieves an impressive 82% update success rate with an average API response time of 434 ms [\[1\]](https://codepushgo.com/). Here’s what it includes:
 
 -   **Real-Time Analytics**: Keep track of update distribution and API usage.
 -   **Error Tracking**: Quickly identify and fix rate limit issues.
--   **[Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/)**: Manage update rollouts effectively.
+-   **[Channel System](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/)**: Manage update rollouts effectively.
 -   **Encryption**: Protect API communications.
 
-These tools work alongside standard rate limiting practices, offering real-time data and proactive error resolution. CodePushGo's system has been tested across 750 production apps, delivering 23.5 million updates while maintaining compliance and strong performance [\[1\]](https://capgo.app/).
+These tools work alongside standard rate limiting practices, offering real-time data and proactive error resolution. CodePushGo's system has been tested across 750 production apps, delivering 23.5 million updates while maintaining compliance and strong performance [\[1\]](https://codepushgo.com/).
 
 ### Rate Limiting with CodePushGo
 
-CodePushGo's rate limiting tools integrate seamlessly into your [React Native](https://capacitorjs.com/) workflow. They help achieve a 95% user update rate within 24 hours while keeping API performance stable [\[1\]](https://capgo.app/).
+CodePushGo's rate limiting tools integrate seamlessly into your [React Native](https://capacitorjs.com/) workflow. They help achieve a 95% user update rate within 24 hours while keeping API performance stable [\[1\]](https://codepushgo.com/).
 
 Here’s a breakdown of CodePushGo’s approach:
 
@@ -168,7 +168,7 @@ Here’s a breakdown of CodePushGo’s approach:
 
 > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"
 
-To get started, run: `npx @capgo/cli init`. This command sets up the necessary rate limits, ensuring your app complies with Apple and Google store requirements.
+To get started, run: `npx @codepushgo/cli init`. This command sets up the necessary rate limits, ensuring your app complies with Apple and Google store requirements.
 
 ## Summary
 

@@ -29,7 +29,7 @@ export const GET: APIRoute = async () => {
           }
         }
       }
-      capgo: organization(login: "Cap-go") {
+      codepushgo: organization(login: "Cap-go") {
         sponsorshipsAsMaintainer(first: 100) {
           nodes {
             sponsorEntity {
@@ -70,7 +70,7 @@ export const GET: APIRoute = async () => {
       console.error('GraphQL Errors:', data.errors)
       return webJson([], 500)
     }
-    const allSponsors = [...(data.data.riderx?.sponsorshipsAsMaintainer.nodes || []), ...(data.data.capgo?.sponsorshipsAsMaintainer.nodes || [])]
+    const allSponsors = [...(data.data.riderx?.sponsorshipsAsMaintainer.nodes || []), ...(data.data.codepushgo?.sponsorshipsAsMaintainer.nodes || [])]
     // console.log('allSponsors', allSponsors)
     const calculateTier = (sponsorship: any) => {
       const tier = sponsorship.tier.monthlyPriceInDollars

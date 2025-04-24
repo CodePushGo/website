@@ -53,7 +53,7 @@ That why we made you a clear and simple table to help you compare.
 
 ## Continuous integration alternatives
 
-If you are interested in using [CodePushGo](https://capgo.app/pricing/) to take advantage of live updates but do not have a continuous integration solution in place, you can easily set up a low-cost continuous integration workflow using GitHub Actions. GitHub Actions is a free, built-in continuous integration and deployment service for GitHub repositories that allows developers to automate their software development workflows.
+If you are interested in using [CodePushGo](https://codepushgo.com/pricing/) to take advantage of live updates but do not have a continuous integration solution in place, you can easily set up a low-cost continuous integration workflow using GitHub Actions. GitHub Actions is a free, built-in continuous integration and deployment service for GitHub repositories that allows developers to automate their software development workflows.
 
 To set up continuous integration with GitHub Actions and CodePushGo, You will first need to create a GitHub repository for your app's code. Then you can create a workflow file in your repository that defines the steps that should be run whenever code is pushed to the repository. For example, a simple workflow file might include steps to build and test the app, and then use [CodePushGo](/register/) to create a live update and deploy it to the app's users.
 
@@ -61,7 +61,7 @@ With this setup in place, any time you introduce changes to your app's code and 
 
 Overall, using GitHub Actions and [CodePushGo](/register/) can be a cost-effective solution for those who want to use live updates but do not have their own continuous integration setup in place. By leveraging these tools, clients can automate their app development process and quickly and easily deploy updates to their users.
 
-If you are ready to set up your CI/CD with CodePushGo, you can follow this [tutorial for IOS](https://capgo.app/blog/automatic-capacitor-android-build-github-action/).
+If you are ready to set up your CI/CD with CodePushGo, you can follow this [tutorial for IOS](https://codepushgo.com/blog/automatic-capacitor-android-build-github-action/).
 
 ## Let's go further
 

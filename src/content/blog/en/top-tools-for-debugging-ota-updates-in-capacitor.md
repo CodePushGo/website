@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-20T02:05:05.290Z
 updated_at: 2025-03-18T13:14:00.470Z
-head_image: https://assets.seobotai.com/capgo.app/67b67f2eacf635f489c4a234-1740017141105.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67b67f2eacf635f489c4a234-1740017141105.jpg
 head_image_alt: Mobile Development
 keywords: React Native, OTA updates, debugging tools, mobile development, app updates
 tag: Development, Mobile, Updates
@@ -16,10 +16,10 @@ locale: en
 next_blog: ''
 ---
 
-Debugging Over-the-Air (OTA) updates in [React Native](https://capacitorjs.com/) apps can be tricky, but the right tools make a big difference. Whether you're managing version conflicts, ensuring [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/), or debugging across platforms, here are three tools to consider:
+Debugging Over-the-Air (OTA) updates in [React Native](https://capacitorjs.com/) apps can be tricky, but the right tools make a big difference. Whether you're managing version conflicts, ensuring [secure updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/), or debugging across platforms, here are three tools to consider:
 
--   **[CodePushGo](https://capgo.app/)**: Secure OTA updates with end-to-end encryption, CI/CD integration, and user-specific rollouts. Starts at $12/month.
--   **@capawesome/capacitor-live-update**: A free, simple plugin for basic OTA [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) with automatic rollback.
+-   **[CodePushGo](https://codepushgo.com/)**: Secure OTA updates with end-to-end encryption, CI/CD integration, and user-specific rollouts. Starts at $12/month.
+-   **@capawesome/capacitor-live-update**: A free, simple plugin for basic OTA [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) with automatic rollback.
 -   **[Inspect.dev](https://inspect.dev/)**: Debug both Android and iOS apps, even on Windows, with [Chrome DevTools](https://developer.chrome.com/docs/devtools) integration. Costs $49/year.
 
 ### Quick Comparison
@@ -27,7 +27,7 @@ Debugging Over-the-Air (OTA) updates in [React Native](https://capacitorjs.com/)
 | Feature | CodePushGo | @capawesome/capacitor-live-update | Inspect.dev |
 | --- | --- | --- | --- |
 | Update Management | Advanced (encryption, CI/CD) | Basic (cloud-based) | Not applicable |
-| [Debugging Tools](https://capgo.app/docs/plugin/debugging/) | Version control, rollback | Automatic rollback | Chrome DevTools |
+| [Debugging Tools](https://codepushgo.com/docs/plugin/debugging/) | Version control, rollback | Automatic rollback | Chrome DevTools |
 | Platform Support | Android, iOS | Android, iOS | Android, iOS (Windows support) |
 | Pricing | $12/month | Free | $49/year |
 
@@ -37,7 +37,7 @@ Choose based on your app's needs: **CodePushGo** for security and automation, **
 
 ### Platform Requirements
 
-[React Native OTA updates](https://capgo.app/ja/) need proper native integration to work smoothly. For iOS, this means strict code signing and update validation. On Android, managing version codes and ensuring compatibility is crucial to avoid update issues.
+[React Native OTA updates](https://codepushgo.com/ja/) need proper native integration to work smoothly. For iOS, this means strict code signing and update validation. On Android, managing version codes and ensuring compatibility is crucial to avoid update issues.
 
 Key platform checks include:
 
@@ -49,11 +49,11 @@ Once these are in place, it's time to explore OTA distribution options.
 
 ### Update Distribution Methods
 
-[React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) support multiple OTA update methods. Tools like CodePushGo ensure compliance with both Apple and Android guidelines.
+[React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) support multiple OTA update methods. Tools like CodePushGo ensure compliance with both Apple and Android guidelines.
 
 | Distribution Method | Key Features | Best For |
 | --- | --- | --- |
-| [Manual Updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) | Full control over the update process, supports custom URLs | Smaller apps, testing |
+| [Manual Updates](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) | Full control over the update process, supports custom URLs | Smaller apps, testing |
 | CodePushGo | Offers end-to-end encryption, CI/CD integration, and user assignment | Enterprise applications |
 | @capawesome/capacitor-live-update | Manages versions and provides basic update functionality | Simple apps |
 
@@ -61,7 +61,7 @@ Choose the method that best fits your app's needs and workflow.
 
 ### Development Setup
 
-Setting up your environment involves using [React Native CLI commands](https://capgo.app/docs/cli/commands/) and configuring settings correctly.
+Setting up your environment involves using [React Native CLI commands](https://codepushgo.com/docs/cli/commands/) and configuring settings correctly.
 
 Important setup steps:
 
@@ -81,15 +81,15 @@ Keep version control organized to track changes and simplify debugging. Use Reac
 
 ![React Native](https://mars-images.imgix.net/seobot/screenshots/capacitorjs.com-4c1a6a7e452082d30f5bff9840b00b7d-2025-02-20.jpg?auto=compress)
 
-These tools help developers tackle specific [debugging challenges](https://capgo.app/docs/plugin/debugging/) while managing OTA updates effectively.
+These tools help developers tackle specific [debugging challenges](https://codepushgo.com/docs/plugin/debugging/) while managing OTA updates effectively.
 
-### [CodePushGo](https://capgo.app)
+### [CodePushGo](https://codepushgo.com)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-20.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-20.jpg?auto=compress)
 
 CodePushGo provides a reliable solution for handling OTA updates in React Native apps. It ensures secure and fast updates, while adhering to platform guidelines.
 
-#### [CodePushGo](https://capgo.app/) Features Breakdown
+#### [CodePushGo](https://codepushgo.com/) Features Breakdown
 
 | **Feature** | **Description** | **Benefit** |
 | --- | --- | --- |
@@ -108,9 +108,9 @@ This React Native plugin is a no-frills option for OTA updates, ideal for smalle
 
 #### Key Features of @capawesome/capacitor-live-update
 
-This plugin focuses on essential update features, like a [cloud-based bundle management system](https://capgo.app/docs/webapp/bundles/) that supports both Android and iOS. It also includes an automatic rollback feature, ensuring stability by reverting to the last working version if an update fails.
+This plugin focuses on essential update features, like a [cloud-based bundle management system](https://codepushgo.com/docs/webapp/bundles/) that supports both Android and iOS. It also includes an automatic rollback feature, ensuring stability by reverting to the last working version if an update fails.
 
-For a [debugging tool](https://capgo.app/docs/plugin/debugging/) with cross-platform capabilities, take a look at **Inspect.dev**.
+For a [debugging tool](https://codepushgo.com/docs/plugin/debugging/) with cross-platform capabilities, take a look at **Inspect.dev**.
 
 ### [Inspect.dev](https://inspect.dev/)
 
@@ -178,7 +178,7 @@ If you use CI/CD pipelines, **CodePushGo** integrates effortlessly into your wor
 Consider your technical priorities and match them to the tool's strengths:
 
 -   For cross-platform debugging, **Inspect.dev** is a solid choice.
--   Need [automated updates](https://capgo.app/docs/plugin/self-hosted/auto-update/) with added security? **CodePushGo** is ideal.
+-   Need [automated updates](https://codepushgo.com/docs/plugin/self-hosted/auto-update/) with added security? **CodePushGo** is ideal.
 -   For basic update management, **@capawesome/capacitor-live-update** is sufficient.
 
 **Budget**  
@@ -191,7 +191,7 @@ If security is a top priority, **CodePushGo** ensures updates comply with both A
 
 ### How to debug a React Native app on Android?
 
-Debugging a [React Native app](https://capgo.app/plugins/ivs-player/) on Android is straightforward using Chrome's developer tools. Here's how you can do it:
+Debugging a [React Native app](https://codepushgo.com/plugins/ivs-player/) on Android is straightforward using Chrome's developer tools. Here's how you can do it:
 
 1.  Start your app using your IDE or [Android Studio](https://developer.android.com/studio).
 2.  Open `chrome://inspect` in Google Chrome.
@@ -201,7 +201,7 @@ Once connected, you can use Chrome's developer tools to check **console logs**, 
 
 Pay attention to the **Network** tab to track update downloads and use the **Console** to spot any errors.
 
-For additional [debugging options](https://capgo.app/docs/plugin/debugging/), explore these tools:
+For additional [debugging options](https://codepushgo.com/docs/plugin/debugging/), explore these tools:
 
 -   **Inspect.dev**: A cross-platform debugging tool.
 -   **CodePushGo**: Helps with live update management, along with built-in security and CI/CD features.

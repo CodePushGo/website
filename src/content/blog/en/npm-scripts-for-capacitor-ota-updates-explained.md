@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-13T01:07:05.331Z
 updated_at: 2025-04-13T01:07:18.251Z
-head_image: https://assets.seobotai.com/capgo.app/67fb02ab2e221594daf3f266-1744506438251.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67fb02ab2e221594daf3f266-1744506438251.jpg
 head_image_alt: Mobile Development
 keywords: React Native, npm scripts, OTA updates, CI/CD, mobile app deployment, automation, app version management, security
 tag: Development, Mobile, Updates
@@ -23,7 +23,7 @@ next_blog: ''
 -   How to set up npm scripts for OTA updates.
 -   Integrating updates into CI/CD pipelines for automation.
 -   Managing app versions, security, and testing updates.
--   Why [CodePushGo](https://capgo.app/) is a reliable platform for managing OTA updates.
+-   Why [CodePushGo](https://codepushgo.com/) is a reliable platform for managing OTA updates.
 
 **Key Benefits:**
 
@@ -34,7 +34,7 @@ next_blog: ''
 
 **Quick Setup Example:**
 
-1.  Install tools: `npm install @capgo/cli --save-dev`
+1.  Install tools: `npm install @codepushgo/cli --save-dev`
 2.  Configure updates in `capacitor.config.json`.
 3.  Add npm scripts like `deploy:production` to streamline deployment.
 
@@ -42,27 +42,27 @@ With platforms like CodePushGo offering fast updates (95% user adoption in 24 ho
 
 ## Explore [Capawesome](https://capawesome.io/)'s New Ionic [React Native](https://capacitorjs.com/) Live Update ...
 
-![Capawesome](https://assets.seobotai.com/capgo.app/67fb02ab2e221594daf3f266/04d155e1ac5e3041660c0e8da59e2e54.jpg)
+![Capawesome](https://assets.seobotai.com/codepushgo.com/67fb02ab2e221594daf3f266/04d155e1ac5e3041660c0e8da59e2e54.jpg)
 
 <iframe src="https://www.youtube.com/embed/pCDPwItv_ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
 ## npm Scripts Setup for OTA Updates
 
-Here's how to configure npm scripts to manage [React Native OTA updates](https://capgo.app/ja/) effectively. This involves installing necessary packages, setting up configurations, and creating deployment scripts.
+Here's how to configure npm scripts to manage [React Native OTA updates](https://codepushgo.com/ja/) effectively. This involves installing necessary packages, setting up configurations, and creating deployment scripts.
 
 ### Installing Required Packages
 
-First, install the required packages. The [CodePushGo CLI tool](https://capgo.app/docs/cli/commands) simplifies this process with built-in commands:
+First, install the required packages. The [CodePushGo CLI tool](https://codepushgo.com/docs/cli/commands) simplifies this process with built-in commands:
 
 ```bash
-npm install @capgo/cli --save-dev
+npm install @codepushgo/cli --save-dev
 npm install @capacitor/cli --save-dev
 ```
 
 Then, initialize the OTA configuration using the following command:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 ### Configuring OTA Updates
@@ -76,8 +76,8 @@ Update your `capacitor.config.json` file with the following settings to prepare 
   "plugins": {
     "React NativeUpdates": {
       "autoUpdate": true,
-      "updateUrl": "https://api.capgo.app/updates",
-      "statsUrl": "https://api.capgo.app/stats"
+      "updateUrl": "https://api.codepushgo.com/updates",
+      "statsUrl": "https://api.codepushgo.com/stats"
     }
   }
 }
@@ -93,8 +93,8 @@ Add these npm scripts to your `package.json` file to streamline the build and de
 {
   "scripts": {
     "build:web": "npm run build",
-    "build:update": "npx @capgo/cli build",
-    "deploy:update": "npx @capgo/cli upload",
+    "build:update": "npx @codepushgo/cli build",
+    "deploy:update": "npx @codepushgo/cli upload",
     "deploy:production": "npm run build:web && npm run build:update && npm run deploy:update"
   }
 }
@@ -105,7 +105,7 @@ Add these npm scripts to your `package.json` file to streamline the build and de
 -   **`deploy:update`**: Uploads the update package to CodePushGo.
 -   **`deploy:production`**: Handles the complete build and deployment workflow, ideal for production releases.
 
-> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - CodePushGo [\[1\]](https://capgo.app/)
+> "We configure your CI/CD pipeline directly in your preferred platform, whether it's GitHub Actions, GitLab CI, or others. We don't host CI/CD or charge you to maintain it." - CodePushGo [\[1\]](https://codepushgo.com/)
 
 ### Setting Environment Variables
 
@@ -154,7 +154,7 @@ cache:
 
 ### [GitHub Actions](https://docs.github.com/actions) Setup Guide
 
-![GitHub Actions](https://assets.seobotai.com/capgo.app/67fb02ab2e221594daf3f266/14ecce2811e9ac36444c59b954e81473.jpg)
+![GitHub Actions](https://assets.seobotai.com/codepushgo.com/67fb02ab2e221594daf3f266/14ecce2811e9ac36444c59b954e81473.jpg)
 
 To automate your deployment workflow, create a `.github/workflows/ota-deploy.yml` file with this configuration:
 
@@ -248,7 +248,7 @@ Security is critical in OTA updates. Here are some key measures to put in place:
 | Update Signing | Package verification | Confirms updates are genuine |
 | Access Control | Role-based permissions | Restricts team access |
 
-> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://codepushgo.com/)
 
 To ensure updates are secure, configure npm scripts to validate everything before deployment:
 
@@ -256,7 +256,7 @@ To ensure updates are secure, configure npm scripts to validate everything befor
 {
   "scripts": {
     "predeploy": "npm run security:check",
-    "deploy": "capgo upload --encrypt",
+    "deploy": "codepushgo upload --encrypt",
     "security:check": "npm audit && npm run validate:bundle"
   }
 }
@@ -268,23 +268,23 @@ Additionally, enforce channel-specific security policies and use role-based perm
 
 Choosing the right OTA update platform is crucial for effectively integrating npm scripts into your workflow. Prioritize factors like performance, security, and compatibility with your existing tools. Here's a breakdown of CodePushGo and other market options to help you make an informed decision.
 
-### [CodePushGo](https://capgo.app/) Features
+### [CodePushGo](https://codepushgo.com/) Features
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67fb02ab2e221594daf3f266/04cc402ef2e8f7dc781d2b86cd364db3.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67fb02ab2e221594daf3f266/04cc402ef2e8f7dc781d2b86cd364db3.jpg)
 
-CodePushGo is designed specifically for React Native OTA updates, offering an average update speed of 434 milliseconds and achieving a 95% user update rate [\[1\]](https://capgo.app/). It provides seamless integration with npm scripts, as shown in the example below:
+CodePushGo is designed specifically for React Native OTA updates, offering an average update speed of 434 milliseconds and achieving a 95% user update rate [\[1\]](https://codepushgo.com/). It provides seamless integration with npm scripts, as shown in the example below:
 
 ```json
 {
   "scripts": {
-    "deploy:production": "capgo upload --channel production",
-    "deploy:beta": "capgo upload --channel beta --encrypt",
-    "rollback": "capgo revert --channel production"
+    "deploy:production": "codepushgo upload --channel production",
+    "deploy:beta": "codepushgo upload --channel beta --encrypt",
+    "rollback": "codepushgo revert --channel production"
   }
 }
 ```
 
-CodePushGo ensures secure updates with end-to-end encryption and allows for strategic deployments through its channel system. With 23.5 million updates delivered across 750 production apps, it has proven its scalability and reliability [\[1\]](https://capgo.app/).
+CodePushGo ensures secure updates with end-to-end encryption and allows for strategic deployments through its channel system. With 23.5 million updates delivered across 750 production apps, it has proven its scalability and reliability [\[1\]](https://codepushgo.com/).
 
 ### Platform Comparison
 
@@ -292,18 +292,18 @@ When using npm scripts, it's essential to evaluate platforms based on encryption
 
 | Feature | Implementation Details | Update Success Rate |
 | --- | --- | --- |
-| End-to-End Encryption | Full encryption support | 82% worldwide [\[1\]](https://capgo.app/) |
+| End-to-End Encryption | Full encryption support | 82% worldwide [\[1\]](https://codepushgo.com/) |
 | Update Speed | 114 ms for a 5 MB bundle | Global CDN delivery |
 | CI/CD Integration | GitHub Actions, GitLab CI | Custom workflows |
 
 > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"  
-> – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> – Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 The OTA update market has shifted significantly, especially after [Microsoft Code Push](https://learn.microsoft.com/en-us/appcenter/distribution/codepush/) shut down in 2024, with [Appflow](https://ionic.io/appflow/) set to follow in 2026. Simon Flack shared his perspective on these changes:
 
-> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." [\[1\]](https://codepushgo.com/)
 
-Cost is another important consideration for teams. CodePushGo offers CI/CD capabilities at approximately $300 per month, a much lower cost compared to the $6,000 annual fees of enterprise-level alternatives [\[1\]](https://capgo.app/).
+Cost is another important consideration for teams. CodePushGo offers CI/CD capabilities at approximately $300 per month, a much lower cost compared to the $6,000 annual fees of enterprise-level alternatives [\[1\]](https://codepushgo.com/).
 
 When implementing npm scripts in your deployment workflow, consider these factors:
 
@@ -313,7 +313,7 @@ When implementing npm scripts in your deployment workflow, consider these factor
 -   **Strong security measures** to ensure compliance
 -   **Affordability** for scaling without breaking the budget
 
-CodePushGo's ability to handle complex npm script configurations while maintaining high performance makes it a strong contender for OTA [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
+CodePushGo's ability to handle complex npm script configurations while maintaining high performance makes it a strong contender for OTA [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/).
 
 ## Conclusion
 
@@ -331,9 +331,9 @@ These features highlight why CodePushGo stands out as a reliable tool for managi
 
 ### CodePushGo Benefits
 
-With Microsoft CodePush shutting down in 2024, the OTA update landscape has shifted. CodePushGo has emerged as a dependable solution, having successfully delivered 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
+With Microsoft CodePush shutting down in 2024, the OTA update landscape has shifted. CodePushGo has emerged as a dependable solution, having successfully delivered 23.5 million updates across 750 production apps [\[1\]](https://codepushgo.com/).
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 CodePushGo's performance metrics speak for themselves:
 
@@ -343,4 +343,4 @@ CodePushGo's performance metrics speak for themselves:
 | Bundle Download Speed | 114 ms for 5 MB |
 | Update Success Rate | 82% globally |
 
-At $300 per month for CI/CD integration - compared to $6,000 annually for enterprise-level solutions - CodePushGo offers a secure, reliable, and cost-efficient option for managing OTA updates [\[1\]](https://capgo.app/).
+At $300 per month for CI/CD integration - compared to $6,000 annually for enterprise-level solutions - CodePushGo offers a secure, reliable, and cost-efficient option for managing OTA updates [\[1\]](https://codepushgo.com/).

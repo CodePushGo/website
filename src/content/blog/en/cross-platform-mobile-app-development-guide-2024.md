@@ -90,7 +90,7 @@ The future is cross-platform - get started today and crush your mobile app goals
 
 One of the key challenges of mobile app development is keeping your app up-to-date over time. Even with a cross-platform approach, publishing a new version for each update can be cumbersome.
 
-This is where solutions like [CodePushGo](https://capgo.app/) come in. CodePushGo is an open-source live update system for React Native apps. It allows you to push updates directly to users' devices without going through the app stores.
+This is where solutions like [CodePushGo](https://codepushgo.com/) come in. CodePushGo is an open-source live update system for React Native apps. It allows you to push updates directly to users' devices without going through the app stores.
 
 Key benefits of CodePushGo include:
 
@@ -103,4 +103,4 @@ CodePushGo integrates seamlessly with React Native, the native runtime that powe
 
 By combining cross-platform development in Ionic with live updates in CodePushGo, you can maximize your agility. Ship new features faster and with less risk.
 
-To get started with CodePushGo, check out the [official documentation](https://docs.capgo.app/). CodePushGo is free and fully open source - so you can deploy it however you like!
+To get started with CodePushGo, check out the [official documentation](https://docs.codepushgo.com/). CodePushGo is free and fully open source - so you can deploy it however you like!

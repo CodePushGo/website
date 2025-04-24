@@ -39,11 +39,11 @@ The following outlines the steps to establish the key pairing and the subsequent
 To generate a public/private key pair, enterprises can utilize the following CodePushGo Cloud CLI command:
 
 ```shell
-npx @capgo/cli@latest key create
+npx @codepushgo/cli@latest key create
 ```
 
 This command will set `React NativeUpdater.privateKey` properties in your config file.
-And generate 2 key files, `capgo_key.pub` and `capgo_key` in your project root directory.
+And generate 2 key files, `codepushgo_key.pub` and `codepushgo_key` in your project root directory.
 
 This key pair is used to sign the update and verify the update on the app side.
 
@@ -58,13 +58,13 @@ npm run build
 
 Then Zip your build:
 ```shell
-npx @capgo/cli@latest bundle zip
+npx @codepushgo/cli@latest bundle zip
 ```
 
 Then encrypt your zip:
 
 ```shell
-npx @capgo/cli@latest bundle encrypt abc123.zip”
+npx @codepushgo/cli@latest bundle encrypt abc123.zip”
 ```
 
 This command will print you an ivSessionKey, you need to save it for the next step.
@@ -74,7 +74,7 @@ Now upload your encrypted zip to your enterprise storage and get the URL of the 
 CodePushGo must then be informed of a new Live Update that is ready for consumption. This is done via another CLI command:
 
 ```shell
-npx @capgo/cli@latest bundle upload --external=https://abc.com/app/updates/abc123.zip --iv-session-key=YourKey
+npx @codepushgo/cli@latest bundle upload --external=https://abc.com/app/updates/abc123.zip --iv-session-key=YourKey
 ```
 
 Once the command is run, CodePushGo is aware of a new update ready to be distributed to the app’s users. Now, when the app is started, the Live Updates plugin checks with CodePushGo to see if any changes need to be brought down.

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-25T02:08:36.160Z
 updated_at: 2025-03-25T02:08:56.741Z
-head_image: https://assets.seobotai.com/capgo.app/67e200987856e801f1f26fa8-1742868536741.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e200987856e801f1f26fa8-1742868536741.jpg
 head_image_alt: Mobile Development
 keywords: React Native, mobile development, cross-platform, iOS, Android, custom plugins, UI design, live updates
 tag: Development, Mobile, Updates
@@ -23,7 +23,7 @@ next_blog: ''
 -   **Custom Plugins**: Add native code for unique requirements.
 -   **UI Adjustments**: Follow design rules for iOS (e.g., [SF Symbols](https://developer.apple.com/sf-symbols/), rounded buttons) and Android (e.g., [Material Icons](https://developers.google.com/fonts/docs/material_icons), left-aligned buttons).
 -   **Configuration**: Adjust settings in `capacitor.config.json` for both platforms.
--   **Live Updates with [CodePushGo](https://capgo.app/)**: Deploy updates instantly without app store delays, achieving up to 95% user adoption within 24 hours.
+-   **Live Updates with [CodePushGo](https://codepushgo.com/)**: Deploy updates instantly without app store delays, achieving up to 95% user adoption within 24 hours.
 
 ### Quick Comparison
 
@@ -61,7 +61,7 @@ if (platform === 'ios') {
 }
 ```
 
-This approach is especially handy for features like [biometric authentication](https://capgo.app/plugins/capacitor-native-biometric/), where iOS might use [Face ID](https://en.wikipedia.org/wiki/Face_ID) and Android relies on Fingerprint Authentication. Along with platform detection, React Native's built-in plugins simplify native integration.
+This approach is especially handy for features like [biometric authentication](https://codepushgo.com/plugins/capacitor-native-biometric/), where iOS might use [Face ID](https://en.wikipedia.org/wiki/Face_ID) and Android relies on Fingerprint Authentication. Along with platform detection, React Native's built-in plugins simplify native integration.
 
 ### Built-in Platform Features
 
@@ -235,11 +235,11 @@ Here are some key build considerations:
 | **Splash Screen** | Storyboard-based | Layout XML-based |
 | **Build Output** | `.ipa` file | `.aab` or `.apk` file |
 
-## Update Apps with [CodePushGo](https://capgo.app/)
+## Update Apps with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-25.jpg?auto=compress)
 
-Keeping [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) updated efficiently for both iOS and Android is crucial. CodePushGo offers a live update system that aligns with the guidelines of both platforms.
+Keeping [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) updated efficiently for both iOS and Android is crucial. CodePushGo offers a live update system that aligns with the guidelines of both platforms.
 
 ### CodePushGo Features
 
@@ -247,18 +247,18 @@ Keeping [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide
 | --- | --- | --- |
 | **Live Updates** | Deploy instantly without app store review | Ensures a unified experience on iOS and Android |
 | **End-to-End Encryption** | Secures update delivery | Meets security requirements of both platforms |
-| **[Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/)** | Targets specific user groups | Supports beta testing and phased rollouts |
+| **[Channel System](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/)** | Targets specific user groups | Supports beta testing and phased rollouts |
 | **Partial Updates** | Downloads only modified content | Saves bandwidth and speeds up updates |
 
-CodePushGo has delivered 23.5 million updates, achieving a 95% active user update rate within 24 hours [\[1\]](https://capgo.app/). These features make [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) smoother and more efficient across platforms.
+CodePushGo has delivered 23.5 million updates, achieving a 95% active user update rate within 24 hours [\[1\]](https://codepushgo.com/). These features make [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) smoother and more efficient across platforms.
 
 ### CodePushGo Platform Management
 
 CodePushGo's channel system makes updates easier to manage. Developers can test iOS-specific features with beta users, roll out Android updates in stages, and track performance metrics seamlessly.
 
-The platform adheres to Apple and Google’s over-the-air update requirements [\[1\]](https://capgo.app/).
+The platform adheres to Apple and Google’s over-the-air update requirements [\[1\]](https://codepushgo.com/).
 
-Currently, 750 production apps rely on CodePushGo, maintaining an 82% global update success rate [\[1\]](https://capgo.app/). Its CI/CD integration simplifies deployments, while the rollback feature allows developers to revert to previous versions instantly if issues arise. Real-time analytics provide insights into update performance and help maintain app stability.
+Currently, 750 production apps rely on CodePushGo, maintaining an 82% global update success rate [\[1\]](https://codepushgo.com/). Its CI/CD integration simplifies deployments, while the rollback feature allows developers to revert to previous versions instantly if issues arise. Real-time analytics provide insights into update performance and help maintain app stability.
 
 ## Conclusion
 
@@ -266,10 +266,10 @@ Currently, 750 production apps rely on CodePushGo, maintaining an 82% global upd
 
 Managing platform differences effectively in React Native enhances cross-platform development. Its built-in tools for platform detection and configuration allow developers to create smooth experiences for both iOS and Android, all while respecting the unique design standards and features of each platform.
 
-By focusing on proper platform management, development teams can release updates faster and improve user satisfaction. Tools like CodePushGo have shown how consistent platform handling can lead to higher update success rates and better user experiences [\[1\]](https://capgo.app/).
+By focusing on proper platform management, development teams can release updates faster and improve user satisfaction. Tools like CodePushGo have shown how consistent platform handling can lead to higher update success rates and better user experiences [\[1\]](https://codepushgo.com/).
 
 > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"  
-> – Rodrigo Mantica [\[1\]](https://capgo.app/)
+> – Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 These insights can guide you in making practical improvements.
 

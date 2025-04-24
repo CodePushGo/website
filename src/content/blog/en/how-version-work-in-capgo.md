@@ -1,5 +1,5 @@
 ---
-slug: how-version-work-in-capgo
+slug: how-version-work-in-codepushgo
 title: How version work in CodePushGo
 description: >-
   Understand how CodePushGo manage versions in your React Native app, and use it at
@@ -15,7 +15,7 @@ keywords: mobile app development, live updates, OTA updates, continuous integrat
 tag: Tutorial
 published: true
 locale: en
-next_blog: how-to-release-major-version-in-capgo
+next_blog: how-to-release-major-version-in-codepushgo
 ---
 
 CodePushGo uses 2 main variables to manage versions in your React Native app:
@@ -24,7 +24,7 @@ CodePushGo uses 2 main variables to manage versions in your React Native app:
 
 
 <div class="mx-auto" style="width:100%;">
-  <img src="/graph_capgo.webp" alt="React Native update system">
+  <img src="/graph_codepushgo.webp" alt="React Native update system">
 </div>
 
 All versions choices are decided server side by CodePushGo.
@@ -83,7 +83,7 @@ There are a couple of stategies you can chose from. You can learn more about it 
 
 ## JavaScript bundle version
 
-The JavaScript bundle version is the one you send when doing `npx @capgo/cli@latest bundle upload --channel production`
+The JavaScript bundle version is the one you send when doing `npx @codepushgo/cli@latest bundle upload --channel production`
 
 If you didn't use the option `--bundle 1.2.3`, CodePushGo will get the bundle version from your `package.json` file (in the version key).
 

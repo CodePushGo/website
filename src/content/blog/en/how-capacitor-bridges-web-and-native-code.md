@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-26T02:55:05.863Z
 updated_at: 2025-03-26T02:55:21.554Z
-head_image: https://assets.seobotai.com/capgo.app/67e35e3910051fda3b61fe9f-1742957721554.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e35e3910051fda3b61fe9f-1742957721554.jpg
 head_image_alt: Mobile Development
 keywords: React Native, native bridge, web apps, live updates, plugin system, mobile development
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
--   **Native Bridge**: Translates JavaScript into native actions (e.g., [accessing the camera](https://capgo.app/plugins/camera-preview/) or GPS).
+-   **Native Bridge**: Translates JavaScript into native actions (e.g., [accessing the camera](https://codepushgo.com/plugins/camera-preview/) or GPS).
 -   **Plugin System**: Securely links web and native layers for smooth communication.
 -   **Live Updates**: Push updates directly to users without app store delays.
 -   **Custom Plugins**: Create plugins to access advanced device features like biometric authentication or specialized sensors.
@@ -29,9 +29,9 @@ next_blog: ''
 | **Camera Access** | `Camera.getPhoto()` | Capture photos easily |
 | **Geolocation** | `Geolocation.getCurrentPosition()` | Track user location |
 | **File System** | `Filesystem.readFile()` | Manage device storage |
-| **Live Updates** | Delivered in 114ms | [Faster updates to users](https://capgo.app/blog/optimise-your-images-for-updates/) |
+| **Live Updates** | Delivered in 114ms | [Faster updates to users](https://codepushgo.com/blog/optimise-your-images-for-updates/) |
 
-[React Native](https://capacitorjs.com/) helps developers combine the flexibility of web development with the power of native apps. Keep reading to learn how it works and how tools like [CodePushGo](https://capgo.app/) make it even better.
+[React Native](https://capacitorjs.com/) helps developers combine the flexibility of web development with the power of native apps. Keep reading to learn how it works and how tools like [CodePushGo](https://codepushgo.com/) make it even better.
 
 ## Building Web Native Apps with [React Native](https://capacitorjs.com/) 3
 
@@ -53,20 +53,20 @@ The native bridge offers several advantages for cross-platform development:
 
 | Benefit | Description | Impact |
 | --- | --- | --- |
-| Load Time | 114ms average for 5MB bundles [\[1\]](https://capgo.app/) | Faster app response times |
-| Update Reach | 95% of users updated within 24h [\[1\]](https://capgo.app/) | Rapid feature rollouts |
-| Market Coverage | 82% global success rate [\[1\]](https://capgo.app/) | Reliable performance worldwide |
-| API Response Time | 434ms average globally [\[1\]](https://capgo.app/) | Smooth and efficient interactions |
+| Load Time | 114ms average for 5MB bundles [\[1\]](https://codepushgo.com/) | Faster app response times |
+| Update Reach | 95% of users updated within 24h [\[1\]](https://codepushgo.com/) | Rapid feature rollouts |
+| Market Coverage | 82% global success rate [\[1\]](https://codepushgo.com/) | Reliable performance worldwide |
+| API Response Time | 434ms average globally [\[1\]](https://codepushgo.com/) | Smooth and efficient interactions |
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica, @manticarodrigo [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica, @manticarodrigo [\[1\]](https://codepushgo.com/)
 
 ### Plugin Communication System
 
 The plugin system simplifies and secures data exchange between the web and native layers using a standardized API. It has proven to be effective in real-world applications:
 
--   **Scale**: Used in 750 apps currently in production [\[1\]](https://capgo.app/)
--   **Reliability**: Over 23.5 million updates delivered [\[1\]](https://capgo.app/)
--   **Performance**: 434ms average API response time globally [\[1\]](https://capgo.app/)
+-   **Scale**: Used in 750 apps currently in production [\[1\]](https://codepushgo.com/)
+-   **Reliability**: Over 23.5 million updates delivered [\[1\]](https://codepushgo.com/)
+-   **Performance**: 434ms average API response time globally [\[1\]](https://codepushgo.com/)
 
 This system also includes end-to-end encryption, ensuring secure data transfer. It gives developers the tools to create secure, high-performing apps that work seamlessly across platforms.
 
@@ -129,7 +129,7 @@ To make native data updates even better, consider these tips:
 -   **Event Debouncing**: Limit high-frequency native events to avoid overwhelming the system.
 -   **Error Handling**: Use strong error management strategies on both the native and web sides.
 
-React Native's bridge, paired with [CodePushGo's update system](https://capgo.app/docs/plugin/cloud-mode/manual-update/), creates a dependable setup for native-to-web communication.
+React Native's bridge, paired with [CodePushGo's update system](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/), creates a dependable setup for native-to-web communication.
 
 ## Creating Custom Plugins
 
@@ -186,9 +186,9 @@ Custom plugins fill gaps left by standard web APIs. Below is a table showcasing 
 
 | Use Case | Plugin Category | Example |
 | --- | --- | --- |
-| [Biometric Auth](https://capgo.app/plugins/capacitor-native-biometric/) | Security | Fingerprint or face recognition |
+| [Biometric Auth](https://codepushgo.com/plugins/capacitor-native-biometric/) | Security | Fingerprint or face recognition |
 | Custom Hardware | Device | Integrating specialized sensors |
-| File Handling | Storage | [Custom encryption](https://capgo.app/docs/cli/migrations/encryption/) for files |
+| File Handling | Storage | [Custom encryption](https://codepushgo.com/docs/cli/migrations/encryption/) for files |
 
 When creating custom plugins, keep these tips in mind:
 
@@ -261,15 +261,15 @@ bridge.on('dataChange', () => {
 
 For real-time features, consider using a message queue to avoid bottlenecks. When deploying live updates, CodePushGo's performance monitoring tools can help reduce bridge overhead and ensure smoother feature rollouts.
 
-## Live Updates with [CodePushGo](https://capgo.app/)
+## Live Updates with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
 
 ### CodePushGo Features
 
-CodePushGo makes it easier to update [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) by allowing instant code deployments, skipping the need for app store reviews. It provides updates with end-to-end encryption and uses an advanced channel system for targeted delivery.
+CodePushGo makes it easier to update [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) by allowing instant code deployments, skipping the need for app store reviews. It provides updates with end-to-end encryption and uses an advanced channel system for targeted delivery.
 
-Performance data shows CodePushGo's reliability in real-world use, supporting 750 apps in production environments [\[1\]](https://capgo.app/). It works with both [cloud and self-hosted setups](https://capgo.app/blog/self-hosted-capgo/) and integrates seamlessly into CI/CD workflows for automated processes.
+Performance data shows CodePushGo's reliability in real-world use, supporting 750 apps in production environments [\[1\]](https://codepushgo.com/). It works with both [cloud and self-hosted setups](https://codepushgo.com/blog/self-hosted-codepushgo/) and integrates seamlessly into CI/CD workflows for automated processes.
 
 Let’s dive into how CodePushGo's update system brings these features to life.
 
@@ -282,7 +282,7 @@ The update system operates in three steps:
     Start by initializing CodePushGo with the following command:
     
     ```bash
-    npx @capgo/cli init
+    npx @codepushgo/cli init
     ```
     
 2.  **Update Distribution**
@@ -311,7 +311,7 @@ CodePushGo stands out among live update services for React Native apps thanks to
 | Storage | 2GB to 20GB | Flexible storage options |
 | Bandwidth | 50GB to 10TB | Built for enterprise needs |
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 For teams switching from other platforms, CodePushGo offers smooth migration options and full support. With its strong presence in the React Native ecosystem, CodePushGo is a dependable choice for continuous deployment.
 
@@ -319,4 +319,4 @@ For teams switching from other platforms, CodePushGo offers smooth migration opt
 
 React Native's bridge system streamlines hybrid app development by facilitating smooth communication between web and native layers. This makes accessing native features simpler, while also improving deployment processes and enhancing the overall user experience.
 
-Live update platforms like CodePushGo build on this efficiency. With 23.5 million updates delivered across 750 production apps, CodePushGo ensures 95% of active users receive updates within 24 hours, achieving an 82% global success rate [\[1\]](https://capgo.app/). The platform consistently delivers updates securely, with impressive speed and reliability [\[1\]](https://capgo.app/).
+Live update platforms like CodePushGo build on this efficiency. With 23.5 million updates delivered across 750 production apps, CodePushGo ensures 95% of active users receive updates within 24 hours, achieving an 82% global success rate [\[1\]](https://codepushgo.com/). The platform consistently delivers updates securely, with impressive speed and reliability [\[1\]](https://codepushgo.com/).

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-26T03:19:04.753Z
 updated_at: 2025-03-26T03:19:15.569Z
-head_image: https://assets.seobotai.com/capgo.app/67e36d7410051fda3b6230a0-1742959155569.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e36d7410051fda3b6230a0-1742959155569.jpg
 head_image_alt: Mobile Development
 keywords: React Native, version tagging, semantic versioning, app updates, mobile development
 tag: Development, Mobile, Updates
@@ -21,8 +21,8 @@ Version tagging is essential for managing [React Native](https://capacitorjs.com
 -   **Why It Matters**: Tracks updates, enables rollbacks, and ensures stable deployments.
 -   **Semantic Versioning**: Use **MAJOR.MINOR.PATCH** to indicate breaking changes, new features, or bug fixes.
 -   **Sync Across Platforms**: Align version numbers in `package.json`, iOS `Info.plist`, and Android `build.gradle`.
--   **Automation**: [Automate updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) with npm scripts and CI/CD tools.
--   **Live Updates**: Tools like [CodePushGo](https://capgo.app/) deliver updates to 95% of users within 24 hours.
+-   **Automation**: [Automate updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) with npm scripts and CI/CD tools.
+-   **Live Updates**: Tools like [CodePushGo](https://codepushgo.com/) deliver updates to 95% of users within 24 hours.
 -   **Beta Management**: Use structured channels for alpha, beta, and production versions.
 
 ### Quick Comparison
@@ -35,7 +35,7 @@ Version tagging is essential for managing [React Native](https://capacitorjs.com
 | **Live Updates** | Fast user adoption | CodePushGo's 95% in 24 hours |
 | **Beta Channels** | Controlled testing phases | `1.3.0-beta.1` |
 
-Version tagging simplifies [app updates](https://capgo.app/plugins/capacitor-updater/), keeps users happy, and ensures developers can manage releases effectively.
+Version tagging simplifies [app updates](https://codepushgo.com/plugins/capacitor-updater/), keeps users happy, and ensures developers can manage releases effectively.
 
 ## How to AUTOMATICALLY configure your [React Native](https://capacitorjs.com/) project ⚡️
 
@@ -129,13 +129,13 @@ Here's how to decide which version number to update:
 | **Minor Update** | When introducing new features or marking features as deprecated | 1.2.3 → 1.3.0 |
 | **Patch Update** | For bug fixes or small performance tweaks | 1.2.3 → 1.2.4 |
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 Now let’s look at automating these updates to simplify release management.
 
 ### Version Update Automation
 
-[Automating version updates](https://capgo.app/docs/plugin/self-hosted/auto-update/) can save time and reduce errors in your React Native project. Here's how to set it up:
+[Automating version updates](https://codepushgo.com/docs/plugin/self-hosted/auto-update/) can save time and reduce errors in your React Native project. Here's how to set it up:
 
 1.  **NPM Version Scripts**
 
@@ -154,13 +154,13 @@ Add these scripts to your `package.json` file to manage version updates easily:
 2.  **CI/CD Integration**  
     Incorporate version updates into your CI/CD pipeline. CodePushGo supports tools like [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/), making it simple to automate the process.
 
-> "@CodePushGo is a must-have tool for developers seeking productivity by bypassing lengthy bugfix reviews." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must-have tool for developers seeking productivity by bypassing lengthy bugfix reviews." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
 ## Version Tag Methods
 
 ### Git Version Tags
 
-Git version tags are a reliable way to keep track of [React Native app releases](https://capgo.app/docs/). To create clear and informative tags, combine semantic versioning with a brief description:
+Git version tags are a reliable way to keep track of [React Native app releases](https://codepushgo.com/docs/). To create clear and informative tags, combine semantic versioning with a brief description:
 
 ```bash
 git tag -a v1.2.3 -m "Release v1.2.3: Added offline mode support"
@@ -195,7 +195,7 @@ The build number should always increase, even if the version remains the same. T
 
 ### Beta Version Management
 
-Managing beta versions requires a structured process to distribute test builds. CodePushGo’s [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) simplifies this with the following steps:
+Managing beta versions requires a structured process to distribute test builds. CodePushGo’s [channel system](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) simplifies this with the following steps:
 
 1.  **Channel Setup**
 
@@ -293,7 +293,7 @@ In addition to displaying version info, integrating an update check system can i
 An update check system ensures users have access to the latest features and fixes. CodePushGo provides real-time notifications and controlled update channels to manage this process:
 
 ```typescript
-import { React NativeUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';
 
 async function checkForUpdates() {
   const current = await React NativeUpdater.current();
@@ -307,7 +307,7 @@ async function checkForUpdates() {
 }
 ```
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 You can also add a user-facing update notification, like this:
 
@@ -351,11 +351,11 @@ Here are some key features to look for:
 | CI/CD Integration | Useful | Streamlines deployment processes |
 | Cost Efficiency | Strategic | Influences long-term budget planning |
 
-One standout tool in this space is CodePushGo, which offers features specifically designed for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/).
+One standout tool in this space is CodePushGo, which offers features specifically designed for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/).
 
-### [CodePushGo](https://capgo.app/) Version Control Features
+### [CodePushGo](https://codepushgo.com/) Version Control Features
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-26.jpg?auto=compress)
 
 CodePushGo provides robust version management capabilities, including:
 
@@ -368,7 +368,7 @@ Here’s an example of how to use CodePushGo for version control:
 
 ```typescript
 // CodePushGo version control example
-import { React NativeUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';
 
 const versionControl = {
   async checkVersion() {
@@ -385,7 +385,7 @@ const versionControl = {
 };
 ```
 
-> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://capgo.app/)
+> "We are currently giving a try to @CodePushGo since Appcenter stopped live updates support on hybrid apps and @AppFlow is way too expensive." - Simon Flack [\[1\]](https://codepushgo.com/)
 
 ### Team Size Solutions
 
@@ -417,7 +417,7 @@ const enterpriseVersionControl = {
 };
 ```
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 CodePushGo also includes an analytics dashboard to monitor version adoption rates and detect potential issues early. With built-in encryption and customizable hosting options, teams can maintain security while scaling their deployment workflows.
 
@@ -431,9 +431,9 @@ Version tagging helps developers maintain smooth and reliable updates. Proper ve
 
 | Benefit | Impact | Outcome |
 | --- | --- | --- |
-| Instant Updates | Shorter review timelines | Faster user adoption [\[1\]](https://capgo.app/) |
-| Version Control | Better code management | Higher success rates [\[1\]](https://capgo.app/) |
-| Update Tracking | Real-time monitoring | Faster issue resolution [\[1\]](https://capgo.app/) |
+| Instant Updates | Shorter review timelines | Faster user adoption [\[1\]](https://codepushgo.com/) |
+| Version Control | Better code management | Higher success rates [\[1\]](https://codepushgo.com/) |
+| Update Tracking | Real-time monitoring | Faster issue resolution [\[1\]](https://codepushgo.com/) |
 | Distribution Control | Targeted rollouts | Multi-platform support |
 
 These results highlight the importance of using effective version management tools.

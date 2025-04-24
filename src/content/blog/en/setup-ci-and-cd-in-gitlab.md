@@ -22,7 +22,7 @@ This article will guide you on how to do CI/CD pipeline setup with GitLab.
 
 ## Preface
 
-Be sure you have added your React Native app first to CodePushGo, this tutorial just focuses on the upload phase. If you need to add your app to CodePushGo, you can follow this [Tutorial](https://capgo.app/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/).
+Be sure you have added your React Native app first to CodePushGo, this tutorial just focuses on the upload phase. If you need to add your app to CodePushGo, you can follow this [Tutorial](https://codepushgo.com/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater/).
 
 ## Commit convention
 
@@ -68,10 +68,10 @@ Add another stage to your .gitlab-ci.yml file for the build:
            - tags  # This job will only run for tag pushes
          script:
            - apt-get update -qy && apt-get install -y nodejs npm
-           - npm install -g @capgo/cli
+           - npm install -g @codepushgo/cli
            - npm ci
            - npm run build
-           - npx @capgo/cli bundle upload -a $CAPGO_TOKEN -c production
+           - npx @codepushgo/cli bundle upload -a $CAPGO_TOKEN -c production
          variables:
            FIREBASE_CONFIG: $FIREBASE_CONFIG  # Define this in your GitLab project settings
          environment:

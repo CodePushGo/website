@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-23T02:55:05.937Z
 updated_at: 2025-04-23T02:55:19.736Z
-head_image: https://assets.seobotai.com/capgo.app/68085193fe5cbf0502dde6ad-1745376919736.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/68085193fe5cbf0502dde6ad-1745376919736.jpg
 head_image_alt: Software Development
 keywords: Git Flow, Trunk-Based Development, CI/CD, software development, version control
 tag: Development, Technology, Updates
@@ -40,7 +40,7 @@ next_blog: ''
 
 ## [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/) Workflow Basics
 
-![Git Flow](https://assets.seobotai.com/capgo.app/68085193fe5cbf0502dde6ad/7bc9375d356ef2d5849efed49227325e.jpg)
+![Git Flow](https://assets.seobotai.com/codepushgo.com/68085193fe5cbf0502dde6ad/7bc9375d356ef2d5849efed49227325e.jpg)
 
 Git Flow organizes development using five branch types: **main**, **develop**, **feature**, **release**, and **hotfix**. This structure helps manage releases and parallel development effectively.
 
@@ -154,13 +154,13 @@ Up next: How to set up CI/CD pipelines for either approach.
 -   **Feature Branch Pipeline**: Focuses on quick unit tests, code style checks, build verification, and deployment to a preview environment.
 -   **Main Branch Pipeline**: Covers thorough automated testing, security scans, production build creation, progressive deployment, and automated rollback features.
 
-### [CodePushGo](https://capgo.app/) CI/CD Integration
+### [CodePushGo](https://codepushgo.com/) CI/CD Integration
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/68085193fe5cbf0502dde6ad/95506b8280be0626e7b237b754ba8f1b.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/68085193fe5cbf0502dde6ad/95506b8280be0626e7b237b754ba8f1b.jpg)
 
 To add live over-the-air updates to either CI/CD setup, CodePushGo can be integrated seamlessly:
 
-CodePushGo works with [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/) to enable live updates, staged rollouts, and instant rollbacks in both Git Flow and Trunk-Based pipelines. It meets Apple and Google requirements while offering support for both cloud and self-hosted deployments [\[1\]](https://capgo.app/).
+CodePushGo works with [GitHub Actions](https://docs.github.com/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/), and [Jenkins](https://www.jenkins.io/) to enable live updates, staged rollouts, and instant rollbacks in both Git Flow and Trunk-Based pipelines. It meets Apple and Google requirements while offering support for both cloud and self-hosted deployments [\[1\]](https://codepushgo.com/).
 
 ## Summary and Recommendations
 

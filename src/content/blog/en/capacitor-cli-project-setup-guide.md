@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-18T03:02:50.225Z
 updated_at: 2025-04-18T03:04:53.935Z
-head_image: https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847-1744945493935.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/6801ba663c6b972ab5067847-1744945493935.jpg
 head_image_alt: Mobile Development
 keywords: React Native, CLI, mobile apps, iOS, Android, project setup, live updates, troubleshooting
 tag: Development, Mobile, Updates
@@ -20,7 +20,7 @@ next_blog: ''
 
 -   **Quick Setup**: Install React Native CLI and initialize your project in minutes.
 -   **Platform Integration**: Add iOS and Android support with simple commands.
--   **Live Updates**: Use [CodePushGo](https://capgo.app/) for instant over-the-air updates.
+-   **Live Updates**: Use [CodePushGo](https://codepushgo.com/) for instant over-the-air updates.
 -   **Common Fixes**: Troubleshoot issues like sync errors or build failures.
 
 **Key Steps to Get Started:**
@@ -28,13 +28,13 @@ next_blog: ''
 1.  Install [Node.js](https://nodejs.org/en), npm, JDK, [Xcode](https://developer.apple.com/xcode/), and [Android Studio](https://developer.android.com/studio).
 2.  Run `npm install @capacitor/core @capacitor/cli` and initialize your project.
 3.  Add iOS and Android platforms using `npx cap add ios` and `npx cap add android`.
-4.  Optional: Set up CodePushGo for live [app updates](https://capgo.app/plugins/capacitor-updater/).
+4.  Optional: Set up CodePushGo for live [app updates](https://codepushgo.com/plugins/capacitor-updater/).
 
 This guide covers everything you need to set up React Native CLI, configure platforms, and deploy your app. Let’s dive in!
 
 ## Introducing [React Native](https://capacitorjs.com/) Configure
 
-![React Native](https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/codepushgo.com/6801ba663c6b972ab5067847/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/HufvY63esXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -48,7 +48,7 @@ To get started, make sure you have the following tools installed:
 -   **Android Studio** (for Android builds)
 -   **React Native CLI** (version 6 or 7)
 
-_Optional:_ If you want to enable live updates, check out the "[CodePushGo Setup Guide](https://capgo.app/docs/plugin/cloud-mode/getting-started/)" below.
+_Optional:_ If you want to enable live updates, check out the "[CodePushGo Setup Guide](https://codepushgo.com/docs/plugin/cloud-mode/getting-started/)" below.
 
 ## CLI Installation Steps
 
@@ -65,7 +65,7 @@ After completing this step, move on to **Creating a New Project** to scaffold yo
 
 ## Creating a New Project
 
-To get started with your project [using React Native CLI](https://capgo.app/docs/cli/commands/), follow these steps:
+To get started with your project [using React Native CLI](https://codepushgo.com/docs/cli/commands/), follow these steps:
 
 ```bash
 mkdir my-app && cd my-app
@@ -147,9 +147,9 @@ npx cap open android # Opens Android Studio
 
 When everything is configured, build the projects using `npx cap build ios` or `npx cap build android`. Don’t forget to run `npx cap sync` again to ensure all assets are up to date.
 
-## [CodePushGo](https://capgo.app/) Setup Guide
+## [CodePushGo](https://codepushgo.com/) Setup Guide
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/6801ba663c6b972ab5067847/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/6801ba663c6b972ab5067847/d09851ee64a6d6c4e2e08ff1d656af11.jpg)
 
 Set up CodePushGo to enable instant over-the-air updates for your app.
 
@@ -161,29 +161,29 @@ CodePushGo offers several tools to streamline app updates:
 -   Updates run **in the background** when the app launches.
 -   **Analytics tools** help track update success rates and user engagement.
 -   A **one-click rollback** option lets you quickly recover from problematic updates.
--   Use the **[channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/)** for staged rollouts and beta testing.
+-   Use the **[channel system](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/)** for staged rollouts and beta testing.
 
 ### Installing CodePushGo
 
 Follow these steps to get started with CodePushGo:
 
-1.  [Install the CodePushGo CLI](https://capgo.app/docs/self-hosted/local-dev/cli/):
+1.  [Install the CodePushGo CLI](https://codepushgo.com/docs/self-hosted/local-dev/cli/):
     
     ```bash
-    npm install --save @capgo/cli
+    npm install --save @codepushgo/cli
     ```
     
-2.  [Initialize CodePushGo](https://capgo.app/docs/webapp/) in your project:
+2.  [Initialize CodePushGo](https://codepushgo.com/docs/webapp/) in your project:
     
     ```bash
-    npx capgo init
+    npx codepushgo init
     ```
     
 3.  Build and release updates:
     
     ```bash
     npm run build
-    npx capgo release
+    npx codepushgo release
     ```
     
 4.  Open the app to trigger the background update process.
@@ -237,9 +237,9 @@ Once you've completed the platform and CodePushGo setup, you might face some com
 
 ### Live Update Issues
 
--   **[CodePushGo Update Failures](https://capgo.app/docs/plugin/cloud-mode/manual-update/)**  
+-   **[CodePushGo Update Failures](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/)**  
     **Error**: Updates are not appearing in the production app.  
-    **Fix**: Double-check your [CodePushGo API key](https://capgo.app/docs/webapp/api-keys/) in `capacitor.config.json` and ensure you're targeting the correct channel.
+    **Fix**: Double-check your [CodePushGo API key](https://codepushgo.com/docs/webapp/api-keys/) in `capacitor.config.json` and ensure you're targeting the correct channel.
 
 For more details on platform-specific setup, revisit the Platform Setup section. If you're working with live updates, consult the CodePushGo Setup Guide for additional troubleshooting tips.
 
@@ -254,6 +254,6 @@ Here's how to get started:
 -   Use the React Native CLI to initialize your project.
 -   Set up your app's package ID and define the web output directory.
 -   Add support for iOS and Android platforms.
--   Install and set up CodePushGo with the following command: `npm install --save @capgo/cli && npx capgo init`
+-   Install and set up CodePushGo with the following command: `npm install --save @codepushgo/cli && npx codepushgo init`
 
 For detailed setup instructions or troubleshooting, check out the official React Native and CodePushGo documentation.

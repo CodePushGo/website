@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-18T13:36:18.163Z
 updated_at: 2025-03-18T13:36:30.097Z
-head_image: https://assets.seobotai.com/capgo.app/67d9725755129a55bd6984fe-1742304990097.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67d9725755129a55bd6984fe-1742304990097.jpg
 head_image_alt: Mobile Development
 keywords: React Native, debugging, mobile apps, performance optimization, native tools, error tracking
 tag: Development, Mobile, Updates
@@ -22,8 +22,8 @@ Debugging [React Native](https://capacitorjs.com/) apps can be complex due to th
 
 -   **Common Challenges**: Platform-specific bugs and native plugin mismatches.
 -   **Tools You Need**:
-    -   **[Web Debugging](https://capgo.app/docs/plugin/debugging/)**: [Chrome DevTools](https://developer.chrome.com/docs/devtools), [Safari Web Inspector](https://developer.apple.com/documentation/safari-developer-tools/web-inspector).
-    -   **[Native Debugging](https://capgo.app/docs/plugin/debugging/)**: [Xcode](https://developer.apple.com/xcode/) for iOS, [Android Studio](https://developer.android.com/studio) for Android.
+    -   **[Web Debugging](https://codepushgo.com/docs/plugin/debugging/)**: [Chrome DevTools](https://developer.chrome.com/docs/devtools), [Safari Web Inspector](https://developer.apple.com/documentation/safari-developer-tools/web-inspector).
+    -   **[Native Debugging](https://codepushgo.com/docs/plugin/debugging/)**: [Xcode](https://developer.apple.com/xcode/) for iOS, [Android Studio](https://developer.android.com/studio) for Android.
     -   **React Native CLI**: Commands like `npx cap doctor` and `npx cap sync`.
 -   **Debugging Steps**:
     -   Inspect web code with browser tools.
@@ -36,7 +36,7 @@ Debugging [React Native](https://capacitorjs.com/) apps can be complex due to th
 ### Quick Tips:
 
 -   **Enable Source Maps**: Debug original code instead of minified versions.
--   **Use [CodePushGo](https://capgo.app/) for Updates**: Push fixes instantly without app store delays.
+-   **Use [CodePushGo](https://codepushgo.com/) for Updates**: Push fixes instantly without app store delays.
 -   **Set Up Error Tracking**: Capture issues in real-time for faster resolutions.
 
 This guide provides everything you need to identify and fix bugs, ensuring your React Native app runs smoothly across platforms.
@@ -47,7 +47,7 @@ This guide provides everything you need to identify and fix bugs, ensuring your 
 
 ## Core Debugging Tools
 
-Debugging [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) effectively requires the right tools. Here’s a breakdown of the essential [debugging resources](https://capgo.app/docs/plugin/debugging/) every React Native developer should know.
+Debugging [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) effectively requires the right tools. Here’s a breakdown of the essential [debugging resources](https://codepushgo.com/docs/plugin/debugging/) every React Native developer should know.
 
 ### Web Debugging with Browser Tools
 
@@ -64,7 +64,7 @@ Make sure to enable source maps - this lets you debug your original code instead
 
 When working on platform-specific problems, native debugging tools provide deeper insights into app behavior.
 
-**[Xcode Debugging Tools](https://capgo.app/docs/plugin/debugging/)** (for iOS):
+**[Xcode Debugging Tools](https://codepushgo.com/docs/plugin/debugging/)** (for iOS):
 
 -   Monitor memory usage.
 -   Profile CPU performance.
@@ -112,7 +112,7 @@ This outputs detailed logs about plugin initialization and native bridge communi
 
 ### Web Code Debugging Steps
 
-To troubleshoot web components, leverage browser developer tools. These tools let you inspect elements, log messages to the console, monitor performance, and track network requests to pinpoint problems. Use source maps to trace errors back to the original code. If the issue involves native components, switch to [debugging methods](https://capgo.app/docs/plugin/debugging/) tailored to the platform.
+To troubleshoot web components, leverage browser developer tools. These tools let you inspect elements, log messages to the console, monitor performance, and track network requests to pinpoint problems. Use source maps to trace errors back to the original code. If the issue involves native components, switch to [debugging methods](https://codepushgo.com/docs/plugin/debugging/) tailored to the platform.
 
 ### Native Code Debug Steps
 
@@ -249,9 +249,9 @@ window.onerror = function(message, source, lineno, colno, error) {
 };
 ```
 
-CodePushGo's error tracking tools can help monitor update deployments and assess their impact on users [\[1\]](https://capgo.app/). This integration provides crucial insights into update performance and user engagement.
+CodePushGo's error tracking tools can help monitor update deployments and assess their impact on users [\[1\]](https://codepushgo.com/). This integration provides crucial insights into update performance and user engagement.
 
-> "Detailed analytics and error tracking" – CodePushGo [\[1\]](https://capgo.app/)
+> "Detailed analytics and error tracking" – CodePushGo [\[1\]](https://codepushgo.com/)
 
 Source maps are another important tool to simplify debugging, especially for minified code.
 
@@ -287,21 +287,21 @@ const uploadSourceMaps = async (buildId) => {
 
 If you use source maps in production, restrict access to authorized developers to maintain security while still allowing effective debugging.
 
-## Using [CodePushGo](https://capgo.app/) for Quick Updates
+## Using [CodePushGo](https://codepushgo.com/) for Quick Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
 
-Building on solid [debugging techniques](https://capgo.app/docs/plugin/debugging), tools like CodePushGo make it easier to keep your app stable by allowing instant updates. CodePushGo lets developers push updates without waiting for app store approvals, all while keeping debugging features intact.
+Building on solid [debugging techniques](https://codepushgo.com/docs/plugin/debugging), tools like CodePushGo make it easier to keep your app stable by allowing instant updates. CodePushGo lets developers push updates without waiting for app store approvals, all while keeping debugging features intact.
 
 ### CodePushGo Debug Features
 
-Fixing issues quickly is key to maintaining app quality. CodePushGo offers real-time insights into app performance, helping resolve bugs efficiently. It boasts an 82% global success rate for updates, with 95% of users receiving updates within 24 hours [\[1\]](https://capgo.app/).
+Fixing issues quickly is key to maintaining app quality. CodePushGo offers real-time insights into app performance, helping resolve bugs efficiently. It boasts an 82% global success rate for updates, with 95% of users receiving updates within 24 hours [\[1\]](https://codepushgo.com/).
 
 Here’s a look at some of its standout features:
 
 ```javascript
 // Initialize CodePushGo error tracking
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 React NativeUpdater.notifyListeners('download_failed', {
   version: '1.0.0',
@@ -328,7 +328,7 @@ These tools can be seamlessly integrated into your workflow for smooth and effic
 Getting started with CodePushGo is simple. Begin by initializing it with the following command:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 Here’s how you can make the most of it:
@@ -365,16 +365,16 @@ CodePushGo’s partial update system only downloads changed files, reducing disr
 
 ### Tools and Methods Overview
 
-Debugging effectively requires the right mix of tools and techniques. This guide covered essential methods that support a strong development workflow. Key tools include **browser developer tools**, **platform-specific debuggers**, and **[React Native CLI commands](https://capgo.app/docs/cli/commands/)**, all working together to pinpoint and fix issues quickly.
+Debugging effectively requires the right mix of tools and techniques. This guide covered essential methods that support a strong development workflow. Key tools include **browser developer tools**, **platform-specific debuggers**, and **[React Native CLI commands](https://codepushgo.com/docs/cli/commands/)**, all working together to pinpoint and fix issues quickly.
 
-Pairing good debugging practices with live updates can greatly improve app stability. For instance, apps using these workflows report a 95% user update rate within 24 hours[\[1\]](https://capgo.app/).
+Pairing good debugging practices with live updates can greatly improve app stability. For instance, apps using these workflows report a 95% user update rate within 24 hours[\[1\]](https://codepushgo.com/).
 
 | Debug Component | Primary Function | Impact |
 | --- | --- | --- |
 | **Browser Tools** | Inspect web code | Detect errors in real time |
 | **Platform Debuggers** | Analyze native code | Resolve platform-specific issues |
-| **Error Monitoring** | Track issues proactively | Achieves an 82% success rate globally[\[1\]](https://capgo.app/) |
-| **Live Updates** | Fix bugs instantly | Drives a 95% user update rate in 24 hours[\[1\]](https://capgo.app/) |
+| **Error Monitoring** | Track issues proactively | Achieves an 82% success rate globally[\[1\]](https://codepushgo.com/) |
+| **Live Updates** | Fix bugs instantly | Drives a 95% user update rate in 24 hours[\[1\]](https://codepushgo.com/) |
 
 ### Next Steps
 
@@ -385,6 +385,6 @@ You can enhance your debugging process by taking these steps:
 -   **Enable source maps** to track errors more accurately.
 -   **Integrate debugging tools** into your CI/CD pipeline for smoother workflows.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica[\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica[\[1\]](https://codepushgo.com/)
 
 Keep an eye on critical performance metrics to ensure your app runs smoothly.

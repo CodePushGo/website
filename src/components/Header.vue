@@ -51,7 +51,7 @@ const menuMobile = ref(false)
             {{ m.documentation() }}
           </a>
           <a
-            href="https://web.capgo.app/login/"
+            href="https://web.codepushgo.com/login/"
             title="Login"
             target="_blank"
             class="text-base font-medium transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
@@ -94,7 +94,7 @@ const menuMobile = ref(false)
           Documentation
         </a>
         <a
-          href="https://web.capgo.app/login/"
+          href="https://web.codepushgo.com/login/"
           target="_blank"
           :title="m.login()"
           class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"

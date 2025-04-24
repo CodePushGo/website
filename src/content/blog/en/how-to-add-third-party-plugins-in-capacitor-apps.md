@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-18T14:04:24.780Z
 updated_at: 2025-03-24T14:56:12.225Z
-head_image: https://assets.seobotai.com/capgo.app/67d977fb55129a55bd698926-1742306685762.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67d977fb55129a55bd698926-1742306685762.jpg
 head_image_alt: Mobile Development
 keywords: React Native, third-party plugins, mobile app development, plugin installation, app updates
 tag: Development, Mobile, Updates
@@ -22,18 +22,18 @@ Here’s what you’ll learn:
 
 -   **Tools you need:** [Node.js](https://nodejs.org/en), npm, React Native CLI, [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), and more.
     
--   **Skills checklist:** JavaScript/TypeScript, [mobile debugging](https://capgo.app/docs/plugin/debugging/), and [React Native API knowledge](https://capgo.app/blog/capacitor-comprehensive-guide/).
+-   **Skills checklist:** JavaScript/TypeScript, [mobile debugging](https://codepushgo.com/docs/plugin/debugging/), and [React Native API knowledge](https://codepushgo.com/blog/capacitor-comprehensive-guide/).
     
--   **Finding plugins:** Use npm, [React Native Community Hub](https://capgo.app/blog/capacitor-comprehensive-guide/), or GitHub to discover reliable options.
+-   **Finding plugins:** Use npm, [React Native Community Hub](https://codepushgo.com/blog/capacitor-comprehensive-guide/), or GitHub to discover reliable options.
     
 -   **Installing plugins:** Install via npm and sync with `npx cap sync`.
     
 -   **Configuration:** Update platform-specific files like `Info.plist` (iOS) or `AndroidManifest.xml` (Android).
     
--   [**Debugging tips**](https://capgo.app/docs/plugin/debugging/)**:** Use tools like `npx cap doctor` and verbose logging to fix issues.
+-   [**Debugging tips**](https://codepushgo.com/docs/plugin/debugging/)**:** Use tools like `npx cap doctor` and verbose logging to fix issues.
     
 
-**Pro Tip:** Tools like [CodePushGo](https://capgo.app/) make managing updates and plugin rollouts seamless, with features like encrypted updates and real-time analytics.
+**Pro Tip:** Tools like [CodePushGo](https://codepushgo.com/) make managing updates and plugin rollouts seamless, with features like encrypted updates and real-time analytics.
 
 Ready to supercharge your app? Dive in to learn the step-by-step process for integrating and managing plugins in your React Native projects.
 
@@ -89,7 +89,7 @@ Here’s what you should be comfortable with:
     
 -   Basic Android development (for Android plugins)
     
--   [Mobile app debugging techniques](https://capgo.app/docs/plugin/debugging/)
+-   [Mobile app debugging techniques](https://codepushgo.com/docs/plugin/debugging/)
     
 
 **Framework Familiarity**:
@@ -105,7 +105,7 @@ If any of these feel unfamiliar, consider brushing up before moving forward.
 
 ### Where to Find Plugins
 
-To discover [React Native plugins](https://capgo.app/plugins/), start with the npm registry. Search for keywords like **"capacitor-plugin"** or **"@capacitor/"**. The official React Native team maintains core plugins under `@capacitor/`, covering features like camera, geolocation, and storage.
+To discover [React Native plugins](https://codepushgo.com/plugins/), start with the npm registry. Search for keywords like **"capacitor-plugin"** or **"@capacitor/"**. The official React Native team maintains core plugins under `@capacitor/`, covering features like camera, geolocation, and storage.
 
 Here are additional sources you can explore:
 
@@ -169,7 +169,7 @@ Use npm to install plugins:
 npm install plugin-name
 ```
 
-For [official React Native plugins](https://capgo.app/blog/):
+For [official React Native plugins](https://codepushgo.com/blog/):
 
 ```bash
 npm install @capacitor/plugin-name
@@ -181,10 +181,10 @@ To install multiple plugins at once:
 npm install @capacitor/camera @capacitor/geolocation @capacitor/storage
 ```
 
-For [CodePushGo's live update feature](https://www.npmjs.com/package/@capgo/capacitor-updater) [\[1\]](https://capgo.app/):
+For [CodePushGo's live update feature](https://www.npmjs.com/package/@codepushgo/capacitor-updater) [\[1\]](https://codepushgo.com/):
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 Once installed, sync the plugins with your native platforms.
@@ -301,15 +301,15 @@ async function captureImage() {
 
 Test plugin functionality at every stage of deployment to ensure reliability.
 
-> "We rolled out [CodePushGo OTA updates](https://web.capgo.app/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://capgo.app/)
+> "We rolled out [CodePushGo OTA updates](https://web.codepushgo.com/resend_email) in production for our user base of +5000. We're seeing very smooth operation almost all our users are upto date within minutes of the OTA being deployed to @CodePushGo." - colenso [\[1\]](https://codepushgo.com/)
 
 | Plugin Testing Phase | Best Practice | Impact |
 | --- | --- | --- |
-| Development | Use [channel system](https://capgo.app/docs/plugin/cloud-mode/channel-system/) | Isolate testing environments |
+| Development | Use [channel system](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) | Isolate testing environments |
 | Beta Testing | Leverage error tracking | Identify platform-specific issues |
 | Production | Enable automatic updates | 95% user update rate within 24 hours |
 
-CodePushGo’s encrypted update system can simplify frequent plugin updates [\[1\]](https://capgo.app/).
+CodePushGo’s encrypted update system can simplify frequent plugin updates [\[1\]](https://codepushgo.com/).
 
 **Key Tips for Implementation**:
 
@@ -365,7 +365,7 @@ If multiple plugins require different React Native versions, check the compatibi
 }
 ```
 
-Still stuck? Move on to [debugging steps](https://capgo.app/docs/plugin/debugging/) for a deeper analysis.
+Still stuck? Move on to [debugging steps](https://codepushgo.com/docs/plugin/debugging/) for a deeper analysis.
 
 ### Debug Steps
 
@@ -406,15 +406,15 @@ For ongoing problems, check the plugin's GitHub repository for reported issues o
 
 **Pro Tip:** Use development tools specific to your platform to inspect network activity, permissions, and crash logs. These tools can save you time by helping you identify the root cause of the issue.
 
-## Using [CodePushGo](https://capgo.app/) for Updates
+## Using [CodePushGo](https://codepushgo.com/) for Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-18.jpg?auto=compress)
 
-Once you've addressed common integration issues, CodePushGo makes managing updates for your [React Native apps](https://capgo.app/top_capacitor_app/) a breeze.
+Once you've addressed common integration issues, CodePushGo makes managing updates for your [React Native apps](https://codepushgo.com/top_capacitor_app/) a breeze.
 
 ### About CodePushGo
 
-CodePushGo simplifies live management of third-party plugins in React Native apps. With **23.5 million updates delivered across 750 apps** [\[1\]](https://capgo.app/), it’s a trusted tool for handling plugins. Its features include instant deployment, partial updates, end-to-end encryption, and channel-based distribution, all designed to keep plugin delivery smooth and efficient.
+CodePushGo simplifies live management of third-party plugins in React Native apps. With **23.5 million updates delivered across 750 apps** [\[1\]](https://codepushgo.com/), it’s a trusted tool for handling plugins. Its features include instant deployment, partial updates, end-to-end encryption, and channel-based distribution, all designed to keep plugin delivery smooth and efficient.
 
 ### Plugin Management with CodePushGo
 
@@ -422,8 +422,8 @@ Here’s what CodePushGo brings to the table:
 
 | Feature | What It Does | Key Metric |
 | --- | --- | --- |
-| **Background Updates** | Installs updates silently, no user action needed | 95% of active users updated within 24 hours [\[1\]](https://capgo.app/) |
-| **Version Control** | Allows one-click rollbacks | 82% rollback success rate globally [\[1\]](https://capgo.app/) |
+| **Background Updates** | Installs updates silently, no user action needed | 95% of active users updated within 24 hours [\[1\]](https://codepushgo.com/) |
+| **Version Control** | Allows one-click rollbacks | 82% rollback success rate globally [\[1\]](https://codepushgo.com/) |
 | **Analytics Dashboard** | Tracks update performance in real time | Helps identify and resolve issues quickly |
 
 CodePushGo integrates effortlessly into your React Native workflow, ensuring secure and continuous updates. It works with tools like **GitHub Actions, GitLab CI, and** [**Jenkins**](https://www.jenkins.io/), automating plugin updates and deployments to save time and reduce manual effort.
@@ -441,10 +441,10 @@ Here’s a breakdown of the integration process into key phases:
 | **Pre-Integration** | Research plugin compatibility and user reviews | Identifies potential challenges early |
 | **Installation** | Install plugins using npm and run React Native sync | Ensures smooth integration across platforms |
 | **Configuration** | Handle platform-specific setup requirements | Optimizes plugin performance |
-| **Maintenance** | Use [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) with CodePushGo | 95% of users updated within 24 hours[\[1\]](https://capgo.app/) |
+| **Maintenance** | Use [automated updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) with CodePushGo | 95% of users updated within 24 hours[\[1\]](https://codepushgo.com/) |
 
 CodePushGo offers tools to streamline updates. Rodrigo Mantica highlights its importance:
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"[\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!"[\[1\]](https://codepushgo.com/)
 
-For enterprise applications, CodePushGo’s channel system enables staged rollouts effectively. With an 82% global update success rate[\[1\]](https://capgo.app/) and advanced error tracking, CodePushGo ensures a dependable update process. NASA’s OSIRIS-REx team is a great example of how a strong update pipeline can make a difference[\[1\]](https://capgo.app/).
+For enterprise applications, CodePushGo’s channel system enables staged rollouts effectively. With an 82% global update success rate[\[1\]](https://codepushgo.com/) and advanced error tracking, CodePushGo ensures a dependable update process. NASA’s OSIRIS-REx team is a great example of how a strong update pipeline can make a difference[\[1\]](https://codepushgo.com/).

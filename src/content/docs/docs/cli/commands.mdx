@@ -18,7 +18,7 @@ All command should be run in your app folder with capacitor project ignited prop
 
 ### **Init**
 
-`npx @capgo/cli@latest init [apikey]`
+`npx @codepushgo/cli@latest init [apikey]`
 
 This method is here to onboard you step by step.
 
@@ -26,7 +26,7 @@ It will add your app to CodePushGo. It will add the code to your app to validate
 
 ### **Login**
 
-`npx @capgo/cli login [apikey]`
+`npx @codepushgo/cli login [apikey]`
 
 This method is here to remember the `apikey` for you.
 
@@ -40,7 +40,7 @@ use `--apikey=********` in any command to override it
 
 ## **Doctor**
 
-`npx @capgo/cli doctor`
+`npx @codepushgo/cli doctor`
 
 Command to check if you are up-to-date with CodePushGo packages.
 
@@ -50,7 +50,7 @@ This command will also be useful for bug report.
 
 ### **Add**
 
-`npx @capgo/cli app add [appId]`
+`npx @codepushgo/cli app add [appId]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -75,7 +75,7 @@ Example of `capacitor.config.json` for appId and AppName, the icon is guess in t
 
 ### **Set**
 
-`npx @capgo/cli app set [appId]`
+`npx @codepushgo/cli app set [appId]`
 
 `[appId]` is your app ID, the format is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -88,7 +88,7 @@ Optionally, you can give:
 
 ### **List**
 
-`npx @capgo/cli app list [appId]`
+`npx @codepushgo/cli app list [appId]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -98,7 +98,7 @@ Optionally, you can give:
 
 ### **Delete**
 
-`npx @capgo/cli app delete [appId]`
+`npx @codepushgo/cli app delete [appId]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -109,7 +109,7 @@ Optionally, you can give:
 
 ### Debug
 
-`npx @capgo/cli app debug [appId]`
+`npx @codepushgo/cli app debug [appId]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -120,7 +120,7 @@ Optionally, you can give:
 
 ### Setting
 
-`npx @capgo/cli app setting [path]`
+`npx @codepushgo/cli app setting [path]`
 
 Edit the React Native config.
 
@@ -137,7 +137,7 @@ Options:
 
 ### Upload
 
-`npx @capgo/cli bundle upload [appId]`
+`npx @codepushgo/cli bundle upload [appId]`
 
 `[appId]` is your app ID, the format is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -197,7 +197,7 @@ Example of `package.json` for version
 
 ### **List**
 
-`npx @capgo/cli bundle list [appId]`
+`npx @codepushgo/cli bundle list [appId]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -207,7 +207,7 @@ Optionally, you can give:
 
 ### **Delete**
 
-`npx @capgo/cli bundle delete [appId]`
+`npx @codepushgo/cli bundle delete [appId]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -220,7 +220,7 @@ Optionally, you can give:
 
 in a SemVer range for a major version to Cloud
 
-`npx @capgo/cli bundle cleanup [appId] --bundle=[majorVersion] --keep=[numberToKeep]`
+`npx @codepushgo/cli bundle cleanup [appId] --bundle=[majorVersion] --keep=[numberToKeep]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -230,9 +230,9 @@ Optionally, you can give:
 * `--bundle [majorVersion]` a version you wish to remove previous packages for, it will keep the last one + `numberToKeep`.
 * `--keep [numberToKeep]` the number of packages you wish to keep (default 4).
 
-For example: If you have 10 versions from 10.0.1 to 10.0.11, and you use `npx @capgo/cli cleanup [appId] --bundle=10.0.0` it will remove 10.0.1 to 10.0.6. 10.0.7 until 10.0.11 will be kept.
+For example: If you have 10 versions from 10.0.1 to 10.0.11, and you use `npx @codepushgo/cli cleanup [appId] --bundle=10.0.0` it will remove 10.0.1 to 10.0.6. 10.0.7 until 10.0.11 will be kept.
 
-If you have 20 versions in total, and you don't provide a bundle number like this: `npx @capgo/cli cleanup [appId] --keep=2` It will remove 18 versions, and keep the last 2.
+If you have 20 versions in total, and you don't provide a bundle number like this: `npx @codepushgo/cli cleanup [appId] --keep=2` It will remove 18 versions, and keep the last 2.
 
 > This command will ask for confirmation, it shows a table of what it will be keeping and removing.
 
@@ -243,7 +243,7 @@ This command will ignore bundles which are currently in use in any channel.
 ### **Encrypt**
 
 > **Warning**: This command is deprecated and will be removed in the next major release. Please use the new encryption system.
-`npx @capgo/cli bundle encrypt [path/to/zip]`
+`npx @codepushgo/cli bundle encrypt [path/to/zip]`
 
 This command is used when you use external source to store your code or for test purpose. 
 
@@ -255,7 +255,7 @@ The command will print your `ivSessionKey`y and generate an encrypted zip, to us
 
 ### **Encrypt V2**
 
-`npx @capgo/cli bundle encrypt [path/to/zip] [checksum]`
+`npx @codepushgo/cli bundle encrypt [path/to/zip] [checksum]`
 
 This command is used when you use external source to store your code or for test purpose. 
 The checksum is the sha256 of the bundle (generated by --key-v2), it is used to verify the integrity of the file after decryption.
@@ -271,7 +271,7 @@ The command will print your `ivSessionKey`y and generate an encrypted zip, to us
 
 ### **Decrypt**
 
-`npx @capgo/cli bundle decrypt [path/to/zip] [ivSessionKey]`
+`npx @codepushgo/cli bundle decrypt [path/to/zip] [ivSessionKey]`
 
 Optionally, you can give:
 
@@ -281,7 +281,7 @@ Optionally, you can give:
 
 ### **Decrypt V2**
 
-`npx @capgo/cli bundle decryptV2 [path/to/zip]  [ivSessionKey]`
+`npx @codepushgo/cli bundle decryptV2 [path/to/zip]  [ivSessionKey]`
 
 Optionally, you can give:
 
@@ -291,7 +291,7 @@ Optionally, you can give:
 
 ### **Zip**
 
-`npx @capgo/cli bundle zip [appId]`
+`npx @codepushgo/cli bundle zip [appId]`
 
 `[appId]` is your app ID, the format is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -306,7 +306,7 @@ Optionally, you can give:
   
 ### **Compatibility** 
 
-`npx @capgo/cli bundle compatibility [appId] -c [channelId]`
+`npx @codepushgo/cli bundle compatibility [appId] -c [channelId]`
 
 `[appId]` is your app ID, the format is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 `[channelId]` the name of your new channel.
@@ -323,19 +323,19 @@ Optionally, you can give:
 
 ### **Add**
 
-`npx @capgo/cli channel add [channelId] [appId]`
+`npx @codepushgo/cli channel add [channelId] [appId]`
 
 `[channelId]` the name of your new channel. `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
 ### **Delete**
 
-`npx @capgo/cli channel delete [channelId] [appId]`
+`npx @codepushgo/cli channel delete [channelId] [appId]`
 
 `[channelId]` the name of your channel you want to delete. `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
 ### **List**
 
-`npx @capgo/cli channel list [appId]`
+`npx @codepushgo/cli channel list [appId]`
 
 `[appId]` your app ID the format `com.test.app` is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -345,7 +345,7 @@ Optionally, you can give:
 
 ### **Set**
 
-`npx @capgo/cli channel set [channelId] [appId]`
+`npx @codepushgo/cli channel set [channelId] [appId]`
 
 `[appId]` is your app ID, the format is explained [here](https://capacitorjs.com/docs/cli/commands/init/).
 
@@ -377,7 +377,7 @@ First, the `major` strategy. It prevents an update from `0.0.0` -> `1.0.0`. The 
 Second is the `minor` strategy. It prevents an update from `0.0.0` -> `1.1.0` or an update from `1.1.0` to `1.2.0`. 
 **BE AWARE** this strategy does not prevent an update from `0.1.0` -> `1.1.0`
 
-Third, the `patch` strategy. It was added into capgo as a very strict mode. It's not recomended to be used unless you fully understand how it works.
+Third, the `patch` strategy. It was added into codepushgo as a very strict mode. It's not recomended to be used unless you fully understand how it works.
 In order for it to accept a update the following conditions must be meet:
  - The major is the same between the new and the old version
  - The minor is the same between the new and the old version
@@ -441,7 +441,7 @@ Ecryption schema
 
 ### Create key for your app
 
-`npx @capgo/cli key create`
+`npx @codepushgo/cli key create`
 
 Optionally, you can give: `--force` to overwrite the existing key. This command will create for you a key pair in your app, and will ask you to save the private key in a safe place. It's recommended to not git commit the private key, and to not share it with anyone.
 
@@ -449,7 +449,7 @@ Optionally, you can give: `--force` to overwrite the existing key. This command 
 
 ### Save key in your app config
 
-`npx @capgo/cli key save`
+`npx @codepushgo/cli key save`
 
 Optionally, you can give:
 
@@ -461,7 +461,7 @@ Optionally, you can give:
 
 To automate your work, I recommend you make GitHub action do the job of pushing to our server
 
-[GitHub action tutorial](https://capgo.app/blog/automatic-build-and-release-with-github-actions/)
+[GitHub action tutorial](https://codepushgo.com/blog/automatic-build-and-release-with-github-actions/)
 
 ## Our demo app
 

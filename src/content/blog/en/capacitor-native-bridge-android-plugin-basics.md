@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-29T02:39:06.030Z
 updated_at: 2025-03-29T02:39:17.623Z
-head_image: https://assets.seobotai.com/capgo.app/67e73f80283d21cbd679794c-1743215957623.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e73f80283d21cbd679794c-1743215957623.jpg
 head_image_alt: Mobile Development
 keywords: React Native, Android plugins, development, Java, mobile development, Gradle, plugin testing
 tag: Development, Mobile, Updates
@@ -19,10 +19,10 @@ next_blog: ''
 [React Native](https://capacitorjs.com/) Native Bridge simplifies building Android plugins by connecting JavaScript and native Android code. Here's what you need to know:
 
 -   **What It Does**: Acts as a two-way bridge for web apps to access native Android features like the camera or sensors.
--   **Why Use It**: Combines web technologies with [native performance](https://capgo.app/plugins/native-audio/), making plugin development straightforward.
+-   **Why Use It**: Combines web technologies with [native performance](https://codepushgo.com/plugins/native-audio/), making plugin development straightforward.
 -   **Setup Essentials**: Requires [Node.js](https://nodejs.org/en), JDK 11+, [Android Studio](https://developer.android.com/studio), and React Native CLI. Ensure proper environment variables and [Gradle](https://gradle.org/) configurations.
 -   **How to Start**: Use `npm init @capacitor/plugin` to scaffold a plugin, define methods in Java, and test using Android Studio or real devices.
--   **[CodePushGo](https://capgo.app/) Integration**: Enables live updates, rollbacks, and analytics for seamless plugin deployment.
+-   **[CodePushGo](https://codepushgo.com/) Integration**: Enables live updates, rollbacks, and analytics for seamless plugin deployment.
 
 ### Quick Setup Checklist:
 
@@ -39,7 +39,7 @@ React Native bridges the gap between web and native Android, offering developers
 
 ## Setup and Installation
 
-To start developing a [React Native Android plugin](https://capgo.app/plugins/ivs-player/), you’ll need to set up your environment carefully. Here’s how to get everything ready.
+To start developing a [React Native Android plugin](https://codepushgo.com/plugins/ivs-player/), you’ll need to set up your environment carefully. Here’s how to get everything ready.
 
 ### Required Tools Setup
 
@@ -62,7 +62,7 @@ Double-check that your environment variables are set up correctly to avoid compa
 
 ### [Android Studio](https://developer.android.com/studio) Project Setup
 
-![Android Studio](https://assets.seobotai.com/capgo.app/67e73f80283d21cbd679794c/37b29b854cd53ac189541dfdcf7a9a26.jpg)
+![Android Studio](https://assets.seobotai.com/codepushgo.com/67e73f80283d21cbd679794c/37b29b854cd53ac189541dfdcf7a9a26.jpg)
 
 Set up your Android Studio project with these steps:
 
@@ -119,7 +119,7 @@ Here’s a quick reference for the minimum and recommended versions of key compo
 
 ### Optimize [Gradle](https://gradle.org/) Settings
 
-![Gradle](https://assets.seobotai.com/capgo.app/67e73f80283d21cbd679794c/ea42b2d6446e3f23d9417eaa9ba23d71.jpg)
+![Gradle](https://assets.seobotai.com/codepushgo.com/67e73f80283d21cbd679794c/ea42b2d6446e3f23d9417eaa9ba23d71.jpg)
 
 To improve performance and compatibility, update your `gradle.properties` file with these settings:
 
@@ -251,7 +251,7 @@ public class MainActivity extends BridgeActivity {
 
 ### Testing Your Plugin
 
-Use Android Studio's [debugging tools](https://capgo.app/docs/plugin/debugging/) to test each method thoroughly. Ensure that your methods are focused on specific tasks to keep the code clean and easy to maintain. Once debugging is complete, test your plugin on actual Android devices to confirm everything works as expected.
+Use Android Studio's [debugging tools](https://codepushgo.com/docs/plugin/debugging/) to test each method thoroughly. Ensure that your methods are focused on specific tasks to keep the code clean and easy to maintain. Once debugging is complete, test your plugin on actual Android devices to confirm everything works as expected.
 
 ## Plugin Testing Guide
 
@@ -301,7 +301,7 @@ Leverage the CPU Profiler to pinpoint performance bottlenecks. Best practices in
 
 ### Streamlining Live Testing and Updates
 
-[CodePushGo tools](https://capgo.app/docs/cli/commands) can simplify live testing and updates. Use these examples to enhance your workflow:
+[CodePushGo tools](https://codepushgo.com/docs/cli/commands) can simplify live testing and updates. Use these examples to enhance your workflow:
 
 -   **Initialize error tracking**:
     
@@ -439,11 +439,11 @@ private void handleRollback() {
 }
 ```
 
-CodePushGo’s error tracking and rollback tools can help you recover quickly from failures [\[1\]](https://capgo.app/).
+CodePushGo’s error tracking and rollback tools can help you recover quickly from failures [\[1\]](https://codepushgo.com/).
 
-## [CodePushGo](https://capgo.app/) Integration Guide
+## [CodePushGo](https://codepushgo.com/) Integration Guide
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67e73f80283d21cbd679794c/62c1b4dece964ef24ef070504a9b15e5.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67e73f80283d21cbd679794c/62c1b4dece964ef24ef070504a9b15e5.jpg)
 
 Based on our live testing results, integrating CodePushGo helps streamline update deployment.
 
@@ -455,7 +455,7 @@ CodePushGo provides essential tools for managing live updates, ensuring smooth p
 | --- | --- |
 | End-to-End Encryption | Ensures secure delivery of updates |
 | Partial Updates | Downloads only modified components |
-| [Channel System](https://capgo.app/docs/plugin/cloud-mode/channel-system/) | Enables targeted staged rollouts |
+| [Channel System](https://codepushgo.com/docs/plugin/cloud-mode/channel-system/) | Enables targeted staged rollouts |
 | Real-time Analytics | Monitors update performance |
 | One-click Rollback | Quick recovery in case of issues |
 | CI/CD Integration | Compatible with GitHub Actions, GitLab CI, and Jenkins |
@@ -465,7 +465,7 @@ CodePushGo provides essential tools for managing live updates, ensuring smooth p
 To get started with CodePushGo, run the following command:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 Add the plugin to your build process. CodePushGo automatically handles updates in the background, using its built-in analytics and rollback features.
@@ -474,13 +474,13 @@ You can use the channel system to manage rollouts for production, beta, and deve
 
 CodePushGo supports React Native versions 6 and 7.
 
-> We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users! [\[1\]](https://capgo.app/)
+> We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users! [\[1\]](https://codepushgo.com/)
 
 ## Summary
 
-React Native Native Bridge boosts Android plugins with powerful native features and streamlined development. This approach delivers strong results, including 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/).
+React Native Native Bridge boosts Android plugins with powerful native features and streamlined development. This approach delivers strong results, including 23.5 million updates across 750 production apps [\[1\]](https://codepushgo.com/).
 
-The platform's performance metrics highlight its effectiveness: an 82% global success rate for update deployments, an average download time of 114 ms for a 5 MB bundle via a global CDN, and 95% of active users receiving updates within 24 hours [\[1\]](https://capgo.app/).
+The platform's performance metrics highlight its effectiveness: an 82% global success rate for update deployments, an average download time of 114 ms for a 5 MB bundle via a global CDN, and 95% of active users receiving updates within 24 hours [\[1\]](https://codepushgo.com/).
 
 To achieve these results, following key practices is crucial:
 
@@ -491,6 +491,6 @@ To achieve these results, following key practices is crucial:
 | Monitor Analytics | Evaluate performance and user adoption |
 | Enable Auto-rollback | Recover swiftly from potential issues |
 
-Developers have praised these tools. Bessie Cooper shared, _"CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden."_ [\[1\]](https://capgo.app/)
+Developers have praised these tools. Bessie Cooper shared, _"CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden."_ [\[1\]](https://codepushgo.com/)
 
 Features like error tracking, performance monitoring, end-to-end encryption, and seamless CI/CD integration contribute to high update success rates and smooth performance. Together, these tools combine native functionality with fast, reliable updates, showcasing the platform's strengths.

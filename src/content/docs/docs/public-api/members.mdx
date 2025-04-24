@@ -34,7 +34,7 @@ Organization members are users who have access to your CodePushGo organization. 
 
 ### POST
 
-`https://api.capgo.app/organization/members/`
+`https://api.codepushgo.com/organization/members/`
 
 Add a new member to an organization or update an existing member's role. Note that you can only invite users who already have a CodePushGo account - the email must correspond to an existing CodePushGo user.
 
@@ -59,7 +59,7 @@ curl -X POST \
     "email": "newmember@example.com",
     "role": "write"
   }' \
-  https://api.capgo.app/organization/members/
+  https://api.codepushgo.com/organization/members/
 ```
 
 #### Success Response
@@ -78,11 +78,11 @@ curl -X POST \
 
 Notes: 
 - When adding a new member, they will receive an invitation email. Their role will be prefixed with "invite_" until they accept the invitation.
-- The user must already have a CodePushGo account before they can be invited. If they don't have an account, they should first create one at https://web.capgo.app/register/
+- The user must already have a CodePushGo account before they can be invited. If they don't have an account, they should first create one at https://web.codepushgo.com/register/
 
 ### GET 
 
-`https://api.capgo.app/organization/members/`
+`https://api.codepushgo.com/organization/members/`
 
 Retrieve all members of an organization.
 
@@ -109,7 +109,7 @@ interface Member {
 
 ```bash
 curl -H "authorization: your-api-key" \
-  "https://api.capgo.app/organization/members/?orgId=org_123"
+  "https://api.codepushgo.com/organization/members/?orgId=org_123"
 ```
 
 #### Example Response
@@ -141,7 +141,7 @@ curl -H "authorization: your-api-key" \
 
 ### DELETE
 
-`https://api.capgo.app/organization/members/`
+`https://api.codepushgo.com/organization/members/`
 
 Remove a member from an organization. This will immediately revoke their access.
 
@@ -164,7 +164,7 @@ curl -X DELETE \
     "orgId": "org_123",
     "email": "user@example.com"
   }' \
-  https://api.capgo.app/organization/members/
+  https://api.codepushgo.com/organization/members/
 ```
 
 #### Success Response

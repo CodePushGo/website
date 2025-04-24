@@ -39,7 +39,7 @@ To enable differential updates for your CodePushGo app, simply use the `--partia
 If you want to ensure that all uploads are differential updates and prevent any accidental full bundle uploads, you can use the `--partial-only` flag:
 
 ```shell
-npx @capgo/cli@latest bundle upload --partial-only
+npx @codepushgo/cli@latest bundle upload --partial-only
 ```
 
 When `--partial-only` is used, CodePushGo will only upload individual files and generate a manifest. Any device who do not support partial will not be able to download the update.
@@ -63,7 +63,7 @@ If differential updates don't seem to be working (i.e. devices are always downlo
 
 You can also use the CodePushGo webapp to check the details of your last upload:
 <Steps>
-1. Go to the [webapp](https://app.capgo.io)
+1. Go to the [webapp](https://app.codepushgo.io)
 2. Click on your app
 3. Click on the bunldes number of the stats bar.
 4. Select the last bundle

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-03T02:41:08.008Z
 updated_at: 2025-04-03T02:41:23.390Z
-head_image: https://assets.seobotai.com/capgo.app/67eddf34ebbb9dc806408915-1743648083390.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67eddf34ebbb9dc806408915-1743648083390.jpg
 head_image_alt: Mobile Development
 keywords: encryption, key management, China, compliance, data residency, encryption standards, audits, government oversight
 tag: Development, Security, Updates
@@ -25,7 +25,7 @@ next_blog: ''
     -   Technical limits restrict algorithms, key lengths, and protocols.
 -   **Solutions**:
     -   Choose between on-premises, hybrid cloud, managed services, or self-hosted setups.
-    -   Use tools like [CodePushGo](https://capgo.app/) for local hosting, end-to-end encryption, and compliance automation.
+    -   Use tools like [CodePushGo](https://codepushgo.com/) for local hosting, end-to-end encryption, and compliance automation.
 -   **Tips**:
     -   Regularly check compliance.
     -   Collaborate with local experts.
@@ -76,7 +76,7 @@ These requirements not only increase operational costs but also demand advanced 
 
 ### Technical Limits
 
-On top of storage and oversight, technical restrictions create additional obstacles for [encryption practices](https://capgo.app/docs/cli/migrations/encryption/). Developers must navigate:
+On top of storage and oversight, technical restrictions create additional obstacles for [encryption practices](https://codepushgo.com/docs/cli/migrations/encryption/). Developers must navigate:
 
 -   **Approved Algorithms**: Only government-certified encryption methods can be used.
 -   **Key Length Restrictions**: Maximum key lengths are strictly regulated.
@@ -88,11 +88,11 @@ These constraints can make it difficult to implement secure features, particular
 
 ### Local Storage and Compliance
 
-China's regulations demand that key management systems ensure data sovereignty through compliant self-hosting. CodePushGo's [self-hosting option](https://capgo.app/blog/self-hosted-capgo/) keeps all data within mainland China, offering a secure approach to managing encryption keys in line with these rules. This setup lays the groundwork for meeting encryption standards effectively.
+China's regulations demand that key management systems ensure data sovereignty through compliant self-hosting. CodePushGo's [self-hosting option](https://codepushgo.com/blog/self-hosted-codepushgo/) keeps all data within mainland China, offering a secure approach to managing encryption keys in line with these rules. This setup lays the groundwork for meeting encryption standards effectively.
 
 ### Update Systems and Encryption Security
 
-China's encryption laws require [app updates](https://capgo.app/plugins/capacitor-updater/) to be handled through approved platforms. CodePushGo addresses this by using end-to-end encryption, ensuring that only authorized users can decrypt data. Its CI/CD integration simplifies the process by automating compliance checks, while built-in version control offers detailed audit trails to monitor encryption changes.
+China's encryption laws require [app updates](https://codepushgo.com/plugins/capacitor-updater/) to be handled through approved platforms. CodePushGo addresses this by using end-to-end encryption, ensuring that only authorized users can decrypt data. Its CI/CD integration simplifies the process by automating compliance checks, while built-in version control offers detailed audit trails to monitor encryption changes.
 
 ## Key Management Methods
 
@@ -125,9 +125,9 @@ Navigating China's encryption requirements can be challenging. Partnering with l
 
 ### Choosing Compliant Tools
 
-Using tools that meet China's encryption requirements is key to maintaining security without sacrificing efficiency. For example, CodePushGo supports app updates with end-to-end encryption and local hosting options [\[1\]](https://capgo.app/). This aligns with earlier strategies for managing updates. When selecting tools, focus on features like [local data storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/), approved encryption methods, detailed audit trails, and strong access controls. Data shows that developers using tools like CodePushGo have achieved a 95% active user update rate within 24 hours while staying compliant [\[1\]](https://capgo.app/).
+Using tools that meet China's encryption requirements is key to maintaining security without sacrificing efficiency. For example, CodePushGo supports app updates with end-to-end encryption and local hosting options [\[1\]](https://codepushgo.com/). This aligns with earlier strategies for managing updates. When selecting tools, focus on features like [local data storage](https://codepushgo.com/plugins/capacitor-data-storage-sqlite/), approved encryption methods, detailed audit trails, and strong access controls. Data shows that developers using tools like CodePushGo have achieved a 95% active user update rate within 24 hours while staying compliant [\[1\]](https://codepushgo.com/).
 
-> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
 ## Summary
 
@@ -137,4 +137,4 @@ Since [Microsoft CodePush](https://microsoft.github.io/code-push/)'s shutdown in
 
 To stay compliant with China's encryption laws while maintaining development speed, it's crucial to use the right tools, keep documentation up to date, conduct regular audits, and collaborate with experts. These steps are key to navigating China's complex regulatory environment effectively.
 
-> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding review for bug fixes is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)

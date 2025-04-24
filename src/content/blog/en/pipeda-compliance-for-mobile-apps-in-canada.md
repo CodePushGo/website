@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-01T03:38:09.282Z
 updated_at: 2025-04-01T03:38:20.916Z
-head_image: https://assets.seobotai.com/capgo.app/67eb5b27283d21cbd67d62bd-1743478700916.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67eb5b27283d21cbd67d62bd-1743478700916.jpg
 head_image_alt: Mobile Development
 keywords: PIPEDA, mobile app compliance, data privacy, user consent, data protection, privacy policy, Canadian privacy laws, security measures
 tag: Development, Mobile, Security
@@ -29,7 +29,7 @@ next_blog: ''
 
 ## [PIPEDA](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/): Your Guide to Data Privacy in Canada
 
-![PIPEDA](https://assets.seobotai.com/capgo.app/67eb5b27283d21cbd67d62bd/058da1c33c3afe5c8597c27b588d4b3e.jpg)
+![PIPEDA](https://assets.seobotai.com/codepushgo.com/67eb5b27283d21cbd67d62bd/058da1c33c3afe5c8597c27b588d4b3e.jpg)
 
 <iframe src="https://www.youtube.com/embed/87Vb-jnTtxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -59,7 +59,7 @@ Under PIPEDA, apps must secure clear and informed consent before collecting pers
 -   **Timing**: Obtain consent before or at the time of data collection.
 -   **Plain Language**: Use simple, easy-to-understand terms.
 -   **Essential Information**: Make key privacy details readily available.
--   **Detailed Explanations**: Provide additional privacy information through resources like FAQs or [privacy policies](https://capgo.app/dp/).
+-   **Detailed Explanations**: Provide additional privacy information through resources like FAQs or [privacy policies](https://codepushgo.com/dp/).
 
 For sensitive data, such as health or financial details, explicit consent is mandatory.
 
@@ -69,8 +69,8 @@ Strong security and data quality practices are a must to protect user informatio
 
 | Security Requirement | Implementation Example |
 | --- | --- |
-| [Data Encryption](https://capgo.app/docs/cli/migrations/encryption/) | Use end-to-end encryption for data transfers |
-| Access Controls | Apply [multi-factor authentication](https://capgo.app/docs/webapp/mfa/) for admin access |
+| [Data Encryption](https://codepushgo.com/docs/cli/migrations/encryption/) | Use end-to-end encryption for data transfers |
+| Access Controls | Apply [multi-factor authentication](https://codepushgo.com/docs/webapp/mfa/) for admin access |
 | Regular Updates | Release timely security patches and conduct vulnerability checks |
 | Data Accuracy | Provide tools for users to review and update their information |
 | Breach Detection | Implement real-time monitoring and alert systems |
@@ -86,12 +86,12 @@ Start with a privacy risk assessment to identify potential weaknesses in how dat
 | Assessment Area | Key Considerations | Required Actions |
 | --- | --- | --- |
 | Data Collection | Types of personal information gathered | Document data types and their purposes |
-| [Data Storage](https://capgo.app/plugins/capacitor-data-storage-sqlite/) | Location and security of stored data | Use encryption protocols |
+| [Data Storage](https://codepushgo.com/plugins/capacitor-data-storage-sqlite/) | Location and security of stored data | Use encryption protocols |
 | Data Sharing | Third-party services and APIs | Verify partner compliance |
 | User Controls | Access to personal information | Develop tools for user data management |
 | Security Measures | Protection against breaches | Set up monitoring systems |
 
-Use analytics to keep risks under review. Once this is done, create a clear [privacy policy](https://capgo.app/privacy/) for your app.
+Use analytics to keep risks under review. Once this is done, create a clear [privacy policy](https://codepushgo.com/privacy/) for your app.
 
 ### Writing Clear Privacy Policies
 
@@ -115,7 +115,7 @@ Once your privacy policy is finalized, incorporate these standards into your dev
 
 Building on the risk assessment and privacy policy, focus on integrating privacy into every stage of app development. Here's how:
 
-**[Secure Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update)**
+**[Secure Update Management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update)**
 
 -   Enable instant rollbacks to address any privacy issues quickly.
 -   Use controlled channels for testing new features.
@@ -127,7 +127,7 @@ Building on the risk assessment and privacy policy, focus on integrating privacy
 -   Schedule regular security audits.
 -   Monitor the success of updates to ensure smooth implementation.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 **Error Prevention**
 
@@ -193,9 +193,9 @@ Proper data storage and removal processes are key to staying compliant.
 -   Archive inactive data securely.
 -   Destroy data beyond the retention period in a secure and documented way.
 
-## [CodePushGo](https://capgo.app/)'s PIPEDA-Ready Updates
+## [CodePushGo](https://codepushgo.com/)'s PIPEDA-Ready Updates
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67eb5b27283d21cbd67d62bd/574f3a2cd27791454624262312a6c223.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67eb5b27283d21cbd67d62bd/574f3a2cd27791454624262312a6c223.jpg)
 
 ### Secure Update Features
 
@@ -206,19 +206,19 @@ CodePushGo uses a fully encrypted update management system designed to align wit
 -   Granular access control settings
 -   Protected rollback options
 
-> "The only solution with true end-to-end encryption, others just sign updates" [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" [\[1\]](https://codepushgo.com/)
 
 This setup ensures updates are delivered quickly while maintaining compliance with strict security standards.
 
 ### Quick App Updates
 
-CodePushGo combines strong security with fast update delivery to meet regulatory needs. Impressively, 95% of active users receive updates within 24 hours. To date, 23.5 million updates have been rolled out across 750 production apps [\[1\]](https://capgo.app/).
+CodePushGo combines strong security with fast update delivery to meet regulatory needs. Impressively, 95% of active users receive updates within 24 hours. To date, 23.5 million updates have been rolled out across 750 production apps [\[1\]](https://codepushgo.com/).
 
 The platform also provides real-time monitoring, instant deployment of security patches, and flexible hosting options to address data sovereignty concerns.
 
 ### Open-Source Benefits
 
-CodePushGo is entirely open source, allowing teams to avoid vendor lock-in and verify the platform's compliance capabilities [\[1\]](https://capgo.app/).
+CodePushGo is entirely open source, allowing teams to avoid vendor lock-in and verify the platform's compliance capabilities [\[1\]](https://codepushgo.com/).
 
 With this transparency, teams can:
 
@@ -280,7 +280,7 @@ Following PIPEDA guidelines for mobile apps builds trust and encourages user eng
 
 These benefits are evident in user feedback. CodePushGo's contributions highlight the value of compliance:
 
-> "The community needed this and @CodePushGo is doing something really important!" [\[1\]](https://capgo.app/)
+> "The community needed this and @CodePushGo is doing something really important!" [\[1\]](https://codepushgo.com/)
 
 > "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." \[2\]
 

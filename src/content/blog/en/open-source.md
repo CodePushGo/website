@@ -137,10 +137,10 @@ As you know, open-source technologies have multiple advantages. They are availab
 
 These are all principles we adhere to in CodePushGo! We're an open source live update system for React Native apps whose mission is to live update the React Native apps. We allows you to deploy updates to your users without the need to re-install the app. We're a cloud-based service, but you can also self-host it.
 
-Why not try it for yourself? [Try our free version](https://web.capgo.app/register/) and [contribute to our ever-evolving open-source project](https://github.com/Cap-go/) - we’d be happy to have you on board!
+Why not try it for yourself? [Try our free version](https://web.codepushgo.com/register/) and [contribute to our ever-evolving open-source project](https://github.com/Cap-go/) - we’d be happy to have you on board!
 
 <div class="mx-auto">
-  <img src="/capgo_banner.webp" alt="capgo_banner">
+  <img src="/codepushgo_banner.webp" alt="codepushgo_banner">
 </div>
 
 ## Conclusion

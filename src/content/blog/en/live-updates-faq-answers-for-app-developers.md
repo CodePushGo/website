@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-07T06:25:21.043Z
 updated_at: 2025-03-18T13:13:51.839Z
-head_image: https://assets.seobotai.com/capgo.app/67a55480be11a9ef5f3c1ab9-1738909539340.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67a55480be11a9ef5f3c1ab9-1738909539340.jpg
 head_image_alt: Mobile Development
 keywords: live updates, app development, OTA technology, CI/CD, security protocols, emergency fixes, mobile updates
 tag: Development, Mobile, Updates
@@ -21,7 +21,7 @@ Live updates let developers quickly push updates and fixes to users’ apps with
 ### Key Benefits of Live Updates:
 
 -   **Faster Deployments**: Updates can go live in 1-2 hours instead of 3-5 days.
--   **[Automatic Updates](https://capgo.app/docs/plugin/cloud-mode/auto-update/)**: Users don’t need to manually update the app.
+-   **[Automatic Updates](https://codepushgo.com/docs/plugin/cloud-mode/auto-update/)**: Users don’t need to manually update the app.
 -   **Partial Updates**: Only the necessary changes are updated, not the whole app.
 -   **Emergency Fixes**: Critical bugs can be resolved immediately.
 
@@ -57,7 +57,7 @@ React Native's live update system relies on the **Live Updates SDK** for adding 
 | --- | --- | --- |
 | **Live Updates SDK** | Frontend Implementation | APIs for updates, UI integration |
 | **Ionic Appflow** | Backend Management | Cloud builds, deployment tools |
-| **[React Native App Plugin](https://capgo.app/blog/capacitor-comprehensive-guide/)** | Core Integration | Handles events and lifecycles |
+| **[React Native App Plugin](https://codepushgo.com/blog/capacitor-comprehensive-guide/)** | Core Integration | Handles events and lifecycles |
 
 ### Setup Instructions
 
@@ -105,7 +105,7 @@ App.addListener('resume', async () => {
 
 CodePushGo adds an extra layer of security with encryption and flexible deployment options. According to Martin Donadieu, CodePushGo's founder, these features are tailored to meet real-world developer needs and app store requirements.
 
-To refine your [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/), use **Ionic Appflow** to monitor deployment success rates and user adoption. This setup ensures your app stays responsive and current.
+To refine your [update process](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/), use **Ionic Appflow** to monitor deployment success rates and user adoption. This setup ensures your app stays responsive and current.
 
 Once live updates are in place, the next step is integrating them into a CI/CD pipeline to simplify and automate your deployment workflow.
 
@@ -135,7 +135,7 @@ Several tools work seamlessly with React Native's live update workflows, helping
 | **[Bitrise](https://bitrise.io/)** | Mobile-first CI/CD | Designed for mobile testing and code signing |
 | **[Jenkins](https://www.jenkins.io/)** | Self-hosted CI/CD | Offers custom pipelines and plugins |
 
-CodePushGo’s API integrates with these tools, providing [secure encryption](https://capgo.app/docs/cli/migrations/encryption/) for automated deployments, ensuring both efficiency and safety.
+CodePushGo’s API integrates with these tools, providing [secure encryption](https://codepushgo.com/docs/cli/migrations/encryption/) for automated deployments, ensuring both efficiency and safety.
 
 ### Building Update Pipelines
 
@@ -170,7 +170,7 @@ To monitor deployment performance, tools like CodePushGo’s dashboard can track
 
 ### Security Requirements
 
-To keep updates secure, use **HTTPS**, **digital signatures**, and **[multi-factor authentication](https://capgo.app/docs/webapp/mfa/)**. These measures protect data during transmission, confirm the source of updates, and stop unauthorized deployments. Encrypt update packages both during transmission and while stored to guard against potential risks.
+To keep updates secure, use **HTTPS**, **digital signatures**, and **[multi-factor authentication](https://codepushgo.com/docs/webapp/mfa/)**. These measures protect data during transmission, confirm the source of updates, and stop unauthorized deployments. Encrypt update packages both during transmission and while stored to guard against potential risks.
 
 After setting up these protections, it's crucial to test updates thoroughly and have recovery plans ready in case something goes wrong.
 
@@ -203,7 +203,7 @@ When notifying users, aim for clarity and relevance. Use concise changelogs to e
 
 ## Live Update Tools Guide
 
-For [React Native developers](https://capgo.app/blog/capacitor-comprehensive-guide/), picking the right live update tool can make a big difference in app performance and user experience.
+For [React Native developers](https://codepushgo.com/blog/capacitor-comprehensive-guide/), picking the right live update tool can make a big difference in app performance and user experience.
 
 ### Tool Comparison Chart
 
@@ -219,13 +219,13 @@ Here’s a quick breakdown of popular live update tools and how they stack up:
 | Cross-platform Support | Full | Partial | Limited |
 | Pricing (Monthly) | $12-$249 | Custom pricing | Variable |
 
-### [CodePushGo](https://capgo.app/) Features Overview
+### [CodePushGo](https://codepushgo.com/) Features Overview
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-07.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-07.jpg?auto=compress)
 
 CodePushGo handles over 150,000 live updates monthly, proving it’s built to scale for medium-sized enterprises. Here’s what sets it apart:
 
-**[Update Management](https://capgo.app/docs/plugin/cloud-mode/manual-update/)**
+**[Update Management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/)**
 
 -   Real-time deployment with a 99.9% success rate
 -   Smooth background updates and instant rollback options

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-09T06:50:58.883Z
 updated_at: 2025-03-18T13:13:52.382Z
-head_image: https://assets.seobotai.com/capgo.app/67a7f90344f489ae95339b05-1739083872712.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67a7f90344f489ae95339b05-1739083872712.jpg
 head_image_alt: Mobile Development
 keywords: code integrity, mobile apps, OTA updates, encryption, Play Integrity API, security compliance, cryptographic signatures
 tag: Development, Mobile, Updates
@@ -20,8 +20,8 @@ next_blog: ''
 
 -   **Core Tools:** Use SHA-256 digital signatures, runtime checks, and encryption (AES-256) to protect code.
 -   **Platform-Specific Features:** For Android, integrate the [Play Integrity API](https://developer.android.com/google/play/integrity) for app verification and device attestation. For iOS, follow App Store Guideline 3.1.2 for OTA updates.
--   **OTA Update Security:** Implement end-to-end encryption, checksum validation, and compliance tracking to [secure updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/).
--   **Recommended Tools:** Tools like [CodePushGo](https://capgo.app/) simplify secure OTA updates with encryption, version control, and compliance monitoring.
+-   **OTA Update Security:** Implement end-to-end encryption, checksum validation, and compliance tracking to [secure updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/).
+-   **Recommended Tools:** Tools like [CodePushGo](https://codepushgo.com/) simplify secure OTA updates with encryption, version control, and compliance monitoring.
 
 ### Quick Comparison of Key Tools and Features
 
@@ -34,7 +34,7 @@ next_blog: ''
 
 ## Code Verification Methods
 
-[React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) combine web and native verification techniques to secure code using digital signatures and encryption.
+[React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) combine web and native verification techniques to secure code using digital signatures and encryption.
 
 ### Digital Signatures and Encryption
 
@@ -112,9 +112,9 @@ Integrating these tracking methods with CI/CD pipelines strengthens both securit
 
 React Native's native security features serve as a strong foundation, but specialized tools can further enhance protection during update workflows.
 
-### [CodePushGo](https://capgo.app): Secure OTA Updates
+### [CodePushGo](https://codepushgo.com): Secure OTA Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-09.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-09.jpg?auto=compress)
 
 CodePushGo is designed specifically for managing secure over-the-air (OTA) updates in React Native applications. It ensures code integrity with features like:
 

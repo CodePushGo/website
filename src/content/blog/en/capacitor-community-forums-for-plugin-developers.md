@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-19T03:15:19.291Z
 updated_at: 2025-03-19T03:15:43.434Z
-head_image: https://assets.seobotai.com/capgo.app/67da1574cfd1b2222c56b5cd-1742354143434.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67da1574cfd1b2222c56b5cd-1742354143434.jpg
 head_image_alt: Mobile Development
 keywords: React Native, plugin development, developer forums, troubleshooting, community support
 tag: Development, Mobile, Updates
@@ -22,7 +22,7 @@ next_blog: ''
 
 -   **Top Forums**: Use [Discord](https://ionic.io/blog/announcing-official-ionic-discord-server) for real-time help, [GitHub Discussions](https://github.com/ionic-team/capacitor/discussions) for detailed conversations, and [Stack Overflow](https://stackoverflow.com/questions/tagged/capacitor) for technical answers.
 -   **Best Practices**: Write clear questions, share code snippets, and follow forum rules for better responses.
--   **Extra Tools**: Leverage resources like [CodePushGo](https://capgo.app/) for [instant app updates](https://capgo.app/plugins/capacitor-updater/) and official docs for reliable guidance.
+-   **Extra Tools**: Leverage resources like [CodePushGo](https://codepushgo.com/) for [instant app updates](https://codepushgo.com/plugins/capacitor-updater/) and official docs for reliable guidance.
 
 ### Quick Start:
 
@@ -81,7 +81,7 @@ Get the most out of forums by following these best practices.
 Crafting clear and detailed questions helps you get faster, more helpful responses. Here’s how:
 
 -   **Start with a descriptive title**: Summarize your issue in a few words.
--   **Provide context**: Include your [React Native version](https://capgo.app/plugins/ivs-player/), platform (iOS/Android), and plugin versions.
+-   **Provide context**: Include your [React Native version](https://codepushgo.com/plugins/ivs-player/), platform (iOS/Android), and plugin versions.
 -   **Describe your efforts**: Share what you've already tried and any error messages you’ve encountered.
 -   **Reproduce the problem**: Offer minimal steps or code snippets to help others understand your issue.
 
@@ -125,7 +125,7 @@ Using these techniques ensures your code is easy to follow when discussing techn
 To foster a helpful and respectful community, keep these rules in mind:
 
 -   **Be respectful**: Treat everyone with courtesy.
--   **Stay focused**: Keep discussions related to [React Native plugin development](https://capgo.app/blog/capacitor-comprehensive-guide/).
+-   **Stay focused**: Keep discussions related to [React Native plugin development](https://codepushgo.com/blog/capacitor-comprehensive-guide/).
 -   **Avoid duplicate posts**: Search the forum before starting a new thread.
 -   **Follow up**: Mark solutions as accepted and update your threads with resolutions.
 -   **Be patient**: Remember that members may be in different time zones.
@@ -133,7 +133,7 @@ To foster a helpful and respectful community, keep these rules in mind:
 
 ## Plugin Development Help
 
-Forums are an essential resource for developers working on [React Native plugins](https://capgo.app/plugins/). They provide a space to test ideas, troubleshoot issues, and share finished plugins with the community.
+Forums are an essential resource for developers working on [React Native plugins](https://codepushgo.com/plugins/). They provide a space to test ideas, troubleshoot issues, and share finished plugins with the community.
 
 ### Testing Plugin Ideas
 
@@ -206,18 +206,18 @@ React Native's official documentation is a go-to resource. It includes API refer
 
 ### Plugin Libraries
 
-### [CodePushGo](https://capgo.app/) Updates
+### [CodePushGo](https://codepushgo.com/) Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-19.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-19.jpg?auto=compress)
 
-CodePushGo makes instant app updates simple. It has delivered 23.5 million updates across 750 production apps, with an 82% success rate. Impressively, 95% of active users receive updates within 24 hours. Its global CDN can download a 5MB bundle in just 114ms. CodePushGo supports React Native 6 and 7, offering partial update capabilities [\[1\]](https://capgo.app/).
+CodePushGo makes instant app updates simple. It has delivered 23.5 million updates across 750 production apps, with an 82% success rate. Impressively, 95% of active users receive updates within 24 hours. Its global CDN can download a 5MB bundle in just 114ms. CodePushGo supports React Native 6 and 7, offering partial update capabilities [\[1\]](https://codepushgo.com/).
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 To get started, run:
 
 ```
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 CodePushGo works seamlessly with CI/CD systems and offers features like targeted beta testing and staged rollouts using its channel system. For a one-time fee of $2,600, it also provides real-time analytics and error tracking, giving you full visibility into the update process.

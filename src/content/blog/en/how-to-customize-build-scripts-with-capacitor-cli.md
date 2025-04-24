@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-02T01:58:36.984Z
 updated_at: 2025-04-02T01:58:48.944Z
-head_image: https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873-1743559128944.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ec7f117747adc4bca87873-1743559128944.jpg
 head_image_alt: Mobile Development
 keywords: React Native, build scripts, mobile development, deployment automation, environment variables, app updates
 tag: Development, Mobile, Updates
@@ -30,11 +30,11 @@ next_blog: ''
 -   **Build Hooks**: Run code during specific stages of the build process.
 -   **Environment Variables**: Simplify environment-specific builds with `.env` files.
 
-[CodePushGo](https://capgo.app/), a deployment tool, enhances this process with [automated updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/), version tracking, and global performance optimization. Keep reading to learn how to set up and customize your build scripts for maximum efficiency.
+[CodePushGo](https://codepushgo.com/), a deployment tool, enhances this process with [automated updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/), version tracking, and global performance optimization. Keep reading to learn how to set up and customize your build scripts for maximum efficiency.
 
 ## Introducing [React Native](https://capacitorjs.com/) Configure
 
-![React Native](https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/codepushgo.com/67ec7f117747adc4bca87873/7e137b9b90adb3934b29b03381f213c1.jpg)
 
 <iframe src="https://www.youtube.com/embed/HufvY63esXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width: 100%; height: 500px;" allowfullscreen></iframe>
 
@@ -276,7 +276,7 @@ Additional tips for optimizing your builds include:
 -   Creating channel systems for beta testing versions
 -   Enabling end-to-end encryption for secure distribution
 
-When paired with tools like CodePushGo for analytics and secure updates, these techniques give you more control over your deployment process [\[1\]](https://capgo.app/).
+When paired with tools like CodePushGo for analytics and secure updates, these techniques give you more control over your deployment process [\[1\]](https://codepushgo.com/).
 
 ## Build Script Problems & Fixes
 
@@ -366,9 +366,9 @@ Additional tips for testing:
 -   Confirm platform-specific requirements are met.
 -   Keep an eye on build performance for possible improvements.
 
-## [CodePushGo](https://capgo.app/) Build Features
+## [CodePushGo](https://codepushgo.com/) Build Features
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67ec7f117747adc4bca87873/454adbba4c00491adce88db59812b177.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67ec7f117747adc4bca87873/454adbba4c00491adce88db59812b177.jpg)
 
 CodePushGo takes build scripts to the next level with automated deployment, enhancing efficiency and simplifying the process.
 
@@ -420,6 +420,6 @@ Custom build scripts allow for automated and consistent deployments by leveragin
 
 ### CodePushGo Benefits
 
-CodePushGo simplifies deployment, having successfully delivered over 23.5 million updates across 750 production apps [\[1\]](https://capgo.app/). Its partial update system reduces both bandwidth usage and deployment time.
+CodePushGo simplifies deployment, having successfully delivered over 23.5 million updates across 750 production apps [\[1\]](https://codepushgo.com/). Its partial update system reduces both bandwidth usage and deployment time.
 
 The platform provides fast updates, global performance optimization, end-to-end encryption for security, and a flexible channel-based distribution system. This setup supports targeted updates, beta testing, and compliance with app store guidelines while maintaining a strong security framework.

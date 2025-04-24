@@ -9,7 +9,7 @@ The `bundle` command lets you manage your app bundles.
 
 ### upload
 
-`npx @capgo/cli bundle upload [appId]`
+`npx @codepushgo/cli bundle upload [appId]`
 
 Uploads a new bundle for an app.
 
@@ -56,7 +56,7 @@ Options:
 
 ### compatibility
 
-`npx @capgo/cli bundle compatibility [appId]`
+`npx @codepushgo/cli bundle compatibility [appId]`
 
 Checks the compatibility of a bundle with a specific channel.
 
@@ -70,7 +70,7 @@ Options:
 
 ### delete
 
-`npx @capgo/cli bundle delete [bundleId] [appId]`
+`npx @codepushgo/cli bundle delete [bundleId] [appId]`
 
 Deletes a bundle from an app.
 
@@ -80,7 +80,7 @@ Options:
 
 ### list
 
-`npx @capgo/cli bundle list [appId]`
+`npx @codepushgo/cli bundle list [appId]`
 
 Lists all bundles for an app.
 
@@ -90,7 +90,7 @@ Options:
 
 ### cleanup
 
-`npx @capgo/cli bundle cleanup [appId]`
+`npx @codepushgo/cli bundle cleanup [appId]`
 
 Cleans up old bundles for a major version, keeping the specified number of most recent bundles.
 
@@ -103,7 +103,7 @@ Options:
 
 ### decrypt
 
-`npx @capgo/cli bundle decrypt [zipPath] [sessionKey]`
+`npx @codepushgo/cli bundle decrypt [zipPath] [sessionKey]`
 
 Decrypts a signed zip bundle.
 
@@ -114,7 +114,7 @@ Options:
 
 ### encrypt
 
-`npx @capgo/cli bundle encrypt [zipPath]`
+`npx @codepushgo/cli bundle encrypt [zipPath]`
 
 Encrypts a zip bundle.
 
@@ -125,7 +125,7 @@ Options:
 
 ### encrypt
 
-`npx @capgo/cli bundle encrypt [zipPath] [checksum]`
+`npx @codepushgo/cli bundle encrypt [zipPath] [checksum]`
 
 Encrypts a zip bundle using the new encryption method.
 
@@ -137,7 +137,7 @@ Options:
 
 ### decryptV2
 
-`npx @capgo/cli bundle decryptV2 [zipPath] [checksum]`
+`npx @codepushgo/cli bundle decryptV2 [zipPath] [checksum]`
 
 Decrypts a zip bundle using the new encryption method.
 
@@ -149,7 +149,7 @@ Options:
 
 ### zip
 
-`npx @capgo/cli bundle zip [appId]`
+`npx @codepushgo/cli bundle zip [appId]`
 
 Generates a zip file for a bundle.
 

@@ -4,13 +4,13 @@ import * as m from '../paraglide/messages.js'
 
 <template>
   <div class="px-3 m-auto prose-sm prose text-left">
-    <h1>{{ m.we_welcome_and_appreciate_all_contributions_to_capgo() }}</h1>
+    <h1>{{ m.we_welcome_and_appreciate_all_contributions_to_codepushgo() }}</h1>
     <p>{{ m.this_page_serves_as_a_helper_to_get_you_started_on_contributing() }}</p>
     <h2 id="projects">{{ m.projects() }}</h2>
     <p
       v-html="
         m
-          .there_are_numerous_repositories_in_the_capgo_organization_that_are_part_of_the_capgo()
+          .there_are_numerous_repositories_in_the_codepushgo_organization_that_are_part_of_the_codepushgo()
           .replace('CodePushGo', `<a href='https://github.com/Cap-go'><code>CodePushGo</code></a>`)
       "
     />
@@ -28,23 +28,23 @@ import * as m from '../paraglide/messages.js'
     <p v-html="m.main_repository_that_provides_the_capacitor_updater_plugin()" />
     <p v-html="m.you_want_to_fix_a_bug_or_add_a_new_feature_to_capacitor_updater_this_is_the_repository_you_want_to_contribute_to()" />
     <p>Languages: <strong>Swift</strong>, <strong>JavaScript</strong>, <strong>Java</strong></p>
-    <h3 id="-capgo-https-github-com-cap-go-capgo-">
-      <a href="https://github.com/Cap-go/capgo"><code>capgo</code></a>
+    <h3 id="-codepushgo-https-github-com-cap-go-codepushgo-">
+      <a href="https://github.com/Cap-go/codepushgo"><code>codepushgo</code></a>
     </h3>
-    <p>{{ m.the_webapp_and_serverless_functions_that_make_up_the_capgo_cloud_platform() }}</p>
-    <p>{{ m.thare_where_you_want_to_contribute_to_fix_the_backend_of_capgo() }}</p>
+    <p>{{ m.the_webapp_and_serverless_functions_that_make_up_the_codepushgo_cloud_platform() }}</p>
+    <p>{{ m.thare_where_you_want_to_contribute_to_fix_the_backend_of_codepushgo() }}</p>
     <p>Languages: <strong>TypeScript</strong>.</p>
     <h3 id="-website-https-github-com-cap-go-website-">
       <a href="https://github.com/Cap-go/website"><code>website</code></a>
     </h3>
-    <p>{{ m.frontend_for_official_deno_webpage() }}: <a href="https://capgo.app/"> https://capgo.app/ </a></p>
+    <p>{{ m.frontend_for_official_deno_webpage() }}: <a href="https://codepushgo.com/"> https://codepushgo.com/ </a></p>
     <p>Languages: <strong>TypeScript</strong>, HTML, CSS</p>
     <h3 id="-docs-https-github-com-cap-go-docs-">
       <a href="https://github.com/Cap-go/docs">
         <code>docs</code>
       </a>
     </h3>
-    <p>{{ m.documentation_in_markdown_that_powers() }} <a href="https://doc.capgo.app/"> https://doc.capgo.app </a></p>
+    <p>{{ m.documentation_in_markdown_that_powers() }} <a href="https://doc.codepushgo.com/"> https://doc.codepushgo.com </a></p>
     <p>Languages: <strong>Markdown</strong></p>
     <h3 id="-capacitor-standard-version-https-github-com-cap-go-capacitor-standard-version-">
       <a href="https://github.com/Cap-go/capacitor-standard-version">
@@ -93,7 +93,7 @@ import * as m from '../paraglide/messages.js'
       </li>
       <li>Ensure there are tests that cover the changes.</li>
     </ul>
-    <h3 id="submitting-a-pr-to-capgo-https-github-com-cap-go-capgo-" v-html="m.submitting_a_pr_to_capgo()" />
+    <h3 id="submitting-a-pr-to-codepushgo-https-github-com-cap-go-codepushgo-" v-html="m.submitting_a_pr_to_codepushgo()" />
     <p>{{ m.additionally_make_sure_that() }}</p>
     <ol>
       <li v-html="m.npm_run_lint_passes()" />

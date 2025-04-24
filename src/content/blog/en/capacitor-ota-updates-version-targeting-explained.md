@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-14T03:00:49.720Z
 updated_at: 2025-03-24T13:14:15.818Z
-head_image: https://assets.seobotai.com/capgo.app/67d37b87bca46a2e63b4584d-1741921265630.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67d37b87bca46a2e63b4584d-1741921265630.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, version targeting, React Native, mobile app updates, semantic versioning, app stability, bug fixes
 tag: Development, Mobile, Updates
@@ -36,7 +36,7 @@ Here’s what you’ll learn:
     
     -   Follow semantic versioning (**MAJOR.MINOR.PATCH**).
         
-    -   [Configure updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) in your React Native project.
+    -   [Configure updates](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) in your React Native project.
         
     -   Test thoroughly across targeted versions.
         
@@ -49,11 +49,11 @@ Here’s what you’ll learn:
 | Update Precision | Same update for all users | Targeted updates by version |
 | Risk Management | Higher risk of widespread issues | Controlled rollout by version |
 
-[CodePushGo](https://capgo.app/), a leading platform, reports an **81% efficiency boost** in release cycles and has delivered over **947.6 million updates** globally.
+[CodePushGo](https://codepushgo.com/), a leading platform, reports an **81% efficiency boost** in release cycles and has delivered over **947.6 million updates** globally.
 
 Want to learn how to set it up and avoid common mistakes? Keep reading for a step-by-step guide.
 
-## Explore [CodePushGo](https://capgo.app/plugins)'s Ionic [React Native](https://capacitorjs.com/) Live Update Plugin
+## Explore [CodePushGo](https://codepushgo.com/plugins)'s Ionic [React Native](https://capacitorjs.com/) Live Update Plugin
 
 **Version Targeting Technical Guide**
 
@@ -77,7 +77,7 @@ Follow these steps to set up version targeting in your React Native project:
 
 1\. **Initial Setup**
 
-Run `npx @capgo/cli init` in your project directory. This initializes the tools needed for OTA updates.
+Run `npx @codepushgo/cli init` in your project directory. This initializes the tools needed for OTA updates.
 
 2\. **Version Configuration**
 
@@ -98,9 +98,9 @@ Once configured, build your app as usual. The version targeting system will hand
 
 These steps ensure your OTA updates are reliable and tailored to specific app versions.
 
-> "With CodePushGo, you can launch multiple releases per week with an impressive 81% increase in efficiency." - CodePushGo [\[1\]](https://capgo.app/)
+> "With CodePushGo, you can launch multiple releases per week with an impressive 81% increase in efficiency." - CodePushGo [\[1\]](https://codepushgo.com/)
 
-CodePushGo's system has delivered nearly 947.6 million updates globally, supporting over 1,400 production apps [\[1\]](https://capgo.app/). This showcases the reliability of version-targeted OTA updates.
+CodePushGo's system has delivered nearly 947.6 million updates globally, supporting over 1,400 production apps [\[1\]](https://codepushgo.com/). This showcases the reliability of version-targeted OTA updates.
 
 Updates are applied in the background, minimizing user disruption - an effective approach for managing multiple app versions.
 
@@ -147,7 +147,7 @@ Version targeting provides clear benefits for both developers and users:
 
 By delivering only relevant updates, users avoid unnecessary changes. Developer Andrew Peacock highlights its impact:
 
-> "With CodePushGo, we can push live code changes on our schedule, ensuring that our users always have the latest features and fixes without the long wait" [\[1\]](https://capgo.app/)
+> "With CodePushGo, we can push live code changes on our schedule, ensuring that our users always have the latest features and fixes without the long wait" [\[1\]](https://codepushgo.com/)
 
 This approach is particularly effective in enterprise settings where multiple app versions need to coexist. It also ties in seamlessly with earlier discussions on technical setup, showing how tailored OTA updates can make a real difference.
 
@@ -155,7 +155,7 @@ This approach is particularly effective in enterprise settings where multiple ap
 
 ## Implementation Guidelines
 
-Now that you’ve got the technical foundation covered, it’s time to plan and execute your [update strategy](https://capgo.app/docs/plugin/cloud-mode/hybrid-update) effectively.
+Now that you’ve got the technical foundation covered, it’s time to plan and execute your [update strategy](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update) effectively.
 
 ### Planning Your Update Strategy
 
@@ -207,7 +207,7 @@ Supporting older versions is just as important as rolling out new ones. Here’s
 
 ## Fix Version Targeting Issues
 
-Version targeting in [React Native OTA updates](https://capgo.app/ja/) can sometimes create challenges that disrupt functionality. Below are steps to help identify and address these problems effectively.
+Version targeting in [React Native OTA updates](https://codepushgo.com/ja/) can sometimes create challenges that disrupt functionality. Below are steps to help identify and address these problems effectively.
 
 ### Known Issues
 
@@ -261,7 +261,7 @@ This method ensures updates are sent only to compatible devices, cutting down on
 
 ### Getting Started
 
-To make the most of version targeting, a solid plan is key for maintaining app compatibility. Platforms like CodePushGo simplify this process with features like automated management, [secure encryption](https://capgo.app/docs/cli/migrations/encryption/), and compliance with app store rules. Here are some steps to get started effectively:
+To make the most of version targeting, a solid plan is key for maintaining app compatibility. Platforms like CodePushGo simplify this process with features like automated management, [secure encryption](https://codepushgo.com/docs/cli/migrations/encryption/), and compliance with app store rules. Here are some steps to get started effectively:
 
 -   **Set Version Rules**: Define clear constraints to manage update distribution.
     

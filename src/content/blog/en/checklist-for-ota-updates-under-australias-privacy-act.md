@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-17T12:19:39.963Z
 updated_at: 2025-04-17T12:20:50.543Z
-head_image: https://assets.seobotai.com/capgo.app/6800eb6a28980901df1efb7c-1744892450543.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/6800eb6a28980901df1efb7c-1744892450543.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, Privacy Act, data security, user privacy, end-to-end encryption, compliance, update management
 tag: Development, Security, Updates
@@ -33,7 +33,7 @@ Here’s what you need to know:
 
 **Quick Comparison of OTA Platforms**:
 
-| **Feature** | **[CodePushGo](https://capgo.app/)** | **Others** |
+| **Feature** | **[CodePushGo](https://codepushgo.com/)** | **Others** |
 | --- | --- | --- |
 | End-to-end encryption | ✅ Yes | ❌ Often missing |
 | Rollback mechanisms | ✅ Supported | ⚠️ Limited |
@@ -55,7 +55,7 @@ The Privacy Act enforces strict guidelines for managing personal data collected 
 
 CodePushGo ensures sensitive data stays protected during OTA updates by using end-to-end encryption.
 
-> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://capgo.app/)
+> "The only solution with true end-to-end encryption, others just sign updates" - CodePushGo [\[1\]](https://codepushgo.com/)
 
 ### Data Protection Standards
 
@@ -158,12 +158,12 @@ When ensuring Privacy Act compliance, these security features are key:
 
 | Feature | Implementation | Privacy Act Relevance |
 | --- | --- | --- |
-| **[Update Encryption](https://capgo.app/docs/cli/migrations/encryption/)** | End-to-end encryption | Protects sensitive data |
+| **[Update Encryption](https://codepushgo.com/docs/cli/migrations/encryption/)** | End-to-end encryption | Protects sensitive data |
 | **Update Signing** | Cryptographic signatures | Verifies update integrity |
 | **User Management** | Granular permissions | Controls access levels |
 | **Hosting Options** | Cloud/Self-hosted | Ensures data sovereignty |
 
-CodePushGo offers end-to-end encryption and achieves an 82% update success rate [\[1\]](https://capgo.app/). These features are essential for safeguarding data and ensuring compliance.
+CodePushGo offers end-to-end encryption and achieves an 82% update success rate [\[1\]](https://codepushgo.com/). These features are essential for safeguarding data and ensuring compliance.
 
 ### Cost Analysis
 
@@ -193,7 +193,7 @@ Different platform types cater to varying compliance needs:
 
 Performance can vary across these platform types, so it’s important to choose one that aligns with Privacy Act requirements.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 Organizations should weigh these factors carefully to meet their security and compliance obligations effectively.
 

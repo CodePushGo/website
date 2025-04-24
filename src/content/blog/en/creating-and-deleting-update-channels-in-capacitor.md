@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-21T03:02:38.679Z
 updated_at: 2025-03-21T03:02:57.947Z
-head_image: https://assets.seobotai.com/capgo.app/67dcb1f883b63ee70fa08665-1742526177947.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67dcb1f883b63ee70fa08665-1742526177947.jpg
 head_image_alt: Mobile Development
 keywords: React Native, update channels, app updates, development, mobile, CI/CD, user management, version control
 tag: Development, Mobile, Updates
@@ -16,7 +16,7 @@ locale: en
 next_blog: ''
 ---
 
-[React Native](https://capacitorjs.com/) [update channels](https://capgo.app/docs/webapp/channels/) let you send over-the-air (OTA) updates to specific user groups. This helps manage multiple app versions, test new features, and roll out updates gradually. Here's what you need to know:
+[React Native](https://capacitorjs.com/) [update channels](https://codepushgo.com/docs/webapp/channels/) let you send over-the-air (OTA) updates to specific user groups. This helps manage multiple app versions, test new features, and roll out updates gradually. Here's what you need to know:
 
 -   **Benefits**:
     
@@ -25,7 +25,7 @@ next_blog: ''
     -   Roll back problematic updates instantly.
 -   **Setup**:
     
-    -   Use tools like React Native CLI, [Node.js](https://nodejs.org/en), and [CodePushGo](https://capgo.app/) CLI.
+    -   Use tools like React Native CLI, [Node.js](https://nodejs.org/en), and [CodePushGo](https://codepushgo.com/) CLI.
     -   Assign roles (Admin, Developer, Viewer) to manage permissions.
     -   Integrate with CI/CD tools for automated workflows.
 -   **Managing Channels**:
@@ -54,16 +54,16 @@ Make sure you have the following:
 
 -   **React Native CLI**: This is the core tool for handling app updates.
 -   **Node.js**: Version 14.0 or higher is required.
--   **[CodePushGo CLI](https://capgo.app/docs/cli/commands)**: Used for setting up and managing update channels.
+-   **[CodePushGo CLI](https://codepushgo.com/docs/cli/commands)**: Used for setting up and managing update channels.
 -   **Development Environment**: Choose an IDE that supports React Native.
 
 To initialize CodePushGo CLI, run this command:
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
-This sets up your project with the necessary configuration files and connects it to CodePushGo's [update service](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
+This sets up your project with the necessary configuration files and connects it to CodePushGo's [update service](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/).
 
 ### Configuring Access and Permissions
 
@@ -90,19 +90,19 @@ To set up a channel using CodePushGo CLI, follow these steps:
 1.  **Initialize the Channel**: Open your terminal and run the following command:
     
     ```bash
-    npx @capgo/cli channel create
+    npx @codepushgo/cli channel create
     ```
     
 2.  **Set Up Basic Parameters**: Configure the channel with details like name and version:
     
     ```bash
-    npx @capgo/cli channel config --name="beta-testing" --version="1.0.0"
+    npx @codepushgo/cli channel config --name="beta-testing" --version="1.0.0"
     ```
     
 3.  **Confirm the Channel**: Verify that your channel has been created successfully:
     
     ```bash
-    npx @capgo/cli channel list
+    npx @codepushgo/cli channel list
     ```
     
 
@@ -175,7 +175,7 @@ Key points to consider:
 -   **Rollback Options**: CodePushGo offers a one-click rollback feature for quick issue resolution.
 -   **Analytics Review**: Always review performance data before promoting an update to the next channel.
 
-> "Instant rollback if something goes wrong" - CodePushGo [\[1\]](https://capgo.app/)
+> "Instant rollback if something goes wrong" - CodePushGo [\[1\]](https://codepushgo.com/)
 
 ## Removing Update Channels
 
@@ -183,7 +183,7 @@ It's important to know how and when to remove unused update channels. Keeping yo
 
 ### Finding Unused Channels
 
-To spot inactive channels, use [CodePushGo's analytics dashboard](https://capgo.app/docs/webapp/) to analyze usage patterns. Focus on channels that meet these criteria:
+To spot inactive channels, use [CodePushGo's analytics dashboard](https://codepushgo.com/docs/webapp/) to analyze usage patterns. Focus on channels that meet these criteria:
 
 -   No active users in the last 30 days
 -   No recent updates deployed
@@ -218,9 +218,9 @@ Before finalizing the removal, consider these points:
 
 After removal, monitor system performance. If any issues arise, CodePushGo's rollback feature can help you quickly address them.
 
-## [CodePushGo](https://capgo.app/) Features for Updates
+## [CodePushGo](https://codepushgo.com/) Features for Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-21.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-21.jpg?auto=compress)
 
 ### CodePushGo Core Functions
 
@@ -249,15 +249,15 @@ Getting started with CodePushGo is simple and quick. Just follow these three ste
 2.  **Define Channel Structure:** Set up channels based on your deployment needs.
 3.  **Set User Permissions:** Assign specific access rights to team members.
 
-> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "@CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
-CodePushGo supports over 30 plugins and works seamlessly with CI/CD pipelines, making it easy to fit into your existing development process. It enhances [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/) while keeping everything efficient and straightforward.
+CodePushGo supports over 30 plugins and works seamlessly with CI/CD pipelines, making it easy to fit into your existing development process. It enhances [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) while keeping everything efficient and straightforward.
 
 ## Summary
 
 ### Main Points
 
-Managing channels effectively ensures app deployments run smoothly. CodePushGo's channel system showcases impressive results: **95% of updates are adopted within 24 hours**, supported by a global CDN that delivers a 5MB bundle in just 114ms, alongside an API response time of 434ms worldwide [\[1\]](https://capgo.app/).
+Managing channels effectively ensures app deployments run smoothly. CodePushGo's channel system showcases impressive results: **95% of updates are adopted within 24 hours**, supported by a global CDN that delivers a 5MB bundle in just 114ms, alongside an API response time of 434ms worldwide [\[1\]](https://codepushgo.com/).
 
 | Metric | Performance |
 | --- | --- |

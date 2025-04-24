@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-24T08:30:17.609Z
 updated_at: 2025-03-18T13:14:04.125Z
-head_image: https://assets.seobotai.com/capgo.app/67bbc47be5225d66b70936da-1740386039142.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67bbc47be5225d66b70936da-1740386039142.jpg
 head_image_alt: Mobile Development
 keywords: React Native, dependency management, mobile development, plugins, automation
 tag: Development, Mobile, Updates
@@ -24,7 +24,7 @@ Managing dependencies in [React Native](https://capacitorjs.com/) projects is es
     -   iOS: Use [CocoaPods](https://cocoapods.org/) and [Swift Package Manager](https://developer.apple.com/documentation/xcode/swift-packages) for dependencies.
     -   Android: Manage dependencies with [Gradle](https://gradle.org/) and ensure compatibility with API level 21+.
 -   **Handle Issues**: Resolve common problems like sync errors, plugin conflicts, and SDK mismatches by cleaning builds, updating repos, and testing thoroughly.
--   **Automate**: Tools like [CodePushGo](https://capgo.app/) enable live updates, version control, and CI/CD integration, streamlining the process.
+-   **Automate**: Tools like [CodePushGo](https://codepushgo.com/) enable live updates, version control, and CI/CD integration, streamlining the process.
 
 Dependency management impacts your app's stability and efficiency. Focus on consistent updates, testing, and automation to keep your project on track.
 
@@ -40,7 +40,7 @@ React Native projects rely on various dependencies, each playing a specific role
 
 ### Working with React Native Plugins
 
-[React Native plugins](https://capgo.app/plugins/) connect JavaScript to native features, providing a unified web API. Official plugins from the React Native team make integration straightforward.
+[React Native plugins](https://codepushgo.com/plugins/) connect JavaScript to native features, providing a unified web API. Official plugins from the React Native team make integration straightforward.
 
 For instance, if you’re adding camera functionality, the setup might look like this:
 
@@ -161,11 +161,11 @@ When dealing with dependency conflicts, especially with NPM 7 or later, follow t
 
 To make testing and maintenance easier in the long run, export your dependencies into a `deps` object. This simplifies mocking during tests and helps detect issues before they affect production environments [\[10\]](https://hackeryarn.com/post/universally-testable-dependencies/).
 
-## Using [CodePushGo](https://capgo.app/) for Dependency Updates
+## Using [CodePushGo](https://codepushgo.com/) for Dependency Updates
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-24.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-24.jpg?auto=compress)
 
-CodePushGo takes dependency management in React Native projects to the next level, making update deployment faster and more efficient. With over **464.4 million updates** delivered across **1,800 production apps** [\[14\]](https://capgo.app/), CodePushGo simplifies the process for developers.
+CodePushGo takes dependency management in React Native projects to the next level, making update deployment faster and more efficient. With over **464.4 million updates** delivered across **1,800 production apps** [\[14\]](https://codepushgo.com/), CodePushGo simplifies the process for developers.
 
 ### CodePushGo Core Functions
 
@@ -183,20 +183,20 @@ These tools help developers save time and keep projects running smoothly.
 To set up CodePushGo in your React Native project, use the following command:
 
 ```bash
-npx @capgo/cli@latest init [APIKEY]
+npx @codepushgo/cli@latest init [APIKEY]
 ```
 
 ### Benefits for Development Teams
 
-Teams using CodePushGo have seen an **81% improvement in release efficiency** [\[14\]](https://capgo.app/). Here’s why it stands out:
+Teams using CodePushGo have seen an **81% improvement in release efficiency** [\[14\]](https://codepushgo.com/). Here’s why it stands out:
 
 -   **Fast Deployment**: Push updates quickly and manage them with features like user assignment and rollback options.
 -   **Affordable Pricing**: A one-time CI/CD setup fee of $2,600 makes it a budget-friendly choice compared to other tools.
 -   **Improved Workflow**: Real-time monitoring and flexible organization tools give teams better control over their projects.
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[14\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" – Rodrigo Mantica [\[14\]](https://codepushgo.com/)
 
-> "CodePushGo is an essential tool for developers, enabling productivity by bypassing lengthy review cycles." – Bessie Cooper [\[14\]](https://capgo.app/)
+> "CodePushGo is an essential tool for developers, enabling productivity by bypassing lengthy review cycles." – Bessie Cooper [\[14\]](https://codepushgo.com/)
 
 ## Summary
 

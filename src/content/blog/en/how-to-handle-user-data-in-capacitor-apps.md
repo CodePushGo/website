@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-18T04:43:56.186Z
 updated_at: 2025-03-18T13:13:58.671Z
-head_image: https://assets.seobotai.com/capgo.app/67b3d6e4147c4c67492d1b20-1739853969789.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67b3d6e4147c4c67492d1b20-1739853969789.jpg
 head_image_alt: Mobile Development
 keywords: user data, secure storage, data protection, GDPR, CCPA, data retention, permissions management, mobile apps
 tag: Development, Mobile, Updates
@@ -23,7 +23,7 @@ next_blog: ''
 -   **Data Retention**: Automate deletion based on defined time limits.
 -   **User Rights**: Enable users to access, delete, or export their data.
 -   **Permission Management**: Request permissions contextually and provide alternatives for denied requests.
--   **OTA Updates**: Ensure secure over-the-air updates with tools like [CodePushGo](https://capgo.app/).
+-   **OTA Updates**: Ensure secure over-the-air updates with tools like [CodePushGo](https://codepushgo.com/).
 
 ## How to use Ionic [React Native](https://capacitorjs.com/) Secure Storage
 
@@ -115,7 +115,7 @@ Selecting the right storage solution depends on how sensitive the data is. Here'
 | Best For | Tokens, passwords | Non-sensitive settings |
 | Performance | Slower (due to encryption) | Faster access |
 
-The Secure Storage API is a solid choice for storing critical information like authentication tokens and personal user data [\[1\]](https://capacitorjs.com/docs/guides/storage)[\[4\]](https://capacitorjs.com/docs/guides/security). Its [encryption capabilities](https://capgo.app/docs/cli/migrations/encryption/) also align with retention policies, allowing controlled access to data within specified timeframes [\[2\]](https://app.studyraid.com/en/read/11146/345611/securing-data-in-capacitor-apps).
+The Secure Storage API is a solid choice for storing critical information like authentication tokens and personal user data [\[1\]](https://capacitorjs.com/docs/guides/storage)[\[4\]](https://capacitorjs.com/docs/guides/security). Its [encryption capabilities](https://codepushgo.com/docs/cli/migrations/encryption/) also align with retention policies, allowing controlled access to data within specified timeframes [\[2\]](https://app.studyraid.com/en/read/11146/345611/securing-data-in-capacitor-apps).
 
 ###### sbb-itb-f9944d2
 
@@ -125,7 +125,7 @@ Setting clear data retention policies helps align with data minimization princip
 
 ### Storage Time Rules
 
-Different types of user data should have defined retention periods based on their purpose and level of sensitivity. Below is a suggested framework for managing data retention in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/):
+Different types of user data should have defined retention periods based on their purpose and level of sensitivity. Below is a suggested framework for managing data retention in [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/):
 
 | Data Type | Retention Period | Justification |
 | --- | --- | --- |
@@ -296,7 +296,7 @@ Once permissions are handled, you can shift focus to securing updates, especiall
 
 ## OTA Update Security
 
-To ensure data integrity during [app updates](https://capgo.app/plugins/capacitor-updater/), it's crucial to use secure OTA (Over-The-Air) update processes. These updates help prevent unauthorized changes to app code, which could otherwise bypass limits on data collection.
+To ensure data integrity during [app updates](https://codepushgo.com/plugins/capacitor-updater/), it's crucial to use secure OTA (Over-The-Air) update processes. These updates help prevent unauthorized changes to app code, which could otherwise bypass limits on data collection.
 
 ### Update Package Signing
 
@@ -310,14 +310,14 @@ Signing update packages is a critical step in protecting against unauthorized co
 | **Version Safety** | Signed version numbers |
 | **Failure Recovery** | Instant rollback capability |
 
-### [CodePushGo](https://capgo.app/) Update System
+### [CodePushGo](https://codepushgo.com/) Update System
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-18.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-18.jpg?auto=compress)
 
 CodePushGo simplifies secure OTA updates for React Native apps by offering automated security features. Here's an example of how to use CodePushGo's update system in your app:
 
 ```typescript
-import { React NativeUpdater } from '@capgo/capacitor-updater';
+import { React NativeUpdater } from '@codepushgo/capacitor-updater';
 
 const secureUpdate = async () => {
   try {

@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-01-14T02:36:08.711Z
 updated_at: 2025-01-14T15:24:46.071Z
-head_image: https://assets.seobotai.com/capgo.app/6785bb5bfc0bf469b705c62a-1736822313233.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/6785bb5bfc0bf469b705c62a-1736822313233.jpg
 head_image_alt: Technology
 keywords: mobile app security, live updates, data integrity, OTA updates, encryption, security testing
 tag: Development, Mobile, Updates
@@ -18,7 +18,7 @@ next_blog: ''
 
 Keeping your mobile app secure during live updates is critical to protecting user data and maintaining trust. Here's a quick summary of the top practices to safeguard your over-the-air (OTA) updates:
 
-1.  **Secure Delivery**: Use encryption (e.g., TLS), digital signatures, and [multi-factor authentication](https://capgo.app/docs/webapp/mfa/) to protect updates during transmission.
+1.  **Secure Delivery**: Use encryption (e.g., TLS), digital signatures, and [multi-factor authentication](https://codepushgo.com/docs/webapp/mfa/) to protect updates during transmission.
     
 2.  **Data Integrity**: Validate updates with checksums, package signature verification, and version control to prevent tampering.
     
@@ -31,7 +31,7 @@ Keeping your mobile app secure during live updates is critical to protecting use
 
 ### Why It Matters
 
-By following these practices, you can reduce security risks, comply with regulations like GDPR and HIPAA, and maintain user confidence. Tools like [CodePushGo](https://capgo.app/) and secure CI/CD pipelines can help streamline these processes while ensuring updates remain safe.
+By following these practices, you can reduce security risks, comply with regulations like GDPR and HIPAA, and maintain user confidence. Tools like [CodePushGo](https://codepushgo.com/) and secure CI/CD pipelines can help streamline these processes while ensuring updates remain safe.
 
 Let’s dive deeper into each practice to understand how they protect your app and users.
 
@@ -130,7 +130,7 @@ While keeping unauthorized access at bay is crucial, don’t forget that regular
 
 ## 4\. Apply Regular Updates and Patches
 
-For live OTA updates in [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/), keeping your app updated is key to addressing new risks and maintaining user confidence.
+For live OTA updates in [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/), keeping your app updated is key to addressing new risks and maintaining user confidence.
 
 ### Automated Update Management
 
@@ -196,4 +196,4 @@ These efforts also bring measurable improvements across several business areas:
 | Risk Management | Reduces security vulnerabilities |
 | Operating Costs | Cuts down expenses tied to security incidents |
 
-For those looking to implement these strategies, tools like [ProGuard](https://www.guardsquare.com/proguard) for Android and secure compilation methods for iOS offer practical solutions to enhance update security. Using HTTPS protocols and [encryption during update delivery](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/) ensures both the transmission process and user data remain safe.
+For those looking to implement these strategies, tools like [ProGuard](https://www.guardsquare.com/proguard) for Android and secure compilation methods for iOS offer practical solutions to enhance update security. Using HTTPS protocols and [encryption during update delivery](https://codepushgo.com/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing/) ensures both the transmission process and user data remain safe.

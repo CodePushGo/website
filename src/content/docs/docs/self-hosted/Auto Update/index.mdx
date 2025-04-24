@@ -23,12 +23,12 @@ Likewise, I do think it would make our world a better place by opening instead o
 
 But to make it possible, all of us must do our part, including you 🥹.
 
-If capgo offers can't suit you, then put your price and back a bootstrapped Maker [HERE](https://github.com/sponsors/riderx/) on your terms.
+If codepushgo offers can't suit you, then put your price and back a bootstrapped Maker [HERE](https://github.com/sponsors/riderx/) on your terms.
 
 ## Quick installs
 
 ```
-npm install @capgo/capacitor-updater
+npm install @codepushgo/capacitor-updater
 npx cap sync
 ```
 
@@ -89,7 +89,7 @@ The zip should have `index.html` as a file at the root, or only one folder at th
 You can use the command of the CLI to zip your bundle:
 
 ```bash
-npx @capgo/cli bundle zip --path [/path/to/my/bundle]
+npx @codepushgo/cli bundle zip --path [/path/to/my/bundle]
 ```
 
 <LinkCard
@@ -101,9 +101,9 @@ npx @capgo/cli bundle zip --path [/path/to/my/bundle]
 
 Starting with version 4.15.0 the plugin allows you to send encrypted updates.
 
-You can use this feature by creating a private key ``npx @capgo/cli key create``
+You can use this feature by creating a private key ``npx @codepushgo/cli key create``
 
-Then you encrypt your zip file with ``npx @capgo/cli encrypt [path/to/zip]``
+Then you encrypt your zip file with ``npx @codepushgo/cli encrypt [path/to/zip]``
 
 The command will print you a `ivSessionKey` it has to be sent with your update payload in the key `session_key`.\
 Then your app will be able to use the private key to decrypt the `session_key` and use the decrypted `session_key` to decrypt the update.
@@ -112,7 +112,7 @@ Learn more about it here:
 
 <LinkCard
 	title="Self-hosted Live Updates"
-	href="https://capgo.app/blog/self-hosted-live-updates/"
+	href="https://codepushgo.com/blog/self-hosted-live-updates/"
 />
 
 ### Statistics API

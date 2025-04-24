@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-24T05:10:07.131Z
 updated_at: 2025-03-24T13:24:28.550Z
-head_image: https://assets.seobotai.com/capgo.app/67e0e4b5db7797980463f0f3-1742793019156.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e0e4b5db7797980463f0f3-1742793019156.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, app tracking, user adoption, version management, error monitoring
 tag: Development, Mobile, Updates
@@ -32,7 +32,7 @@ OTA updates let you push app changes directly to users without waiting for app s
     
     1.  **Version Management:** Use channels like Production, Beta, and Staged Rollouts for controlled updates.
         
-    2.  **In-App Tracking:** Set up event listeners and log installation progress using tools like `@capgo/capacitor-updater`.
+    2.  **In-App Tracking:** Set up event listeners and log installation progress using tools like `@codepushgo/capacitor-updater`.
         
     3.  **Server Logging:** Track metrics like update success rates, device conditions, and user engagement.
         
@@ -51,7 +51,7 @@ OTA updates let you push app changes directly to users without waiting for app s
     -   Rollback options
         
 
-## Explore [CodePushGo](https://capgo.app/)'s New [Ionic](https://ionicframework.com/) [React Native](https://capacitorjs.com/) Live Update ...
+## Explore [CodePushGo](https://codepushgo.com/)'s New [Ionic](https://ionicframework.com/) [React Native](https://capacitorjs.com/) Live Update ...
 
 **Setting Up Update Tracking**
 
@@ -89,7 +89,7 @@ To track updates within your app, follow these steps:
     Use the following command to add the necessary library:
     
     ```bash
-    npm install @capgo/capacitor-updater
+    npm install @codepushgo/capacitor-updater
     ```
     
 2.  **Set up event listeners**  
@@ -134,7 +134,7 @@ Server logging helps you collect critical data about updates, including their im
     -   Observe changes in session duration
         
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
 
 Combining version management, in-app tracking, and server logging gives you a comprehensive view of your OTA update performance.
 
@@ -153,7 +153,7 @@ To monitor user update rates:
 -   Set target completion times and track update rates for different devices to identify trends.
     
 
-Once you have this data, focus on spotting and addressing problem areas to improve your [update process](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
+Once you have this data, focus on spotting and addressing problem areas to improve your [update process](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/).
 
 ### Problem Areas Detection
 
@@ -213,9 +213,9 @@ Understand how the update affects user interaction by analyzing:
 
 Use these insights to fine-tune your app and address any emerging concerns.
 
-### [CodePushGo](https://capgo.app/) Performance Tools
+### [CodePushGo](https://codepushgo.com/) Performance Tools
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-24.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-24.jpg?auto=compress)
 
 CodePushGo provides tools to simplify monitoring and troubleshooting during updates:
 
@@ -226,7 +226,7 @@ CodePushGo provides tools to simplify monitoring and troubleshooting during upda
 3.  **Version Control**: Roll back updates with a single click to reduce disruptions.
     
 
-> "Track update success rates and user engagement in real-time" – CodePushGo [\[1\]](https://capgo.app/)
+> "Track update success rates and user engagement in real-time" – CodePushGo [\[1\]](https://codepushgo.com/)
 
 CodePushGo also supports staged testing by targeting specific user groups before a full rollout. This approach ensures consistent performance and minimizes risks across your entire user base.
 
@@ -241,7 +241,7 @@ Updates can hit snags like network failures, version mismatches, outdated cache 
 | Failed Downloads | Poor network connection | Use an automatic retry system with exponential backoff. |
 | Version Conflicts | Incompatible dependencies | Enforce strict version checks before deploying updates. |
 | Cache Issues | Outdated cache files | Add cache-busting techniques and clear old versions. |
-| Partial Updates | Interrupted installation | Use [atomic updates](https://capgo.app/docs/plugin/cloud-mode/hybrid-update/) with a rollback option to ensure consistency. |
+| Partial Updates | Interrupted installation | Use [atomic updates](https://codepushgo.com/docs/plugin/cloud-mode/hybrid-update/) with a rollback option to ensure consistency. |
 
 ### Error Tracking Setup
 
@@ -274,7 +274,7 @@ A well-planned rollback process can help reduce user frustration when updates go
 2.  **Use version control**: Always keep multiple update versions ready for a quick rollback.
     
 
-> "Error Tracking: Proactively monitor and fix issues before they impact users" [\[1\]](https://capgo.app/)
+> "Error Tracking: Proactively monitor and fix issues before they impact users" [\[1\]](https://codepushgo.com/)
 
 3.  **Document recovery steps**: Clearly outline how to identify affected users, roll back the update, verify the restoration, and communicate the resolution to users.
 
@@ -296,10 +296,10 @@ When comparing OTA update tracking tools, focus on these features:
 
 ### CodePushGo Features
 
-CodePushGo stands out with an impressive 82% global success rate [\[1\]](https://capgo.app/), offering features that cover all aspects of [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/):
+CodePushGo stands out with an impressive 82% global success rate [\[1\]](https://codepushgo.com/), offering features that cover all aspects of [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/):
 
 -   **Real-time Analytics**  
-    CodePushGo provides worldwide monitoring with an average API response time of 434ms [\[1\]](https://capgo.app/). This helps you detect and address issues early.
+    CodePushGo provides worldwide monitoring with an average API response time of 434ms [\[1\]](https://codepushgo.com/). This helps you detect and address issues early.
     
 -   **Security Infrastructure**  
     Updates are delivered securely with end-to-end encryption, meeting the needs of even the most demanding enterprise applications.
@@ -315,7 +315,7 @@ Here’s how to pick the best OTA update tracking tool for your needs:
 -   **Integration Requirements**  
     Look for tools that work seamlessly with your CI/CD pipeline.
     
-    > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://capgo.app/)
+    > "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" - Rodrigo Mantica [\[1\]](https://codepushgo.com/)
     
 -   **Cost Effectiveness**  
     Consider how the tool’s pricing will affect your long-term budget.
@@ -332,7 +332,7 @@ Here’s how to pick the best OTA update tracking tool for your needs:
     -   Compatibility with the latest React Native version
         
 
-> "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must have tools for developers, who want to be more productive. Avoiding review for bugfix is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)
 
 ## Summary
 
@@ -379,4 +379,4 @@ These metrics guide the following steps to ensure secure and automated update tr
 
 Starting with a trial period can help you test and refine these methods for your specific needs.
 
-> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding reviews for bug fixes is golden." - Bessie Cooper [\[1\]](https://capgo.app/)
+> "CodePushGo is a must-have tool for developers who want to be more productive. Avoiding reviews for bug fixes is golden." - Bessie Cooper [\[1\]](https://codepushgo.com/)

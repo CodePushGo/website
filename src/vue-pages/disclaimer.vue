@@ -67,7 +67,7 @@ const domain = config.public.baseUrl
     <p>{{ m.contact_us_text() }}</p>
     <ul>
       <li>
-        {{ m.contact_us_website() }}: <a href="mailto:support@capgo.app" rel="external nofollow noopener" target="_blank">{{ domain }}#support</a>
+        {{ m.contact_us_website() }}: <a href="mailto:support@codepushgo.com" rel="external nofollow noopener" target="_blank">{{ domain }}#support</a>
       </li>
     </ul>
   </div>

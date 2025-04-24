@@ -21,18 +21,18 @@ The CodePushGo CLI provides some additional flags to help with common upload iss
 
 - `--tus`: Uses the [tus resumable upload protocol](https://tus.io/) for more reliable uploads of large bundles or on poor network connections. If your bundle is over 10MB or you're on a spotty connection, consider using `--tus`:
   ```shell
-  npx @capgo/cli@latest bundle upload --tus
+  npx @codepushgo/cli@latest bundle upload --tus
   ```
 
 - `--package-json` and `--node-modules`: Tells CodePushGo where to find your root `package.json` and `node_modules` if your app uses a non-standard structure like a monorepo or npm workspace. Pass the path to the root `package.json` and the `--node_modules` path:
   ```shell
-  npx @capgo/cli@latest bundle upload --package-json=path/to/package.json --node_modules=path/to/node_modules
+  npx @codepushgo/cli@latest bundle upload --package-json=path/to/package.json --node_modules=path/to/node_modules
   ```
   CodePushGo needs this information to correctly bundle your app's dependencies.
 
 You can combine these flags with other options like `--channel` as needed. See the [CodePushGo CLI docs](/docs/cli) for full details on the available upload options.
 
-If you're still having trouble with uploads, reach out to [CodePushGo support](mailto:support@capgo.app) for further assistance.
+If you're still having trouble with uploads, reach out to [CodePushGo support](mailto:support@codepushgo.com) for further assistance.
 
 ### Debugging Updates
 
@@ -40,7 +40,7 @@ If you're encountering issues with live updates, the CodePushGo debug command is
 
 1. Run the following command in your project directory:
    ```shell
-   npx @capgo/cli@latest app debug
+   npx @codepushgo/cli@latest app debug
    ```
 
 2. Launch your app on a device or emulator and perform the action that should trigger an update (e.g. reopening the app after uploading a new bundle).
@@ -121,7 +121,7 @@ If you've uploaded a bundle but aren't seeing the changes on your device:
 - Try fully closing and reopening the app, as updates are only applied on a fresh launch
 - Look for any errors in the native logs that might indicate a problem applying the update
 
-Refer to the [deploying live updates](/docs/getting-started/deploy) guide for more details on the update process. If you're still stuck, use the `npx @capgo/cli@latest app debug` command and native logs to get more visibility into what's happening.
+Refer to the [deploying live updates](/docs/getting-started/deploy) guide for more details on the update process. If you're still stuck, use the `npx @codepushgo/cli@latest app debug` command and native logs to get more visibility into what's happening.
 
 ## SDK Installation
 
@@ -136,4 +136,4 @@ For issues with triggering CodePushGo uploads from your CI/CD pipeline:
 - Make sure you're running the upload command after your web assets are built
 - Check that the upload command is using the correct channel name for your target environment
 
-See the [CI/CD integration](/docs/cicd-integration) docs for more troubleshooting tips. You can also use the `npx @capgo/cli@latest app debug` command to confirm if your CI/CD-triggered updates are being received by the app.
+See the [CI/CD integration](/docs/cicd-integration) docs for more troubleshooting tips. You can also use the `npx @codepushgo/cli@latest app debug` command to confirm if your CI/CD-triggered updates are being received by the app.

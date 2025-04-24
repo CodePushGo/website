@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-27T02:08:04.837Z
 updated_at: 2025-03-27T02:08:34.795Z
-head_image: https://assets.seobotai.com/capgo.app/67e4966a10051fda3b63500a-1743041314795.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e4966a10051fda3b63500a-1743041314795.jpg
 head_image_alt: Mobile Development
 keywords: React Native, plugin dependencies, iOS, Android, JavaScript, CocoaPods, Gradle, development tools
 tag: Development, Mobile, Updates
@@ -26,7 +26,7 @@ next_blog: ''
 2.  **Set up your development environment**:
     
     -   Install tools like [Node.js](https://nodejs.org/en), [npm](https://www.npmjs.com/), [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), CocoaPods, and JDK.
-3.  **Start your [React Native plugin project](https://capgo.app/blog/capacitor-comprehensive-guide/)**:
+3.  **Start your [React Native plugin project](https://codepushgo.com/blog/capacitor-comprehensive-guide/)**:
     
     -   Use `npm init @capacitor/plugin` to create a new plugin.
 4.  **Add JavaScript dependencies**:
@@ -40,7 +40,7 @@ next_blog: ''
 6.  **Optimize performance**:
     
     -   Pin versions, audit dependencies, and resolve conflicts to ensure stability.
-7.  **Use tools like [CodePushGo](https://capgo.app/) for live updates**:
+7.  **Use tools like [CodePushGo](https://codepushgo.com/) for live updates**:
     
     -   Push updates instantly without app store reviews.
 
@@ -62,7 +62,7 @@ next_blog: ''
 
 ## Setting Up Your Development Environment
 
-Prepare your setup with the necessary tools to handle [React Native plugin](https://capgo.app/blog/capacitor-comprehensive-guide/) dependencies effectively.
+Prepare your setup with the necessary tools to handle [React Native plugin](https://codepushgo.com/blog/capacitor-comprehensive-guide/) dependencies effectively.
 
 ### Required Development Tools
 
@@ -233,7 +233,7 @@ Up next, explore how to handle platform-specific dependencies for iOS.
 
 ## iOS Dependencies
 
-This section explains how to manage native iOS dependencies in [React Native plugins](https://capgo.app/plugins/). Once you've set up your JavaScript dependencies, the next step is handling native iOS dependencies.
+This section explains how to manage native iOS dependencies in [React Native plugins](https://codepushgo.com/plugins/). Once you've set up your JavaScript dependencies, the next step is handling native iOS dependencies.
 
 ### [CocoaPods](https://cocoapods.org/) Setup
 
@@ -432,15 +432,15 @@ org.gradle.parallel=true
 org.gradle.jvmargs=-Xmx2048m
 ```
 
-## [CodePushGo](https://capgo.app/) Integration
+## [CodePushGo](https://codepushgo.com/) Integration
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-27.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-27.jpg?auto=compress)
 
 Using CodePushGo alongside native and JavaScript dependency management makes updating your plugin faster and easier.
 
 ### About CodePushGo
 
-CodePushGo is a live update platform designed for React Native plugins and apps. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://capgo.app/), CodePushGo allows developers to push updates for dependencies and code instantly - no app store review required. Updates are secured with end-to-end encryption and meet both Apple and Android compliance standards.
+CodePushGo is a live update platform designed for React Native plugins and apps. With over 23.5 million updates delivered across 750 production apps [\[1\]](https://codepushgo.com/), CodePushGo allows developers to push updates for dependencies and code instantly - no app store review required. Updates are secured with end-to-end encryption and meet both Apple and Android compliance standards.
 
 ### CodePushGo Update Features
 
@@ -453,7 +453,7 @@ CodePushGo simplifies managing plugin dependencies with these features:
 | Version Control | Manage multiple versions | 82% global success rate |
 | Channel System | Target specific user groups | Supports multiple deployment channels |
 
-Source: [\[1\]](https://capgo.app/)
+Source: [\[1\]](https://codepushgo.com/)
 
 CodePushGo works seamlessly with CI/CD tools like GitHub Actions, GitLab CI, and Jenkins, automating dependency updates and ensuring consistent plugin versions. These tools make it easier to integrate CodePushGo into your workflow.
 
@@ -466,7 +466,7 @@ Follow these steps to integrate CodePushGo into your project:
     Run the following command in your terminal:
     
     ```bash
-    npx @capgo/cli init
+    npx @codepushgo/cli init
     ```
     
 2.  **Configure Update Preferences**
@@ -478,16 +478,16 @@ Follow these steps to integrate CodePushGo into your project:
     Add this code to your main plugin file to enable updates:
     
     ```typescript
-    import { CodePushGo } from '@capgo/capacitor-updater';
+    import { CodePushGo } from '@codepushgo/capacitor-updater';
     
     // Initialize CodePushGo
-    const capgo = new CodePushGo({
+    const codepushgo = new CodePushGo({
       appId: 'YOUR_APP_ID',
       channel: 'production'
     });
     
     // Check for updates
-    await capgo.checkForUpdate();
+    await codepushgo.checkForUpdate();
     ```
     
 
@@ -516,7 +516,7 @@ Using live update tools like CodePushGo can further simplify and improve these p
 
 ### CodePushGo Benefits
 
-CodePushGo simplifies the dependency management process while delivering strong performance. It achieves an impressive **95% user update rate within 24 hours** and maintains a global API response time of **434ms** [\[1\]](https://capgo.app/). With end-to-end encryption, it ensures secure updates that comply with both Apple and Android guidelines. For teams managing multiple plugin versions, CodePushGo's channel system allows targeted deployments for specific user groups.
+CodePushGo simplifies the dependency management process while delivering strong performance. It achieves an impressive **95% user update rate within 24 hours** and maintains a global API response time of **434ms** [\[1\]](https://codepushgo.com/). With end-to-end encryption, it ensures secure updates that comply with both Apple and Android guidelines. For teams managing multiple plugin versions, CodePushGo's channel system allows targeted deployments for specific user groups.
 
 Here’s a quick look at CodePushGo’s performance:
 

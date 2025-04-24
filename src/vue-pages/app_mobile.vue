@@ -55,7 +55,7 @@ const brand = config.public.brand
           <a href="https://play.google.com/store/apps/details?id=ee.forgr.capacitor_go" target="_blank">
             <img src="/play-store-button.webp" height="4rem;" class="w-auto border border-white rounded boder-2 h-11 sm:h-16" alt="Apple store download link" />
           </a>
-          <a href="https://apps.apple.com/pt/app/capgo/id1602316563" target="_blank">
+          <a href="https://apps.apple.com/pt/app/codepushgo/id1602316563" target="_blank">
             <img src="/app-store-button.webp" height="4rem;" class="w-auto border border-white rounded boder-2 h-11 sm:h-16" alt="Apple store download link" />
           </a>
         </div>

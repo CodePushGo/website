@@ -7,9 +7,9 @@ author_image_url: 'https://avatars.githubusercontent.com/u/4084527?v=4'
 author_url: 'https://twitter.com/martindonadieu'
 created_at: 2025-04-15T00:00:00.000Z
 updated_at: 2025-04-15T00:00:00.000Z
-head_image: /capgo-feature-image.webp
+head_image: /codepushgo-feature-image.webp
 head_image_alt: CodePushGo channels feature flags illustration
-keywords: channels, feature flags, a/b testing, capacitor, capgo
+keywords: channels, feature flags, a/b testing, capacitor, codepushgo
 tag: Tutorial
 published: true
 locale: en
@@ -40,7 +40,7 @@ This is the more secure method. It involves:
 Here's how to implement it:
 
 ```typescript
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 // Get device ID
 const getDeviceId = async () => {
@@ -77,7 +77,7 @@ Here's a Node.js example:
 import axios from 'axios'
 
 const CAPGO_API_KEY = 'your_api_key'
-const CAPGO_API_URL = 'https://api.capgo.app'
+const CAPGO_API_URL = 'https://api.codepushgo.com'
 
 async function assignDeviceToChannel(deviceId: string, channel: string) {
   try {
@@ -114,7 +114,7 @@ The backend should also:
 This method allows devices to directly assign themselves to a channel. It's useful for testing but less secure for production:
 
 ```typescript
-import { React NativeUpdater } from '@capgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/capacitor-updater'
 
 // Assign device to channel
 const assignToChannel = async (channel: string) => {

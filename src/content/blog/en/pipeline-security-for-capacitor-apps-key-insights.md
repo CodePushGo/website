@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-21T03:16:36.231Z
 updated_at: 2025-04-21T03:17:10.503Z
-head_image: https://assets.seobotai.com/capgo.app/68059152360079f947b84e10-1745205430503.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/68059152360079f947b84e10-1745205430503.jpg
 head_image_alt: Mobile Development
 keywords: React Native, pipeline security, OTA updates, access control, encryption, mobile app security, third-party plugins, CI/CD security
 tag: Development, Security, Updates
@@ -18,12 +18,12 @@ next_blog: ''
 
 Pipeline security for [React Native](https://capacitorjs.com/) apps is essential to protect sensitive data and ensure reliable updates. Here’s what you need to know:
 
--   **Protect Secrets**: Use end-to-end encryption and secure secret management tools to safeguard credentials like [API keys](https://capgo.app/docs/webapp/api-keys/).
--   **Access Control**: Implement role-based access control (RBAC), [multi-factor authentication](https://capgo.app/docs/webapp/mfa/) (MFA), and real-time monitoring to prevent unauthorized pipeline changes.
+-   **Protect Secrets**: Use end-to-end encryption and secure secret management tools to safeguard credentials like [API keys](https://codepushgo.com/docs/webapp/api-keys/).
+-   **Access Control**: Implement role-based access control (RBAC), [multi-factor authentication](https://codepushgo.com/docs/webapp/mfa/) (MFA), and real-time monitoring to prevent unauthorized pipeline changes.
 -   **Update Integrity**: Encrypt OTA updates, verify authenticity with digital signatures, and enable staged rollouts with rollback options.
 -   **Security Tools**: Use automated security testing tools for static code analysis, dependency checks, and API testing.
 
-[CodePushGo](https://capgo.app/), a leading OTA platform, enhances React Native pipeline security with features like real-time monitoring, staged rollouts, and end-to-end encryption. These measures ensure secure app updates while protecting user data.
+[CodePushGo](https://codepushgo.com/), a leading OTA platform, enhances React Native pipeline security with features like real-time monitoring, staged rollouts, and end-to-end encryption. These measures ensure secure app updates while protecting user data.
 
 ## What is CI/CD Security? Strategies to strengthen your ...
 
@@ -31,9 +31,9 @@ Pipeline security for [React Native](https://capacitorjs.com/) apps is essential
 
 ## Security Risks in [React Native](https://capacitorjs.com/) App Pipelines
 
-![React Native](https://assets.seobotai.com/capgo.app/68059152360079f947b84e10/7e137b9b90adb3934b29b03381f213c1.jpg)
+![React Native](https://assets.seobotai.com/codepushgo.com/68059152360079f947b84e10/7e137b9b90adb3934b29b03381f213c1.jpg)
 
-As [React Native app development](https://capgo.app/blog/capacitor-comprehensive-guide/) evolves, it introduces specific security challenges to CI/CD pipelines. Addressing these risks is critical to maintaining a secure development environment.
+As [React Native app development](https://codepushgo.com/blog/capacitor-comprehensive-guide/) evolves, it introduces specific security challenges to CI/CD pipelines. Addressing these risks is critical to maintaining a secure development environment.
 
 ### Managing Secrets and Variables
 
@@ -83,7 +83,7 @@ To reduce risks, follow these pipeline security guidelines.
 -   Use **end-to-end encryption** to secure secrets and prevent credential leaks.
 -   Store API keys, access tokens, and environment variables in a **secret management service** with limited access and regular rotation.
 -   Limit variable scope to specific environments to minimize exposure risks.
--   [Encrypt data](https://capgo.app/docs/cli/migrations/encryption/) both at rest and during transit to block unauthorized access.
+-   [Encrypt data](https://codepushgo.com/docs/cli/migrations/encryption/) both at rest and during transit to block unauthorized access.
 
 ### Security Testing Tools
 
@@ -111,11 +111,11 @@ To reduce risks, follow these pipeline security guidelines.
 
 New OTA platforms now prioritize security in their React Native pipelines. These tools implement the security measures previously discussed.
 
-### [CodePushGo](https://capgo.app/) Security Features
+### [CodePushGo](https://codepushgo.com/) Security Features
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/68059152360079f947b84e10/12eddca90b08193253253ea10516a6c4.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/68059152360079f947b84e10/12eddca90b08193253253ea10516a6c4.jpg)
 
-CodePushGo provides a security-focused setup specifically designed for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/). Its end-to-end encryption ensures that updates can only be decrypted by authorized users, going beyond the usual reliance on signed packages. Key features include:
+CodePushGo provides a security-focused setup specifically designed for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/). Its end-to-end encryption ensures that updates can only be decrypted by authorized users, going beyond the usual reliance on signed packages. Key features include:
 
 -   **Real-time monitoring**: Tracks update successes and failures as they happen.
 -   **Granular access control**: Role-based permissions and organization management to restrict pipeline access.
@@ -134,7 +134,7 @@ Here’s how modern OTA platforms stack up against older methods:
 -   **Integration**: Native CI/CD integration eliminates the need for manual setups.
 -   **Hosting**: Options for both cloud and self-hosted setups, unlike legacy systems that are often cloud-only.
 
-> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" – NASA's OSIRIS-REx [\[1\]](https://capgo.app/)
+> "@CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" – NASA's OSIRIS-REx [\[1\]](https://codepushgo.com/)
 
 ## Industry Outlook
 
@@ -142,11 +142,11 @@ The field of pipeline security is moving toward more advanced, community-led mod
 
 ### Pipeline Security Trends
 
-End-to-end encryption is now a standard feature for OTA (over-the-air) update systems [\[1\]](https://capgo.app/). This development highlights the importance of scaling earlier best practices for managing secrets, access, and updates.
+End-to-end encryption is now a standard feature for OTA (over-the-air) update systems [\[1\]](https://codepushgo.com/). This development highlights the importance of scaling earlier best practices for managing secrets, access, and updates.
 
 ### Open-Source Security Tools
 
-Open-source tools are playing a crucial role alongside commercial options in shaping the next phase of pipeline security. These tools now offer features like [self-hosted deployments](https://capgo.app/blog/self-hosted-capgo/), community-driven vulnerability scanning, and transparent protocols designed for audits and ongoing improvements.
+Open-source tools are playing a crucial role alongside commercial options in shaping the next phase of pipeline security. These tools now offer features like [self-hosted deployments](https://codepushgo.com/blog/self-hosted-codepushgo/), community-driven vulnerability scanning, and transparent protocols designed for audits and ongoing improvements.
 
 The industry is expected to maintain its focus on security-first strategies, with open-source solutions driving progress in pipeline security. Organizations are increasingly favoring tools that balance strong security features with flexible deployment options, raising the bar for React Native app development.
 

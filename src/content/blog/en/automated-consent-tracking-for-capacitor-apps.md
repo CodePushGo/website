@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-04T01:27:27.426Z
 updated_at: 2025-04-04T01:27:39.829Z
-head_image: https://assets.seobotai.com/capgo.app/67ef2243ebbb9dc80641c5e1-1743730059829.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67ef2243ebbb9dc80641c5e1-1743730059829.jpg
 head_image_alt: Mobile Development
 keywords: consent tracking, privacy compliance, user rights, React Native apps, data protection
 tag: Development, Mobile, Security
@@ -33,14 +33,14 @@ Automated consent tracking is essential for [React Native](https://capacitorjs.c
     
     1.  Use plugins like `@capacitor/privacy` for managing consent.
     2.  Build clear and simple consent UI elements.
-    3.  [Encrypt and securely store](https://capgo.app/docs/cli/migrations/encryption/) consent data.
+    3.  [Encrypt and securely store](https://codepushgo.com/docs/cli/migrations/encryption/) consent data.
     4.  Adjust analytics tracking based on user preferences.
     5.  Regularly validate and update consent settings.
 -   **Compliance Tips**:
     
     -   Disclose data usage clearly.
     -   Allow users to withdraw consent and delete data.
-    -   Use tools like [CodePushGo](https://capgo.app/) for live updates to avoid app store delays.
+    -   Use tools like [CodePushGo](https://codepushgo.com/) for live updates to avoid app store delays.
 
 ## Apple app tracking transparency permission - Ionic or iOS ...
 
@@ -48,7 +48,7 @@ Automated consent tracking is essential for [React Native](https://capacitorjs.c
 
 ## Consent Requirements Guide
 
-Adding consent tracking to [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) means meeting the rules set by both Apple and Google. These rules are designed to ensure user privacy and compliance with platform standards.
+Adding consent tracking to [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) means meeting the rules set by both Apple and Google. These rules are designed to ensure user privacy and compliance with platform standards.
 
 ### App Store Policy Requirements
 
@@ -63,7 +63,7 @@ Apple and Google have specific expectations for apps regarding consent tracking:
 **Google Play Store Requirements**:
 
 -   Clearly disclose data collection and sharing practices.
--   Include a prominent [privacy policy](https://capgo.app/dp/) link in the app listing and within the app itself.
+-   Include a prominent [privacy policy](https://codepushgo.com/dp/) link in the app listing and within the app itself.
 -   Obtain explicit consent before collecting sensitive data.
 -   Provide an easy way for users to withdraw consent.
 -   Offer users the option to delete their data if they revoke consent.
@@ -416,9 +416,9 @@ class ConsentValidator {
 
 It's critical to test consent flows across different OS versions and devices to confirm consistent behavior. Use tools like CodePushGo to implement live updates, avoiding app store delays while ensuring compliance.
 
-### Using [CodePushGo](https://capgo.app/) for Updates
+### Using [CodePushGo](https://codepushgo.com/) for Updates
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/67ef2243ebbb9dc80641c5e1/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/67ef2243ebbb9dc80641c5e1/435c1a19c50c4ff1b7d76cbc4edeb6d0.jpg)
 
 CodePushGo's live update capabilities allow you to make compliance adjustments efficiently. Here's an example:
 
@@ -453,15 +453,15 @@ const updateConfig = {
 };
 ```
 
-This approach ensures real-time updates to meet Apple and Google compliance requirements[\[1\]](https://capgo.app/).
+This approach ensures real-time updates to meet Apple and Google compliance requirements[\[1\]](https://codepushgo.com/).
 
 ## Summary
 
-To wrap up the detailed setup and management process, here's a quick overview. Automated consent tracking requires strict adherence to privacy regulations, secure data handling, and efficient [update management](https://capgo.app/docs/plugin/cloud-mode/manual-update/).
+To wrap up the detailed setup and management process, here's a quick overview. Automated consent tracking requires strict adherence to privacy regulations, secure data handling, and efficient [update management](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/).
 
-Success hinges on accurate technical execution combined with fast update deployment. Tools like CodePushGo support this approach, achieving an impressive 82% global success rate for consent-related updates [\[1\]](https://capgo.app/). As Rodrigo Mantica puts it:
+Success hinges on accurate technical execution combined with fast update deployment. Tools like CodePushGo support this approach, achieving an impressive 82% global success rate for consent-related updates [\[1\]](https://codepushgo.com/). As Rodrigo Mantica puts it:
 
-> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://capgo.app/)
+> "We practice agile development and @CodePushGo is mission-critical in delivering continuously to our users!" [\[1\]](https://codepushgo.com/)
 
 Here’s a snapshot of the key metrics and strategies:
 
@@ -473,6 +473,6 @@ Here’s a snapshot of the key metrics and strategies:
 
 NASA's [OSIRIS-REx](https://en.wikipedia.org/wiki/OSIRIS-REx) team underscores the importance of swift deployment:
 
-> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://capgo.app/)
+> "CodePushGo is a smart way to make hot code pushes (and not for all the money in the world like with @AppFlow) :-)" [\[1\]](https://codepushgo.com/)
 
 When managing consent tracking, focus on encryption and analytics monitoring to stay compliant and foster user trust. This strategy ensures quick responses to regulatory changes and evolving privacy standards.

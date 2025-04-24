@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-03-28T03:11:03.831Z
 updated_at: 2025-03-28T03:11:14.608Z
-head_image: https://assets.seobotai.com/capgo.app/67e6018fa2c14cac42f82293-1743131474608.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67e6018fa2c14cac42f82293-1743131474608.jpg
 head_image_alt: Mobile Development
 keywords: React Native, mobile app development, iOS setup, Android setup, app configuration, web apps, plugins, live updates
 tag: Development, Mobile, Updates
@@ -23,7 +23,7 @@ next_blog: ''
 -   **Install Tools**: [Node.js](https://nodejs.org/en), npm, Git, and a code editor like [VS Code](https://code.visualstudio.com/).
 -   **Set Up React Native**: Install the React Native CLI and initialize your project.
 -   **Configure Platforms**: Add iOS and Android support, adjust settings, and sync your code.
--   **Test and Deploy**: Build, run on devices, and use live update tools like [CodePushGo](https://capgo.app/) for seamless updates.
+-   **Test and Deploy**: Build, run on devices, and use live update tools like [CodePushGo](https://codepushgo.com/) for seamless updates.
 
 React Native bridges web apps with native device features, ensuring smooth performance across platforms. Follow this guide to simplify your app development process!
 
@@ -74,10 +74,10 @@ Get the React Native CLI up and running with these steps:
     If you haven't done this yet, run:
     
     ```bash
-    npx @capgo/cli init
+    npx @codepushgo/cli init
     ```
     
-    This will configure the necessary settings to [manage updates](https://capgo.app/docs/plugin/cloud-mode/manual-update/) effectively [\[1\]](https://capgo.app/). It simplifies the process for building, testing, and deploying your app.
+    This will configure the necessary settings to [manage updates](https://codepushgo.com/docs/plugin/cloud-mode/manual-update/) effectively [\[1\]](https://codepushgo.com/). It simplifies the process for building, testing, and deploying your app.
     
 
 ## Starting a New React Native Project
@@ -217,7 +217,7 @@ With these configurations in place, you’re ready to build and test your app on
 
 ## Building and Testing
 
-Using the setup outlined earlier, you can now build and test your [React Native app](https://capgo.app/plugins/ivs-player/) to ensure it works correctly on various devices.
+Using the setup outlined earlier, you can now build and test your [React Native app](https://codepushgo.com/plugins/ivs-player/) to ensure it works correctly on various devices.
 
 ### Build and Run Commands
 
@@ -246,7 +246,7 @@ These commands will build and launch your app on either a simulator or a connect
 
 ### Adding React Native Plugins
 
-[React Native plugins](https://capgo.app/plugins/) allow you to add native features to your app. For example, to include camera, geolocation, and storage capabilities, run:
+[React Native plugins](https://codepushgo.com/plugins/) allow you to add native features to your app. For example, to include camera, geolocation, and storage capabilities, run:
 
 ```bash
 npm install @capacitor/camera @capacitor/geolocation @capacitor/storage
@@ -257,20 +257,20 @@ After installation, configure the plugins in your native projects. Here's a quic
 
 | **Plugin** | **iOS Configuration** | **Android Configuration** |
 | --- | --- | --- |
-| Camera | Add [Privacy Description](https://capgo.app/privacy/) | Add Permissions to Manifest |
+| Camera | Add [Privacy Description](https://codepushgo.com/privacy/) | Add Permissions to Manifest |
 | Geolocation | Add Location Usage Description | Add Location Permissions |
 | Storage | No additional setup needed | No additional setup needed |
 
-### Live Updates with [CodePushGo](https://capgo.app/)
+### Live Updates with [CodePushGo](https://codepushgo.com/)
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-03-28.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-03-28.jpg?auto=compress)
 
-To simplify deployment and testing, you can integrate live update tools like CodePushGo. This service has already delivered over 23.5 million updates, with 95% of users receiving updates within 24 hours and an 82% global success rate [\[1\]](https://capgo.app/).
+To simplify deployment and testing, you can integrate live update tools like CodePushGo. This service has already delivered over 23.5 million updates, with 95% of users receiving updates within 24 hours and an 82% global success rate [\[1\]](https://codepushgo.com/).
 
 To add CodePushGo to your app:
 
 ```bash
-npm install @capgo/capacitor-updater
+npm install @codepushgo/capacitor-updater
 npx cap sync
 ```
 
@@ -291,7 +291,7 @@ This guide has walked through every phase of setting up and deploying a React Na
 
 Creating a React Native app requires careful attention to setup, configuration, and platform-specific adjustments. Setting up your development environment - including tools like **Node.js** and the **React Native CLI** - is a crucial starting point. Configuring platforms like iOS and Android ensures the app works seamlessly on native systems.
 
-Using an update system such as **CodePushGo** can simplify release management and help maintain app stability [\[1\]](https://capgo.app/).
+Using an update system such as **CodePushGo** can simplify release management and help maintain app stability [\[1\]](https://codepushgo.com/).
 
 Here’s a breakdown of the key phases:
 

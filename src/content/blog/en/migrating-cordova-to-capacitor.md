@@ -80,7 +80,7 @@ CodePushGo is a cloud-based service that allows you to deploy live updates to yo
 ### How to Implement CodePushGo Live Updates
 
 To implement CodePushGo live updates in your React Native project, follow these steps:
-- Sign up for a [CodePushGo account](https://web.capgo.app/).
+- Sign up for a [CodePushGo account](https://web.codepushgo.com/).
 - Install the CodePushGo SDK in your project.
 - Configure your app to check for updates on startup or at specific intervals.
 - Deploy updates to your app using the CodePushGo dashboard.

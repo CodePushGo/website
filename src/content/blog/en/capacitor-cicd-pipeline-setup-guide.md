@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-04-23T00:48:58.202Z
 updated_at: 2025-04-23T00:49:09.370Z
-head_image: https://assets.seobotai.com/capgo.app/68082f5bfe5cbf0502dd901c-1745369349370.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/68082f5bfe5cbf0502dd901c-1745369349370.jpg
 head_image_alt: Mobile Development
 keywords: React Native, CI/CD, pipeline setup, app updates, CodePushGo, deployment automation, mobile development
 tag: Development, Mobile, Updates
@@ -16,11 +16,11 @@ locale: en
 next_blog: ''
 ---
 
-**Want faster [app updates](https://capgo.app/plugins/capacitor-updater/) with minimal effort?** Setting up a CI/CD pipeline for your [React Native](https://capacitorjs.com/) app automates building, testing, and deploying, saving time and reducing errors. Here's what you'll achieve:
+**Want faster [app updates](https://codepushgo.com/plugins/capacitor-updater/) with minimal effort?** Setting up a CI/CD pipeline for your [React Native](https://capacitorjs.com/) app automates building, testing, and deploying, saving time and reducing errors. Here's what you'll achieve:
 
 -   **Live Updates**: Push updates instantly without app store delays. 95% of users receive updates in 24 hours.
 -   **Pipeline Essentials**: Automate builds triggered by branch activity (`main`, `staging`, `feature/*`) and define separate environments for staging and production.
--   **[CodePushGo](https://capgo.app/) Integration**: Use CodePushGo to deploy secure, encrypted updates, manage [update channels](https://capgo.app/docs/webapp/channels/), and monitor performance.
+-   **[CodePushGo](https://codepushgo.com/) Integration**: Use CodePushGo to deploy secure, encrypted updates, manage [update channels](https://codepushgo.com/docs/webapp/channels/), and monitor performance.
 -   **Affordable Plans**: Plans start at $12/month for live updates and analytics.
 
 React Native CI/CD pipelines simplify workflows, improve efficiency, and ensure your app stays up-to-date seamlessly. Let’s dive into the details.
@@ -80,9 +80,9 @@ LIVE_UPDATES_ENABLED=true
 
 For sensitive data like API keys and certificates, make sure to store them securely in your CI platform's secrets management system. This ensures your pipeline remains both functional and secure.
 
-## [CodePushGo](https://capgo.app/) Integration Guide
+## [CodePushGo](https://codepushgo.com/) Integration Guide
 
-![CodePushGo](https://assets.seobotai.com/capgo.app/68082f5bfe5cbf0502dd901c/95506b8280be0626e7b237b754ba8f1b.jpg)
+![CodePushGo](https://assets.seobotai.com/codepushgo.com/68082f5bfe5cbf0502dd901c/95506b8280be0626e7b237b754ba8f1b.jpg)
 
 Once you've set up your build and deploy stages, it's time to integrate CodePushGo. This allows you to push live updates directly to your app, bypassing app store approval delays.
 
@@ -90,25 +90,25 @@ Once you've set up your build and deploy stages, it's time to integrate CodePush
 
 After preparing your CI/CD pipeline, follow these steps to add CodePushGo to your project:
 
-First, install the [CodePushGo CLI](https://capgo.app/docs/cli/commands):
+First, install the [CodePushGo CLI](https://codepushgo.com/docs/cli/commands):
 
 ```bash
-npx @capgo/cli init
+npx @codepushgo/cli init
 ```
 
 Then, proceed with these commands:
 
 -   **Build your app**: `npm install && npm run build`
--   **Deploy updates**: `npx @capgo/cli deploy`
--   **Rollback updates**: `npx @capgo/cli rollback`
+-   **Deploy updates**: `npx @codepushgo/cli deploy`
+-   **Rollback updates**: `npx @codepushgo/cli rollback`
 
 Here’s an example of a GitHub Actions job for deploying updates:
 
 ```yaml
 - name: Deploy to CodePushGo
   run: |
-    npm install @capgo/cli
-    npx @capgo/cli deploy
+    npm install @codepushgo/cli
+    npx @codepushgo/cli deploy
   env:
     CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
 ```
@@ -130,7 +130,7 @@ CodePushGo offers flexible plans to suit different needs:
 -   **TEAM**: $83/month (100,000 MAU, 10 GB storage, 2,000 GB bandwidth)
 -   **PAYG**: Starting at $249/month, with options for custom scaling, API access, and custom domains.
 
-Currently, CodePushGo supports over 1,900 apps in production, making it a reliable choice for continuous deployment [\[1\]](https://capgo.app/).
+Currently, CodePushGo supports over 1,900 apps in production, making it a reliable choice for continuous deployment [\[1\]](https://codepushgo.com/).
 
 ## Pipeline Management
 
@@ -150,7 +150,7 @@ Pair these alerts with clear documentation to ensure smooth monitoring and quick
 Good documentation keeps your team on the same page and your operations running smoothly. Make sure your documentation covers:
 
 -   **Pipeline Configuration**: Details like build triggers, environment variables, and security settings.
--   **Update Procedures**: Steps for deployments, rollback instructions, and [managing update channels](https://capgo.app/docs/webapp/channels/).
+-   **Update Procedures**: Steps for deployments, rollback instructions, and [managing update channels](https://codepushgo.com/docs/webapp/channels/).
 -   **Monitoring Setup**: How to configure alerts, track metrics, and respond to issues.
 -   **Compliance Guidelines**: Platform-specific rules, update restrictions, and other requirements.
 
@@ -160,7 +160,7 @@ Store all documentation in version control and update it every time your pipelin
 
 Follow Apple and Android update policies using CodePushGo's channel system to ensure smooth and compliant rollouts:
 
--   **Beta Testing**: [Release updates to small user groups](https://capgo.app/blog/how-to-send-specific-version-to-users/) to validate changes.
+-   **Beta Testing**: [Release updates to small user groups](https://codepushgo.com/blog/how-to-send-specific-version-to-users/) to validate changes.
 -   **Staged Rollouts**: Roll out updates gradually to catch issues early.
 -   **Emergency Fixes**: Quickly roll back updates with a single click if something goes wrong.
 
@@ -172,4 +172,4 @@ To get started, you'll need to install the CLI, configure builds and environment
 
 ### CI/CD Benefits
 
-The connection between setup and results showcases how CodePushGo boosts efficiency: updates reach **95% of users within just 24 hours**. Plus, CodePushGo's pricing - ranging from **$12/month to $83/month** - offers a massive cost advantage compared to legacy services that can charge over **$500/month**. Currently, CodePushGo supports more than **1,900 production apps** [\[1\]](https://capgo.app/).
+The connection between setup and results showcases how CodePushGo boosts efficiency: updates reach **95% of users within just 24 hours**. Plus, CodePushGo's pricing - ranging from **$12/month to $83/month** - offers a massive cost advantage compared to legacy services that can charge over **$500/month**. Currently, CodePushGo supports more than **1,900 production apps** [\[1\]](https://codepushgo.com/).

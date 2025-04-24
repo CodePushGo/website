@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
 created_at: 2025-02-15T04:38:10.916Z
 updated_at: 2025-03-24T13:22:05.322Z
-head_image: https://assets.seobotai.com/capgo.app/67afe3423823fbac65afe97c-1739594307916.jpg
+head_image: https://assets.seobotai.com/codepushgo.com/67afe3423823fbac65afe97c-1739594307916.jpg
 head_image_alt: Mobile Development
 keywords: OTA updates, React Native, App Store, Play Store, compliance, JavaScript updates, security
 tag: Development, Mobile, Updates
@@ -29,7 +29,7 @@ next_blog: ''
 
 -   Stick to **JavaScript and asset updates** only.
     
--   Use tools like [**CodePushGo**](https://capgo.app/) for encrypted delivery and rollback options.
+-   Use tools like [**CodePushGo**](https://codepushgo.com/) for encrypted delivery and rollback options.
     
 -   Follow **semantic versioning (**[**SemVer**](https://semver.org/)**)** for tracking and auditing updates.
     
@@ -73,7 +73,7 @@ Google Play takes a more lenient stance on OTA updates but still enforces clear 
     
 -   Requiring updates to align with the app's approved Play Store version
     
--   Preventing circumvention of Google Play’s billing system for [React Native apps](https://capgo.app/blog/capacitor-comprehensive-guide/) [\[6\]](https://essaypro.com/blog/article-review)
+-   Preventing circumvention of Google Play’s billing system for [React Native apps](https://codepushgo.com/blog/capacitor-comprehensive-guide/) [\[6\]](https://essaypro.com/blog/article-review)
     
 
 | Feature | Apple App Store | Google Play Store |
@@ -129,7 +129,7 @@ Create update interfaces that are easy to use and non-disruptive:
 -   Allow users to decide when to install updates, except for critical security patches.
     
 
-Forced updates should only be used for critical security fixes, and they must clearly communicate the urgency [\[3\]](https://capgo.app/blog/how-live-updates-for-capacitor-work/). These steps help reduce rejection risks caused by intrusive update prompts.
+Forced updates should only be used for critical security fixes, and they must clearly communicate the urgency [\[3\]](https://codepushgo.com/blog/how-live-updates-for-capacitor-work/). These steps help reduce rejection risks caused by intrusive update prompts.
 
 ### Update Security Protocol
 
@@ -146,11 +146,11 @@ These security measures align with Apple's code signing requirements and Google'
 
 ###### sbb-itb-f9944d2
 
-## [CodePushGo](https://capgo.app/) Update Management System
+## [CodePushGo](https://codepushgo.com/) Update Management System
 
-![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/capgo.app-26aea05b7e2e737b790a9becb40f7bc5-2025-02-15.jpg?auto=compress)
+![CodePushGo](https://mars-images.imgix.net/seobot/screenshots/codepushgo.com-26aea05b7e2e737b790a9becb40f7bc5-2025-02-15.jpg?auto=compress)
 
-CodePushGo provides a secure way to deliver and manage [React Native OTA updates](https://capgo.app/), ensuring smooth distribution while meeting compliance standards. It also offers advanced tools for enterprise-level [update management](https://capgo.app/it/docs/plugin/cloud-mode/manual-update/).
+CodePushGo provides a secure way to deliver and manage [React Native OTA updates](https://codepushgo.com/), ensuring smooth distribution while meeting compliance standards. It also offers advanced tools for enterprise-level [update management](https://codepushgo.com/it/docs/plugin/cloud-mode/manual-update/).
 
 ### Key Features of CodePushGo
 
@@ -181,14 +181,14 @@ Follow these three simple steps to get started with CodePushGo:
 1.  **Initial Setup**
     
     ```bash
-    npm install -g @capgo/cli
-    capgo init
+    npm install -g @codepushgo/cli
+    codepushgo init
     ```
     
 2.  **Plugin Integration**
     
     ```bash
-    npm install @capgo/capacitor-updater
+    npm install @codepushgo/capacitor-updater
     ```
     
 3.  **Configuration**
@@ -204,7 +204,7 @@ To avoid app store rejections, it's crucial to address the most common triggers:
 
 ### Native Code Violations
 
-Native code violations account for 35% of OTA rejections [\[1\]](https://github.com/Cap-go/capacitor-updater). To tackle this, ensure updates rely strictly on **JavaScript, HTML, and CSS** by using automated file checks. Tools like [CodePushGo's compliance suite](https://capgo.app/consulting/) can help by implementing code signing and integrity checks, reducing rejection rates by up to 80% [\[13\]](https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/writing-a-journal-article/).
+Native code violations account for 35% of OTA rejections [\[1\]](https://github.com/Cap-go/capacitor-updater). To tackle this, ensure updates rely strictly on **JavaScript, HTML, and CSS** by using automated file checks. Tools like [CodePushGo's compliance suite](https://codepushgo.com/consulting/) can help by implementing code signing and integrity checks, reducing rejection rates by up to 80% [\[13\]](https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/writing-a-journal-article/).
 
 ### Feature Scope Issues
 
@@ -240,7 +240,7 @@ Rolling out OTA updates for React Native apps involves a mix of technical precis
 | Priority | Action | Outcome |
 | --- | --- | --- |
 | Compliance | Stick to JavaScript-only updates | Quicker approvals |
-| Security | Use [automated encryption](https://capgo.app/docs/cli/migrations/encryption/)/signing | Fewer vulnerabilities |
+| Security | Use [automated encryption](https://codepushgo.com/docs/cli/migrations/encryption/)/signing | Fewer vulnerabilities |
 
 By following the compliance steps discussed earlier, teams can benefit from automated checks that simplify adherence to app store rules. Features like end-to-end encryption and controlled rollouts help address critical security and compliance needs.
 
