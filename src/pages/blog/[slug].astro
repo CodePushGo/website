@@ -1,0 +1,82 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import VueBlogSlug from '@/vue-pages/blog/[slug].vue'
+import type { GetStaticPaths } from 'astro'
+import { getCollection, render } from 'astro:content'
+import striptags from 'striptags'
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const blogs = await getCollection('blog')
+  const entries = blogs.filter((j) => j.data.published !== false)
+  return entries.map((post) => {
+    return {
+      params: {
+        slug: post.data.slug,
+      },
+    }
+  })
+}
+
+if (!Astro.params.slug) {
+  console.log(`Astro.params.slug is invalid for: ${Astro.url.pathname}`)
+  return new Response(null, { status: 404 })
+}
+
+const blogs = await getCollection('blog')
+const entry = blogs.find((j) => j.data.slug === Astro.params.slug && j.data.locale === Astro.locals.locale)
+const related = blogs.filter((j) => j.data.published !== false && j.data.slug !== Astro.params.slug && j.data.locale === Astro.locals.locale).slice(0, 3)
+
+if (!entry) {
+  console.log(`entry is not found for: ${Astro.url.pathname}`)
+  return new Response(null, { status: 404 })
+}
+
+const { Content, headings } = await render(entry)
+
+const content: { title?: string; description?: string; image?: string; author?: string; ldJSON?: Object; keywords?: string[] } = {}
+
+if (entry.data.title) content['title'] = entry.data.title
+if (entry.data.description) content['description'] = entry.data.description
+if (entry.data.head_image) content['image'] = `${Astro.locals.runtimeConfig.public.baseUrl}${entry.data.head_image || '/capgo_banner.webp'}`
+if (entry.data.author) content['author'] = entry.data.author || 'Capgo'
+if (entry.data.keywords) content['keywords'] = entry.data.keywords.split(',') || []
+
+const dateModified = entry.data.updated_at
+const datePublished = entry.data.created_at
+
+content['ldJSON'] = {
+  '@type': 'NewsArticle',
+  '@context': 'https://schema.org',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `${Astro.locals.runtimeConfig.public.baseUrl}/${entry.data?.slug}`,
+  },
+  dateModified: dateModified,
+  datePublished: datePublished,
+  inLanguage: Astro.locals.locale,
+  headline: entry.data?.description,
+  image: [`${Astro.locals.runtimeConfig.public.baseUrl}${entry.data?.head_image || '/capgo_banner.webp'}`],
+  author: {
+    '@type': 'Person',
+    name: entry.data?.author,
+    url: entry.data?.author_url,
+  },
+  publisher: {
+    name: 'Capgo',
+    '@type': 'Organization',
+    logo: {
+      '@type': 'ImageObject',
+      url: `${Astro.locals.runtimeConfig.public.baseUrl}/icon.webp`,
+    },
+  },
+  articleBody: striptags(entry.rendered?.html || ''),
+  keywords: entry.data?.keywords || [],
+  articleSection: entry.data?.tag || [],
+}
+---
+
+<Layout content={content}>
+  <VueBlogSlug client:load {related} {headings} {...entry.data}>
+    <Content />
+  </VueBlogSlug>
+</Layout>
