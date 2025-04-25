@@ -71,7 +71,7 @@ export default defineConfig({
       disable404Route: true,
       title: 'CodePushGo',
       favicon: '/favicon.svg',
-      logo: { src: './logo.png' },
+      logo: { src: './logo.svg' },
       customCss: ['./src/css/global.css'],
       components: {
         LanguageSelect: './src/components/LanguageSelect.astro',
