@@ -7,7 +7,7 @@ const props = defineProps<{ locale: Locales }>()
 </script>
 
 <template>
-  <section class="relative pt-12 bg-gray-900 sm:pt-16 lg:pt-20">
+  <section class="relative pt-12 bg-[#CB2E63] sm:pt-16 lg:pt-20">
     <div class="absolute inset-0 overflow-hidden">
       <img class="object-cover object-top w-full h-full transform -translate-y-80 opacity-20" src="/background-pattern.webp" alt="" />
     </div>

@@ -28,7 +28,7 @@ const features = ref([
 </script>
 
 <template>
-  <section class="relative py-12 bg-gray-900 sm:py-16 lg:py-20 xl:py-24">
+  <section class="relative py-12 bg-[#CB2E63] sm:py-16 lg:py-20 xl:py-24">
     <!-- Grid background pattern -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <svg

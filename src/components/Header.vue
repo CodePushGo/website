@@ -105,7 +105,7 @@ const menuMobile = ref(false)
           :href="getRelativeLocaleUrl(props.locale, 'register')"
           target="_blank"
           :title="m.register()"
-          class="block px-5 py-2 text-base font-medium font-semibold leading-7 text-white text-gray-300 transition-all duration-200 bg-transparent bg-gray-900 border border-gray-300 rounded-md font-pj rounded-xl hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
+          class="block px-5 py-2 text-base font-medium font-semibold leading-7 text-white text-gray-300 transition-all duration-200 bg-transparent bg-[#CB2E63] border border-gray-300 rounded-md font-pj rounded-xl hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
         >
           Register
         </a>

@@ -123,7 +123,7 @@ const messageFormatter = (message: string) => message.replace(/(@\w+)/g, '<span 
 </script>
 
 <template>
-  <section class="relative pt-24 pb-32 bg-gray-900 isolate sm:pt-32">
+  <section class="relative pt-24 pb-32 bg-[#CB2E63] isolate sm:pt-32">
     <!-- Background effects -->
     <div class="absolute inset-x-0 overflow-hidden -translate-y-1/2 top-1/2 -z-10 transform-gpu opacity-30 blur-3xl" aria-hidden="true">
       <div

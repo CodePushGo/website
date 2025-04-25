@@ -69,7 +69,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
       <section class="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
         <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="relative z-10 max-w-3xl mx-auto text-center">
-            <p class="inline-flex px-4 py-2 text-base bg-gray-900 border border-gray-200 rounded-full font-pj">{{ m.open_source() }}</p>
+            <p class="inline-flex px-4 py-2 text-base bg-[#CB2E63] border border-gray-200 rounded-full font-pj">{{ m.open_source() }}</p>
             <h1 class="mt-5 text-3xl font-bold leading-tight font-pj sm:text-4xl sm:leading-tight lg:leading-tight xl:text-5xl">
               {{ m.instant_updates_for_capacitor() }}
             </h1>
@@ -86,7 +86,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
                 :href="getRelativeLocaleUrl(props.locale, 'register')"
                 title="Get quote now"
                 target="_blank"
-                class="relative z-10 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+                class="relative z-10 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#CB2E63] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
                 role="button"
               >
                 {{ m.try_for_free() }}
@@ -95,7 +95,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
           </div>
         </div>
       </section>
-      <section class="py-12 bg-gray-900 sm:py-16 lg:py-20">
+      <section class="py-12 bg-[#CB2E63] sm:py-16 lg:py-20">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 px-16 mx-auto text-center gap-x-12 gap-y-8 sm:grid-cols-3 sm:px-0 lg:max-w-4xl lg:gap-x-24">
             <div>
@@ -343,7 +343,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               :href="getRelativeLocaleUrl(props.locale, 'register')"
               title="Get quote now"
               target="_blank"
-              class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+              class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#CB2E63] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
               role="button"
             >
               {{ m.start_now() }}
@@ -510,7 +510,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
         </div>
       </div>
     </section>
-    <section class="py-24 bg-gray-900 sm:py-32">
+    <section class="py-24 bg-[#CB2E63] sm:py-32">
       <div class="max-w-2xl px-6 mx-auto lg:max-w-7xl lg:px-8">
         <h2 class="font-semibold text-blue-400 text-base/7">{{ m.faster_releases() }}</h2>
         <p class="max-w-2xl mt-2 text-4xl font-semibold tracking-tight text-white text-pretty sm:text-5xl">{{ m.everything_you_need_to_ship_updates_instantly() }}</p>
@@ -735,7 +735,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               <a
                 :href="getRelativeLocaleUrl(props.locale, 'register')"
                 target="_blank"
-                class="inline-block w-auto px-5 py-3 mx-auto mt-5 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10"
+                class="inline-block w-auto px-5 py-3 mx-auto mt-5 text-base font-medium text-white bg-[#CB2E63] border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10"
               >
                 {{ m.get_started() }} &RightArrow;
               </a>

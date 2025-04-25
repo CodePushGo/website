@@ -221,7 +221,7 @@ const props = defineProps({
           target="_blank"
           title="Register"
           :href="getRelativeLocaleUrl(props.locale, 'register')"
-          class="font-pj relative mt-9 inline-flex items-center justify-center rounded-xl border border-transparent bg-gray-900 px-8 py-3.5 text-base font-bold text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+          class="font-pj relative mt-9 inline-flex items-center justify-center rounded-xl border border-transparent bg-[#CB2E63] px-8 py-3.5 text-base font-bold text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
         >
           {{ m.get_started_for_free() }}
         </a>
