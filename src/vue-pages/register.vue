@@ -84,7 +84,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <section class="flex items-center justify-center min-h-screen p-4 overflow-hidden bg-slate-900">
+  <section class="flex items-center justify-center min-h-screen p-4 overflow-hidden bg-[#CB2E63]">
     <div class="relative w-full max-w-4xl">
       <div class="absolute inset-0 transform -translate-x-4">
         <svg class="blur-3xl filter" style="filter: blur(64px)" width="100%" height="100%" viewBox="0 0 444 775" fill="none" xmlns="http://www.w3.org/2000/svg">
