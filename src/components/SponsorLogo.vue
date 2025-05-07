@@ -38,7 +38,7 @@ const sizeClass = computed(() => {
 </script>
 
 <template>
-  <a :href="url" target="_blank" rel="noopener noreferrer" class="m-3 flex flex-col items-center rounded-lg p-2 transition duration-300 hover:scale-105 hover:bg-gray-800">
+  <a :href="url" target="_blank" rel="noopener noreferrer" class="m-3 flex flex-col items-center rounded-lg p-2 transition duration-300 hover:scale-105 hover:bg-[#4f1226]">
     <div :class="['mb-2 flex items-center justify-center overflow-hidden rounded-full bg-white', sizeClass]">
       <img :src="logo" :alt="name" class="h-full w-full object-cover" />
     </div>

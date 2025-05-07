@@ -36,7 +36,7 @@ this will trigger the update cycle as usual without the user interaction.
 And then in your app, you should hide the splash screen when you receive the event `appReady`:
 
 ```js
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 
 React NativeUpdater.addListener('appReady', () => {
@@ -52,7 +52,7 @@ React NativeUpdater.notifyAppReady()
 Add a listener to the event `updateAvailable` and then show an alert to let the user know the app will update:
 
 ```js
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 import { Dialog } from '@capacitor/dialog'
 
 React NativeUpdater.addListener('updateAvailable', async (res) => {
@@ -76,7 +76,7 @@ React NativeUpdater.notifyAppReady()
 You can also let the user decide by showing a dialog to ask them to update:
 
 ```js
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 import { Dialog } from '@capacitor/dialog'
 
 React NativeUpdater.addListener('updateAvailable', async (res) => {

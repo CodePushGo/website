@@ -54,38 +54,38 @@ interface NavigationItem {
 
 const navigation: Record<string, NavigationItem[]> = {
   solutions: [
-    { name: m.register(), href: getRelativeLocaleUrl(props.locale, 'register'), target: '_blank' },
-    { name: m.app_mobile(), href: getRelativeLocaleUrl(props.locale, 'app_mobile') },
+    // { name: m.register(), href: getRelativeLocaleUrl(props.locale, 'register'), target: '_blank' },
+    // { name: m.app_mobile(), href: getRelativeLocaleUrl(props.locale, 'app_mobile') },
     {
       name: m.documentation(),
       href: getRelativeLocaleUrl(props.locale, 'docs'),
     },
-    { name: m.plugins(), href: getRelativeLocaleUrl(props.locale, 'plugins') },
-    {
-      name: m.awesome_capacitor(),
-      href: 'https://github.com/riderx/awesome-capacitor/',
-      target: '_blank',
-    },
-    { name: m.top_app_by_framework(), href: getRelativeLocaleUrl(props.locale, 'top_app') },
+    // { name: m.plugins(), href: getRelativeLocaleUrl(props.locale, 'plugins') },
+    // {
+    //   name: m.awesome_capacitor(),
+    //   href: 'https://github.com/riderx/awesome-capacitor/',
+    //   target: '_blank',
+    // },
+    // { name: m.top_app_by_framework(), href: getRelativeLocaleUrl(props.locale, 'top_app') },
   ],
   support: [
-    {
-      name: m.community(),
-      href: 'https://discord.com/invite/VnYRvBfgA6',
-      target: '_blank',
-    },
-    {
-      name: m.pricing(),
-      href: getRelativeLocaleUrl(props.locale, 'pricing'),
-    },
+    // {
+    //   name: m.community(),
+    //   href: 'https://discord.com/invite/VnYRvBfgA6',
+    //   target: '_blank',
+    // },
+    // {
+    //   name: m.pricing(),
+    //   href: getRelativeLocaleUrl(props.locale, 'pricing'),
+    // },
     { name: m.guides(), href: getRelativeLocaleUrl(props.locale, 'blog') },
     {
       name: () => (systemStatus.value.indicator === 'up' ? m.all_systems_normal() : m.systems_are_disturbed()),
-      href: 'https://status.capgo.app/',
+      href: 'https://status.codepushgo.com/',
       target: '_blank',
       icon: () => (systemStatus.value.indicator === 'up' ? '🟢' : '🟠'),
     },
-    { name: m.status(), href: 'https://status.capgo.app/', target: '_blank' },
+    { name: m.status(), href: 'https://status.codepushgo.com/', target: '_blank' },
     {
       name: m.chat(),
       href: 'mailto:support@codepushgo.com',
@@ -99,7 +99,7 @@ const navigation: Record<string, NavigationItem[]> = {
   company: [
     { name: m.about(), href: getRelativeLocaleUrl(props.locale, 'about') },
     { name: m.imprint(), href: getRelativeLocaleUrl(props.locale, 'imprint') },
-    { name: m.jobs(), href: 'https://console.algora.io/org/codepushgo/bounties?status=open/' },
+    // { name: m.jobs(), href: 'https://console.algora.io/org/codepushgo/bounties?status=open/' },
     { name: m.contributing(), href: getRelativeLocaleUrl(props.locale, 'contributing') },
     { name: m.trust(), href: getRelativeLocaleUrl(props.locale, 'trust') },
     { name: m.consulting(), href: getRelativeLocaleUrl(props.locale, 'consulting') },
@@ -120,29 +120,29 @@ const navigation: Record<string, NavigationItem[]> = {
     { name: m.dpa(), href: getRelativeLocaleUrl(props.locale, 'dpa'), rel: 'nofollow' },
   ],
   hero: [
-    {
-      name: m.carbon_removal(),
-      href: 'https://climate.stripe.com/vxDf62',
-      icon: defineComponent({
-        render: () =>
-          h(
-            'svg',
-            {
-              fill: 'currentColor',
-              viewBox: '0 0 24 24',
-              class: 'inline w-6 h-6 text-blue-600',
-            },
-            [
-              h('path', {
-                'stroke-linecap': 'round',
-                'stroke-linejoin': 'round',
-                'stroke-width': 2,
-                d: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z',
-              }),
-            ],
-          ),
-      }),
-    },
+    // {
+    //   name: m.carbon_removal(),
+    //   href: 'https://climate.stripe.com/vxDf62',
+    //   icon: defineComponent({
+    //     render: () =>
+    //       h(
+    //         'svg',
+    //         {
+    //           fill: 'currentColor',
+    //           viewBox: '0 0 24 24',
+    //           class: 'inline w-6 h-6 text-blue-600',
+    //         },
+    //         [
+    //           h('path', {
+    //             'stroke-linecap': 'round',
+    //             'stroke-linejoin': 'round',
+    //             'stroke-width': 2,
+    //             d: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z',
+    //           }),
+    //         ],
+    //       ),
+    //   }),
+    // },
     {
       name: m.open_source(),
       href: 'https://github.com/Cap-go/',

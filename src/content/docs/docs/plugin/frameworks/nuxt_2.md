@@ -11,7 +11,7 @@ Create a plugin file `capacitor-updater.js` in `plugins` directory.
 
 ```js
 
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 
 export default ({ app }) => {
   if (process.client) {

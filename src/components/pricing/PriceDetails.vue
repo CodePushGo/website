@@ -23,7 +23,7 @@ const props = defineProps<{ locale: Locales }>()
             style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"
           />
         </div>
-        <div class="relative grid grid-cols-1 px-16 py-12 overflow-hidden text-center text-white bg-[#CB2E63] gap-x-20 gap-y-12 rounded-2xl sm:grid-cols-2 lg:grid-cols-4">
+        <div class="relative grid grid-cols-1 px-16 py-12 overflow-hidden text-center text-white bg-[#8d2045] gap-x-20 gap-y-12 rounded-2xl sm:grid-cols-2 lg:grid-cols-4">
           <div class="flex flex-col items-center">
             <h3 class="calc-label">
               MAU<br /><span class="text-[0.6rem]">{{ m.monthly_active_users() }}</span>

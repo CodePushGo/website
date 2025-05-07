@@ -75,7 +75,7 @@ function descToEmoji(desc: string) {
               <h3 class="text-lg font-semibold text-gray-900">
                 {{ plan.name.toUpperCase() }}
               </h3>
-              <p class="mt-2 text-sm font-normal text-gray-500">
+              <p class="mt-2 text-sm font-normal text-gray-300">
                 {{ descToText(plan.description) }}
               </p>
             </div>
@@ -84,7 +84,7 @@ function descToEmoji(desc: string) {
         <div class="px-4 py-5 sm:p-6">
           <div class="flex items-end">
             <p class="text-5xl font-semibold text-gray-900">${{ yearly ? (plan.price_y / 12).toFixed() : plan.price_m }}</p>
-            <p class="py-1 text-sm font-normal text-gray-500">/{{ m.month() }}</p>
+            <p class="py-1 text-sm font-normal text-gray-300">/{{ m.month() }}</p>
           </div>
           <p v-if="yearly" class="mt-8">
             <span class="text-gray-900 dark:text-white">{{ m.billed_annually_at() }} ${{ plan.price_y }}</span>

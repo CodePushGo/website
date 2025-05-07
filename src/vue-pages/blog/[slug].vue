@@ -107,10 +107,10 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
       class="fixed left-10 top-20 z-10 hidden max-h-[calc(100vh-80px)] overflow-y-auto opacity-0 transition-opacity duration-300 xl:block"
       :class="{ 'opacity-100': isFixedTocVisible }"
     >
-      <div class="w-[280px] rounded bg-gray-700 p-5">
+      <div class="w-[280px] rounded bg-[#631731] p-5">
         <ul v-if="headings?.length" class="flex flex-col text-left list-none">
           <span class="pb-1 text-lg border-b border-gray-600">{{ m.table_of_contents() }}</span>
-          <li v-for="item in headings" :key="item.slug" class="block mt-2 text-gray-400 truncate hover:text-gray-200">
+          <li v-for="item in headings" :key="item.slug" class="block mt-2 text-gray-200 truncate hover:text-gray-200">
             <a :class="`pl-${Math.max(0, (item.depth - 2) * 2)} ${activeSlug === item.slug && 'text-white'}`" :href="`#${item.slug}`">
               {{ item.text }}
             </a>
@@ -146,10 +146,10 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
       </p>
       <div class="hidden pl-10" />
       <div ref="staticToc" class="absolute top-0 hidden max-h-screen overflow-y-auto transition-opacity duration-300 left-10 xl:block" :class="{ 'opacity-0': isFixedTocVisible }">
-        <div class="w-[280px] rounded bg-gray-700 p-5">
+        <div class="w-[280px] rounded bg-[#631731] p-5">
           <ul v-if="headings?.length" class="flex flex-col text-left list-none">
             <span class="pb-1 text-lg border-b border-gray-600">{{ m.table_of_contents() }}</span>
-            <li v-for="item in headings" :key="item.slug" class="block mt-2 text-gray-400 truncate hover:text-gray-200">
+            <li v-for="item in headings" :key="item.slug" class="block mt-2 text-gray-200 truncate hover:text-gray-200">
               <a :class="`pl-${Math.max(0, (item.depth - 2) * 2)} ${activeSlug === item.slug && 'text-white'}`" :href="`#${item.slug}`">
                 {{ item.text }}
               </a>
@@ -158,10 +158,10 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
         </div>
       </div>
       <div v-if="headings?.length" class="flex flex-col px-4 mx-auto text-left rounded xl-hidden lg:max-w-1/2">
-        <ul class="flex flex-col p-4 bg-gray-700 rounded">
+        <ul class="flex flex-col p-4 bg-[#631731] rounded">
           <span class="pb-1 text-lg border-b border-gray-600">{{ m.table_of_contents() }}</span>
           <div class="hidden pl-20" />
-          <li v-for="item in headings" class="block mt-2 text-gray-400 truncate hover:text-gray-200">
+          <li v-for="item in headings" class="block mt-2 text-gray-200 truncate hover:text-gray-200">
             <a :class="`pl-${Math.max(0, (item.depth - 2) * 2)} ${activeSlug === item.slug && 'text-white'}`" :href="`#${item.slug}`">
               {{ item.text }}
             </a>
@@ -189,7 +189,7 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-xl mx-auto text-center">
           <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">{{ m.latest_from_news() }}</h2>
-          <p class="mt-4 text-base font-normal leading-7 text-gray-400 lg:mt-6 lg:text-lg lg:leading-8">
+          <p class="mt-4 text-base font-normal leading-7 text-gray-200 lg:mt-6 lg:text-lg lg:leading-8">
             {{ m.codepushgo_gives_you_the_best_insights_you_need_to_create_a_truly_professional_mobile_app() }}
           </p>
         </div>

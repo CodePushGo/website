@@ -76,15 +76,12 @@ const handleSubmit = async () => {
     isLoading.value = false
     return
   }
-  if ((window as any).datafast) {
-    ;(window as any).datafast('signup', { email: email.value })
-  }
   window.location.href = `https://web.codepushgo.com/login/?access_token=${session.data.session?.access_token}&refresh_token=${session.data.session?.refresh_token}`
 }
 </script>
 
 <template>
-  <section class="flex items-center justify-center min-h-screen p-4 overflow-hidden bg-[#CB2E63]">
+  <section class="flex items-center justify-center min-h-screen p-4 overflow-hidden bg-[#8d2045]">
     <div class="relative w-full max-w-4xl">
       <div class="absolute inset-0 transform -translate-x-4">
         <svg class="blur-3xl filter" style="filter: blur(64px)" width="100%" height="100%" viewBox="0 0 444 775" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +102,7 @@ const handleSubmit = async () => {
         <div class="p-6 space-y-6">
           <div>
             <h2 class="text-4xl font-bold text-gray-900">{{ m.register_title() }}</h2>
-            <p class="text-sm text-gray-500">
+            <p class="text-sm text-gray-300">
               {{ m.already_have_account() }}
               <a href="https://web.codepushgo.com/login/" target="_blank" class="text-blue-500 hover:underline">{{ m.sign_in() }}</a>
             </p>
@@ -184,7 +181,7 @@ const handleSubmit = async () => {
               <div class="w-full border-t border-gray-300"></div>
             </div>
             <div class="relative flex justify-center text-sm">
-              <span class="px-2 text-gray-500 bg-white">{{ m.need_help() }}</span>
+              <span class="px-2 text-gray-300 bg-white">{{ m.need_help() }}</span>
             </div>
           </div>
           <a
@@ -213,7 +210,7 @@ const handleSubmit = async () => {
               <img src="/avatar-male-2.webp" alt="User" class="w-12 h-12 mr-4 rounded-full" />
               <div>
                 <cite class="font-bold text-white">Jermaine</cite>
-                <p class="text-gray-400">{{ m.testimonial_description() }}</p>
+                <p class="text-gray-200">{{ m.testimonial_description() }}</p>
               </div>
             </div>
           </blockquote>

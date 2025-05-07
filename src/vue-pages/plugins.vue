@@ -30,16 +30,16 @@ onMounted(() => {
           v-for="item in plugins"
           :key="item.href"
           :href="item.href !== 'N/A' ? getRelativeLocaleUrl(props.locale, `tutorials/${getSlug(item.href)}`) : '#'"
-          class="flex flex-col overflow-hidden border border-gray-600 rounded shadow group hover:shadow-white md:max-w-sm"
+          class="flex flex-col overflow-hidden border border-gray-300 rounded shadow group hover:shadow-white md:max-w-sm"
         >
           <div class="flex flex-col px-5 py-3">
-            <component :is="item.icon" v-if="item.icon" class="mb-6 mt-3 w-[30px] fill-gray-400 group-hover:fill-white" />
+            <component :is="item.icon" v-if="item.icon" class="mb-6 mt-3 w-[30px] fill-gray-300 group-hover:fill-white" />
             <div class="text-lg font-bold text-white">{{ item.title }}</div>
-            <div class="w-full mt-3 text-sm text-gray-200 break-all line-clamp-2" v-html="item.description" />
+            <div class="w-full mt-3 text-sm text-gray-100 break-all line-clamp-2" v-html="item.description" />
           </div>
           <div class="flex flex-row items-center justify-between px-5 pb-3 mt-auto mb-3">
-            <span class="text-sm font-light text-gray-400">by {{ item.author }}</span>
-            <component :is="ArrowUpRightIcon" v-if="item.href !== 'N/A'" class="h-[18px] w-[18px] fill-gray-500 group-hover:fill-white" />
+            <span class="text-sm font-light text-gray-100">by {{ item.author }}</span>
+            <component :is="ArrowUpRightIcon" v-if="item.href !== 'N/A'" class="h-[18px] w-[18px] fill-gray-300 group-hover:fill-white" />
           </div>
         </a>
       </div>

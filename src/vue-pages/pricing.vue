@@ -53,7 +53,7 @@ const payg_units = computed(() =>
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="mx-auto text-center">
         <h1 class="text-3xl font-bold text-gray-900 font-pj sm:text-4xl xl:text-6xl">{{ m.plans_that_scale_with_your_business() }}</h1>
-        <p class="mt-6 text-xl font-normal text-gray-600 font-pj">{{ m.plans_that_scale_with_your_business_description() }}</p>
+        <p class="mt-6 text-xl font-normal text-gray-400 font-pj">{{ m.plans_that_scale_with_your_business_description() }}</p>
       </div>
       <p class="mt-5 text-center sm:mb-14">
         <button class="font-medium text-black border-blue-600 border-b-1 hover:text-blue-600 focus:text-blue-600" @click="scrollToId('calculator')">
@@ -89,7 +89,7 @@ const payg_units = computed(() =>
           <div class="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
             <div class="max-w-2xl space-y-4">
               <h2 class="text-4xl font-bold text-gray-900">Enterprise</h2>
-              <p class="text-xl leading-relaxed text-gray-600">
+              <p class="text-xl leading-relaxed text-gray-400">
                 For enterprise teams building mission-critical apps looking for a specialized mobile DevOps package, paired with expert support and advisory services.
               </p>
             </div>
@@ -113,7 +113,7 @@ const payg_units = computed(() =>
         v-if="plansAll && payg_base && payg_units"
         class="pt-3 pb-6 bg-gray-50 sm:pb-10 sm:pt-6 lg:pb-14 lg:pt-10"
       />
-      <p class="max-w-md mx-auto mb-8 text-base text-center text-gray-500 font-pj md:mt-16">
+      <p class="max-w-md mx-auto mb-8 text-base text-center text-gray-300 font-pj md:mt-16">
         {{ m.we_don_t_bill_you_automatically_until_your_confirmation() }}<br />
         {{ m.we_don_t_store_or_sell_your_data_to_anyone() }}
       </p>

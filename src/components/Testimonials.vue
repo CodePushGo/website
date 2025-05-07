@@ -123,7 +123,7 @@ const messageFormatter = (message: string) => message.replace(/(@\w+)/g, '<span 
 </script>
 
 <template>
-  <section class="relative pt-24 pb-32 bg-[#CB2E63] isolate sm:pt-32">
+  <section class="relative pt-24 pb-32 bg-[#8d2045] isolate sm:pt-32">
     <!-- Background effects -->
     <div class="absolute inset-x-0 overflow-hidden -translate-y-1/2 top-1/2 -z-10 transform-gpu opacity-30 blur-3xl" aria-hidden="true">
       <div
@@ -185,15 +185,15 @@ const messageFormatter = (message: string) => message.replace(/(@\w+)/g, '<span 
       </div>
 
       <div class="grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 mx-auto mt-16 text-gray-300 text-sm/6 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-        <figure class="bg-gray-800 shadow-lg rounded-2xl ring-1 ring-gray-700 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+        <figure class="bg-[#4f1226] shadow-lg rounded-2xl ring-1 ring-gray-700 sm:col-span-2 xl:col-start-2 xl:row-end-1">
           <blockquote class="p-6 tracking-tight text-white text-lg/4 sm:p-12 sm:text-xl/8">
             <p v-html="messageFormatter(featuredTestimonial.body)"></p>
           </blockquote>
           <figcaption class="flex flex-wrap items-center px-6 py-4 border-t border-gray-700 gap-x-4 gap-y-4 sm:flex-nowrap">
-            <img class="flex-none bg-gray-800 rounded-full size-10" :src="featuredTestimonial.author.imageUrl" :alt="featuredTestimonial.author.name" />
+            <img class="flex-none bg-[#4f1226] rounded-full size-10" :src="featuredTestimonial.author.imageUrl" :alt="featuredTestimonial.author.name" />
             <div class="flex-auto">
               <div class="font-semibold text-white">{{ featuredTestimonial.author.name }}</div>
-              <div class="text-gray-400">{{ `@${featuredTestimonial.author.handle}` }}</div>
+              <div class="text-gray-200">{{ `@${featuredTestimonial.author.handle}` }}</div>
             </div>
             <div class="size-5">
               <svg viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,15 +217,15 @@ const messageFormatter = (message: string) => message.replace(/(@\w+)/g, '<span 
               'space-y-8',
             ]"
           >
-            <figure v-for="testimonial in column" :key="testimonial.author.handle" class="p-6 bg-gray-800 shadow-lg rounded-2xl ring-1 ring-gray-700">
+            <figure v-for="testimonial in column" :key="testimonial.author.handle" class="p-6 bg-[#4f1226] shadow-lg rounded-2xl ring-1 ring-gray-700">
               <blockquote class="text-white">
                 <p v-html="messageFormatter(testimonial.body)"></p>
               </blockquote>
               <figcaption class="flex items-center mt-6 gap-x-4">
-                <img class="bg-gray-800 rounded-full size-10" :src="testimonial.author.imageUrl" :alt="testimonial.author.name" />
+                <img class="bg-[#4f1226] rounded-full size-10" :src="testimonial.author.imageUrl" :alt="testimonial.author.name" />
                 <div>
                   <div class="font-semibold text-white">{{ testimonial.author.name }}</div>
-                  <div class="text-gray-400">{{ `@${testimonial.author.handle}` }}</div>
+                  <div class="text-gray-200">{{ `@${testimonial.author.handle}` }}</div>
                 </div>
                 <div class="ml-auto size-4">
                   <svg viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">

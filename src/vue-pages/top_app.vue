@@ -21,7 +21,7 @@ const others = ref(['top_capacitor_app', 'top_cordova_app', 'top_flutter_app', '
           v-for="l in others"
           :key="l"
           :href="`/${l}/`"
-          class="flex flex-col py-8 text-center transition-all duration-200 bg-gray-700 rounded-lg hover:bg-blue-700 focus:bg-blue-900"
+          class="flex flex-col py-8 text-center transition-all duration-200 bg-[#631731] rounded-lg hover:bg-blue-700 focus:bg-blue-900"
         >
           <div class="relative flex mx-auto">
             <div class="block w-full pb-4 mx-4">

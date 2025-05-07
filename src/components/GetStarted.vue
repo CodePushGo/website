@@ -6,7 +6,7 @@ import * as m from '../paraglide/messages.js'
   <div>
     <div class="relative max-w-4xl p-4 mx-4 my-6 sm:mx-auto sm:p-8 md:p-12 sm:my-10 md:my-14">
       <!-- Border design -->
-      <div class="absolute inset-0 rounded-[20px] sm:rounded-[40px] border border-gray-700"></div>
+      <div class="absolute inset-0 rounded-[20px] sm:rounded-[40px] border border-gray-300"></div>
 
       <div class="relative">
         <h1 class="text-3xl sm:text-4xl md:text-[44px] leading-tight text-white font-normal mb-4 sm:mb-6">
@@ -19,7 +19,7 @@ import * as m from '../paraglide/messages.js'
 
         <a
           href="/register/"
-          class="inline-flex items-center justify-center w-full px-6 py-3 text-lg text-white transition-colors duration-200 bg-black rounded-lg sm:w-auto sm:px-10 sm:py-4 sm:text-xl hover:bg-gray-800"
+          class="inline-flex items-center justify-center w-full px-6 py-3 text-lg text-white transition-colors duration-200 bg-black rounded-lg sm:w-auto sm:px-10 sm:py-4 sm:text-xl hover:bg-[#4f1226]"
         >
           {{ m.get_started_now() }}
         </a>

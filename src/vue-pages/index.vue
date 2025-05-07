@@ -69,11 +69,11 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
       <section class="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
         <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="relative z-10 max-w-3xl mx-auto text-center">
-            <p class="inline-flex px-4 py-2 text-base bg-[#CB2E63] border border-gray-200 rounded-full font-pj">{{ m.open_source() }}</p>
+            <p class="inline-flex px-4 py-2 text-base bg-[#8d2045] border border-gray-200 rounded-full font-pj">{{ m.open_source() }}</p>
             <h1 class="mt-5 text-3xl font-bold leading-tight font-pj sm:text-4xl sm:leading-tight lg:leading-tight xl:text-5xl">
               {{ m.instant_updates_for_capacitor() }}
             </h1>
-            <h2 class="max-w-md mx-auto mt-6 text-base leading-7 text-gray-400 font-inter">
+            <h2 class="max-w-md mx-auto mt-6 text-base leading-7 text-gray-200 font-inter">
               {{ m.ship_updates_fixes_changes_and_features() }}
               <br /><span class="font-bold">{{ m.within_minutes() }}</span
               ><br />
@@ -86,7 +86,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
                 :href="getRelativeLocaleUrl(props.locale, 'register')"
                 title="Get quote now"
                 target="_blank"
-                class="relative z-10 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#CB2E63] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+                class="relative z-10 inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#8d2045] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
                 role="button"
               >
                 {{ m.try_for_free() }}
@@ -95,7 +95,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
           </div>
         </div>
       </section>
-      <section class="py-12 bg-[#CB2E63] sm:py-16 lg:py-20">
+      <section class="py-12 bg-[#8d2045] sm:py-16 lg:py-20">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 px-16 mx-auto text-center gap-x-12 gap-y-8 sm:grid-cols-3 sm:px-0 lg:max-w-4xl lg:gap-x-24">
             <div>
@@ -105,7 +105,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
                 />
               </svg>
               <h3 class="mt-6 text-lg font-medium text-white md:mt-8">{{ m.instant_updates() }}</h3>
-              <p class="mt-3 text-sm text-gray-400">
+              <p class="mt-3 text-sm text-gray-200">
                 {{ m.reach_users_now_not_weeks_later() }}
               </p>
             </div>
@@ -116,7 +116,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
                 />
               </svg>
               <h3 class="mt-6 text-lg font-medium text-white md:mt-8">{{ m.app_store_compliant() }}</h3>
-              <p class="mt-3 text-sm text-gray-400">{{ m.compliant_with_apple_and_android_requirements() }}</p>
+              <p class="mt-3 text-sm text-gray-200">{{ m.compliant_with_apple_and_android_requirements() }}</p>
             </div>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" class="w-auto mx-auto text-white h-14" fill="currentColor" viewBox="0 0 576 512">
@@ -125,17 +125,17 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
                 />
               </svg>
               <h3 class="mt-6 text-lg font-medium text-white md:mt-8">{{ m.end_to_end_encryption() }}</h3>
-              <p class="mt-3 text-sm text-gray-400">{{ m.only_your_users_can_decrypt_your_updates_no_one_else() }}</p>
+              <p class="mt-3 text-sm text-gray-200">{{ m.only_your_users_can_decrypt_your_updates_no_one_else() }}</p>
             </div>
           </div>
-          <h3 class="hidden max-w-xl mx-auto mt-12 text-xl leading-7 text-gray-400 font-inter md:block">
+          <h3 class="hidden max-w-xl mx-auto mt-12 text-xl leading-7 text-gray-200 font-inter md:block">
             <span class="font-bold">&#128075; {{ m.no_more_wait() }}</span>
             {{ m.for_apple_and_google_app_updates_distribution() }}
           </h3>
-          <h3 class="block max-w-sm mx-auto mt-12 text-xl leading-7 text-center text-gray-400 font-inter md:hidden">
+          <h3 class="block max-w-sm mx-auto mt-12 text-xl leading-7 text-center text-gray-200 font-inter md:hidden">
             <span class="font-bold">&#128075; {{ m.no_more_wait() }}</span>
           </h3>
-          <h3 class="block max-w-sm mx-auto text-xl leading-7 text-center text-gray-400 font-inter md:hidden">
+          <h3 class="block max-w-sm mx-auto text-xl leading-7 text-center text-gray-200 font-inter md:hidden">
             {{ m.for_apple_and_google_app_updates_distribution() }}
           </h3>
         </div>
@@ -197,7 +197,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-500 xl:bg-gradient-to-r" />
     </section>
-    <section class="relative py-20 bg-gray-800 md:my-20">
+    <section class="relative py-20 bg-[#4f1226] md:my-20">
       <svg class="absolute hidden opacity-30 md:-left-1/3 md:-top-5 md:m-0 md:block lg:-left-16" width="404" height="392" fill="none" viewBox="0 0 404 392">
         <defs>
           <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -225,7 +225,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
           <p class="mt-3 text-base leading-relaxed text-gray-300 md:mt-8">
             {{ m.our_numbers_are_shared_transparently_since_december_2021() }}
           </p>
-          <p class="mt-5 text-base text-center text-gray-400">{{ m.last_update() }}: {{ dayjs().format('MMMM DD, YYYY') }}</p>
+          <p class="mt-5 text-base text-center text-gray-200">{{ m.last_update() }}: {{ dayjs().format('MMMM DD, YYYY') }}</p>
         </div>
         <div class="grid grid-cols-1 gap-8 mt-10 text-center sm:gap-x-8 md:grid-cols-3 lg:mt-24">
           <div>
@@ -233,25 +233,25 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               <span class="bg-gradient-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{{ stats.updates }}</span>
             </h3>
             <p class="mt-4 text-xl font-medium text-gray-300">{{ m.updates_delivered() }}</p>
-            <p class="mt-0.5 text-base text-gray-400">{{ m.all_around_the_globe() }}</p>
+            <p class="mt-0.5 text-base text-gray-200">{{ m.all_around_the_globe() }}</p>
           </div>
           <div>
             <h3 class="font-bold text-7xl">
               <span class="bg-gradient-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{{ stats.apps }}</span>
             </h3>
             <p class="mt-4 text-xl font-medium text-gray-300">{{ m.apps() }}</p>
-            <p class="mt-0.5 text-base text-gray-400">{{ m.using_us_in_production() }}</p>
+            <p class="mt-0.5 text-base text-gray-200">{{ m.using_us_in_production() }}</p>
           </div>
           <div>
             <h3 class="font-bold text-7xl">
               <span class="bg-gradient-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{{ stats.stars }}★</span>
             </h3>
             <p class="mt-4 text-xl font-medium text-gray-300">{{ m.stars_in_github() }}</p>
-            <p class="mt-0.5 text-base text-gray-400">{{ m.open_source() }}</p>
+            <p class="mt-0.5 text-base text-gray-200">{{ m.open_source() }}</p>
           </div>
         </div>
         <div class="grid grid-cols-1 gap-8 mt-10 text-center sm:gap-x-8 md:grid-cols-2 lg:mt-24">
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <h3 class="text-2xl font-bold text-white">{{ m.update_metrics() }}</h3>
             <div class="p-4 space-y-4">
               <div>
@@ -264,7 +264,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
             </div>
           </div>
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <h3 class="text-2xl font-bold text-white">{{ m.performance_metrics() }}</h3>
             <div class="p-4 space-y-4">
               <div>
@@ -286,7 +286,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
           <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl">
             {{ m.how_it_work() }}
           </h2>
-          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">{{ m.ship_your_first_update_in_less_than_15_minutes() }}</p>
+          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-400">{{ m.ship_your_first_update_in_less_than_15_minutes() }}</p>
         </div>
         <div class="relative mt-12 lg:mt-20">
           <div class="absolute inset-x-0 hidden top-2 md:block md:px-20 lg:px-28 xl:px-44">
@@ -308,7 +308,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               <h3 class="mt-6 text-xl font-semibold leading-tight text-black md:mt-10">
                 {{ m.install_the_plugin() }}
               </h3>
-              <p class="mt-4 text-base text-gray-600">Run <span class="font-bold text-gray-900">npx @codepushgo/cli init</span> that it !</p>
+              <p class="mt-4 text-base text-gray-400">Run <span class="font-bold text-gray-900">npx @codepushgo/cli init</span> that it !</p>
             </div>
             <div>
               <div class="flex items-center justify-center w-16 h-16 mx-auto bg-white border-2 border-gray-200 rounded-full shadow">
@@ -317,7 +317,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               <h3 class="mt-6 text-xl font-semibold leading-tight text-black md:mt-10">
                 {{ m.send_your_first_update() }}
               </h3>
-              <p class="mt-4 text-base text-gray-600">
+              <p class="mt-4 text-base text-gray-400">
                 {{ m.build_your_app_as_usual_then_send_with_the_cli() }}
               </p>
             </div>
@@ -328,7 +328,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               <h3 class="mt-6 text-xl font-semibold leading-tight text-black md:mt-10">
                 {{ m.get_the_update() }}
               </h3>
-              <p class="mt-4 text-base text-gray-600">
+              <p class="mt-4 text-base text-gray-400">
                 {{ m.open_the_app_it_update_in_the_background() }}
               </p>
             </div>
@@ -343,7 +343,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               :href="getRelativeLocaleUrl(props.locale, 'register')"
               title="Get quote now"
               target="_blank"
-              class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#CB2E63] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+              class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#8d2045] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
               role="button"
             >
               {{ m.start_now() }}
@@ -352,7 +352,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
         </div>
       </div>
     </section>
-    <section class="py-12 bg-gray-800 sm:py-16 lg:py-20">
+    <section class="py-12 bg-[#4f1226] sm:py-16 lg:py-20">
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
           <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl xl:text-5xl">
@@ -361,7 +361,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
           <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-300">{{ m.key_features_subtitle() }}</p>
         </div>
         <div class="grid grid-cols-1 gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <div class="flex items-center justify-center w-12 h-12 mb-4 bg-blue-900 rounded-lg">
               <svg class="w-6 h-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -370,7 +370,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
             <h3 class="mb-2 text-xl font-bold text-white">{{ m.instant_updates() }}</h3>
             <p class="text-gray-300">{{ m.push_updates_to_your_users_in_seconds() }}</p>
           </div>
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <div class="flex items-center justify-center w-12 h-12 mb-4 bg-green-900 rounded-lg">
               <svg class="w-6 h-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -384,7 +384,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
             <h3 class="mb-2 text-xl font-bold text-white">{{ m.secure() }}</h3>
             <p class="text-gray-300">{{ m.end_to_end_encryption_for_your_updates() }}</p>
           </div>
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <div class="flex items-center justify-center w-12 h-12 mb-4 bg-purple-900 rounded-lg">
               <svg class="w-6 h-6 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -393,7 +393,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
             <h3 class="mb-2 text-xl font-bold text-white">{{ m.analytics() }}</h3>
             <p class="text-gray-300">{{ m.track_update_success_and_user_engagement() }}</p>
           </div>
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <div class="flex items-center justify-center w-12 h-12 mb-4 bg-yellow-900 rounded-lg">
               <svg class="w-6 h-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -402,7 +402,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
             <h3 class="mb-2 text-xl font-bold text-white">{{ m.rollback() }}</h3>
             <p class="text-gray-300">{{ m.instantly_rollback_to_previous_version_if_needed() }}</p>
           </div>
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <div class="flex items-center justify-center w-12 h-12 mb-4 bg-red-900 rounded-lg">
               <svg class="w-6 h-6 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -411,7 +411,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
             <h3 class="mb-2 text-xl font-bold text-white">{{ m.error_tracking() }}</h3>
             <p class="text-gray-300">{{ m.catch_and_fix_issues_before_they_affect_users() }}</p>
           </div>
-          <div class="p-6 bg-gray-700 rounded-xl">
+          <div class="p-6 bg-[#631731] rounded-xl">
             <div class="flex items-center justify-center w-12 h-12 mb-4 bg-indigo-900 rounded-lg">
               <svg class="w-6 h-6 text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -434,7 +434,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
           <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl">
             {{ m.with_and_without_codepushgo_title() }}
           </h2>
-          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">{{ m.with_and_without_codepushgo_subtitle() }}</p>
+          <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-400">{{ m.with_and_without_codepushgo_subtitle() }}</p>
         </div>
         <div class="grid grid-cols-1 gap-8 mt-12 lg:grid-cols-2">
           <div class="p-8 border-2 border-red-200 bg-red-50 rounded-xl">
@@ -510,14 +510,14 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
         </div>
       </div>
     </section>
-    <section class="py-24 bg-[#CB2E63] sm:py-32">
+    <section class="py-24 bg-[#8d2045] sm:py-32">
       <div class="max-w-2xl px-6 mx-auto lg:max-w-7xl lg:px-8">
         <h2 class="font-semibold text-blue-400 text-base/7">{{ m.faster_releases() }}</h2>
         <p class="max-w-2xl mt-2 text-4xl font-semibold tracking-tight text-white text-pretty sm:text-5xl">{{ m.everything_you_need_to_ship_updates_instantly() }}</p>
-        <p class="max-w-2xl mt-4 text-lg text-gray-400">{{ m.ship_updates_fixes_changes_and_features() }}</p>
+        <p class="max-w-2xl mt-4 text-lg text-gray-200">{{ m.ship_updates_fixes_changes_and_features() }}</p>
         <div class="grid grid-cols-1 gap-4 mt-10 sm:mt-16 lg:grid-cols-6 lg:grid-rows-3">
           <div class="flex p-px lg:col-span-4">
-            <div class="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem] w-full">
+            <div class="overflow-hidden rounded-lg bg-[#4f1226] ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem] w-full">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-[#44BCFF]/20 via-[#FF44EC]/20 to-[#FF675E]/20">
                 <svg class="w-32 h-32 text-[#44BCFF] mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -526,14 +526,14 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Ship updates instantly to your users</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">
                   Push live code changes directly to users without app store delays. Deploy critical fixes and features when they're ready.
                 </p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-tr-[2rem] w-full">
+            <div class="overflow-hidden rounded-lg bg-[#4f1226] ring-1 ring-white/15 lg:rounded-tr-[2rem] w-full">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-blue-500/20 to-purple-500/20">
                 <svg class="w-24 h-24 mb-4 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -547,12 +547,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Seamless background updates</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Updates install automatically in the background with no user interaction required</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Updates install automatically in the background with no user interaction required</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-3">
-            <div class="w-full overflow-hidden bg-gray-800 rounded-lg ring-1 ring-white/15">
+            <div class="w-full overflow-hidden bg-[#4f1226] rounded-lg ring-1 ring-white/15">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-green-500/20 to-blue-500/20">
                 <svg class="w-24 h-24 mb-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -566,12 +566,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Streamlined deployment process</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Build and deploy updates with a single command using our CLI tool</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Build and deploy updates with a single command using our CLI tool</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-3">
-            <div class="w-full overflow-hidden bg-gray-800 rounded-lg ring-1 ring-white/15">
+            <div class="w-full overflow-hidden bg-[#4f1226] rounded-lg ring-1 ring-white/15">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-purple-500/20 to-pink-500/20">
                 <svg class="w-24 h-24 mb-4 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -585,12 +585,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Support for React Native 6 & 7</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Full compatibility with latest React Native versions and all major platforms</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Full compatibility with latest React Native versions and all major platforms</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-4">
-            <div class="w-full overflow-hidden bg-gray-800 rounded-lg ring-1 ring-white/15">
+            <div class="w-full overflow-hidden bg-[#4f1226] rounded-lg ring-1 ring-white/15">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-yellow-500/20 to-orange-500/20">
                 <svg class="w-24 h-24 mb-4 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -604,12 +604,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Smart differential updates</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Only download what's changed, saving bandwidth and time</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Only download what's changed, saving bandwidth and time</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="w-full overflow-hidden bg-gray-800 rounded-lg ring-1 ring-white/15">
+            <div class="w-full overflow-hidden bg-[#4f1226] rounded-lg ring-1 ring-white/15">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
                 <svg class="w-24 h-24 mb-4 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -623,12 +623,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Flexible integration</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Manage CodePushGo from your own software and create white label experiences</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Manage CodePushGo from your own software and create white label experiences</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="w-full overflow-hidden bg-gray-800 rounded-lg ring-1 ring-white/15">
+            <div class="w-full overflow-hidden bg-[#4f1226] rounded-lg ring-1 ring-white/15">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-indigo-500/20 to-blue-500/20">
                 <svg class="w-24 h-24 mb-4 text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -642,12 +642,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Advanced update distribution</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Target specific user groups with different versions using channels for beta testing and staged rollouts</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Target specific user groups with different versions using channels for beta testing and staged rollouts</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-4">
-            <div class="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-bl-[2rem] w-full">
+            <div class="overflow-hidden rounded-lg bg-[#4f1226] ring-1 ring-white/15 lg:rounded-bl-[2rem] w-full">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-red-500/20 to-pink-500/20">
                 <svg class="w-24 h-24 mb-4 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -661,12 +661,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Cloud or Self-hosted</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Choose between our secure cloud or host on your own infrastructure</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Choose between our secure cloud or host on your own infrastructure</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-4">
-            <div class="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-br-[2rem] w-full">
+            <div class="overflow-hidden rounded-lg bg-[#4f1226] ring-1 ring-white/15 lg:rounded-br-[2rem] w-full">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-teal-500/20 to-green-500/20">
                 <svg class="w-24 h-24 mb-4 text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -680,12 +680,12 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Seamless automation</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Works with GitHub Actions, GitLab CI, Jenkins, and more</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Works with GitHub Actions, GitLab CI, Jenkins, and more</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="w-full overflow-hidden bg-gray-800 rounded-lg ring-1 ring-white/15">
+            <div class="w-full overflow-hidden bg-[#4f1226] rounded-lg ring-1 ring-white/15">
               <div class="flex flex-col items-center justify-center h-80 bg-gradient-to-br from-emerald-500/20 to-lime-500/20">
                 <svg class="w-24 h-24 mb-4 text-emerald-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
@@ -694,7 +694,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">No vendor lock-in</p>
-                <p class="max-w-lg mt-2 text-gray-400 text-sm/6">Completely self-hostable with full access to the source code</p>
+                <p class="max-w-lg mt-2 text-gray-200 text-sm/6">Completely self-hostable with full access to the source code</p>
               </div>
             </div>
           </div>
@@ -706,7 +706,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
     <CIExpert :locale="props.locale" />
     <div class="relative mt-14 sm:mt-24 sm:py-16">
       <div aria-hidden="true" class="hidden sm:block">
-        <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-800 rounded-r-3xl" />
+        <div class="absolute inset-y-0 left-0 w-1/2 bg-[#4f1226] rounded-r-3xl" />
         <svg class="absolute -ml-3 left-1/2 top-8" width="404" height="392" fill="none" viewBox="0 0 404 392">
           <defs>
             <pattern id="8228f071-bcee-4ec8-905a-2a059a2cc4fb" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -717,10 +717,10 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
         </svg>
       </div>
       <div class="max-w-md px-4 pb-3 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <div class="relative px-6 py-10 overflow-hidden bg-gray-700 shadow-xl rounded-2xl sm:px-12 sm:py-20">
+        <div class="relative px-6 py-10 overflow-hidden bg-[#631731] shadow-xl rounded-2xl sm:px-12 sm:py-20">
           <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
             <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360">
-              <path class="text-gray-600 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
+              <path class="text-gray-400 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
               <path class="text-gray-800 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
             </svg>
           </div>
@@ -735,7 +735,7 @@ fetch(`${config.public.baseApiUrl}/private/website_stats`).then((res) => {
               <a
                 :href="getRelativeLocaleUrl(props.locale, 'register')"
                 target="_blank"
-                class="inline-block w-auto px-5 py-3 mx-auto mt-5 text-base font-medium text-white bg-[#CB2E63] border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10"
+                class="inline-block w-auto px-5 py-3 mx-auto mt-5 text-base font-medium text-white bg-[#8d2045] border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10"
               >
                 {{ m.get_started() }} &RightArrow;
               </a>

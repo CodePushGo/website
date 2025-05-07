@@ -81,7 +81,7 @@ In `capacitor.config.json`:
 In `capacitor.config.ts`:
 
 ```ts
-/// <reference types="@codepushgo/capacitor-updater" />
+/// <reference types="@codepushgo/react-native-updater" />
 
 import { React NativeConfig } from '@capacitor/cli';
 

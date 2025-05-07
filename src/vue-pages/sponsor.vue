@@ -25,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#CB2E63] px-4 py-16 text-white sm:px-6 lg:px-8">
+  <div class="min-h-screen bg-[#8d2045] px-4 py-16 text-white sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
       <h1 class="mb-4 text-4xl font-bold">CodePushGo Sponsors</h1>
       <p class="mb-8 max-w-3xl text-xl text-gray-300">

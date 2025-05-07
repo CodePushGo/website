@@ -77,11 +77,10 @@ export default defineConfig({
         LanguageSelect: './src/components/LanguageSelect.astro',
       },
       editLink: {
-        baseUrl: 'https://github.com/Cap-go/website/edit/main/',
+        baseUrl: 'https://github.com/codepushgo/website/edit/main/',
       },
       social: {
-        discord: 'https://discord.com/invite/VnYRvBfgA6',
-        github: 'https://github.com/Cap-go/',
+        github: 'https://github.com/codepushgo/',
       },
       sidebar: [
         {
@@ -151,26 +150,12 @@ export default defineConfig({
             { label: 'Settings', link: '/docs/plugin/settings' },
             { label: 'Statistics', link: '/docs/plugin/statistics-api' },
             { label: 'Debugging', link: '/docs/plugin/debugging' },
-            {
-              label: 'Migrations',
-              collapsed: true,
-              autogenerate: { directory: 'docs/upgrade' },
-            },
           ],
         },
         {
           label: 'Public API',
           collapsed: true,
           autogenerate: { directory: 'docs/public-api' },
-        },
-        {
-          label: 'Web app',
-          collapsed: true,
-          autogenerate: { directory: 'docs/webapp' },
-        },
-        {
-          label: 'How To',
-          link: '/docs/how-to/',
         },
         {
           label: 'FAQ',

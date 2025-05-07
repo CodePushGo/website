@@ -26,7 +26,7 @@ If CodePushGo cloud offer can't suit you, back a bootstrapped Maker [HERE](https
 ## Quick install
 
 ```
-npm install @codepushgo/capacitor-updater
+npm install @codepushgo/react-native-updater
 npx cap sync
 ```
 
@@ -50,7 +50,7 @@ Add this to your config, to disable auto-update:
 Then add this code to your app to use manual download
 
 ```typescript
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 import { App } from '@capacitor/app'
 let data = {version: ""}

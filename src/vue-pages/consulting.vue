@@ -11,7 +11,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
 <template>
   <div class="bg-white">
     <main
-      class="flex items-center justify-center h-screen font-light leading-8 text-center bg-scroll bg-no-repeat bg-[#CB2E63] text-slate-900 sm:flex-col sm:items-center md:pt-24"
+      class="flex items-center justify-center h-screen font-light leading-8 text-center bg-scroll bg-no-repeat bg-[#8d2045] text-slate-900 sm:flex-col sm:items-center md:pt-24"
       style="background-image: url('/5f9c104d097c52e7c1b98fe4_hero-code-consulting.webp'); background-position: 50% 100%; background-size: 520px"
     >
       <div
@@ -351,7 +351,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
         </div>
       </div>
     </section>
-    <section class="block font-light leading-8 text-left bg-[#CB2E63] text-slate-900" style="padding-top: 5vh; padding-bottom: 5vh">
+    <section class="block font-light leading-8 text-left bg-[#8d2045] text-slate-900" style="padding-top: 5vh; padding-bottom: 5vh">
       <div
         class="relative flex-col items-center block clear-both my-auto font-sans leading-8 text-center max-w-none sm:max-w-none"
         style="grid-area: 1 / 1 / 2 / 2; padding: 10vh 5vw 5vh"
@@ -563,7 +563,7 @@ const randomOdd = Math.random() < 0.5 ? 0 : 1
     </div>
     <section
       id="contact-hireus"
-      class="relative flex-col items-center block my-auto font-sans font-light leading-8 text-center max-w-none bg-[#CB2E63] text-slate-900 sm:max-w-none"
+      class="relative flex-col items-center block my-auto font-sans font-light leading-8 text-center max-w-none bg-[#8d2045] text-slate-900 sm:max-w-none"
       style="padding: 10vh 5vw"
     >
       <div class="flex flex-col w-full md:flex-row">

@@ -28,7 +28,7 @@ const features = ref([
 </script>
 
 <template>
-  <section class="relative py-12 bg-[#CB2E63] sm:py-16 lg:py-20 xl:py-24">
+  <section class="relative py-12 bg-[#8d2045] sm:py-16 lg:py-20 xl:py-24">
     <!-- Grid background pattern -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <svg
@@ -52,11 +52,11 @@ const features = ref([
         <h2 class="text-3xl font-semibold text-white sm:mt-8 sm:text-4xl lg:text-5xl xl:text-6xl">
           {{ m.flexible_organization_management_for_your_team() }}
         </h2>
-        <p class="mt-6 text-lg font-normal text-gray-400">{{ m.create_manage_organizations_with_ease() }}</p>
+        <p class="mt-6 text-lg font-normal text-gray-200">{{ m.create_manage_organizations_with_ease() }}</p>
       </div>
       <div class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-12 text-center sm:mt-16 lg:mt-20 lg:max-w-none lg:grid-cols-3">
         <div v-for="feature in features" :key="feature.title" class="flex p-px overflow-hidden rounded-lg">
-          <div class="w-full overflow-hidden bg-gray-800 rounded-lg ring-1 ring-white/15">
+          <div class="w-full overflow-hidden bg-[#4f1226] rounded-lg ring-1 ring-white/15">
             <div
               :class="`flex flex-col items-center justify-center h-80 bg-gradient-to-br from-${feature.color}-500/20 to-${feature.color === 'blue' ? 'purple' : feature.color === 'purple' ? 'pink' : 'blue'}-500/20`"
             >
@@ -71,7 +71,7 @@ const features = ref([
               <p class="mt-3 text-2xl font-bold text-white xl:text-3xl">{{ feature.title }}</p>
             </div>
             <div class="p-10">
-              <p class="mt-2 text-base font-normal text-gray-400">{{ feature.description }}</p>
+              <p class="mt-2 text-base font-normal text-gray-200">{{ feature.description }}</p>
             </div>
           </div>
         </div>

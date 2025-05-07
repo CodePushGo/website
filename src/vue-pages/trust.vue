@@ -12,13 +12,13 @@ const config = useRuntimeConfig()
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="mx-auto text-center">
         <h1 class="text-3xl font-bold text-gray-900 font-pj sm:text-4xl xl:text-6xl">{{ m.trust_and_security() }}</h1>
-        <p class="mt-6 text-xl font-normal text-gray-600 font-pj">{{ m.trust_and_security_description() }}</p>
+        <p class="mt-6 text-xl font-normal text-gray-400 font-pj">{{ m.trust_and_security_description() }}</p>
       </div>
 
       <div class="mt-16 space-y-16">
         <div class="p-8 bg-white shadow-xl rounded-3xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{{ m.product_security() }}</h2>
-          <ul class="mt-8 space-y-5 text-lg text-gray-600 list-disc list-inside">
+          <ul class="mt-8 space-y-5 text-lg text-gray-400 list-disc list-inside">
             <li>{{ m.trust_soc2_certification() }}</li>
             <li>
               {{ m.source_code_protection_1() }}
@@ -44,7 +44,7 @@ const config = useRuntimeConfig()
 
         <div class="p-8 bg-white shadow-xl rounded-3xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{{ m.data_security() }}</h2>
-          <ul class="mt-8 space-y-5 text-lg text-gray-600 list-disc list-inside">
+          <ul class="mt-8 space-y-5 text-lg text-gray-400 list-disc list-inside">
             <li>{{ m.encryption_communication() }}</li>
             <li>{{ m.source_code_encryption() }}</li>
           </ul>
@@ -52,7 +52,7 @@ const config = useRuntimeConfig()
 
         <div class="p-8 bg-white shadow-xl rounded-3xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{{ m.network_security() }}</h2>
-          <ul class="mt-8 space-y-5 text-lg text-gray-600 list-disc list-inside">
+          <ul class="mt-8 space-y-5 text-lg text-gray-400 list-disc list-inside">
             <li>{{ m.vulnerability_scanning() }}</li>
             <li>{{ m.architecture() }}</li>
           </ul>
@@ -60,7 +60,7 @@ const config = useRuntimeConfig()
 
         <div class="p-8 bg-white shadow-xl rounded-3xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{{ m.application_security() }}</h2>
-          <ul class="mt-8 space-y-5 text-lg text-gray-600 list-disc list-inside">
+          <ul class="mt-8 space-y-5 text-lg text-gray-400 list-disc list-inside">
             <li>{{ m.secure_coding() }}</li>
             <li>{{ m.site_reliability() }} <a href="https://status.capgo.app/" class="text-blue-500 underline underline-current" target="_blank">Uptime Monitoring</a>.</li>
             <!-- link to update monitoring: https://status.capgo.app/ -->

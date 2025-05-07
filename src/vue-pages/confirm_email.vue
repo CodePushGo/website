@@ -25,7 +25,7 @@ async function handleResend() {
 </script>
 
 <template>
-  <div class="flex items-center justify-center min-h-screen p-4 bg-[#CB2E63]">
+  <div class="flex items-center justify-center min-h-screen p-4 bg-[#8d2045]">
     <div class="w-full max-w-md overflow-hidden bg-white rounded-lg shadow-xl">
       <div class="p-6 text-center">
         <div class="flex items-center justify-center w-16 h-16 p-3 mx-auto mb-4 bg-green-100 rounded-full">
@@ -34,8 +34,8 @@ async function handleResend() {
           </svg>
         </div>
         <h2 class="mb-4 text-2xl font-bold text-black">{{ m.confirm_email() }}</h2>
-        <p class="mb-4 text-gray-600">{{ m.please_open_your_mailbox_to_verify() }}</p>
-        <p class="mb-6 text-gray-600">
+        <p class="mb-4 text-gray-400">{{ m.please_open_your_mailbox_to_verify() }}</p>
+        <p class="mb-6 text-gray-400">
           {{ m.didnt_receive_confirmation_email() }}
           <button @click="handleResend" :disabled="isResending" class="ml-1 font-semibold text-blue-600 focus:outline-none">
             {{ isResending ? m.resending() : m.resend() }}

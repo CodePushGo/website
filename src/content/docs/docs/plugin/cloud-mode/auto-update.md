@@ -52,7 +52,7 @@ Setup your CI in 5 mins
 ### Install
 
 ```bash
-npm install @codepushgo/capacitor-updater
+npm install @codepushgo/react-native-updater
 npx cap sync
 ```
 
@@ -77,7 +77,7 @@ This can be done by calling within your app `notifyAppReady`.
 Do it as soon as possible.
 
 ```ts
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 
 React NativeUpdater.notifyAppReady()
 ```
@@ -110,7 +110,7 @@ To upload the version at each commit setup CI/CD with this guide
 When `disableAutoUpdateBreaking` is set to true, you can listen to the event to know when the app refuses to do a major braking update.
 
 ```jsx
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 
 React NativeUpdater.addListener('majorAvailable', (info: any) => {
   console.log('majorAvailable was fired', info.version)

@@ -77,7 +77,7 @@ const totalPrice = computed(() => {
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center xl:max-w-4xl">
         <h2 class="text-3xl font-bold text-gray-900 font-pj sm:text-4xl xl:text-5xl">{{ m.calculate_your_usage() }}<br /></h2>
-        <p class="mt-6 text-sm font-normal text-gray-600 font-pj">
+        <p class="mt-6 text-sm font-normal text-gray-400 font-pj">
           {{ m.enter_your_estimated_monthly_active_users() }}
         </p>
       </div>
@@ -88,7 +88,7 @@ const totalPrice = computed(() => {
             style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"
           />
         </div>
-        <div class="relative grid grid-cols-1 px-16 py-12 overflow-hidden text-center text-white bg-[#CB2E63] gap-x-20 gap-y-12 rounded-2xl md:grid-cols-3">
+        <div class="relative grid grid-cols-1 px-16 py-12 overflow-hidden text-center text-white bg-[#8d2045] gap-x-20 gap-y-12 rounded-2xl md:grid-cols-3">
           <div class="flex flex-col items-center">
             <p class="calc-label">
               MAU<br /><span class="text-[0.6rem]">{{ m.monthly_active_users() }}</span>
@@ -96,7 +96,7 @@ const totalPrice = computed(() => {
             <input
               v-model.number="mau"
               placeholder="0"
-              class="w-full p-2 text-3xl font-bold text-center break-all bg-[#CB2E63] border-b border-gray-300 cursor-text hover:bg-gray-800 lg:mt-3"
+              class="w-full p-2 text-3xl font-bold text-center break-all bg-[#8d2045] border-b border-gray-300 cursor-text hover:bg-[#4f1226] lg:mt-3"
             />
           </div>
           <div class="flex flex-col items-center">
@@ -104,7 +104,7 @@ const totalPrice = computed(() => {
             <input
               v-model.number="updatesByMonth"
               placeholder="0"
-              class="w-full p-2 text-3xl font-bold text-center break-all bg-[#CB2E63] border-b border-gray-300 cursor-text hover:bg-gray-800 lg:mt-3"
+              class="w-full p-2 text-3xl font-bold text-center break-all bg-[#8d2045] border-b border-gray-300 cursor-text hover:bg-[#4f1226] lg:mt-3"
             />
           </div>
           <div class="flex flex-col items-center">
@@ -112,7 +112,7 @@ const totalPrice = computed(() => {
             <input
               v-model.number="updatesSize"
               placeholder="0"
-              class="w-full p-2 text-3xl font-bold text-center break-all bg-[#CB2E63] border-b border-gray-300 cursor-text hover:bg-gray-800 lg:mt-3"
+              class="w-full p-2 text-3xl font-bold text-center break-all bg-[#8d2045] border-b border-gray-300 cursor-text hover:bg-[#4f1226] lg:mt-3"
             />
           </div>
           <div class="flex flex-col items-center">

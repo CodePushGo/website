@@ -69,7 +69,7 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
       <div class="w-[280px] rounded bg-white/10 p-5">
         <ul v-if="toc?.length" class="flex flex-col text-left list-none">
           <span class="pb-1 text-lg border-b border-gray-600">{{ m.table_of_contents() }}</span>
-          <li v-for="item in toc" :key="item.slug" class="block mt-2 text-gray-400 truncate hover:text-gray-200">
+          <li v-for="item in toc" :key="item.slug" class="block mt-2 text-gray-200 truncate hover:text-gray-200">
             <a :class="`pl-${Math.max(0, (item.depth - 2) * 2)} ${activeSlug === item.slug && 'text-white'}`" :href="`#${item.slug}`">
               {{ item.text }}
             </a>
@@ -110,7 +110,7 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
         <div class="w-[280px] rounded bg-white/10 p-5">
           <ul v-if="toc?.length" class="flex flex-col text-left list-none">
             <span class="pb-1 text-lg border-b border-gray-600">{{ m.table_of_contents() }}</span>
-            <li v-for="item in toc" :key="item.slug" class="block mt-2 text-gray-400 truncate hover:text-gray-200">
+            <li v-for="item in toc" :key="item.slug" class="block mt-2 text-gray-200 truncate hover:text-gray-200">
               <a :class="`pl-${Math.max(0, (item.depth - 2) * 2)} ${activeSlug === item.slug && 'text-white'}`" :href="`#${item.slug}`">
                 {{ item.text }}
               </a>
@@ -122,7 +122,7 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
         <ul class="flex flex-col p-4 rounded bg-white/10">
           <span class="pb-1 text-lg border-b border-gray-600">{{ m.table_of_contents() }}</span>
           <div class="hidden pl-4 pl-8 pl-12 pl-16 pl-20" />
-          <li v-for="item in toc" class="block mt-2 text-gray-400 truncate hover:text-gray-200">
+          <li v-for="item in toc" class="block mt-2 text-gray-200 truncate hover:text-gray-200">
             <a :class="`pl-${Math.max(0, (item.depth - 2) * 4)}`" :href="`#${item.slug}`">
               {{ item.text }}
             </a>
@@ -135,7 +135,7 @@ onMounted(() => window.addEventListener('scroll', handleScroll))
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-xl mx-auto text-center">
           <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">{{ m.latest_from_news() }}</h2>
-          <p class="mt-4 text-base font-normal leading-7 text-gray-400 lg:mt-6 lg:text-lg lg:leading-8">
+          <p class="mt-4 text-base font-normal leading-7 text-gray-200 lg:mt-6 lg:text-lg lg:leading-8">
             {{ m.codepushgo_gives_you_the_best_insights_you_need_to_create_a_truly_professional_mobile_app() }}
           </p>
         </div>

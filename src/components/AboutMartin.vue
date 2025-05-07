@@ -52,7 +52,7 @@ const props = defineProps<{ locale: Locales }>()
             <a
               :href="getRelativeLocaleUrl(props.locale, 'register')"
               :title="m.get_quote_now()"
-              class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#CB2E63] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+              class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#8d2045] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
               role="button"
             >
               {{ m.start_now() }}

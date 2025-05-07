@@ -30,10 +30,10 @@ const showReadme = ref(1)
             {{ props.description }}
           </h1>
           <div v-if="props.githubStars" class="mt-8 flex flex-row items-center justify-between border-t border-white/10 pt-2">
-            <span class="text-sm font-semibold text-gray-400">GitHub Stars</span> <span class="text-gray-600">{{ props.githubStars }}</span>
+            <span class="text-sm font-semibold text-gray-200">GitHub Stars</span> <span class="text-gray-400">{{ props.githubStars }}</span>
           </div>
           <div v-if="props.npmDownloads" class="mt-4 flex flex-row items-center justify-between border-t border-white/10 pt-2">
-            <span class="text-sm font-semibold text-gray-400">NPM Downloads</span> <span class="text-gray-600">{{ props.npmDownloads }}</span>
+            <span class="text-sm font-semibold text-gray-200">NPM Downloads</span> <span class="text-gray-400">{{ props.npmDownloads }}</span>
           </div>
           <div class="flex flex-row flex-wrap items-center justify-between">
             <a

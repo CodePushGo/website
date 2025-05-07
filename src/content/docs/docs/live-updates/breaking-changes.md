@@ -65,7 +65,7 @@ Add version check in your app to assign users to the correct channel:
 
 ```ts
 // src/utils/updater.ts
-import { React NativeUpdater } from '@codepushgo/capacitor-updater'
+import { React NativeUpdater } from '@codepushgo/react-native-updater'
 
 export async function setupUpdater() {
   const { appVersion } = await React NativeUpdater.getCurrentVersion()

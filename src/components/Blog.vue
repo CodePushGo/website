@@ -18,7 +18,7 @@ const cannLink = computed(() => getRelativeLocaleUrl(props.locale, 'blog/' + pro
 </script>
 
 <template>
-  <div class="overflow-hidden bg-gray-700 rounded-xl">
+  <div class="overflow-hidden bg-[#631731] rounded-xl">
     <div>
       <div class="relative p-2">
         <a :href="cannLink" :title="title" class="block aspect-w-4 aspect-h-3">

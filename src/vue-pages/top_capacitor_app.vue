@@ -52,7 +52,7 @@ fetch(`${config.public.baseApiUrl}/private/store_top`).then((res) => {
                 </span>
               </div>
             </div>
-            <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase"> {{ shortNumber(app.installs) }} {{ m.downloads() }} </span>
+            <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-300 uppercase"> {{ shortNumber(app.installs) }} {{ m.downloads() }} </span>
             <p class="mt-5 text-2xl font-semibold">
               <a :href="app.url" :title="app.title" class="text-black">
                 {{ app.title }}
@@ -61,7 +61,7 @@ fetch(`${config.public.baseApiUrl}/private/store_top`).then((res) => {
             <a
               :href="app.url"
               :title="app.title"
-              class="mt-5 inline-flex items-center justify-center border-b-2 border-transparent pb-0.5 text-base font-semibold text-gray-600 transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
+              class="mt-5 inline-flex items-center justify-center border-b-2 border-transparent pb-0.5 text-base font-semibold text-gray-400 transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
             >
               {{ m.see_in_play_store() }}
               <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -80,7 +80,7 @@ fetch(`${config.public.baseApiUrl}/private/store_top`).then((res) => {
           v-for="l in others"
           :key="l"
           :href="`/${l}/`"
-          class="flex flex-col py-8 text-center transition-all duration-200 bg-gray-700 rounded-lg hover:bg-blue-700 focus:bg-blue-900"
+          class="flex flex-col py-8 text-center transition-all duration-200 bg-[#631731] rounded-lg hover:bg-blue-700 focus:bg-blue-900"
         >
           <div class="relative flex mx-auto">
             <div class="block w-full pb-4 mx-4">

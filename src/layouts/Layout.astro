@@ -17,7 +17,7 @@ const isLocalhost = Astro.url.origin.includes('localhost:')
     <SEO {...content} />
   </head>
   <body>
-    <div class="overflow-x-hidden bg-[#CB2E63] text-white">
+    <div class="overflow-x-hidden bg-[#8d2045] text-white">
       <Header locale={Astro.locals.locale} client:load />
       <slot />
       <Footer locale={Astro.locals.locale} client:load />
@@ -34,6 +34,5 @@ const isLocalhost = Astro.url.origin.includes('localhost:')
         />
       )
     }
-    <script is:inline defer data-website-id="66bcb7fa4038d5b1e5ea89eb" data-domain="codepushgo.com" src="https://datafa.st/js/script.js"></script>
   </body>
 </html>

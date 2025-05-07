@@ -29,13 +29,13 @@ const menuMobile = ref(false)
           </button>
         </div>
         <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-          <a
+          <!-- <a
             :href="getRelativeLocaleUrl(props.locale, 'pricing')"
             title="Pricing"
             class="text-base font-medium transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
           >
             {{ m.pricing() }}
-          </a>
+          </a> -->
           <a
             :href="getRelativeLocaleUrl(props.locale, 'blog')"
             title="Blog"
@@ -50,7 +50,7 @@ const menuMobile = ref(false)
           >
             {{ m.documentation() }}
           </a>
-          <a
+          <!-- <a
             href="https://web.codepushgo.com/login/"
             title="Login"
             target="_blank"
@@ -66,38 +66,38 @@ const menuMobile = ref(false)
             role="button"
           >
             {{ m.register() }}
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
     <div :class="{ hidden: !menuMobile }">
-      <div class="px-2 pt-2 pb-3 mt-2 space-y-1 bg-gray-700">
-        <a
+      <div class="px-2 pt-2 pb-3 mt-2 space-y-1 bg-[#631731]">
+        <!-- <a
           :href="getRelativeLocaleUrl(props.locale, 'pricing')"
           :title="m.pricing()"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-[#631731] hover:text-white"
         >
           Pricing
-        </a>
+        </a> -->
         <a
           :href="getRelativeLocaleUrl(props.locale, 'blog')"
           :title="m.blog()"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-[#631731] hover:text-white"
         >
           Blog
         </a>
         <a
           :href="getRelativeLocaleUrl(props.locale, 'docs')"
           :title="m.documentation()"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-[#631731] hover:text-white"
         >
           Documentation
         </a>
-        <a
+        <!-- <a
           href="https://web.codepushgo.com/login/"
           target="_blank"
           :title="m.login()"
-          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+          class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-[#631731] hover:text-white"
         >
           Login
         </a>
@@ -105,10 +105,10 @@ const menuMobile = ref(false)
           :href="getRelativeLocaleUrl(props.locale, 'register')"
           target="_blank"
           :title="m.register()"
-          class="block px-5 py-2 text-base font-medium font-semibold leading-7 text-white text-gray-300 transition-all duration-200 bg-transparent bg-[#CB2E63] border border-gray-300 rounded-md font-pj rounded-xl hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
+          class="block px-5 py-2 text-base font-medium font-semibold leading-7 text-white text-gray-300 transition-all duration-200 bg-transparent bg-[#8d2045] border border-gray-300 rounded-md font-pj rounded-xl hover:bg-gray-500 hover:text-white focus:bg-gray-500 focus:text-white focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
         >
           Register
-        </a>
+        </a> -->
       </div>
     </div>
   </header>
