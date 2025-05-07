@@ -33,7 +33,7 @@ jobs:
         run: bun install && bun add faiss-node --allow-build=faiss-node
 
       - name: Create READMEs
-        run: node scripts/write_readme.mjs
+        run: node tutorials-scripts/write_readme.mjs
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 

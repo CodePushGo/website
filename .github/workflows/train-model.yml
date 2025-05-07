@@ -33,7 +33,7 @@ jobs:
         run: bun install && bun add faiss-node --allow-build=faiss-node
 
       - name: Train model from READMEs
-        run: node scripts/train_model.mjs
+        run: node tutorials-scripts/train_model.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_TOKEN }}
 
