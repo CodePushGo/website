@@ -35,7 +35,7 @@ jobs:
       - name: Generate packages list
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        run: node scripts/generate_actions.mjs
+        run: node tutorials-scripts/generate_actions.mjs
 
       - name: Commit generated files
         env:
