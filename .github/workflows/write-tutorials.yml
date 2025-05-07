@@ -33,7 +33,7 @@ jobs:
         run: bun install && bun add faiss-node --allow-build=faiss-node
 
       - name: Generate tutorials
-        run: node scripts/generate_tutorials.mjs
+        run: node tutorials-scripts/generate_tutorials.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_TOKEN }}
 
