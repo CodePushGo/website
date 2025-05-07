@@ -5,7 +5,7 @@ import { join } from 'path'
 import { exit } from 'process'
 import { actions as existingActions } from './action.mjs'
 
-const searchKeywords = ['react-native', 'plugin']
+const searchKeywords = ['react-native']
 const PAGE_SIZE = 100
 const MAX_RESULTS = 1000
 
