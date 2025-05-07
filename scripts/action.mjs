@@ -1,21 +1,3 @@
-export interface Action {
-  icon?: any
-  href: string
-  title: string
-  name?: string
-  author: string
-  description: string
-  iconForeground?: string
-  iconBackground?: string
-}
-export interface Plugin extends Action {
-  npmDownloads?: number
-  githubStars?: number
-  readme?: string
-  datePublished?: string
-  dateModified?: string
-  tutorial?: string
-}
 export const actions = [
   {
     name: 'infobip-mobile-messaging-react-native-plugin',
