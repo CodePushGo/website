@@ -1,11 +1,11 @@
 import sitemap from '@astrojs/sitemap'
 import starlight from '@astrojs/starlight'
 import { paraglideVitePlugin } from '@inlang/paraglide-js'
+import tailwindcss from '@tailwindcss/vite'
 import { filterSitemapByDefaultLocale, i18n } from 'astro-i18n-aut/integration'
+import { defineConfig, envField } from 'astro/config'
 import config from './configs.json'
 import { defaultLocale, localeNames, locales } from './src/services/locale'
-import tailwindcss from '@tailwindcss/vite'
-import { defineConfig, envField } from 'astro/config'
 
 export default defineConfig({
   trailingSlash: 'always',
