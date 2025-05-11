@@ -93,7 +93,7 @@ You can use our [CI guide Android](https://codepushgo.com/blog/automatic-capacit
 
 ### What does CodePushGo store on disk and where?[](https://codepushgo.com/docs/faq/#what-does-codepushgo-store-on-disk-and-where "Direct link to What does CodePushGo store on disk and where?")
 
-The CodePushGo updater (included in your application when you build your app) caches the latest downloaded bundle in the only directory that capacitor allow to load code. On Android, this is located in `/data/user/0/com.example.app/code_cache/codepushgo_updater` although the base of that path is provided by the Android system and can change dynamically at runtime. On iOS devices, data is stored under `Library/Application Support/codepushgo`.
+The CodePushGo updater (included in your application when you build your app) caches the latest downloaded bundle in the only directory that React Native allow to load code. On Android, this is located in `/data/user/0/com.example.app/code_cache/codepushgo_updater` although the base of that path is provided by the Android system and can change dynamically at runtime. On iOS devices, data is stored under `Library/Application Support/codepushgo`.
 
 The CodePushGo command line tools (e.g. `npx @codepushgo/cli app update`) are installed on disk in npm caches, your logins are stored in your home directory in `~/.codepushgo`.
 
@@ -216,7 +216,7 @@ Our implementation always sends an update specifically tailored for the device t
 
 The update server could be changed to support responding with either the next incremental version or the latest version depending on your application's needs. Please let us know if alternative update behaviors are important to you.
 
-### How does CodePushGo relate to React Native?[](https://codepushgo.com/docs/faq/#how-does-codepushgo-relate-to-capacitor "Direct link to How does CodePushGo relate to React Native?")
+### How does CodePushGo relate to React Native?[](https://codepushgo.com/docs/faq/#how-does-codepushgo-relate-to-React Native "Direct link to How does CodePushGo relate to React Native?")
 
 CodePushGo is a plugin for React Native that adds code push. CodePushGo is not a replacement for React Native. You can continue to use the React Native tooling you already know and love.
 
