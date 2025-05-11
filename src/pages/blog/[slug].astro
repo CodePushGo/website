@@ -119,8 +119,8 @@ content['ldJSON'] = {
 <Layout content={content}>
   <div class="flex w-full flex-col items-center">
     <div class="relative w-full max-w-7xl px-8 sm:px-10 lg:px-12">
-      <div class="relative z-0 mx-auto pt-16 pb-12">
-        <div class="relative max-w-(--breakpoint-sm)">
+      <div class="relative z-0 mx-auto pb-12 pt-16">
+        <div class="max-w-(--breakpoint-sm) relative">
           <div class="flex items-center space-x-4">
             <span
               class="hover:/50 rounded-lg bg-white px-4 py-1.5 text-sm font-medium text-black shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.1)] backdrop-blur transition-all"
@@ -149,7 +149,7 @@ content['ldJSON'] = {
             src={entry.data.head_image}
             width="1536"
             height="1024"
-            class="blur-0 overflow-hidden rounded border border-white/5 object-cover"
+            class="overflow-hidden rounded border border-white/5 object-cover blur-0"
           />
           <article class="prose prose-invert blog min-w-full">
             <Content />
@@ -166,17 +166,17 @@ content['ldJSON'] = {
                 decoding="async"
                 alt={entry.data.author}
                 src={entry.data.author_image_url}
-                class="blur-0 rounded-full transition-all group-hover:brightness-90"
+                class="rounded-full blur-0 transition-all group-hover:brightness-90"
               />
               <div class="flex flex-col">
-                <p class="text-sm font-medium whitespace-nowrap text-gray-400">{entry.data.author}</p>
-                <p class="text-sm text-gray-500">Content Marketer</p>
+                <p class="whitespace-nowrap text-sm font-medium text-gray-200">{entry.data.author}</p>
+                <p class="text-sm text-gray-300">Content Marketer</p>
               </div>
             </a>
           </div>
           {
             headings?.length > 0 && (
-              <div id="staticToc" class="sticky top-16 pt-4 pb-8">
+              <div id="staticToc" class="sticky top-16 pb-8 pt-4">
                 <div>
                   <p class="-ml-0.5 flex items-center gap-1.5 text-sm text-gray-500">
                     <svg
@@ -229,11 +229,11 @@ content['ldJSON'] = {
       <div class="my-12 text-center">
         <a
           href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')}
-          class="group inline-flex items-center text-sm font-semibold text-white transition-all duration-200 hover:text-gray-400 hover:underline"
+          class="group inline-flex items-center text-sm font-semibold text-white transition-all duration-200 hover:text-gray-200 hover:underline"
         >
           {m.see_all_from_our_blog({}, { locale: Astro.locals.locale })}
           <svg
-            class="ml-1 h-5 w-5 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            class="ml-1 h-5 w-5 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             viewBox="0 0 24 24"
             stroke="currentColor"
             stroke-width="2.5"
