@@ -13,7 +13,7 @@ const content = {
 ---
 
 <Layout content={content}>
-  <section class="relative bg-gray-900 pt-12 sm:pt-16 lg:pt-20">
+  <section class="bg-codepushgo-900 relative pt-12 sm:pt-16 lg:pt-20">
     <div class="absolute inset-0 overflow-hidden">
       <img class="h-full w-full -translate-y-80 transform object-cover object-top opacity-20" src="/background-pattern.webp" alt="" />
     </div>
@@ -30,7 +30,7 @@ const content = {
       <div class="grid gap-12 lg:grid-cols-2">
         <div>
           <h3 class="mb-4 text-2xl font-bold text-white">🚀 {m.welcome_to_capgo({}, { locale: Astro.locals.locale })}</h3>
-          <p class="mb-6 text-gray-300">
+          <p class="mb-6 text-gray-500">
             {m.capgo_is_the_cutting_edge_live_update_system_designed_specifically_for_capacitor_applications({}, { locale: Astro.locals.locale })}
             {
               m.we_empower_developers_to_push_updates_instantly_ensuring_your_users_always_have_the_latest_version_of_your_app_without_the_hassle_of_app_store_approvals(
@@ -40,7 +40,7 @@ const content = {
             }
           </p>
           <h3 class="mb-4 text-2xl font-bold text-white">🌱 {m.our_story({}, { locale: Astro.locals.locale })}</h3>
-          <p class="mb-6 text-gray-300">
+          <p class="mb-6 text-gray-500">
             {m.capgo_was_born_from_a_real_need_in_the_developer_community({}, { locale: Astro.locals.locale })}
             {
               m.it_all_started_with_a_github_issue_where_many_developers_voiced_their_frustration_with_the_high_costs_of_existing_solutions_like_appflow(
@@ -50,13 +50,13 @@ const content = {
             }
             {m.this_inspired_me_to_create_an_affordable_efficient_alternative({}, { locale: Astro.locals.locale })}
           </p>
-          <a href="https://capgo.app/blog/birth-of-capgo-my-challenging-journey-as-a-solo-maker/" class="text-blue-400 hover:underline">
+          <a href="https://codepushgo.com/blog/birth-of-capgo-my-challenging-journey-as-a-solo-maker/" class="text-blue-400 hover:underline">
             {m.read_the_full_story_of_capgos_challenging_birth_as_a_solo_maker_project({}, { locale: Astro.locals.locale })}
           </a>
         </div>
         <div>
           <h3 class="mb-4 text-2xl font-bold text-white">🔧 {m.key_features({}, { locale: Astro.locals.locale })}</h3>
-          <ul class="mb-6 list-inside list-disc space-y-2 text-gray-300">
+          <ul class="mb-6 list-inside list-disc space-y-2 text-gray-500">
             <li>{m.instant_updates({}, { locale: Astro.locals.locale })}: {m.deploy_changes_in_real_time({}, { locale: Astro.locals.locale })}</li>
             <li>{m.version_control({}, { locale: Astro.locals.locale })}: {m.manage_multiple_app_versions_effortlessly({}, { locale: Astro.locals.locale })}</li>
             <li>{m.rollback_capability({}, { locale: Astro.locals.locale })}: {m.revert_to_previous_versions_if_needed({}, { locale: Astro.locals.locale })}</li>
@@ -64,7 +64,7 @@ const content = {
             <li>{m.organization_and_app_management({}, { locale: Astro.locals.locale })}: {m.thanks_to_our_open_source_nature({}, { locale: Astro.locals.locale })}</li>
           </ul>
           <h3 class="mb-4 text-2xl font-bold text-white">🌟 {m.our_commitment({}, { locale: Astro.locals.locale })}</h3>
-          <p class="mb-6 text-gray-300">
+          <p class="mb-6 text-gray-500">
             {
               m.as_the_largest_ecosystem_of_open_source_plugins_for_capacitor_we_re_committed_to_innovation_transparency_and_community_driven_development(
                 {},
@@ -73,12 +73,12 @@ const content = {
             }
           </p>
           <h3 class="mb-4 text-2xl font-bold text-white">💪 {m.practicing_what_we_preach({}, { locale: Astro.locals.locale })}</h3>
-          <p class="mb-6 text-gray-300">
+          <p class="mb-6 text-gray-500">
             {m.we_practice_what_we_preach({}, { locale: Astro.locals.locale })}
             {m.capgo_is_used_to_update_its_own_apps_allowing_us_to_continuously_improve_and_refine_our_product_through_real_world_usage({}, { locale: Astro.locals.locale })}
           </p>
           <h3 class="mb-4 text-2xl font-bold text-white">🚀 {m.our_dedication({}, { locale: Astro.locals.locale })}</h3>
-          <p class="mb-6 text-gray-300">
+          <p class="mb-6 text-gray-500">
             {m.since_2023_capgo_has_been_my_full_time_focus_ensuring_dedicated_development_and_support_for_our_growing_community_of_users({}, { locale: Astro.locals.locale })}
           </p>
         </div>
@@ -138,7 +138,7 @@ const content = {
                 <a
                   href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
                   title={m.get_quote_now({}, { locale: Astro.locals.locale })}
-                  class="font-pj relative inline-flex items-center justify-center rounded-xl bg-gray-900 px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
+                  class="font-pj bg-codepushgo-900 relative inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
                   role="button"
                 >
                   {m.start_now({}, { locale: Astro.locals.locale })}

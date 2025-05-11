@@ -15,7 +15,7 @@ const isLocalhost = Astro.url.origin.includes('localhost:')
     <SEO {...content} />
   </head>
   <body>
-    <div class="overflow-x-hidden bg-gray-900 text-white">
+    <div class="bg-codepushgo-900 overflow-x-hidden text-white">
       <Header />
       <slot />
       <Footer />
@@ -26,12 +26,12 @@ const isLocalhost = Astro.url.origin.includes('localhost:')
           is:inline
           async="true"
           defer="true"
-          data-domain="capgo.app"
+          data-domain="codepushgo.com"
           src="https://pls.digitalshift-ee.workers.dev/js/script.js"
           data-api="https://pls.digitalshift-ee.workers.dev/api/event"
         />
       )
     }
-    <script is:inline defer data-website-id="66bcb7fa4038d5b1e5ea89eb" data-domain="capgo.app" src="https://datafa.st/js/script.js"></script>
+    <script is:inline defer data-website-id="66bcb7fa4038d5b1e5ea89eb" data-domain="codepushgo.com" src="https://datafa.st/js/script.js"></script>
   </body>
 </html>

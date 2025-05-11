@@ -5,7 +5,7 @@ import { locales } from '@/services/locale'
 <div class="relative flex flex-row items-center">
   <button
     id="language-menu-button"
-    class="inline-flex w-full flex-row items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-1 text-sm font-medium text-gray-700 shadow-sm focus:outline-none"
+    class="inline-flex w-full flex-row items-center justify-center rounded-md border border-gray-500 bg-white px-4 py-1 text-sm font-medium text-gray-700 shadow-sm focus:outline-none"
   >
     Language
     <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -15,7 +15,7 @@ import { locales } from '@/services/locale'
   <div id="language-menu" class="absolute hidden w-56 origin-top-right rounded-md border border-gray-400 bg-white shadow-lg" style="top: 100%; right: 0;">
     {
       locales.map((j) => (
-        <a id={`language_${j}`} class="block cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" tabindex="-1">
+        <a id={`language_${j}`} class="hover:bg-codepushgo-100 block cursor-pointer px-4 py-2 text-sm text-gray-700 hover:text-gray-900" role="menuitem" tabindex="-1">
           {j.toUpperCase()}
         </a>
       ))

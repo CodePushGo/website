@@ -21,8 +21,8 @@ body,
 @theme {
   --color-gray-50: oklch(0.984 0.003 247.858);
   --color-gray-100: oklch(0.968 0.007 247.896);
-  --color-gray-200: oklch(0.929 0.013 255.508);
-  --color-gray-300: oklch(0.869 0.022 252.894);
+  --color-gray-400: oklch(0.929 0.013 255.508);
+  --color-gray-500: oklch(0.869 0.022 252.894);
   --color-gray-400: oklch(0.704 0.04 256.788);
   --color-gray-500: oklch(0.554 0.046 257.417);
   --color-gray-600: oklch(0.446 0.043 257.281);
@@ -33,7 +33,7 @@ body,
 }
 
 .starlight-aside :is(th, td, hr, blockquote):not(:where(.not-content *)) {
-  border-color: var(--color-gray-300);
+  border-color: var(--color-gray-500);
 }
 @supports (border-color: color-mix(in srgb, --theme(--color-gray-500) 30%, transparent)) {
   .starlight-aside :is(th, td, hr, blockquote):not(:where(.not-content *)) {

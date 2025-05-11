@@ -69,7 +69,7 @@ if (tmp.ok) {
       <section class="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="relative z-10 mx-auto max-w-3xl text-center">
-            <p class="font-pj inline-flex rounded-full border border-gray-200 bg-gray-900 px-4 py-2 text-base">{m.open_source({}, { locale: Astro.locals.locale })}</p>
+            <p class="font-pj bg-codepushgo-900 inline-flex rounded-full border border-gray-400 px-4 py-2 text-base">{m.open_source({}, { locale: Astro.locals.locale })}</p>
             <h1 class="font-pj mt-5 text-3xl leading-tight font-bold sm:text-4xl sm:leading-tight lg:leading-tight xl:text-5xl">
               {m.instant_updates_for_capacitor({}, { locale: Astro.locals.locale })}
             </h1>
@@ -85,7 +85,7 @@ if (tmp.ok) {
               <a
                 href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
                 title="Get quote now"
-                class="font-pj relative z-10 inline-flex items-center justify-center rounded-xl bg-gray-900 px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
+                class="font-pj bg-codepushgo-900 relative z-10 inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
                 role="button"
               >
                 {m.try_for_free({}, { locale: Astro.locals.locale })}
@@ -94,7 +94,7 @@ if (tmp.ok) {
           </div>
         </div>
       </section>
-      <section class="bg-gray-900 py-12 sm:py-16 lg:py-20">
+      <section class="bg-codepushgo-900 py-12 sm:py-16 lg:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mx-auto grid grid-cols-1 gap-x-12 gap-y-8 px-16 text-center sm:grid-cols-3 sm:px-0 lg:max-w-4xl lg:gap-x-24">
             <div>
@@ -197,11 +197,11 @@ if (tmp.ok) {
       </div>
       <div class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-gray-500 xl:bg-linear-to-r"></div>
     </section>
-    <section class="relative bg-gray-800 py-20 md:my-20">
+    <section class="bg-codepushgo-800 relative py-20 md:my-20">
       <svg class="absolute hidden opacity-30 md:-top-5 md:-left-1/3 md:m-0 md:block lg:-left-16" width="404" height="392" fill="none" viewBox="0 0 404 392">
         <defs>
           <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect>
+            <rect x="0" y="0" width="4" height="4" class="text-gray-400" fill="currentColor"></rect>
           </pattern>
         </defs>
         <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
@@ -209,7 +209,7 @@ if (tmp.ok) {
       <svg class="absolute hidden opacity-30 md:-right-1/3 md:-bottom-5 md:m-0 md:block lg:-right-16" width="404" height="392" fill="none" viewBox="0 0 404 392">
         <defs>
           <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect>
+            <rect x="0" y="0" width="4" height="4" class="text-gray-400" fill="currentColor"></rect>
           </pattern>
         </defs>
         <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
@@ -222,7 +222,7 @@ if (tmp.ok) {
           <h2 class="text-4xl leading-tight font-bold text-white sm:text-5xl lg:text-7xl">
             {m.use_capgo({}, { locale: Astro.locals.locale })}
           </h2>
-          <p class="mt-3 text-base leading-relaxed text-gray-300 md:mt-8">
+          <p class="mt-3 text-base leading-relaxed text-gray-500 md:mt-8">
             {m.our_numbers_are_shared_transparently_since_december_2021({}, { locale: Astro.locals.locale })}
           </p>
           <p class="mt-5 text-center text-base text-gray-400">{m.last_update({}, { locale: Astro.locals.locale })}: {dayjs().format('MMMM DD, YYYY')}</p>
@@ -232,48 +232,48 @@ if (tmp.ok) {
             <h3 class="text-7xl font-bold">
               <span class="bg-linear-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{stats.updates}</span>
             </h3>
-            <p class="mt-4 text-xl font-medium text-gray-300">{m.updates_delivered({}, { locale: Astro.locals.locale })}</p>
+            <p class="mt-4 text-xl font-medium text-gray-500">{m.updates_delivered({}, { locale: Astro.locals.locale })}</p>
             <p class="mt-0.5 text-base text-gray-400">{m.all_around_the_globe({}, { locale: Astro.locals.locale })}</p>
           </div>
           <div>
             <h3 class="text-7xl font-bold">
               <span class="bg-linear-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{stats.apps}</span>
             </h3>
-            <p class="mt-4 text-xl font-medium text-gray-300">{m.apps({}, { locale: Astro.locals.locale })}</p>
+            <p class="mt-4 text-xl font-medium text-gray-500">{m.apps({}, { locale: Astro.locals.locale })}</p>
             <p class="mt-0.5 text-base text-gray-400">{m.using_us_in_production({}, { locale: Astro.locals.locale })}</p>
           </div>
           <div>
             <h3 class="text-7xl font-bold">
               <span class="bg-linear-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{stats.stars}★</span>
             </h3>
-            <p class="mt-4 text-xl font-medium text-gray-300">{m.stars_in_github({}, { locale: Astro.locals.locale })}</p>
+            <p class="mt-4 text-xl font-medium text-gray-500">{m.stars_in_github({}, { locale: Astro.locals.locale })}</p>
             <p class="mt-0.5 text-base text-gray-400">{m.open_source({}, { locale: Astro.locals.locale })}</p>
           </div>
         </div>
         <div class="mt-10 grid grid-cols-1 gap-8 text-center sm:gap-x-8 md:grid-cols-2 lg:mt-24">
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <h3 class="text-2xl font-bold text-white">{m.update_metrics({}, { locale: Astro.locals.locale })}</h3>
             <div class="space-y-4 p-4">
               <div>
                 <p class="text-4xl font-bold text-[#FF675E]">95%</p>
-                <p class="text-gray-300">{m.active_users_up_to_date({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-500">{m.active_users_up_to_date({}, { locale: Astro.locals.locale })}</p>
               </div>
               <div>
                 <p class="text-4xl font-bold text-[#44BCFF]">82%</p>
-                <p class="text-gray-300">{m.worldwide_success_rate({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-500">{m.worldwide_success_rate({}, { locale: Astro.locals.locale })}</p>
               </div>
             </div>
           </div>
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <h3 class="text-2xl font-bold text-white">{m.performance_metrics({}, { locale: Astro.locals.locale })}</h3>
             <div class="space-y-4 p-4">
               <div>
                 <p class="text-4xl font-bold text-[#00AA5E]">114ms</p>
-                <p class="text-gray-300">{m.download_time_globally({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-500">{m.download_time_globally({}, { locale: Astro.locals.locale })}</p>
               </div>
               <div>
                 <p class="text-4xl font-bold text-[#FF44EC]">434ms</p>
-                <p class="text-gray-300">{m.average_api_response_time({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-500">{m.average_api_response_time({}, { locale: Astro.locals.locale })}</p>
               </div>
             </div>
           </div>
@@ -286,7 +286,7 @@ if (tmp.ok) {
           <h2 class="text-3xl leading-tight font-bold text-black sm:text-4xl xl:text-5xl">
             {m.how_it_work({}, { locale: Astro.locals.locale })}
           </h2>
-          <p class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-600">
+          <p class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-400">
             {m.ship_your_first_update_in_less_than_15_minutes({}, { locale: Astro.locals.locale })}
           </p>
         </div>
@@ -304,33 +304,33 @@ if (tmp.ok) {
           </div>
           <div class="relative grid grid-cols-1 gap-x-12 gap-y-12 text-center md:grid-cols-3">
             <div>
-              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-400 bg-white shadow">
                 <span class="text-2xl font-bold text-gray-700"> 1 </span>
               </div>
               <h3 class="mt-6 text-xl leading-tight font-semibold text-black md:mt-10">
                 {m.install_the_plugin({}, { locale: Astro.locals.locale })}
               </h3>
-              <p class="mt-4 text-base text-gray-600">Run <span class="font-bold text-gray-900">npx @capgo/cli init</span> that it !</p>
+              <p class="mt-4 text-base text-gray-400">Run <span class="font-bold text-gray-900">npx @capgo/cli init</span> that it !</p>
             </div>
             <div>
-              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-400 bg-white shadow">
                 <span class="text-2xl font-bold text-gray-700"> 2 </span>
               </div>
               <h3 class="mt-6 text-xl leading-tight font-semibold text-black md:mt-10">
                 {m.send_your_first_update({}, { locale: Astro.locals.locale })}
               </h3>
-              <p class="mt-4 text-base text-gray-600">
+              <p class="mt-4 text-base text-gray-400">
                 {m.build_your_app_as_usual_then_send_with_the_cli({}, { locale: Astro.locals.locale })}
               </p>
             </div>
             <div>
-              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow">
+              <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-400 bg-white shadow">
                 <span class="text-2xl font-bold text-gray-700"> 3 </span>
               </div>
               <h3 class="mt-6 text-xl leading-tight font-semibold text-black md:mt-10">
                 {m.get_the_update({}, { locale: Astro.locals.locale })}
               </h3>
-              <p class="mt-4 text-base text-gray-600">
+              <p class="mt-4 text-base text-gray-400">
                 {m.open_the_app_it_update_in_the_background({}, { locale: Astro.locals.locale })}
               </p>
             </div>
@@ -345,7 +345,7 @@ if (tmp.ok) {
             <a
               href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
               title="Get quote now"
-              class="font-pj relative inline-flex items-center justify-center rounded-xl bg-gray-900 px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
+              class="font-pj bg-codepushgo-900 relative inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
               role="button"
             >
               {m.start_now({}, { locale: Astro.locals.locale })}
@@ -354,25 +354,25 @@ if (tmp.ok) {
         </div>
       </div>
     </section>
-    <section class="bg-gray-800 py-12 sm:py-16 lg:py-20">
+    <section class="bg-codepushgo-800 py-12 sm:py-16 lg:py-20">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
           <h2 class="text-3xl leading-tight font-bold text-white sm:text-4xl xl:text-5xl">
             {m.key_features_title({}, { locale: Astro.locals.locale })}
           </h2>
-          <p class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-300">{m.key_features_subtitle({}, { locale: Astro.locals.locale })}</p>
+          <p class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-500">{m.key_features_subtitle({}, { locale: Astro.locals.locale })}</p>
         </div>
         <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-900">
               <svg class="h-6 w-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
             <h3 class="mb-2 text-xl font-bold text-white">{m.instant_updates({}, { locale: Astro.locals.locale })}</h3>
-            <p class="text-gray-300">{m.push_updates_to_your_users_in_seconds({}, { locale: Astro.locals.locale })}</p>
+            <p class="text-gray-500">{m.push_updates_to_your_users_in_seconds({}, { locale: Astro.locals.locale })}</p>
           </div>
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-900">
               <svg class="h-6 w-6 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -384,36 +384,36 @@ if (tmp.ok) {
               </svg>
             </div>
             <h3 class="mb-2 text-xl font-bold text-white">{m.secure({}, { locale: Astro.locals.locale })}</h3>
-            <p class="text-gray-300">{m.end_to_end_encryption_for_your_updates({}, { locale: Astro.locals.locale })}</p>
+            <p class="text-gray-500">{m.end_to_end_encryption_for_your_updates({}, { locale: Astro.locals.locale })}</p>
           </div>
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-900">
               <svg class="h-6 w-6 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
               </svg>
             </div>
             <h3 class="mb-2 text-xl font-bold text-white">{m.analytics({}, { locale: Astro.locals.locale })}</h3>
-            <p class="text-gray-300">{m.track_update_success_and_user_engagement({}, { locale: Astro.locals.locale })}</p>
+            <p class="text-gray-500">{m.track_update_success_and_user_engagement({}, { locale: Astro.locals.locale })}</p>
           </div>
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-900">
               <svg class="h-6 w-6 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
             <h3 class="mb-2 text-xl font-bold text-white">{m.rollback({}, { locale: Astro.locals.locale })}</h3>
-            <p class="text-gray-300">{m.instantly_rollback_to_previous_version_if_needed({}, { locale: Astro.locals.locale })}</p>
+            <p class="text-gray-500">{m.instantly_rollback_to_previous_version_if_needed({}, { locale: Astro.locals.locale })}</p>
           </div>
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-900">
               <svg class="h-6 w-6 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
             <h3 class="mb-2 text-xl font-bold text-white">{m.error_tracking({}, { locale: Astro.locals.locale })}</h3>
-            <p class="text-gray-300">{m.catch_and_fix_issues_before_they_affect_users({}, { locale: Astro.locals.locale })}</p>
+            <p class="text-gray-500">{m.catch_and_fix_issues_before_they_affect_users({}, { locale: Astro.locals.locale })}</p>
           </div>
-          <div class="rounded-xl bg-gray-700 p-6">
+          <div class="bg-codepushgo-700 rounded-xl p-6">
             <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-900">
               <svg class="h-6 w-6 text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -425,7 +425,7 @@ if (tmp.ok) {
               </svg>
             </div>
             <h3 class="mb-2 text-xl font-bold text-white">{m.user_management({}, { locale: Astro.locals.locale })}</h3>
-            <p class="text-gray-300">{m.manage_testers_and_beta_users_easily({}, { locale: Astro.locals.locale })}</p>
+            <p class="text-gray-500">{m.manage_testers_and_beta_users_easily({}, { locale: Astro.locals.locale })}</p>
           </div>
         </div>
       </div>
@@ -436,7 +436,7 @@ if (tmp.ok) {
           <h2 class="text-3xl leading-tight font-bold text-gray-900 sm:text-4xl xl:text-5xl">
             {m.with_and_without_capgo_title({}, { locale: Astro.locals.locale })}
           </h2>
-          <p class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-600">{m.with_and_without_capgo_subtitle({}, { locale: Astro.locals.locale })}</p>
+          <p class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-400">{m.with_and_without_capgo_subtitle({}, { locale: Astro.locals.locale })}</p>
         </div>
         <div class="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div class="rounded-xl border-2 border-red-200 bg-red-50 p-8">
@@ -512,7 +512,7 @@ if (tmp.ok) {
         </div>
       </div>
     </section>
-    <section class="bg-gray-900 py-24 sm:py-32">
+    <section class="bg-codepushgo-900 py-24 sm:py-32">
       <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 class="text-base/7 font-semibold text-blue-400">{m.faster_releases({}, { locale: Astro.locals.locale })}</h2>
         <p class="mt-2 max-w-2xl text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
@@ -521,7 +521,7 @@ if (tmp.ok) {
         <p class="mt-4 max-w-2xl text-lg text-gray-400">{m.ship_updates_fixes_changes_and_features({}, { locale: Astro.locals.locale })}</p>
         <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-3">
           <div class="flex p-px lg:col-span-4">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-[#44BCFF]/20 via-[#FF44EC]/20 to-[#FF675E]/20">
                 <svg class="mb-4 h-32 w-32 text-[#44BCFF]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -539,7 +539,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-tr-[2rem]">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15 lg:rounded-tr-[2rem]">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-blue-500/20 to-purple-500/20">
                 <svg class="mb-4 h-24 w-24 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -558,7 +558,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-3">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-green-500/20 to-blue-500/20">
                 <svg class="mb-4 h-24 w-24 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -577,7 +577,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-3">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-purple-500/20 to-pink-500/20">
                 <svg class="mb-4 h-24 w-24 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -595,7 +595,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-4">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-yellow-500/20 to-orange-500/20">
                 <svg class="mb-4 h-24 w-24 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -613,7 +613,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-cyan-500/20 to-blue-500/20">
                 <svg class="mb-4 h-24 w-24 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -626,12 +626,12 @@ if (tmp.ok) {
               </div>
               <div class="p-10">
                 <p class="mt-2 text-lg font-medium tracking-tight text-white">Flexible integration</p>
-                <p class="mt-2 max-w-lg text-sm/6 text-gray-400">Manage Capgo from your own software and create white label experiences</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-400">Manage CodePushGo from your own software and create white label experiences</p>
               </div>
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-indigo-500/20 to-blue-500/20">
                 <svg class="mb-4 h-24 w-24 text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -650,7 +650,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-4">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-bl-[2rem]">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15 lg:rounded-bl-[2rem]">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-red-500/20 to-pink-500/20">
                 <svg class="mb-4 h-24 w-24 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -669,7 +669,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-4">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-br-[2rem]">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15 lg:rounded-br-[2rem]">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-teal-500/20 to-green-500/20">
                 <svg class="mb-4 h-24 w-24 text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
@@ -684,7 +684,7 @@ if (tmp.ok) {
             </div>
           </div>
           <div class="flex p-px lg:col-span-2">
-            <div class="w-full overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15">
+            <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15">
               <div class="flex h-80 flex-col items-center justify-center bg-linear-to-br from-emerald-500/20 to-lime-500/20">
                 <svg class="mb-4 h-24 w-24 text-emerald-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
@@ -705,21 +705,21 @@ if (tmp.ok) {
     <CIExpert />
     <div class="relative mt-14 sm:mt-24 sm:py-16">
       <div aria-hidden="true" class="hidden sm:block">
-        <div class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl bg-gray-800"></div>
+        <div class="bg-codepushgo-800 absolute inset-y-0 left-0 w-1/2 rounded-r-3xl"></div>
         <svg class="absolute top-8 left-1/2 -ml-3" width="404" height="392" fill="none" viewBox="0 0 404 392">
           <defs>
             <pattern id="8228f071-bcee-4ec8-905a-2a059a2cc4fb" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect>
+              <rect x="0" y="0" width="4" height="4" class="text-gray-400" fill="currentColor"></rect>
             </pattern>
           </defs>
           <rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)"></rect>
         </svg>
       </div>
       <div class="mx-auto max-w-md px-4 pb-3 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <div class="relative overflow-hidden rounded-2xl bg-gray-700 px-6 py-10 shadow-xl sm:px-12 sm:py-20">
+        <div class="bg-codepushgo-700 relative overflow-hidden rounded-2xl px-6 py-10 shadow-xl sm:px-12 sm:py-20">
           <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
             <svg class="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360">
-              <path class="text-opacity-40 text-gray-600" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"></path>
+              <path class="text-opacity-40 text-gray-400" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"></path>
               <path class="text-opacity-40 text-gray-800" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"></path>
             </svg>
           </div>
@@ -733,7 +733,7 @@ if (tmp.ok) {
               </p>
               <a
                 href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
-                class="mx-auto mt-5 inline-block w-auto rounded-md border border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 focus:outline-none sm:px-10"
+                class="bg-codepushgo-900 mx-auto mt-5 inline-block w-auto rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 focus:outline-none sm:px-10"
               >
                 {m.get_started({}, { locale: Astro.locals.locale })} &RightArrow;
               </a>

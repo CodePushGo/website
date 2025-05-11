@@ -9,16 +9,16 @@ const content = { title, description }
 ---
 
 <Layout content={content}>
-  <section class="bg-gray-50 py-12 sm:py-16">
+  <section class="bg-codepushgo-50 py-12 sm:py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto text-center">
         <h1 class="font-pj text-3xl font-bold text-gray-900 sm:text-4xl xl:text-6xl">{m.trust_and_security({}, { locale: Astro.locals.locale })}</h1>
-        <p class="font-pj mt-6 text-xl font-normal text-gray-600">{m.trust_and_security_description({}, { locale: Astro.locals.locale })}</p>
+        <p class="font-pj mt-6 text-xl font-normal text-gray-400">{m.trust_and_security_description({}, { locale: Astro.locals.locale })}</p>
       </div>
       <div class="mt-16 space-y-16">
         <div class="rounded-3xl bg-white p-8 shadow-xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{m.product_security({}, { locale: Astro.locals.locale })}</h2>
-          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-600">
+          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-400">
             <li>{m.trust_soc2_certification({}, { locale: Astro.locals.locale })}</li>
             <li>
               {m.source_code_protection_1({}, { locale: Astro.locals.locale })}
@@ -44,7 +44,7 @@ const content = { title, description }
 
         <div class="rounded-3xl bg-white p-8 shadow-xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{m.data_security({}, { locale: Astro.locals.locale })}</h2>
-          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-600">
+          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-400">
             <li>{m.encryption_communication({}, { locale: Astro.locals.locale })}</li>
             <li>{m.source_code_encryption({}, { locale: Astro.locals.locale })}</li>
           </ul>
@@ -52,7 +52,7 @@ const content = { title, description }
 
         <div class="rounded-3xl bg-white p-8 shadow-xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{m.network_security({}, { locale: Astro.locals.locale })}</h2>
-          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-600">
+          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-400">
             <li>{m.vulnerability_scanning({}, { locale: Astro.locals.locale })}</li>
             <li>{m.architecture({}, { locale: Astro.locals.locale })}</li>
           </ul>
@@ -60,11 +60,11 @@ const content = { title, description }
 
         <div class="rounded-3xl bg-white p-8 shadow-xl sm:p-12">
           <h2 class="text-3xl font-bold text-gray-900">{m.application_security({}, { locale: Astro.locals.locale })}</h2>
-          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-600">
+          <ul class="mt-8 list-inside list-disc space-y-5 text-lg text-gray-400">
             <li>{m.secure_coding({}, { locale: Astro.locals.locale })}</li>
             <li>
               {m.site_reliability({}, { locale: Astro.locals.locale })}
-              <a href="https://status.capgo.app/" class="underline-current text-blue-500 underline" target="_blank">Uptime Monitoring</a>.
+              <a href="https://status.codepushgo.com/" class="underline-current text-blue-500 underline" target="_blank">Uptime Monitoring</a>.
             </li>
             <li>{m.application_penetration_testing({}, { locale: Astro.locals.locale })}</li>
           </ul>

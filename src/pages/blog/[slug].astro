@@ -78,7 +78,7 @@ const content: { title?: string; description?: string; image?: string; author?: 
 if (entry.data.title) content['title'] = entry.data.title
 if (entry.data.description) content['description'] = entry.data.description
 if (entry.data.head_image) content['image'] = `${Astro.locals.runtimeConfig.public.baseUrl}${entry.data.head_image || '/capgo_banner.webp'}`
-if (entry.data.author) content['author'] = entry.data.author || 'Capgo'
+if (entry.data.author) content['author'] = entry.data.author || 'CodePushGo'
 if (entry.data.keywords) content['keywords'] = entry.data.keywords.split(',') || []
 if (alternateVersions.length > 0) content['alternateVersions'] = alternateVersions
 
@@ -103,7 +103,7 @@ content['ldJSON'] = {
     url: entry.data?.author_url,
   },
   publisher: {
-    name: 'Capgo',
+    name: 'CodePushGo',
     '@type': 'Organization',
     logo: {
       '@type': 'ImageObject',
@@ -157,7 +157,7 @@ content['ldJSON'] = {
         </div>
         <div class="right-0 hidden px-10 sm:block">
           <div class="relative flex flex-col gap-y-4 pb-5">
-            <p class="text-sm text-gray-600">Written by</p>
+            <p class="text-sm text-gray-400">Written by</p>
             <a class="group flex items-center space-x-3" href={entry.data.author_url}>
               <img
                 width="36"
@@ -229,7 +229,7 @@ content['ldJSON'] = {
       <div class="my-12 text-center">
         <a
           href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')}
-          class="group inline-flex items-center text-sm font-semibold text-white transition-all duration-200 hover:text-gray-200 hover:underline"
+          class="group inline-flex items-center text-sm font-semibold text-white transition-all duration-200 hover:text-gray-400 hover:underline"
         >
           {m.see_all_from_our_blog({}, { locale: Astro.locals.locale })}
           <svg
