@@ -30,13 +30,13 @@ const cannLink = getRelativeLocaleUrl(props.locale, `blog/${props.link}`)
           class="h-full w-full rounded-lg object-cover"
         />
       </a>
-      <div class="absolute top-4 left-4">
-        <span class="rounded-full bg-white px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase shadow-lg">
+      <div class="absolute left-4 top-4">
+        <span class="rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-widest text-gray-900 shadow-lg">
           {props.tag}
         </span>
       </div>
     </div>
-    <span class="mt-3 block px-5 text-sm font-semibold tracking-widest text-gray-300 uppercase">
+    <span class="mt-3 block px-5 text-sm font-semibold uppercase tracking-widest text-gray-300">
       {formatTime(props.date)}
     </span>
     <p class="mt-3 px-5 text-2xl font-semibold">
