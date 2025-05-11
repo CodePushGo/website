@@ -38,15 +38,8 @@ const brand = Astro.locals.runtimeConfig.public.brand
   </div>
   <div id="mobile-menu" class="hidden">
     <div class="bg-codepushgo-700 mt-2 space-y-1 px-2 pt-2 pb-3">
-      <a
-        href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
-        class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium"
-      >
-        Tutorials
-      </a>
-      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium">
-        Blog
-      </a>
+      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium"> Tutorials </a>
+      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium"> Blog </a>
     </div>
   </div>
 </header>
