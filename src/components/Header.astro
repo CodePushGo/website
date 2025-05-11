@@ -22,15 +22,19 @@ const brand = Astro.locals.runtimeConfig.public.brand
       </div>
       <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
         <a
+          href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
+          class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
+        >
+          Tutorials
+        </a>
+        <a
           href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')}
-          title="Blog"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
           {m.blog({}, { locale: Astro.locals.locale })}
         </a>
         <a
           href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')}
-          title="Documentation"
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
           {m.documentation({}, { locale: Astro.locals.locale })}
@@ -41,17 +45,15 @@ const brand = Astro.locals.runtimeConfig.public.brand
   <div id="mobile-menu" class="hidden">
     <div class="bg-codepushgo-700 mt-2 space-y-1 px-2 pt-2 pb-3">
       <a
-        href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')}
-        title={m.blog({}, { locale: Astro.locals.locale })}
+        href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
         class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:text-white"
       >
+        Tutorials
+      </a>
+      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:text-white">
         Blog
       </a>
-      <a
-        href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')}
-        title={m.documentation({}, { locale: Astro.locals.locale })}
-        class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:text-white"
-      >
+      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:text-white">
         Documentation
       </a>
     </div>
