@@ -41,6 +41,7 @@ const plugin = defineCollection({
     created_at: z.union([z.string(), z.date()]).optional(),
     slug: z.string().optional(),
     published: z.boolean().optional(),
+    locale: z.string().optional() as z.ZodType<Locales>,
   }),
 })
 
