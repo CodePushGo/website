@@ -34,7 +34,7 @@ const platinumSponsors = sponsors.filter((sponsor) => sponsor.tier === 'platinum
   <div class="bg-codepushgo-900 min-h-screen px-4 py-16 text-white sm:px-6 lg:px-8">
     <div class="mx-auto max-w-7xl">
       <h1 class="mb-4 text-4xl font-bold">CodePushGo Sponsors</h1>
-      <p class="mb-8 max-w-3xl text-xl text-gray-500">
+      <p class="mb-8 max-w-3xl text-xl text-gray-50">
         CodePushGo is an open-source framework free to use thanks to our generous sponsors. If you use CodePushGo in your daily work and can't use our cloud service, please
         consider backing us.
       </p>
@@ -84,7 +84,7 @@ const platinumSponsors = sponsors.filter((sponsor) => sponsor.tier === 'platinum
         bakerSponsors.length > 0 && (
           <div>
             <h2 class="mb-8 text-2xl font-bold">Baker</h2>
-            <div class="ml-12 flex flex-wrap gap-8">
+            <div class="flex flex-wrap gap-8">
               {bakerSponsors.map((sponsor) => (
                 <SponsorLogo size={14} name={sponsor.name} logo={sponsor.imageUrl} url={sponsor.url} />
               ))}
