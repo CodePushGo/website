@@ -112,10 +112,10 @@ content['ldJSON'] = {
 ---
 
 <Layout content={content}>
-  <div class="flex flex-col items-center w-full">
-    <div class="relative w-full px-8 max-w-7xl sm:px-10 lg:px-12">
-      <div class="relative z-0 pt-16 pb-12 mx-auto">
-        <div class="relative max-w-(--breakpoint-sm)">
+  <div class="flex w-full flex-col items-center">
+    <div class="relative w-full max-w-7xl px-8 sm:px-10 lg:px-12">
+      <div class="relative z-0 mx-auto pb-12 pt-16">
+        <div class="max-w-(--breakpoint-sm) relative">
           <div class="flex items-center space-x-4">
             <span
               class="hover:/50 rounded-lg bg-white px-4 py-1.5 text-sm font-medium text-black shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.1)] backdrop-blur transition-all"
@@ -133,8 +133,8 @@ content['ldJSON'] = {
         </div>
       </div>
     </div>
-    <div class="relative w-full px-8 max-w-7xl overflow-clip sm:px-10 lg:px-12">
-      <div class="relative z-auto grid grid-cols-3 mx-auto max-w-grid-width">
+    <div class="relative w-full max-w-7xl overflow-clip px-8 sm:px-10 lg:px-12">
+      <div class="max-w-grid-width relative z-auto mx-auto grid grid-cols-3">
         <div class="relative col-span-3 md:col-span-2">
           <img
             id="blogImage"
@@ -144,16 +144,16 @@ content['ldJSON'] = {
             src={entry.data.head_image}
             width="1536"
             height="1024"
-            class="object-cover overflow-hidden border rounded blur-0 border-white/5"
+            class="overflow-hidden rounded border border-white/5 object-cover blur-0"
           />
-          <article class="min-w-full prose prose-invert blog">
+          <article class="prose prose-invert blog min-w-full">
             <Content />
           </article>
         </div>
         <div class="right-0 hidden px-10 sm:block">
-          <div class="relative flex flex-col pb-5 gap-y-4">
+          <div class="relative flex flex-col gap-y-4 pb-5">
             <p class="text-sm text-gray-400">Written by</p>
-            <a class="flex items-center space-x-3 group" href={entry.data.author_url}>
+            <a class="group flex items-center space-x-3" href={entry.data.author_url}>
               <img
                 width="36"
                 height="36"
@@ -161,17 +161,17 @@ content['ldJSON'] = {
                 decoding="async"
                 alt={entry.data.author}
                 src={entry.data.author_image_url}
-                class="transition-all rounded-full blur-0 group-hover:brightness-90"
+                class="rounded-full blur-0 transition-all group-hover:brightness-90"
               />
               <div class="flex flex-col">
-                <p class="text-sm font-medium text-gray-200 whitespace-nowrap">{entry.data.author}</p>
+                <p class="whitespace-nowrap text-sm font-medium text-gray-200">{entry.data.author}</p>
                 <p class="text-sm text-gray-300">Content Marketer</p>
               </div>
             </a>
           </div>
           {
             headings?.length > 0 && (
-              <div id="staticToc" class="sticky pt-4 pb-8 top-16">
+              <div id="staticToc" class="sticky top-16 pb-8 pt-4">
                 <div>
                   <p class="-ml-0.5 flex items-center gap-1.5 text-sm text-gray-300">
                     <svg
@@ -184,7 +184,7 @@ content['ldJSON'] = {
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="w-4 h-4 lucide lucide-align-left"
+                      class="lucide lucide-align-left h-4 w-4"
                     >
                       <line x1="21" x2="3" y1="6" y2="6" />
                       <line x1="15" x2="3" y1="12" y2="12" />
@@ -192,7 +192,7 @@ content['ldJSON'] = {
                     </svg>
                     On this page
                   </p>
-                  <div class="grid gap-4 mt-4 border-l border-gray-600">
+                  <div class="mt-4 grid gap-4 border-l border-gray-600">
                     {headings.map((k) => (
                       <a id={`${k.slug}-link`} class={`ml-4 pl-${Math.max(0, (k.depth - 1) * 2)} truncate text-sm text-gray-300`} href={`#${k.slug}`}>
                         {k.text}
@@ -206,7 +206,7 @@ content['ldJSON'] = {
         </div>
       </div>
       <GetStarted locale={Astro.locals.locale} />
-      <div class="max-w-xl mx-auto text-center">
+      <div class="mx-auto max-w-xl text-center">
         <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">{m.latest_from_news({}, { locale: Astro.locals.locale })}</h2>
         <p class="mt-4 text-base font-normal leading-7 text-gray-200 lg:mt-6 lg:text-lg lg:leading-8">
           {m.codepushgo_gives_you_the_best_insights_you_need_to_create_a_truly_professional_mobile_app({}, { locale: Astro.locals.locale })}
@@ -214,7 +214,7 @@ content['ldJSON'] = {
       </div>
       {
         related.length > 0 && (
-          <div class="grid max-w-md grid-cols-1 gap-5 mx-auto mt-12 sm:mt-16 lg:max-w-none lg:grid-cols-3 xl:gap-6">
+          <div class="mx-auto mt-12 grid max-w-md grid-cols-1 gap-5 sm:mt-16 lg:max-w-none lg:grid-cols-3 xl:gap-6">
             {related.map((article) => (
               <Blog
                 tag={article.data.tag}
@@ -231,11 +231,11 @@ content['ldJSON'] = {
       <div class="my-12 text-center">
         <a
           href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')}
-          class="inline-flex items-center text-sm font-semibold text-white transition-all duration-200 group hover:text-gray-200 hover:underline"
+          class="group inline-flex items-center text-sm font-semibold text-white transition-all duration-200 hover:text-gray-200 hover:underline"
         >
           {m.see_all_from_our_blog({}, { locale: Astro.locals.locale })}
           <svg
-            class="ml-1 h-5 w-5 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            class="ml-1 h-5 w-5 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             viewBox="0 0 24 24"
             stroke="currentColor"
             stroke-width="2.5"
