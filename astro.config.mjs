@@ -1,13 +1,10 @@
 import sitemap from '@astrojs/sitemap'
 import starlight from '@astrojs/starlight'
-import vue from '@astrojs/vue'
-import paraglide from '@inlang/paraglide-astro'
-import UnoCSS from '@unocss/astro'
-import AstroPWA from '@vite-pwa/astro'
+import { paraglideVitePlugin } from '@inlang/paraglide-js'
+import tailwindcss from '@tailwindcss/vite'
 import { filterSitemapByDefaultLocale, i18n } from 'astro-i18n-aut/integration'
-import { defineConfig } from 'astro/config'
+import { defineConfig, envField } from 'astro/config'
 import config from './configs.json'
-import { pwa } from './src/config/pwa'
 import { defaultLocale, localeNames, locales } from './src/services/locale'
 
 export default defineConfig({
@@ -15,7 +12,21 @@ export default defineConfig({
   site: `https://${config.base_domain.prod}`,
   build: {
     concurrency: 2,
-    format: 'directory',
+  },
+  env: {
+    validateSecrets: true,
+    schema: {
+      ORAMA_CLOUD_ENDPOINT: envField.string({
+        context: 'client',
+        access: 'public',
+        optional: true,
+      }),
+      ORAMA_CLOUD_API_KEY: envField.string({
+        context: 'client',
+        access: 'public',
+        optional: true,
+      }),
+    },
   },
   redirects: {
     '/docs/getting-started/': {
@@ -41,23 +52,16 @@ export default defineConfig({
     },
   },
   integrations: [
-    paraglide({
+    paraglideVitePlugin({
       outdir: './src/paraglide',
       project: './project.inlang',
+      disableAsyncLocalStorage: true,
     }),
     i18n({
       locales: localeNames,
       defaultLocale,
       redirectDefaultLocale: true,
       exclude: ['pages/**/*.json.ts'],
-    }),
-    UnoCSS({ injectReset: true }),
-    vue({
-      template: {
-        transformAssetUrls: {
-          includeAbsolute: false,
-        },
-      },
     }),
     sitemap({
       i18n: {
@@ -66,7 +70,6 @@ export default defineConfig({
       },
       filter: filterSitemapByDefaultLocale({ defaultLocale }),
     }),
-    AstroPWA(pwa),
     starlight({
       disable404Route: true,
       title: 'CodePushGo',
@@ -75,6 +78,7 @@ export default defineConfig({
       customCss: ['./src/css/global.css'],
       components: {
         LanguageSelect: './src/components/LanguageSelect.astro',
+        Search: './src/components/doc/Search.astro',
       },
       editLink: {
         baseUrl: 'https://github.com/codepushgo/website/edit/main/',
@@ -177,5 +181,8 @@ export default defineConfig({
     port: 3000,
     open: true,
     host: '0.0.0.0',
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
 })
