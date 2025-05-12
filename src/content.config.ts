@@ -5,9 +5,9 @@ import { defineCollection, z } from 'astro:content'
 import type { Locales } from './services/locale'
 
 const blog = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: 'src/content/blog' }),
+  loader: glob({ pattern: '**/*.md', base: 'src/content/blog', generateId: ({ entry }) => entry }),
   schema: z.object({
-    slug: z.string().transform((s) => (s.includes('__') ? s.split('__')[1] : s)),
+    slug: z.string(),
     title: z.string(),
     description: z.string().optional().nullable(),
     author: z.string(),
@@ -18,7 +18,15 @@ const blog = defineCollection({
     head_image: z.string().optional(),
     head_image_alt: z.string().optional(),
     keywords: z.string().optional(),
-    tag: z.string(),
+    tag: z.string().transform((j) => {
+      let tmp = ''
+      const splitTags = j.trim().split(',')
+      splitTags.forEach((p, index) => {
+        tmp += p.trim()
+        if (index < splitTags.length - 1) tmp += ','
+      })
+      return tmp
+    }),
     published: z.boolean().optional(),
     locale: z.string() as z.ZodType<Locales>,
     next_blog: z.string().optional().nullable(),
@@ -33,6 +41,7 @@ const plugin = defineCollection({
     created_at: z.union([z.string(), z.date()]).optional(),
     slug: z.string().optional(),
     published: z.boolean().optional(),
+    locale: z.string().optional() as z.ZodType<Locales>,
   }),
 })
 

@@ -41,7 +41,7 @@ In 3 files in your project:
 
 Setup your app in 5 mins
 
-[Update your capacitor apps seamlessly using capacitor updater](https://codepushgo.com/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater)
+[Update your React Native apps seamlessly using React Native updater](https://codepushgo.com/blog/update-your-capacitor-apps-seamlessly-using-capacitor-updater)
 
 Setup your CI in 5 mins
 

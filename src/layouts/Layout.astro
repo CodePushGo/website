@@ -1,9 +1,8 @@
 ---
-import Footer from '@/components/Footer.vue'
-import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
 import SEO from '@/components/SEO.astro'
 import '@/css/global.css'
-import { pwaInfo } from 'virtual:pwa-info'
 
 const { content } = Astro.props
 
@@ -13,14 +12,13 @@ const isLocalhost = Astro.url.origin.includes('localhost:')
 <!doctype html>
 <html lang={Astro.locals.locale.toLowerCase()}>
   <head>
-    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     <SEO {...content} />
   </head>
   <body>
-    <div class="overflow-x-hidden bg-[#8d2045] text-white">
-      <Header locale={Astro.locals.locale} client:load />
+    <div class="bg-codepushgo-900 overflow-x-hidden text-white">
+      <Header />
       <slot />
-      <Footer locale={Astro.locals.locale} client:load />
+      <Footer />
     </div>
     {
       !isLocalhost && (
@@ -34,5 +32,6 @@ const isLocalhost = Astro.url.origin.includes('localhost:')
         />
       )
     }
+    <script is:inline defer data-website-id="66bcb7fa4038d5b1e5ea89eb" data-domain="codepushgo.com" src="https://datafa.st/js/script.js"></script>
   </body>
 </html>
