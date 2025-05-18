@@ -36,15 +36,15 @@ export default {
 
     console.log('Webhook processing completed successfully')
     return new Response(JSON.stringify({ message: 'Webhook processed successfully' }), { status: 200, headers: { 'Content-Type': 'application/json' } })
-  }
-};
+  },
+}
 
 async function processArticle(article, env) {
   const BLOG_DIR = 'src/content/blog/en/'
   const fileName = `${article.slug}.md`
   const filePath = `${BLOG_DIR}${fileName}`
   console.log('Preparing to create/update file:', filePath)
-  
+
   // Create frontmatter
   const frontmatter = [
     '---',
@@ -64,7 +64,7 @@ async function processArticle(article, env) {
     'locale: en',
     "next_blog: ''",
     '---',
-    ''
+    '',
   ].join('\n')
 
   // Combine frontmatter with markdown content
@@ -73,7 +73,7 @@ async function processArticle(article, env) {
   // This is where file writing logic would go if Cloudflare Workers supported it directly
   // For now, log the intent to write the file
   console.log(`Initiating file write process for ${filePath}`)
-  
+
   // In a real scenario, you might need to trigger a GitHub Action or another service to write the file
   // This could be done by making a request to a GitHub API or another endpoint
   console.log('Triggering GitHub API call for file update')
@@ -91,19 +91,19 @@ async function triggerGitHubAction(filePath, content, env) {
     const base64Content = btoa(unescape(encodeURIComponent(content)))
     const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`
     console.log('GitHub API URL:', url)
-    
+
     // First, check if file exists to get SHA for update
     let sha = ''
     console.log('Checking if file exists at:', url)
     const getResponse = await fetch(url, {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${GITHUB_TOKEN}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'Cloudflare-Worker-Outrank-Webhook'
-      }
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
+        'User-Agent': 'Cloudflare-Worker-Outrank-Webhook',
+      },
     })
-    
+
     console.log('File existence check response status:', getResponse.status)
     if (getResponse.ok) {
       const fileData = await getResponse.json()
@@ -112,31 +112,31 @@ async function triggerGitHubAction(filePath, content, env) {
     } else {
       console.log('File does not exist, will create new')
     }
-    
+
     // Create or update file
     console.log('Sending PUT request to create/update file')
     const response = await fetch(url, {
       method: 'PUT',
       headers: {
-        'Authorization': `Bearer ${GITHUB_TOKEN}`,
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
         'Content-Type': 'application/json',
-        'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'Cloudflare-Worker-Outrank-Webhook'
+        Accept: 'application/vnd.github.v3+json',
+        'User-Agent': 'Cloudflare-Worker-Outrank-Webhook',
       },
       body: JSON.stringify({
         message: `Update blog post ${filePath} from webhook`,
         content: base64Content,
-        sha: sha || undefined
-      })
+        sha: sha || undefined,
+      }),
     })
-    
+
     console.log('GitHub API response status:', response.status)
     if (!response.ok) {
       const errorText = await response.text()
       console.error('GitHub API error details:', errorText)
       throw new Error(`GitHub API error: ${response.status} ${errorText}`)
     }
-    
+
     console.log(`Successfully updated file ${filePath}`)
     return { status: 'success' }
   } catch (error) {
