@@ -29,14 +29,6 @@ export default defineConfig({
     },
   },
   redirects: {
-    '/docs/getting-started/': {
-      status: 302,
-      destination: '/docs/plugin/cloud-mode/getting-started/',
-    },
-    '/docs/plugin/cloud-mode/getting-started/': {
-      status: 302,
-      destination: '/docs/getting-started/quickstart',
-    },
   },
   i18n: {
     locales,
