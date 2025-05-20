@@ -71,7 +71,7 @@ The best choice depends on project size, team structure, and organizational poli
 
 Integrating with your **version control system (VCS)** is essential for a smooth CI/CD workflow. Most CI/CD tools integrate with popular VCS platforms like Git. Connecting your repository allows for automated triggers, ensuring every code commit initiates the pipeline.  This automation is fundamental to continuous integration.
 
-For example, with each code push, the pipeline can automatically build the application, run tests, and deploy to a staging environment.  This automatic validation catches errors early and ensures code stability.  Read also: [How to master...](https://capgo.app/sitemap-0.xml)
+For example, with each code push, the pipeline can automatically build the application, run tests, and deploy to a staging environment.  This automatic validation catches errors early and ensures code stability.  Read also: [How to master...](https://codepushgo.com/sitemap-0.xml)
 
 ### Scaling Your Pipeline for Growth
 
@@ -124,7 +124,7 @@ The 2025 State of Software Delivery Report by CircleCI showed that top-performin
 
 ### Deployment Automation: Delivering Value Faster
 
-**Deployment automation** is the final CI/CD pipeline stage. This automatically deploys the tested application to various environments (staging, production). This minimizes manual intervention, reduces errors, and enables faster value delivery. Deployment strategies like blue/green deployments and canary releases enhance deployment reliability and safety. Check out our guide on [How to master...](https://capgo.app/sitemap-0.xml).
+**Deployment automation** is the final CI/CD pipeline stage. This automatically deploys the tested application to various environments (staging, production). This minimizes manual intervention, reduces errors, and enables faster value delivery. Deployment strategies like blue/green deployments and canary releases enhance deployment reliability and safety. Check out our guide on [How to master...](https://codepushgo.com/sitemap-0.xml).
 
 ## Deployment Strategies That Minimize Risk, Maximize Value
 
@@ -223,7 +223,7 @@ A functional CI/CD pipeline is a good starting point, but optimizing it is cruci
 
 ### Performance Monitoring and Identifying Bottlenecks
 
-Understanding pipeline bottlenecks is crucial. **Pipeline monitoring tools** offer insights into execution times, resource usage, and potential bottlenecks.  Analyzing this data allows teams to target optimization efforts for maximum impact. For further insights, read our article about [How to master...](https://capgo.app/sitemap-0.xml)
+Understanding pipeline bottlenecks is crucial. **Pipeline monitoring tools** offer insights into execution times, resource usage, and potential bottlenecks.  Analyzing this data allows teams to target optimization efforts for maximum impact. For further insights, read our article about [How to master...](https://codepushgo.com/sitemap-0.xml)
 
 ### Pipelines as Code: Managing Pipelines Like Software
 

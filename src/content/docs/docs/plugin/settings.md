@@ -108,7 +108,7 @@ Default: `true`
 
 Only available for Android and iOS.
 
-Default: `https://api.capgo.app/updates`
+Default: `https://api.codepushgo.com/updates`
 
 ```json
 // capacitor.config.json
@@ -127,7 +127,7 @@ Default: `https://api.capgo.app/updates`
 
 Only available for Android and iOS. Set to "" to disable stats reporting.
 
-Default: `https://api.capgo.app/stats`
+Default: `https://api.codepushgo.com/stats`
 
 ```json
 // capacitor.config.json

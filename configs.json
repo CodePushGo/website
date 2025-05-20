@@ -1,7 +1,7 @@
 {
   "base_domain": {
-    "prod": "capgo.app",
-    "development": "development.capgo.app",
+    "prod": "codepushgo.com",
+    "development": "development.codepushgo.com",
     "local": "localhost:3000"
   }
 }

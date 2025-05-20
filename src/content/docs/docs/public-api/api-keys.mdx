@@ -35,7 +35,7 @@ You can create subkeys with limited access to specific apps or organizations. Th
 
 ### GET
 
-`https://api.capgo.app/apikey/`
+`https://api.codepushgo.com/apikey/`
 
 Retrieve all API keys associated with your account.
 
@@ -58,7 +58,7 @@ interface ApiKey {
 #### Example Request
 
 ```bash
-curl -H "authorization: your-api-key" https://api.capgo.app/apikey/
+curl -H "authorization: your-api-key" https://api.codepushgo.com/apikey/
 ```
 
 #### Example Response
@@ -91,7 +91,7 @@ curl -H "authorization: your-api-key" https://api.capgo.app/apikey/
 
 ### POST
 
-`https://api.capgo.app/apikey/`
+`https://api.codepushgo.com/apikey/`
 
 Create a new API key for a specific organization.
 
@@ -117,7 +117,7 @@ curl -X POST \
     "mode": "read",
     "limited_to_apps": ["com.demo.app"]
   }' \
-  https://api.capgo.app/apikey/
+  https://api.codepushgo.com/apikey/
 ```
 
 #### Example Response
@@ -138,7 +138,7 @@ curl -X POST \
 
 ### DELETE
 
-`https://api.capgo.app/apikey/:id/`
+`https://api.codepushgo.com/apikey/:id/`
 
 Delete an existing API key. Use this to revoke access immediately.
 
@@ -148,7 +148,7 @@ Delete an existing API key. Use this to revoke access immediately.
 #### Example Request
 
 ```bash
-curl -X DELETE -H "authorization: your-api-key" https://api.capgo.app/apikey/1/
+curl -X DELETE -H "authorization: your-api-key" https://api.codepushgo.com/apikey/1/
 ```
 
 #### Success Response

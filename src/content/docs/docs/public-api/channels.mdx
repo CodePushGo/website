@@ -37,7 +37,7 @@ A channel represents a distribution track for your app updates. Each channel can
 
 ### POST
 
-`https://api.capgo.app/channel/`
+`https://api.codepushgo.com/channel/`
 
 Create or update a channel configuration.
 
@@ -76,7 +76,7 @@ curl -X POST \
     "android": true,
     "allow_emulator": true
   }' \
-  https://api.capgo.app/channel/
+  https://api.codepushgo.com/channel/
 ```
 
 #### Success Response
@@ -89,7 +89,7 @@ curl -X POST \
 
 ### GET
 
-`https://api.capgo.app/channel/`
+`https://api.codepushgo.com/channel/`
 
 Retrieve channel information. Returns 50 channels per page.
 
@@ -103,15 +103,15 @@ Retrieve channel information. Returns 50 channels per page.
 ```bash
 # Get all channels
 curl -H "authorization: your-api-key" \
-  "https://api.capgo.app/channel/?app_id=app_123"
+  "https://api.codepushgo.com/channel/?app_id=app_123"
 
 # Get specific channel
 curl -H "authorization: your-api-key" \
-  "https://api.capgo.app/channel/?app_id=app_123&channel=beta"
+  "https://api.codepushgo.com/channel/?app_id=app_123&channel=beta"
 
 # Get next page
 curl -H "authorization: your-api-key" \
-  "https://api.capgo.app/channel/?app_id=app_123&page=1"
+  "https://api.codepushgo.com/channel/?app_id=app_123&page=1"
 ```
 
 #### Response Type
@@ -164,7 +164,7 @@ interface Channel {
 
 ### DELETE
 
-`https://api.capgo.app/channel/`
+`https://api.codepushgo.com/channel/`
 
 Delete a channel. Note that this will affect all devices using this channel.
 
@@ -187,7 +187,7 @@ curl -X DELETE \
     "app_id": "app_123",
     "channel": "beta"
   }' \
-  https://api.capgo.app/channel/
+  https://api.codepushgo.com/channel/
 ```
 
 #### Success Response

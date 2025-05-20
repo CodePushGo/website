@@ -46,4 +46,4 @@ async function verifyHtmlElements(sitemapUrl) {
   }
 }
 
-verifyHtmlElements('https://capgo.app/sitemap-0.xml')
+verifyHtmlElements('https://codepushgo.com/sitemap-0.xml')

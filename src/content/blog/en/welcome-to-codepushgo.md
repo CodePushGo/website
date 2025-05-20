@@ -1,7 +1,7 @@
 ---
 slug: welcome-to-codepushgo
 title: Welcome to CodePushGo – A New Chapter for OTA Updates
-description: Introducing CodePushGo, a modern fork of Capgo.app, built for secure, fast, and compliant OTA updates for React Native apps.
+description: Introducing CodePushGo, a modern fork of codepushgo.com, built for secure, fast, and compliant OTA updates for React Native apps.
 author: Martin Donadieu
 author_image_url: https://avatars.githubusercontent.com/u/4084527?v=4
 author_url: https://github.com/riderx
@@ -16,11 +16,11 @@ locale: en
 next_blog: ''
 ---
 
-We’re excited to announce the launch of **CodePushGo** – a fresh, open-source fork of Capgo.app, designed to make over-the-air (OTA) updates for React Native apps faster, safer, and more developer-friendly.
+We’re excited to announce the launch of **CodePushGo** – a fresh, open-source fork of codepushgo.com, designed to make over-the-air (OTA) updates for React Native apps faster, safer, and more developer-friendly.
 
 ## Why CodePushGo?
 
-Capgo.app has been a trusted solution for live updates in React Native apps. But as the ecosystem and developer needs evolved, we saw the opportunity to build something even better: a platform that’s open, transparent, and focused on security, compliance, and speed.
+codepushgo.com has been a trusted solution for live updates in React Native apps. But as the ecosystem and developer needs evolved, we saw the opportunity to build something even better: a platform that’s open, transparent, and focused on security, compliance, and speed.
 
 **CodePushGo** is our answer. It’s a fork, but it’s also a new beginning – with a renewed commitment to open source, developer experience, and the latest best practices.
 
@@ -38,7 +38,7 @@ We want to empower developers to deliver updates instantly, without fear of brea
 
 ## What’s Next?
 
-- **Migration Guides**: Coming soon for Capgo.app users.
+- **Migration Guides**: Coming soon for codepushgo.com users.
 - **New Features**: Expect rapid improvements, more integrations, and better tooling.
 - **Community**: Join us on GitHub, share feedback, and help shape the future of OTA updates.
 

@@ -39,4 +39,4 @@ async function checkSitemapFor404s(sitemapUrl) {
   }
 }
 
-checkSitemapFor404s('https://capgo.app/sitemap-0.xml')
+checkSitemapFor404s('https://codepushgo.com/sitemap-0.xml')
