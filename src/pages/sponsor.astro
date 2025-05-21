@@ -13,7 +13,7 @@ interface Sponsor {
 const fetchSponsors = async () => {
   try {
     const siteUrl = import.meta.env.SITE
-    const response = await fetch(`${siteUrl}/sponsors.json`)
+    const response = await fetch(`https://capgo.app/sponsors.json`)
     if (!response.ok) return []
     return (await response.json()) as Sponsor[]
   } catch (error) {
