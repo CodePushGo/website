@@ -224,7 +224,7 @@ Security testing employs various techniques to probe the application's defenses.
 * **Test for common vulnerabilities:** Focus on areas like insecure data storage, weak server-side controls, and improper authentication.
 * **Verify proper certificate validation and SSL pinning:** Ensure secure communication between the app and the server.
 * **Conduct regular penetration testing:** Employ ethical hackers to simulate real-world attacks.
-* **Implement automated security scans in CI/CD pipeline:** Integrate security testing into the development process for continuous monitoring.  [Learn more about Security Testing](https://codepushgo.com/blog/5-security-best-practices-for-mobile-app-live-updates/) to enhance the security of your live updates.
+* **Implement automated security scans in CI/CD pipeline:** Integrate security testing into the development process for continuous monitoring.  [Learn more about Security Testing](https://capgo.app/blog/5-security-best-practices-for-mobile-app-live-updates/) to enhance the security of your live updates.
 
 
 **Popularized By:**
