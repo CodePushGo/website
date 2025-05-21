@@ -8,7 +8,7 @@ locale: ko
 
 이 문서는 새로운 암호화 시스템으로 데이터를 암호화하고 이전 시스템을 제거하는 방법을 설명합니다
 
-새로운 암호화 시스템에 대해 [블로그 포스트](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)에서 자세히 알아보세요
+새로운 암호화 시스템에 대해 [블로그 포스트](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)에서 자세히 알아보세요
 
 ---
 

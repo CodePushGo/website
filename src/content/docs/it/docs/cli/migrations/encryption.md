@@ -8,7 +8,7 @@ locale: it
 
 Questa documentazione spiegherà come crittografare i tuoi dati con il nuovo sistema di crittografia e rimuovere quello vecchio
 
-Scopri di più sul nuovo sistema di crittografia nel [blog post](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
+Scopri di più sul nuovo sistema di crittografia nel [blog post](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
 
 ---
 

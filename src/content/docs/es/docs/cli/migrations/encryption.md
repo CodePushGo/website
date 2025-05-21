@@ -8,7 +8,7 @@ locale: es
 
 Esta documentación explicará cómo cifrar tus datos con el nuevo sistema de cifrado y eliminar el anterior
 
-Aprende más sobre el nuevo sistema de cifrado en el [blog post](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
+Aprende más sobre el nuevo sistema de cifrado en el [blog post](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
 
 ---
 

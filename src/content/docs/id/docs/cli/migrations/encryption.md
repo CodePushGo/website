@@ -8,7 +8,7 @@ locale: id
 
 Dokumentasi ini akan menjelaskan cara mengenkripsi data Anda dengan sistem enkripsi baru dan menghapus yang lama
 
-Pelajari lebih lanjut tentang sistem enkripsi baru di [blog post](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
+Pelajari lebih lanjut tentang sistem enkripsi baru di [blog post](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
 
 ---
 

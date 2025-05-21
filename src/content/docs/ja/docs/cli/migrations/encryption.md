@@ -8,7 +8,7 @@ locale: ja
 
 この文書では、新しい暗号化システムでデータを暗号化し、古いシステムを削除する方法について説明します。
 
-新しい暗号化システムについての詳細は[ブログ投稿](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)をご覧ください。
+新しい暗号化システムについての詳細は[ブログ投稿](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)をご覧ください。
 
 ---
 

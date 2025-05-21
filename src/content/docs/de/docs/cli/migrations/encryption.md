@@ -8,7 +8,7 @@ locale: de
 
 Diese Dokumentation erklärt, wie Sie Ihre Daten mit dem neuen Verschlüsselungssystem verschlüsseln und das alte entfernen können
 
-Erfahren Sie mehr über das neue Verschlüsselungssystem im [Blog-Beitrag](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
+Erfahren Sie mehr über das neue Verschlüsselungssystem im [Blog-Beitrag](https://capgo.app/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing)
 
 ---
 
