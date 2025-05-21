@@ -94,7 +94,7 @@ CapacitorUpdaternotifyAppReady()
 
 #### Flux de développement
 
-Lorsque vous développez de nouvelles fonctionnalités, assurez-vous de bloquer `autoUpdate`, car capgo écrasera constamment votre travail avec le dernier bundle de mise à jour
+Lorsque vous développez de nouvelles fonctionnalités, assurez-vous de bloquer `autoUpdate`, car CodePushGo écrasera constamment votre travail avec le dernier bundle de mise à jour
 Définissez `autoUpdate` sur false dans votre configuration
 Si pour une raison quelconque vous êtes bloqué sur une mise à jour, vous pouvez supprimer l'application et la réinstaller
 Assurez-vous de définir `autoUpdate` sur false dans votre configuration avant de le faire

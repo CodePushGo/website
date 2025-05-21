@@ -94,7 +94,7 @@ CapacitorUpdaternotifyAppReady()
 
 #### Alur pengembangan
 
-Saat Anda mengembangkan fitur baru, pastikan untuk memblokir `autoUpdate`, karena capgo akan terus menimpa pekerjaan Anda dengan bundle pembaruan terbaru
+Saat Anda mengembangkan fitur baru, pastikan untuk memblokir `autoUpdate`, karena CodePushGo akan terus menimpa pekerjaan Anda dengan bundle pembaruan terbaru
 Atur `autoUpdate` ke false dalam konfigurasi Anda
 Jika karena suatu alasan Anda terjebak pada pembaruan, Anda dapat menghapus aplikasi dan menginstalnya kembali
 Pastikan untuk mengatur `autoUpdate` ke false dalam konfigurasi Anda sebelum melakukannya

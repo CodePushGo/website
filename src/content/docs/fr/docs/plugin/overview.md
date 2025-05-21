@@ -16,7 +16,7 @@ Le Mode Auto Auto-hébergé est destiné à ceux qui souhaitent gérer toute la 
 Le Mode Manuel Auto-hébergé combine contrôle et autonomie. Vous décidez quand mettre à jour via JavaScript, mais votre serveur gère ce qui est mis à jour. C'est un peu complexe car vous incluez le code de mise à jour dans les mises à jour.
 
 :::note
-Si vous choisissez l'auto-hébergement, vous passez à côté de toutes les excellentes fonctionnalités que le cloud capgo offre comme : les retours automatiques, les alertes par email, les canaux, les statistiques, le chiffrement et plus encore
+Si vous choisissez l'auto-hébergement, vous passez à côté de toutes les excellentes fonctionnalités que le cloud CodePushGo offre comme : les retours automatiques, les alertes par email, les canaux, les statistiques, le chiffrement et plus encore
 :::
 
 :::danger

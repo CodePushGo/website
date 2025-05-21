@@ -95,7 +95,7 @@ CapacitorUpdater.notifyAppReady()
 
 #### Dev flow
 
-When you develop new features, be sure to block `autoUpdate`, as capgo will constatly overwrite your work with the latest update bundle.
+When you develop new features, be sure to block `autoUpdate`, as CodePushGo will constatly overwrite your work with the latest update bundle.
 Set `autoUpdate` to false in your config. 
 If for some reason you are stuck on an update, you can delete the app and reinstall it.
 Be sure to set `autoUpdate` to false in your config before doing so.

@@ -94,7 +94,7 @@ CapacitorUpdater.notifyAppReady()
 
 #### 개발 흐름
 
-새로운 기능을 개발할 때는 capgo가 지속적으로 최신 업데이트 번들로 작업을 덮어쓰므로 `autoUpdate`를 차단해야 합니다
+새로운 기능을 개발할 때는 CodePushGo가 지속적으로 최신 업데이트 번들로 작업을 덮어쓰므로 `autoUpdate`를 차단해야 합니다
 설정에서 `autoUpdate`를 false로 설정하세요
 어떤 이유로 업데이트에 문제가 생기면 앱을 삭제하고 다시 설치할 수 있습니다
 그렇게 하기 전에 설정에서 `autoUpdate`를 false로 설정하세요

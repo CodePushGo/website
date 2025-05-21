@@ -16,7 +16,7 @@ Mode Self-Hosted Auto adalah untuk mereka yang ingin menangani semua logika pemb
 Mode Self-Hosted Manual menggabungkan kontrol dan otonomi. Anda memutuskan kapan akan memperbarui melalui JavaScript, tetapi server Anda menangani apa yang diperbarui. Ini agak kompleks karena Anda menyertakan kode pembaruan dalam pembaruan.
 
 :::note 
-Jika Anda memilih untuk self host, Anda akan kehilangan semua fitur hebat yang ditawarkan capgo cloud seperti: pengembalian otomatis, peringatan email, saluran, statistik, enkripsi dan lainnya
+Jika Anda memilih untuk self host, Anda akan kehilangan semua fitur hebat yang ditawarkan CodePushGo cloud seperti: pengembalian otomatis, peringatan email, saluran, statistik, enkripsi dan lainnya
 :::
 
 :::danger

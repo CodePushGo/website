@@ -94,7 +94,7 @@ CapacitorUpdater.notifyAppReady()
 
 #### Flujo de desarrollo
 
-Cuando desarrolles nuevas funciones, asegúrate de bloquear `autoUpdate`, ya que capgo sobrescribirá constantemente tu trabajo con el último paquete de actualización
+Cuando desarrolles nuevas funciones, asegúrate de bloquear `autoUpdate`, ya que CodePushGo sobrescribirá constantemente tu trabajo con el último paquete de actualización
 Establece `autoUpdate` en false en tu configuración
 Si por alguna razón te quedas atascado en una actualización, puedes eliminar la app y reinstalarla
 Asegúrate de establecer `autoUpdate` en false en tu configuración antes de hacerlo

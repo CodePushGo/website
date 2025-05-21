@@ -18,7 +18,7 @@ La Modalità Self-Hosted Manual combina controllo e autonomia. Decidi quando agg
 
 
 :::note 
-Se scegli il self hosting perderai tutte le ottime funzionalità che capgo cloud ha da offrire come: ripristini automatici, avvisi email, canali, statistiche, crittografia e altro
+Se scegli il self hosting perderai tutte le ottime funzionalità che CodePushGo cloud ha da offrire come: ripristini automatici, avvisi email, canali, statistiche, crittografia e altro
 :::
 
 :::danger
