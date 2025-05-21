@@ -19,7 +19,7 @@ locale: ko
 - `-a, --apikey <apikey>`: 계정에 연결할 API 키
 - `-p, --path <path>`: 업로드할 폴더 경로 (`capacitorconfig`의 `webDir` 기본값)
 - `-c, --channel <channel>`: 번들을 연결할 채널
-- `-e, --external <url>`: Capgo Cloud에 업로드하는 대신 외부 URL에 연결
+- `-e, --external <url>`: CodePushGo Cloud에 업로드하는 대신 외부 URL에 연결
 - `--iv-session-key <key>`: 외부 번들 URL의 IV 및 세션 키 설정
 - `--s3-region <region>`: S3 버킷의 리전
 - `--s3-apikey <apikey>`: S3 엔드포인트의 API 키
@@ -45,8 +45,8 @@ locale: ko
 - `--multipart`: S3에 데이터를 업로드하기 위해 멀티파트 프로토콜 사용 (더 이상 사용되지 않음, 대신 `--tus` 사용)
 - `--tus`: tus 프로토콜을 사용하여 번들 업로드
 - `--tus-chunk-size <tusChunkSize>`: tus 업로드의 청크 크기
-- `--partial`: Capgo Cloud에 변경된 파일만 업로드
-- `--partial-only`: Capgo Cloud에 부분 파일만 업로드하고 압축 파일은 건너뜀 (큰 번들에 유용)
+- `--partial`: CodePushGo Cloud에 변경된 파일만 업로드
+- `--partial-only`: CodePushGo Cloud에 부분 파일만 업로드하고 압축 파일은 건너뜀 (큰 번들에 유용)
 - `--encrypted-checksum <encryptedChecksum>`: 외부 번들의 암호화된 체크섬(서명)
 - `--auto-set-bundle`: `capacitorconfigjson`에서 번들 버전 자동 설정
 - `--dry-upload`: 실제 파일을 업로드하지 않고 업로드 프로세스의 테스트 실행 (테스트에 유용)

@@ -7,7 +7,7 @@ locale: de
 
 import { Steps, LinkCard, Tabs, TabItem } from '@astrojs/starlight/components';
 
-Nutzen Sie die Live-Updates-Funktion von Capgo, um die Benutzeroberfläche und Geschäftslogik Ihrer App aus der Ferne in Echtzeit zu aktualisieren. Übertragen Sie JS-Bundle-Updates direkt an Ihre Nutzer, ohne den App Store zu durchlaufen, um sofort Fehler zu beheben und neue Funktionen bereitzustellen.
+Nutzen Sie die Live-Updates-Funktion von CodePushGo, um die Benutzeroberfläche und Geschäftslogik Ihrer App aus der Ferne in Echtzeit zu aktualisieren. Übertragen Sie JS-Bundle-Updates direkt an Ihre Nutzer, ohne den App Store zu durchlaufen, um sofort Fehler zu beheben und neue Funktionen bereitzustellen.
 
 Diese Anleitung setzt voraus, dass Sie den [Capgo Quickstart](/docs/getting-started/quickstart) abgeschlossen haben und bereits:
 
@@ -23,18 +23,18 @@ Diese Anleitung setzt voraus, dass Sie den [Capgo Quickstart](/docs/getting-star
 
 Wenn Sie diese Schritte noch nicht ausgeführt haben, gehen Sie bitte zurück und schließen Sie zuerst den Quickstart ab
 
-<LinkCard href="/docs/getting-started/add-an-app/" title="App hinzufügen" description="Fügen Sie eine App zu Ihrem Capgo-Konto hinzu und installieren Sie das Plugin in Ihrer App" />
+<LinkCard href="/docs/getting-started/add-an-app/" title="App hinzufügen" description="Fügen Sie eine App zu Ihrem CodePushGo-Konto hinzu und installieren Sie das Plugin in Ihrer App" />
 
 ## Bundle hochladen
 
-Mit dem installierten und konfigurierten Capgo SDK können Sie Ihr erstes Live-Update-Bundle hochladen:
+Mit dem installierten und konfigurierten CodePushGo SDK können Sie Ihr erstes Live-Update-Bundle hochladen:
 
 1. Web-Assets erstellen:
    ```shell
    npm run build
    ```
 
-2. Bundle zu Capgo hochladen:
+2. Bundle zu CodePushGo hochladen:
     <Tabs>
       <TabItem label="Console">
         ```shell
@@ -44,7 +44,7 @@ Mit dem installierten und konfigurierten Capgo SDK können Sie Ihr erstes Live-U
       <TabItem label="Github Actions">
       ```yml
       // github/workflows/build_and_deploy.yml
-    name: Build source code and send to Capgo
+    name: Build source code and send to CodePushGo
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -68,7 +68,7 @@ Mit dem installierten und konfigurierten Capgo SDK können Sie Ihr erstes Live-U
             run: npm install
           - name: Build
             run: npm run build
-          - name: Deploy to Capgo
+          - name: Deploy to CodePushGo
             run: bunx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} --channel ${{ env.CHANNEL }}
             env:
               CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
@@ -107,7 +107,7 @@ Mit dem installierten und konfigurierten Capgo SDK können Sie Ihr erstes Live-U
 ### Fehlerbehebung beim Hochladen
 
 Wenn das Hochladen fehlschlägt, überprüfen Sie:
-- Ihre App-ID in `capacitor.config.ts` stimmt mit Ihrer App im Capgo-Dashboard überein
+- Ihre App-ID in `capacitor.config.ts` stimmt mit Ihrer App im CodePushGo-Dashboard überein
 - Sie führen den Upload-Befehl vom Root-Verzeichnis Ihres Capacitor-Projekts aus
 - Ihre Web-Assets sind erstellt und aktuell
 
@@ -143,7 +143,7 @@ Schauen Sie im [Capgo Quickstart](/docs/getting-started/quickstart#receiving-a-l
 
 ## Nächste Schritte
 
-Herzlichen Glückwunsch zum Bereitstellen Ihres ersten Live-Updates mit Capgo! 🎉
+Herzlichen Glückwunsch zum Bereitstellen Ihres ersten Live-Updates mit CodePushGo! 🎉
 
 Um mehr zu erfahren, lesen Sie den Rest der [Capgo Live-Updates-Dokumentation](/docs/live-updates). Einige wichtige Themen, die Sie als Nächstes überprüfen sollten:
 - [Updates mit Kanälen zielgerichtet einsetzen](/docs/live-updates/channels)

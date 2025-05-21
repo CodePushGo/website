@@ -7,9 +7,9 @@ locale: fr
 
 import { Steps, LinkCard, Tabs, TabItem } from '@astrojs/starlight/components';
 
-Utilisez la fonctionnalité Live Updates de Capgo pour mettre à jour l'interface utilisateur et la logique métier de votre application à distance, en temps réel. Envoyez des mises à jour du bundle JS directement à vos utilisateurs sans passer par l'app store pour corriger instantanément les bugs et déployer de nouvelles fonctionnalités.
+Utilisez la fonctionnalité Live Updates de CodePushGo pour mettre à jour l'interface utilisateur et la logique métier de votre application à distance, en temps réel. Envoyez des mises à jour du bundle JS directement à vos utilisateurs sans passer par l'app store pour corriger instantanément les bugs et déployer de nouvelles fonctionnalités.
 
-Ce guide suppose que vous avez terminé le [Démarrage rapide Capgo](/docs/getting-started/quickstart) et que vous avez déjà :
+Ce guide suppose que vous avez terminé le [Démarrage rapide CodePushGo](/docs/getting-started/quickstart) et que vous avez déjà :
 
 <Steps>
 
@@ -23,18 +23,18 @@ Ce guide suppose que vous avez terminé le [Démarrage rapide Capgo](/docs/getti
 
 Si vous n'avez pas encore effectué ces étapes, veuillez revenir en arrière et compléter d'abord le démarrage rapide.
 
-<LinkCard href="/docs/getting-started/add-an-app/" title="Ajouter une application" description="Ajoutez une application à votre compte Capgo et installez le plugin dans votre application" />
+<LinkCard href="/docs/getting-started/add-an-app/" title="Ajouter une application" description="Ajoutez une application à votre compte CodePushGo et installez le plugin dans votre application" />
 
 ## Téléversement d'un Bundle
 
-Une fois le SDK Capgo installé et configuré, vous êtes prêt à téléverser votre premier bundle de mise à jour en direct :
+Une fois le SDK CodePushGo installé et configuré, vous êtes prêt à téléverser votre premier bundle de mise à jour en direct :
 
 1. Construisez vos assets web :
    ```shell
    npm run build
    ```
 
-2. Téléversez le bundle vers Capgo :
+2. Téléversez le bundle vers CodePushGo :
     <Tabs>
       <TabItem label="Console">
         ```shell
@@ -44,7 +44,7 @@ Une fois le SDK Capgo installé et configuré, vous êtes prêt à téléverser 
       <TabItem label="Github Actions">
       ```yml
       // github/workflows/build_and_deploy.yml
-    name: Build source code and send to Capgo
+    name: Build source code and send to CodePushGo
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -68,7 +68,7 @@ Une fois le SDK Capgo installé et configuré, vous êtes prêt à téléverser 
             run: npm install
           - name: Build
             run: npm run build
-          - name: Deploy to Capgo
+          - name: Deploy to CodePushGo
             run: bunx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} --channel ${{ env.CHANNEL }}
             env:
               CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
@@ -107,7 +107,7 @@ Une fois le SDK Capgo installé et configuré, vous êtes prêt à téléverser 
 ### Dépannage des téléversements
 
 Si votre téléversement échoue, vérifiez :
-- Que votre ID d'application dans `capacitor.config.ts` correspond à votre application dans le tableau de bord Capgo
+- Que votre ID d'application dans `capacitor.config.ts` correspond à votre application dans le tableau de bord CodePushGo
 - Que vous exécutez la commande de téléversement depuis la racine de votre projet Capacitor
 - Que vos assets web sont construits et à jour
 
@@ -139,13 +139,13 @@ Une fois votre bundle téléversé, vous pouvez tester la mise à jour en direct
 
 6. Fermez et rouvrez l'application. Vous devriez voir votre mise à jour en direct appliquée !
 
-Référez-vous au [Démarrage rapide Capgo](/docs/getting-started/quickstart#receiving-a-live-update-on-a-device) pour plus de détails sur les tests des mises à jour en direct
+Référez-vous au [Démarrage rapide CodePushGo](/docs/getting-started/quickstart#receiving-a-live-update-on-a-device) pour plus de détails sur les tests des mises à jour en direct
 
 ## Prochaines étapes
 
-Félicitations pour avoir déployé votre première mise à jour en direct avec Capgo ! 🎉
+Félicitations pour avoir déployé votre première mise à jour en direct avec CodePushGo ! 🎉
 
-Pour en savoir plus, consultez le reste de la [documentation Live Updates de Capgo](/docs/live-updates). Quelques sujets clés à découvrir ensuite :
+Pour en savoir plus, consultez le reste de la [documentation Live Updates de CodePushGo](/docs/live-updates). Quelques sujets clés à découvrir ensuite :
 - [Ciblage des mises à jour avec les canaux](/docs/live-updates/channels)
 - [Personnalisation du comportement des mises à jour](/docs/live-updates/update-behavior)
 - [Retours en arrière des mises à jour en direct](/docs/live-updates/rollbacks)

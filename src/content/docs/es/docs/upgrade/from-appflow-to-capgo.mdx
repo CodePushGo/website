@@ -1,6 +1,6 @@
 ---
-title: Migrar de AppFlow a Capgo
-description: Guía completa para migrar tu aplicación de Ionic AppFlow a Capgo
+title: Migrar de AppFlow a CodePushGo
+description: Guía completa para migrar tu aplicación de Ionic AppFlow a CodePushGo
 sidebar:
   order: 7
 locale: es
@@ -25,11 +25,11 @@ const config: CapacitorConfig = {
 };
 ```
 
-Esta configuración te ayudará a mapear las características de AppFlow a sus equivalentes en Capgo.
+Esta configuración te ayudará a mapear las características de AppFlow a sus equivalentes en CodePushGo.
 
-## ¿Por qué migrar a Capgo?
+## ¿Por qué migrar a CodePushGo?
 
-Con el anuncio del cierre de Ionic AppFlow, migrar a Capgo ofrece una transición perfecta para tu flujo de trabajo de desarrollo de aplicaciones móviles. Capgo ofrece características mejoradas, mejor rendimiento y ahorros significativos en costos mientras mantiene toda la funcionalidad crítica que necesitas.
+Con el anuncio del cierre de Ionic AppFlow, migrar a CodePushGo ofrece una transición perfecta para tu flujo de trabajo de desarrollo de aplicaciones móviles. CodePushGo ofrece características mejoradas, mejor rendimiento y ahorros significativos en costos mientras mantiene toda la funcionalidad crítica que necesitas.
 
 ### Beneficios Principales
 - Entrega de actualizaciones más rápida (< 1 minuto vs 10 minutos)
@@ -48,14 +48,14 @@ npm uninstall @ionic/appflow
 # Eliminar configuraciones específicas de AppFlow de capacitor.config.json
 ```
 
-#### Instalar Capgo
+#### Instalar CodePushGo
 ```bash
 npm install @capgo/capacitor-updater
 npx cap sync
 ```
 
 #### Actualizar Configuración
-Agrega la configuración de Capgo a tu `capacitor.config.json`:
+Agrega la configuración de CodePushGo a tu `capacitor.config.json`:
 ```json
 {
   "plugins": {
@@ -81,7 +81,7 @@ Deja que nosotros manejemos tu configuración CI/CD con nuestro [servicio gestio
 
 ### 3. Configuración de Canales
 
-1. Crear canales en el dashboard de Capgo:
+1. Crear canales en el dashboard de CodePushGo:
 ```bash
 npx @capgo/cli channel create production
 npx @capgo/cli channel create staging
@@ -139,7 +139,7 @@ npx @capgo/cli bundle create --channel staging
 
 ## Siguientes Pasos
 
-1. [Crear una cuenta Capgo](/register/)
+1. [Crear una cuenta CodePushGo](/register/)
 2. Seguir nuestra [guía de inicio rápido](/docs/getting-started/quickstart/)
 3. Configurar [integración CI/CD](/docs/getting-started/cicd-integration/)
 4. Configurar [actualizaciones en vivo](/docs/live-updates/)

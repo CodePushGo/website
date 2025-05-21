@@ -7,21 +7,21 @@ locale: de
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Wenn Sie ein Update für Ihre Capgo-App veröffentlichen, möchten Sie wahrscheinlich, dass Ihre Nutzer dieses Update so schnell wie möglich erhalten. Allerdings möchten Sie deren Nutzungserfahrung nicht stören, indem Sie sie zwingen, mitten in einer Sitzung auf einen Download zu warten oder die App neu zu starten.
+Wenn Sie ein Update für Ihre CodePushGo-App veröffentlichen, möchten Sie wahrscheinlich, dass Ihre Nutzer dieses Update so schnell wie möglich erhalten. Allerdings möchten Sie deren Nutzungserfahrung nicht stören, indem Sie sie zwingen, mitten in einer Sitzung auf einen Download zu warten oder die App neu zu starten.
 
-Das Update-Verhalten von Capgo wurde entwickelt, um eine Balance zwischen schneller Update-Bereitstellung und minimaler Störung der Nutzer zu finden.
+Das Update-Verhalten von CodePushGo wurde entwickelt, um eine Balance zwischen schneller Update-Bereitstellung und minimaler Störung der Nutzer zu finden.
 
 ## Standard Update-Ablauf
 
-Standardmäßig behandelt Capgo App-Updates wie folgt:
+Standardmäßig behandelt CodePushGo App-Updates wie folgt:
 
 <Steps>
 
-1. Beim App-Start prüft das Capgo-Plugin, ob ein neues Update verfügbar ist
+1. Beim App-Start prüft das CodePushGo-Plugin, ob ein neues Update verfügbar ist
 
 2. Wenn ein Update gefunden wird, wird es im Hintergrund heruntergeladen, während der Nutzer die aktuelle Version der App weiter verwendet
 
-3. Sobald der Download abgeschlossen ist, wartet Capgo darauf, dass der Nutzer die App entweder in den Hintergrund verschiebt oder vollständig beendet
+3. Sobald der Download abgeschlossen ist, wartet CodePushGo darauf, dass der Nutzer die App entweder in den Hintergrund verschiebt oder vollständig beendet
 
 4. Wenn der Nutzer die App das nächste Mal startet, wird die aktualisierte Version ausgeführt
 
@@ -93,7 +93,7 @@ Beachten Sie, dass die `kill`-Bedingung das Update derzeit nach dem ersten Beend
 
 ## Sofortiges Anwenden von Updates
 
-Für kritische Updates oder Apps mit sehr einfachem Status möchten Sie möglicherweise ein Update sofort nach dem Download anwenden, ohne auf ein Hintergrund- oder Beendigungsereignis zu warten. Capgo unterstützt dies über die `directUpdate`-Konfigurationsoption.
+Für kritische Updates oder Apps mit sehr einfachem Status möchten Sie möglicherweise ein Update sofort nach dem Download anwenden, ohne auf ein Hintergrund- oder Beendigungsereignis zu warten. CodePushGo unterstützt dies über die `directUpdate`-Konfigurationsoption.
 
 `directUpdate` wird in Ihrer `capacitor.config.ts`-Datei gesetzt, nicht im JavaScript-Code:
 
@@ -113,7 +113,7 @@ const config: CapacitorConfig = {
 export default config;
 ```
 
-Mit aktiviertem `directUpdate` wird Capgo ein Update sofort anwenden, sobald der Download abgeschlossen ist, auch wenn der Nutzer die App aktiv verwendet.
+Mit aktiviertem `directUpdate` wird CodePushGo ein Update sofort anwenden, sobald der Download abgeschlossen ist, auch wenn der Nutzer die App aktiv verwendet.
 
 Beachten Sie, dass `directUpdate` als native Konfiguration zusätzliche Behandlung in Ihrem JavaScript-Code erfordert.
 
@@ -151,4 +151,4 @@ Wenn Sie `directUpdate` aktivieren, empfehlen wir:
 - Speichern und Wiederherstellen des App-Status nach Bedarf, um Nutzerffortschritt nicht zu verlieren
 - Gründliches Testen des Update-Verhaltens Ihrer App, um sicherzustellen, dass es keine störenden Übergänge, verlorenen Status oder desorientierenden Standortänderungen gibt
 
-In den meisten Fällen bietet das Standard-Update-Verhalten die beste Balance zwischen schneller Update-Bereitstellung und minimaler Störung. Aber für Apps mit spezifischen Anforderungen bietet Capgo die Flexibilität, anzupassen, wann und wie Updates angewendet werden.
+In den meisten Fällen bietet das Standard-Update-Verhalten die beste Balance zwischen schneller Update-Bereitstellung und minimaler Störung. Aber für Apps mit spezifischen Anforderungen bietet CodePushGo die Flexibilität, anzupassen, wann und wie Updates angewendet werden.

@@ -1,6 +1,6 @@
 ---
 title: Perintah
-description: Dokumentasi Capgo CLI
+description: Dokumentasi CodePushGo CLI
 sidebar:
   order: 2
 locale: id
@@ -24,10 +24,10 @@ Semua perintah harus dijalankan di folder aplikasi Anda dengan proyek Capacitor 
 
 Metode ini ada untuk membimbing Anda langkah demi langkah
 
-Ini akan menambahkan aplikasi Anda ke Capgo
+Ini akan menambahkan aplikasi Anda ke CodePushGo
 Ini akan menambahkan kode ke aplikasi Anda untuk memvalidasi pembaruan
 Demikian juga, ini akan membangun aplikasi Anda
-Selanjutnya, ini akan mengunggah aplikasi Anda ke Capgo
+Selanjutnya, ini akan mengunggah aplikasi Anda ke CodePushGo
 Dan ini akan membantu Anda untuk memeriksa apakah pembaruan berfungsi
 
 ### **Login**
@@ -48,7 +48,7 @@ gunakan `--apikey=********` di perintah manapun untuk menimpanya
 
 `npx @capgo/cli doctor`
 
-Perintah untuk memeriksa apakah Anda sudah up-to-date dengan paket Capgo
+Perintah untuk memeriksa apakah Anda sudah up-to-date dengan paket CodePushGo
 
 Perintah ini juga akan berguna untuk laporan bug
 
@@ -64,7 +64,7 @@ Perintah ini juga akan berguna untuk laporan bug
 
 Secara opsional, Anda dapat memberikan:
 
-* `--icon [/path/to/my/icon]` untuk memiliki ikon khusus yang ditampilkan di aplikasi web Capgo
+* `--icon [/path/to/my/icon]` untuk memiliki ikon khusus yang ditampilkan di aplikasi web CodePushGo
 * `--name [test]` untuk memiliki nama khusus dalam daftar
 * `--apikey [key]` API key untuk menghubungkan ke akun Anda
 * `--retention [retention]` periode retensi bundle aplikasi dalam hari, 0 secara default = tak terbatas
@@ -87,7 +87,7 @@ Contoh `capacitorconfigjson` untuk appId dan AppName, ikon ditebak di folder res
 
 Secara opsional, Anda dapat memberikan:
 
-* `--icon [/path/to/my/icon]` untuk memiliki ikon khusus yang ditampilkan di aplikasi web Capgo
+* `--icon [/path/to/my/icon]` untuk memiliki ikon khusus yang ditampilkan di aplikasi web CodePushGo
 * `--name [test]` untuk memiliki nama khusus dalam daftar
 * `--retention [retention]` periode retensi bundle aplikasi dalam hari, 0 secara default = tak terbatas
 * `--apikey [key]` API key untuk menghubungkan ke akun Anda
@@ -152,7 +152,7 @@ Secara opsional, Anda dapat memberikan:
 * `--apikey <apikey>` API key untuk menghubungkan ke akun Anda
 * `--path <path>` Path folder yang akan diunggah
 * `--channel <channel>` Channel yang akan dihubungkan
-* `--external <url>` Link ke URL eksternal alih-alih mengunggah ke Capgo Cloud
+* `--external <url>` Link ke URL eksternal alih-alih mengunggah ke CodePushGo Cloud
 * `--iv-session-key <key>` Atur IV dan kunci sesi untuk URL bundle eksternal
 * `--s3-endpoint <s3Endpoint>` URL endpoint S3 Tidak bekerja dengan unggahan Parsial, atau opsi eksternal
 * `--s3-region <region>` Region untuk bucket S3 Anda
@@ -175,7 +175,7 @@ Secara opsional, Anda dapat memberikan:
 * `--ignore-metadata-check` Mengabaikan pemeriksaan metadata (node_modules) saat mengunggah
 * `--ignore-checksum-check` Mengabaikan pemeriksaan checksum saat mengunggah
 * `--timeout <timeout>` Batas waktu untuk proses unggah dalam detik
-* `--partial` Tidak mengunggah file parsial ke cloud Capgo
+* `--partial` Tidak mengunggah file parsial ke cloud CodePushGo
 * `--tus` Unggah bundle menggunakan protokol tus
 * `--multipart` Menggunakan protokol multipart untuk mengunggah data ke S3, Tidak direkomendasikan, gunakan TUS sebagai gantinya
 * `--encrypted-checksum <encryptedChecksum>` Checksum terenkripsi (tanda tangan) Hanya digunakan saat mengunggah bundle eksternal
@@ -183,11 +183,11 @@ Secara opsional, Anda dapat memberikan:
 * `--auto-set-bundle` Atur bundle di capacitorconfigjson
 * `--node-modules <nodeModules>` Daftar path ke node_modules Berguna untuk monorepos (dipisahkan koma mis: //node_modules,/node_modules)
 
-> ⭐️ Opsi eksternal membantu membuka 2 kasus: korporat dengan masalah privasi, jangan kirim kode ke pihak ketiga dan aplikasi lebih besar dari 200 MB Dengan pengaturan ini, Capgo hanya menyimpan tautan ke zip dan mengirim tautan ke semua aplikasi
+> ⭐️ Opsi eksternal membantu membuka 2 kasus: korporat dengan masalah privasi, jangan kirim kode ke pihak ketiga dan aplikasi lebih besar dari 200 MB Dengan pengaturan ini, CodePushGo hanya menyimpan tautan ke zip dan mengirim tautan ke semua aplikasi
 
-> 👀 Cloud Capgo tidak pernah melihat apa yang ada di link (untuk opsi eksternal), atau di kode ketika disimpan
+> 👀 Cloud CodePushGo tidak pernah melihat apa yang ada di link (untuk opsi eksternal), atau di kode ketika disimpan
 
-> 🔑 Anda dapat menambahkan lapisan keamanan kedua dengan menggunakan enkripsi, maka Capgo tidak akan dapat melihat atau memodifikasi apa pun, menjadi "trustless"
+> 🔑 Anda dapat menambahkan lapisan keamanan kedua dengan menggunakan enkripsi, maka CodePushGo tidak akan dapat melihat atau memodifikasi apa pun, menjadi "trustless"
 
 Contoh `packagejson` untuk versi
 

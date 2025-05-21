@@ -40,7 +40,7 @@ um nur dies übrig zu lassen:
 }
 ```
 
-> ⚠️ Wenn Sie Ihren eigenen Server mit `autoUpdateURL` verwendet haben, werde ich diesen Leitfaden bald für Sie aktualisieren. Schauen Sie sich in der Zwischenzeit die neue Upload-Option `external` an, mit der Sie nur den Link Ihrer ZIP-Datei senden können, nicht den Code in der Capgo-Cloud. Dies wurde für Unternehmen mit strengen Datenschutzrichtlinien entwickelt. Im externen Modus wird der Code niemals auf dem Capgo-Server landen, wir speichern nur die URL und senden sie an das Gerät, das sie direkt herunterlädt. Auf die standardmäßige Art wird der Code gezippt und auf unserem Server gespeichert, aber wir werden ihn niemals öffnen oder anderweitig verwenden
+> ⚠️ Wenn Sie Ihren eigenen Server mit `autoUpdateURL` verwendet haben, werde ich diesen Leitfaden bald für Sie aktualisieren. Schauen Sie sich in der Zwischenzeit die neue Upload-Option `external` an, mit der Sie nur den Link Ihrer ZIP-Datei senden können, nicht den Code in der CodePushGo-Cloud. Dies wurde für Unternehmen mit strengen Datenschutzrichtlinien entwickelt. Im externen Modus wird der Code niemals auf dem CodePushGo-Server landen, wir speichern nur die URL und senden sie an das Gerät, das sie direkt herunterlädt. Auf die standardmäßige Art wird der Code gezippt und auf unserem Server gespeichert, aber wir werden ihn niemals öffnen oder anderweitig verwenden
 
 ## Was sich ändert
 

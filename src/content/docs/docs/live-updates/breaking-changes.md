@@ -99,7 +99,7 @@ Always test updates thoroughly in each channel before deployment
 :::
 
 :::note
-You can safely delete the v2 channel in Capgo even if some users still have the channel override. They will automatically receive updates from the production channel instead.
+You can safely delete the v2 channel in CodePushGo even if some users still have the channel override. They will automatically receive updates from the production channel instead.
 :::
 
 ## Maintaining Version 1.x Updates

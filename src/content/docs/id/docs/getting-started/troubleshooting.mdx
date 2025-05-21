@@ -7,37 +7,37 @@ prev: false
 locale: id
 ---
 
-Berikut adalah beberapa masalah umum yang mungkin Anda temui saat menggunakan Capgo dan cara mengatasinya
+Berikut adalah beberapa masalah umum yang mungkin Anda temui saat menggunakan CodePushGo dan cara mengatasinya
 
 ### Kegagalan upload
 
 Jika upload bundle Anda gagal, periksa kembali:
-- ID aplikasi di `capacitor.config.ts` sesuai dengan aplikasi Anda di dashboard Capgo
+- ID aplikasi di `capacitor.config.ts` sesuai dengan aplikasi Anda di dashboard CodePushGo
 - Anda menjalankan perintah upload dari root proyek Capacitor Anda
 - Asset web Anda sudah di-build dan terbaru
 
 #### Opsi upload lanjutan
 
-CLI Capgo menyediakan beberapa flag tambahan untuk membantu masalah upload yang umum:
+CLI CodePushGo menyediakan beberapa flag tambahan untuk membantu masalah upload yang umum:
 
 - `--tus`: Menggunakan [protokol upload yang dapat dilanjutkan tus](https://tus.io/) untuk upload bundle besar atau koneksi jaringan yang buruk yang lebih handal. Jika bundle Anda lebih dari 10MB atau Anda memiliki koneksi yang tidak stabil, pertimbangkan menggunakan `--tus`:
   ```shell
   npx @capgo/cli@latest bundle upload --tus
   ```
 
-- `--package-json` dan `--node-modules`: Memberi tahu Capgo di mana menemukan root `package.json` dan `node_modules` jika aplikasi Anda menggunakan struktur non-standar seperti monorepo atau workspace npm. Berikan path ke root `package.json` dan path `--node_modules`:
+- `--package-json` dan `--node-modules`: Memberi tahu CodePushGo di mana menemukan root `package.json` dan `node_modules` jika aplikasi Anda menggunakan struktur non-standar seperti monorepo atau workspace npm. Berikan path ke root `package.json` dan path `--node_modules`:
   ```shell
   npx @capgo/cli@latest bundle upload --package-json=path/to/package.json --node_modules=path/to/node_modules
   ```
-  Capgo membutuhkan informasi ini untuk membundle dependensi aplikasi Anda dengan benar
+  CodePushGo membutuhkan informasi ini untuk membundle dependensi aplikasi Anda dengan benar
 
-Anda dapat menggabungkan flag-flag ini dengan opsi lain seperti `--channel` sesuai kebutuhan. Lihat [dokumentasi CLI Capgo](/docs/cli/overview/) untuk detail lengkap tentang opsi upload yang tersedia
+Anda dapat menggabungkan flag-flag ini dengan opsi lain seperti `--channel` sesuai kebutuhan. Lihat [dokumentasi CLI CodePushGo](/docs/cli/overview/) untuk detail lengkap tentang opsi upload yang tersedia
 
-Jika Anda masih mengalami masalah dengan upload, hubungi [dukungan Capgo](mailto:support@capgo.app) untuk bantuan lebih lanjut
+Jika Anda masih mengalami masalah dengan upload, hubungi [dukungan CodePushGo](mailto:support@capgo.app) untuk bantuan lebih lanjut
 
 ### Debug Update
 
-Jika Anda mengalami masalah dengan pembaruan langsung, perintah debug Capgo adalah alat yang membantu untuk troubleshooting. Cara menggunakannya:
+Jika Anda mengalami masalah dengan pembaruan langsung, perintah debug CodePushGo adalah alat yang membantu untuk troubleshooting. Cara menggunakannya:
 
 1. Jalankan perintah berikut di direktori proyek Anda:
    ```shell
@@ -55,13 +55,13 @@ Jika Anda mengalami masalah dengan pembaruan langsung, perintah debug Capgo adal
 4. Gunakan log debug untuk mengidentifikasi di mana masalah terjadi. Contohnya:
    - Jika tidak ada pembaruan yang ditemukan, periksa kembali apakah bundle Anda berhasil diunggah dan aplikasi dikonfigurasi untuk menggunakan channel yang benar
    - Jika pembaruan terunduh tapi tidak terinstal, pastikan Anda telah memanggil `CapacitorUpdater.notifyAppReady()` dan aplikasi benar-benar ditutup dan dibuka kembali
-   - Jika Anda melihat pesan error, cari error tersebut di dokumentasi Capgo atau hubungi dukungan untuk bantuan
+   - Jika Anda melihat pesan error, cari error tersebut di dokumentasi CodePushGo atau hubungi dukungan untuk bantuan
 
 Perintah debug sangat berguna untuk mengidentifikasi masalah dengan proses unduhan dan instalasi pembaruan. Jika log menunjukkan versi pembaruan yang diharapkan ditemukan tetapi akhirnya tidak diterapkan, fokuskan troubleshooting Anda pada langkah-langkah setelah unduhan
 
 ### Debug dengan Log Native
 
-Selain perintah debug Capgo, log native di Android dan iOS dapat memberikan informasi troubleshooting yang berharga, terutama untuk masalah di sisi native dari proses pembaruan
+Selain perintah debug CodePushGo, log native di Android dan iOS dapat memberikan informasi troubleshooting yang berharga, terutama untuk masalah di sisi native dari proses pembaruan
 
 #### Log Android
 
@@ -74,7 +74,7 @@ Untuk mengakses log Android:
 
 Atau, Anda dapat menggunakan perintah `adb logcat` dan grep untuk `Capgo` untuk memfilter log
 
-SDK Capgo akan mencatat kejadian-kejadian penting selama proses pembaruan, seperti:
+SDK CodePushGo akan mencatat kejadian-kejadian penting selama proses pembaruan, seperti:
 - Ketika pemeriksaan pembaruan dimulai
 - Jika pembaruan ditemukan dan versi apa
 - Ketika unduhan pembaruan dimulai dan selesai
@@ -98,7 +98,7 @@ Untuk mengakses log iOS:
 
 Anda juga dapat menggunakan perintah `log stream` di terminal dan grep untuk `Capgo` untuk memfilter log
 
-Mirip dengan Android, SDK Capgo akan mencatat kejadian-kejadian penting di sisi iOS:
+Mirip dengan Android, SDK CodePushGo akan mencatat kejadian-kejadian penting di sisi iOS:
 - Inisiasi dan hasil pemeriksaan pembaruan
 - Mulai, progres, dan selesainya unduhan
 - Pemicu dan hasil instalasi
@@ -110,15 +110,15 @@ Masalah khusus iOS yang dapat Anda identifikasi dalam log termasuk:
 - Ruang penyimpanan tidak cukup untuk bundle pembaruan
 - Kegagalan untuk mengekstrak atau menerapkan bundle pembaruan dengan benar
 
-Pada kedua platform, log native memberikan tampilan proses pembaruan yang lebih detail, dengan rincian lebih lanjut tentang implementasi native. Log ini sangat berguna untuk mengidentifikasi masalah yang terjadi di luar lapisan JavaScript Capgo
+Pada kedua platform, log native memberikan tampilan proses pembaruan yang lebih detail, dengan rincian lebih lanjut tentang implementasi native. Log ini sangat berguna untuk mengidentifikasi masalah yang terjadi di luar lapisan JavaScript CodePushGo
 
-Saat troubleshooting masalah pembaruan langsung yang rumit, sebaiknya mengambil log debug Capgo dan log native untuk gambaran komprehensif tentang apa yang terjadi. Kedua log bersama akan memberi Anda peluang terbaik untuk mengidentifikasi dan menyelesaikan masalah
+Saat troubleshooting masalah pembaruan langsung yang rumit, sebaiknya mengambil log debug CodePushGo dan log native untuk gambaran komprehensif tentang apa yang terjadi. Kedua log bersama akan memberi Anda peluang terbaik untuk mengidentifikasi dan menyelesaikan masalah
 
 ### Pembaruan tidak diterapkan
 
 Jika Anda telah mengunggah bundle tetapi tidak melihat perubahan di perangkat Anda:
 - Pastikan Anda telah memanggil `CapacitorUpdater.notifyAppReady()` dalam kode aplikasi Anda seperti yang ditunjukkan di [quickstart](/docs/getting-started/quickstart)
-- Periksa bahwa perangkat Anda terhubung ke internet dan log debug Capgo menunjukkan pembaruan telah diunduh
+- Periksa bahwa perangkat Anda terhubung ke internet dan log debug CodePushGo menunjukkan pembaruan telah diunduh
 - Coba tutup sepenuhnya dan buka kembali aplikasi, karena pembaruan hanya diterapkan saat peluncuran baru
 - Cari error di log native yang mungkin menunjukkan masalah dalam menerapkan pembaruan
 
@@ -126,14 +126,14 @@ Lihat panduan [menerapkan pembaruan langsung](/docs/getting-started/deploy) untu
 
 ## Instalasi SDK
 
-Jika Anda mengalami masalah menginstal SDK Capgo, pastikan:
+Jika Anda mengalami masalah menginstal SDK CodePushGo, pastikan:
 - Aplikasi Anda menggunakan versi Capacitor yang didukung (4.0 atau lebih baru)
 - Anda telah mengikuti langkah-langkah [quickstart](/docs/getting-started/quickstart) secara berurutan, termasuk sinkronisasi aplikasi Anda setelah menginstal SDK
 
 ## Integrasi CI/CD
 
-Untuk masalah dengan memicu upload Capgo dari pipeline CI/CD Anda:
-- Periksa kembali token autentikasi Capgo Anda telah diatur dengan benar
+Untuk masalah dengan memicu upload CodePushGo dari pipeline CI/CD Anda:
+- Periksa kembali token autentikasi CodePushGo Anda telah diatur dengan benar
 - Pastikan Anda menjalankan perintah upload setelah asset web Anda di-build
 - Periksa bahwa perintah upload menggunakan nama channel yang benar untuk environment target Anda
 

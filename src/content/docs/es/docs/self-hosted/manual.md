@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Cómo usar el actualizador Capgo en modo manual
+description: Cómo usar el actualizador CodePushGo en modo manual
 sidebar:
   order: 3
 locale: es
@@ -21,7 +21,7 @@ Creo que haría de nuestro mundo un mejor lugar al abrir en lugar de luchar y es
 
 Para hacerlo posible, es necesario que todos hagamos nuestra parte, incluyéndote a ti 🥹
 
-Si la oferta de Capgo cloud no te conviene, apoya a un creador independiente [AQUÍ](https://github.com/sponsors/riderx/) en tus términos
+Si la oferta de CodePushGo cloud no te conviene, apoya a un creador independiente [AQUÍ](https://github.com/sponsors/riderx/) en tus términos
 :::
 
 ## Instalación rápida

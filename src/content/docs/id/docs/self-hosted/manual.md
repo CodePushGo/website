@@ -1,6 +1,6 @@
 ---
 title: Handbuch
-description: Cara menggunakan pembaruan Capgo secara manual
+description: Cara menggunakan pembaruan CodePushGo secara manual
 sidebar:
   order: 3
 locale: id
@@ -21,7 +21,7 @@ Saya pikir ini akan membuat dunia kita menjadi tempat yang lebih baik dengan ket
 
 Untuk mewujudkannya, kita semua perlu berperan, termasuk Anda 🥹
 
-Jika penawaran Capgo cloud tidak cocok untuk Anda, dukung Maker bootstrapped [DI SINI](https://github.com/sponsors/riderx/) sesuai ketentuan Anda
+Jika penawaran CodePushGo cloud tidak cocok untuk Anda, dukung Maker bootstrapped [DI SINI](https://github.com/sponsors/riderx/) sesuai ketentuan Anda
 :::
 
 ## Instalasi Cepat

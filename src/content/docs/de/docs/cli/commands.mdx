@@ -1,6 +1,6 @@
 ---
 title: Befehle
-description: Capgo CLI-Dokumentation
+description: CodePushGo CLI-Dokumentation
 sidebar:
   order: 2
 locale: de
@@ -24,7 +24,7 @@ Alle Befehle sollten in Ihrem App-Ordner mit ordnungsgemäß initialisiertem Cap
 
 Diese Methode führt Sie Schritt für Schritt durch den Onboarding-Prozess
 
-Sie fügt Ihre App zu Capgo hinzu Sie fügt den Code zur Validierung des Updates in Ihre App ein Ebenso wird sie Ihre App erstellen Außerdem wird sie Ihre App zu Capgo hochladen Und sie hilft Ihnen zu überprüfen, ob das Update funktioniert
+Sie fügt Ihre App zu CodePushGo hinzu Sie fügt den Code zur Validierung des Updates in Ihre App ein Ebenso wird sie Ihre App erstellen Außerdem wird sie Ihre App zu CodePushGo hochladen Und sie hilft Ihnen zu überprüfen, ob das Update funktioniert
 
 ### **Login**
 
@@ -44,7 +44,7 @@ verwenden Sie `--apikey=********` in jedem Befehl, um ihn zu überschreiben
 
 `npx @capgo/cli doctor`
 
-Befehl zur Überprüfung, ob Sie mit den Capgo-Paketen auf dem neuesten Stand sind
+Befehl zur Überprüfung, ob Sie mit den CodePushGo-Paketen auf dem neuesten Stand sind
 
 Dieser Befehl ist auch für Fehlerberichte nützlich
 
@@ -60,7 +60,7 @@ Dieser Befehl ist auch für Fehlerberichte nützlich
 
 Optional können Sie angeben:
 
-* `--icon [/path/to/my/icon]` für ein benutzerdefiniertes Icon in der Capgo Web-App
+* `--icon [/path/to/my/icon]` für ein benutzerdefiniertes Icon in der CodePushGo Web-App
 * `--name [test]` für einen benutzerdefinierten Namen in der Liste
 * `--apikey [key]` API-Schlüssel zur Verknüpfung mit Ihrem Konto
 * `--retention [retention]` Aufbewahrungszeitraum des App-Bundles in Tagen, 0 standardmäßig = unendlich
@@ -83,7 +83,7 @@ Beispiel einer `capacitorconfigjson` für appId und AppName, das Icon wird im re
 
 Optional können Sie angeben:
 
-* `--icon [/path/to/my/icon]` für ein benutzerdefiniertes Icon in der Capgo Web-App
+* `--icon [/path/to/my/icon]` für ein benutzerdefiniertes Icon in der CodePushGo Web-App
 * `--name [test]` für einen benutzerdefinierten Namen in der Liste
 * `--retention [retention]` Aufbewahrungszeitraum des App-Bundles in Tagen, 0 standardmäßig = unendlich
 * `--apikey [key]` API-Schlüssel zur Verknüpfung mit Ihrem Konto
@@ -148,7 +148,7 @@ Optional können Sie angeben:
 * `--apikey <apikey>` API-Schlüssel zur Verknüpfung mit Ihrem Konto
 * `--path <path>` Pfad des hochzuladenden Ordners
 * `--channel <channel>` Zu verknüpfender Kanal
-* `--external <url>` Link zu externer URL anstelle des Uploads zur Capgo Cloud
+* `--external <url>` Link zu externer URL anstelle des Uploads zur CodePushGo Cloud
 * `--iv-session-key <key>` IV und Sitzungsschlüssel für externe Bundle-URL festlegen
 * `--s3-endpoint <s3Endpoint>` URL des S3-Endpunkts Funktioniert nicht mit partiellem Upload oder externer Option
 * `--s3-region <region>` Region für Ihren S3-Bucket
@@ -171,7 +171,7 @@ Optional können Sie angeben:
 * `--ignore-metadata-check` Ignoriert die Metadaten-Prüfung (node_modules) beim Hochladen
 * `--ignore-checksum-check` Ignoriert die Prüfsummen-Prüfung beim Hochladen
 * `--timeout <timeout>` Timeout für den Upload-Prozess in Sekunden
-* `--partial` Lädt keine partiellen Dateien zur Capgo-Cloud hoch
+* `--partial` Lädt keine partiellen Dateien zur CodePushGo-Cloud hoch
 * `--tus` Lädt das Bundle mit dem tus-Protokoll hoch
 * `--multipart` Verwendet das Multipart-Protokoll zum Hochladen von Daten zu S3, Veraltet, verwenden Sie stattdessen TUS
 * `--encrypted-checksum <encryptedChecksum>` Eine verschlüsselte Prüfsumme (Signatur) Wird nur beim Hochladen eines externen Bundles verwendet
@@ -179,11 +179,11 @@ Optional können Sie angeben:
 * `--auto-set-bundle` Bundle in capacitorconfigjson setzen
 * `--node-modules <nodeModules>` Eine Liste von Pfaden zu node_modules Nützlich für Monorepos (kommagetrennt z.B.: //node_modules,/node_modules)
 
-> ⭐️ Die externe Option hilft zwei Fälle zu lösen: Unternehmen mit Datenschutzbedenken, die keinen Code an Dritte senden möchten und Apps größer als 200 MB Mit dieser Einstellung speichert Capgo nur den Link zur ZIP-Datei und sendet den Link an alle Apps
+> ⭐️ Die externe Option hilft zwei Fälle zu lösen: Unternehmen mit Datenschutzbedenken, die keinen Code an Dritte senden möchten und Apps größer als 200 MB Mit dieser Einstellung speichert CodePushGo nur den Link zur ZIP-Datei und sendet den Link an alle Apps
 
-> 👀 Capgo Cloud schaut nie, was sich im Link (für externe Option) oder im Code befindet, wenn gespeichert
+> 👀 CodePushGo Cloud schaut nie, was sich im Link (für externe Option) oder im Code befindet, wenn gespeichert
 
-> 🔑 Sie können eine zweite Sicherheitsebene durch Verschlüsselung hinzufügen, dann kann Capgo nichts einsehen oder modifizieren, es wird "vertrauenslos"
+> 🔑 Sie können eine zweite Sicherheitsebene durch Verschlüsselung hinzufügen, dann kann CodePushGo nichts einsehen oder modifizieren, es wird "vertrauenslos"
 
 Beispiel einer `packagejson` für Version
 
@@ -380,7 +380,7 @@ Erstens die `major` Strategie Sie verhindert ein Update von `000` -> `100` Die H
 Zweitens die `minor` Strategie Sie verhindert ein Update von `000` -> `110` oder ein Update von `110` auf `120`
 **ACHTUNG** diese Strategie verhindert nicht ein Update von `010` -> `110`
 
-Drittens die `patch` Strategie Sie wurde als sehr strenger Modus in Capgo eingeführt Es wird nicht empfohlen, sie zu verwenden, es sei denn, Sie verstehen vollständig, wie sie funktioniert
+Drittens die `patch` Strategie Sie wurde als sehr strenger Modus in CodePushGo eingeführt Es wird nicht empfohlen, sie zu verwenden, es sei denn, Sie verstehen vollständig, wie sie funktioniert
 Damit ein Update akzeptiert wird, müssen folgende Bedingungen erfüllt sein:
  - Die Hauptversion ist zwischen der neuen und alten Version gleich
  - Die Nebenversion ist zwischen der neuen und alten Version gleich

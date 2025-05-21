@@ -1,6 +1,6 @@
 ---
 title: マニュアル
-description: Capgo アップデーターをマニュアルモードで使用する方法
+description: CodePushGo アップデーターをマニュアルモードで使用する方法
 sidebar:
   order: 3
 locale: ja

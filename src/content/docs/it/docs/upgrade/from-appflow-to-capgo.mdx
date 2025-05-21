@@ -1,6 +1,6 @@
 ---
-title: Migrazione da AppFlow a Capgo
-description: Guida completa per migrare la tua app da Ionic AppFlow a Capgo
+title: Migrazione da AppFlow a CodePushGo
+description: Guida completa per migrare la tua app da Ionic AppFlow a CodePushGo
 sidebar:
   order: 7
 locale: it
@@ -25,7 +25,7 @@ const config: CapacitorConfig = {
 };
 ```
 
-Questa configurazione ti aiuterà a mappare le funzionalità di AppFlow con gli equivalenti di Capgo.
+Questa configurazione ti aiuterà a mappare le funzionalità di AppFlow con gli equivalenti di CodePushGo.
 
 ## Strategie di Aggiornamento
 
@@ -33,7 +33,7 @@ Questa configurazione ti aiuterà a mappare le funzionalità di AppFlow con gli 
 Se stai utilizzando gli aggiornamenti in background di AppFlow:
 
 ```typescript
-// Equivalente Capgo in capacitor.config.ts
+// Equivalente CodePushGo in capacitor.config.ts
 {
   plugins: {
     CapacitorUpdater: {
@@ -49,7 +49,7 @@ Se stai utilizzando gli aggiornamenti in background di AppFlow:
 Se stai utilizzando la strategia di aggiornamento forzato di AppFlow:
 
 ```typescript
-// Equivalente Capgo in capacitor.config.ts
+// Equivalente CodePushGo in capacitor.config.ts
 {
   plugins: {
     CapacitorUpdater: {
@@ -72,7 +72,7 @@ CapacitorUpdater.notifyAppReady();
 ```
 
 ### Sempre l'Ultima Versione
-Se stai utilizzando la strategia "always latest" di AppFlow, implementa con Capgo:
+Se stai utilizzando la strategia "always latest" di AppFlow, implementa con CodePushGo:
 
 ```typescript
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
@@ -92,7 +92,7 @@ async function setupAlwaysLatest() {
 
 ## Migrazione dei Metodi API
 
-| Metodo AppFlow | Equivalente Capgo | Note |
+| Metodo AppFlow | Equivalente CodePushGo | Note |
 |----------------|------------------|-------|
 | `sync()` | `download()` | Scarica nuovi aggiornamenti |
 | `reload()` | `set()` | Applica gli aggiornamenti immediatamente |
@@ -108,7 +108,7 @@ if (result.activeApplicationPathChanged) {
   await LiveUpdates.reload();
 }
 
-// Equivalente Capgo
+// Equivalente CodePushGo
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
 const bundle = await CapacitorUpdater.download({
   url: 'your-update-url'
@@ -117,9 +117,9 @@ if (bundle) {
   await CapacitorUpdater.set({ id: bundle.id });
 }
 ```
-## Perché migrare a Capgo?
+## Perché migrare a CodePushGo?
 
-Con l'annuncio della chiusura di Ionic AppFlow, la migrazione a Capgo offre una transizione perfetta per il tuo flusso di lavoro di sviluppo di app mobili. Capgo offre funzionalità migliorate, prestazioni superiori e significativi risparmi sui costi mantenendo tutte le funzionalità critiche necessarie.
+Con l'annuncio della chiusura di Ionic AppFlow, la migrazione a CodePushGo offre una transizione perfetta per il tuo flusso di lavoro di sviluppo di app mobili. CodePushGo offre funzionalità migliorate, prestazioni superiori e significativi risparmi sui costi mantenendo tutte le funzionalità critiche necessarie.
 
 ### Vantaggi Principali
 - Distribuzione degli aggiornamenti più veloce (< 1 minuto vs 10 minuti)
@@ -138,14 +138,14 @@ npm uninstall @ionic/appflow
 # Rimuovere le configurazioni specifiche di AppFlow da capacitor.config.json
 ```
 
-#### Installare Capgo
+#### Installare CodePushGo
 ```bash
 npm install @capgo/capacitor-updater
 npx cap sync
 ```
 
 #### Aggiornare la Configurazione
-Aggiungi la configurazione Capgo al tuo `capacitor.config.json`:
+Aggiungi la configurazione CodePushGo al tuo `capacitor.config.json`:
 ```json
 {
   "plugins": {
@@ -171,7 +171,7 @@ Lascia che gestiamo noi la tua configurazione CI/CD con il nostro [servizio gest
 
 ### 3. Configurazione dei Canali
 
-1. Creare canali nella dashboard Capgo:
+1. Creare canali nella dashboard CodePushGo:
 ```bash
 npx @capgo/cli channel create production
 npx @capgo/cli channel create staging
@@ -212,7 +212,7 @@ npx @capgo/cli bundle create --channel staging
 
 ## Prossimi Passi
 
-1. [Crea un account Capgo](/register/)
+1. [Crea un account CodePushGo](/register/)
 2. Segui la nostra [guida rapida](/docs/getting-started/quickstart/)
 3. Configura l'[integrazione CI/CD](/docs/getting-started/cicd-integration/)
 4. Configura gli [aggiornamenti live](/docs/live-updates/)

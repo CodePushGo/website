@@ -7,7 +7,7 @@ locale: id
 
 import { Steps, LinkCard, Tabs, TabItem } from '@astrojs/starlight/components';
 
-Gunakan fitur Live Updates Capgo untuk memperbarui UI dan logika bisnis aplikasi Anda dari jarak jauh secara real-time. Push pembaruan bundle JS langsung ke pengguna Anda tanpa melalui app store untuk segera memperbaiki bug dan mengirim fitur baru.
+Gunakan fitur Live Updates CodePushGo untuk memperbarui UI dan logika bisnis aplikasi Anda dari jarak jauh secara real-time. Push pembaruan bundle JS langsung ke pengguna Anda tanpa melalui app store untuk segera memperbaiki bug dan mengirim fitur baru.
 
 Panduan ini mengasumsikan Anda telah menyelesaikan [Capgo Quickstart](/docs/getting-started/quickstart) dan telah:
 
@@ -23,18 +23,18 @@ Panduan ini mengasumsikan Anda telah menyelesaikan [Capgo Quickstart](/docs/gett
 
 Jika Anda belum melakukan langkah-langkah tersebut, silakan kembali dan selesaikan quickstart terlebih dahulu
 
-<LinkCard href="/docs/getting-started/add-an-app/" title="Tambah aplikasi" description="Tambahkan aplikasi ke akun Capgo Anda, dan instal plugin di aplikasi Anda" />
+<LinkCard href="/docs/getting-started/add-an-app/" title="Tambah aplikasi" description="Tambahkan aplikasi ke akun CodePushGo Anda, dan instal plugin di aplikasi Anda" />
 
 ## Mengunggah Bundle
 
-Dengan SDK Capgo telah terinstal dan terkonfigurasi, Anda siap untuk mengunggah bundle pembaruan live pertama Anda:
+Dengan SDK CodePushGo telah terinstal dan terkonfigurasi, Anda siap untuk mengunggah bundle pembaruan live pertama Anda:
 
 1. Build aset web Anda:
    ```shell
    npm run build
    ```
 
-2. Unggah bundle ke Capgo:
+2. Unggah bundle ke CodePushGo:
     <Tabs>
       <TabItem label="Console">
         ```shell
@@ -44,7 +44,7 @@ Dengan SDK Capgo telah terinstal dan terkonfigurasi, Anda siap untuk mengunggah 
       <TabItem label="Github Actions">
       ```yml
       // github/workflows/build_and_deploy.yml
-    name: Build source code and send to Capgo
+    name: Build source code and send to CodePushGo
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -68,7 +68,7 @@ Dengan SDK Capgo telah terinstal dan terkonfigurasi, Anda siap untuk mengunggah 
             run: npm install
           - name: Build
             run: npm run build
-          - name: Deploy to Capgo
+          - name: Deploy to CodePushGo
             run: bunx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} --channel ${{ env.CHANNEL }}
             env:
               CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
@@ -107,7 +107,7 @@ Dengan SDK Capgo telah terinstal dan terkonfigurasi, Anda siap untuk mengunggah 
 ### Pemecahan Masalah Unggahan
 
 Jika unggahan Anda gagal, periksa kembali:
-- ID aplikasi Anda di `capacitor.config.ts` cocok dengan aplikasi Anda di dashboard Capgo
+- ID aplikasi Anda di `capacitor.config.ts` cocok dengan aplikasi Anda di dashboard CodePushGo
 - Anda menjalankan perintah unggah dari root proyek Capacitor Anda
 - Aset web Anda telah di-build dan terbaru
 
@@ -143,7 +143,7 @@ Lihat kembali [Capgo Quickstart](/docs/getting-started/quickstart#receiving-a-li
 
 ## Langkah Selanjutnya
 
-Selamat atas penerapan pembaruan live pertama Anda dengan Capgo! 🎉
+Selamat atas penerapan pembaruan live pertama Anda dengan CodePushGo! 🎉
 
 Untuk mempelajari lebih lanjut, tinjau dokumentasi [Capgo Live Updates](/docs/live-updates) lainnya. Beberapa topik penting untuk diperiksa selanjutnya:
 - [Menargetkan Pembaruan dengan Channel](/docs/live-updates/channels)

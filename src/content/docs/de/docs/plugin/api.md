@@ -409,7 +409,7 @@ setChannel(options: SetChannelOptions) => Promise<ChannelRes>
 Setzt den Kanal für dieses Gerät. Der Kanal muss Selbstzuweisung erlauben, damit dies funktioniert
 Verwenden Sie diese Methode nicht, um den Kanal beim Start zu setzen, wenn `autoUpdate` in der {@link PluginsConfig} aktiviert ist
 Diese Methode dient dazu, den Kanal zu setzen, nachdem die App bereit ist
-Diese Methode sendet eine Anfrage an den Capgo-Backend, um die Geräte-ID mit dem Kanal zu verknüpfen. Capgo kann dies je nach den Einstellungen Ihres Kanals akzeptieren oder ablehnen
+Diese Methode sendet eine Anfrage an den CodePushGo-Backend, um die Geräte-ID mit dem Kanal zu verknüpfen. CodePushGo kann dies je nach den Einstellungen Ihres Kanals akzeptieren oder ablehnen
 
 | Param         | Type                                                            | Beschreibung                                                                     |
 | ------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------- |

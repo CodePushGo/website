@@ -9,7 +9,7 @@ locale: de
 
 import { Steps, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 
-Nutzen Sie Capgos Live Updates-Funktion, um die JavaScript-Bundles Ihrer App remote in Echtzeit zu aktualisieren. Pushen Sie JS-Updates direkt an Ihre Nutzer, ohne den App Store-Überprüfungsprozess zu durchlaufen, um sofort Fehler zu beheben und neue Funktionen bereitzustellen.
+Nutzen Sie CodePushGos Live Updates-Funktion, um die JavaScript-Bundles Ihrer App remote in Echtzeit zu aktualisieren. Pushen Sie JS-Updates direkt an Ihre Nutzer, ohne den App Store-Überprüfungsprozess zu durchlaufen, um sofort Fehler zu beheben und neue Funktionen bereitzustellen.
 
 <Aside>
 
@@ -19,13 +19,13 @@ Live Updates sind auf JavaScript-Bundle-Änderungen beschränkt. Wenn Sie native
 
 ## Wie Live Updates funktionieren
 
-Das Live Update-System von Capgo hat zwei Schlüsselkomponenten:
+Das Live Update-System von CodePushGo hat zwei Schlüsselkomponenten:
 
-1. Das Capgo SDK, das Sie in Ihrer App installieren. Das SDK prüft auf verfügbare Updates und lädt diese im Hintergrund herunter.
+1. Das CodePushGo SDK, das Sie in Ihrer App installieren. Das SDK prüft auf verfügbare Updates und lädt diese im Hintergrund herunter.
 
 2. Kanäle, mit denen Sie Updates an bestimmte Benutzergruppen richten können. Sie können Kanäle verwenden, um verschiedene Release-Tracks wie `Production`, `Staging` und `Dev` zu verwalten.
 
-Wenn Sie ein neues JS-Bundle zu Capgo hochladen und es einem Kanal zuweisen, erkennt das Capgo SDK in Apps, die für diesen Kanal konfiguriert sind, das Update und lädt es herunter. Beim nächsten Neustart der App wird das neue Bundle geladen.
+Wenn Sie ein neues JS-Bundle zu CodePushGo hochladen und es einem Kanal zuweisen, erkennt das CodePushGo SDK in Apps, die für diesen Kanal konfiguriert sind, das Update und lädt es herunter. Beim nächsten Neustart der App wird das neue Bundle geladen.
 
 ## Erste Schritte
 
@@ -33,11 +33,11 @@ Folgen Sie diesen Schritten, um Live Updates zu verwenden:
 
 <Steps>
 
-1. Schließen Sie den [Capgo Quickstart](/docs/getting-started/quickstart) ab, um Ihre App in Capgo einzurichten und das Capgo SDK zu installieren.
+1. Schließen Sie den [Capgo Quickstart](/docs/getting-started/quickstart) ab, um Ihre App in CodePushGo einzurichten und das CodePushGo SDK zu installieren.
 
-2. Rufen Sie in Ihrem App-Code `CapacitorUpdaternotifyAppReady()` auf, nachdem Ihre App initialisiert wurde. Dies teilt dem Capgo SDK mit, dass Ihre App bereit ist, Updates zu empfangen.
+2. Rufen Sie in Ihrem App-Code `CapacitorUpdaternotifyAppReady()` auf, nachdem Ihre App initialisiert wurde. Dies teilt dem CodePushGo SDK mit, dass Ihre App bereit ist, Updates zu empfangen.
 
-3. Erstellen Sie Ihr JS-Bundle und laden Sie es zu Capgo hoch:
+3. Erstellen Sie Ihr JS-Bundle und laden Sie es zu CodePushGo hoch:
    ```shell
    npm run build
    npx @capgo/cli@latest bundle upload --channel=Production 

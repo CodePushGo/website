@@ -224,7 +224,7 @@ Pengaturan ini mengharuskan Anda menyembunyikan aplikasi dari pengguna saat pemb
 ```
 
 ## `defaultChannel`
-Mengatur channel default untuk aplikasi. Ini akan menimpa channel lain yang diatur di Capgo jika channel mengizinkan penimpaan
+Mengatur channel default untuk aplikasi. Ini akan menimpa channel lain yang diatur di CodePushGo jika channel mengizinkan penimpaan
 
 ```json
 // capacitorconfigjson
@@ -238,7 +238,7 @@ Mengatur channel default untuk aplikasi. Ini akan menimpa channel lain yang diat
 ```
 
 ## `appId`
-Mengatur appId untuk aplikasi. Ini akan menimpa cara lain untuk mendapatkan appId. Ini berguna ketika Anda ingin memiliki appId yang berbeda di Capgo dan di kode native Anda
+Mengatur appId untuk aplikasi. Ini akan menimpa cara lain untuk mendapatkan appId. Ini berguna ketika Anda ingin memiliki appId yang berbeda di CodePushGo dan di kode native Anda
 :::note
 Ini adalah cara baru untuk mengatur appId. Cara lama masih dan akan tetap didukung
 :::
@@ -254,7 +254,7 @@ Ini adalah cara baru untuk mengatur appId. Cara lama masih dan akan tetap diduku
 ```
 
 ## `version`
-Mengatur versi untuk aplikasi. Ini akan menimpa cara lain untuk mendapatkan versi. Ini berguna ketika Anda ingin memiliki versi yang berbeda di Capgo dan di kode native Anda
+Mengatur versi untuk aplikasi. Ini akan menimpa cara lain untuk mendapatkan versi. Ini berguna ketika Anda ingin memiliki versi yang berbeda di CodePushGo dan di kode native Anda
 :::note
 Ini adalah cara baru untuk mengatur versi. Cara lama masih dan akan tetap didukung
 :::

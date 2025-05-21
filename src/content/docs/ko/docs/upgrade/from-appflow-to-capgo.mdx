@@ -1,6 +1,6 @@
 ---
-title: AppFlow에서 Capgo로 마이그레이션
-description: Ionic AppFlow에서 Capgo로 앱을 마이그레이션하는 완벽한 가이드
+title: AppFlow에서 CodePushGo로 마이그레이션
+description: Ionic AppFlow에서 CodePushGo로 앱을 마이그레이션하는 완벽한 가이드
 sidebar:
   order: 7
 locale: ko
@@ -25,11 +25,11 @@ const config: CapacitorConfig = {
 };
 ```
 
-이 설정은 AppFlow 기능을 Capgo의 동등한 기능으로 매핑하는 데 도움이 됩니다.
+이 설정은 AppFlow 기능을 CodePushGo의 동등한 기능으로 매핑하는 데 도움이 됩니다.
 
-## Capgo로 마이그레이션하는 이유
+## CodePushGo로 마이그레이션하는 이유
 
-Ionic AppFlow 서비스 종료 발표와 함께, Capgo로의 마이그레이션은 모바일 앱 개발 워크플로우를 원활하게 전환할 수 있는 기회를 제공합니다. Capgo는 모든 중요한 기능을 유지하면서 향상된 기능, 더 나은 성능, 그리고 상당한 비용 절감을 제공합니다.
+Ionic AppFlow 서비스 종료 발표와 함께, CodePushGo로의 마이그레이션은 모바일 앱 개발 워크플로우를 원활하게 전환할 수 있는 기회를 제공합니다. CodePushGo는 모든 중요한 기능을 유지하면서 향상된 기능, 더 나은 성능, 그리고 상당한 비용 절감을 제공합니다.
 
 ### 주요 이점
 - 더 빠른 업데이트 배포 (10분에서 1분 미만으로)
@@ -48,14 +48,14 @@ npm uninstall @ionic/appflow
 # capacitor.config.json에서 AppFlow 관련 설정 제거
 ```
 
-#### Capgo 설치
+#### CodePushGo 설치
 ```bash
 npm install @capgo/capacitor-updater
 npx cap sync
 ```
 
 #### 설정 업데이트
-`capacitor.config.json`에 Capgo 설정 추가:
+`capacitor.config.json`에 CodePushGo 설정 추가:
 ```json
 {
   "plugins": {
@@ -81,7 +81,7 @@ Capgo는 유연한 CI/CD 옵션을 제공합니다:
 
 ### 3. 채널 설정
 
-1. Capgo 대시보드에서 채널 생성:
+1. CodePushGo 대시보드에서 채널 생성:
 ```bash
 npx @capgo/cli channel create production
 npx @capgo/cli channel create staging

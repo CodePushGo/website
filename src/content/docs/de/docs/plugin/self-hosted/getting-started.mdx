@@ -16,11 +16,11 @@ Wenn Sie diese Arbeit hilfreich finden, erwägen Sie bitte, meine Arbeit durch e
 
 Ich habe mich entschieden, den gesamten hier entwickelten Code Open Source zu machen, anstatt ihn hinter einer Bezahlschranke zu verstecken. Ich glaube, dass wir die Welt zu einem besseren Ort machen können, wenn wir offen sind, anstatt zu kämpfen und uns zu verstecken
 
-Darüber hinaus möchte ich mich auf Capgo-Tools konzentrieren und daraus ein offenes und transparentes Unternehmen machen
+Darüber hinaus möchte ich mich auf CodePushGo-Tools konzentrieren und daraus ein offenes und transparentes Unternehmen machen
 
 Aber um dies zu ermöglichen, ist es notwendig, dass wir alle unseren Teil dazu beitragen, auch Sie 🥹
 
-Wenn Capgo nicht zu Ihnen passt, dann zahlen Sie Ihren eigenen Preis und [unterstützen Sie einen bootstrapped Maker](https://github.com/sponsors/riderx) zu Ihren Bedingungen
+Wenn CodePushGo nicht zu Ihnen passt, dann zahlen Sie Ihren eigenen Preis und [unterstützen Sie einen bootstrapped Maker](https://github.com/sponsors/riderx) zu Ihren Bedingungen
 
 <LinkCard title="Erwägen Sie einen Beitrag" href="/docs/plugin/self-hosted/contributing/"/>
 
@@ -30,7 +30,7 @@ Wenn Sie sich für Ihren eigenen Server entscheiden, verlieren Sie den 5-Minuten
 Sie müssen alle diese Funktionen selbst implementieren
 
 
-| Funktionen               | Capgo | Selbst gehostet |
+| Funktionen               | CodePushGo | Selbst gehostet |
 | ------------------------ | ----- | --------------- |
 | Updates                  | ✅     | 🚧             |
 | Auto-Rücksetzung         | ✅     | 🚧             |
@@ -52,7 +52,7 @@ Sie müssen alle diese Funktionen selbst implementieren
 Wenn Sie ein fehlerhaftes Update an Ihre Benutzer senden, können und werden Sie deren App beschädigen
 :::
 
-> Beachten Sie, dass Sie nicht gleichzeitig die Capgo-Cloud und Ihren eigenen Server verwenden können
+> Beachten Sie, dass Sie nicht gleichzeitig die CodePushGo-Cloud und Ihren eigenen Server verwenden können
 
 :::danger
 Die Over-the-Air (OTA) Update-Funktion gilt nur für Änderungen an HTML-, CSS- und JavaScript-Dateien
@@ -85,7 +85,7 @@ npx cap sync
 ## Bereiten Sie Ihr Bundle vor
 
 Um Updates an Ihre App zu senden, müssen Sie sie zippen
-Der beste Weg, um sicherzustellen, dass Ihr Zip gut ist, ist die Verwendung der Capgo CLI zum Zippen
+Der beste Weg, um sicherzustellen, dass Ihr Zip gut ist, ist die Verwendung der CodePushGo CLI zum Zippen
 ```bash title="Erstellen Sie ein Bundle mit Ihren Dateien, die von Ihrem Server bereitgestellt werden sollen"
 npx @capgo/cli@latest bundle zip
 ```
@@ -103,5 +103,5 @@ Sie müssen diese Zip-Datei selbst von Ihrem Server bereitstellen
 />
 
 :::note
-Wenn Ihnen das zu viel Arbeit erscheint, probieren Sie die Capgo Cloud Testversion aus
+Wenn Ihnen das zu viel Arbeit erscheint, probieren Sie die CodePushGo Cloud Testversion aus
 :::

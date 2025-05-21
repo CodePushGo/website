@@ -9,7 +9,7 @@ locale: es
 
 import { Steps, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 
-Use la función de Actualizaciones en Vivo de Capgo para actualizar los paquetes JavaScript de su aplicación de forma remota y en tiempo real. Envíe actualizaciones JS directamente a sus usuarios sin pasar por el proceso de revisión de la tienda de aplicaciones para corregir errores y lanzar nuevas funciones instantáneamente.
+Use la función de Actualizaciones en Vivo de CodePushGo para actualizar los paquetes JavaScript de su aplicación de forma remota y en tiempo real. Envíe actualizaciones JS directamente a sus usuarios sin pasar por el proceso de revisión de la tienda de aplicaciones para corregir errores y lanzar nuevas funciones instantáneamente.
 
 <Aside>
 
@@ -19,13 +19,13 @@ Las Actualizaciones en Vivo están limitadas a cambios en los paquetes JavaScrip
 
 ## Cómo funcionan las Actualizaciones en Vivo
 
-El sistema de Actualización en Vivo de Capgo tiene dos componentes clave:
+El sistema de Actualización en Vivo de CodePushGo tiene dos componentes clave:
 
-1. El SDK de Capgo, que instala en su aplicación. El SDK verifica las actualizaciones disponibles y las descarga en segundo plano.
+1. El SDK de CodePushGo, que instala en su aplicación. El SDK verifica las actualizaciones disponibles y las descarga en segundo plano.
 
 2. Canales, que le permiten dirigir actualizaciones a grupos específicos de usuarios. Puede usar canales para gestionar diferentes pistas de lanzamiento, como `Production`, `Staging` y `Dev`.
 
-Cuando sube un nuevo paquete JS a Capgo y lo asigna a un canal, el SDK de Capgo en las aplicaciones configuradas para ese canal detectará la actualización y la descargará. La próxima vez que la aplicación se reinicie, se cargará el nuevo paquete.
+Cuando sube un nuevo paquete JS a CodePushGo y lo asigna a un canal, el SDK de CodePushGo en las aplicaciones configuradas para ese canal detectará la actualización y la descargará. La próxima vez que la aplicación se reinicie, se cargará el nuevo paquete.
 
 ## Primeros pasos
 
@@ -33,11 +33,11 @@ Para comenzar a usar las Actualizaciones en Vivo, siga estos pasos:
 
 <Steps>
 
-1. Complete el [Inicio rápido de Capgo](/docs/getting-started/quickstart) para configurar su aplicación en Capgo e instalar el SDK de Capgo.
+1. Complete el [Inicio rápido de CodePushGo](/docs/getting-started/quickstart) para configurar su aplicación en CodePushGo e instalar el SDK de CodePushGo.
 
-2. En el código de su aplicación, llame a `CapacitorUpdater.notifyAppReady()` después de que su aplicación haya terminado de inicializarse. Esto le indica al SDK de Capgo que su aplicación está lista para recibir actualizaciones.
+2. En el código de su aplicación, llame a `CapacitorUpdater.notifyAppReady()` después de que su aplicación haya terminado de inicializarse. Esto le indica al SDK de CodePushGo que su aplicación está lista para recibir actualizaciones.
 
-3. Compile su paquete JS y súbalo a Capgo:
+3. Compile su paquete JS y súbalo a CodePushGo:
    ```shell
    npm run build
    npx @capgo/cli@latest bundle upload --channel=Production 
@@ -54,21 +54,21 @@ Para comenzar a usar las Actualizaciones en Vivo, siga estos pasos:
 
 Consulte la guía [Implementación de Actualizaciones en Vivo](/docs/getting-started/deploy) para más detalles.
 
-## La CLI de Capgo
+## La CLI de CodePushGo
 
-La CLI de Capgo es una herramienta poderosa que permite a los desarrolladores interactuar con los servicios de Capgo desde sus propios pipelines de CI/CD. Con la CLI, tiene control granular sobre cuándo se producen y despliegan las compilaciones, permitiéndole integrar Capgo en sus flujos de trabajo empresariales existentes.
+La CLI de CodePushGo es una herramienta poderosa que permite a los desarrolladores interactuar con los servicios de CodePushGo desde sus propios pipelines de CI/CD. Con la CLI, tiene control granular sobre cuándo se producen y despliegan las compilaciones, permitiéndole integrar CodePushGo en sus flujos de trabajo empresariales existentes.
 
-### ¿Para qué sirve la CLI de Capgo?
+### ¿Para qué sirve la CLI de CodePushGo?
 
-La CLI de Capgo está diseñada para desarrolladores y equipos que necesitan más control y flexibilidad en sus flujos de trabajo de actualización en vivo. Al usar la CLI en sus pipelines de CI/CD, puede:
+La CLI de CodePushGo está diseñada para desarrolladores y equipos que necesitan más control y flexibilidad en sus flujos de trabajo de actualización en vivo. Al usar la CLI en sus pipelines de CI/CD, puede:
 
-- Decidir exactamente cuándo construir y desplegar actualizaciones, en lugar de depender de la automatización integrada de Capgo
+- Decidir exactamente cuándo construir y desplegar actualizaciones, en lugar de depender de la automatización integrada de CodePushGo
 - Insertar sus propios procesos, como firma de código, pruebas de QA o aprobaciones de gerentes, entre los pasos de compilación y despliegue
-- Integrar Capgo en sus herramientas y flujos de trabajo DevOps existentes
+- Integrar CodePushGo en sus herramientas y flujos de trabajo DevOps existentes
 
 ### Autenticación
 
-Para usar la CLI de Capgo, necesitará autenticarse con su clave API. Puede generar una clave API en la configuración de su cuenta de Capgo.
+Para usar la CLI de CodePushGo, necesitará autenticarse con su clave API. Puede generar una clave API en la configuración de su cuenta de CodePushGo.
 
 Para iniciar sesión y almacenar de forma segura su clave API, ejecute:
 
@@ -80,13 +80,13 @@ Este comando se guardará para uso futuro. No necesitará proporcionar su clave 
 
 ### Diferencias clave con otras herramientas CLI
 
-Si está familiarizado con otras herramientas CLI de actualización en vivo, hay algunas cosas clave que debe tener en cuenta sobre la CLI de Capgo:
+Si está familiarizado con otras herramientas CLI de actualización en vivo, hay algunas cosas clave que debe tener en cuenta sobre la CLI de CodePushGo:
 
-- Capgo utiliza una única CLI tanto para casos de uso de desarrollo como de CI/CD, ya que Capgo se centra únicamente en el conjunto de funciones de actualización en vivo
+- CodePushGo utiliza una única CLI tanto para casos de uso de desarrollo como de CI/CD, ya que CodePushGo se centra únicamente en el conjunto de funciones de actualización en vivo
 
-- La CLI de Capgo no requiere un paso de instalación separado. Está incluida en el paquete `@capgo/cli` y se puede ejecutar directamente usando `npx`
+- La CLI de CodePushGo no requiere un paso de instalación separado. Está incluida en el paquete `@capgo/cli` y se puede ejecutar directamente usando `npx`
 
-- La CLI de Capgo está diseñada específicamente para el flujo de trabajo de actualización en vivo, por lo que puede no incluir algunas características o comandos que se encuentran en herramientas CLI de propósito más general
+- La CLI de CodePushGo está diseñada específicamente para el flujo de trabajo de actualización en vivo, por lo que puede no incluir algunas características o comandos que se encuentran en herramientas CLI de propósito más general
 
 ## Siguientes pasos
 

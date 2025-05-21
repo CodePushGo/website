@@ -7,9 +7,9 @@ locale: it
 
 import { LinkCard, TabItem, Tabs, Steps } from '@astrojs/starlight/components';
 
-Usa la funzione Live Updates di Capgo per aggiornare l'interfaccia utente e la logica di business della tua app da remoto, in tempo reale. Invia aggiornamenti del bundle JS direttamente ai tuoi utenti senza passare attraverso l'app store per correggere bug e distribuire nuove funzionalità istantaneamente.
+Usa la funzione Live Updates di CodePushGo per aggiornare l'interfaccia utente e la logica di business della tua app da remoto, in tempo reale. Invia aggiornamenti del bundle JS direttamente ai tuoi utenti senza passare attraverso l'app store per correggere bug e distribuire nuove funzionalità istantaneamente.
 
-Questa guida presuppone che tu abbia completato il [Quickstart di Capgo](/docs/getting-started/quickstart) e che tu abbia già:
+Questa guida presuppone che tu abbia completato il [Quickstart di CodePushGo](/docs/getting-started/quickstart) e che tu abbia già:
 
 <Steps>
 
@@ -23,18 +23,18 @@ Questa guida presuppone che tu abbia completato il [Quickstart di Capgo](/docs/g
 
 Se non hai ancora completato questi passaggi, torna indietro e completa prima il quickstart
 
-<LinkCard href="/docs/getting-started/add-an-app/" title="Aggiungi un'app" description="Aggiungi un'app al tuo account Capgo e installa il plugin nella tua app" />
+<LinkCard href="/docs/getting-started/add-an-app/" title="Aggiungi un'app" description="Aggiungi un'app al tuo account CodePushGo e installa il plugin nella tua app" />
 
 ## Caricamento di un Bundle
 
-Con l'SDK Capgo installato e configurato, sei pronto per caricare il tuo primo bundle di aggiornamento live:
+Con l'SDK CodePushGo installato e configurato, sei pronto per caricare il tuo primo bundle di aggiornamento live:
 
 1. Compila i tuoi asset web:
    ```shell
    npm run build
    ```
 
-2. Carica il bundle su Capgo:
+2. Carica il bundle su CodePushGo:
     <Tabs>
       <TabItem label="Console">
         ```shell
@@ -44,7 +44,7 @@ Con l'SDK Capgo installato e configurato, sei pronto per caricare il tuo primo b
       <TabItem label="Github Actions">
       ```yml
       // github/workflows/build_and_deployyml
-    name: Build source code and send to Capgo
+    name: Build source code and send to CodePushGo
 
     concurrency:
       group: ${{ githubworkflow }}-${{ githubref }}
@@ -68,7 +68,7 @@ Con l'SDK Capgo installato e configurato, sei pronto per caricare il tuo primo b
             run: npm install
           - name: Build
             run: npm run build
-          - name: Deploy to Capgo
+          - name: Deploy to CodePushGo
             run: bunx @capgo/cli@latest bundle upload -a ${{ secretsCAPGO_TOKEN }} --channel ${{ envCHANNEL }}
             env:
               CAPGO_TOKEN: ${{ secretsCAPGO_TOKEN }}
@@ -107,7 +107,7 @@ Con l'SDK Capgo installato e configurato, sei pronto per caricare il tuo primo b
 ### Risoluzione dei problemi durante il caricamento
 
 Se il caricamento fallisce, verifica:
-- Che l'ID della tua app in `capacitorconfigts` corrisponda alla tua app nella dashboard di Capgo
+- Che l'ID della tua app in `capacitorconfigts` corrisponda alla tua app nella dashboard di CodePushGo
 - Che stai eseguendo il comando di caricamento dalla root del tuo progetto Capacitor
 - Che i tuoi asset web siano compilati e aggiornati
 
@@ -139,13 +139,13 @@ Una volta caricato il bundle, puoi testare l'aggiornamento live su un dispositiv
 
 6. Chiudi e riapri l'app. Dovresti vedere l'aggiornamento live applicato!
 
-Torna al [Quickstart di Capgo](/docs/getting-started/quickstart#receiving-a-live-update-on-a-device) per maggiori dettagli sul test degli aggiornamenti live
+Torna al [Quickstart di CodePushGo](/docs/getting-started/quickstart#receiving-a-live-update-on-a-device) per maggiori dettagli sul test degli aggiornamenti live
 
 ## Prossimi passi
 
-Congratulazioni per aver distribuito il tuo primo aggiornamento live con Capgo! 🎉
+Congratulazioni per aver distribuito il tuo primo aggiornamento live con CodePushGo! 🎉
 
-Per saperne di più, consulta il resto della [documentazione Live Updates di Capgo](/docs/live-updates). Alcuni argomenti chiave da controllare:
+Per saperne di più, consulta il resto della [documentazione Live Updates di CodePushGo](/docs/live-updates). Alcuni argomenti chiave da controllare:
 - [Targeting degli aggiornamenti con i canali](/docs/live-updates/channels)
 - [Personalizzazione del comportamento degli aggiornamenti](/docs/live-updates/update-behavior)
 - [Rollback degli aggiornamenti live](/docs/live-updates/rollbacks)

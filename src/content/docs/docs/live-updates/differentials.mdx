@@ -1,6 +1,6 @@
 ---
 title: Fast updates
-description: "Learn how Capgo's differential updates optimize data transfer by only sending changed files, enhancing performance on slower networks."
+description: "Learn how CodePushGo's differential updates optimize data transfer by only sending changed files, enhancing performance on slower networks."
 sidebar:
   order: 4
 ---
@@ -14,26 +14,26 @@ A second benefit is when the app have large assets who change rarely, like image
 
 ## How Differential Updates Work
 
-Differential updates in Capgo are handled by the Capgo plugin installed in your app. When you upload a new version of your app using the `--partial` flag, Capgo does the following:
+Differential updates in CodePushGo are handled by the CodePushGo plugin installed in your app. When you upload a new version of your app using the `--partial` flag, CodePushGo does the following:
 
 1. Each file in your build is uploaded individually
 2. Checksums are generated for each file
 3. A new json manifest is created, listing all files and their checksums
-4. This manifest is uploaded to the Capgo database
+4. This manifest is uploaded to the CodePushGo database
 
-When a device running your app checks for an update, the Capgo plugin receives the new manifest from the server. It compares this manifest to the one it currently has, identifying which files have changed based on the checksums and files path.
+When a device running your app checks for an update, the CodePushGo plugin receives the new manifest from the server. It compares this manifest to the one it currently has, identifying which files have changed based on the checksums and files path.
 
 The plugin then downloads only the changed files, rather than the entire JS bundle. It reconstructs the new version of the app by combining these downloaded files with the unchanged files it already has.
 
 <Aside title="Manifest">
 
-In case of differential updates, the device stores all downloaded files in a common cache, Capgo will never clean it but the OS can at any time.
+In case of differential updates, the device stores all downloaded files in a common cache, CodePushGo will never clean it but the OS can at any time.
 
 </Aside>
 
 ## Enabling Differential Updates
 
-To enable differential updates for your Capgo app, simply use the `--partial` flag when uploading a new version:
+To enable differential updates for your CodePushGo app, simply use the `--partial` flag when uploading a new version:
 
 ## Enforcing Differential Updates
 
@@ -43,7 +43,7 @@ If you want to ensure that all uploads are differential updates and prevent any 
 npx @capgo/cli@latest bundle upload --partial-only
 ```
 
-When `--partial-only` is used, Capgo will only upload individual files and generate a manifest. Any device who do not support partial will not be able to download the update.
+When `--partial-only` is used, CodePushGo will only upload individual files and generate a manifest. Any device who do not support partial will not be able to download the update.
 
 You might want to use `--partial-only` if:
 
@@ -59,10 +59,10 @@ If differential updates don't seem to be working (i.e. devices are always downlo
 
 - You're using the `--partial` flag every time you upload a new version
 - If using `--partial-only`, make sure you haven't accidentally omitted the `--partial` flag
-- Your device is running the latest version of the Capgo plugin
-- Your device has a stable network connection and can reach the Capgo servers
+- Your device is running the latest version of the CodePushGo plugin
+- Your device has a stable network connection and can reach the CodePushGo servers
 
-You can also use the Capgo webapp to check the details of your last upload:
+You can also use the CodePushGo webapp to check the details of your last upload:
 <Steps>
 1. Go to the [webapp](https://app.capgo.io)
 2. Click on your app
@@ -72,9 +72,9 @@ You can also use the Capgo webapp to check the details of your last upload:
   ![bundle type](/bundle_type.webp)
 </Steps>
 
-If you continue to have trouble, please reach out to Capgo support for further assistance. They can check the server logs to confirm that your partial uploads are being processed correctly and that devices are receiving the updated manifests.
+If you continue to have trouble, please reach out to CodePushGo support for further assistance. They can check the server logs to confirm that your partial uploads are being processed correctly and that devices are receiving the updated manifests.
 
-That's it! The `--partial` flag tells Capgo to perform the individual file uploads and manifest generation needed for differential updates.
+That's it! The `--partial` flag tells CodePushGo to perform the individual file uploads and manifest generation needed for differential updates.
 
-Note that you need to use `--partial` every time you upload a new version that you want to be delivered as a differential update. If you omit the flag, Capgo will upload the entire JS bundle as a single file, and devices will download the whole bundle even if only a small part has changed.
+Note that you need to use `--partial` every time you upload a new version that you want to be delivered as a differential update. If you omit the flag, CodePushGo will upload the entire JS bundle as a single file, and devices will download the whole bundle even if only a small part has changed.
 

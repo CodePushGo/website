@@ -224,7 +224,7 @@ This setting require you to hide the app from the user while the update is being
 ```
 
 ## `defaultChannel`
-Set the default channel for the app. This will override any other channel set in Capgo if the channel allows overwriting. 
+Set the default channel for the app. This will override any other channel set in CodePushGo if the channel allows overwriting. 
 
 > The channel name is case sensitive
 
@@ -240,7 +240,7 @@ Set the default channel for the app. This will override any other channel set in
 ```
 
 ## `appId`
-Set the appId for the app. This will override any other way to get the appId. This is useful when you want to have a different appId in Capgo and in your native code.
+Set the appId for the app. This will override any other way to get the appId. This is useful when you want to have a different appId in CodePushGo and in your native code.
 :::note
 This is the new way to set the appId. The old way is still and will stay supported.
 :::
@@ -256,7 +256,7 @@ This is the new way to set the appId. The old way is still and will stay support
 ```
 
 ## `version`
-Set the version for the app. This will override any other way to get the version. This is useful when you want to have a different version in Capgo and in your native code.
+Set the version for the app. This will override any other way to get the version. This is useful when you want to have a different version in CodePushGo and in your native code.
 :::note
 This is the new way to set the version. The old way is still and will stay supported.
 :::

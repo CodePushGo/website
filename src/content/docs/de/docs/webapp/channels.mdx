@@ -58,7 +58,7 @@ Die Liste der Einstellungen ist lang, aber ich werde mein Bestes geben, sie alle
 ---
 Erstens der `Standardkanal` **DIES IST WAHRSCHEINLICH DER WICHTIGSTE**\
 Wenn ein Kanal als Standard markiert ist, wird er als Standardkanal für alle neuen Geräte verwendet.\
-Anders ausgedrückt: Wenn Sie einen neuen Benutzer haben, wird Capgo versuchen, ihm die neueste Version dieses Standardkanals zu liefern.
+Anders ausgedrückt: Wenn Sie einen neuen Benutzer haben, wird CodePushGo versuchen, ihm die neueste Version dieses Standardkanals zu liefern.
 Nur 1 Kanal kann gleichzeitig als Standard festgelegt werden. Wenn Sie versuchen, diese Regel zu brechen, werden Sie gebeten, Ihre Aktion zu bestätigen.
 
 <figure><img style="margin-left: auto; margin-right: auto" src="/confirm-make-default.webp" alt="confirm make change" /><figcaption></figcaption></figure>
@@ -76,6 +76,6 @@ Fünftens ist `Auto-Update deaktivieren`. Diese Einstellung ist ziemlich komplex
 
 Was `Entwicklungs-Build erlauben` betrifft: Wenn dies wahr ist, dürfen Entwicklungs-Builds Updates von diesem Kanal herunterladen. Wenn nicht, wird jede Update-Anfrage, bei der `prod` auf false gesetzt ist, abgelehnt. Dies ist hauptsächlich für Testzwecke nützlich.
 
-Siebens ist `Emulatoren erlauben`. Wenn dies falsch ist, wird Capgo jede Update-Anfrage ablehnen, die von einem Emulator kommt. Dies ist hauptsächlich für Testzwecke nützlich.
+Siebens ist `Emulatoren erlauben`. Wenn dies falsch ist, wird CodePushGo jede Update-Anfrage ablehnen, die von einem Emulator kommt. Dies ist hauptsächlich für Testzwecke nützlich.
 
 Achtens ist `Geräten erlauben, sich selbst zuzuordnen`. Wenn dies wahr ist, wird die [setChannel](/docs/plugin/api/#setchannel)-Methode verfügbar sein. Wenn dies auf falsch gesetzt ist und Sie versuchen, die [setChannel](/docs/plugin/api/#setchannel)-Methode mit diesem Kanal aufzurufen, wird der Aufruf fehlschlagen.

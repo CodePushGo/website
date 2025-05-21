@@ -7,21 +7,21 @@ locale: es
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Cuando lanzas una actualización de tu aplicación Capgo, probablemente quieres que tus usuarios reciban esa actualización lo antes posible. Pero también no quieres interrumpir su experiencia forzándolos a esperar una descarga o reiniciar la aplicación en medio de una sesión.
+Cuando lanzas una actualización de tu aplicación CodePushGo, probablemente quieres que tus usuarios reciban esa actualización lo antes posible. Pero también no quieres interrumpir su experiencia forzándolos a esperar una descarga o reiniciar la aplicación en medio de una sesión.
 
-El comportamiento de actualización de Capgo está diseñado para lograr un equilibrio entre entregar actualizaciones rápidamente y minimizar la interrupción para tus usuarios.
+El comportamiento de actualización de CodePushGo está diseñado para lograr un equilibrio entre entregar actualizaciones rápidamente y minimizar la interrupción para tus usuarios.
 
 ## Flujo de Actualización Predeterminado
 
-Por defecto, así es como Capgo maneja las actualizaciones de la aplicación:
+Por defecto, así es como CodePushGo maneja las actualizaciones de la aplicación:
 
 <Steps>
 
-1. Al iniciar la aplicación, el plugin de Capgo verifica si hay una nueva actualización disponible
+1. Al iniciar la aplicación, el plugin de CodePushGo verifica si hay una nueva actualización disponible
 
 2. Si se encuentra una actualización, se descarga en segundo plano mientras el usuario continúa usando la versión actual de la aplicación
 
-3. Una vez que se completa la descarga, Capgo espera a que el usuario envíe la aplicación a segundo plano o la cierre por completo
+3. Una vez que se completa la descarga, CodePushGo espera a que el usuario envíe la aplicación a segundo plano o la cierre por completo
 
 4. Cuando el usuario vuelva a iniciar la aplicación, estará ejecutando la versión actualizada
 
@@ -93,7 +93,7 @@ Ten en cuenta que la condición `kill` actualmente activa la actualización desp
 
 ## Aplicando Actualizaciones Inmediatamente
 
-Para actualizaciones críticas o aplicaciones con estado muy simple, es posible que desees aplicar una actualización tan pronto como se descargue, sin esperar un evento de segundo plano o cierre. Capgo admite esto a través de la opción de configuración `directUpdate`.
+Para actualizaciones críticas o aplicaciones con estado muy simple, es posible que desees aplicar una actualización tan pronto como se descargue, sin esperar un evento de segundo plano o cierre. CodePushGo admite esto a través de la opción de configuración `directUpdate`.
 
 `directUpdate` se establece en tu archivo `capacitor.config.ts`, no en código JavaScript:
 
@@ -113,7 +113,7 @@ const config: CapacitorConfig = {
 export default config;
 ```
 
-Con `directUpdate` habilitado, Capgo aplicará inmediatamente una actualización tan pronto como se complete la descarga, incluso si el usuario está usando activamente la aplicación.
+Con `directUpdate` habilitado, CodePushGo aplicará inmediatamente una actualización tan pronto como se complete la descarga, incluso si el usuario está usando activamente la aplicación.
 
 Ten en cuenta que debido a que `directUpdate` es una configuración nativa, requiere un manejo adicional en tu código JavaScript.
 
@@ -151,4 +151,4 @@ Si habilitas `directUpdate`, recomendamos:
 - Guardar y restaurar el estado de la aplicación según sea necesario para evitar perder el progreso del usuario
 - Probar exhaustivamente el comportamiento de actualización de tu aplicación para asegurar que no haya transiciones bruscas, pérdida de estado o cambios de ubicación desorientadores
 
-En la mayoría de los casos, el comportamiento de actualización predeterminado proporciona el mejor equilibrio entre entregar actualizaciones rápidamente y minimizar la interrupción. Pero para aplicaciones con necesidades específicas, Capgo proporciona la flexibilidad para personalizar cuándo y cómo se aplican las actualizaciones.
+En la mayoría de los casos, el comportamiento de actualización predeterminado proporciona el mejor equilibrio entre entregar actualizaciones rápidamente y minimizar la interrupción. Pero para aplicaciones con necesidades específicas, CodePushGo proporciona la flexibilidad para personalizar cuándo y cómo se aplican las actualizaciones.

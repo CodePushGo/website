@@ -7,9 +7,9 @@ locale: es
 
 import { Steps, LinkCard, Tabs, TabItem } from '@astrojs/starlight/components';
 
-Utilice la función de Actualizaciones en Vivo de Capgo para actualizar la interfaz de usuario y la lógica de negocio de su aplicación de forma remota y en tiempo real. Envíe actualizaciones del paquete JS directamente a sus usuarios sin pasar por la tienda de aplicaciones para corregir errores y lanzar nuevas funciones al instante.
+Utilice la función de Actualizaciones en Vivo de CodePushGo para actualizar la interfaz de usuario y la lógica de negocio de su aplicación de forma remota y en tiempo real. Envíe actualizaciones del paquete JS directamente a sus usuarios sin pasar por la tienda de aplicaciones para corregir errores y lanzar nuevas funciones al instante.
 
-Esta guía asume que ha completado el [Inicio Rápido de Capgo](/docs/getting-started/quickstart) y ya ha:
+Esta guía asume que ha completado el [Inicio Rápido de CodePushGo](/docs/getting-started/quickstart) y ya ha:
 
 <Steps>
 
@@ -23,18 +23,18 @@ Esta guía asume que ha completado el [Inicio Rápido de Capgo](/docs/getting-st
 
 Si aún no ha completado estos pasos, por favor regrese y complete primero el inicio rápido
 
-<LinkCard href="/docs/getting-started/add-an-app/" title="Añadir una aplicación" description="Añada una aplicación a su cuenta Capgo e instale el plugin en su aplicación" />
+<LinkCard href="/docs/getting-started/add-an-app/" title="Añadir una aplicación" description="Añada una aplicación a su cuenta CodePushGo e instale el plugin en su aplicación" />
 
 ## Subiendo un Paquete
 
-Con el SDK de Capgo instalado y configurado, está listo para subir su primer paquete de actualización en vivo:
+Con el SDK de CodePushGo instalado y configurado, está listo para subir su primer paquete de actualización en vivo:
 
 1. Compile sus activos web:
    ```shell
    npm run build
    ```
 
-2. Suba el paquete a Capgo:
+2. Suba el paquete a CodePushGo:
     <Tabs>
       <TabItem label="Consola">
         ```shell
@@ -44,7 +44,7 @@ Con el SDK de Capgo instalado y configurado, está listo para subir su primer pa
       <TabItem label="Github Actions">
       ```yml
       // github/workflows/build_and_deploy.yml
-    name: Build source code and send to Capgo
+    name: Build source code and send to CodePushGo
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -68,7 +68,7 @@ Con el SDK de Capgo instalado y configurado, está listo para subir su primer pa
             run: npm install
           - name: Build
             run: npm run build
-          - name: Deploy to Capgo
+          - name: Deploy to CodePushGo
             run: bunx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} --channel ${{ env.CHANNEL }}
             env:
               CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
@@ -107,7 +107,7 @@ Con el SDK de Capgo instalado y configurado, está listo para subir su primer pa
 ### Solución de problemas de carga
 
 Si su carga falla, verifique:
-- Su ID de aplicación en `capacitor.config.ts` coincide con su aplicación en el panel de Capgo
+- Su ID de aplicación en `capacitor.config.ts` coincide con su aplicación en el panel de CodePushGo
 - Está ejecutando el comando de carga desde la raíz de su proyecto Capacitor
 - Sus activos web están compilados y actualizados
 
@@ -139,13 +139,13 @@ Una vez que su paquete esté subido, puede probar la actualización en vivo en u
 
 6. Cierre y vuelva a abrir la aplicación. ¡Debería ver su actualización en vivo aplicada!
 
-Consulte el [Inicio Rápido de Capgo](/docs/getting-started/quickstart#receiving-a-live-update-on-a-device) para más detalles sobre cómo probar actualizaciones en vivo
+Consulte el [Inicio Rápido de CodePushGo](/docs/getting-started/quickstart#receiving-a-live-update-on-a-device) para más detalles sobre cómo probar actualizaciones en vivo
 
 ## Siguientes Pasos
 
-¡Felicitaciones por implementar su primera actualización en vivo con Capgo! 🎉
+¡Felicitaciones por implementar su primera actualización en vivo con CodePushGo! 🎉
 
-Para aprender más, revise el resto de la [documentación de Actualizaciones en Vivo de Capgo](/docs/live-updates). Algunos temas clave para revisar a continuación:
+Para aprender más, revise el resto de la [documentación de Actualizaciones en Vivo de CodePushGo](/docs/live-updates). Algunos temas clave para revisar a continuación:
 - [Direccionamiento de Actualizaciones con Canales](/docs/live-updates/channels)
 - [Personalización del Comportamiento de Actualización](/docs/live-updates/update-behavior)
 - [Reversiones de Actualizaciones en Vivo](/docs/live-updates/rollbacks)

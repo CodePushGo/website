@@ -16,11 +16,11 @@ Se trovi utile questo lavoro, considera di supportare il mio lavoro diventando u
 
 Ho scommesso di rendere open source tutto il codice che ho costruito qui invece di metterlo dietro un paywall. Aprendo invece di combattere e nascondere, credo che possiamo rendere il mondo un posto migliore
 
-Inoltre, voglio concentrarmi sugli strumenti di Capgo e renderlo un business aperto e trasparente
+Inoltre, voglio concentrarmi sugli strumenti di CodePushGo e renderlo un business aperto e trasparente
 
 Ma per renderlo possibile, è necessario che tutti noi facciamo la nostra parte, incluso te 🥹
 
-Se Capgo non fa per te, allora paga il tuo prezzo e [sostieni un Maker indipendente](https://github.com/sponsors/riderx) alle tue condizioni
+Se CodePushGo non fa per te, allora paga il tuo prezzo e [sostieni un Maker indipendente](https://github.com/sponsors/riderx) alle tue condizioni
 
 <LinkCard title="Considera di Contribuire" href="/docs/plugin/self-hosted/contributing/"/>
 ## Parità delle funzionalità
@@ -29,7 +29,7 @@ Se scegli di utilizzare il tuo server, perderai il flusso di configurazione in 5
 Dovrai implementare tutte queste funzionalità da solo
 
 
-| Funzionalità             | Capgo | Self hosted |
+| Funzionalità             | CodePushGo | Self hosted |
 | ------------------------ | ----- | ----------- |
 | Aggiornamenti           | ✅     | 🚧         |
 | Auto ripristino         | ✅     | 🚧         |
@@ -51,7 +51,7 @@ Dovrai implementare tutte queste funzionalità da solo
 Se invii un aggiornamento errato ai tuoi utenti puoi e romperai la loro app
 :::
 
-> Tieni presente che non puoi utilizzare il cloud Capgo e il tuo server contemporaneamente
+> Tieni presente che non puoi utilizzare il cloud CodePushGo e il tuo server contemporaneamente
 
 :::danger
 La funzione di aggiornamento Over-the-Air (OTA) è applicabile solo per modifiche apportate ai file HTML, CSS e JavaScript
@@ -84,7 +84,7 @@ npx cap sync
 ## Prepara il tuo bundle
 
 Per inviare aggiornamenti alla tua app, devi comprimerla in zip
-Il modo migliore per essere certi che il tuo zip sia buono è utilizzare la CLI Capgo per la compressione
+Il modo migliore per essere certi che il tuo zip sia buono è utilizzare la CLI CodePushGo per la compressione
 ```bash title="Crea un bundle con i tuoi file da servire dal tuo server"
 npx @capgo/cli@latest bundle zip
 ```
@@ -102,5 +102,5 @@ Dovrai servire questo zip dal tuo server in autonomia
 />
 
 :::note
-Se questo sembra troppo lavoro, prova il trial di Capgo Cloud
+Se questo sembra troppo lavoro, prova il trial di CodePushGo Cloud
 :::

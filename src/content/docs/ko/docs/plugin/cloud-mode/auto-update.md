@@ -6,13 +6,13 @@ sidebar:
 locale: ko
 ---
 
-이 모드를 사용하면 개발자가 자동 업데이트 모드로 capacitor-updater를 사용하고 Capgo 채널 또는 동등한 방법을 통해 업데이트를 푸시할 수 있습니다.
+이 모드를 사용하면 개발자가 자동 업데이트 모드로 capacitor-updater를 사용하고 CodePushGo 채널 또는 동등한 방법을 통해 업데이트를 푸시할 수 있습니다.
 
 ### 전제 조건
 
 Capgo 자동 업데이트를 사용하기 전에 앱 버전이 [https://semverorg/](https://semverorg/)를 사용하는지 확인하세요.
 
-이는 Capgo에서 버전을 관리하는 데 사용하는 규칙입니다.
+이는 CodePushGo에서 버전을 관리하는 데 사용하는 규칙입니다.
 
 앱에서 버전을 설정하는 두 가지 방법이 있습니다:
 
@@ -61,10 +61,10 @@ npx cap sync
 
 서버에서 채널과 버전 등을 관리할 수 있습니다
 
-`autoUpdate`는 Capgo 서버를 식별하기 위해 `capacitorconfig`의 데이터를 사용합니다
+`autoUpdate`는 CodePushGo 서버를 식별하기 위해 `capacitorconfig`의 데이터를 사용합니다
 
 :::note
-회사에서 허용하지 않는 경우 코드를 서버로 전송하지 않고도 Capgo Cloud를 계속 사용할 수 있습니다
+회사에서 허용하지 않는 경우 코드를 서버로 전송하지 않고도 CodePushGo Cloud를 계속 사용할 수 있습니다
 :::
 
 #### 버전 확인

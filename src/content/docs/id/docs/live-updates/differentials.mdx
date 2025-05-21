@@ -7,7 +7,7 @@ locale: id
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Sistem Live Update Capgo dapat mengirimkan pembaruan lebih cepat dan lebih efisien dengan hanya mengirim file yang berubah, bukan seluruh bundle JS
+Sistem Live Update CodePushGo dapat mengirimkan pembaruan lebih cepat dan lebih efisien dengan hanya mengirim file yang berubah, bukan seluruh bundle JS
 
 Ini sangat bermanfaat bagi pengguna dengan koneksi jaringan yang lebih lambat atau terbatas, karena meminimalkan jumlah data yang perlu diunduh
 
@@ -15,26 +15,26 @@ Manfaat kedua adalah ketika aplikasi memiliki aset besar yang jarang berubah, se
 
 ## Cara Kerja Pembaruan Diferensial
 
-Pembaruan diferensial di Capgo ditangani oleh plugin Capgo yang terpasang di aplikasi Anda. Saat Anda mengunggah versi baru aplikasi menggunakan flag `--partial`, Capgo melakukan hal berikut:
+Pembaruan diferensial di CodePushGo ditangani oleh plugin CodePushGo yang terpasang di aplikasi Anda. Saat Anda mengunggah versi baru aplikasi menggunakan flag `--partial`, CodePushGo melakukan hal berikut:
 
 1. Setiap file dalam build Anda diunggah secara individual
 2. Checksum dibuat untuk setiap file
 3. Manifest json baru dibuat, mendaftar semua file dan checksumnya
-4. Manifest ini diunggah ke database Capgo
+4. Manifest ini diunggah ke database CodePushGo
 
-Ketika perangkat yang menjalankan aplikasi Anda memeriksa pembaruan, plugin Capgo menerima manifest baru dari server. Ia membandingkan manifest ini dengan yang dimilikinya saat ini, mengidentifikasi file mana yang telah berubah berdasarkan checksum dan jalur file
+Ketika perangkat yang menjalankan aplikasi Anda memeriksa pembaruan, plugin CodePushGo menerima manifest baru dari server. Ia membandingkan manifest ini dengan yang dimilikinya saat ini, mengidentifikasi file mana yang telah berubah berdasarkan checksum dan jalur file
 
 Plugin kemudian hanya mengunduh file yang berubah, bukan seluruh bundle JS. Ia merekonstruksi versi baru aplikasi dengan menggabungkan file yang diunduh dengan file yang tidak berubah yang sudah dimilikinya
 
 <Aside title="Manifest">
 
-Dalam kasus pembaruan diferensial, perangkat menyimpan semua file yang diunduh dalam cache umum, Capgo tidak akan pernah membersihkannya tetapi OS dapat melakukannya kapan saja
+Dalam kasus pembaruan diferensial, perangkat menyimpan semua file yang diunduh dalam cache umum, CodePushGo tidak akan pernah membersihkannya tetapi OS dapat melakukannya kapan saja
 
 </Aside>
 
 ## Mengaktifkan Pembaruan Diferensial
 
-Untuk mengaktifkan pembaruan diferensial untuk aplikasi Capgo Anda, cukup gunakan flag `--partial` saat mengunggah versi baru:
+Untuk mengaktifkan pembaruan diferensial untuk aplikasi CodePushGo Anda, cukup gunakan flag `--partial` saat mengunggah versi baru:
 
 ## Menegakkan Pembaruan Diferensial
 
@@ -44,7 +44,7 @@ Jika Anda ingin memastikan bahwa semua unggahan adalah pembaruan diferensial dan
 npx @capgo/cli@latest bundle upload --partial-only
 ```
 
-Ketika `--partial-only` digunakan, Capgo hanya akan mengunggah file individual dan menghasilkan manifest. Perangkat yang tidak mendukung partial tidak akan dapat mengunduh pembaruan
+Ketika `--partial-only` digunakan, CodePushGo hanya akan mengunggah file individual dan menghasilkan manifest. Perangkat yang tidak mendukung partial tidak akan dapat mengunduh pembaruan
 
 Anda mungkin ingin menggunakan `--partial-only` jika:
 
@@ -60,10 +60,10 @@ Jika pembaruan diferensial tidak tampak berfungsi (yaitu perangkat selalu mengun
 
 - Anda menggunakan flag `--partial` setiap kali mengunggah versi baru
 - Jika menggunakan `--partial-only`, pastikan Anda tidak secara tidak sengaja menghilangkan flag `--partial`
-- Perangkat Anda menjalankan versi terbaru plugin Capgo
-- Perangkat Anda memiliki koneksi jaringan yang stabil dan dapat mencapai server Capgo
+- Perangkat Anda menjalankan versi terbaru plugin CodePushGo
+- Perangkat Anda memiliki koneksi jaringan yang stabil dan dapat mencapai server CodePushGo
 
-Anda juga dapat menggunakan webapp Capgo untuk memeriksa detail unggahan terakhir Anda:
+Anda juga dapat menggunakan webapp CodePushGo untuk memeriksa detail unggahan terakhir Anda:
 <Steps>
 1. Buka [webapp](https://app.capgo.io)
 2. Klik pada aplikasi Anda
@@ -73,8 +73,8 @@ Anda juga dapat menggunakan webapp Capgo untuk memeriksa detail unggahan terakhi
   ![bundle type](/bundle_type.webp)
 </Steps>
 
-Jika Anda terus mengalami masalah, silakan hubungi dukungan Capgo untuk bantuan lebih lanjut. Mereka dapat memeriksa log server untuk memastikan bahwa unggahan parsial Anda diproses dengan benar dan perangkat menerima manifest yang diperbarui
+Jika Anda terus mengalami masalah, silakan hubungi dukungan CodePushGo untuk bantuan lebih lanjut. Mereka dapat memeriksa log server untuk memastikan bahwa unggahan parsial Anda diproses dengan benar dan perangkat menerima manifest yang diperbarui
 
-Itu saja! Flag `--partial` memberi tahu Capgo untuk melakukan unggahan file individual dan pembuatan manifest yang diperlukan untuk pembaruan diferensial
+Itu saja! Flag `--partial` memberi tahu CodePushGo untuk melakukan unggahan file individual dan pembuatan manifest yang diperlukan untuk pembaruan diferensial
 
-Perhatikan bahwa Anda perlu menggunakan `--partial` setiap kali Anda mengunggah versi baru yang ingin Anda kirimkan sebagai pembaruan diferensial. Jika Anda menghilangkan flag, Capgo akan mengunggah seluruh bundle JS sebagai satu file, dan perangkat akan mengunduh seluruh bundle bahkan jika hanya sebagian kecil yang berubah
+Perhatikan bahwa Anda perlu menggunakan `--partial` setiap kali Anda mengunggah versi baru yang ingin Anda kirimkan sebagai pembaruan diferensial. Jika Anda menghilangkan flag, CodePushGo akan mengunggah seluruh bundle JS sebagai satu file, dan perangkat akan mengunduh seluruh bundle bahkan jika hanya sebagian kecil yang berubah

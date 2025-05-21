@@ -19,7 +19,7 @@ Optionen:
 - `-a, --apikey <apikey>`: API-Schlüssel zur Verknüpfung mit Ihrem Konto
 - `-p, --path <path>`: Pfad zum hochzuladenden Ordner (standardmäßig das `webDir` in `capacitorconfig`)
 - `-c, --channel <channel>`: Channel, mit dem das Bundle verknüpft werden soll
-- `-e, --external <url>`: Link zu einer externen URL statt Upload zu Capgo Cloud
+- `-e, --external <url>`: Link zu einer externen URL statt Upload zu CodePushGo Cloud
 - `--iv-session-key <key>`: IV und Session-Schlüssel für externe Bundle-URL festlegen
 - `--s3-region <region>`: Region für Ihren S3-Bucket
 - `--s3-apikey <apikey>`: API-Schlüssel für Ihren S3-Endpunkt
@@ -45,8 +45,8 @@ Optionen:
 - `--multipart`: Multipart-Protokoll für S3-Upload verwenden (veraltet, nutzen Sie stattdessen `--tus`)
 - `--tus`: Bundle mit dem tus-Protokoll hochladen
 - `--tus-chunk-size <tusChunkSize>`: Chunk-Größe für den tus-Upload
-- `--partial`: Nur geänderte Dateien zu Capgo Cloud hochladen
-- `--partial-only`: Nur partielle Dateien zu Capgo Cloud hochladen, ZIP-Datei überspringen (nützlich für große Bundles)
+- `--partial`: Nur geänderte Dateien zu CodePushGo Cloud hochladen
+- `--partial-only`: Nur partielle Dateien zu CodePushGo Cloud hochladen, ZIP-Datei überspringen (nützlich für große Bundles)
 - `--encrypted-checksum <encryptedChecksum>`: Verschlüsselte Prüfsumme (Signatur) für externes Bundle
 - `--auto-set-bundle`: Bundle-Version automatisch in `capacitorconfigjson` setzen
 - `--dry-upload`: Testlauf des Upload-Prozesses ohne tatsächlichen Upload (nützlich zum Testen)

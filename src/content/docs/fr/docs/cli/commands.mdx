@@ -1,6 +1,6 @@
 ---
 title: Commandes
-description: Documentation Capgo CLI
+description: Documentation CodePushGo CLI
 sidebar:
   order: 2
 locale: fr
@@ -24,7 +24,7 @@ Toutes les commandes doivent être exécutées dans votre dossier d'application 
 
 Cette méthode est là pour vous guider étape par étape
 
-Elle ajoutera votre application à Capgo Elle ajoutera le code à votre application pour valider la mise à jour De même, elle construira votre application De plus, elle téléversera votre application vers Capgo Et elle vous aidera à vérifier si la mise à jour fonctionne
+Elle ajoutera votre application à CodePushGo Elle ajoutera le code à votre application pour valider la mise à jour De même, elle construira votre application De plus, elle téléversera votre application vers CodePushGo Et elle vous aidera à vérifier si la mise à jour fonctionne
 
 ### **Connexion**
 
@@ -44,7 +44,7 @@ utilisez `--apikey=********` dans n'importe quelle commande pour la remplacer
 
 `npx @capgo/cli doctor`
 
-Commande pour vérifier si vous êtes à jour avec les paquets Capgo
+Commande pour vérifier si vous êtes à jour avec les paquets CodePushGo
 
 Cette commande sera également utile pour les rapports de bugs
 
@@ -60,7 +60,7 @@ Cette commande sera également utile pour les rapports de bugs
 
 En option, vous pouvez donner :
 
-* `--icon [/chemin/vers/mon/icone]` pour avoir une icône personnalisée affichée dans l'application web Capgo
+* `--icon [/chemin/vers/mon/icone]` pour avoir une icône personnalisée affichée dans l'application web CodePushGo
 * `--name [test]` pour avoir un nom personnalisé dans la liste
 * `--apikey [clé]` Clé API pour lier à votre compte
 * `--retention [retention]` période de rétention du bundle d'application en jours, 0 par défaut = infini
@@ -83,7 +83,7 @@ Exemple de `capacitorconfigjson` pour appId et AppName, l'icône est devinée da
 
 En option, vous pouvez donner :
 
-* `--icon [/chemin/vers/mon/icone]` pour avoir une icône personnalisée affichée dans l'application web Capgo
+* `--icon [/chemin/vers/mon/icone]` pour avoir une icône personnalisée affichée dans l'application web CodePushGo
 * `--name [test]` pour avoir un nom personnalisé dans la liste
 * `--retention [retention]` période de rétention du bundle d'application en jours, 0 par défaut = infini
 * `--apikey [clé]` Clé API pour lier à votre compte
@@ -148,7 +148,7 @@ En option, vous pouvez donner :
 * `--apikey <apikey>` Clé API pour lier à votre compte
 * `--path <chemin>` Chemin du dossier à téléverser
 * `--channel <canal>` Canal à lier
-* `--external <url>` Lien vers une URL externe au lieu de téléverser vers Capgo Cloud
+* `--external <url>` Lien vers une URL externe au lieu de téléverser vers CodePushGo Cloud
 * `--iv-session-key <clé>` Définir l'IV et la clé de session pour l'URL du bundle externe
 * `--s3-endpoint <s3Endpoint>` URL du point de terminaison S3 Ne fonctionne pas avec le téléversement partiel ou l'option externe
 * `--s3-region <région>` Région pour votre bucket S3
@@ -171,7 +171,7 @@ En option, vous pouvez donner :
 * `--ignore-metadata-check` Ignore la vérification des métadonnées (node_modules) lors du téléversement
 * `--ignore-checksum-check` Ignore la vérification du checksum lors du téléversement
 * `--timeout <timeout>` Délai d'attente pour le processus de téléversement en secondes
-* `--partial` Ne téléverse pas les fichiers partiels vers Capgo cloud
+* `--partial` Ne téléverse pas les fichiers partiels vers CodePushGo cloud
 * `--tus` Téléverse le bundle en utilisant le protocole tus
 * `--multipart` Utilise le protocole multipart pour téléverser les données vers S3, Déprécié, utilisez TUS à la place
 * `--encrypted-checksum <checksumChiffré>` Un checksum chiffré (signature) Utilisé uniquement lors du téléversement d'un bundle externe
@@ -179,11 +179,11 @@ En option, vous pouvez donner :
 * `--auto-set-bundle` Définir le bundle dans capacitorconfigjson
 * `--node-modules <nodeModules>` Une liste de chemins vers node_modules Utile pour les monorepos (séparés par des virgules ex : //node_modules,/node_modules)
 
-> ⭐️ L'option externe aide à débloquer 2 cas : entreprise avec des préoccupations de confidentialité, ne pas envoyer le code à un tiers et application plus grande que 200 MB Avec ce paramètre, Capgo stocke uniquement le lien vers le zip et envoie le lien à toutes les applications
+> ⭐️ L'option externe aide à débloquer 2 cas : entreprise avec des préoccupations de confidentialité, ne pas envoyer le code à un tiers et application plus grande que 200 MB Avec ce paramètre, CodePushGo stocke uniquement le lien vers le zip et envoie le lien à toutes les applications
 
-> 👀 Capgo cloud ne regarde jamais ce qu'il y a dans le lien (pour l'option externe), ou dans le code lorsqu'il est stocké
+> 👀 CodePushGo cloud ne regarde jamais ce qu'il y a dans le lien (pour l'option externe), ou dans le code lorsqu'il est stocké
 
-> 🔑 Vous pouvez ajouter une deuxième couche de sécurité en utilisant le chiffrement, alors Capgo ne pourra pas regarder ou modifier quoi que ce soit, cela devient "trustless"
+> 🔑 Vous pouvez ajouter une deuxième couche de sécurité en utilisant le chiffrement, alors CodePushGo ne pourra pas regarder ou modifier quoi que ce soit, cela devient "trustless"
 
 Exemple de `packagejson` pour la version
 

@@ -56,7 +56,7 @@ npx @capgo/cli bundle upload --channel production
 
 ---
 
-Sie müssen sich keine Sorgen um die Capacitor-Konfiguration machen, sie wird nie zu Capgo hochgeladen
+Sie müssen sich keine Sorgen um die Capacitor-Konfiguration machen, sie wird nie zu CodePushGo hochgeladen
 
 Wenn alle Benutzer ihre Apps aktualisiert haben (dies kann bis zu 3/4 Monate dauern), können Sie "defaultChannel" aus Ihrer Capacitor-Konfiguration entfernen
 

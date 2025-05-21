@@ -15,8 +15,8 @@ Capgo dan capacitor-updater hadir dengan sistem channel yang canggih
 
 ## Menugaskan perangkat ke channel:
 
-* Jadikan channel sebagai default, setiap kali perangkat baru meminta pembaruan ke Capgo, channel ini akan merespons
-* Kirim **deviceId** (dengan metode [**getDeviceId**](/docs/plugin/api#getdeviceid)) ke backend Anda dan tugaskan dengan API publik Capgo
+* Jadikan channel sebagai default, setiap kali perangkat baru meminta pembaruan ke CodePushGo, channel ini akan merespons
+* Kirim **deviceId** (dengan metode [**getDeviceId**](/docs/plugin/api#getdeviceid)) ke backend Anda dan tugaskan dengan API publik CodePushGo
 * Buat channel dapat ditugaskan sendiri (dengan metode [**setChannel**](/docs/plugin/api#setchannel)), dan biarkan perangkat berlangganan ke channel (dengan atau tanpa interaksi pengguna) dengan metode `setChannel` dari plugin
 * Gunakan opsi `defaultChannel` dalam [config](/docs/plugin/settings#defaultchannel) untuk mengatur channel default untuk semua perangkat dengan konfigurasi plugin ini
 

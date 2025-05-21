@@ -7,13 +7,13 @@ locale: id
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Channel Live Update mengarah ke build bundle JS tertentu dari aplikasi Anda yang akan dibagikan dengan perangkat yang dikonfigurasi untuk mendengarkan channel tersebut untuk pembaruan. Ketika Anda [menginstal Capgo Live Updates SDK](/docs/getting-started/quickstart/) di aplikasi Anda, setiap binary native yang dikonfigurasi ke channel tersebut akan memeriksa pembaruan yang tersedia setiap kali aplikasi diluncurkan. Anda dapat mengubah build yang ditunjuk channel kapan saja dan juga dapat kembali ke build sebelumnya jika diperlukan.
+Channel Live Update mengarah ke build bundle JS tertentu dari aplikasi Anda yang akan dibagikan dengan perangkat yang dikonfigurasi untuk mendengarkan channel tersebut untuk pembaruan. Ketika Anda [menginstal CodePushGo Live Updates SDK](/docs/getting-started/quickstart/) di aplikasi Anda, setiap binary native yang dikonfigurasi ke channel tersebut akan memeriksa pembaruan yang tersedia setiap kali aplikasi diluncurkan. Anda dapat mengubah build yang ditunjuk channel kapan saja dan juga dapat kembali ke build sebelumnya jika diperlukan.
 
 ## Menyiapkan Channel
 
 Setiap aplikasi dilengkapi dengan channel default bernama "Production" yang tidak dapat dihapus. Untuk menambahkan channel baru:
 
-1. Buka bagian "Channels" di dashboard Capgo
+1. Buka bagian "Channels" di dashboard CodePushGo
 2. Klik tombol "New Channel"
 3. Masukkan nama untuk channel dan klik "Create"
 
@@ -52,7 +52,7 @@ Properti `defaultChannel` akan selalu menimpa channel default cloud. Tapi Anda m
 
 ## Menetapkan Bundle ke Channel
 
-Untuk menerapkan live update, Anda perlu mengunggah build bundle JS baru dan menetapkannya ke channel. Anda dapat melakukan ini dalam satu langkah dengan Capgo CLI:
+Untuk menerapkan live update, Anda perlu mengunggah build bundle JS baru dan menetapkannya ke channel. Anda dapat melakukan ini dalam satu langkah dengan CodePushGo CLI:
 
 ```shell
 npx @capgo/cli@latest bundle upload --channel=Development
@@ -60,11 +60,11 @@ npx @capgo/cli@latest bundle upload --channel=Development
 
 Ini akan mengunggah aset web yang telah di-build dan menetapkan bundle baru sebagai build aktif untuk channel `Development`. Setiap aplikasi yang dikonfigurasi untuk mendengarkan channel tersebut akan menerima pembaruan saat mereka memeriksa pembaruan berikutnya.
 
-Anda juga dapat menetapkan build ke channel dari bagian "Bundles" di dashboard Capgo. Klik ikon menu di sebelah build dan pilih "Assign to Channel" untuk memilih channel untuk build tersebut.
+Anda juga dapat menetapkan build ke channel dari bagian "Bundles" di dashboard CodePushGo. Klik ikon menu di sebelah build dan pilih "Assign to Channel" untuk memilih channel untuk build tersebut.
 
 ## Versi Bundle dan Channel
 
-Penting untuk dicatat bahwa bundle di Capgo bersifat global untuk aplikasi Anda, tidak spesifik untuk channel individual. Bundle yang sama dapat ditetapkan ke beberapa channel.
+Penting untuk dicatat bahwa bundle di CodePushGo bersifat global untuk aplikasi Anda, tidak spesifik untuk channel individual. Bundle yang sama dapat ditetapkan ke beberapa channel.
 
 Saat memversikan bundle Anda, kami merekomendasikan menggunakan semantic versioning [semver](https://semver.org/) dengan pengidentifikasi pre-release untuk build khusus channel. Misalnya, rilis beta mungkin diversion sebagai `123-beta1`.
 
@@ -100,15 +100,15 @@ Build yang dipilih akan segera menjadi build aktif untuk channel tersebut lagi. 
 
 ## Mengotomatisasi Deployment
 
-Untuk alur kerja yang lebih canggih, Anda dapat mengotomatisasi deployment live update Anda sebagai bagian dari pipeline CI/CD Anda. Dengan mengintegrasikan Capgo ke dalam proses build Anda, Anda dapat secara otomatis mengunggah bundle baru dan menetapkannya ke channel setiap kali Anda push ke branch tertentu atau membuat rilis baru.
+Untuk alur kerja yang lebih canggih, Anda dapat mengotomatisasi deployment live update Anda sebagai bagian dari pipeline CI/CD Anda. Dengan mengintegrasikan CodePushGo ke dalam proses build Anda, Anda dapat secara otomatis mengunggah bundle baru dan menetapkannya ke channel setiap kali Anda push ke branch tertentu atau membuat rilis baru.
 
-Lihat dokumen [Integrasi CI/CD](/docs/getting-started/cicd-integration/) untuk mempelajari lebih lanjut tentang mengotomatisasi live update Capgo.
+Lihat dokumen [Integrasi CI/CD](/docs/getting-started/cicd-integration/) untuk mempelajari lebih lanjut tentang mengotomatisasi live update CodePushGo.
 
 ## Menerapkan ke Perangkat
 
 Sekarang setelah Anda memahami channel, Anda siap untuk mulai menerapkan live update ke perangkat nyata. Proses dasarnya adalah:
 
-1. Instal SDK Capgo di aplikasi Anda
+1. Instal SDK CodePushGo di aplikasi Anda
 2. Konfigurasi aplikasi untuk mendengarkan channel yang Anda inginkan
 3. Unggah build dan tetapkan ke channel tersebut
 4. Luncurkan aplikasi dan tunggu pembaruannya!

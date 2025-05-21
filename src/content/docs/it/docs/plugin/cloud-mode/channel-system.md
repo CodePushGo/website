@@ -15,8 +15,8 @@ Capgo e capacitor-updater sono dotati di un potente sistema di canali
 
 ## Assegnare dispositivi a un canale:
 
-* Rendere il canale predefinito, ogni volta che un nuovo dispositivo chiede un aggiornamento a Capgo questo canale risponderà
-* Inviare il **deviceId** (con il metodo [**getDeviceId**](/docs/plugin/api#getdeviceid)) al tuo backend e assegnarlo con l'API pubblica di Capgo
+* Rendere il canale predefinito, ogni volta che un nuovo dispositivo chiede un aggiornamento a CodePushGo questo canale risponderà
+* Inviare il **deviceId** (con il metodo [**getDeviceId**](/docs/plugin/api#getdeviceid)) al tuo backend e assegnarlo con l'API pubblica di CodePushGo
 * Rendere il canale auto-assegnabile (con il metodo [**setChannel**](/docs/plugin/api#setchannel)), e lasciare che il dispositivo si iscriva al canale (con o senza interazione dell'utente) con il metodo `setChannel` del plugin
 * Utilizzare l'opzione `defaultChannel` nella [configurazione](/docs/plugin/settings#defaultchannel) per impostare il canale predefinito per tutti i dispositivi con questa configurazione del plugin
 

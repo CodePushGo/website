@@ -1,6 +1,6 @@
 ---
 title: Manuale
-description: Come utilizzare manualmente gli aggiornamenti di Capgo
+description: Come utilizzare manualmente gli aggiornamenti di CodePushGo
 sidebar:
   order: 3
 locale: it
@@ -21,7 +21,7 @@ Penso che renderebbe il nostro mondo un posto migliore aprendo invece di combatt
 
 Per renderlo possibile, è necessario che tutti noi facciamo la nostra parte, incluso te 🥹
 
-Se l'offerta Capgo cloud non fa per te, sostieni un Maker indipendente [QUI](https://github.com/sponsors/riderx/) alle tue condizioni
+Se l'offerta CodePushGo cloud non fa per te, sostieni un Maker indipendente [QUI](https://github.com/sponsors/riderx/) alle tue condizioni
 :::
 
 ## Installazione rapida

@@ -7,21 +7,21 @@ locale: it
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Quando rilasci un aggiornamento della tua app Capgo, probabilmente vuoi che i tuoi utenti lo ricevano il prima possibile. Ma non vuoi nemmeno interrompere la loro esperienza costringendoli ad attendere un download o riavviare l'app nel mezzo di una sessione.
+Quando rilasci un aggiornamento della tua app CodePushGo, probabilmente vuoi che i tuoi utenti lo ricevano il prima possibile. Ma non vuoi nemmeno interrompere la loro esperienza costringendoli ad attendere un download o riavviare l'app nel mezzo di una sessione.
 
-Il comportamento di aggiornamento di Capgo è progettato per trovare un equilibrio tra la distribuzione rapida degli aggiornamenti e la minimizzazione delle interruzioni per i tuoi utenti.
+Il comportamento di aggiornamento di CodePushGo è progettato per trovare un equilibrio tra la distribuzione rapida degli aggiornamenti e la minimizzazione delle interruzioni per i tuoi utenti.
 
 ## Flusso di Aggiornamento Predefinito
 
-Di default, ecco come Capgo gestisce gli aggiornamenti dell'app:
+Di default, ecco come CodePushGo gestisce gli aggiornamenti dell'app:
 
 <Steps>
 
-1. All'avvio dell'app, il plugin Capgo verifica se è disponibile un nuovo aggiornamento
+1. All'avvio dell'app, il plugin CodePushGo verifica se è disponibile un nuovo aggiornamento
 
 2. Se viene trovato un aggiornamento, viene scaricato in background mentre l'utente continua a utilizzare la versione corrente dell'app
 
-3. Una volta completato il download, Capgo attende che l'utente metta l'app in background o la chiuda completamente
+3. Una volta completato il download, CodePushGo attende che l'utente metta l'app in background o la chiuda completamente
 
 4. Quando l'utente avvia nuovamente l'app, utilizzerà la versione aggiornata
 
@@ -93,7 +93,7 @@ Nota che la condizione `kill` attualmente attiva l'aggiornamento dopo il primo e
 
 ## Applicazione Immediata degli Aggiornamenti
 
-Per aggiornamenti critici o app con stato molto semplice, potresti voler applicare un aggiornamento non appena viene scaricato, senza attendere un evento di background o chiusura. Capgo supporta questo tramite l'opzione di configurazione `directUpdate`.
+Per aggiornamenti critici o app con stato molto semplice, potresti voler applicare un aggiornamento non appena viene scaricato, senza attendere un evento di background o chiusura. CodePushGo supporta questo tramite l'opzione di configurazione `directUpdate`.
 
 `directUpdate` viene impostato nel tuo file `capacitor.config.ts`, non nel codice JavaScript:
 
@@ -113,7 +113,7 @@ const config: CapacitorConfig = {
 export default config;
 ```
 
-Con `directUpdate` abilitato, Capgo applicherà immediatamente un aggiornamento non appena il download è completato, anche se l'utente sta attivamente utilizzando l'app.
+Con `directUpdate` abilitato, CodePushGo applicherà immediatamente un aggiornamento non appena il download è completato, anche se l'utente sta attivamente utilizzando l'app.
 
 Nota che poiché `directUpdate` è una configurazione nativa, richiede alcune gestioni aggiuntive nel tuo codice JavaScript.
 
@@ -151,4 +151,4 @@ Se abiliti `directUpdate`, raccomandiamo di:
 - Salvare e ripristinare lo stato dell'app secondo necessità per evitare di perdere i progressi dell'utente
 - Testare accuratamente il comportamento di aggiornamento della tua app per assicurarti che non ci siano transizioni brusche, stati persi o cambiamenti di posizione disorientanti
 
-Nella maggior parte dei casi, il comportamento di aggiornamento predefinito fornisce il miglior equilibrio tra la distribuzione rapida degli aggiornamenti e la minimizzazione delle interruzioni. Ma per app con esigenze specifiche, Capgo fornisce la flessibilità di personalizzare quando e come vengono applicati gli aggiornamenti.
+Nella maggior parte dei casi, il comportamento di aggiornamento predefinito fornisce il miglior equilibrio tra la distribuzione rapida degli aggiornamenti e la minimizzazione delle interruzioni. Ma per app con esigenze specifiche, CodePushGo fornisce la flessibilità di personalizzare quando e come vengono applicati gli aggiornamenti.

@@ -225,7 +225,7 @@ Diese Einstellung erfordert, dass Sie die App vor dem Benutzer verbergen, währe
 ```
 
 ## `defaultChannel`
-Legt den Standard-Kanal für die App fest. Dies überschreibt jeden anderen in Capgo eingestellten Kanal, wenn der Kanal das Überschreiben erlaubt
+Legt den Standard-Kanal für die App fest. Dies überschreibt jeden anderen in CodePushGo eingestellten Kanal, wenn der Kanal das Überschreiben erlaubt
 
 ```json
 // capacitorconfigjson
@@ -239,7 +239,7 @@ Legt den Standard-Kanal für die App fest. Dies überschreibt jeden anderen in C
 ```
 
 ## `appId`
-Legt die appId für die App fest. Dies überschreibt alle anderen Wege, die appId zu erhalten. Dies ist nützlich, wenn Sie eine andere appId in Capgo und in Ihrem nativen Code haben möchten
+Legt die appId für die App fest. Dies überschreibt alle anderen Wege, die appId zu erhalten. Dies ist nützlich, wenn Sie eine andere appId in CodePushGo und in Ihrem nativen Code haben möchten
 :::note
 Dies ist der neue Weg, die appId festzulegen. Der alte Weg wird weiterhin unterstützt
 :::
@@ -255,7 +255,7 @@ Dies ist der neue Weg, die appId festzulegen. Der alte Weg wird weiterhin unters
 ```
 
 ## `version`
-Legt die Version für die App fest. Dies überschreibt alle anderen Wege, die Version zu erhalten. Dies ist nützlich, wenn Sie eine andere Version in Capgo und in Ihrem nativen Code haben möchten
+Legt die Version für die App fest. Dies überschreibt alle anderen Wege, die Version zu erhalten. Dies ist nützlich, wenn Sie eine andere Version in CodePushGo und in Ihrem nativen Code haben möchten
 :::note
 Dies ist der neue Weg, die Version festzulegen. Der alte Weg wird weiterhin unterstützt
 :::

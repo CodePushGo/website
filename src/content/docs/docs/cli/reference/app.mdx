@@ -1,12 +1,12 @@
 ---
 title: 📱 app
-description: 📱 Manage your Capgo app settings and configurations in Capgo Cloud.
+description: 📱 Manage your CodePushGo app settings and configurations in CodePushGo Cloud.
 sidebar_label: app
 sidebar:
   order: 5
 ---
 
-📱 Manage your Capgo app settings and configurations in Capgo Cloud.
+📱 Manage your CodePushGo app settings and configurations in CodePushGo Cloud.
 
 ### <a id="app-add"></a> ➕ **Add**
 
@@ -16,7 +16,7 @@ sidebar:
 npx @capgo/cli@latest app add
 ```
 
-➕ Add a new app to Capgo Cloud with a unique app ID in the format com.test.app.
+➕ Add a new app to CodePushGo Cloud with a unique app ID in the format com.test.app.
 All options can be guessed from config if not provided.
 
 **Example:**
@@ -29,8 +29,8 @@ npx @capgo/cli@latest app add com.example.app --name "My App" --icon ./icon.png
 
 | Param          | Type          | Description          |
 | -------------- | ------------- | -------------------- |
-| **-n,** | <code>string</code> | App name for display in Capgo Cloud |
-| **-i,** | <code>string</code> | App icon path for display in Capgo Cloud |
+| **-n,** | <code>string</code> | App name for display in CodePushGo Cloud |
+| **-i,** | <code>string</code> | App icon path for display in CodePushGo Cloud |
 | **-a,** | <code>string</code> | API key to link to your account |
 
 ### <a id="app-delete"></a> 🗑️ **Delete**
@@ -39,7 +39,7 @@ npx @capgo/cli@latest app add com.example.app --name "My App" --icon ./icon.png
 npx @capgo/cli@latest app delete
 ```
 
-🗑️ Delete an app from Capgo Cloud, optionally specifying a version to delete only that bundle.
+🗑️ Delete an app from CodePushGo Cloud, optionally specifying a version to delete only that bundle.
 
 **Example:**
 
@@ -61,7 +61,7 @@ npx @capgo/cli@latest app delete com.example.app
 npx @capgo/cli@latest app list
 ```
 
-📋 List all apps registered under your account in Capgo Cloud.
+📋 List all apps registered under your account in CodePushGo Cloud.
 
 **Example:**
 
@@ -81,7 +81,7 @@ npx @capgo/cli@latest app list
 npx @capgo/cli@latest app debug
 ```
 
-🐞 Listen for live update events in Capgo Cloud to debug your app.
+🐞 Listen for live update events in CodePushGo Cloud to debug your app.
 Optionally target a specific device for detailed diagnostics.
 
 **Example:**
@@ -127,7 +127,7 @@ npx @capgo/cli@latest app setting plugins.CapacitorUpdater.defaultChannel --stri
 npx @capgo/cli@latest app set
 ```
 
-⚙️ Update settings for an existing app in Capgo Cloud, such as name, icon, or retention period for bundles.
+⚙️ Update settings for an existing app in CodePushGo Cloud, such as name, icon, or retention period for bundles.
 Retention of 0 means infinite storage.
 
 **Example:**
@@ -140,8 +140,8 @@ npx @capgo/cli@latest app set com.example.app --name "Updated App" --retention 3
 
 | Param          | Type          | Description          |
 | -------------- | ------------- | -------------------- |
-| **-n,** | <code>string</code> | App name for display in Capgo Cloud |
-| **-i,** | <code>string</code> | App icon path for display in Capgo Cloud |
+| **-n,** | <code>string</code> | App name for display in CodePushGo Cloud |
+| **-i,** | <code>string</code> | App icon path for display in CodePushGo Cloud |
 | **-a,** | <code>string</code> | API key to link to your account |
 | **-r,** | <code>string</code> | Retention period of app bundle in days, 0 by default = infinite |
 

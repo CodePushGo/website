@@ -1,27 +1,27 @@
 ---
 title: Update Behavior
-description: "Explore the comprehensive update behavior of Capgo, designed to deliver seamless updates to your app users without interrupting their experience."
+description: "Explore the comprehensive update behavior of CodePushGo, designed to deliver seamless updates to your app users without interrupting their experience."
 sidebar:
   order: 3
 ---
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-When you release an update to your Capgo app, you probably want your users to receive that update as soon as possible. But you also don't want to disrupt their experience by forcing them to wait for a download or restart the app in the middle of a session.
+When you release an update to your CodePushGo app, you probably want your users to receive that update as soon as possible. But you also don't want to disrupt their experience by forcing them to wait for a download or restart the app in the middle of a session.
 
 Capgo's update behavior is designed to strike a balance between delivering updates quickly and minimizing disruption to your users.
 
 ## Default Update Flow
 
-By default, here's how Capgo handles app updates:
+By default, here's how CodePushGo handles app updates:
 
 <Steps>
 
-1. On app launch, the Capgo plugin checks to see if a new update is available.
+1. On app launch, the CodePushGo plugin checks to see if a new update is available.
 
 2. If an update is found, it's downloaded in the background while the user continues using the current version of the app.
 
-3. Once the download completes, Capgo waits for the user to either background the app or kill it entirely.
+3. Once the download completes, CodePushGo waits for the user to either background the app or kill it entirely.
 
 4. When the user next launches the app, they'll be running the updated version.
 
@@ -93,7 +93,7 @@ Note that the `kill` condition currently triggers the update after the first kil
 
 ## Applying Updates Immediately
 
-For critical updates or apps with very simple state, you may want to apply an update as soon as it's downloaded, without waiting for a background or kill event. Capgo supports this via the `directUpdate` configuration option.
+For critical updates or apps with very simple state, you may want to apply an update as soon as it's downloaded, without waiting for a background or kill event. CodePushGo supports this via the `directUpdate` configuration option.
 
 `directUpdate` is set in your `capacitor.config.ts` file, not in JavaScript code:
 
@@ -113,7 +113,7 @@ const config: CapacitorConfig = {
 export default config;
 ```
 
-With `directUpdate` enabled, Capgo will immediately apply an update as soon as the download completes, even if the user is actively using the app.
+With `directUpdate` enabled, CodePushGo will immediately apply an update as soon as the download completes, even if the user is actively using the app.
 
 Note that because `directUpdate` is a native configuration, it requires some additional handling in your JavaScript code.
 
@@ -151,4 +151,4 @@ If you do enable `directUpdate`, we recommend:
 - Saving and restoring the app state as needed to avoid losing user progress.
 - Thoroughly testing your app's update behavior to ensure there are no jarring transitions, lost state, or disorienting location changes.
 
-In most cases, the default update behavior provides the best balance of delivering updates quickly and minimizing disruption. But for apps with specific needs, Capgo provides the flexibility to customize when and how updates are applied.
+In most cases, the default update behavior provides the best balance of delivering updates quickly and minimizing disruption. But for apps with specific needs, CodePushGo provides the flexibility to customize when and how updates are applied.

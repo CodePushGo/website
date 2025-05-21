@@ -1,6 +1,6 @@
 ---
 title: 메뉴얼
-description: Capgo 업데이트를 수동으로 사용하는 방법
+description: CodePushGo 업데이트를 수동으로 사용하는 방법
 sidebar:
   order: 3
 locale: ko
@@ -21,7 +21,7 @@ locale: ko
 
 이를 가능하게 하려면 여러분을 포함한 우리 모두가 각자의 역할을 해야 합니다 🥹
 
-만약 Capgo 클라우드 제안이 적합하지 않다면, [여기서](https://github.com/sponsors/riderx/) 부트스트랩 메이커를 여러분의 조건으로 후원해주세요.
+만약 CodePushGo 클라우드 제안이 적합하지 않다면, [여기서](https://github.com/sponsors/riderx/) 부트스트랩 메이커를 여러분의 조건으로 후원해주세요.
 :::
 
 ## 빠른 설치

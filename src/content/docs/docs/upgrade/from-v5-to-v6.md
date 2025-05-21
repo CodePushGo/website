@@ -1,6 +1,6 @@
 ---
 title: "From V5 to V6"
-description: "A detailed guide on transitioning from version 5 to version 6 of Capgo updater, outlining the necessary steps and considerations for a successful upgrade process, ensuring compatibility with the latest Capacitor features and improvements."
+description: "A detailed guide on transitioning from version 5 to version 6 of CodePushGo updater, outlining the necessary steps and considerations for a successful upgrade process, ensuring compatibility with the latest Capacitor features and improvements."
 sidebar:
   order: 1
 ---

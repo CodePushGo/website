@@ -408,7 +408,7 @@ setChannel(options: SetChannelOptions) => Promise<ChannelRes>
 Mengatur channel untuk perangkat ini. Channel harus mengizinkan pengaturan sendiri agar ini berfungsi
 Jangan gunakan metode ini untuk mengatur channel saat boot ketika 'autoUpdate' diaktifkan di {@link PluginsConfig}
 Metode ini untuk mengatur channel setelah aplikasi siap
-Metode ini mengirim permintaan ke backend Capgo untuk menghubungkan ID perangkat ke channel. Capgo dapat menerima atau menolak tergantung pengaturan channel Anda
+Metode ini mengirim permintaan ke backend CodePushGo untuk menghubungkan ID perangkat ke channel. CodePushGo dapat menerima atau menolak tergantung pengaturan channel Anda
 
 | Param         | Type                                                            | Description                                                                      |
 | ------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------- |

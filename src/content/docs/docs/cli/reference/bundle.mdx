@@ -1,12 +1,12 @@
 ---
 title: 📦 bundle
-description: 📦 Manage app bundles for deployment in Capgo Cloud, including upload, compatibility checks, and encryption.
+description: 📦 Manage app bundles for deployment in CodePushGo Cloud, including upload, compatibility checks, and encryption.
 sidebar_label: bundle
 sidebar:
   order: 4
 ---
 
-📦 Manage app bundles for deployment in Capgo Cloud, including upload, compatibility checks, and encryption.
+📦 Manage app bundles for deployment in CodePushGo Cloud, including upload, compatibility checks, and encryption.
 
 ### <a id="bundle-upload"></a> ⬆️ **Upload**
 
@@ -16,15 +16,15 @@ sidebar:
 npx @capgo/cli@latest bundle upload
 ```
 
-⬆️ Upload a new app bundle to Capgo Cloud for distribution, optionally linking to a channel or external URL.
+⬆️ Upload a new app bundle to CodePushGo Cloud for distribution, optionally linking to a channel or external URL.
 External option supports privacy concerns or large apps (>200MB) by storing only the link.
 Capgo never inspects external content. Encryption adds a trustless security layer.
 Version must be > 0.0.0 and unique.
 > ℹ️ External option helps with corporate privacy concerns and apps larger than 200MB by storing only the link.
 
-> ℹ️ Capgo Cloud never looks at the content in the link for external options or in the code when stored.
+> ℹ️ CodePushGo Cloud never looks at the content in the link for external options or in the code when stored.
 
-> ℹ️ You can add a second layer of security with encryption, making Capgo trustless.
+> ℹ️ You can add a second layer of security with encryption, making CodePushGo trustless.
 
 > ℹ️ Version should be greater than "0.0.0" and cannot be overridden or reused after deletion for security reasons.
 
@@ -42,7 +42,7 @@ npx @capgo/cli@latest bundle upload com.example.app --path ./dist --channel prod
 | **-a,** | <code>string</code> | API key to link to your account |
 | **-p,** | <code>string</code> | Path of the folder to upload, if not provided it will use the webDir set in capacitor.config |
 | **-c,** | <code>string</code> | Channel to link to |
-| **-e,** | <code>string</code> | Link to external URL instead of upload to Capgo Cloud |
+| **-e,** | <code>string</code> | Link to external URL instead of upload to CodePushGo Cloud |
 | **--iv-session-key** | <code>string</code> | Set the IV and session key for bundle URL external |
 | **--s3-region** | <code>string</code> | Region for your S3 bucket |
 | **--s3-apikey** | <code>string</code> | API key for your S3 endpoint |
@@ -66,22 +66,22 @@ npx @capgo/cli@latest bundle upload com.example.app --path ./dist --channel prod
 | **--ignore-checksum-check** | <code>boolean</code> | Ignores the checksum check when uploading |
 | **--timeout** | <code>string</code> | Timeout for the upload process in seconds |
 | **--multipart** | <code>boolean</code> | Uses multipart protocol to upload data to S3, Deprecated, use tus instead |
-| **--zip** | <code>boolean</code> | Upload the bundle using zip to Capgo cloud (legacy) |
-| **--tus** | <code>boolean</code> | Upload the bundle using TUS to Capgo cloud |
+| **--zip** | <code>boolean</code> | Upload the bundle using zip to CodePushGo cloud (legacy) |
+| **--tus** | <code>boolean</code> | Upload the bundle using TUS to CodePushGo cloud |
 | **--tus-chunk-size** | <code>string</code> | Chunk size for the TUS upload |
-| **--partial** | <code>boolean</code> | Upload partial files to Capgo cloud |
-| **--partial-only** | <code>boolean</code> | Upload only partial files to Capgo cloud, skip the zipped file, useful for big bundle |
+| **--partial** | <code>boolean</code> | Upload partial files to CodePushGo cloud |
+| **--partial-only** | <code>boolean</code> | Upload only partial files to CodePushGo cloud, skip the zipped file, useful for big bundle |
 | **--encrypted-checksum** | <code>string</code> | An encrypted checksum (signature). Used only when uploading an external bundle. |
 | **--auto-set-bundle** | <code>boolean</code> | Set the bundle in capacitor.config.json |
-| **--dry-upload** | <code>boolean</code> | Dry upload the bundle process, mean it will not upload the files but add the row in database (Used by Capgo for internal testing) |
+| **--dry-upload** | <code>boolean</code> | Dry upload the bundle process, mean it will not upload the files but add the row in database (Used by CodePushGo for internal testing) |
 | **--package-json** | <code>string</code> | A list of paths to package.json. Useful for monorepos (comma separated ex: ../../package.json,./package.json) |
 | **--node-modules** | <code>string</code> | A list of paths to node_modules. Useful for monorepos (comma separated ex: ../../node_modules,./node_modules) |
 | **--encrypt-partial** | <code>boolean</code> | Encrypt the partial update files (automatically applied for updater > 6.14.4) |
 | **--delete-linked-bundle-on-upload** | <code>boolean</code> | Locates the currently linked bundle in the channel you are trying to upload to, and deletes it |
 | **--no-brotli-patterns** | <code>string</code> | Glob patterns for files to exclude from brotli compression (comma-separated) |
 | **--disable-brotli** | <code>boolean</code> | Completely disable brotli compression even if updater version supports it |
-| **--supa-host** | <code>string</code> | Supabase host URL, for self-hosted Capgo or testing |
-| **--supa-anon** | <code>string</code> | Supabase anon token, for self-hosted Capgo or testing |
+| **--supa-host** | <code>string</code> | Supabase host URL, for self-hosted CodePushGo or testing |
+| **--supa-anon** | <code>string</code> | Supabase anon token, for self-hosted CodePushGo or testing |
 
 ### <a id="bundle-compatibility"></a> 🧪 **Compatibility**
 
@@ -89,7 +89,7 @@ npx @capgo/cli@latest bundle upload com.example.app --path ./dist --channel prod
 npx @capgo/cli@latest bundle compatibility
 ```
 
-🧪 Check compatibility of a bundle with a specific channel in Capgo Cloud to ensure updates are safe.
+🧪 Check compatibility of a bundle with a specific channel in CodePushGo Cloud to ensure updates are safe.
 
 **Example:**
 
@@ -115,7 +115,7 @@ npx @capgo/cli@latest bundle compatibility com.example.app --channel production
 npx @capgo/cli@latest bundle delete
 ```
 
-🗑️ Delete a specific bundle from Capgo Cloud, optionally targeting a single version.
+🗑️ Delete a specific bundle from CodePushGo Cloud, optionally targeting a single version.
 
 **Example:**
 
@@ -137,7 +137,7 @@ npx @capgo/cli@latest bundle delete BUNDLE_ID com.example.app
 npx @capgo/cli@latest bundle list
 ```
 
-📋 List all bundles uploaded for an app in Capgo Cloud.
+📋 List all bundles uploaded for an app in CodePushGo Cloud.
 
 **Example:**
 
@@ -159,7 +159,7 @@ npx @capgo/cli@latest bundle list com.example.app
 npx @capgo/cli@latest bundle cleanup
 ```
 
-🧹 Cleanup old bundles in Capgo Cloud, keeping a specified number of recent versions or those linked to channels.
+🧹 Cleanup old bundles in CodePushGo Cloud, keeping a specified number of recent versions or those linked to channels.
 Ignores bundles in use.
 
 **Example:**

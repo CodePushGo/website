@@ -7,7 +7,7 @@ locale: id
 ---
 
 ### Mode Cloud (Direkomendasikan)
-Mode Cloud adalah pilihan yang kami rekomendasikan untuk pengelolaan pembaruan yang bebas masalah. Backend Capgo menangani semua logika pembaruan, membuat keputusan tentang pembaruan di sisi server untuk keamanan dan kontrol yang lebih baik. Mode ini mengutamakan kemudahan penggunaan: setelah diatur, berjalan dengan lancar secara mandiri, menawarkan fitur lanjutan seperti statistik, dan saluran. Mode ini juga dapat diatur dalam mode manual sehingga memberi Anda lebih banyak kontrol, memungkinkan Anda menentukan kapan akan memperbarui menggunakan kode JavaScript Anda. Backend tetap mengelola apa yang diperbarui. Mode ini berbagi banyak manfaat dengan Mode Auto, terutama dalam keamanan dan fitur lanjutan, tetapi menambahkan fleksibilitas untuk mengatur waktu pembaruan sendiri.
+Mode Cloud adalah pilihan yang kami rekomendasikan untuk pengelolaan pembaruan yang bebas masalah. Backend CodePushGo menangani semua logika pembaruan, membuat keputusan tentang pembaruan di sisi server untuk keamanan dan kontrol yang lebih baik. Mode ini mengutamakan kemudahan penggunaan: setelah diatur, berjalan dengan lancar secara mandiri, menawarkan fitur lanjutan seperti statistik, dan saluran. Mode ini juga dapat diatur dalam mode manual sehingga memberi Anda lebih banyak kontrol, memungkinkan Anda menentukan kapan akan memperbarui menggunakan kode JavaScript Anda. Backend tetap mengelola apa yang diperbarui. Mode ini berbagi banyak manfaat dengan Mode Auto, terutama dalam keamanan dan fitur lanjutan, tetapi menambahkan fleksibilitas untuk mengatur waktu pembaruan sendiri.
 
 ### Mode Self Hosted
 

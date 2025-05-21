@@ -40,7 +40,7 @@ sehingga hanya tersisa ini:
 }
 ```
 
-> ⚠️ Jika Anda menggunakan server Anda sendiri dengan `autoUpdateURL`, saya akan segera memperbarui panduan ini untuk Anda. Sementara itu, lihat opsi upload baru `external` yang memungkinkan Anda untuk hanya mengirim tautan zip Anda, bukan kode di Capgo cloud. Ini dibuat untuk perusahaan dengan kebijakan privasi yang ketat. Dalam mode external, kode tidak akan pernah masuk ke server Capgo, kami hanya menyimpan URL dan mengirimkannya ke perangkat, yang akan langsung mengunduhnya. Dalam cara standar, kode dikompresi dan disimpan di server kami, tetapi kami tidak akan pernah membukanya atau menggunakannya juga
+> ⚠️ Jika Anda menggunakan server Anda sendiri dengan `autoUpdateURL`, saya akan segera memperbarui panduan ini untuk Anda. Sementara itu, lihat opsi upload baru `external` yang memungkinkan Anda untuk hanya mengirim tautan zip Anda, bukan kode di CodePushGo cloud. Ini dibuat untuk perusahaan dengan kebijakan privasi yang ketat. Dalam mode external, kode tidak akan pernah masuk ke server CodePushGo, kami hanya menyimpan URL dan mengirimkannya ke perangkat, yang akan langsung mengunduhnya. Dalam cara standar, kode dikompresi dan disimpan di server kami, tetapi kami tidak akan pernah membukanya atau menggunakannya juga
 
 ## Apa yang berubah
 

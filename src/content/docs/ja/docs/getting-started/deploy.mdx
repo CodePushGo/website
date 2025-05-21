@@ -44,7 +44,7 @@ Capgo SDKのインストールと設定が完了したら、最初のライブ�
       <TabItem label="Github Actions">
       ```yml
       // github/workflows/build_and_deploy.yml
-    name: Build source code and send to Capgo
+    name: Build source code and send to CodePushGo
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -68,7 +68,7 @@ Capgo SDKのインストールと設定が完了したら、最初のライブ�
             run: npm install
           - name: Build
             run: npm run build
-          - name: Deploy to Capgo
+          - name: Deploy to CodePushGo
             run: bunx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} --channel ${{ env.CHANNEL }}
             env:
               CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}

@@ -40,7 +40,7 @@ pour ne laisser que ceci :
 }
 ```
 
-> ⚠️ Si vous utilisiez votre serveur avec `autoUpdateURL`, je mettrai à jour ce guide prochentiellement pour vous. En attendant, jetez un œil à la nouvelle option de téléchargement `external` qui vous permet d'envoyer uniquement le lien de votre zip, pas le code dans Capgo cloud. Cela a été conçu pour les entreprises ayant des politiques de confidentialité strictes. En mode externe, le code n'arrivera jamais sur le serveur Capgo, nous stockons uniquement l'URL et l'envoyons à l'appareil, qui le téléchargera directement. De manière standard, le code est compressé et stocké dans notre serveur, mais nous ne l'ouvrirons ni ne l'utiliserons jamais.
+> ⚠️ Si vous utilisiez votre serveur avec `autoUpdateURL`, je mettrai à jour ce guide prochentiellement pour vous. En attendant, jetez un œil à la nouvelle option de téléchargement `external` qui vous permet d'envoyer uniquement le lien de votre zip, pas le code dans CodePushGo cloud. Cela a été conçu pour les entreprises ayant des politiques de confidentialité strictes. En mode externe, le code n'arrivera jamais sur le serveur CodePushGo, nous stockons uniquement l'URL et l'envoyons à l'appareil, qui le téléchargera directement. De manière standard, le code est compressé et stocké dans notre serveur, mais nous ne l'ouvrirons ni ne l'utiliserons jamais.
 
 ## Ce qui change
 

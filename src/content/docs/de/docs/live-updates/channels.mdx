@@ -13,7 +13,7 @@ Ein Live-Update-Kanal verweist auf einen bestimmten JS-Bundle-Build Ihrer App, d
 
 Jede App wird mit einem Standardkanal namens "Production" ausgeliefert, der nicht gelöscht werden kann. So fügen Sie neue Kanäle hinzu:
 
-1. Gehen Sie zum Bereich "Channels" im Capgo Dashboard
+1. Gehen Sie zum Bereich "Channels" im CodePushGo Dashboard
 2. Klicken Sie auf den Button "New Channel"
 3. Geben Sie einen Namen für den Kanal ein und klicken Sie auf "Create"
 
@@ -52,7 +52,7 @@ Die `defaultChannel`-Eigenschaft überschreibt immer den Cloud-Standardkanal. Si
 
 ## Zuweisen eines Bundles zu einem Kanal
 
-Um ein Live-Update bereitzustellen, müssen Sie einen neuen JS-Bundle-Build hochladen und einem Kanal zuweisen. Sie können dies in einem Schritt mit der Capgo CLI tun:
+Um ein Live-Update bereitzustellen, müssen Sie einen neuen JS-Bundle-Build hochladen und einem Kanal zuweisen. Sie können dies in einem Schritt mit der CodePushGo CLI tun:
 
 ```shell
 npx @capgo/cli@latest bundle upload --channel=Development
@@ -60,11 +60,11 @@ npx @capgo/cli@latest bundle upload --channel=Development
 
 Dies lädt Ihre gebauten Web-Assets hoch und setzt den neuen Bundle als aktiven Build für den `Development`-Kanal. Alle Apps, die für diesen Kanal konfiguriert sind, erhalten das Update beim nächsten Überprüfen.
 
-Sie können Builds auch über den "Bundles"-Bereich des Capgo Dashboards Kanälen zuweisen. Klicken Sie auf das Menü-Symbol neben einem Build und wählen Sie "Assign to Channel", um den Kanal für diesen Build auszuwählen.
+Sie können Builds auch über den "Bundles"-Bereich des CodePushGo Dashboards Kanälen zuweisen. Klicken Sie auf das Menü-Symbol neben einem Build und wählen Sie "Assign to Channel", um den Kanal für diesen Build auszuwählen.
 
 ## Bundle-Versionierung und Kanäle
 
-Es ist wichtig zu beachten, dass Bundles in Capgo global für Ihre App sind und nicht spezifisch für einzelne Kanäle. Dasselbe Bundle kann mehreren Kanälen zugewiesen werden.
+Es ist wichtig zu beachten, dass Bundles in CodePushGo global für Ihre App sind und nicht spezifisch für einzelne Kanäle. Dasselbe Bundle kann mehreren Kanälen zugewiesen werden.
 
 Bei der Versionierung Ihrer Bundles empfehlen wir die Verwendung von Semantic Versioning [semver](https://semver.org/) mit Pre-Release-Kennungen für kanalspezifische Builds. Ein Beta-Release könnte beispielsweise als `1.2.3-beta.1` versioniert sein.
 
@@ -98,15 +98,15 @@ Der ausgewählte Build wird sofort wieder zum aktiven Build für diesen Kanal. A
 
 ## Automatisierung von Deployments
 
-Für fortgeschrittenere Workflows können Sie Ihre Live-Update-Deployments als Teil Ihrer CI/CD-Pipeline automatisieren. Durch die Integration von Capgo in Ihren Build-Prozess können Sie automatisch neue Bundles hochladen und Kanälen zuweisen, wenn Sie zu bestimmten Branches pushen oder neue Releases erstellen.
+Für fortgeschrittenere Workflows können Sie Ihre Live-Update-Deployments als Teil Ihrer CI/CD-Pipeline automatisieren. Durch die Integration von CodePushGo in Ihren Build-Prozess können Sie automatisch neue Bundles hochladen und Kanälen zuweisen, wenn Sie zu bestimmten Branches pushen oder neue Releases erstellen.
 
-Schauen Sie sich die [CI/CD Integration](/docs/getting-started/cicd-integration/) Dokumentation an, um mehr über die Automatisierung von Capgo Live-Updates zu erfahren.
+Schauen Sie sich die [CI/CD Integration](/docs/getting-started/cicd-integration/) Dokumentation an, um mehr über die Automatisierung von CodePushGo Live-Updates zu erfahren.
 
 ## Bereitstellung auf einem Gerät
 
 Nachdem Sie die Kanäle verstanden haben, können Sie mit der Bereitstellung von Live-Updates auf echten Geräten beginnen. Der grundlegende Prozess ist:
 
-1. Installieren Sie das Capgo SDK in Ihrer App
+1. Installieren Sie das CodePushGo SDK in Ihrer App
 2. Konfigurieren Sie die App, um auf Ihren gewünschten Kanal zu hören
 3. Laden Sie einen Build hoch und weisen Sie ihn diesem Kanal zu
 4. Starten Sie die App und warten Sie auf das Update!

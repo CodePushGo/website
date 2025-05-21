@@ -6,13 +6,13 @@ sidebar:
 locale: id
 ---
 
-Mode ini memungkinkan pengembang untuk menggunakan capacitor-updater dengan mode auto-update dan mengirim pembaruan melalui channel Capgo atau yang setara
+Mode ini memungkinkan pengembang untuk menggunakan capacitor-updater dengan mode auto-update dan mengirim pembaruan melalui channel CodePushGo atau yang setara
 
 ### Prasyarat
 
-Pastikan versi aplikasi Anda menggunakan [https://semverorg/](https://semverorg/) sebelum menggunakan auto-update Capgo
+Pastikan versi aplikasi Anda menggunakan [https://semverorg/](https://semverorg/) sebelum menggunakan auto-update CodePushGo
 
-Ini adalah konvensi yang digunakan untuk mengelola versi di Capgo
+Ini adalah konvensi yang digunakan untuk mengelola versi di CodePushGo
 
 Ada dua cara untuk mengatur versi di aplikasi Anda:
 
@@ -61,10 +61,10 @@ Klik [daftar](https://capgo.app) untuk membuat akun Anda
 
 Server memungkinkan Anda mengelola channel dan versi dan banyak lagi
 
-`autoUpdate` akan menggunakan data dari `capacitorconfig` untuk mengidentifikasi server Capgo
+`autoUpdate` akan menggunakan data dari `capacitorconfig` untuk mengidentifikasi server CodePushGo
 
 :::note
-Anda masih dapat menggunakan Capgo Cloud tanpa mengirim kode Anda ke server kami jika hal tersebut tidak diizinkan oleh perusahaan Anda
+Anda masih dapat menggunakan CodePushGo Cloud tanpa mengirim kode Anda ke server kami jika hal tersebut tidak diizinkan oleh perusahaan Anda
 :::
 
 #### Validasi versi

@@ -1,6 +1,6 @@
 ---
 title: Handbuch
-description: Verwendung des manuellen Capgo-Updates
+description: Verwendung des manuellen CodePushGo-Updates
 sidebar:
   order: 3
 locale: de
@@ -21,7 +21,7 @@ Ich denke, es würde unsere Welt zu einem besseren Ort machen, wenn wir öffnen 
 
 Um dies zu ermöglichen, ist es notwendig, dass wir alle unseren Teil dazu beitragen, auch Sie 🥹
 
-Wenn das Capgo-Cloud-Angebot nicht zu Ihnen passt, unterstützen Sie einen bootstrapped Maker [HIER](https://github.com/sponsors/riderx/) zu Ihren Bedingungen
+Wenn das CodePushGo-Cloud-Angebot nicht zu Ihnen passt, unterstützen Sie einen bootstrapped Maker [HIER](https://github.com/sponsors/riderx/) zu Ihren Bedingungen
 :::
 
 ## Schnellinstallation

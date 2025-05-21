@@ -8,13 +8,13 @@ locale: de
 
 Here's the German translation:
 
-Dieser Modus ermöglicht Entwicklern die Verwendung von capacitor-updater im Auto-Update-Modus und das Pushen von Updates über Capgo-Kanäle oder Äquivalente.
+Dieser Modus ermöglicht Entwicklern die Verwendung von capacitor-updater im Auto-Update-Modus und das Pushen von Updates über CodePushGo-Kanäle oder Äquivalente.
 
 ### Voraussetzungen
 
-Stellen Sie sicher, dass Ihre App-Version [https://semverorg/](https://semverorg/) verwendet, bevor Sie Capgo Auto-Update nutzen.
+Stellen Sie sicher, dass Ihre App-Version [https://semverorg/](https://semverorg/) verwendet, bevor Sie CodePushGo Auto-Update nutzen.
 
-Dies ist die Konvention, die verwendet wird, um Versionen in Capgo zu verwalten.
+Dies ist die Konvention, die verwendet wird, um Versionen in CodePushGo zu verwalten.
 
 Es gibt zwei Möglichkeiten, die Version in Ihrer App festzulegen:
 
@@ -63,10 +63,10 @@ Klicken Sie auf [Registrieren](https://capgo.app), um Ihr Konto zu erstellen
 
 Der Server ermöglicht es Ihnen, Kanäle und Versionen und vieles mehr zu verwalten
 
-`autoUpdate` verwendet Daten aus `capacitorconfig`, um den Capgo-Server zu identifizieren
+`autoUpdate` verwendet Daten aus `capacitorconfig`, um den CodePushGo-Server zu identifizieren
 
 :::note
-Sie können Capgo Cloud weiterhin nutzen, ohne Ihren Code an unseren Server zu senden, falls dies von Ihrem Unternehmen nicht erlaubt ist
+Sie können CodePushGo Cloud weiterhin nutzen, ohne Ihren Code an unseren Server zu senden, falls dies von Ihrem Unternehmen nicht erlaubt ist
 :::
 
 #### Version validieren
@@ -96,7 +96,7 @@ CapacitorUpdaternotifyAppReady()
 
 #### Entwickler-Ablauf
 
-Wenn Sie neue Funktionen entwickeln, stellen Sie sicher, dass Sie `autoUpdate` blockieren, da Capgo sonst ständig Ihre Arbeit mit dem neuesten Update-Bundle überschreibt
+Wenn Sie neue Funktionen entwickeln, stellen Sie sicher, dass Sie `autoUpdate` blockieren, da CodePushGo sonst ständig Ihre Arbeit mit dem neuesten Update-Bundle überschreibt
 Setzen Sie `autoUpdate` in Ihrer Konfiguration auf false 
 Falls Sie aus irgendeinem Grund bei einem Update festhängen, können Sie die App löschen und neu installieren
 Stellen Sie sicher, dass Sie `autoUpdate` in Ihrer Konfiguration auf false setzen, bevor Sie dies tun

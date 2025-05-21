@@ -9,7 +9,7 @@ locale: it
 
 import { Steps, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 
-Utilizza la funzionalità Live Updates di Capgo per aggiornare i bundle JavaScript della tua app in remoto e in tempo reale. Invia aggiornamenti JS direttamente ai tuoi utenti senza passare attraverso il processo di revisione dell'app store per correggere bug e rilasciare nuove funzionalità istantaneamente.
+Utilizza la funzionalità Live Updates di CodePushGo per aggiornare i bundle JavaScript della tua app in remoto e in tempo reale. Invia aggiornamenti JS direttamente ai tuoi utenti senza passare attraverso il processo di revisione dell'app store per correggere bug e rilasciare nuove funzionalità istantaneamente.
 
 <Aside>
 
@@ -19,13 +19,13 @@ I Live Updates sono limitati alle modifiche dei bundle JavaScript. Se hai bisogn
 
 ## Come funzionano i Live Updates
 
-Il sistema Live Update di Capgo ha due componenti chiave:
+Il sistema Live Update di CodePushGo ha due componenti chiave:
 
-1. L'SDK Capgo, che installi nella tua app. L'SDK verifica la disponibilità di aggiornamenti e li scarica in background.
+1. L'SDK CodePushGo, che installi nella tua app. L'SDK verifica la disponibilità di aggiornamenti e li scarica in background.
 
 2. I Canali, che ti permettono di indirizzare gli aggiornamenti a specifici gruppi di utenti. Puoi usare i canali per gestire diverse tracce di rilascio, come `Production`, `Staging` e `Dev`.
 
-Quando carichi un nuovo bundle JS su Capgo e lo assegni a un canale, l'SDK Capgo nelle app configurate per quel canale rileverà l'aggiornamento e lo scaricherà. Al successivo riavvio dell'app, verrà caricato il nuovo bundle.
+Quando carichi un nuovo bundle JS su CodePushGo e lo assegni a un canale, l'SDK CodePushGo nelle app configurate per quel canale rileverà l'aggiornamento e lo scaricherà. Al successivo riavvio dell'app, verrà caricato il nuovo bundle.
 
 ## Per iniziare
 
@@ -33,11 +33,11 @@ Per iniziare a utilizzare i Live Updates, segui questi passaggi:
 
 <Steps>
 
-1. Completa il [Quickstart di Capgo](/docs/getting-started/quickstart) per configurare la tua app in Capgo e installare l'SDK Capgo
+1. Completa il [Quickstart di CodePushGo](/docs/getting-started/quickstart) per configurare la tua app in CodePushGo e installare l'SDK CodePushGo
 
-2. Nel codice della tua app, chiama `CapacitorUpdater.notifyAppReady()` dopo che la tua app ha terminato l'inizializzazione. Questo comunica all'SDK Capgo che la tua app è pronta a ricevere aggiornamenti
+2. Nel codice della tua app, chiama `CapacitorUpdater.notifyAppReady()` dopo che la tua app ha terminato l'inizializzazione. Questo comunica all'SDK CodePushGo che la tua app è pronta a ricevere aggiornamenti
 
-3. Compila il tuo bundle JS e caricalo su Capgo:
+3. Compila il tuo bundle JS e caricalo su CodePushGo:
    ```shell
    npm run build
    npx @capgo/cli@latest bundle upload --channel=Production 
@@ -54,21 +54,21 @@ Per iniziare a utilizzare i Live Updates, segui questi passaggi:
 
 Consulta la guida [Deploying Live Updates](/docs/getting-started/deploy) per maggiori dettagli
 
-## La CLI di Capgo
+## La CLI di CodePushGo
 
-La CLI di Capgo è uno strumento potente che permette agli sviluppatori di interagire con i servizi di Capgo dalle proprie pipeline CI/CD. Con la CLI, hai un controllo granulare su quando le build vengono prodotte e distribuite, permettendoti di integrare Capgo nei tuoi flussi di lavoro aziendali esistenti.
+La CLI di CodePushGo è uno strumento potente che permette agli sviluppatori di interagire con i servizi di CodePushGo dalle proprie pipeline CI/CD. Con la CLI, hai un controllo granulare su quando le build vengono prodotte e distribuite, permettendoti di integrare CodePushGo nei tuoi flussi di lavoro aziendali esistenti.
 
-### A cosa serve la CLI di Capgo?
+### A cosa serve la CLI di CodePushGo?
 
-La CLI di Capgo è progettata per sviluppatori e team che necessitano di maggior controllo e flessibilità nei loro flussi di lavoro di aggiornamento live. Utilizzando la CLI nelle tue pipeline CI/CD, puoi:
+La CLI di CodePushGo è progettata per sviluppatori e team che necessitano di maggior controllo e flessibilità nei loro flussi di lavoro di aggiornamento live. Utilizzando la CLI nelle tue pipeline CI/CD, puoi:
 
-- Decidere esattamente quando costruire e distribuire gli aggiornamenti, invece di affidarti all'automazione integrata di Capgo
+- Decidere esattamente quando costruire e distribuire gli aggiornamenti, invece di affidarti all'automazione integrata di CodePushGo
 - Inserire i tuoi processi, come la firma del codice, il test QA o le approvazioni dei manager, tra le fasi di build e deploy
-- Integrare Capgo nei tuoi strumenti e flussi di lavoro DevOps esistenti
+- Integrare CodePushGo nei tuoi strumenti e flussi di lavoro DevOps esistenti
 
 ### Autenticazione
 
-Per utilizzare la CLI di Capgo, dovrai autenticarti con la tua chiave API. Puoi generare una chiave API nelle impostazioni del tuo account Capgo.
+Per utilizzare la CLI di CodePushGo, dovrai autenticarti con la tua chiave API. Puoi generare una chiave API nelle impostazioni del tuo account CodePushGo.
 
 Per accedere e memorizzare in modo sicuro la tua chiave API, esegui:
 
@@ -80,13 +80,13 @@ Questo comando verrà poi salvato per un uso futuro. Non dovrai fornire la tua c
 
 ### Differenze chiave rispetto ad altri strumenti CLI
 
-Se hai familiarità con altri strumenti CLI per aggiornamenti live, ci sono alcune cose importanti da notare sulla CLI di Capgo:
+Se hai familiarità con altri strumenti CLI per aggiornamenti live, ci sono alcune cose importanti da notare sulla CLI di CodePushGo:
 
-- Capgo utilizza una singola CLI sia per lo sviluppo che per i casi d'uso CI/CD, poiché Capgo è focalizzato esclusivamente sul set di funzionalità di aggiornamento live
+- CodePushGo utilizza una singola CLI sia per lo sviluppo che per i casi d'uso CI/CD, poiché CodePushGo è focalizzato esclusivamente sul set di funzionalità di aggiornamento live
 
-- La CLI di Capgo non richiede un passaggio di installazione separato. È inclusa nel pacchetto `@capgo/cli` e può essere eseguita direttamente utilizzando `npx`
+- La CLI di CodePushGo non richiede un passaggio di installazione separato. È inclusa nel pacchetto `@capgo/cli` e può essere eseguita direttamente utilizzando `npx`
 
-- La CLI di Capgo è progettata specificamente per il flusso di lavoro di aggiornamento live, quindi potrebbe non includere alcune funzionalità o comandi presenti in strumenti CLI più generici
+- La CLI di CodePushGo è progettata specificamente per il flusso di lavoro di aggiornamento live, quindi potrebbe non includere alcune funzionalità o comandi presenti in strumenti CLI più generici
 
 ## Prossimi passi
 

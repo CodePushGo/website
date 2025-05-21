@@ -19,7 +19,7 @@ Opciones:
 - `-a, --apikey <apikey>`: Clave API para vincular a tu cuenta
 - `-p, --path <path>`: Ruta a la carpeta a subir (por defecto el `webDir` en `capacitorconfig`)
 - `-c, --channel <channel>`: Canal al que vincular el paquete
-- `-e, --external <url>`: Enlace a una URL externa en lugar de subir a Capgo Cloud
+- `-e, --external <url>`: Enlace a una URL externa en lugar de subir a CodePushGo Cloud
 - `--iv-session-key <key>`: Establecer la IV y clave de sesión para una URL de paquete externo
 - `--s3-region <region>`: Región para tu bucket S3
 - `--s3-apikey <apikey>`: Clave API para tu endpoint S3
@@ -45,8 +45,8 @@ Opciones:
 - `--multipart`: Usar el protocolo multipart para subir datos a S3 (obsoleto, usar `--tus` en su lugar)
 - `--tus`: Subir el paquete usando el protocolo tus
 - `--tus-chunk-size <tusChunkSize>`: Tamaño del chunk para la subida tus
-- `--partial`: Subir solo archivos modificados a Capgo Cloud
-- `--partial-only`: Subir solo archivos parciales a Capgo Cloud, omitiendo el archivo comprimido (útil para paquetes grandes)
+- `--partial`: Subir solo archivos modificados a CodePushGo Cloud
+- `--partial-only`: Subir solo archivos parciales a CodePushGo Cloud, omitiendo el archivo comprimido (útil para paquetes grandes)
 - `--encrypted-checksum <encryptedChecksum>`: Checksum encriptado (firma) para un paquete externo
 - `--auto-set-bundle`: Establecer automáticamente la versión del paquete en `capacitorconfigjson`
 - `--dry-upload`: Realizar una prueba de subida sin subir realmente los archivos (útil para pruebas)

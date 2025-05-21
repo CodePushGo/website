@@ -15,8 +15,8 @@ Capgo와 capacitor-updater는 강력한 채널 시스템을 제공합니다
 
 ## 기기를 채널에 할당하기:
 
-* 채널을 기본값으로 설정하면 새로운 기기가 Capgo에 업데이트를 요청할 때마다 이 채널이 응답
-* [**getDeviceId**](/docs/plugin/api#getdeviceid) 메소드로 **deviceId**를 백엔드에 전송하고 Capgo 공개 API로 할당
+* 채널을 기본값으로 설정하면 새로운 기기가 CodePushGo에 업데이트를 요청할 때마다 이 채널이 응답
+* [**getDeviceId**](/docs/plugin/api#getdeviceid) 메소드로 **deviceId**를 백엔드에 전송하고 CodePushGo 공개 API로 할당
 * 채널을 자체 할당 가능하도록 설정([**setChannel**](/docs/plugin/api#setchannel) 메소드)하고 플러그인의 `setChannel` 메소드를 사용하여 기기가 채널을 구독하도록 함(사용자 상호작용 여부 선택)
 * [config](/docs/plugin/settings#defaultchannel)의 `defaultChannel` 옵션을 사용하여 이 플러그인 구성의 모든 기기에 대한 기본 채널 설정
 
@@ -42,7 +42,7 @@ Capgo와 capacitor-updater는 강력한 채널 시스템을 제공합니다
 | **개발 빌드 허용** | 개발 빌드가 이 채널에서 업데이트를 받을 수 있도록 허용 |
 
 :::note
-CI/CD가 Google Play에 버전을 보내도록 구성된 경우, Google Play는 매번 20개 이상의 실제 기기에서 앱을 실행합니다. Capgo는 통계에 포함되는 것을 방지하기 위해 새로운 번들의 처음 4시간 동안 Google 데이터 센터 IP를 차단합니다.
+CI/CD가 Google Play에 버전을 보내도록 구성된 경우, Google Play는 매번 20개 이상의 실제 기기에서 앱을 실행합니다. CodePushGo는 통계에 포함되는 것을 방지하기 위해 새로운 번들의 처음 4시간 동안 Google 데이터 센터 IP를 차단합니다.
 :::
 
 :::note

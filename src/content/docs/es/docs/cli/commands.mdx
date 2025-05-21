@@ -1,6 +1,6 @@
 ---
 title: Comandos
-description: Documentación CLI de Capgo
+description: Documentación CLI de CodePushGo
 sidebar:
   order: 2
 locale: es
@@ -24,10 +24,10 @@ Todos los comandos deben ejecutarse en la carpeta de tu aplicación con el proye
 
 Este método está aquí para guiarte paso a paso
 
-Agregará tu aplicación a Capgo
+Agregará tu aplicación a CodePushGo
 Agregará el código a tu aplicación para validar la actualización
 Asimismo, construirá tu aplicación
-Además, subirá tu aplicación a Capgo
+Además, subirá tu aplicación a CodePushGo
 Y te ayudará a verificar si la actualización funciona
 
 ### **Iniciar sesión**
@@ -48,7 +48,7 @@ usa `--apikey=********` en cualquier comando para sobrescribirlo
 
 `npx @capgo/cli doctor`
 
-Comando para verificar si estás actualizado con los paquetes de Capgo
+Comando para verificar si estás actualizado con los paquetes de CodePushGo
 
 Este comando también será útil para reportar errores
 
@@ -64,7 +64,7 @@ Este comando también será útil para reportar errores
 
 Opcionalmente, puedes proporcionar:
 
-* `--icon [/ruta/a/mi/icono]` para tener un icono personalizado mostrado en la aplicación web de Capgo
+* `--icon [/ruta/a/mi/icono]` para tener un icono personalizado mostrado en la aplicación web de CodePushGo
 * `--name [test]` para tener un nombre personalizado en la lista
 * `--apikey [key]` API key para vincular a tu cuenta
 * `--retention [retention]` período de retención del paquete de la aplicación en días, 0 por defecto = infinito
@@ -87,7 +87,7 @@ Ejemplo de `capacitorconfigjson` para appId y AppName, el icono se busca en la c
 
 Opcionalmente, puedes proporcionar:
 
-* `--icon [/ruta/a/mi/icono]` para tener un icono personalizado mostrado en la aplicación web de Capgo
+* `--icon [/ruta/a/mi/icono]` para tener un icono personalizado mostrado en la aplicación web de CodePushGo
 * `--name [test]` para tener un nombre personalizado en la lista
 * `--retention [retention]` período de retención del paquete de la aplicación en días, 0 por defecto = infinito
 * `--apikey [key]` API key para vincular a tu cuenta
@@ -153,7 +153,7 @@ Opcionalmente, puedes proporcionar:
 * `--apikey <apikey>` API key para vincular a tu cuenta
 * `--path <path>` Ruta de la carpeta a subir
 * `--channel <channel>` Canal para vincular
-* `--external <url>` Enlace a URL externa en lugar de subir a Capgo Cloud
+* `--external <url>` Enlace a URL externa en lugar de subir a CodePushGo Cloud
 * `--iv-session-key <key>` Establecer la IV y clave de sesión para URL de paquete externo
 * `--s3-endpoint <s3Endpoint>` URL del endpoint S3 No funciona con carga Parcial u opción externa
 * `--s3-region <region>` Región para tu bucket S3
@@ -176,7 +176,7 @@ Opcionalmente, puedes proporcionar:
 * `--ignore-metadata-check` Ignora la verificación de metadatos (node_modules) al subir
 * `--ignore-checksum-check` Ignora la verificación de suma de comprobación al subir
 * `--timeout <timeout>` Tiempo límite para el proceso de carga en segundos
-* `--partial` No sube archivos parciales a Capgo cloud
+* `--partial` No sube archivos parciales a CodePushGo cloud
 * `--tus` Sube el paquete usando el protocolo tus
 * `--multipart` Usa protocolo multipart para subir datos a S3, Obsoleto, usa TUS en su lugar
 * `--encrypted-checksum <encryptedChecksum>` Una suma de comprobación cifrada (firma) Usado solo al subir un paquete externo
@@ -184,11 +184,11 @@ Opcionalmente, puedes proporcionar:
 * `--auto-set-bundle` Establecer el paquete en capacitorconfigjson
 * `--node-modules <nodeModules>` Una lista de rutas a node_modules Útil para monorepos (separado por comas ej: //node_modules,/node_modules)
 
-> ⭐️ La opción externa ayuda a desbloquear 2 casos: corporativos con preocupaciones de privacidad, no enviar el código a terceros y aplicaciones mayores a 200 MB Con esta configuración, Capgo solo almacena el enlace al zip y envía el enlace a todas las aplicaciones
+> ⭐️ La opción externa ayuda a desbloquear 2 casos: corporativos con preocupaciones de privacidad, no enviar el código a terceros y aplicaciones mayores a 200 MB Con esta configuración, CodePushGo solo almacena el enlace al zip y envía el enlace a todas las aplicaciones
 
-> 👀 Capgo cloud nunca mira lo que hay en el enlace (para la opción externa), o en el código cuando está almacenado
+> 👀 CodePushGo cloud nunca mira lo que hay en el enlace (para la opción externa), o en el código cuando está almacenado
 
-> 🔑 Puedes agregar una segunda capa de seguridad usando cifrado, entonces Capgo no podrá ver ni modificar nada, se vuelve "sin confianza"
+> 🔑 Puedes agregar una segunda capa de seguridad usando cifrado, entonces CodePushGo no podrá ver ni modificar nada, se vuelve "sin confianza"
 
 Ejemplo de `packagejson` para versión
 

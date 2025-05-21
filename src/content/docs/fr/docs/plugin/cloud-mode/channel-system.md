@@ -15,8 +15,8 @@ Capgo et capacitor-updater sont livrés avec un puissant système de canaux
 
 ## Assigner des appareils à un canal :
 
-* Définir le canal par défaut, chaque fois qu'un nouvel appareil demande une mise à jour à Capgo, ce canal répondra
-* Envoyer le **deviceId** (avec la méthode [**getDeviceId**](/docs/plugin/api#getdeviceid)) à votre backend et l'assigner avec l'API publique Capgo
+* Définir le canal par défaut, chaque fois qu'un nouvel appareil demande une mise à jour à CodePushGo, ce canal répondra
+* Envoyer le **deviceId** (avec la méthode [**getDeviceId**](/docs/plugin/api#getdeviceid)) à votre backend et l'assigner avec l'API publique CodePushGo
 * Rendre le canal auto-assignable (avec la méthode [**setChannel**](/docs/plugin/api#setchannel)), et laisser l'appareil s'abonner au canal (avec ou sans interaction utilisateur) avec la méthode `setChannel` du plugin
 * Utiliser l'option `defaultChannel` dans la [configuration](/docs/plugin/settings#defaultchannel) pour définir le canal par défaut pour tous les appareils avec cette configuration du plugin
 

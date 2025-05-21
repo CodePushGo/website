@@ -19,7 +19,7 @@ Opsi:
 - `-a, --apikey <apikey>`: Kunci API untuk menghubungkan ke akun Anda
 - `-p, --path <path>`: Path ke folder yang akan diunggah (default ke `webDir` di `capacitorconfig`)
 - `-c, --channel <channel>`: Channel untuk menghubungkan bundel
-- `-e, --external <url>`: Link ke URL eksternal daripada mengunggah ke Capgo Cloud
+- `-e, --external <url>`: Link ke URL eksternal daripada mengunggah ke CodePushGo Cloud
 - `--iv-session-key <key>`: Tetapkan IV dan kunci sesi untuk URL bundel eksternal
 - `--s3-region <region>`: Region untuk bucket S3 Anda
 - `--s3-apikey <apikey>`: Kunci API untuk endpoint S3 Anda
@@ -45,8 +45,8 @@ Opsi:
 - `--multipart`: Gunakan protokol multipart untuk mengunggah data ke S3 (tidak direkomendasikan, gunakan `--tus` sebagai gantinya)
 - `--tus`: Unggah bundel menggunakan protokol tus
 - `--tus-chunk-size <tusChunkSize>`: Ukuran chunk untuk unggahan tus
-- `--partial`: Unggah hanya file yang berubah ke Capgo Cloud
-- `--partial-only`: Unggah hanya file parsial ke Capgo Cloud, melewati file zip (berguna untuk bundel besar)
+- `--partial`: Unggah hanya file yang berubah ke CodePushGo Cloud
+- `--partial-only`: Unggah hanya file parsial ke CodePushGo Cloud, melewati file zip (berguna untuk bundel besar)
 - `--encrypted-checksum <encryptedChecksum>`: Checksum terenkripsi (tanda tangan) untuk bundel eksternal
 - `--auto-set-bundle`: Secara otomatis menetapkan versi bundel di `capacitorconfigjson`
 - `--dry-upload`: Lakukan simulasi proses unggah tanpa benar-benar mengunggah file (berguna untuk pengujian)

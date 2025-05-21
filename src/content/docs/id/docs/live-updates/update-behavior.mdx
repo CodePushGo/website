@@ -7,21 +7,21 @@ locale: id
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Ketika Anda merilis pembaruan untuk aplikasi Capgo, Anda mungkin ingin pengguna menerima pembaruan tersebut secepat mungkin. Namun Anda juga tidak ingin mengganggu pengalaman mereka dengan memaksa menunggu unduhan atau memulai ulang aplikasi di tengah sesi.
+Ketika Anda merilis pembaruan untuk aplikasi CodePushGo, Anda mungkin ingin pengguna menerima pembaruan tersebut secepat mungkin. Namun Anda juga tidak ingin mengganggu pengalaman mereka dengan memaksa menunggu unduhan atau memulai ulang aplikasi di tengah sesi.
 
-Perilaku pembaruan Capgo dirancang untuk menyeimbangkan antara memberikan pembaruan dengan cepat dan meminimalkan gangguan bagi pengguna Anda.
+Perilaku pembaruan CodePushGo dirancang untuk menyeimbangkan antara memberikan pembaruan dengan cepat dan meminimalkan gangguan bagi pengguna Anda.
 
 ## Alur Pembaruan Default
 
-Secara default, berikut cara Capgo menangani pembaruan aplikasi:
+Secara default, berikut cara CodePushGo menangani pembaruan aplikasi:
 
 <Steps>
 
-1. Saat aplikasi diluncurkan, plugin Capgo memeriksa apakah ada pembaruan baru yang tersedia
+1. Saat aplikasi diluncurkan, plugin CodePushGo memeriksa apakah ada pembaruan baru yang tersedia
 
 2. Jika ditemukan pembaruan, pembaruan akan diunduh di latar belakang sementara pengguna terus menggunakan versi saat ini dari aplikasi
 
-3. Setelah unduhan selesai, Capgo menunggu pengguna menutup aplikasi ke latar belakang atau menutupnya sepenuhnya
+3. Setelah unduhan selesai, CodePushGo menunggu pengguna menutup aplikasi ke latar belakang atau menutupnya sepenuhnya
 
 4. Ketika pengguna membuka aplikasi berikutnya, mereka akan menjalankan versi yang diperbarui
 
@@ -93,7 +93,7 @@ Perhatikan bahwa kondisi `kill` saat ini memicu pembaruan setelah event penutupa
 
 ## Menerapkan Pembaruan Segera
 
-Untuk pembaruan kritis atau aplikasi dengan status yang sangat sederhana, Anda mungkin ingin menerapkan pembaruan segera setelah diunduh, tanpa menunggu event latar belakang atau penutupan. Capgo mendukung ini melalui opsi konfigurasi `directUpdate`.
+Untuk pembaruan kritis atau aplikasi dengan status yang sangat sederhana, Anda mungkin ingin menerapkan pembaruan segera setelah diunduh, tanpa menunggu event latar belakang atau penutupan. CodePushGo mendukung ini melalui opsi konfigurasi `directUpdate`.
 
 `directUpdate` diatur dalam file `capacitor.config.ts` Anda, bukan dalam kode JavaScript:
 
@@ -113,7 +113,7 @@ const config: CapacitorConfig = {
 export default config;
 ```
 
-Dengan `directUpdate` diaktifkan, Capgo akan segera menerapkan pembaruan setelah unduhan selesai, bahkan jika pengguna sedang aktif menggunakan aplikasi.
+Dengan `directUpdate` diaktifkan, CodePushGo akan segera menerapkan pembaruan setelah unduhan selesai, bahkan jika pengguna sedang aktif menggunakan aplikasi.
 
 Perhatikan bahwa karena `directUpdate` adalah konfigurasi native, ini memerlukan penanganan tambahan dalam kode JavaScript Anda.
 
@@ -151,4 +151,4 @@ Jika Anda mengaktifkan `directUpdate`, kami merekomendasikan:
 - Menyimpan dan memulihkan status aplikasi sesuai kebutuhan untuk menghindari kehilangan kemajuan pengguna
 - Menguji secara menyeluruh perilaku pembaruan aplikasi Anda untuk memastikan tidak ada transisi yang mengejutkan, status yang hilang, atau perubahan lokasi yang membingungkan
 
-Dalam kebanyakan kasus, perilaku pembaruan default memberikan keseimbangan terbaik antara memberikan pembaruan dengan cepat dan meminimalkan gangguan. Tetapi untuk aplikasi dengan kebutuhan khusus, Capgo memberikan fleksibilitas untuk menyesuaikan kapan dan bagaimana pembaruan diterapkan.
+Dalam kebanyakan kasus, perilaku pembaruan default memberikan keseimbangan terbaik antara memberikan pembaruan dengan cepat dan meminimalkan gangguan. Tetapi untuk aplikasi dengan kebutuhan khusus, CodePushGo memberikan fleksibilitas untuk menyesuaikan kapan dan bagaimana pembaruan diterapkan.

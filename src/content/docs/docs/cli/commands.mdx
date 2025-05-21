@@ -22,7 +22,7 @@ All command should be run in your app folder with capacitor project ignited prop
 
 This method is here to onboard you step by step.
 
-It will add your app to Capgo. It will add the code to your app to validate the update. Likewise, it will build your app. Furthermore, it will upload your app to Capgo. And it will help you to check if the update works.
+It will add your app to CodePushGo. It will add the code to your app to validate the update. Likewise, it will build your app. Furthermore, it will upload your app to CodePushGo. And it will help you to check if the update works.
 
 ### **Login**
 
@@ -42,7 +42,7 @@ use `--apikey=********` in any command to override it
 
 `npx @capgo/cli doctor`
 
-Command to check if you are up-to-date with Capgo packages.
+Command to check if you are up-to-date with CodePushGo packages.
 
 This command will also be useful for bug report.
 
@@ -58,7 +58,7 @@ This command will also be useful for bug report.
 
 Optionally, you can give:
 
-* `--icon [/path/to/my/icon]` to have a custom icon display in Capgo web app.
+* `--icon [/path/to/my/icon]` to have a custom icon display in CodePushGo web app.
 * `--name [test]` to have a custom name in the list.
 * `--apikey [key]` API key to link to your account.
 * `--retention [retention]` retention period of app bundle in days, 0 by default = infinite.
@@ -81,7 +81,7 @@ Example of `capacitor.config.json` for appId and AppName, the icon is guess in t
 
 Optionally, you can give:
 
-* `--icon [/path/to/my/icon]` to have a custom icon display in Capgo web app.
+* `--icon [/path/to/my/icon]` to have a custom icon display in CodePushGo web app.
 * `--name [test]` to have a custom name in the list.
 * `--retention [retention]` retention period of app bundle in days, 0 by default = infinite.
 * `--apikey [key]` API key to link to your account.
@@ -146,7 +146,7 @@ Optionally, you can give:
 * `--apikey <apikey>` API key to link to your account.
 * `--path <path>` Path of the folder to upload.
 * `--channel <channel>` Channel to link to.
-* `--external <url>` Link to external URL instead of uploading to Capgo Cloud.
+* `--external <url>` Link to external URL instead of uploading to CodePushGo Cloud.
 * `--iv-session-key <key>` Set the IV and session key for bundle URL external.
 * `--s3-endpoint <s3Endpoint>` URL of S3 endpoint. Do not work with Partial upload, or external option.
 * `--s3-region <region>` Region for your S3 bucket. 
@@ -169,7 +169,7 @@ Optionally, you can give:
 * `--ignore-metadata-check` Ignores the metadata (node_modules) check when uploading.
 * `--ignore-checksum-check` Ignores the checksum check when uploading.
 * `--timeout <timeout>` Timeout for the upload process in seconds.
-* `--partial` Does not upload partial files to Capgo cloud.
+* `--partial` Does not upload partial files to CodePushGo cloud.
 * `--tus` Upload the bundle using tus protocol.
 * `--multipart` Uses multipart protocol to upload data to S3, Deprecated, use TUS instead.
 * `--encrypted-checksum <encryptedChecksum>` An encrypted checksum (signature). Used only when uploading an external bundle.
@@ -177,11 +177,11 @@ Optionally, you can give:
 * `--auto-set-bundle` Set the bundle in capacitor.config.json.
 * `--node-modules <nodeModules>` A list of path to node_modules. Usefull for monorepos (comma separated ex: ../../node_modules,./node_modules)
 
-> ⭐️ External option helps to unlock 2 cases: corporate with privacy concern, don't send the code to a third part and app bigger than 200 MB. With this setting, Capgo store only the link to the zip and sends the link to all apps.
+> ⭐️ External option helps to unlock 2 cases: corporate with privacy concern, don't send the code to a third part and app bigger than 200 MB. With this setting, CodePushGo store only the link to the zip and sends the link to all apps.
 
-> 👀 Capgo cloud never looks at what is in the link (for external option), or in the code when stored.
+> 👀 CodePushGo cloud never looks at what is in the link (for external option), or in the code when stored.
 
-> 🔑 You can add a second layer of security by using encryption, then Capgo will not be able to look or modify anything, it becomes “trustless”.
+> 🔑 You can add a second layer of security by using encryption, then CodePushGo will not be able to look or modify anything, it becomes “trustless”.
 
 Example of `package.json` for version
 

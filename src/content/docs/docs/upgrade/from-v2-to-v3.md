@@ -1,6 +1,6 @@
 ---
 title: "From V2 to V3"
-description: "A comprehensive guide on transitioning from version 2 to version 3 of Capgo updater, detailing the necessary steps and considerations for a successful upgrade process"
+description: "A comprehensive guide on transitioning from version 2 to version 3 of CodePushGo updater, detailing the necessary steps and considerations for a successful upgrade process"
 sidebar:
   order: 4
 ---
@@ -39,7 +39,7 @@ to only let this:
 }
 ```
 
-> ⚠️ If you were using your server, with `autoUpdateURL`, I will upgrade this guide soon for you. Meanwhile, take a look at the new upload option `external` which allows you to send only the link of your zip, not the code in Capgo cloud. This has been made for companies with strict privacy policies. In external mode, the code will never land on Capgo server, we just store the URL and send it to the device, which will directly download it. In the standard way, the code is zipped and stored in our server, but we will never open it or use it either.
+> ⚠️ If you were using your server, with `autoUpdateURL`, I will upgrade this guide soon for you. Meanwhile, take a look at the new upload option `external` which allows you to send only the link of your zip, not the code in CodePushGo cloud. This has been made for companies with strict privacy policies. In external mode, the code will never land on CodePushGo server, we just store the URL and send it to the device, which will directly download it. In the standard way, the code is zipped and stored in our server, but we will never open it or use it either.
 
 ## What change
 

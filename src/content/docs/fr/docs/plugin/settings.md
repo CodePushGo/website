@@ -224,7 +224,7 @@ Ce paramètre nécessite que vous masquiez l'application à l'utilisateur pendan
 ```
 
 ## `defaultChannel`
-Définit le canal par défaut pour l'application. Cela remplacera tout autre canal défini dans Capgo si le canal permet l'écrasement
+Définit le canal par défaut pour l'application. Cela remplacera tout autre canal défini dans CodePushGo si le canal permet l'écrasement
 
 ```json
 // capacitorconfigjson
@@ -238,7 +238,7 @@ Définit le canal par défaut pour l'application. Cela remplacera tout autre can
 ```
 
 ## `appId`
-Définit l'appId pour l'application. Cela remplacera toute autre façon d'obtenir l'appId. C'est utile lorsque vous voulez avoir un appId différent dans Capgo et dans votre code natif
+Définit l'appId pour l'application. Cela remplacera toute autre façon d'obtenir l'appId. C'est utile lorsque vous voulez avoir un appId différent dans CodePushGo et dans votre code natif
 :::note
 C'est la nouvelle façon de définir l'appId. L'ancienne méthode est toujours et restera prise en charge
 :::
@@ -254,7 +254,7 @@ C'est la nouvelle façon de définir l'appId. L'ancienne méthode est toujours e
 ```
 
 ## `version`
-Définit la version pour l'application. Cela remplacera toute autre façon d'obtenir la version. C'est utile lorsque vous voulez avoir une version différente dans Capgo et dans votre code natif
+Définit la version pour l'application. Cela remplacera toute autre façon d'obtenir la version. C'est utile lorsque vous voulez avoir une version différente dans CodePushGo et dans votre code natif
 :::note
 C'est la nouvelle façon de définir la version. L'ancienne méthode est toujours et restera prise en charge
 :::

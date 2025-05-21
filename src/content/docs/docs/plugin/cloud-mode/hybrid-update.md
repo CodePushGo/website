@@ -1,6 +1,6 @@
 ---
 title: "Hybrid update"
-description: "Update methods for auto updates, learn how to use Capgo with more advanced use cases, like force updates"
+description: "Update methods for auto updates, learn how to use CodePushGo with more advanced use cases, like force updates"
 sidebar:
   order: 3
 ---

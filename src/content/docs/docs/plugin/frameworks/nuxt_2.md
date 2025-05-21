@@ -1,6 +1,6 @@
 ---
 title: "Nuxt 2"
-description: "A detailed guide on installing and configuring the Capgo plugin within a Nuxt 2 application, ensuring seamless integration and functionality."
+description: "A detailed guide on installing and configuring the CodePushGo plugin within a Nuxt 2 application, ensuring seamless integration and functionality."
 sidebar:
   order: 1
 ---

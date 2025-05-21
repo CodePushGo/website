@@ -15,7 +15,7 @@ CapgoをCI/CDパイプラインに統合することで、アプリのアップ�
 
 - **迅速な反復**：自動化されたデプロイメントにより、より頻繁に、かつ自信を持ってアップデートをリリースできます。手動のQAやリリース承認を待つ必要がありません。
 
-## Capgo CLI
+## CodePushGo CLI
 
 Capgo CLIは、CapgoをCI/CDワークフローに統合するための鍵となります。新しいバンドルバージョンのプッシュ、チャンネルの管理などのコマンドを提供します。
 
@@ -36,7 +36,7 @@ CI/CDツールの選択によって具体的な手順は異なりますが、Cap
 
 3. **`upload`コマンドの設定**：CI/CD設定に適切な引数で`upload`コマンドを実行するステップを追加します：<Code lang="yaml" title="uploadyml" code={`- run: npx @capgo/cli@latest bundle upload --channel=Production --apikey=$\{\{ secretsCAPGO_API_KEY \}\}`} />\n `Production`をデプロイしたいチャンネルに、`${{ secretsCAPGO_API_KEY }}`をAPIキーを保持する環境変数に置き換えてください。
 
-4. **Webビルド後に`upload`ステップを追加**：`upload`ステップがWebビルドの完了後に実行されることを確認してください。これにより、常に最新のコードがデプロイされます。\n GitHub Actionsの設定例：\n<Code lang="yaml" title="uploadyml" code={`name: Deploy to Capgo\n on:\n  push:\n   branches: [main]\n\njobs:\n deploy:\n runs-on: ubuntu-latest\n\n steps:\n - uses: actions/checkout@v3\n - uses: actions/setup-node@v3\n  with:\n   node-version: 18\n\n - run: npm ci\n - run: npm run build\n\n - run: npm install -g @capgo/cli\n - run: npx @capgo/cli@latest bundle upload --channel=Production --apikey=$\{\{ secretsCAPGO_API_KEY \}\}`} />
+4. **Webビルド後に`upload`ステップを追加**：`upload`ステップがWebビルドの完了後に実行されることを確認してください。これにより、常に最新のコードがデプロイされます。\n GitHub Actionsの設定例：\n<Code lang="yaml" title="uploadyml" code={`name: Deploy to CodePushGo\n on:\n  push:\n   branches: [main]\n\njobs:\n deploy:\n runs-on: ubuntu-latest\n\n steps:\n - uses: actions/checkout@v3\n - uses: actions/setup-node@v3\n  with:\n   node-version: 18\n\n - run: npm ci\n - run: npm run build\n\n - run: npm install -g @capgo/cli\n - run: npx @capgo/cli@latest bundle upload --channel=Production --apikey=$\{\{ secretsCAPGO_API_KEY \}\}`} />
 
 </Steps>
 
@@ -81,7 +81,7 @@ Semantic-releaseは、バージョン管理の自動化とリリースノート�
 1. Conventional Commits仕様に従って、次のバージョン番号を決定するためにコミットメッセージを分析します
 2. 最後のリリース以降のコミットに基づいてリリースノートを生成します
 3. 新しいリリースノートで`CHANGELOGmd`ファイルを更新します
-4. Capgo CLIの`upload`コマンドを実行し、新しいバージョン番号を渡し、差分更新用の`--partial`フラグを使用します
+4. CodePushGo CLIの`upload`コマンドを実行し、新しいバージョン番号を渡し、差分更新用の`--partial`フラグを使用します
 5. 更新された`CHANGELOGmd`、`packagejson`、その他の変更されたファイルをリポジトリにコミットします
 
 Semantic-releaseをCapgoで使用するには、CI/CD設定に`npx semantic-release`を実行するステップを追加するだけです。このステップがWebビルドの後、Capgoの`upload`ステップの前に来るようにしてください。

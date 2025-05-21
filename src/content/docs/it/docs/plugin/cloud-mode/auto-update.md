@@ -6,13 +6,13 @@ sidebar:
 locale: it
 ---
 
-Questa modalità consente agli sviluppatori di utilizzare capacitor-updater in modalità di aggiornamento automatico e inviare aggiornamenti tramite i canali Capgo o equivalenti
+Questa modalità consente agli sviluppatori di utilizzare capacitor-updater in modalità di aggiornamento automatico e inviare aggiornamenti tramite i canali CodePushGo o equivalenti
 
 ### Prerequisiti
 
-Assicurati che la versione della tua app utilizzi [https://semverorg/](https://semverorg/) prima di utilizzare l'aggiornamento automatico Capgo
+Assicurati che la versione della tua app utilizzi [https://semverorg/](https://semverorg/) prima di utilizzare l'aggiornamento automatico CodePushGo
 
-Questa è la convenzione che utilizza per gestire le versioni in Capgo
+Questa è la convenzione che utilizza per gestire le versioni in CodePushGo
 
 Ci sono due modi per impostare la versione nella tua app:
 
@@ -62,10 +62,10 @@ Clicca su [registrati](https://capgo.app) per creare il tuo account
 
 Il server ti permette di gestire canali, versioni e molto altro
 
-`autoUpdate` utilizzerà i dati da `capacitorconfig` per identificare il server Capgo
+`autoUpdate` utilizzerà i dati da `capacitorconfig` per identificare il server CodePushGo
 
 :::note
-Puoi ancora utilizzare Capgo Cloud senza inviare il tuo codice ai nostri server se ciò non è consentito dalla tua azienda
+Puoi ancora utilizzare CodePushGo Cloud senza inviare il tuo codice ai nostri server se ciò non è consentito dalla tua azienda
 :::
 
 #### Validare la versione

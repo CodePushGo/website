@@ -1,17 +1,17 @@
 ---
 title: "Auto update"
-description: "A detailed guide on implementing auto-update functionality using capacitor-updater, enabling seamless updates through Capgo channels or similar mechanisms for enhanced app management and user experience"
+description: "A detailed guide on implementing auto-update functionality using capacitor-updater, enabling seamless updates through CodePushGo channels or similar mechanisms for enhanced app management and user experience"
 sidebar:
   order: 2
 ---
 
-This mode allows developers to use capacitor-updater with auto-update mode and push updates via Capgo channels or equivalent.
+This mode allows developers to use capacitor-updater with auto-update mode and push updates via CodePushGo channels or equivalent.
 
 ### Prerequisites
 
-Make sure your app version uses [https://semver.org/](https://semver.org/) before using Capgo auto-update.
+Make sure your app version uses [https://semver.org/](https://semver.org/) before using CodePushGo auto-update.
 
-This is the convention it uses to manage versions in Capgo.
+This is the convention it uses to manage versions in CodePushGo.
 
 There are two ways to set the version in your app:
 
@@ -62,10 +62,10 @@ Click on [register](https://capgo.app) to create your account.
 
 The server allows you to manage channels and versions and much more.
 
-`autoUpdate` will use data from `capacitor.config` to identify the Capgo server
+`autoUpdate` will use data from `capacitor.config` to identify the CodePushGo server
 
 :::note
-You can still use Capgo Cloud without sending your code to our server. If that is not allowed by your company.
+You can still use CodePushGo Cloud without sending your code to our server. If that is not allowed by your company.
 :::
 
 #### Validate version

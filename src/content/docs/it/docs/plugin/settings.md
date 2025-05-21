@@ -224,7 +224,7 @@ Questa impostazione richiede di nascondere l'app all'utente mentre l'aggiornamen
 ```
 
 ## `defaultChannel`
-Imposta il canale predefinito per l'app. Questo sovrascriverà qualsiasi altro canale impostato in Capgo se il canale permette la sovrascrittura
+Imposta il canale predefinito per l'app. Questo sovrascriverà qualsiasi altro canale impostato in CodePushGo se il canale permette la sovrascrittura
 
 ```json
 // capacitorconfigjson
@@ -238,7 +238,7 @@ Imposta il canale predefinito per l'app. Questo sovrascriverà qualsiasi altro c
 ```
 
 ## `appId`
-Imposta l'appId per l'app. Questo sovrascriverà qualsiasi altro modo per ottenere l'appId. Questo è utile quando vuoi avere un appId diverso in Capgo e nel tuo codice nativo
+Imposta l'appId per l'app. Questo sovrascriverà qualsiasi altro modo per ottenere l'appId. Questo è utile quando vuoi avere un appId diverso in CodePushGo e nel tuo codice nativo
 :::note
 Questo è il nuovo modo per impostare l'appId. Il vecchio modo è ancora e rimarrà supportato
 :::
@@ -254,7 +254,7 @@ Questo è il nuovo modo per impostare l'appId. Il vecchio modo è ancora e rimar
 ```
 
 ## `version`
-Imposta la versione per l'app. Questo sovrascriverà qualsiasi altro modo per ottenere la versione. Questo è utile quando vuoi avere una versione diversa in Capgo e nel tuo codice nativo
+Imposta la versione per l'app. Questo sovrascriverà qualsiasi altro modo per ottenere la versione. Questo è utile quando vuoi avere una versione diversa in CodePushGo e nel tuo codice nativo
 :::note
 Questo è il nuovo modo per impostare la versione. Il vecchio modo è ancora e rimarrà supportato
 :::

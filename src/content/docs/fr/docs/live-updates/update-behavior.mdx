@@ -7,21 +7,21 @@ locale: fr
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Lorsque vous publiez une mise à jour de votre application Capgo, vous voulez probablement que vos utilisateurs la reçoivent le plus rapidement possible. Mais vous ne voulez pas non plus perturber leur expérience en les forçant à attendre un téléchargement ou à redémarrer l'application au milieu d'une session.
+Lorsque vous publiez une mise à jour de votre application CodePushGo, vous voulez probablement que vos utilisateurs la reçoivent le plus rapidement possible. Mais vous ne voulez pas non plus perturber leur expérience en les forçant à attendre un téléchargement ou à redémarrer l'application au milieu d'une session.
 
-Le comportement de mise à jour de Capgo est conçu pour trouver un équilibre entre la livraison rapide des mises à jour et la minimisation des perturbations pour vos utilisateurs.
+Le comportement de mise à jour de CodePushGo est conçu pour trouver un équilibre entre la livraison rapide des mises à jour et la minimisation des perturbations pour vos utilisateurs.
 
 ## Flux de mise à jour par défaut
 
-Par défaut, voici comment Capgo gère les mises à jour d'applications :
+Par défaut, voici comment CodePushGo gère les mises à jour d'applications :
 
 <Steps>
 
-1. Au lancement de l'application, le plugin Capgo vérifie si une nouvelle mise à jour est disponible
+1. Au lancement de l'application, le plugin CodePushGo vérifie si une nouvelle mise à jour est disponible
 
 2. Si une mise à jour est trouvée, elle est téléchargée en arrière-plan pendant que l'utilisateur continue d'utiliser la version actuelle de l'application
 
-3. Une fois le téléchargement terminé, Capgo attend que l'utilisateur mette l'application en arrière-plan ou la ferme complètement
+3. Une fois le téléchargement terminé, CodePushGo attend que l'utilisateur mette l'application en arrière-plan ou la ferme complètement
 
 4. Lorsque l'utilisateur relance l'application, il exécutera la version mise à jour
 
@@ -93,7 +93,7 @@ Notez que la condition `kill` déclenche actuellement la mise à jour après le 
 
 ## Application immédiate des mises à jour
 
-Pour les mises à jour critiques ou les applications avec un état très simple, vous pouvez vouloir appliquer une mise à jour dès qu'elle est téléchargée, sans attendre un événement d'arrière-plan ou de fermeture. Capgo prend en charge cela via l'option de configuration `directUpdate`.
+Pour les mises à jour critiques ou les applications avec un état très simple, vous pouvez vouloir appliquer une mise à jour dès qu'elle est téléchargée, sans attendre un événement d'arrière-plan ou de fermeture. CodePushGo prend en charge cela via l'option de configuration `directUpdate`.
 
 `directUpdate` est défini dans votre fichier `capacitor.config.ts`, pas dans le code JavaScript :
 
@@ -113,7 +113,7 @@ const config: CapacitorConfig = {
 export default config;
 ```
 
-Avec `directUpdate` activé, Capgo appliquera immédiatement une mise à jour dès que le téléchargement est terminé, même si l'utilisateur utilise activement l'application.
+Avec `directUpdate` activé, CodePushGo appliquera immédiatement une mise à jour dès que le téléchargement est terminé, même si l'utilisateur utilise activement l'application.
 
 Notez que comme `directUpdate` est une configuration native, elle nécessite une gestion supplémentaire dans votre code JavaScript.
 
@@ -151,4 +151,4 @@ Si vous activez `directUpdate`, nous recommandons :
 - Sauvegarder et restaurer l'état de l'application selon les besoins pour éviter de perdre la progression de l'utilisateur
 - Tester minutieusement le comportement de mise à jour de votre application pour s'assurer qu'il n'y a pas de transitions brusques, d'états perdus ou de changements de position désorientants
 
-Dans la plupart des cas, le comportement de mise à jour par défaut offre le meilleur équilibre entre la livraison rapide des mises à jour et la minimisation des perturbations. Mais pour les applications ayant des besoins spécifiques, Capgo offre la flexibilité de personnaliser quand et comment les mises à jour sont appliquées.
+Dans la plupart des cas, le comportement de mise à jour par défaut offre le meilleur équilibre entre la livraison rapide des mises à jour et la minimisation des perturbations. Mais pour les applications ayant des besoins spécifiques, CodePushGo offre la flexibilité de personnaliser quand et comment les mises à jour sont appliquées.

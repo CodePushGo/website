@@ -40,7 +40,7 @@ para dejar solo esto:
 }
 ```
 
-> ⚠️ Si estabas usando tu servidor con `autoUpdateURL`, actualizaré esta guía pronto. Mientras tanto, echa un vistazo a la nueva opción de carga `external` que te permite enviar solo el enlace de tu zip, no el código en Capgo cloud. Esto se ha hecho para empresas con políticas de privacidad estrictas. En modo externo, el código nunca llegará al servidor de Capgo, solo almacenamos la URL y la enviamos al dispositivo, que la descargará directamente. En la forma estándar, el código se comprime y se almacena en nuestro servidor, pero nunca lo abriremos ni lo usaremos tampoco.
+> ⚠️ Si estabas usando tu servidor con `autoUpdateURL`, actualizaré esta guía pronto. Mientras tanto, echa un vistazo a la nueva opción de carga `external` que te permite enviar solo el enlace de tu zip, no el código en CodePushGo cloud. Esto se ha hecho para empresas con políticas de privacidad estrictas. En modo externo, el código nunca llegará al servidor de CodePushGo, solo almacenamos la URL y la enviamos al dispositivo, que la descargará directamente. En la forma estándar, el código se comprime y se almacena en nuestro servidor, pero nunca lo abriremos ni lo usaremos tampoco.
 
 ## Qué cambia
 

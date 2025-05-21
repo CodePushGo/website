@@ -34,7 +34,7 @@ Capgo SDK를 설치하고 구성했다면 첫 실시간 업데이트 번들을 �
    npm run build
    ```
 
-2. 번들을 Capgo에 업로드하세요:
+2. 번들을 CodePushGo에 업로드하세요:
     <Tabs>
       <TabItem label="Console">
         ```shell
@@ -44,7 +44,7 @@ Capgo SDK를 설치하고 구성했다면 첫 실시간 업데이트 번들을 �
       <TabItem label="Github Actions">
       ```yml
       // github/workflows/build_and_deploy.yml
-    name: Build source code and send to Capgo
+    name: Build source code and send to CodePushGo
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -68,7 +68,7 @@ Capgo SDK를 설치하고 구성했다면 첫 실시간 업데이트 번들을 �
             run: npm install
           - name: Build
             run: npm run build
-          - name: Deploy to Capgo
+          - name: Deploy to CodePushGo
             run: bunx @capgo/cli@latest bundle upload -a ${{ secrets.CAPGO_TOKEN }} --channel ${{ env.CHANNEL }}
             env:
               CAPGO_TOKEN: ${{ secrets.CAPGO_TOKEN }}
@@ -107,7 +107,7 @@ Capgo SDK를 설치하고 구성했다면 첫 실시간 업데이트 번들을 �
 ### 업로드 문제 해결
 
 업로드가 실패하면 다음 사항을 확인하세요:
-- `capacitor.config.ts`의 앱 ID가 Capgo 대시보드의 앱과 일치하는지
+- `capacitor.config.ts`의 앱 ID가 CodePushGo 대시보드의 앱과 일치하는지
 - Capacitor 프로젝트의 루트에서 업로드 명령을 실행하는지
 - 웹 에셋이 빌드되어 있고 최신 상태인지
 

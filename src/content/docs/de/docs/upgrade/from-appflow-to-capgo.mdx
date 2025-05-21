@@ -1,6 +1,6 @@
 ---
-title: Migration von AppFlow zu Capgo
-description: Vollständiger Leitfaden zur Migration Ihrer App von Ionic AppFlow zu Capgo
+title: Migration von AppFlow zu CodePushGo
+description: Vollständiger Leitfaden zur Migration Ihrer App von Ionic AppFlow zu CodePushGo
 sidebar:
   order: 7
 locale: de
@@ -25,11 +25,11 @@ const config: CapacitorConfig = {
 };
 ```
 
-Diese Konfiguration hilft Ihnen, AppFlow-Funktionen den Capgo-Äquivalenten zuzuordnen.
+Diese Konfiguration hilft Ihnen, AppFlow-Funktionen den CodePushGo-Äquivalenten zuzuordnen.
 
-## Warum zu Capgo migrieren?
+## Warum zu CodePushGo migrieren?
 
-Mit der Ankündigung der Einstellung von Ionic AppFlow bietet die Migration zu Capgo einen nahtlosen Übergang für Ihren Mobile-App-Entwicklungsworkflow. Capgo bietet verbesserte Funktionen, bessere Leistung und erhebliche Kosteneinsparungen bei Beibehaltung aller wichtigen Funktionalitäten.
+Mit der Ankündigung der Einstellung von Ionic AppFlow bietet die Migration zu CodePushGo einen nahtlosen Übergang für Ihren Mobile-App-Entwicklungsworkflow. CodePushGo bietet verbesserte Funktionen, bessere Leistung und erhebliche Kosteneinsparungen bei Beibehaltung aller wichtigen Funktionalitäten.
 
 ### Hauptvorteile
 - Schnellere Update-Bereitstellung (< 1 Minute vs. 10 Minuten)
@@ -47,14 +47,14 @@ Mit der Ankündigung der Einstellung von Ionic AppFlow bietet die Migration zu C
 npm uninstall @ionic/appflow
 ```
 
-#### Capgo installieren
+#### CodePushGo installieren
 ```bash
 npm install @capgo/capacitor-updater
 npx cap sync
 ```
 
 #### Konfiguration aktualisieren
-Fügen Sie die Capgo-Konfiguration zu Ihrer `capacitor.config.json` hinzu:
+Fügen Sie die CodePushGo-Konfiguration zu Ihrer `capacitor.config.json` hinzu:
 ```json
 {
   "plugins": {
@@ -80,7 +80,7 @@ Lassen Sie uns Ihre CI/CD-Einrichtung mit unserem [verwalteten Service](https://
 
 ### 3. Kanal-Einrichtung
 
-1. Kanäle im Capgo-Dashboard erstellen:
+1. Kanäle im CodePushGo-Dashboard erstellen:
 ```bash
 npx @capgo/cli channel create production
 npx @capgo/cli channel create staging

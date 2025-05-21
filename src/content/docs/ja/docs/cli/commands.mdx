@@ -1,6 +1,6 @@
 ---
 title: Comandi
-description: Capgo CLIドキュメント
+description: CodePushGo CLIドキュメント
 sidebar:
   order: 2
 locale: ja
@@ -60,7 +60,7 @@ Capgoパッケージが最新かどうかを確認するコマンド
 
 オプションで指定可能:
 
-* `--icon [/path/to/my/icon]` Capgoウェブアプリに表示するカスタムアイコン
+* `--icon [/path/to/my/icon]` CodePushGoウェブアプリに表示するカスタムアイコン
 * `--name [test]` リストでのカスタム名
 * `--apikey [key]` アカウントにリンクするAPIキー
 * `--retention [retention]` アプリバンドルの保持期間（日数）、デフォルトは0 = 無期限
@@ -83,7 +83,7 @@ appIdとAppNameの`capacitorconfigjson`の例、アイコンはresourcesフォ�
 
 オプションで指定可能:
 
-* `--icon [/path/to/my/icon]` Capgoウェブアプリに表示するカスタムアイコン
+* `--icon [/path/to/my/icon]` CodePushGoウェブアプリに表示するカスタムアイコン
 * `--name [test]` リストでのカスタム名
 * `--retention [retention]` アプリバンドルの保持期間（日数）、デフォルトは0 = 無期限
 * `--apikey [key]` アカウントにリンクするAPIキー
@@ -148,7 +148,7 @@ Capacitor設定を編集
 * `--apikey <apikey>` アカウントにリンクするAPIキー
 * `--path <path>` アップロードするフォルダのパス
 * `--channel <channel>` リンクするチャンネル
-* `--external <url>` Capgoクラウドにアップロードする代わりに外部URLにリンク
+* `--external <url>` CodePushGoクラウドにアップロードする代わりに外部URLにリンク
 * `--iv-session-key <key>` バンドルURL外部用のIVとセッションキーを設定
 * `--s3-endpoint <s3Endpoint>` S3エンドポイントのURL 部分アップロードまたは外部オプションでは動作しません
 * `--s3-region <region>` S3バケットのリージョン
@@ -181,7 +181,7 @@ Capacitor設定を編集
 
 > ⭐️ 外部オプションは2つのケースを解決するのに役立ちます：プライバシーに関する企業の懸念、サードパーティにコードを送信しない、200 MB以上のアプリ。この設定では、Capgoはzipへのリンクのみを保存し、すべてのアプリにリンクを送信します
 
-> 👀 Capgoクラウドは、リンク内（外部オプションの場合）や保存されたコードの内容を一切確認しません
+> 👀 CodePushGoクラウドは、リンク内（外部オプションの場合）や保存されたコードの内容を一切確認しません
 
 > 🔑 暗号化を追加することで2層目のセキュリティを追加できます。そうすることでCapgoは何も確認や変更ができなくなり、「トラストレス」になります
 

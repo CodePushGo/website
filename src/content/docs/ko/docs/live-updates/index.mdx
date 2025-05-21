@@ -21,11 +21,11 @@ Capgo의 실시간 업데이트 기능을 사용하여 앱의 JavaScript 번들�
 
 Capgo의 실시간 업데이트 시스템에는 두 가지 주요 구성 요소가 있습니다:
 
-1. 앱에 설치하는 Capgo SDK. SDK는 사용 가능한 업데이트를 확인하고 백그라운드에서 다운로드합니다.
+1. 앱에 설치하는 CodePushGo SDK. SDK는 사용 가능한 업데이트를 확인하고 백그라운드에서 다운로드합니다.
 
 2. 특정 사용자 그룹에 업데이트를 대상으로 하는 채널. 채널을 사용하여 `Production`, `Staging`, `Dev`와 같은 다양한 릴리스 트랙을 관리할 수 있습니다.
 
-Capgo에 새로운 JS 번들을 업로드하고 채널에 할당하면, 해당 채널로 구성된 앱의 Capgo SDK가 업데이트를 감지하고 다운로드합니다. 앱이 다시 시작될 때 새로운 번들이 로드됩니다.
+Capgo에 새로운 JS 번들을 업로드하고 채널에 할당하면, 해당 채널로 구성된 앱의 CodePushGo SDK가 업데이트를 감지하고 다운로드합니다. 앱이 다시 시작될 때 새로운 번들이 로드됩니다.
 
 ## 시작하기
 
@@ -33,11 +33,11 @@ Capgo에 새로운 JS 번들을 업로드하고 채널에 할당하면, 해당 �
 
 <Steps>
 
-1. [Capgo 퀵스타트](/docs/getting-started/quickstart)를 완료하여 Capgo에서 앱을 설정하고 Capgo SDK를 설치하세요.
+1. [Capgo 퀵스타트](/docs/getting-started/quickstart)를 완료하여 CodePushGo에서 앱을 설정하고 CodePushGo SDK를 설치하세요.
 
-2. 앱 코드에서 앱 초기화가 완료된 후 `CapacitorUpdaternotifyAppReady()`를 호출하세요. 이는 Capgo SDK에게 앱이 업데이트를 받을 준비가 되었음을 알립니다.
+2. 앱 코드에서 앱 초기화가 완료된 후 `CapacitorUpdaternotifyAppReady()`를 호출하세요. 이는 CodePushGo SDK에게 앱이 업데이트를 받을 준비가 되었음을 알립니다.
 
-3. JS 번들을 빌드하고 Capgo에 업로드하세요:
+3. JS 번들을 빌드하고 CodePushGo에 업로드하세요:
    ```shell
    npm run build
    npx @capgo/cli@latest bundle upload --channel=Production 

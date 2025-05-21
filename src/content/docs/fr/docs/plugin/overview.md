@@ -7,7 +7,7 @@ locale: fr
 ---
 
 ### Mode Cloud (Recommandé)
-Le Mode Cloud est notre choix recommandé pour une gestion sans tracas des mises à jour. Le backend de Capgo gère toute la logique de mise à jour, prenant les décisions côté serveur pour une meilleure sécurité et un meilleur contrôle. Ce mode est axé sur la facilité d'utilisation : une fois configuré, il fonctionne de manière autonome, offrant des fonctionnalités avancées comme les statistiques et les canaux. Il peut également être configuré en mode manuel pour vous donner plus de contrôle, vous permettant de décider quand mettre à jour en utilisant votre code JavaScript. Le backend gère toujours ce qui est mis à jour. Ce mode partage de nombreux avantages avec le Mode Auto, particulièrement en termes de sécurité et de fonctionnalités avancées, mais ajoute la flexibilité de programmer vous-même les mises à jour.
+Le Mode Cloud est notre choix recommandé pour une gestion sans tracas des mises à jour. Le backend de CodePushGo gère toute la logique de mise à jour, prenant les décisions côté serveur pour une meilleure sécurité et un meilleur contrôle. Ce mode est axé sur la facilité d'utilisation : une fois configuré, il fonctionne de manière autonome, offrant des fonctionnalités avancées comme les statistiques et les canaux. Il peut également être configuré en mode manuel pour vous donner plus de contrôle, vous permettant de décider quand mettre à jour en utilisant votre code JavaScript. Le backend gère toujours ce qui est mis à jour. Ce mode partage de nombreux avantages avec le Mode Auto, particulièrement en termes de sécurité et de fonctionnalités avancées, mais ajoute la flexibilité de programmer vous-même les mises à jour.
 
 ### Mode Auto-hébergé
 

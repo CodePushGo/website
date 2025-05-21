@@ -406,7 +406,7 @@ setChannel(options: SetChannelOptions) => Promise<ChannelRes>
 Définit le canal pour cet appareil. Le canal doit autoriser l'auto-attribution pour que cela fonctionne.
 N'utilisez pas cette méthode pour définir le canal au démarrage lorsque `autoUpdate` est activé dans {@link PluginsConfig}.
 Cette méthode sert à définir le canal après que l'application est prête.
-Cette méthode envoie au backend Capgo une requête pour lier l'ID de l'appareil au canal. Capgo peut accepter ou refuser selon les paramètres de votre canal.
+Cette méthode envoie au backend CodePushGo une requête pour lier l'ID de l'appareil au canal. CodePushGo peut accepter ou refuser selon les paramètres de votre canal.
 
 | Param | Type | Description |
 | ------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------- |

@@ -29,7 +29,7 @@ Capgo CLIには、一般的なアップロードの問題に対応するため�
   ```shell
   npx @capgo/cli@latest bundle upload --package-json=path/to/package.json --node_modules=path/to/node_modules
   ```
-  Capgoはアプリの依存関係を正しくバンドルするためにこの情報を必要とします。
+  CodePushGoはアプリの依存関係を正しくバンドルするためにこの情報を必要とします。
 
 これらのフラグは`--channel`などの他のオプションと組み合わせることができます。利用可能なアップロードオプションの詳細については、[Capgo CLIドキュメント](/docs/cli/overview/)を参照してください。
 
@@ -133,7 +133,7 @@ Capgo SDKのインストールに問題がある場合、以下を確認して�
 ## CI/CD統合
 
 CI/CDパイプラインからCapgoアップロードをトリガーする際の問題：
-- Capgo認証トークンが正しく設定されているか確認
+- CodePushGo認証トークンが正しく設定されているか確認
 - Webアセットのビルド後にアップロードコマンドを実行していることを確認
 - アップロードコマンドが対象環境に対して正しいチャンネル名を使用していることを確認
 

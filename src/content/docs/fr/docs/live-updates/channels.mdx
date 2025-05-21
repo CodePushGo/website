@@ -7,13 +7,13 @@ locale: fr
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-Un canal de mise à jour en direct pointe vers une build JS spécifique de votre application qui sera partagée avec tous les appareils configurés pour écouter ce canal pour les mises à jour. Lorsque vous [installez le SDK Capgo Live Updates](/docs/getting-started/quickstart/) dans votre application, tout binaire natif configuré sur ce canal vérifiera les mises à jour disponibles à chaque lancement de l'application. Vous pouvez modifier la build vers laquelle pointe un canal à tout moment et revenir aux builds précédentes si nécessaire.
+Un canal de mise à jour en direct pointe vers une build JS spécifique de votre application qui sera partagée avec tous les appareils configurés pour écouter ce canal pour les mises à jour. Lorsque vous [installez le SDK CodePushGo Live Updates](/docs/getting-started/quickstart/) dans votre application, tout binaire natif configuré sur ce canal vérifiera les mises à jour disponibles à chaque lancement de l'application. Vous pouvez modifier la build vers laquelle pointe un canal à tout moment et revenir aux builds précédentes si nécessaire.
 
 ## Configuration d'un Canal
 
 Chaque application dispose d'un canal par défaut appelé "Production" qui ne peut pas être supprimé. Pour ajouter de nouveaux canaux :
 
-1. Allez dans la section "Canaux" du tableau de bord Capgo
+1. Allez dans la section "Canaux" du tableau de bord CodePushGo
 2. Cliquez sur le bouton "Nouveau Canal"
 3. Saisissez un nom pour le canal et cliquez sur "Créer"
 
@@ -52,7 +52,7 @@ La propriété `defaultChannel` remplacera toujours le canal par défaut du clou
 
 ## Attribution d'un Bundle à un Canal
 
-Pour déployer une mise à jour en direct, vous devez télécharger une nouvelle build JS et l'attribuer à un canal. Vous pouvez le faire en une seule étape avec le CLI Capgo :
+Pour déployer une mise à jour en direct, vous devez télécharger une nouvelle build JS et l'attribuer à un canal. Vous pouvez le faire en une seule étape avec le CLI CodePushGo :
 
 ```shell
 npx @capgo/cli@latest bundle upload --channel=Development
@@ -60,11 +60,11 @@ npx @capgo/cli@latest bundle upload --channel=Development
 
 Cela téléchargera vos ressources web construites et définira le nouveau bundle comme build active pour le canal `Development`. Toutes les applications configurées pour écouter ce canal recevront la mise à jour la prochaine fois qu'elles en vérifieront une.
 
-Vous pouvez également attribuer des builds aux canaux depuis la section "Bundles" du tableau de bord Capgo. Cliquez sur l'icône de menu à côté d'une build et sélectionnez "Attribuer au Canal" pour choisir le canal pour cette build.
+Vous pouvez également attribuer des builds aux canaux depuis la section "Bundles" du tableau de bord CodePushGo. Cliquez sur l'icône de menu à côté d'une build et sélectionnez "Attribuer au Canal" pour choisir le canal pour cette build.
 
 ## Versionnement des Bundles et Canaux
 
-Il est important de noter que les bundles dans Capgo sont globaux à votre application, et non spécifiques à des canaux individuels. Le même bundle peut être attribué à plusieurs canaux.
+Il est important de noter que les bundles dans CodePushGo sont globaux à votre application, et non spécifiques à des canaux individuels. Le même bundle peut être attribué à plusieurs canaux.
 
 Pour le versionnement de vos bundles, nous recommandons d'utiliser le versionnement sémantique [semver](https://semver.org/) avec des identifiants de pré-version pour les builds spécifiques aux canaux. Par exemple, une version bêta pourrait être versionnée comme `1.2.3-beta.1`.
 
@@ -98,15 +98,15 @@ La build sélectionnée deviendra immédiatement la build active pour ce canal. 
 
 ## Automatisation des Déploiements
 
-Pour des flux de travail plus avancés, vous pouvez automatiser vos déploiements de mises à jour en direct dans le cadre de votre pipeline CI/CD. En intégrant Capgo dans votre processus de build, vous pouvez automatiquement télécharger de nouveaux bundles et les attribuer à des canaux chaque fois que vous poussez vers certaines branches ou créez de nouvelles versions.
+Pour des flux de travail plus avancés, vous pouvez automatiser vos déploiements de mises à jour en direct dans le cadre de votre pipeline CI/CD. En intégrant CodePushGo dans votre processus de build, vous pouvez automatiquement télécharger de nouveaux bundles et les attribuer à des canaux chaque fois que vous poussez vers certaines branches ou créez de nouvelles versions.
 
-Consultez la documentation [Intégration CI/CD](/docs/getting-started/cicd-integration/) pour en savoir plus sur l'automatisation des mises à jour en direct Capgo.
+Consultez la documentation [Intégration CI/CD](/docs/getting-started/cicd-integration/) pour en savoir plus sur l'automatisation des mises à jour en direct CodePushGo.
 
 ## Déploiement vers un Appareil
 
 Maintenant que vous comprenez les canaux, vous êtes prêt à commencer à déployer des mises à jour en direct sur des appareils réels. Le processus de base est :
 
-1. Installez le SDK Capgo dans votre application
+1. Installez le SDK CodePushGo dans votre application
 2. Configurez l'application pour écouter votre canal souhaité
 3. Téléchargez une build et attribuez-la à ce canal
 4. Lancez l'application et attendez la mise à jour !

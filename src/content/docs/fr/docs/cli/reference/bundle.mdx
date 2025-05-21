@@ -19,7 +19,7 @@ Options :
 - `-a, --apikey <apikey>` : Clé API pour lier à votre compte
 - `-p, --path <path>` : Chemin vers le dossier à téléverser (par défaut le `webDir` dans `capacitorconfig`)
 - `-c, --channel <channel>` : Canal auquel lier le bundle
-- `-e, --external <url>` : Lien vers une URL externe au lieu de téléverser vers Capgo Cloud
+- `-e, --external <url>` : Lien vers une URL externe au lieu de téléverser vers CodePushGo Cloud
 - `--iv-session-key <key>` : Définir la clé IV et de session pour une URL de bundle externe
 - `--s3-region <region>` : Région pour votre bucket S3
 - `--s3-apikey <apikey>` : Clé API pour votre endpoint S3
@@ -45,8 +45,8 @@ Options :
 - `--multipart` : Utiliser le protocole multipart pour téléverser les données vers S3 (déprécié, utilisez `--tus` à la place)
 - `--tus` : Téléverser le bundle en utilisant le protocole tus
 - `--tus-chunk-size <tusChunkSize>` : Taille des chunks pour le téléversement tus
-- `--partial` : Téléverser uniquement les fichiers modifiés vers Capgo Cloud
-- `--partial-only` : Téléverser uniquement les fichiers partiels vers Capgo Cloud, en ignorant le fichier zippé (utile pour les gros bundles)
+- `--partial` : Téléverser uniquement les fichiers modifiés vers CodePushGo Cloud
+- `--partial-only` : Téléverser uniquement les fichiers partiels vers CodePushGo Cloud, en ignorant le fichier zippé (utile pour les gros bundles)
 - `--encrypted-checksum <encryptedChecksum>` : Checksum chiffré (signature) pour un bundle externe
 - `--auto-set-bundle` : Définir automatiquement la version du bundle dans `capacitorconfigjson`
 - `--dry-upload` : Effectuer une simulation du processus de téléversement sans réellement téléverser les fichiers (utile pour les tests)
