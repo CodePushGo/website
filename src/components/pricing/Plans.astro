@@ -1,8 +1,7 @@
 ---
+import * as m from '@/paraglide/messages'
 import { numberWithSpaces } from '@/services/misc'
 import type { Database } from '@/services/supabase.types'
-import { getRelativeLocaleUrl } from 'astro:i18n'
-import * as m from '@/paraglide/messages'
 
 interface Props {
   pricing: Database['public']['Tables']['plans']['Row'][]
@@ -81,23 +80,6 @@ function descToEmoji(desc: string) {
                 {m.billed_annually_at({}, { locale: Astro.locals.locale })} ${plan.price_y}
               </span>
             </p>
-            <div class="mt-6">
-              <a
-                href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
-                target="_blank"
-                title="register"
-                class:list={[
-                  'inline-flex w-full items-center justify-center rounded-xl border border-transparent px-6 py-3 text-base font-medium text-white transition-all duration-200 hover:opacity-80 focus:opacity-80 focus:ring-2 focus:ring-offset-2 focus:outline-none',
-                  {
-                    'bg-linear-to-r from-fuchsia-600 to-blue-600': plan.name === 'Maker',
-                    'bg-blue-500': plan.name !== 'Maker',
-                  },
-                ]}
-                role="button"
-              >
-                {m.days_free_trial({}, { locale: Astro.locals.locale })}
-              </a>
-            </div>
             <ul class="mt-8 space-y-4 text-black">
               <li class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 h-6 w-6 shrink-0 text-blue-600" width="32" height="32" viewBox="0 0 32 32">

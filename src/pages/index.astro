@@ -4,7 +4,6 @@ import Orgs from '@/components/Orgs.astro'
 import Testimonials from '@/components/Testimonials.astro'
 import Layout from '@/layouts/Layout.astro'
 import * as m from '@/paraglide/messages'
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import dayjs from 'dayjs'
 ---
 
@@ -63,14 +62,6 @@ import dayjs from 'dayjs'
                 class="transitiona-all animate-tilt absolute -inset-px rounded-xl bg-linear-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] opacity-70 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-100 group-hover:duration-200"
               >
               </div>
-              <a
-                href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
-                title="Get quote now"
-                class="bg-codepushgo-900 relative z-10 inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
-                role="button"
-              >
-                {m.try_for_free({}, { locale: Astro.locals.locale })}
-              </a>
             </div>
           </div>
         </div>
@@ -245,19 +236,6 @@ import dayjs from 'dayjs'
               </div>
             </div>
           </div>
-          <div class="bg-codepushgo-700 rounded-xl p-6">
-            <h3 class="text-2xl font-bold text-white">{m.performance_metrics({}, { locale: Astro.locals.locale })}</h3>
-            <div class="space-y-4 p-4">
-              <div>
-                <p class="text-4xl font-bold text-[#00AA5E]">114ms</p>
-                <p class="text-gray-300">{m.download_time_globally({}, { locale: Astro.locals.locale })}</p>
-              </div>
-              <div>
-                <p class="text-4xl font-bold text-[#FF44EC]">434ms</p>
-                <p class="text-gray-300">{m.average_api_response_time({}, { locale: Astro.locals.locale })}</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -323,14 +301,6 @@ import dayjs from 'dayjs'
               class="transitiona-all animate-tilt absolute -inset-px rounded-xl bg-linear-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] opacity-70 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-100 group-hover:duration-200"
             >
             </div>
-            <a
-              href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
-              title="Get quote now"
-              class="bg-codepushgo-900 relative inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
-              role="button"
-            >
-              {m.start_now({}, { locale: Astro.locals.locale })}
-            </a>
           </div>
         </div>
       </div>
@@ -386,15 +356,6 @@ import dayjs from 'dayjs'
             <p class="text-gray-500">{m.instantly_rollback_to_previous_version_if_needed({}, { locale: Astro.locals.locale })}</p>
           </div>
           <div class="bg-codepushgo-700 rounded-xl p-6">
-            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-900">
-              <svg class="h-6 w-6 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-bold text-white">{m.error_tracking({}, { locale: Astro.locals.locale })}</h3>
-            <p class="text-gray-500">{m.catch_and_fix_issues_before_they_affect_users({}, { locale: Astro.locals.locale })}</p>
-          </div>
-          <div class="bg-codepushgo-700 rounded-xl p-6">
             <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-900">
               <svg class="h-6 w-6 text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -427,12 +388,6 @@ import dayjs from 'dayjs'
                 <svg class="mr-2 h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <span class="font-medium text-red-700">{m.app_store_rating_bad({}, { locale: Astro.locals.locale })}</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="mr-2 h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
                 <span class="font-medium text-red-700">{m.users_stuck_with_bugs_for_weeks({}, { locale: Astro.locals.locale })}</span>
               </li>
               <li class="flex items-start">
@@ -458,12 +413,6 @@ import dayjs from 'dayjs'
           <div class="transform rounded-xl border-2 border-blue-200 bg-linear-to-br from-blue-50 to-green-50 p-8 shadow-lg transition-transform duration-200 hover:scale-105">
             <h3 class="mb-6 text-2xl font-bold text-blue-900">{m.with_capgo({}, { locale: Astro.locals.locale })}</h3>
             <ul class="space-y-4">
-              <li class="flex items-start">
-                <svg class="mr-2 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span class="font-medium text-blue-700">{m.app_store_rating_good({}, { locale: Astro.locals.locale })}</span>
-              </li>
               <li class="flex items-start">
                 <svg class="mr-2 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -712,12 +661,6 @@ import dayjs from 'dayjs'
               <p class="text-xl tracking-tight text-white">
                 {m.try_risk_free_with_a_15_days_free_trial({}, { locale: Astro.locals.locale })}
               </p>
-              <a
-                href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
-                class="bg-codepushgo-900 mx-auto mt-5 inline-block w-auto rounded-md border border-transparent px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 focus:outline-none sm:px-10"
-              >
-                {m.get_started({}, { locale: Astro.locals.locale })} &RightArrow;
-              </a>
               <p class="pt-4 tracking-tight text-white">{m.no_credit_card_required({}, { locale: Astro.locals.locale })}</p>
             </div>
           </div>

@@ -1,7 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import * as m from '@/paraglide/messages'
-import { getRelativeLocaleUrl } from 'astro:i18n'
 const title = [Astro.locals.runtimeConfig.public.brand, m.about_capgo({}, { locale: Astro.locals.locale })].join(' | ')
 const description = m.about_capgo({}, { locale: Astro.locals.locale })
 
@@ -129,22 +128,6 @@ const content = {
               <a href="https://solos.ventures" class="text-white hover:underline">solos.ventures</a> podcast.
             </p>
             <p class="font-bold text-white">{m.lets_make_app_development_amazing_together({}, { locale: Astro.locals.locale })} 🤝</p>
-            <div class="pt-4">
-              <div class="group relative mt-10 inline-flex">
-                <div
-                  class="animate-tilt absolute -inset-px rounded-xl bg-linear-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] opacity-70 blur-lg transition-all duration-1000 group-hover:-inset-1 group-hover:opacity-100 group-hover:duration-200"
-                >
-                </div>
-                <a
-                  href={getRelativeLocaleUrl(Astro.locals.locale, 'register')}
-                  title={m.get_quote_now({}, { locale: Astro.locals.locale })}
-                  class="bg-codepushgo-900 relative inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold text-white transition-all duration-200 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
-                  role="button"
-                >
-                  {m.start_now({}, { locale: Astro.locals.locale })}
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
