@@ -4,6 +4,8 @@ import { paraglideVitePlugin } from '@inlang/paraglide-js'
 import tailwindcss from '@tailwindcss/vite'
 import { filterSitemapByDefaultLocale, i18n } from 'astro-i18n-aut/integration'
 import { defineConfig, envField } from 'astro/config'
+import starlightImageZoom from 'starlight-image-zoom'
+import starlightLlmsTxt from 'starlight-llms-txt'
 import config from './configs.json'
 import { defaultLocale, localeNames, locales } from './src/services/locale'
 
@@ -28,8 +30,13 @@ export default defineConfig({
       }),
     },
   },
-  redirects: {
-  },
+  plugins: [
+    paraglideVitePlugin({
+      outdir: './src/paraglide',
+      project: './project.inlang',
+      disableAsyncLocalStorage: true,
+    }),
+  ],
   i18n: {
     locales,
     defaultLocale,
@@ -38,17 +45,12 @@ export default defineConfig({
     //   .reduce((r, h) => {
     //     r[h] = defaultLocale
     //     return r
-    //   }, {}),
+    //   }, {})
     routing: {
       redirectToDefaultLocale: true,
     },
   },
   integrations: [
-    paraglideVitePlugin({
-      outdir: './src/paraglide',
-      project: './project.inlang',
-      disableAsyncLocalStorage: true,
-    }),
     i18n({
       locales: localeNames,
       defaultLocale,
@@ -63,21 +65,23 @@ export default defineConfig({
       filter: filterSitemapByDefaultLocale({ defaultLocale }),
     }),
     starlight({
-      disable404Route: true,
       title: 'CodePushGo',
-      favicon: '/favicon.svg',
+      plugins: [starlightImageZoom({ showCaptions: false }), starlightLlmsTxt()],
+      disable404Route: true,
       logo: { src: './logo.svg' },
-      customCss: ['./src/css/global.css'],
+      markdown: { headingLinks: false },
+      customCss: ['./src/css/docs.css'],
+      expressiveCode: { themes: ['github-dark'] },
+      editLink: { baseUrl: 'https://github.com/Cap-go/website/edit/main/' },
       components: {
-        LanguageSelect: './src/components/LanguageSelect.astro',
+        Head: './src/components/doc/Head.astro',
         Search: './src/components/doc/Search.astro',
+        LanguageSelect: './src/components/doc/LanguageSelect.astro',
       },
-      editLink: {
-        baseUrl: 'https://github.com/codepushgo/website/edit/main/',
-      },
-      social: {
-        github: 'https://github.com/codepushgo/',
-      },
+      social: [
+        { icon: 'discord', label: 'Discord', href: 'https://discord.com/invite/VnYRvBfgA6' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/Cap-go/' },
+      ],
       sidebar: [
         {
           label: 'Welcome to CodePushGo',
@@ -111,47 +115,89 @@ export default defineConfig({
           autogenerate: { directory: 'docs/live-updates' },
         },
         {
-          label: 'Plugin',
-          collapsed: true,
-          items: [
-            { label: 'Overview', link: '/docs/plugin/overview' },
-            {
-              label: 'Cloud Mode',
-              items: [
-                { label: 'Getting Started', link: '/docs/plugin/cloud-mode/getting-started' },
-                { label: 'Auto Update', link: '/docs/plugin/cloud-mode/auto-update' },
-                { label: 'Channel System', link: '/docs/plugin/cloud-mode/channel-system' },
-                { label: 'Hybrid Update', link: '/docs/plugin/cloud-mode/hybrid-update' },
-                { label: 'Manual Update', link: '/docs/plugin/cloud-mode/manual-update' },
-              ],
-              collapsed: true,
-            },
-            {
-              label: 'Self Hosted',
-              items: [
-                { label: 'Getting Started', link: '/docs/plugin/self-hosted/getting-started' },
-                { label: 'Contributing', link: '/docs/plugin/self-hosted/contributing' },
-                { label: 'Auto Update', link: '/docs/plugin/self-hosted/auto-update' },
-                { label: 'Manual Update', link: '/docs/plugin/self-hosted/manual-update' },
-                { label: 'Encrypted Bundles', link: '/docs/plugin/self-hosted/encrypted-bundles' },
-                { label: 'Handling Updates', link: '/docs/plugin/self-hosted/handling-updates' },
-                { label: 'Handling Stats', link: '/docs/plugin/self-hosted/handling-stats' },
-                { label: 'Local Development', autogenerate: { directory: 'docs/plugin/self-hosted/local-dev' }, collapsed: true },
-              ],
-              collapsed: true,
-            },
-            { label: 'Plugin methods', link: '/docs/plugin/api' },
-            { label: 'Known Issues', link: '/docs/plugin/known-issues' },
-            { label: 'Cordova', link: '/docs/plugin/cordova' },
-            { label: 'Settings', link: '/docs/plugin/settings' },
-            { label: 'Statistics', link: '/docs/plugin/statistics-api' },
-            { label: 'Debugging', link: '/docs/plugin/debugging' },
-          ],
-        },
-        {
           label: 'Public API',
           collapsed: true,
           autogenerate: { directory: 'docs/public-api' },
+        },
+        {
+          label: 'Plugins',
+          collapsed: true,
+          items: [
+            {
+              label: 'Updater',
+              collapsed: true,
+              items: [
+                { label: 'Overview', link: '/docs/plugin/overview' },
+                {
+                  label: 'Cloud Mode',
+                  items: [
+                    { label: 'Getting Started', link: '/docs/plugin/cloud-mode/getting-started' },
+                    { label: 'Auto Update', link: '/docs/plugin/cloud-mode/auto-update' },
+                    { label: 'Channel System', link: '/docs/plugin/cloud-mode/channel-system' },
+                    { label: 'Hybrid Update', link: '/docs/plugin/cloud-mode/hybrid-update' },
+                    { label: 'Manual Update', link: '/docs/plugin/cloud-mode/manual-update' },
+                  ],
+                  collapsed: true,
+                },
+                { label: 'Plugin methods', link: '/docs/plugin/api' },
+                { label: 'Known Issues', link: '/docs/plugin/known-issues' },
+                { label: 'Cordova', link: '/docs/plugin/cordova' },
+                { label: 'Options', link: '/docs/plugin/settings' },
+                { label: 'Statistics', link: '/docs/plugin/statistics-api' },
+                { label: 'Debugging', link: '/docs/plugin/debugging' },
+                {
+                  label: 'Migrations',
+                  collapsed: true,
+                  autogenerate: { directory: 'docs/upgrade' },
+                },
+                {
+                  label: 'Local Development',
+                  collapsed: true,
+                  autogenerate: { directory: 'docs/plugin/local-dev' },
+                },
+                {
+                  label: 'Self Hosted',
+                  items: [
+                    { label: 'Getting Started', link: '/docs/plugin/self-hosted/getting-started' },
+                    { label: 'Contributing', link: '/docs/plugin/self-hosted/contributing' },
+                    { label: 'Auto Update', link: '/docs/plugin/self-hosted/auto-update' },
+                    { label: 'Manual Update', link: '/docs/plugin/self-hosted/manual-update' },
+                    { label: 'Encrypted Bundles', link: '/docs/plugin/self-hosted/encrypted-bundles' },
+                    { label: 'Handling Updates', link: '/docs/plugin/self-hosted/handling-updates' },
+                    { label: 'Handling Stats', link: '/docs/plugin/self-hosted/handling-stats' },
+                    { label: 'Local Development', autogenerate: { directory: 'docs/plugin/self-hosted/local-dev' }, collapsed: true },
+                  ],
+                  collapsed: true,
+                },
+              ],
+            },
+            {
+              label: 'Other Plugins',
+              collapsed: true,
+              items: [
+                {
+                  label: 'Social Login',
+                  items: [
+                    { label: 'Overview', link: '/docs/plugins/social-login/' },
+                    { label: 'Getting started', link: '/docs/plugins/social-login/getting-started' },
+                    { label: 'Google', autogenerate: { directory: 'docs/plugins/social-login/google' } },
+                    { label: 'Apple', autogenerate: { directory: 'docs/plugins/social-login/apple' } },
+                    { label: 'Facebook', link: '/docs/plugins/social-login/facebook' },
+                    { label: 'Migrations', autogenerate: { directory: 'docs/plugins/social-login/migrations' } },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Web app',
+          collapsed: true,
+          autogenerate: { directory: 'docs/webapp' },
+        },
+        {
+          label: 'How To',
+          link: '/docs/how-to/',
         },
         {
           label: 'FAQ',

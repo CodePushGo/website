@@ -1,30 +1,11 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import { shortNumber } from '@/services/misc'
 import CIExpert from '@/components/CIExpert.astro'
 import Orgs from '@/components/Orgs.astro'
 import Testimonials from '@/components/Testimonials.astro'
+import Layout from '@/layouts/Layout.astro'
+import * as m from '@/paraglide/messages'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import dayjs from 'dayjs'
-import * as m from '@/paraglide/messages'
-
-const config = Astro.locals.runtimeConfig
-
-const stats = {
-  stars: shortNumber(499),
-  apps: shortNumber(1400),
-  updates: shortNumber(947593631),
-}
-
-const tmp = await fetch(`${config.public.baseApiUrl}/private/website_stats`)
-if (tmp.ok) {
-  const res = await tmp.json()
-  if (res) {
-    if (res.apps) stats.apps = shortNumber(res.apps)
-    if (res.updates) stats.updates = shortNumber(res.updates)
-    if (res.stars) stats.stars = shortNumber(res.stars)
-  }
-}
 ---
 
 <Layout>
@@ -222,33 +203,33 @@ if (tmp.ok) {
           <h2 class="text-4xl leading-tight font-bold text-white sm:text-5xl lg:text-7xl">
             {m.use_capgo({}, { locale: Astro.locals.locale })}
           </h2>
-          <p class="mt-3 text-base leading-relaxed text-gray-500 md:mt-8">
+          <p class="mt-3 text-base leading-relaxed text-gray-200 md:mt-8">
             {m.our_numbers_are_shared_transparently_since_december_2021({}, { locale: Astro.locals.locale })}
           </p>
-          <p class="mt-5 text-center text-base text-gray-400">{m.last_update({}, { locale: Astro.locals.locale })}: {dayjs().format('MMMM DD, YYYY')}</p>
+          <p class="mt-5 text-center text-base text-gray-300">{m.last_update({}, { locale: Astro.locals.locale })}: {dayjs().format('MMMM DD, YYYY')}</p>
         </div>
         <div class="mt-10 grid grid-cols-1 gap-8 text-center sm:gap-x-8 md:grid-cols-3 lg:mt-24">
-          <div>
+          <!-- <div>
             <h3 class="text-7xl font-bold">
               <span class="bg-linear-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{stats.updates}</span>
             </h3>
             <p class="mt-4 text-xl font-medium text-gray-500">{m.updates_delivered({}, { locale: Astro.locals.locale })}</p>
             <p class="mt-0.5 text-base text-gray-400">{m.all_around_the_globe({}, { locale: Astro.locals.locale })}</p>
-          </div>
-          <div>
+          </div> -->
+          <!-- <div>
             <h3 class="text-7xl font-bold">
               <span class="bg-linear-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{stats.apps}</span>
             </h3>
             <p class="mt-4 text-xl font-medium text-gray-500">{m.apps({}, { locale: Astro.locals.locale })}</p>
             <p class="mt-0.5 text-base text-gray-400">{m.using_us_in_production({}, { locale: Astro.locals.locale })}</p>
-          </div>
-          <div>
+          </div> -->
+          <!-- <div>
             <h3 class="text-7xl font-bold">
               <span class="bg-linear-to-r from-[#FF44EC] to-[#44BCFF] bg-clip-text text-transparent">{stats.stars}★</span>
             </h3>
             <p class="mt-4 text-xl font-medium text-gray-500">{m.stars_in_github({}, { locale: Astro.locals.locale })}</p>
             <p class="mt-0.5 text-base text-gray-400">{m.open_source({}, { locale: Astro.locals.locale })}</p>
-          </div>
+          </div> -->
         </div>
         <div class="mt-10 grid grid-cols-1 gap-8 text-center sm:gap-x-8 md:grid-cols-2 lg:mt-24">
           <div class="bg-codepushgo-700 rounded-xl p-6">
@@ -256,11 +237,11 @@ if (tmp.ok) {
             <div class="space-y-4 p-4">
               <div>
                 <p class="text-4xl font-bold text-[#FF675E]">95%</p>
-                <p class="text-gray-500">{m.active_users_up_to_date({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-300">{m.active_users_up_to_date({}, { locale: Astro.locals.locale })}</p>
               </div>
               <div>
                 <p class="text-4xl font-bold text-[#44BCFF]">82%</p>
-                <p class="text-gray-500">{m.worldwide_success_rate({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-300">{m.worldwide_success_rate({}, { locale: Astro.locals.locale })}</p>
               </div>
             </div>
           </div>
@@ -269,11 +250,11 @@ if (tmp.ok) {
             <div class="space-y-4 p-4">
               <div>
                 <p class="text-4xl font-bold text-[#00AA5E]">114ms</p>
-                <p class="text-gray-500">{m.download_time_globally({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-300">{m.download_time_globally({}, { locale: Astro.locals.locale })}</p>
               </div>
               <div>
                 <p class="text-4xl font-bold text-[#FF44EC]">434ms</p>
-                <p class="text-gray-500">{m.average_api_response_time({}, { locale: Astro.locals.locale })}</p>
+                <p class="text-gray-300">{m.average_api_response_time({}, { locale: Astro.locals.locale })}</p>
               </div>
             </div>
           </div>
@@ -518,7 +499,7 @@ if (tmp.ok) {
         <p class="mt-2 max-w-2xl text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
           {m.everything_you_need_to_ship_updates_instantly({}, { locale: Astro.locals.locale })}
         </p>
-        <p class="mt-4 max-w-2xl text-lg text-gray-400">{m.ship_updates_fixes_changes_and_features({}, { locale: Astro.locals.locale })}</p>
+        <p class="mt-4 max-w-2xl text-lg text-gray-300">{m.ship_updates_fixes_changes_and_features({}, { locale: Astro.locals.locale })}</p>
         <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-3">
           <div class="flex p-px lg:col-span-4">
             <div class="bg-codepushgo-800 w-full overflow-hidden rounded-lg ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">

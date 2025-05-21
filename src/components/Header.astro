@@ -9,7 +9,7 @@ const brand = Astro.locals.runtimeConfig.public.brand
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="relative flex items-center justify-between">
       <div class="shrink-0">
-        <a href={getRelativeLocaleUrl(Astro.locals.locale)} title="codepushgo home" aria-label="codepushgo home" class="font-prompt flex items-center pr-3 text-4xl font-medium">
+        <a href={getRelativeLocaleUrl(Astro.locals.locale)} class="font-prompt flex items-center pr-3 text-4xl font-medium">
           <img class="h-18 w-auto pr-1" loading="eager" height="72" width="133" alt={`${brand} logo`} title={`${brand} logo`} src="/capgo_logo.webp" />
         </a>
       </div>
@@ -22,24 +22,28 @@ const brand = Astro.locals.runtimeConfig.public.brand
       </div>
       <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
         <a
-          href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
-          class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
-        >
-          Tutorials
-        </a>
-        <a
           href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')}
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
           {m.blog({}, { locale: Astro.locals.locale })}
+        </a>
+        <a
+          href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')}
+          class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
+        >
+          {m.documentation({}, { locale: Astro.locals.locale })}
         </a>
       </div>
     </div>
   </div>
   <div id="mobile-menu" class="hidden">
     <div class="bg-codepushgo-700 mt-2 space-y-1 px-2 pt-2 pb-3">
-      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium"> Tutorials </a>
-      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium"> Blog </a>
+      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
+        Blog
+      </a>
+      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
+        Documentation
+      </a>
     </div>
   </div>
 </header>

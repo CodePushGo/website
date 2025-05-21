@@ -179,7 +179,7 @@ This allows builds and tests to happen simultaneously, saving time and resources
 
 ### Identifying and Addressing Bottlenecks
 
-Pinpointing performance bottlenecks is essential for optimization. Tools that analyze build processes can identify slowdowns in both JavaScript bundling and native compilation.  For JavaScript, tools like [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer) help visualize the size and composition of your bundles, exposing areas for improvement. For native code, platform-specific profiling tools can highlight performance hotspots. These analyses enable focused optimizations, similar to identifying and fixing the slowest step in an assembly line.
+Pinpointing performance bottlenecks is essential for optimization. Tools that analyze build processes can identify slowdowns in both JavaScript bundling and native compilation.  For JavaScript, tools like [Webpack Bundle Analyzer](https://www.npmjs.com/package/.webpack-bundle-analyzer) help visualize the size and composition of your bundles, exposing areas for improvement. For native code, platform-specific profiling tools can highlight performance hotspots. These analyses enable focused optimizations, similar to identifying and fixing the slowest step in an assembly line.
 
 Analyzing build logs and utilizing tools like timing your commands or profiling can also provide valuable insights. Pinpointing these issues enables developers to focus their optimization efforts where they'll make the most significant difference.
 
