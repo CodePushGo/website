@@ -59,4 +59,3 @@ export default Button;
 Congratulations! You have successfully learned how to use the @react-native/babel-plugin-codegen package in your React Native projects. Feel free to explore more features and options offered by this powerful tool.
 
 Happy coding!
-```

@@ -16,12 +16,12 @@ interface NavigationItem {
 }
 
 const navigation: Record<string, NavigationItem[]> = {
-  solutions: [
-    {
-      name: m.documentation({}, { locale: Astro.locals.locale }),
-      href: getRelativeLocaleUrl(Astro.locals.locale, 'docs'),
-    },
-  ],
+  // solutions: [
+  //   {
+  //     name: m.documentation({}, { locale: Astro.locals.locale }),
+  //     href: getRelativeLocaleUrl(Astro.locals.locale, 'docs'),
+  //   },
+  // ],
   support: [
     {
       name: m.community({}, { locale: Astro.locals.locale }),
@@ -147,7 +147,7 @@ const navigation: Record<string, NavigationItem[]> = {
       </div>
       <div class="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
+          <!-- <div>
             <h3 class="text-base font-medium text-gray-900">{m.solutions({}, { locale: Astro.locals.locale })}</h3>
             <ul role="list" class="mt-4 space-y-4">
               {
@@ -165,7 +165,7 @@ const navigation: Record<string, NavigationItem[]> = {
                 ))
               }
             </ul>
-          </div>
+          </div> -->
           <div class="mt-12 md:mt-0">
             <h3 class="text-base font-medium text-gray-900">{m.support({}, { locale: Astro.locals.locale })}</h3>
             <ul role="list" class="mt-4 space-y-4">

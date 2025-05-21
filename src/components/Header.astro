@@ -28,11 +28,17 @@ const brand = Astro.locals.runtimeConfig.public.brand
           {m.blog({}, { locale: Astro.locals.locale })}
         </a>
         <a
+          href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
+          class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
+        >
+          Tutorials
+        </a>
+        <!-- <a
           href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')}
           class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
         >
           {m.documentation({}, { locale: Astro.locals.locale })}
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
@@ -41,9 +47,15 @@ const brand = Astro.locals.runtimeConfig.public.brand
       <a href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
         Blog
       </a>
-      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
-        Documentation
+      <a
+        href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
+        class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white"
+      >
+        Tutorials
       </a>
+      <!-- <a href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
+        Documentation
+      </a> -->
     </div>
   </div>
 </header>
