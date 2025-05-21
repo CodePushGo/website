@@ -1,0 +1,20 @@
+---
+title: Apple login on web browser
+description: This guide provides a detailed walkthrough on setting up Apple Login using Capacitor for web applications, utilizing the @capgo/capacitor-social-login plugin to ensure a seamless integration process.
+sidebar:
+    order: 4
+---
+import { Steps } from '@astrojs/starlight/components';
+
+
+Configuring the web login is not trivial. It's more difficult than setting up `Sign in with Apple` on iOS but more difficult than setting up `Sign in with Apple` on Android.
+
+## Generating the service
+
+:::note
+This step is redundent if you have already configured `Sign in with Apple` on Android.
+:::
+
+Please follow the guide [here](/docs/plugins/social-login/apple/android/#creating-the-service-id/) to generate the service.
+
+## Configuring the `Return URLs`

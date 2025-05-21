@@ -1,16 +1,16 @@
 ---
 title: "Encryption"
-description: "How to encrypt your data with new encryption"
+description: "How to encrypt your data with encryption v2, secure your app and ensure only you can update your users with your updates"
 sidebar:
   order: 5
 ---
 
-This documentation explains how to migrate to the new encryption system. Learn more about the new encryption system in the [blog post](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing).
+This documentation explains how to migrate to the encryption v2 system. Learn more about the encryption v2 system in the [blog post](/blog/introducing-end-to-end-security-to-capacitor-updater-with-code-signing).
 
 ## 1. Create Key Pair
 
 ```bash
-npx @codepushgo/cli key create
+npx @capgo/cli key create
 ```
 
 :::warning
@@ -19,22 +19,22 @@ Store the private key securely. Never commit it to source control or share it wi
 
 This command:
 - Creates a new key pair in your app
-- Removes the old key from your React Native config
+- Removes the old key from your Capacitor config
 - Keeps old key files for backward compatibility
 
-## 2. Update React Native Config
+## 2. Update Capacitor Config
 
-When prompted "Do you want to setup encryption with the new channel in order to support old apps and facilitate the migration?", select yes. This adds a new `defaultChannel` option to your React Native config.
+When prompted "Do you want to setup encryption with the new channel in order to support old apps and facilitate the migration?", select yes. This adds a new `defaultChannel` option to your Capacitor config.
 
 ```ts
 // capacitor.config.ts
-import { React NativeConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli';
 
-const config: React NativeConfig = {
+const config: CapacitorConfig = {
   appId: 'com.example.app',
   appName: 'Example App',
   plugins: {
-    React NativeUpdater: {
+    CapacitorUpdater: {
       // ... other options
       defaultChannel: 'encryption_v2' // New apps will use this channel
     }
@@ -47,7 +47,7 @@ export default config;
 ## 3. Upload Bundle to New Channel
 
 ```bash
-npx @codepushgo/cli bundle upload --channel encryption_v2
+npx @capgo/cli bundle upload --channel encryption_v2
 ```
 
 ## 4. Enable Self-Assignment
@@ -57,28 +57,28 @@ Required for the `defaultChannel` option to work
 :::
 
 ```bash
-npx @codepushgo/cli channel set encryption_v2 --self-assign
+npx @capgo/cli channel set encryption_v2 --self-assign
 ```
 
 ## 5. Upload to Old Channel
 
 ```bash
-npx @codepushgo/cli bundle upload --channel production
+npx @capgo/cli bundle upload --channel production
 ```
 
 :::tip
-React Native config is never uploaded to CodePushGo
+Capacitor config is never uploaded to Capgo
 :::
 
 ## 6. Cleanup (After 3-4 Months)
 
 Once all users have updated their apps:
 
-1. Remove `defaultChannel` from your React Native config
+1. Remove `defaultChannel` from your Capacitor config
 2. Delete the old channel:
 
 ```bash
-npx @codepushgo/cli channel delete encryption_v2
+npx @capgo/cli channel delete encryption_v2
 ```
 
 :::note

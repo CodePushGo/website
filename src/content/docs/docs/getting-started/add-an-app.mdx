@@ -1,6 +1,6 @@
 ---
 title: "Add an App"
-description: "Add an app to your CodePushGo account, and install the plugin in your app"
+description: "Add an app to your Capgo account, and install the plugin in your app"
 sidebar:
   order: 2
 prev: false
@@ -12,11 +12,12 @@ import { Aside, Steps, LinkCard, Code } from '@astrojs/starlight/components';
 
 ## Requirements
 
-Before getting started with CodePushGo, make sure you have:
-- A React Native app installed and configured. [Learn how to set up React Native](https://capacitorjs.com/docs/getting-started/)
+Before getting started with Capgo, make sure you have:
+- A Capacitor app installed and configured. [Learn how to set up Capacitor](https://capacitorjs.com/docs/getting-started/)
 - Node.js 18 or later installed
 
-## Introduction to CodePushGo
+## Introduction to Capgo
+<YouTube id="NzXXKoyhTIo" title="Capgo in 15 min" />
 
 ## Live updates are 3 step away
 
@@ -25,9 +26,10 @@ Before getting started with CodePushGo, make sure you have:
 
 <Steps>
 
-1. Create your account at [https://codepushgo.com/register](https://codepushgo.com/register).
+1. Create your account at [https://capgo.app/register](https://capgo.app/register).
+![signup screenshot](/signup.webp "signup screenshot")
 
-2. Use the Init commands to get started <Code code={`npx @codepushgo/cli@latest init [APIKEY]`} lang="bash" /> You will be presented with a series of questions. Provide the necessary answers to complete the automated setup.<Aside type="tip">By following these steps, you'll be up and running in no time. If you need any further assistance during the process, our support team is [here to help](mailto:support@codepushgo.com). Happy onboarding!</Aside>
+2. Use the Init commands to get started <Code code={`npx @capgo/cli@latest init [APIKEY]`} lang="bash" /> You will be presented with a series of questions. Provide the necessary answers to complete the automated setup.<Aside type="tip">By following these steps, you'll be up and running in no time. If you need any further assistance during the process, our support team is [here to help](mailto:support@capgo.app). Happy onboarding!</Aside>
 
 3. Deploy a live update <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Learn how to deploy a live update to your app" />
 
@@ -39,14 +41,17 @@ In case the init command doesn't work for you, you can manually add an app.
 
 <Steps>
 
-1. Connect the CLI to your account: <Code code={`npx @codepushgo/cli@latest login [APIKEY]`} lang="bash" />
+1. Connect the CLI to your account: <Code code={`npx @capgo/cli@latest login [APIKEY]`} lang="bash" />
 
-2. Add the app to your account with this command: <Code code={`npx @codepushgo/cli@latest app add [APP_NAME]`} lang="bash" />
+2. Add the app to your account with this command: <Code code={`npx @capgo/cli@latest app add [APP_NAME]`} lang="bash" />
 
-3. Install the plugin in your app: <Code code={`npm i @codepushgo/react-native-updater`} lang="bash" />
+3. Install the plugin in your app: <Code code={`npm i @capgo/capacitor-updater`} lang="bash" />
 
-4. Call the init method as early as possible in your app: <Code code={`import { React NativeUpdater } from '@codepushgo/react-native-updater';\nReact NativeUpdater.notifyAppReady();`} lang="typescript" />
+4. Configure the plugin in your `capacitor.config` <Code code={`{\n  "plugins": {\n    CapacitorUpdater: {\n      "appId": "Your appID",\n      "autoUpdate": true,\n      "version": "1.0.0"\n    }\n  }\n}`} lang="json" />
+  [See all option available](/docs/plugin/settings/). This informations will be infer if not provided.
 
-5. Deploy a live update <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Learn how to deploy a live update to your app" />
+5. Call the init method as early as possible in your app: <Code code={`import { CapacitorUpdater } from '@capgo/capacitor-updater';\nCapacitorUpdater.notifyAppReady();`} lang="typescript" />
+
+6. Deploy a live update <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Learn how to deploy a live update to your app" />
 
 </Steps>

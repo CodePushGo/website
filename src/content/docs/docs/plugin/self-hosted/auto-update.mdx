@@ -1,6 +1,6 @@
 ---
 title: "Auto Update"
-description: "How to use the auto-update plugin in self-hosted mode"
+description: "How to use the update endpoint of Capgo with the auto-update plugin in self-hosted mode, what they are used for and what to expect"
 sidebar:
   order: 3
 ---
@@ -14,7 +14,7 @@ Make sure your bundle is served over HTTPS, and the server has the right CORS he
 e.g. ```https://myserver.com/app/updates/updates.json```
 
 
-If you're unfamiliar with serving a bundle, we recommend you try CodePushGo Cloud or see an example here:
+If you're unfamiliar with serving a bundle, we recommend you try Capgo Cloud or see an example here:
 <LinkCard
 	title="Serving a Bundle"
 	href="/docs/self-hosted/auto-update/update-endpoint"
@@ -26,7 +26,7 @@ Add an ``updateUrl`` to your ``capacitor.config.json``.
 ```json
 {
 	"plugins": {
-		"React NativeUpdater": {
+		"CapacitorUpdater": {
 			"updateUrl": "https://myserver.com/app/updates/updates.json",
 		}
 	}
@@ -77,5 +77,5 @@ The zip should have `index.html` as a file at the root, or only one folder at th
 You can use the command of the CLI to zip your bundle:
 
 ```bash title="Create a bundle with your files to serve from your server"
-npx @codepushgo/cli bundle zip --path [/path/to/my/bundle]
+npx @capgo/cli bundle zip --path [/path/to/my/bundle]
 ```

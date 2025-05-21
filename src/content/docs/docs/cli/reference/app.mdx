@@ -1,83 +1,147 @@
 ---
-title: app
+title: 📱 app
+description: 📱 Manage your Capgo app settings and configurations in Capgo Cloud.
 sidebar_label: app
 sidebar:
-  order: 4
+  order: 5
 ---
 
-The `app` command lets you manage your CodePushGo apps.
+📱 Manage your Capgo app settings and configurations in Capgo Cloud.
 
-### add
+### <a id="app-add"></a> ➕ **Add**
 
-`npx @codepushgo/cli app add [appId]`
+**Alias:** `a`
 
-Adds a new app to your CodePushGo account.
+```bash
+npx @capgo/cli@latest app add
+```
 
-`[appId]` is your app ID in the format `com.example.app`. See the [React Native docs](https://capacitorjs.com/docs/cli/commands/init/) for more info.
+➕ Add a new app to Capgo Cloud with a unique app ID in the format com.test.app.
+All options can be guessed from config if not provided.
 
-> 💡 All options will be guessed from your `capacitor.config.json` if not provided.
+**Example:**
 
-Options:
+```bash
+npx @capgo/cli@latest app add com.example.app --name "My App" --icon ./icon.png
+```
 
-- `--icon [path]`: Path to a custom icon to display in the CodePushGo web app
-- `--name [name]`: Custom name to display in the app list
-- `--apikey [key]`: API key to link to your account
-- `--retention [days]`: Retention period for app bundles in days (default: 0 = infinite)
+**Options:**
 
-### set
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-n,** | <code>string</code> | App name for display in Capgo Cloud |
+| **-i,** | <code>string</code> | App icon path for display in Capgo Cloud |
+| **-a,** | <code>string</code> | API key to link to your account |
 
-`npx @codepushgo/cli app set [appId]`
+### <a id="app-delete"></a> 🗑️ **Delete**
 
-Updates an existing app in your CodePushGo account.
+```bash
+npx @capgo/cli@latest app delete
+```
 
-Options:
+🗑️ Delete an app from Capgo Cloud, optionally specifying a version to delete only that bundle.
 
-- `--icon [path]`: Path to a custom icon to display in the CodePushGo web app
-- `--name [name]`: Custom name to display in the app list
-- `--retention [days]`: Retention period for app bundles in days (default: 0 = infinite)
-- `--apikey [key]`: API key to link to your account
+**Example:**
 
-### list
+```bash
+npx @capgo/cli@latest app delete com.example.app
+```
 
-`npx @codepushgo/cli app list [appId]`
+**Options:**
 
-Lists all apps in your CodePushGo account.
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-a,** | <code>string</code> | API key to link to your account |
 
-Options:
+### <a id="app-list"></a> 📋 **List**
 
-- `--apikey [key]`: API key to link to your account
+**Alias:** `l`
 
-### delete
+```bash
+npx @capgo/cli@latest app list
+```
 
-`npx @codepushgo/cli app delete [appId]`
+📋 List all apps registered under your account in Capgo Cloud.
 
-Deletes an app from your CodePushGo account.
+**Example:**
 
-Options:
+```bash
+npx @capgo/cli@latest app list
+```
 
-- `--apikey [key]`: API key to link to your account
-- `--bundle`: Delete only a specific bundle version
+**Options:**
 
-### debug
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-a,** | <code>string</code> | API key to link to your account |
 
-`npx @codepushgo/cli app debug [appId]`
+### <a id="app-debug"></a> 🐞 **Debug**
 
-Displays debug information for an app.
+```bash
+npx @capgo/cli@latest app debug
+```
 
-Options:
+🐞 Listen for live update events in Capgo Cloud to debug your app.
+Optionally target a specific device for detailed diagnostics.
 
-- `--apikey [key]`: API key to link to your account
-- `--device`: Debug a specific device
+**Example:**
 
-### setting
+```bash
+npx @capgo/cli@latest app debug com.example.app --device DEVICE_ID
+```
 
-`npx @codepushgo/cli app setting [path]`
+**Options:**
 
-Edits the React Native config for an app.
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-a,** | <code>string</code> | API key to link to your account |
+| **-d,** | <code>string</code> | The specific device ID to debug |
 
-`[path]` is the path to the setting you want to change (e.g., `appId` or `plugins.React NativeUpdater.autoUpdate`).
+### <a id="app-setting"></a> ⚙️ **Setting**
 
-You must provide either `--string` or `--bool`:
+```bash
+npx @capgo/cli@latest app setting
+```
 
-- `--string <value>`: Set the setting to a string value
-- `--bool <true|false>`: Set the setting to a boolean value 
+⚙️ Modify Capacitor configuration programmatically by specifying the path to the setting.
+(e.g., plugins.CapacitorUpdater.defaultChannel). You MUST provide either --string or --bool.
+
+**Example:**
+
+```bash
+npx @capgo/cli@latest app setting plugins.CapacitorUpdater.defaultChannel --string "Production"
+```
+
+**Options:**
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **--bool** | <code>string</code> | A value for the setting to modify as a boolean, ex: --bool true |
+| **--string** | <code>string</code> | A value for the setting to modify as a string, ex: --string "Production" |
+
+### <a id="app-set"></a> ⚙️ **Set**
+
+**Alias:** `s`
+
+```bash
+npx @capgo/cli@latest app set
+```
+
+⚙️ Update settings for an existing app in Capgo Cloud, such as name, icon, or retention period for bundles.
+Retention of 0 means infinite storage.
+
+**Example:**
+
+```bash
+npx @capgo/cli@latest app set com.example.app --name "Updated App" --retention 30
+```
+
+**Options:**
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-n,** | <code>string</code> | App name for display in Capgo Cloud |
+| **-i,** | <code>string</code> | App icon path for display in Capgo Cloud |
+| **-a,** | <code>string</code> | API key to link to your account |
+| **-r,** | <code>string</code> | Retention period of app bundle in days, 0 by default = infinite |
+

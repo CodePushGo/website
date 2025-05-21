@@ -1,164 +1,253 @@
 ---
-title: bundle
+title: 📦 bundle
+description: 📦 Manage app bundles for deployment in Capgo Cloud, including upload, compatibility checks, and encryption.
 sidebar_label: bundle
 sidebar:
-  order: 5
+  order: 4
 ---
 
-The `bundle` command lets you manage your app bundles.
+📦 Manage app bundles for deployment in Capgo Cloud, including upload, compatibility checks, and encryption.
 
-### upload
+### <a id="bundle-upload"></a> ⬆️ **Upload**
 
-`npx @codepushgo/cli bundle upload [appId]`
+**Alias:** `u`
 
-Uploads a new bundle for an app.
+```bash
+npx @capgo/cli@latest bundle upload
+```
 
-Options:
+⬆️ Upload a new app bundle to Capgo Cloud for distribution, optionally linking to a channel or external URL.
+External option supports privacy concerns or large apps (>200MB) by storing only the link.
+Capgo never inspects external content. Encryption adds a trustless security layer.
+Version must be > 0.0.0 and unique.
+> ℹ️ External option helps with corporate privacy concerns and apps larger than 200MB by storing only the link.
 
-- `-a, --apikey <apikey>`: API key to link to your account
-- `-p, --path <path>`: Path to the folder to upload (defaults to the `webDir` in `capacitor.config`)
-- `-c, --channel <channel>`: Channel to link the bundle to
-- `-e, --external <url>`: Link to an external URL instead of uploading to CodePushGo Cloud
-- `--iv-session-key <key>`: Set the IV and session key for an external bundle URL
-- `--s3-region <region>`: Region for your S3 bucket
-- `--s3-apikey <apikey>`: API key for your S3 endpoint
-- `--s3-apisecret <apisecret>`: API secret for your S3 endpoint
-- `--s3-endpoint <s3Endpoint>`: URL of the S3 endpoint
-- `--s3-bucket-name <bucketName>`: Name of your S3 bucket
-- `--s3-port <port>`: Port for your S3 endpoint
-- `--no-s3-ssl`: Disable SSL for S3 uploads
-- `--key <key>`: Custom path for the public signing key (v1 system)
-- `--key-data <keyData>`: Public signing key data (v1 system)
-- `--key-v2 <key>`: Custom path for the private signing key (v2 system)
-- `--key-data-v2 <keyDataV2>`: Private signing key data (v2 system)
-- `--bundle-url`: Print the bundle URL to stdout
-- `--no-key`: Ignore the signing key and send an unsigned update
-- `--no-code-check`: Skip checking for `notifyAppReady()` in the source code and `index.html` in the root folder
-- `--display-iv-session`: Display the IV and session key used to encrypt the update
-- `-b, --bundle <bundle>`: Bundle version number to upload
-- `--min-update-version <minUpdateVersion>`: Minimum app version required to apply this update (only used if auto-update is disabled via metadata)
-- `--auto-min-update-version`: Automatically set the minimum update version based on native package versions
-- `--ignore-metadata-check`: Ignore the metadata (node_modules) check when uploading
-- `--ignore-checksum-check`: Ignore the checksum check when uploading
-- `--timeout <timeout>`: Timeout for the upload process in seconds
-- `--multipart`: Use the multipart protocol to upload data to S3 (deprecated, use `--tus` instead)
-- `--tus`: Upload the bundle using the tus protocol
-- `--tus-chunk-size <tusChunkSize>`: Chunk size for the tus upload
-- `--partial`: Upload only changed files to CodePushGo Cloud
-- `--partial-only`: Upload only partial files to CodePushGo Cloud, skipping the zipped file (useful for large bundles)
-- `--encrypted-checksum <encryptedChecksum>`: Encrypted checksum (signature) for an external bundle
-- `--auto-set-bundle`: Automatically set the bundle version in `capacitor.config.json`
-- `--dry-upload`: Perform a dry run of the upload process without actually uploading files (useful for testing)
-- `--package-json <packageJson>`: Comma-separated list of paths to `package.json` files (useful for monorepos)
-- `--node-modules <nodeModules>`: Comma-separated list of paths to `node_modules` directories (useful for monorepos)
-- `--encrypt-partial`: Encrypt the partial update files
-- `--delete-linked-bundle-on-upload`: Delete the currently linked bundle in the target channel before uploading
+> ℹ️ Capgo Cloud never looks at the content in the link for external options or in the code when stored.
 
-### compatibility
+> ℹ️ You can add a second layer of security with encryption, making Capgo trustless.
 
-`npx @codepushgo/cli bundle compatibility [appId]`
+> ℹ️ Version should be greater than "0.0.0" and cannot be overridden or reused after deletion for security reasons.
 
-Checks the compatibility of a bundle with a specific channel.
 
-Options:
+**Example:**
 
-- `-a, --apikey <apikey>`: API key to link to your account
-- `-c, --channel <channel>`: Channel to check compatibility with
-- `--text`: Output results as text instead of emoji
-- `--package-json <packageJson>`: Comma-separated list of paths to `package.json` files (useful for monorepos)
-- `--node-modules <nodeModules>`: Comma-separated list of paths to `node_modules` directories (useful for monorepos)
+```bash
+npx @capgo/cli@latest bundle upload com.example.app --path ./dist --channel production
+```
 
-### delete
+**Options:**
 
-`npx @codepushgo/cli bundle delete [bundleId] [appId]`
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-a,** | <code>string</code> | API key to link to your account |
+| **-p,** | <code>string</code> | Path of the folder to upload, if not provided it will use the webDir set in capacitor.config |
+| **-c,** | <code>string</code> | Channel to link to |
+| **-e,** | <code>string</code> | Link to external URL instead of upload to Capgo Cloud |
+| **--iv-session-key** | <code>string</code> | Set the IV and session key for bundle URL external |
+| **--s3-region** | <code>string</code> | Region for your S3 bucket |
+| **--s3-apikey** | <code>string</code> | API key for your S3 endpoint |
+| **--s3-apisecret** | <code>string</code> | API secret for your S3 endpoint |
+| **--s3-endoint** | <code>string</code> | URL of S3 endpoint |
+| **--s3-bucket-name** | <code>string</code> | Name for your AWS S3 bucket |
+| **--s3-port** | <code>string</code> | Port for your S3 endpoint |
+| **--no-s3-ssl** | <code>boolean</code> | Disable SSL for S3 upload |
+| **--key-v2** | <code>string</code> | Custom path for private signing key (v2 system) |
+| **--key-data-v2** | <code>string</code> | Private signing key (v2 system) |
+| **--bundle-url** | <code>boolean</code> | Prints bundle URL into stdout |
+| **--no-key** | <code>boolean</code> | Ignore signing key and send clear update |
+| **--no-code-check** | <code>boolean</code> | Ignore checking if notifyAppReady() is called in source code and index present in root folder |
+| **--display-iv-session** | <code>boolean</code> | Show in the console the IV and session key used to encrypt the update |
+| **-b,** | <code>string</code> | Bundle version number of the bundle to upload |
+| **--link** | <code>string</code> | Link to external resource (e.g. GitHub release) |
+| **--comment** | <code>string</code> | Comment about this version, could be a release note, a commit hash, a commit message, etc. |
+| **--min-update-version** | <code>string</code> | Minimal version required to update to this version. Used only if the disable auto update is set to metadata in channel |
+| **--auto-min-update-version** | <code>boolean</code> | Set the min update version based on native packages |
+| **--ignore-metadata-check** | <code>boolean</code> | Ignores the metadata (node_modules) check when uploading |
+| **--ignore-checksum-check** | <code>boolean</code> | Ignores the checksum check when uploading |
+| **--timeout** | <code>string</code> | Timeout for the upload process in seconds |
+| **--multipart** | <code>boolean</code> | Uses multipart protocol to upload data to S3, Deprecated, use tus instead |
+| **--zip** | <code>boolean</code> | Upload the bundle using zip to Capgo cloud (legacy) |
+| **--tus** | <code>boolean</code> | Upload the bundle using TUS to Capgo cloud |
+| **--tus-chunk-size** | <code>string</code> | Chunk size for the TUS upload |
+| **--partial** | <code>boolean</code> | Upload partial files to Capgo cloud |
+| **--partial-only** | <code>boolean</code> | Upload only partial files to Capgo cloud, skip the zipped file, useful for big bundle |
+| **--encrypted-checksum** | <code>string</code> | An encrypted checksum (signature). Used only when uploading an external bundle. |
+| **--auto-set-bundle** | <code>boolean</code> | Set the bundle in capacitor.config.json |
+| **--dry-upload** | <code>boolean</code> | Dry upload the bundle process, mean it will not upload the files but add the row in database (Used by Capgo for internal testing) |
+| **--package-json** | <code>string</code> | A list of paths to package.json. Useful for monorepos (comma separated ex: ../../package.json,./package.json) |
+| **--node-modules** | <code>string</code> | A list of paths to node_modules. Useful for monorepos (comma separated ex: ../../node_modules,./node_modules) |
+| **--encrypt-partial** | <code>boolean</code> | Encrypt the partial update files (automatically applied for updater > 6.14.4) |
+| **--delete-linked-bundle-on-upload** | <code>boolean</code> | Locates the currently linked bundle in the channel you are trying to upload to, and deletes it |
+| **--no-brotli-patterns** | <code>string</code> | Glob patterns for files to exclude from brotli compression (comma-separated) |
+| **--disable-brotli** | <code>boolean</code> | Completely disable brotli compression even if updater version supports it |
+| **--supa-host** | <code>string</code> | Supabase host URL, for self-hosted Capgo or testing |
+| **--supa-anon** | <code>string</code> | Supabase anon token, for self-hosted Capgo or testing |
 
-Deletes a bundle from an app.
+### <a id="bundle-compatibility"></a> 🧪 **Compatibility**
 
-Options:
+```bash
+npx @capgo/cli@latest bundle compatibility
+```
 
-- `-a, --apikey <apikey>`: API key to link to your account
+🧪 Check compatibility of a bundle with a specific channel in Capgo Cloud to ensure updates are safe.
 
-### list
+**Example:**
 
-`npx @codepushgo/cli bundle list [appId]`
+```bash
+npx @capgo/cli@latest bundle compatibility com.example.app --channel production
+```
 
-Lists all bundles for an app.
+**Options:**
 
-Options:
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-a,** | <code>string</code> | API key to link to your account |
+| **-c,** | <code>string</code> | Channel to check the compatibility with |
+| **--text** | <code>boolean</code> | Output text instead of emojis |
+| **--package-json** | <code>string</code> | A list of paths to package.json. Useful for monorepos (comma separated ex: ../../package.json,./package.json) |
+| **--node-modules** | <code>string</code> | A list of paths to node_modules. Useful for monorepos (comma separated ex: ../../node_modules,./node_modules) |
 
-- `-a, --apikey <apikey>`: API key to link to your account
+### <a id="bundle-delete"></a> 🗑️ **Delete**
 
-### cleanup
+**Alias:** `d`
 
-`npx @codepushgo/cli bundle cleanup [appId]`
+```bash
+npx @capgo/cli@latest bundle delete
+```
 
-Cleans up old bundles for a major version, keeping the specified number of most recent bundles.
+🗑️ Delete a specific bundle from Capgo Cloud, optionally targeting a single version.
 
-Options:
+**Example:**
 
-- `-b, --bundle <bundle>`: Major version number to clean up
-- `-a, --apikey <apikey>`: API key to link to your account
-- `-k, --keep <keep>`: Number of bundles to keep (default: 4)
-- `-f, --force`: Force removal without confirmation
+```bash
+npx @capgo/cli@latest bundle delete BUNDLE_ID com.example.app
+```
 
-### decrypt
+**Options:**
 
-`npx @codepushgo/cli bundle decrypt [zipPath] [sessionKey]`
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-a,** | <code>string</code> | API key to link to your account |
 
-Decrypts a signed zip bundle.
+### <a id="bundle-list"></a> 📋 **List**
 
-Options:
+**Alias:** `l`
 
-- `--key <key>`: Custom path for the private signing key
-- `--key-data <keyData>`: Private signing key data
+```bash
+npx @capgo/cli@latest bundle list
+```
 
-### encrypt
+📋 List all bundles uploaded for an app in Capgo Cloud.
 
-`npx @codepushgo/cli bundle encrypt [zipPath]`
+**Example:**
 
-Encrypts a zip bundle.
+```bash
+npx @capgo/cli@latest bundle list com.example.app
+```
 
-Options:
+**Options:**
 
-- `--key <key>`: Custom path for the private signing key
-- `--key-data <keyData>`: Private signing key data
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-a,** | <code>string</code> | API key to link to your account |
 
-### encrypt
+### <a id="bundle-cleanup"></a> 🧹 **Cleanup**
 
-`npx @codepushgo/cli bundle encrypt [zipPath] [checksum]`
+**Alias:** `c`
 
-Encrypts a zip bundle using the new encryption method.
+```bash
+npx @capgo/cli@latest bundle cleanup
+```
 
-Options:
+🧹 Cleanup old bundles in Capgo Cloud, keeping a specified number of recent versions or those linked to channels.
+Ignores bundles in use.
 
-- `--key <key>`: Custom path for the private signing key
-- `--key-data <keyData>`: Private signing key data
-- `-j, --json`: Output results as JSON
+**Example:**
 
-### decryptV2
+```bash
+npx @capgo/cli@latest bundle cleanup com.example.app --bundle=1.0 --keep=3
+```
 
-`npx @codepushgo/cli bundle decryptV2 [zipPath] [checksum]`
+**Options:**
 
-Decrypts a zip bundle using the new encryption method.
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-b,** | <code>string</code> | Bundle version number of the app to delete |
+| **-a,** | <code>string</code> | API key to link to your account |
+| **-k,** | <code>string</code> | Number of versions to keep |
+| **-f,** | <code>string</code> | Force removal |
+| **--ignore-channel** | <code>boolean</code> | Delete all versions even if linked to a channel, this will delete channel as well |
 
-Options:
+### <a id="bundle-encrypt"></a> 🔒 **Encrypt**
 
-- `--key <key>`: Custom path for the private signing key
-- `--key-data <keyData>`: Private signing key data
-- `--checksum <checksum>`: Checksum of the bundle to verify integrity
+```bash
+npx @capgo/cli@latest bundle encrypt
+```
 
-### zip
+🔒 Encrypt a zip bundle using the new encryption method for secure external storage or testing.
+Used with external sources or for testing, prints ivSessionKey for upload or decryption.
 
-`npx @codepushgo/cli bundle zip [appId]`
+**Example:**
 
-Generates a zip file for a bundle.
+```bash
+npx @capgo/cli@latest bundle encrypt ./myapp.zip CHECKSUM
+```
 
-Options:
+**Options:**
 
-- `-p, --path <path>`: Path to the folder to zip (defaults to the `webDir` in `capacitor.config`)
-- `-b, --bundle <bundle>`: Bundle version number to use in the filename
-- `-n, --name <name>`: Custom filename for the zip
-- `-j, --json`: Output results as JSON
-- `--no-code-check`: Skip checking for `notifyAppReady()` in the source code and `index.html` in the root folder
-- `--key-v2`: Use the new encryption method (v2)
-- `--package-json <packageJson>`: Comma-separated list of paths to `package.json` files (useful for monorepos) 
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **--key** | <code>string</code> | Custom path for private signing key |
+| **--key-data** | <code>string</code> | Private signing key |
+| **-j,** | <code>string</code> | Output in JSON |
+
+### <a id="bundle-decrypt"></a> 🔓 **Decrypt**
+
+```bash
+npx @capgo/cli@latest bundle decrypt
+```
+
+🔓 Decrypt a zip bundle using the new encryption method, mainly for testing purposes.
+Prints the base64 decrypted session key for verification.
+
+**Example:**
+
+```bash
+npx @capgo/cli@latest bundle decrypt ./myapp_encrypted.zip CHECKSUM
+```
+
+**Options:**
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **--key** | <code>string</code> | Custom path for private signing key |
+| **--key-data** | <code>string</code> | Private signing key |
+| **--checksum** | <code>string</code> | Checksum of the bundle, to verify the integrity of the bundle |
+
+### <a id="bundle-zip"></a> 🔹 **Zip**
+
+```bash
+npx @capgo/cli@latest bundle zip
+```
+
+🗜️ Create a zip file of your app bundle for upload or local storage.
+Useful for preparing bundles before encryption or upload.
+
+**Example:**
+
+```bash
+npx @capgo/cli@latest bundle zip com.example.app --path ./dist
+```
+
+**Options:**
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-p,** | <code>string</code> | Path of the folder to upload, if not provided it will use the webDir set in capacitor.config |
+| **-b,** | <code>string</code> | Bundle version number to name the zip file |
+| **-n,** | <code>string</code> | Name of the zip file |
+| **-j,** | <code>string</code> | Output in JSON |
+| **--no-code-check** | <code>boolean</code> | Ignore checking if notifyAppReady() is called in source code and index present in root folder |
+| **--key-v2** | <code>boolean</code> | Use encryption v2 |
+| **--package-json** | <code>string</code> | A list of paths to package.json. Useful for monorepos (comma separated ex: ../../package.json,./package.json) |
+

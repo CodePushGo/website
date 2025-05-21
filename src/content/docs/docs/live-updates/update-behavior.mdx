@@ -1,26 +1,27 @@
 ---
 title: Update Behavior
+description: "Explore the comprehensive update behavior of Capgo, designed to deliver seamless updates to your app users without interrupting their experience."
 sidebar:
   order: 3
 ---
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-When you release an update to your CodePushGo app, you probably want your users to receive that update as soon as possible. But you also don't want to disrupt their experience by forcing them to wait for a download or restart the app in the middle of a session.
+When you release an update to your Capgo app, you probably want your users to receive that update as soon as possible. But you also don't want to disrupt their experience by forcing them to wait for a download or restart the app in the middle of a session.
 
-CodePushGo's update behavior is designed to strike a balance between delivering updates quickly and minimizing disruption to your users.
+Capgo's update behavior is designed to strike a balance between delivering updates quickly and minimizing disruption to your users.
 
 ## Default Update Flow
 
-By default, here's how CodePushGo handles app updates:
+By default, here's how Capgo handles app updates:
 
 <Steps>
 
-1. On app launch, the CodePushGo plugin checks to see if a new update is available.
+1. On app launch, the Capgo plugin checks to see if a new update is available.
 
 2. If an update is found, it's downloaded in the background while the user continues using the current version of the app.
 
-3. Once the download completes, CodePushGo waits for the user to either background the app or kill it entirely.
+3. Once the download completes, Capgo waits for the user to either background the app or kill it entirely.
 
 4. When the user next launches the app, they'll be running the updated version.
 
@@ -29,7 +30,7 @@ By default, here's how CodePushGo handles app updates:
 This flow ensures that users are always running the latest version of your app, without ever being interrupted by update prompts or forced to wait for downloads.
 
 <Aside type="tip">
-CodePushGo also checks for updates when the app resumes from the background, so users will receive updates even if they don't fully quit the app.
+Capgo also checks for updates when the app resumes from the background, so users will receive updates even if they don't fully quit the app.
 </Aside>
 
 ## Why This Approach?
@@ -56,12 +57,12 @@ To mitigate this, we recommend:
 
 In some cases, you may want more control over exactly when an update is applied. For example, you might want to ensure a user completes an in-progress flow before updating, or coordinate an app update with a server-side change.
 
-CodePushGo provides a `setDelay` function that lets you specify conditions that must be met before an update is installed:
+Capgo provides a `setDelay` function that lets you specify conditions that must be met before an update is installed:
 
 ```typescript
-import { React NativeUpdater } from '@codepushgo/react-native-updater';
+import { CapacitorUpdater } from '@capgo/capacitor-updater';
 
-await React NativeUpdater.setMultiDelay({
+await CapacitorUpdater.setMultiDelay({
   delayConditions: [
     {
       kind: 'date',
@@ -92,16 +93,16 @@ Note that the `kill` condition currently triggers the update after the first kil
 
 ## Applying Updates Immediately
 
-For critical updates or apps with very simple state, you may want to apply an update as soon as it's downloaded, without waiting for a background or kill event. CodePushGo supports this via the `directUpdate` configuration option.
+For critical updates or apps with very simple state, you may want to apply an update as soon as it's downloaded, without waiting for a background or kill event. Capgo supports this via the `directUpdate` configuration option.
 
 `directUpdate` is set in your `capacitor.config.ts` file, not in JavaScript code:
 
 ```typescript
-import { React NativeConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli';
 
-const config: React NativeConfig = {
+const config: CapacitorConfig = {
   plugins: {
-    React NativeUpdater: {
+    CapacitorUpdater: {
       autoUpdate: true,
       directUpdate: true,
     },
@@ -112,22 +113,22 @@ const config: React NativeConfig = {
 export default config;
 ```
 
-With `directUpdate` enabled, CodePushGo will immediately apply an update as soon as the download completes, even if the user is actively using the app.
+With `directUpdate` enabled, Capgo will immediately apply an update as soon as the download completes, even if the user is actively using the app.
 
 Note that because `directUpdate` is a native configuration, it requires some additional handling in your JavaScript code.
 
 When using `directUpdate`, you need to listen for the `appReady` event and hide your app's splash screen in response:
 
 ```js
-import { React NativeUpdater } from '@codepushgo/react-native-updater';
+import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import { SplashScreen } from '@capacitor/splash-screen';
 
-React NativeUpdater.addListener('appReady', () => {
+CapacitorUpdater.addListener('appReady', () => {
   // Hide splash screen
   SplashScreen.hide();
 });
 
-React NativeUpdater.notifyAppReady();
+CapacitorUpdater.notifyAppReady();
 ```
 
 The `appReady` event fires once the app has finished initializing and applying any pending updates. This is the point at which it's safe to show your app's UI, as it ensures the user will see the latest version.
@@ -150,4 +151,4 @@ If you do enable `directUpdate`, we recommend:
 - Saving and restoring the app state as needed to avoid losing user progress.
 - Thoroughly testing your app's update behavior to ensure there are no jarring transitions, lost state, or disorienting location changes.
 
-In most cases, the default update behavior provides the best balance of delivering updates quickly and minimizing disruption. But for apps with specific needs, CodePushGo provides the flexibility to customize when and how updates are applied.
+In most cases, the default update behavior provides the best balance of delivering updates quickly and minimizing disruption. But for apps with specific needs, Capgo provides the flexibility to customize when and how updates are applied.

@@ -1,16 +1,33 @@
 ---
-title: init
+title: 🚀 init
+description: 🚀 Initialize a new app in Capgo Cloud with step-by-step guidance.
 sidebar_label: init
 sidebar:
-  order: 2
+  order: 1
 ---
 
-`npx @codepushgo/cli@latest init [apikey]`
+🚀 Initialize a new app in Capgo Cloud with step-by-step guidance.
 
-This command onboards you step-by-step to:
+**Alias:** `i`
 
-- Add your app to CodePushGo
-- Add the code to your app to validate the update
-- Build your app
-- Upload your app to CodePushGo
-- Help you check if the update works 
+```bash
+npx @capgo/cli@latest init
+```
+
+This includes adding code for updates, building, uploading your app, and verifying update functionality.
+
+**Example:**
+
+```bash
+npx @capgo/cli@latest init YOUR_API_KEY com.example.app
+```
+
+## <a id="options"></a> Options
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-n,** | <code>string</code> | App name for display in Capgo Cloud |
+| **-i,** | <code>string</code> | App icon path for display in Capgo Cloud |
+| **--supa-host** | <code>string</code> | Supabase host URL for custom setups |
+| **--supa-anon** | <code>string</code> | Supabase anon token for custom setups |
+

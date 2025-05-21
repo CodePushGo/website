@@ -1,18 +1,30 @@
 ---
-title: login
+title: 🔑 login
+description: 🔑 Save your Capgo API key to your machine or local folder for easier access to Capgo Cloud services.
 sidebar_label: login
 sidebar:
   order: 3
 ---
 
-`npx @codepushgo/cli login [apikey]`
+🔑 Save your Capgo API key to your machine or local folder for easier access to Capgo Cloud services.
 
-This command stores your CodePushGo API key for future use.
+**Alias:** `l`
 
-:::note
-You can override the stored API key by passing `--apikey=<key>` to any command.
-:::
+```bash
+npx @capgo/cli@latest login
+```
 
-Options:
+Use --apikey=******** in any command to override it.
 
-- `--local`: Store the API key in the local repo and add it to `.gitignore` 
+**Example:**
+
+```bash
+npx @capgo/cli@latest login YOUR_API_KEY
+```
+
+## <a id="options"></a> Options
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **--local** | <code>boolean</code> | Only save in local folder, git ignored for security. |
+

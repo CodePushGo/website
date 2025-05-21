@@ -1,36 +1,68 @@
 ---
-title: key
+title: 🔐 key
+description: 🔐 Manage encryption keys for secure bundle distribution in Capgo Cloud, supporting end-to-end encryption with RSA and AES combination.
 sidebar_label: key
 sidebar:
   order: 7
 ---
 
-The `key` command lets you manage your app signing keys.
+🔐 Manage encryption keys for secure bundle distribution in Capgo Cloud, supporting end-to-end encryption with RSA and AES combination.
 
-### save
+### <a id="key-save"></a> 🔹 **Save**
 
-`npx @codepushgo/cli key save`
+```bash
+npx @capgo/cli@latest key save
+```
 
-Saves a base64-encoded encryption key to the React Native config (useful for CI).
+💾 Save a base64 encryption key in the Capacitor config, useful for CI environments.
+Recommended not to commit the key for security.
 
-Options:
+**Example:**
 
-- `-f, --force`: Force generation of a new key
-- `--key`: Path to the key file to save in the React Native config
-- `--key-data`: Key data to save directly in the React Native config
+```bash
+npx @capgo/cli@latest key save --key ./path/to/key
+```
 
-### create
+**Options:**
 
-`npx @codepushgo/cli key create`
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-f,** | <code>string</code> | Force generate a new one |
+| **--key** | <code>string</code> | Key path to save in Capacitor config |
+| **--key-data** | <code>string</code> | Key data to save in Capacitor config |
 
-Creates a new encryption key.
+### <a id="key-create"></a> 🔨 **Create**
 
-Options:
+```bash
+npx @capgo/cli@latest key create
+```
 
-- `-f, --force`: Force generation of a new key
+🔨 Create a new encryption key pair for end-to-end encryption in Capgo Cloud.
+Do not commit or share the private key; save it securely.
 
-### delete_old
+**Example:**
 
-`npx @codepushgo/cli key delete_old`
+```bash
+npx @capgo/cli@latest key create
+```
 
-Deletes the old encryption key. 
+**Options:**
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **-f,** | <code>string</code> | Force generate a new one |
+
+### <a id="key-delete_old"></a> 🗑️ **Delete_old**
+
+```bash
+npx @capgo/cli@latest key delete_old
+```
+
+🧹 Delete the old encryption key from the Capacitor config to ensure only the current key is used.
+
+**Example:**
+
+```bash
+npx @capgo/cli@latest key delete_old
+```
+

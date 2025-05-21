@@ -1,11 +1,11 @@
 ---
 title: "Bundles"
-description: "Bundles endpoint documentation"
+description: "Detailed guide for managing Capgo Bundles, covering listing, deleting, versioning, and storage optimization for app update packages."
 sidebar:
   order: 8
 ---
 
-Bundles are the core update packages in CodePushGo. Each bundle contains the web assets (HTML, CSS, JS) that make up your app's content. The Bundles API allows you to manage these update packages, including listing and deleting them.
+Bundles are the core update packages in Capgo. Each bundle contains the web assets (HTML, CSS, JS) that make up your app's content. The Bundles API allows you to manage these update packages, including listing and deleting them.
 
 ## Understanding Bundles
 
@@ -27,7 +27,7 @@ A bundle represents a specific version of your app's web content and includes:
 
 ### GET
 
-`https://api.codepushgo.com/bundle/`
+`https://api.capgo.app/bundle/`
 
 Retrieve bundle information. Returns 50 bundles per page.
 
@@ -63,11 +63,11 @@ interface Bundle {
 ```bash
 # Get all bundles
 curl -H "authorization: your-api-key" \
-  "https://api.codepushgo.com/bundle/?app_id=app_123"
+  "https://api.capgo.app/bundle/?app_id=app_123"
 
 # Get next page
 curl -H "authorization: your-api-key" \
-  "https://api.codepushgo.com/bundle/?app_id=app_123&page=1"
+  "https://api.capgo.app/bundle/?app_id=app_123&page=1"
 ```
 
 #### Example Response
@@ -94,7 +94,7 @@ curl -H "authorization: your-api-key" \
 
 ### DELETE
 
-`https://api.codepushgo.com/bundle/`
+`https://api.capgo.app/bundle/`
 
 Delete one or all bundles for an app. Use with caution as this action cannot be undone.
 
@@ -126,7 +126,7 @@ curl -X DELETE \
     "app_id": "app_123",
     "version": "1.0.0"
   }' \
-  https://api.codepushgo.com/bundle/
+  https://api.capgo.app/bundle/
 
 # Delete all bundles
 curl -X DELETE \
@@ -135,7 +135,7 @@ curl -X DELETE \
   -d '{
     "app_id": "app_123"
   }' \
-  https://api.codepushgo.com/bundle/
+  https://api.capgo.app/bundle/
 ```
 
 #### Success Response

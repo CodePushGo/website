@@ -1,6 +1,6 @@
 ---
 title: "Debugging"
-description: "How to debug your app"
+description: "How to debug your updates of Capgo and understand the issue you can have with your configuration"
 sidebar:
   order: 6
 ---
@@ -57,7 +57,7 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 | **decrypt_fail**        | Failed to decrypt the downloaded bundle.                                          |
 | **getChannel**          | The current channel for the device was queried.                                   |
 | **setChannel**          | A channel was successfully set for the device.                                    |
-| **uninstall**           | The application was uninstalled or CodePushGo data cleared.                            |
+| **uninstall**           | The application was uninstalled or Capgo data cleared.                            |
 
 ### Bundle status
 
@@ -71,10 +71,10 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 ### Debug command:
 
-There is a debug command for CodePushGo cloud users.
+There is a debug command for Capgo cloud users.
 
 ```bash
-npx @codepushgo/cli@latest app debug
+npx @capgo/cli@latest app debug
 ```
 
 This will allow you to check all events happening in the app and find a solution if updates don't happen.

@@ -1,6 +1,6 @@
 ---
 title: "Manual Update"
-description: "How to use the manual update plugin in self-hosted mode"
+description: "A detailed guide on utilizing the manual update plugin within a self-hosted environment, providing comprehensive instructions on configuration and usage to effectively manage updates without relying on automatic processes."
 sidebar:
   order: 4
 ---
@@ -14,7 +14,7 @@ Add this to your ``capacitor.config.json``, to disable auto-update.
 	"appId": "**.***.**",
 	"appName": "Name",
 	"plugins": {
-		"React NativeUpdater": {
+		"CapacitorUpdater": {
 			"autoUpdate": false,
 		}
 	}
@@ -34,15 +34,15 @@ We are not doing any version checking, decryption or checksum validation in this
 :::
 
 ```tsx
-import { React NativeUpdater } from '@codepushgo/react-native-updater'
+import { CapacitorUpdater } from '@capgo/capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 import { App } from '@capacitor/app'
 let data = {version: ""}
-React NativeUpdater.notifyAppReady()
+CapacitorUpdater.notifyAppReady()
 App.addListener('appStateChange', async(state) => {
      if (state.isActive) {
        // Do the download during user active app time to prevent failed download
-       data = await React NativeUpdater.download({
+       data = await CapacitorUpdater.download({
        version: '0.0.4',
        url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.4/dist.zip',
        })
@@ -51,7 +51,7 @@ App.addListener('appStateChange', async(state) => {
        // Do the switch when user leave app
        SplashScreen.show()
        try {
-         await React NativeUpdater.set(data)
+         await CapacitorUpdater.set(data)
        } catch (err) {
          console.log(err)
          SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
@@ -63,5 +63,5 @@ App.addListener('appStateChange', async(state) => {
 
 
 :::note
-If this seems like a lot of work consider trying [CodePushGo trial](https://codepushgo.com/register/). It will handle all of this for you.
+If this seems like a lot of work consider trying [Capgo trial](https://capgo.app/register/). It will handle all of this for you.
 :::

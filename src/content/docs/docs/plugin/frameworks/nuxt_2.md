@@ -1,6 +1,6 @@
 ---
 title: "Nuxt 2"
-description: "How to install the plugin in Nuxt 2"
+description: "A detailed guide on installing and configuring the Capgo plugin within a Nuxt 2 application, ensuring seamless integration and functionality."
 sidebar:
   order: 1
 ---
@@ -11,12 +11,12 @@ Create a plugin file `capacitor-updater.js` in `plugins` directory.
 
 ```js
 
-import { React NativeUpdater } from '@codepushgo/react-native-updater'
+import { CapacitorUpdater } from '@capgo/capacitor-updater'
 
 export default ({ app }) => {
   if (process.client) {
     window.onNuxtReady(() => {
-      React NativeUpdater.notifyAppReady()
+      CapacitorUpdater.notifyAppReady()
     })
   }
 }

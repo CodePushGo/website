@@ -1,46 +1,47 @@
 ---
 title: Troubleshooting
+description: "Resolve common issues encountered while using Capgo with detailed troubleshooting steps and advanced options for upload and debugging."
 sidebar:
   order: 5
 next: false
 prev: false
 ---
 
-Here are some common issues you might encounter while using CodePushGo and how to resolve them.
+Here are some common issues you might encounter while using Capgo and how to resolve them.
 
 ### Upload failures
 
 If your bundle upload fails, double check:
-- Your app ID in `capacitor.config.ts` matches your app in the CodePushGo dashboard
-- You're running the upload command from the root of your React Native project 
+- Your app ID in `capacitor.config.ts` matches your app in the Capgo dashboard
+- You're running the upload command from the root of your Capacitor project 
 - Your web assets are built and up to date
 
 #### Advanced upload options
 
-The CodePushGo CLI provides some additional flags to help with common upload issues:
+The Capgo CLI provides some additional flags to help with common upload issues:
 
 - `--tus`: Uses the [tus resumable upload protocol](https://tus.io/) for more reliable uploads of large bundles or on poor network connections. If your bundle is over 10MB or you're on a spotty connection, consider using `--tus`:
   ```shell
-  npx @codepushgo/cli@latest bundle upload --tus
+  npx @capgo/cli@latest bundle upload --tus
   ```
 
-- `--package-json` and `--node-modules`: Tells CodePushGo where to find your root `package.json` and `node_modules` if your app uses a non-standard structure like a monorepo or npm workspace. Pass the path to the root `package.json` and the `--node_modules` path:
+- `--package-json` and `--node-modules`: Tells Capgo where to find your root `package.json` and `node_modules` if your app uses a non-standard structure like a monorepo or npm workspace. Pass the path to the root `package.json` and the `--node_modules` path:
   ```shell
-  npx @codepushgo/cli@latest bundle upload --package-json=path/to/package.json --node_modules=path/to/node_modules
+  npx @capgo/cli@latest bundle upload --package-json=path/to/package.json --node_modules=path/to/node_modules
   ```
-  CodePushGo needs this information to correctly bundle your app's dependencies.
+  Capgo needs this information to correctly bundle your app's dependencies.
 
-You can combine these flags with other options like `--channel` as needed. See the [CodePushGo CLI docs](/docs/cli) for full details on the available upload options.
+You can combine these flags with other options like `--channel` as needed. See the [Capgo CLI docs](/docs/cli/overview/) for full details on the available upload options.
 
-If you're still having trouble with uploads, reach out to [CodePushGo support](mailto:support@codepushgo.com) for further assistance.
+If you're still having trouble with uploads, reach out to [Capgo support](mailto:support@capgo.app) for further assistance.
 
 ### Debugging Updates
 
-If you're encountering issues with live updates, the CodePushGo debug command is a helpful tool for troubleshooting. To use it:
+If you're encountering issues with live updates, the Capgo debug command is a helpful tool for troubleshooting. To use it:
 
 1. Run the following command in your project directory:
    ```shell
-   npx @codepushgo/cli@latest app debug
+   npx @capgo/cli@latest app debug
    ```
 
 2. Launch your app on a device or emulator and perform the action that should trigger an update (e.g. reopening the app after uploading a new bundle).
@@ -53,14 +54,14 @@ If you're encountering issues with live updates, the CodePushGo debug command is
 
 4. Use the debug logs to identify where the issue is occurring. For example:
    - If no update is found, double check that your bundle was uploaded successfully and the app is configured to use the correct channel.
-   - If the update downloads but doesn't install, make sure you've called `React NativeUpdater.notifyAppReady()` and that the app was fully closed and reopened.
-   - If you see an error message, look up that specific error in the CodePushGo docs or reach out to support for help.
+   - If the update downloads but doesn't install, make sure you've called `CapacitorUpdater.notifyAppReady()` and that the app was fully closed and reopened.
+   - If you see an error message, look up that specific error in the Capgo docs or reach out to support for help.
 
 The debug command is especially useful for identifying issues with the update download and installation process. If the logs show the expected update version was found but not ultimately applied, focus your troubleshooting on the steps after the download.
 
 ### Debugging with Native Logs
 
-In addition to the CodePushGo debug command, the native logs on Android and iOS can provide valuable troubleshooting information, especially for issues on the native side of the update process.
+In addition to the Capgo debug command, the native logs on Android and iOS can provide valuable troubleshooting information, especially for issues on the native side of the update process.
 
 #### Android Logs
 
@@ -69,11 +70,11 @@ To access the Android logs:
 1. Connect your device or start your emulator
 2. Open Android Studio and select "View > Tool Windows > Logcat" 
 3. In the Logcat window, filter the logs to just your app's process by selecting it from the dropdown at the top
-4. Look for any lines that include `CodePushGo` to find the SDK logs
+4. Look for any lines that include `Capgo` to find the SDK logs
 
-Alternatively, you can use the `adb logcat` command and grep for `CodePushGo` to filter the logs.
+Alternatively, you can use the `adb logcat` command and grep for `Capgo` to filter the logs.
 
-The CodePushGo SDK will log key events during the update process, such as:
+The Capgo SDK will log key events during the update process, such as:
 - When an update check is initiated
 - If an update is found and what version it is
 - When the update download starts and completes
@@ -93,11 +94,11 @@ To access the iOS logs:
 1. Connect your device or start your simulator
 2. Open Xcode and go to "Window > Devices and Simulators"
 3. Select your device and click on "Open Console"
-4. In the console output, look for any lines that include `CodePushGo` to find the SDK logs
+4. In the console output, look for any lines that include `Capgo` to find the SDK logs
 
-You can also use the `log stream` command in the terminal and grep for `CodePushGo` to filter the logs.
+You can also use the `log stream` command in the terminal and grep for `Capgo` to filter the logs.
 
-Similar to Android, the CodePushGo SDK will log key iOS-side events:
+Similar to Android, the Capgo SDK will log key iOS-side events:
 - Update check initiation and result
 - Download start, progress, and completion
 - Installation trigger and result
@@ -109,31 +110,31 @@ iOS-specific issues you might identify in the logs include:
 - Insufficient storage space for the update bundle
 - Failure to properly extract or apply the update bundle
 
-On both platforms, the native logs provide a lower-level view into the update process, with more details on the native implementation. They are especially useful for identifying issues that occur outside of the CodePushGo JavaScript layer.
+On both platforms, the native logs provide a lower-level view into the update process, with more details on the native implementation. They are especially useful for identifying issues that occur outside of the Capgo JavaScript layer.
 
-When troubleshooting a tricky live update problem, it's a good idea to capture both the CodePushGo debug logs and the native logs for a comprehensive picture of what's happening. The two logs together will give you the best chance of identifying and resolving the issue.
+When troubleshooting a tricky live update problem, it's a good idea to capture both the Capgo debug logs and the native logs for a comprehensive picture of what's happening. The two logs together will give you the best chance of identifying and resolving the issue.
 
 ### Updates not applying
 
 If you've uploaded a bundle but aren't seeing the changes on your device:
-- Make sure you've called `React NativeUpdater.notifyAppReady()` in your app code as shown in the [quickstart](/docs/getting-started/quickstart)  
-- Check that your device is connected to the internet and the CodePushGo debug logs show the update was downloaded
+- Make sure you've called `CapacitorUpdater.notifyAppReady()` in your app code as shown in the [quickstart](/docs/getting-started/quickstart)  
+- Check that your device is connected to the internet and the Capgo debug logs show the update was downloaded
 - Try fully closing and reopening the app, as updates are only applied on a fresh launch
 - Look for any errors in the native logs that might indicate a problem applying the update
 
-Refer to the [deploying live updates](/docs/getting-started/deploy) guide for more details on the update process. If you're still stuck, use the `npx @codepushgo/cli@latest app debug` command and native logs to get more visibility into what's happening.
+Refer to the [deploying live updates](/docs/getting-started/deploy) guide for more details on the update process. If you're still stuck, use the `npx @capgo/cli@latest app debug` command and native logs to get more visibility into what's happening.
 
 ## SDK Installation
 
-If you're having trouble installing the CodePushGo SDK, make sure:
-- Your app is using a supported version of React Native (4.0 or newer)
+If you're having trouble installing the Capgo SDK, make sure:
+- Your app is using a supported version of Capacitor (4.0 or newer)
 - You've followed the [quickstart](/docs/getting-started/quickstart) steps in order, including syncing your app after installing the SDK
 
 ## CI/CD Integration 
 
-For issues with triggering CodePushGo uploads from your CI/CD pipeline:
-- Double check your CodePushGo authentication token is set up correctly 
+For issues with triggering Capgo uploads from your CI/CD pipeline:
+- Double check your Capgo authentication token is set up correctly 
 - Make sure you're running the upload command after your web assets are built
 - Check that the upload command is using the correct channel name for your target environment
 
-See the [CI/CD integration](/docs/cicd-integration) docs for more troubleshooting tips. You can also use the `npx @codepushgo/cli@latest app debug` command to confirm if your CI/CD-triggered updates are being received by the app.
+See the [CI/CD integration](/docs/getting-started/cicd-integration/) docs for more troubleshooting tips. You can also use the `npx @capgo/cli@latest app debug` command to confirm if your CI/CD-triggered updates are being received by the app.

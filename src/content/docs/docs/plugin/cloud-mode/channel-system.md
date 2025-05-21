@@ -1,11 +1,11 @@
 ---
 title: "Channel system"
-description: "How to use the channel system with capacitor-updater"
+description: "How to use the channel system with Capgo, and our updater, undertsand what channel are for and how to make your device use them"
 sidebar:
   order: 6
 ---
 
-CodePushGo and capacitor-updater comes with a powerful channel system.
+Capgo and capacitor-updater comes with a powerful channel system.
 
 ## What you can do with channels:
 
@@ -14,8 +14,8 @@ CodePushGo and capacitor-updater comes with a powerful channel system.
 
 ## Assigning devices to a channel:
 
-* Make the channel default, each time a new device asks CodePushGo for an update this channel will answer
-* Send the **deviceId** (with [**getDeviceId**](/docs/plugin/api#getdeviceid) method) to your backend and assign it with CodePushGo public API
+* Make the channel default, each time a new device asks Capgo for an update this channel will answer
+* Send the **deviceId** (with [**getDeviceId**](/docs/plugin/api#getdeviceid) method) to your backend and assign it with Capgo public API
 * Make the channel self-assignable (with [**setChannel**](/docs/plugin/api#setchannel) method), and let the device subscribe to the channel (with user interaction or not) with method `setChannel` of the plugin.
 * Use the option `defaultChannel` in the [config](/docs/plugin/settings#defaultchannel) to set the default channel for all devices with this plugin configuration. The name is case sentive
 
@@ -41,9 +41,9 @@ Details of each option:
 | **Allow development build**             | Allow development build to receive update from this channel                                           |
 
 :::note
-CodePushGo is doing some automatic filtering for you. If you have a CI/CD configured to send your version to Google Play, Google Play will run your app each time to 20+ real devices. During the first 4 hours of a new bundle, we will block Google data center IPs to prevent them from being counted in your stats.
+Capgo is doing some automatic filtering for you. If you have a CI/CD configured to send your version to Google Play, Google Play will run your app each time to 20+ real devices. During the first 4 hours of a new bundle, we will block Google data center IPs to prevent them from being counted in your stats.
 :::
 
 :::note 
-CodePushGo **does not** count emulator and dev builds in your usage, but keep in mind that you can't have more than 3% of them, or your account will be locked until you fix it.
+Capgo **does not** count emulator and dev builds in your usage, but keep in mind that you can't have more than 3% of them, or your account will be locked until you fix it.
 :::

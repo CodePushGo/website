@@ -1,18 +1,18 @@
 ---
 title: "Functions and settings"
-description: "All available method and settings of the plugin"
+description: "Learn about all available method and settings of the updater plugin of Capgo, and how to use it"
 sidebar:
   order: 2
 ---
 
-# Updater Plugin Config
+## Updater Plugin Config
 
 See the Github [Readme](https://github.com/Cap-go/capacitor-updater) for more information.
 
 <docgen-config>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-React NativeUpdater can be configured with these options:
+CapacitorUpdater can be configured with these options:
 
 | Prop                         | Type                 | Description                                                                                                                                                                                     | Default                                            | Since   |
 | ---------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------- |
@@ -22,9 +22,9 @@ React NativeUpdater can be configured with these options:
 | **`autoDeletePrevious`**     | <code>boolean</code> | Configure whether the plugin should use automatically delete previous bundles after a successful update. Only available for Android and iOS.                                                    | <code>true</code>                                  |         |
 | **`autoUpdate`**             | <code>boolean</code> | Configure whether the plugin should use Auto Update via an update server. Only available for Android and iOS.                                                                                   | <code>true</code>                                  |         |
 | **`resetWhenUpdate`**        | <code>boolean</code> | Automatically delete previous downloaded bundles when a newer native app bundle is installed to the device. Only available for Android and iOS.                                                 | <code>true</code>                                  |         |
-| **`updateUrl`**              | <code>string</code>  | Configure the URL / endpoint to which update checks are sent. Only available for Android and iOS.                                                                                               | <code>https://plugin.codepushgo.com/updates</code>      |         |
-| **`channelUrl`**             | <code>string</code>  | Configure the URL / endpoint for channel operations. Only available for Android and iOS.                                                                                                        | <code>https://plugin.codepushgo.com/channel_self</code> |         |
-| **`statsUrl`**               | <code>string</code>  | Configure the URL / endpoint to which update statistics are sent. Only available for Android and iOS. Set to "" to disable stats reporting.                                                     | <code>https://plugin.codepushgo.com/stats</code>        |         |
+| **`updateUrl`**              | <code>string</code>  | Configure the URL / endpoint to which update checks are sent. Only available for Android and iOS.                                                                                               | <code>https://plugin.capgo.app/updates</code>      |         |
+| **`channelUrl`**             | <code>string</code>  | Configure the URL / endpoint for channel operations. Only available for Android and iOS.                                                                                                        | <code>https://plugin.capgo.app/channel_self</code> |         |
+| **`statsUrl`**               | <code>string</code>  | Configure the URL / endpoint to which update statistics are sent. Only available for Android and iOS. Set to "" to disable stats reporting.                                                     | <code>https://plugin.capgo.app/stats</code>        |         |
 | **`publicKey`**              | <code>string</code>  | Configure the public key for end to end live update encryption Version 2 Only available for Android and iOS.                                                                                    | <code>undefined</code>                             | 6.2.0   |
 | **`version`**                | <code>string</code>  | Configure the current version of the app. This will be used for the first update request. If not set, the plugin will get the version from the native code. Only available for Android and iOS. | <code>undefined</code>                             | 4.17.48 |
 | **`directUpdate`**           | <code>boolean</code> | Make the plugin direct install the update when the app what just updated/installed. Only for autoUpdate mode. Only available for Android and iOS.                                               | <code>undefined</code>                             | 5.1.0   |
@@ -37,7 +37,7 @@ React NativeUpdater can be configured with these options:
 | **`localApi`**               | <code>string</code>  | Configure the CLI to use a local api for testing.                                                                                                                                               | <code>undefined</code>                             | 6.3.3   |
 | **`localApiFiles`**          | <code>string</code>  | Configure the CLI to use a local file api for testing.                                                                                                                                          | <code>undefined</code>                             | 6.3.3   |
 | **`allowModifyUrl`**         | <code>boolean</code> | Allow the plugin to modify the updateUrl, statsUrl and channelUrl dynamically from the JavaScript side.                                                                                         | <code>false</code>                                 | 5.4.0   |
-| **`defaultChannel`**         | <code>string</code>  | Set the default channel for the app in the config.                                                                                                                                              | <code>undefined</code>                             | 5.5.0   |
+| **`defaultChannel`**         | <code>string</code>  | Set the default channel for the app in the config. Case sensitive. This will setting will override the default channel set in the cloud, but will still respect overrides made in the cloud.    | <code>undefined</code>                             | 5.5.0   |
 | **`appId`**                  | <code>string</code>  | Configure the app id for the app in the config.                                                                                                                                                 | <code>undefined</code>                             | 6.0.0   |
 | **`keepUrlPathAfterReload`** | <code>boolean</code> | Configure the plugin to keep the URL path after a reload. WARNING: When a reload is triggered, 'window.history' will be cleared.                                                                | <code>false</code>                                 | 6.8.0   |
 
@@ -48,7 +48,7 @@ In `capacitor.config.json`:
 ```json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "appReadyTimeout": 1000 // (1 second),
       "responseTimeout": 10 // (10 second),
       "autoDeleteFailed": false,
@@ -81,13 +81,13 @@ In `capacitor.config.json`:
 In `capacitor.config.ts`:
 
 ```ts
-/// <reference types="@codepushgo/react-native-updater" />
+/// <reference types="@capgo/capacitor-updater" />
 
-import { React NativeConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli';
 
-const config: React NativeConfig = {
+const config: CapacitorConfig = {
   plugins: {
-    React NativeUpdater: {
+    CapacitorUpdater: {
       appReadyTimeout: 1000 // (1 second),
       responseTimeout: 10 // (10 second),
       autoDeleteFailed: false,
@@ -174,7 +174,7 @@ export default config;
 notifyAppReady() => Promise<AppReadyResult>
 ```
 
-Notify React Native Updater that the current bundle is working (a rollback will occur if this method is not called on every app launch)
+Notify Capacitor Updater that the current bundle is working (a rollback will occur if this method is not called on every app launch)
 By default this method should be called in the first 10 sec after app launch, otherwise a rollback will occur.
 Change this behaviour with {@link appReadyTimeout}
 
@@ -418,7 +418,7 @@ setChannel(options: SetChannelOptions) => Promise<ChannelRes>
 Sets the channel for this device. The channel has to allow for self assignment for this to work.
 Do not use this method to set the channel at boot when `autoUpdate` is enabled in the {@link PluginsConfig}.
 This method is to set the channel after the app is ready.
-This methods send to CodePushGo backend a request to link the device ID to the channel. CodePushGo can accept or refuse depending of the setting of your channel.
+This methods send to Capgo backend a request to link the device ID to the channel. Capgo can accept or refuse depending of the setting of your channel.
 
 | Param         | Type                                                            | Description                                                                      |
 | ------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------- |
@@ -514,7 +514,7 @@ Get unique ID used to identify device (sent to auto update server)
 getPluginVersion() => Promise<PluginVersion>
 ```
 
-Get the native React Native Updater plugin version (sent to auto update server)
+Get the native Capacitor Updater plugin version (sent to auto update server)
 
 **Returns:** <code>Promise&lt;<a href="#pluginversion">PluginVersion</a>&gt;</code>
 

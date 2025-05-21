@@ -1,11 +1,11 @@
 ---
 title: "Organizations"
-description: "Organizations endpoint documentation"
+description: "Guide to managing organizations in Capgo, covering creation, settings, updates, and retrieval of organization details."
 sidebar:
   order: 2
 ---
 
-Organizations are the top-level entities in CodePushGo. They allow you to group apps, team members, and resources under a single umbrella. Each organization can have multiple members with different roles and permissions.
+Organizations are the top-level entities in Capgo. They allow you to group apps, team members, and resources under a single umbrella. Each organization can have multiple members with different roles and permissions.
 
 ## Common Use Cases
 
@@ -18,7 +18,7 @@ Organizations are the top-level entities in CodePushGo. They allow you to group 
 
 ### GET
 
-`https://api.codepushgo.com/organization/`
+`https://api.capgo.app/organization/`
 
 Retrieve organization information. If `orgId` is provided in the parameters, returns a single organization. Otherwise, returns all accessible organizations.
 
@@ -45,10 +45,10 @@ interface Organization {
 
 ```bash
 # Get all organizations
-curl -H "authorization: your-api-key" https://api.codepushgo.com/organization/
+curl -H "authorization: your-api-key" https://api.capgo.app/organization/
 
 # Get specific organization
-curl -H "authorization: your-api-key" https://api.codepushgo.com/organization/?orgId=org_123
+curl -H "authorization: your-api-key" https://api.capgo.app/organization/?orgId=org_123
 ```
 
 #### Example Response
@@ -69,7 +69,7 @@ curl -H "authorization: your-api-key" https://api.codepushgo.com/organization/?o
 
 ### POST
 
-`https://api.codepushgo.com/organization/`
+`https://api.capgo.app/organization/`
 
 Create a new organization.
 
@@ -90,7 +90,7 @@ curl -X POST \
   -d '{
     "name": "New Organization"
   }' \
-  https://api.codepushgo.com/organization/
+  https://api.capgo.app/organization/
 ```
 
 #### Example Response
@@ -104,7 +104,7 @@ curl -X POST \
 
 ### PUT
 
-`https://api.codepushgo.com/organization/`
+`https://api.capgo.app/organization/`
 
 Update an existing organization. Requires admin role.
 
@@ -130,7 +130,7 @@ curl -X PUT \
     "name": "New Company Name",
     "management_email": "newemail@example.com"
   }' \
-  https://api.codepushgo.com/organization/
+  https://api.capgo.app/organization/
 ```
 
 #### Example Response
@@ -148,7 +148,7 @@ curl -X PUT \
 
 ### DELETE
 
-`https://api.codepushgo.com/organization/`
+`https://api.capgo.app/organization/`
 
 Delete an existing organization. Requires admin role. This action is irreversible and will remove all associated apps, versions, and resources.
 
@@ -161,7 +161,7 @@ Delete an existing organization. Requires admin role. This action is irreversibl
 ```bash
 curl -X DELETE \
   -H "authorization: your-api-key" \
-  https://api.codepushgo.com/organization/?orgId=org_123
+  https://api.capgo.app/organization/?orgId=org_123
 ```
 
 #### Example Response

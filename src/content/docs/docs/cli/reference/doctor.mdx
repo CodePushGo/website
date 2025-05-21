@@ -1,12 +1,28 @@
 ---
-title: doctor
+title: 👨‍⚕️ doctor
+description: 👨‍⚕️ Check if your Capgo app installation is up-to-date and gather information useful for bug reports.
 sidebar_label: doctor
 sidebar:
-  order: 7
+  order: 2
 ---
 
-`npx @codepushgo/cli doctor`
+👨‍⚕️ Check if your Capgo app installation is up-to-date and gather information useful for bug reports.
 
-This command checks if you are using the latest version of the CodePushGo packages.
+```bash
+npx @capgo/cli@latest doctor
+```
 
-It is also useful for bug reporting. 
+This command helps diagnose issues with your setup.
+
+**Example:**
+
+```bash
+npx @capgo/cli@latest doctor
+```
+
+## <a id="options"></a> Options
+
+| Param          | Type          | Description          |
+| -------------- | ------------- | -------------------- |
+| **--package-json** | <code>string</code> | A list of paths to package.json. Useful for monorepos (comma separated ex: ../../package.json,./package.json) |
+

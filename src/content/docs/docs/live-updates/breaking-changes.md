@@ -19,20 +19,20 @@ Let's say you have:
 
 ```bash
 # Create channel for version 2.x
-npx @codepushgo/cli channel create v2
+npx @capgo/cli channel create v2
 ```
 
-## 2. Update React Native Config
+## 2. Update Capacitor Config
 
 ```ts
 // capacitor.config.ts
-import { React NativeConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli';
 
-const config: React NativeConfig = {
+const config: CapacitorConfig = {
   appId: 'com.example.app',
   appName: 'Example App',
   plugins: {
-    React NativeUpdater: {
+    CapacitorUpdater: {
       // ... other options
       defaultChannel: 'v2' // New apps will use v2 channel
     }
@@ -46,17 +46,17 @@ export default config;
 
 ```bash
 # Upload 1.2.4 to production channel (for 1.2.3 users)
-npx @codepushgo/cli bundle upload --channel production
+npx @capgo/cli bundle upload --channel production
 
 # Upload 2.0.1 to v2 channel (for 2.0.0 users)
-npx @codepushgo/cli bundle upload --channel v2
+npx @capgo/cli bundle upload --channel v2
 ```
 
 ## 4. Enable Self-Assignment
 
 ```bash
 # Allow apps to self-assign to v2 channel
-npx @codepushgo/cli channel set v2 --self-assign
+npx @capgo/cli channel set v2 --self-assign
 ```
 
 ## 5. Update App Code
@@ -65,16 +65,16 @@ Add version check in your app to assign users to the correct channel:
 
 ```ts
 // src/utils/updater.ts
-import { React NativeUpdater } from '@codepushgo/react-native-updater'
+import { CapacitorUpdater } from '@capgo/capacitor-updater'
 
 export async function setupUpdater() {
-  const { appVersion } = await React NativeUpdater.getCurrentVersion()
+  const { appVersion } = await CapacitorUpdater.getCurrentVersion()
   const majorVersion = appVersion.split('.')[0]
   
   // Version 1.x uses default production channel
   // Only assign v2 channel for version 2.x
   if (majorVersion === '2') {
-    await React NativeUpdater.setChannel('v2')
+    await CapacitorUpdater.setChannel('v2')
   }
 }
 ```
@@ -83,11 +83,11 @@ export async function setupUpdater() {
 
 Once all users have migrated to version 2.x ( count 3/4 months):
 
-1. Remove `defaultChannel` from your React Native config
+1. Remove `defaultChannel` from your Capacitor config
 2. Delete the v2 channel:
 
 ```bash
-npx @codepushgo/cli channel delete v2
+npx @capgo/cli channel delete v2
 ```
 
 :::tip
@@ -99,7 +99,7 @@ Always test updates thoroughly in each channel before deployment
 :::
 
 :::note
-You can safely delete the v2 channel in CodePushGo even if some users still have the channel override. They will automatically receive updates from the production channel instead.
+You can safely delete the v2 channel in Capgo even if some users still have the channel override. They will automatically receive updates from the production channel instead.
 :::
 
 ## Maintaining Version 1.x Updates
@@ -119,7 +119,7 @@ git checkout v1.2.4
 
 3. Build and upload to production channel:
 ```bash
-npx @codepushgo/cli bundle upload --channel production
+npx @capgo/cli bundle upload --channel production
 ```
 
 :::tip

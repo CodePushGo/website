@@ -1,18 +1,19 @@
 ---
 title: Channels
+description: "Learn how to manage and configure Live Update channels in Capgo, enabling seamless app updates by directing specific JS bundle builds to devices configured for those channels."
 sidebar:
   order: 2
 ---
 
 import { Aside, Steps } from '@astrojs/starlight/components';
 
-A Live Update channel points to a specific JS bundle build of your app that will be shared with any devices configured to listen to that channel for updates. When you [install the CodePushGo Live Updates SDK](/docs/getting-started/quickstart/) in your app, any native binary configured to that channel will check for available updates whenever the app is launched. You can change the build a channel points to at any time and can also roll back to previous builds if needed.
+A Live Update channel points to a specific JS bundle build of your app that will be shared with any devices configured to listen to that channel for updates. When you [install the Capgo Live Updates SDK](/docs/getting-started/quickstart/) in your app, any native binary configured to that channel will check for available updates whenever the app is launched. You can change the build a channel points to at any time and can also roll back to previous builds if needed.
 
 ## Setting up a Channel
 
 Every app comes with a default channel called "Production" that cannot be deleted. To add new channels:
 
-1. Go to the "Channels" section of the CodePushGo dashboard 
+1. Go to the "Channels" section of the Capgo dashboard 
 2. Click the "New Channel" button
 3. Enter a name for the channel and click "Create"
 
@@ -27,14 +28,14 @@ Channel names can be anything you'd like. A common strategy is to match channels
 
 With your channels created, you need to configure your app to listen to the appropriate channel. In this example, we'll use the `Development` channel.
 
-Open your `capacitor.config.ts` (or `capacitor.config.json`) file. Under the `plugins` section, set the `channel` property of the `React NativeUpdater` plugin to the name of your desired channel:
+Open your `capacitor.config.ts` (or `capacitor.config.json`) file. Under the `plugins` section, set the `channel` property of the `CapacitorUpdater` plugin to the name of your desired channel:
 
 ```ts
-import { React NativeConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli';
 
-const config: React NativeConfig = {
+const config: CapacitorConfig = {
   plugins: {
-    React NativeUpdater: {
+    CapacitorUpdater: {
       defaultChannel: 'Development',
     },
   },
@@ -54,19 +55,19 @@ The `defaultChannel` property will always override the cloud default channel. Bu
 
 ## Assigning a Bundle to a Channel
 
-To deploy a live update, you need to upload a new JS bundle build and assign it to a channel. You can do this in one step with the CodePushGo CLI:
+To deploy a live update, you need to upload a new JS bundle build and assign it to a channel. You can do this in one step with the Capgo CLI:
 
 ```shell
-npx @codepushgo/cli@latest bundle upload --channel=Development
+npx @capgo/cli@latest bundle upload --channel=Development
 ```
 
 This will upload your built web assets and set the new bundle as the active build for the `Development` channel. Any apps configured to listen to that channel will receive the update the next time they check for one.
 
-You can also assign builds to channels from the "Bundles" section of the CodePushGo dashboard. Click the menu icon next to a build and select "Assign to Channel" to choose the channel for that build.
+You can also assign builds to channels from the "Bundles" section of the Capgo dashboard. Click the menu icon next to a build and select "Assign to Channel" to choose the channel for that build.
 
 ## Bundle Versioning and Channels
 
-It's important to note that bundles in CodePushGo are global to your app, not specific to individual channels. The same bundle can be assigned to multiple channels.
+It's important to note that bundles in Capgo are global to your app, not specific to individual channels. The same bundle can be assigned to multiple channels.
 
 When versioning your bundles, we recommend using semantic versioning [semver](https://semver.org/) with pre-release identifiers for channel-specific builds. For example, a beta release might be versioned as `1.2.3-beta.1`.
 
@@ -102,15 +103,15 @@ The selected build will immediately become the active build for that channel aga
 
 ## Automating Deployments
 
-For more advanced workflows, you can automate your live update deployments as part of your CI/CD pipeline. By integrating CodePushGo into your build process, you can automatically upload new bundles and assign them to channels whenever you push to certain branches or create new releases.
+For more advanced workflows, you can automate your live update deployments as part of your CI/CD pipeline. By integrating Capgo into your build process, you can automatically upload new bundles and assign them to channels whenever you push to certain branches or create new releases.
 
-Check out the [CI/CD Integration](/docs/cicd-integration/) docs to learn more about automating CodePushGo live updates.
+Check out the [CI/CD Integration](/docs/getting-started/cicd-integration/) docs to learn more about automating Capgo live updates.
 
 ## Deploying to a Device
 
 Now that you understand channels, you're ready to start deploying live updates to real devices. The basic process is:
 
-1. Install the CodePushGo SDK in your app
+1. Install the Capgo SDK in your app
 2. Configure the app to listen to your desired channel
 3. Upload a build and assign it to that channel
 4. Launch the app and wait for the update!

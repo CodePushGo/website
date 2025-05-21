@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-description: "All available settings for React Native Updater"
+description: "All available settings for Capacitor Updater, all the configuration you can set in you capacitor config and what they used for"
 sidebar:
   order: 8
 ---
@@ -19,7 +19,7 @@ Default: `10000` (10 seconds)
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "appReadyTimeout": 1000
     }
   }
@@ -38,7 +38,7 @@ Default: `20` (20 second)
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "responseTimeout": 1000
     }
   }
@@ -57,7 +57,7 @@ Default: `true`
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "autoDeleteFailed": false
     }
   }
@@ -76,7 +76,7 @@ Default: `true`
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "autoDeletePrevious": false
     }
   }
@@ -95,7 +95,7 @@ Default: `true`
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "autoUpdate": false
     }
   }
@@ -108,13 +108,13 @@ Default: `true`
 
 Only available for Android and iOS.
 
-Default: `https://api.codepushgo.com/updates`
+Default: `https://api.capgo.app/updates`
 
 ```json
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "updateUrl": "https://example.com/api/updates"
     }
   }
@@ -127,13 +127,13 @@ Default: `https://api.codepushgo.com/updates`
 
 Only available for Android and iOS. Set to "" to disable stats reporting.
 
-Default: `https://api.codepushgo.com/stats`
+Default: `https://api.capgo.app/stats`
 
 ```json
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "statsUrl": "https://example.com/api/stats"
     }
   }
@@ -146,7 +146,7 @@ Default: `https://api.codepushgo.com/stats`
 
 Only available for Android and iOS.
 
-Create the private key with the command `npx @codepushgo/cli key create`
+Create the private key with the command `npx @capgo/cli key create`
 
 Default: `undefined`
 
@@ -154,7 +154,7 @@ Default: `undefined`
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "privateKey": "YOUR_KEY"
     }
   }
@@ -173,7 +173,7 @@ Default: `undefined`
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "autoUpdate": true,
       "directUpdate": true
     }
@@ -187,7 +187,7 @@ Default: `undefined`
 When an store update happens, disable force reset to the native version
 :::
 
-There are many more settings avaialble only on the [web app](https://web.codepushgo.com/login)
+There are many more settings avaialble only on the [web app](https://web.capgo.app/login)
 
 
 To configure the plugin, use these settings:
@@ -196,7 +196,7 @@ To configure the plugin, use these settings:
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "autoUpdate": true,
       "resetWhenUpdate": false
     }
@@ -215,7 +215,7 @@ This setting require you to hide the app from the user while the update is being
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "autoUpdate": true,
       "directUpdate": true
     }
@@ -224,7 +224,7 @@ This setting require you to hide the app from the user while the update is being
 ```
 
 ## `defaultChannel`
-Set the default channel for the app. This will override any other channel set in CodePushGo if the channel allows overwriting. 
+Set the default channel for the app. This will override any other channel set in Capgo if the channel allows overwriting. 
 
 > The channel name is case sensitive
 
@@ -232,7 +232,7 @@ Set the default channel for the app. This will override any other channel set in
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "defaultChannel": "production"
     }
   }
@@ -240,7 +240,7 @@ Set the default channel for the app. This will override any other channel set in
 ```
 
 ## `appId`
-Set the appId for the app. This will override any other way to get the appId. This is useful when you want to have a different appId in CodePushGo and in your native code.
+Set the appId for the app. This will override any other way to get the appId. This is useful when you want to have a different appId in Capgo and in your native code.
 :::note
 This is the new way to set the appId. The old way is still and will stay supported.
 :::
@@ -248,7 +248,7 @@ This is the new way to set the appId. The old way is still and will stay support
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "AppId": "com.example.app"
     }
   }
@@ -256,7 +256,7 @@ This is the new way to set the appId. The old way is still and will stay support
 ```
 
 ## `version`
-Set the version for the app. This will override any other way to get the version. This is useful when you want to have a different version in CodePushGo and in your native code.
+Set the version for the app. This will override any other way to get the version. This is useful when you want to have a different version in Capgo and in your native code.
 :::note
 This is the new way to set the version. The old way is still and will stay supported.
 :::
@@ -264,7 +264,7 @@ This is the new way to set the version. The old way is still and will stay suppo
 // capacitor.config.json
 {
   "plugins": {
-    "React NativeUpdater": {
+    "CapacitorUpdater": {
       "version": "1.2.3"
     }
   }
