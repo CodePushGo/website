@@ -1,0 +1,47 @@
+---
+import PasskeyDocsLayout from '@/layouts/PasskeyDocsLayout.astro'
+---
+
+<PasskeyDocsLayout
+  pageTitle="iOS Setup"
+  pageDescription="Configure passkeys on iOS for @capgo/capacitor-passkey with Associated Domains and the apple-app-site-association file."
+  current="ios"
+>
+  <p>On iOS, passkeys only work when the app is associated with the same relying-party domain as the website.</p>
+
+  <h2>What the plugin handles</h2>
+  <p>After you add the plugin config and run <code>bunx cap sync</code>, the plugin patches the generated iOS host project so you do not need to keep editing it manually.</p>
+
+  <ul>
+    <li>adds the <code>webcredentials:</code> associated-domains entries for the configured domains</li>
+    <li>wires <code>CODE_SIGN_ENTITLEMENTS</code> when the generated app target does not already point at an entitlements file</li>
+  </ul>
+
+  <h2>What you still need to host</h2>
+  <p>You must publish <code>apple-app-site-association</code> on the relying-party domain.</p>
+
+  <pre><code>{`https://signin.example.com/.well-known/apple-app-site-association`}</code></pre>
+
+  <p>Example:</p>
+  <pre><code>{`{
+  "webcredentials": {
+    "apps": ["ABCDE12345.app.capgo.passkey.example"]
+  }
+}`}</code></pre>
+
+  <h2>Checklist</h2>
+  <ol>
+    <li>Set <code>origin</code> and <code>domains</code> in <code>plugins.CapacitorPasskey</code> in <code>capacitor.config.*</code>.</li>
+    <li>Run <code>bunx cap sync</code>.</li>
+    <li>Confirm your Apple Team ID and app bundle ID, then build the <code>TEAMID.bundleId</code> value for the association file.</li>
+    <li>Host <code>apple-app-site-association</code> with HTTP 200 and no <code>.json</code> extension.</li>
+    <li>Make sure the relying-party ID used by your backend matches the associated domain.</li>
+  </ol>
+
+  <h2>Notes</h2>
+  <ul>
+    <li>The website file must be served from the exact passkey domain you use as the relying-party ID.</li>
+    <li>On iOS 17.4 and newer, the plugin uses the browser-style client-data API so the configured HTTPS origin is reflected in <code>clientDataJSON</code>.</li>
+    <li>The plugin can patch native project files during sync, but it cannot create or host the website association file on your domain.</li>
+  </ul>
+</PasskeyDocsLayout>

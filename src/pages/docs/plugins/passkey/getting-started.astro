@@ -1,0 +1,88 @@
+---
+import PasskeyDocsLayout from '@/layouts/PasskeyDocsLayout.astro'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+const iosHref = getRelativeLocaleUrl(Astro.locals.locale, 'docs/plugins/passkey/ios')
+const androidHref = getRelativeLocaleUrl(Astro.locals.locale, 'docs/plugins/passkey/android')
+const backendHref = getRelativeLocaleUrl(Astro.locals.locale, 'docs/plugins/passkey/backend')
+---
+
+<PasskeyDocsLayout
+  pageTitle="Getting Started"
+  pageDescription="Install @capgo/capacitor-passkey, configure the plugin once, and keep your browser-style WebAuthn code in a Capacitor app."
+  current="getting-started"
+>
+  <h2>1. Install the package</h2>
+  <pre><code>{`bun add @capgo/capacitor-passkey
+bunx cap sync`}</code></pre>
+
+  <h2>2. Add the plugin config</h2>
+  <p>The plugin reads its setup from <code>plugins.CapacitorPasskey</code> in your Capacitor config.</p>
+
+  <pre><code>{`import type { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'app.capgo.passkey.example',
+  appName: 'My App',
+  webDir: 'dist',
+  plugins: {
+    CapacitorPasskey: {
+      origin: 'https://signin.example.com',
+      autoShim: true,
+      domains: ['signin.example.com'],
+    },
+  },
+};
+
+export default config;`}</code></pre>
+
+  <p>After changing the config, sync again:</p>
+  <pre><code>{`bunx cap sync`}</code></pre>
+
+  <h2>3. Import the shim once</h2>
+  <pre><code>{`import '@capgo/capacitor-passkey/auto';`}</code></pre>
+
+  <p>
+    After that import is in your app bootstrap, native Capacitor builds can keep using the browser-style WebAuthn entry points instead of rewriting your app around a custom passkey
+    API.
+  </p>
+
+  <h2>4. Keep your existing WebAuthn flow</h2>
+  <pre><code>{`const registration = await navigator.credentials.create({
+  publicKey: registrationOptions,
+});
+
+const authentication = await navigator.credentials.get({
+  publicKey: requestOptions,
+});`}</code></pre>
+
+  <h2>What the config does</h2>
+  <ul>
+    <li><code>origin</code>: primary HTTPS relying-party origin used by the shim and the direct plugin API</li>
+    <li><code>domains</code>: hostnames that the sync hook patches into native platform config</li>
+    <li><code>autoShim</code>: enables automatic browser-style shim installation when you use <code>@capgo/capacitor-passkey/auto</code></li>
+  </ul>
+
+  <h2>What sync patches for you</h2>
+  <ul>
+    <li>iOS: associated domains entitlements and Xcode entitlements wiring when needed</li>
+    <li>Android: <code>asset_statements</code> metadata and the generated string resource referenced by the manifest</li>
+  </ul>
+
+  <p>The sync hook does not publish the website trust files for you. You still need the relying-party domain to serve the correct files.</p>
+
+  <div class="not-prose mt-8 grid gap-4 md:grid-cols-3">
+    <a href={iosHref} class="rounded-xl border border-white/10 bg-white/5 p-5 text-white no-underline transition-colors hover:border-white/20 hover:bg-white/10">
+      <div class="text-lg font-semibold">iOS setup</div>
+      <p class="mt-2 text-sm text-white/70">Associated Domains and <code>apple-app-site-association</code>.</p>
+    </a>
+    <a href={androidHref} class="rounded-xl border border-white/10 bg-white/5 p-5 text-white no-underline transition-colors hover:border-white/20 hover:bg-white/10">
+      <div class="text-lg font-semibold">Android setup</div>
+      <p class="mt-2 text-sm text-white/70">Digital Asset Links and <code>assetlinks.json</code>.</p>
+    </a>
+    <a href={backendHref} class="rounded-xl border border-white/10 bg-white/5 p-5 text-white no-underline transition-colors hover:border-white/20 hover:bg-white/10">
+      <div class="text-lg font-semibold">Backend notes</div>
+      <p class="mt-2 text-sm text-white/70">Origin validation and Android-specific behavior.</p>
+    </a>
+  </div>
+</PasskeyDocsLayout>

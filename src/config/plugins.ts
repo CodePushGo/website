@@ -4898,4 +4898,11 @@ export const actions = [
     description: 'React Native Indicator Component',
     author: 'wangdicoder',
   },
+  {
+    name: '@capgo/capacitor-passkey',
+    href: 'https://github.com/Cap-go/capacitor-passkey',
+    title: '@capgo/capacitor-passkey',
+    description: 'Passkeys for Capacitor with a browser-style WebAuthn shim and build-time native configuration for iOS and Android.',
+    author: 'Cap-go',
+  },
 ]
