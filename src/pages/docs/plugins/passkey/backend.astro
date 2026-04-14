@@ -1,0 +1,48 @@
+---
+import PasskeyDocsLayout from '@/layouts/PasskeyDocsLayout.astro'
+---
+
+<PasskeyDocsLayout
+  pageTitle="Backend Notes"
+  pageDescription="Understand the backend contract for @capgo/capacitor-passkey, including WebAuthn challenge handling and Android origin validation."
+  current="backend"
+>
+  <p>Your backend still owns the normal WebAuthn ceremony.</p>
+
+  <ul>
+    <li>generate registration and authentication challenges</li>
+    <li>verify attestation and assertion responses</li>
+    <li>enforce relying-party ID and challenge validation</li>
+    <li>store credentials and counters the same way you would for a browser flow</li>
+  </ul>
+
+  <h2>What stays the same</h2>
+  <ul>
+    <li>On the web, the plugin forwards to the real browser WebAuthn API.</li>
+    <li>On native Capacitor, it returns browser-like credential objects backed by native passkey APIs.</li>
+    <li>Your backend can keep the same challenge and verification pipeline.</li>
+  </ul>
+
+  <h2>What changes on Android</h2>
+  <ul>
+    <li>Digital Asset Links let Android share the same relying party and credential ecosystem as your website.</li>
+    <li>The literal <code>clientDataJSON.origin</code> value can still differ from the website origin.</li>
+    <li>If your server rejects anything except <code>https://your-domain</code>, Android native assertions can fail even when the passkey is otherwise valid.</li>
+  </ul>
+
+  <h2>Recommended backend rule</h2>
+  <p>Allow the expected browser origin and the expected Android app origin for the same relying party when you support native Android passkeys.</p>
+
+  <h2>If you need direct JSON-safe calls</h2>
+  <pre><code>{`import { CapacitorPasskey } from '@capgo/capacitor-passkey';
+
+const registration = await CapacitorPasskey.createCredential({
+  origin: 'https://signin.example.com',
+  publicKey: registrationOptionsFromBackend,
+});
+
+const authentication = await CapacitorPasskey.getCredential({
+  origin: 'https://signin.example.com',
+  publicKey: requestOptionsFromBackend,
+});`}</code></pre>
+</PasskeyDocsLayout>

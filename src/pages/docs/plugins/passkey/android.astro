@@ -1,0 +1,57 @@
+---
+import PasskeyDocsLayout from '@/layouts/PasskeyDocsLayout.astro'
+---
+
+<PasskeyDocsLayout
+  pageTitle="Android Setup"
+  pageDescription="Configure passkeys on Android for @capgo/capacitor-passkey with Digital Asset Links and assetlinks.json."
+  current="android"
+>
+  <p>On Android, passkeys work with your website when the app and the relying-party domain are connected through Digital Asset Links.</p>
+
+  <h2>What the plugin handles</h2>
+  <p>After you add the plugin config and run <code>bunx cap sync</code>, the plugin patches the generated Android host project.</p>
+
+  <ul>
+    <li>injects the <code>asset_statements</code> manifest metadata</li>
+    <li>writes the generated string resource referenced by that metadata</li>
+  </ul>
+
+  <h2>What you still need to host</h2>
+  <p>You must publish <code>assetlinks.json</code> on the relying-party domain.</p>
+
+  <pre><code>{`https://signin.example.com/.well-known/assetlinks.json`}</code></pre>
+
+  <p>Example:</p>
+  <pre><code>{`[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.capgo.passkey.example",
+      "sha256_cert_fingerprints": [
+        "AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99"
+      ]
+    }
+  }
+]`}</code></pre>
+
+  <h2>Checklist</h2>
+  <ol>
+    <li>Set <code>origin</code> and <code>domains</code> in <code>plugins.CapacitorPasskey</code> in <code>capacitor.config.*</code>.</li>
+    <li>Run <code>bunx cap sync</code>.</li>
+    <li>Use your real Android package name in <code>assetlinks.json</code>.</li>
+    <li>Add every signing certificate fingerprint you need, including debug or internal signing keys if you test those builds.</li>
+    <li>Host the file on the same domain you use as the relying-party ID.</li>
+  </ol>
+
+  <h2>Important behavior difference from a browser</h2>
+  <ul>
+    <li>A normal Android app does not behave like a privileged browser.</li>
+    <li>The assertion origin can be tied to the Android app signature instead of your website origin.</li>
+    <li>If your backend strictly validates <code>clientDataJSON.origin</code>, accept the Android app origin alongside the website origin.</li>
+  </ul>
+</PasskeyDocsLayout>
