@@ -83,24 +83,40 @@ Default: `true`
 }
 ```
 
-## `autoUpdate` 
+## `autoUpdate`
 
-> Configure whether the plugin should use Auto Update via an update server.
+> Configure how the plugin should use Auto Update via an update server.
 
 Only available for Android and iOS.
 
 Default: `true`
+
+Boolean values keep their previous behavior:
+
+- `true`: same as `"atBackground"`
+- `false`: same as `"off"`
+
+String values let you choose the full update policy:
+
+- `"off"`: disable Auto Update.
+- `"atBackground"`: check and download updates automatically, then apply them the next time the app moves to background.
+- `"atInstall"`: direct install only after app install or native app update, otherwise use `"atBackground"` behavior.
+- `"onLaunch"`: direct install on app launch, otherwise use `"atBackground"` behavior after the first launch attempt.
+- `"always"`: direct install whenever Auto Update runs.
+- `"onlyDownload"`: check and download updates automatically and emit `updateAvailable`, but never direct install or set the next bundle automatically.
 
 ```json
 // capacitor.config.json
 {
   "plugins": {
     "CapacitorUpdater": {
-      "autoUpdate": false
+      "autoUpdate": "onlyDownload"
     }
   }
 }
 ```
+
+Use `"onlyDownload"` when you want Capgo to download updates in the background but keep full control over when the app applies them.
 
 ## `updateUrl` 
 
@@ -161,21 +177,22 @@ Default: `undefined`
 }
 ```
 
-## `directUpdate` 
+## `directUpdate`
 
-> Make the plugin directly install the update when the app what just updated/installed. Only applicable for autoUpdate mode.
+> Deprecated. Use the `autoUpdate` string modes instead.
+
+The old `directUpdate` setting is still supported for backward compatibility, but new configuration should use `autoUpdate: "atInstall"`, `autoUpdate: "onLaunch"`, or `autoUpdate: "always"`.
 
 Only available for Android and iOS.
 
-Default: `undefined`
+Default: `false`
 
 ```json
 // capacitor.config.json
 {
   "plugins": {
     "CapacitorUpdater": {
-      "autoUpdate": true,
-      "directUpdate": true
+      "autoUpdate": "always"
     }
   }
 }
@@ -197,27 +214,8 @@ To configure the plugin, use these settings:
 {
   "plugins": {
     "CapacitorUpdater": {
-      "autoUpdate": true,
+      "autoUpdate": "atBackground",
       "resetWhenUpdate": false
-    }
-  }
-}
-```
-
-## `directUpdate`
-Make the plugin directly install the update when the app what just updated/installed. Only applicable for autoUpdate mode.
-
-:::caution
-This setting require you to hide the app from the user while the update is being installed. Otherwise the app will reset when the user is navigating.
-:::
-
-```json
-// capacitor.config.json
-{
-  "plugins": {
-    "CapacitorUpdater": {
-      "autoUpdate": true,
-      "directUpdate": true
     }
   }
 }

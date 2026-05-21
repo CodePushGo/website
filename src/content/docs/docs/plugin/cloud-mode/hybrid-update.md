@@ -14,7 +14,7 @@ When pushing updates to your user you have a few ways to deal with the update cy
 
 ## Silent update
 
-You can force an update cycle to happen at every app start by setting `directUpdate` to `true`,
+You can force an update cycle to happen at every app start by setting `autoUpdate` to `"always"`,
 this will trigger the update cycle as usual without the user interaction.
 
 ```tsx
@@ -24,7 +24,7 @@ this will trigger the update cycle as usual without the user interaction.
 	"appName": "Name",
 	"plugins": {
 		"CapacitorUpdater": {
-			"directUpdate": true,
+			"autoUpdate": "always",
 		},
     "SplashScreen": {
       "launchAutoHide": false,
@@ -49,7 +49,18 @@ CapacitorUpdater.notifyAppReady()
 
 ## Force update
 
-Add a listener to the event `updateAvailable` and then show an alert to let the user know the app will update:
+Use `"onlyDownload"` if you want the plugin to download updates automatically, then add a listener to the event `updateAvailable` and show an alert to let the user know the app will update:
+
+```tsx
+// capacitor.config.json
+{
+	"plugins": {
+		"CapacitorUpdater": {
+			"autoUpdate": "onlyDownload"
+		}
+	}
+}
+```
 
 ```js
 import { CapacitorUpdater } from '@capgo/capacitor-updater'
