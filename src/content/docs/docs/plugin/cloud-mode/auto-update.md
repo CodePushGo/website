@@ -21,7 +21,7 @@ New way: Use the `version` field in your `capacitor.config.json` file.
 {
   "plugins": {
     "CapacitorUpdater": {
-      "autoUpdate": "atBackground", // Enable auto-update, true keeps this same behavior
+      "autoUpdate": true, // Enable auto-update, true by default
       "appId": "com.example.app", // Used to identify the app in the server
       "version": "1.0.0" // Used to check for updates
     }
@@ -96,9 +96,9 @@ CapacitorUpdater.notifyAppReady()
 #### Dev flow
 
 When you develop new features, be sure to block `autoUpdate`, as CodePushGo will constatly overwrite your work with the latest update bundle.
-Set `autoUpdate` to `"off"` in your config.
+Set `autoUpdate` to false in your config. 
 If for some reason you are stuck on an update, you can delete the app and reinstall it.
-Be sure to set `autoUpdate` to `"off"` in your config before doing so.
+Be sure to set `autoUpdate` to false in your config before doing so.
 And then build it again with Xcode or Android studio.
 
 To upload the version at each commit setup CI/CD with this guide

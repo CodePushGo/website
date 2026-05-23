@@ -93,9 +93,9 @@ Note that the `kill` condition currently triggers the update after the first kil
 
 ## Applying Updates Immediately
 
-For critical updates or apps with very simple state, you may want to apply an update as soon as it's downloaded, without waiting for a background or kill event. CodePushGo supports this with the `autoUpdate` policy modes.
+For critical updates or apps with very simple state, you may want to apply an update as soon as it's downloaded, without waiting for a background or kill event. CodePushGo supports this via the `directUpdate` configuration option.
 
-Use `autoUpdate: "always"` in your `capacitor.config.ts` file:
+`directUpdate` is set in your `capacitor.config.ts` file, not in JavaScript code:
 
 ```typescript
 import { CapacitorConfig } from '@capacitor/cli';
@@ -103,20 +103,21 @@ import { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   plugins: {
     CapacitorUpdater: {
-      autoUpdate: 'always',
-      keepUrlPathAfterReload: true,
+      autoUpdate: true,
+      directUpdate: true,
     },
   },
+  keepUrlPathAfterReload: true,
 };
 
 export default config;
 ```
 
-With `autoUpdate: "always"`, CodePushGo will immediately apply an update as soon as the download completes, even if the user is actively using the app.
+With `directUpdate` enabled, CodePushGo will immediately apply an update as soon as the download completes, even if the user is actively using the app.
 
-Note that because this is a native configuration, it requires some additional handling in your JavaScript code.
+Note that because `directUpdate` is a native configuration, it requires some additional handling in your JavaScript code.
 
-When using an immediate apply mode, you need to listen for the `appReady` event and hide your app's splash screen in response:
+When using `directUpdate`, you need to listen for the `appReady` event and hide your app's splash screen in response:
 
 ```js
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
@@ -132,42 +133,22 @@ CapacitorUpdater.notifyAppReady();
 
 The `appReady` event fires once the app has finished initializing and applying any pending updates. This is the point at which it's safe to show your app's UI, as it ensures the user will see the latest version.
 
-In addition to handling the `appReady` event, we recommend setting the `keepUrlPathAfterReload` configuration option to `true` when using `autoUpdate: "always"`. This preserves the current URL path when the app is reloaded due to an update, helping maintain the user's location in the app and reducing disorientation.
+In addition to handling the `appReady` event, we recommend setting the `keepUrlPathAfterReload` configuration option to `true` when using `directUpdate`. This preserves the current URL path when the app is reloaded due to an update, helping maintain the user's location in the app and reducing disorientation.
 
-If you don't handle the `appReady` event and set `keepUrlPathAfterReload` when using `autoUpdate: "always"`, the user may briefly see a stale version of the app, be taken back to the initial route, or see a flicker as the update is applied.
+If you don't handle the `appReady` event and set `keepUrlPathAfterReload` when using `directUpdate`, the user may briefly see a stale version of the app, be taken back to the initial route, or see a flicker as the update is applied.
 
-Using `autoUpdate: "always"` can be useful for delivering critical bug fixes or security patches, but it comes with some tradeoffs:
+Using `directUpdate` can be useful for delivering critical bug fixes or security patches, but it comes with some tradeoffs:
 
 - The user may see a brief flicker or loading state as the update is applied if you don't properly handle the `appReady` event.
 - If the update modifies the app state or UI, the user may see a disruptive change in the middle of a session.
 - The user's location in the app may be lost if `keepUrlPathAfterReload` is not set, potentially disorienting them.
 - You'll need to carefully handle saving and restoring state to ensure a smooth transition.
 
-If you do enable `autoUpdate: "always"`, we recommend:
+If you do enable `directUpdate`, we recommend:
 
 - Handling the `appReady` event to control when your app's UI is shown.
 - Setting `keepUrlPathAfterReload` to `true` to preserve the user's location in the app.
 - Saving and restoring the app state as needed to avoid losing user progress.
 - Thoroughly testing your app's update behavior to ensure there are no jarring transitions, lost state, or disorienting location changes.
-
-## Downloading Automatically Without Applying
-
-Use `autoUpdate: "onlyDownload"` when you want CodePushGo to check and download updates automatically but never apply them without your JavaScript code.
-
-```typescript
-import { CapacitorConfig } from '@capacitor/cli';
-
-const config: CapacitorConfig = {
-  plugins: {
-    CapacitorUpdater: {
-      autoUpdate: 'onlyDownload',
-    },
-  },
-};
-
-export default config;
-```
-
-With this mode, the plugin emits `updateAvailable` after the bundle is downloaded. You can then show your own UI, wait for the user to finish a task, and call `CapacitorUpdater.set()` when you are ready.
 
 In most cases, the default update behavior provides the best balance of delivering updates quickly and minimizing disruption. But for apps with specific needs, CodePushGo provides the flexibility to customize when and how updates are applied.
