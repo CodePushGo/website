@@ -36,7 +36,8 @@ If using AppFlow's default background updates:
 {
   plugins: {
     CapacitorUpdater: {
-      autoUpdate: 'atBackground',
+      autoUpdate: true,
+      directUpdate: false,
       autoDeletePrevious: true
     }
   }
@@ -51,7 +52,8 @@ If using AppFlow's force update strategy:
 {
   plugins: {
     CapacitorUpdater: {
-      autoUpdate: 'always',
+      autoUpdate: true,
+      directUpdate: true,
       keepUrlPathAfterReload: true
     }
   }
@@ -149,7 +151,7 @@ Add CodePushGo configuration to your `capacitor.config.json`:
 {
   "plugins": {
     "CapacitorUpdater": {
-      "autoUpdate": "atBackground"
+      "autoUpdate": true
     }
   }
 }
