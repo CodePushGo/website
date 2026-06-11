@@ -34,7 +34,7 @@ Once you're in the program, it's time to get your assets in order. Seriously, do
 Here's what you need to tackle first:
 
 *   **Create an App ID:** This is a unique string that links your app directly to your developer account. It's absolutely essential for enabling services like Push Notifications or integrating with HealthKit.
-*   **Generate Certificates:** You'll need to create a specific distribution certificate. This is how you "sign" your app, which is Apple's way of verifying it came from a trusted developer (you!). If you need a deep dive, this guide on managing your Apple developer certificate is incredibly helpful: https://codepushgo.com/de/blog/apple-developer-certificate/
+*   **Generate Certificates:** You'll need to create a specific distribution certificate. This is how you "sign" your app, which is Apple's way of verifying it came from a trusted developer (you!). If you need a deep dive, this guide on managing your Apple developer certificate is incredibly helpful: https://codepushgo.com/blog/apple-developer-certificate/
 *   **Gather Visual Assets:** Get your app icon, screenshots, and maybe even a short preview video ready. These are the very first things potential users will see, so they need to look sharp and meet Apple's precise dimension requirements.
 
 > A classic rookie mistake is treating the app description and screenshots as an afterthought. These aren't just assets; they're your most powerful marketing tools on the App Store. Spend real time crafting a story that sells your app's value and shows off its best features.
@@ -79,7 +79,7 @@ Here’s the breakdown of what you need to do:
 
 If your app uses features like Push Notifications, Sign in with Apple, or HealthKit, this is where you'll add them as "Capabilities." Just be aware that adding a capability here often means you'll have extra configuration steps to complete in App Store Connect.
 
-For a broader look at the journey from a simple idea to a finished product, our guide on [how to develop an app for iPhone](https://codepushgo.com/de/blog/how-to-develop-an-app-for-iphone/) offers some great context. Once these settings are locked in, your app is officially primed and ready for the final build.
+For a broader look at the journey from a simple idea to a finished product, our guide on [how to develop an app for iPhone](https://codepushgo.com/blog/how-to-develop-an-app-for-iphone/) offers some great context. Once these settings are locked in, your app is officially primed and ready for the final build.
 
 ## Archiving a Clean Build for the App Store
 
@@ -153,7 +153,7 @@ Having all these components ready to go before you even log in will save you a t
 
 Finally, you’ll tackle the practical details. The pricing section is pretty straightforward, but the privacy section requires your full attention. Apple has really doubled down on user security, a trend highlighted in many recent [Apple App Store statistics](https://www.tekrevol.com/blogs/apple-app-store-statistics/).
 
-This commitment to privacy is why you now have to fill out the "nutrition label." You'll need to declare exactly what data your app collects and how you use it. Be thorough and completely honest here—this information is displayed right on your app's product page for everyone to see. Transparency is absolutely essential for building trust with users and knowing **how to publish app in appstore** without getting rejected. For a more detailed walkthrough, our complete guide covers the entire journey: https://codepushgo.com/de/blog/how-to-publish-app-in-app-store/
+This commitment to privacy is why you now have to fill out the "nutrition label." You'll need to declare exactly what data your app collects and how you use it. Be thorough and completely honest here—this information is displayed right on your app's product page for everyone to see. Transparency is absolutely essential for building trust with users and knowing **how to publish app in appstore** without getting rejected. For a more detailed walkthrough, our complete guide covers the entire journey: https://codepushgo.com/blog/how-to-publish-app-in-app-store/
 
 ## Submitting Your App for Review
 
@@ -179,7 +179,7 @@ Once you submit, your app's status will flip to "Waiting for Review." This means
 
 Thankfully, the review times have gotten much better over the years. Most apps are reviewed within **24 to 48 hours**, but don't be surprised if a more complex app takes a bit longer. From there, the status will change to "In Review"—that means a real person is actively looking at your app.
 
-The next notification you get will either be an approval or a message in the Resolution Center detailing any issues that need fixing. For a deeper dive into the entire process from start to finish, check out our full guide on https://codepushgo.com/de/blog/how-to-publish-on-app-store/.
+The next notification you get will either be an approval or a message in the Resolution Center detailing any issues that need fixing. For a deeper dive into the entire process from start to finish, check out our full guide on https://codepushgo.com/blog/how-to-publish-on-app-store/.
 
 ## Got Questions About App Store Publishing?
 

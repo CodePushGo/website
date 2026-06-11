@@ -37,7 +37,7 @@ This is the main dashboard in the Apple Developer account where all the magic ha
 
 ![Image](https://cdn.outrank.so/c504846a-b33a-4018-bc93-5bfa9be0f3af/9bebb5b4-8cc6-46b8-a40e-3d7b89f01919.jpg)
 
-Getting comfortable in this portal is a must for any iOS developer. For a deeper dive into the mechanics, our guide on https://codepushgo.com/de/blog/what-is-code-signing/ is a great resource. You can also see how similar identity principles are used in enterprise setups with things like [SAML for authentication and provisioning](https://www.resolution.de/post/combining-the-okta-api-with-saml-for-authenticating-and-provisioning-atlassian-applications/).
+Getting comfortable in this portal is a must for any iOS developer. For a deeper dive into the mechanics, our guide on https://codepushgo.com/blog/what-is-code-signing/ is a great resource. You can also see how similar identity principles are used in enterprise setups with things like [SAML for authentication and provisioning](https://www.resolution.de/post/combining-the-okta-api-with-saml-for-authenticating-and-provisioning-atlassian-applications/).
 
 To help keep it all straight, here's a quick reference table breaking down these key components.
 
@@ -87,7 +87,7 @@ With your CSR file in hand, it's time to head over to the [Apple Developer Porta
 
 You'll see a few options. Under the "Software" heading, pick **"Apple Development"** and click continue.
 
-The next screen is where your CSR comes into play. You’ll be prompted to upload the file you just created. Choose the `.certSigningRequest` file from your Mac, upload it, and click "Continue". Apple's system works its magic almost instantly, and just like that, you’ll be presented with a download link for your shiny new development certificate. This file will end in `.cer`. If you want to dive even deeper into the portal's certificate management, we've covered it extensively in our guide to the [Apple Developer certificate process](https://codepushgo.com/de/blog/certificate-apple-developer/).
+The next screen is where your CSR comes into play. You’ll be prompted to upload the file you just created. Choose the `.certSigningRequest` file from your Mac, upload it, and click "Continue". Apple's system works its magic almost instantly, and just like that, you’ll be presented with a download link for your shiny new development certificate. This file will end in `.cer`. If you want to dive even deeper into the portal's certificate management, we've covered it extensively in our guide to the [Apple Developer certificate process](https://codepushgo.com/blog/certificate-apple-developer/).
 
 ### Installing and Verifying Your Certificate
 
@@ -128,7 +128,7 @@ A standard development profile is perfect for your internal team, but what about
 *   **Development Profile:** Lets your core team build and debug directly from Xcode onto their connected devices.
 *   **Ad-Hoc Profile:** Lets you create `.ipa` files that can be installed on a limited number of registered devices, completely bypassing the App Store. It’s perfect for beta testing.
 
-For both profile types, you have to manually collect and register each device's UDID in the developer portal ahead of time. Getting this right is crucial for a smooth workflow. You can dive deeper into the specifics in our [guide to the Apple Developer provisioning profile](https://codepushgo.com/de/blog/apple-developer-provisioning-profile/). Keeping these profiles properly synced in Xcode will save you from countless headaches during on-device testing.
+For both profile types, you have to manually collect and register each device's UDID in the developer portal ahead of time. Getting this right is crucial for a smooth workflow. You can dive deeper into the specifics in our [guide to the Apple Developer provisioning profile](https://codepushgo.com/blog/apple-developer-provisioning-profile/). Keeping these profiles properly synced in Xcode will save you from countless headaches during on-device testing.
 
 ## Preparing for Launch with Distribution Certificates
 
@@ -153,7 +153,7 @@ Just like in development, the certificate can't do the job alone. You need a mat
 
 It basically makes one simple declaration: "This app, with this App ID, signed by this distribution certificate, is officially cleared for public release on the App Store."
 
-You won't find any device UDIDs here because it's meant for *everyone* who downloads your app. When you create this `.mobileprovision` file in the portal, you'll simply select "App Store" as the distribution method. Our deep dive on [signing an iOS app](https://codepushgo.com/de/blog/signing-ios-app/) covers how all these pieces fit together in more detail.
+You won't find any device UDIDs here because it's meant for *everyone* who downloads your app. When you create this `.mobileprovision` file in the portal, you'll simply select "App Store" as the distribution method. Our deep dive on [signing an iOS app](https://codepushgo.com/blog/signing-ios-app/) covers how all these pieces fit together in more detail.
 
 > **The Big Shift:** The moment you switch to a distribution certificate and profile, you're no longer building for a specific, known device. You're now building a universal binary that's ready for Apple's review and a global audience.
 

@@ -55,7 +55,7 @@ As you can see, the SSDLC isn't just a minor tweak—it's a complete change in m
 Adopting a secure lifecycle doesn't mean you have to throw out your existing development process. It's about enhancing it with specific, security-focused activities. Some of the core pillars include:
 
 *   **Threat Modeling:** Before a single line of code is written, the team gets together to brainstorm what could go wrong and how an attacker might try to break things.
-*   **Secure Coding Standards:** You need clear, consistent rules to avoid common mistakes. For example, a huge part of this is proving your code is authentic and hasn't been tampered with, which you can read about in our guide on [what is code signing](https://codepushgo.com/es/blog/what-is-code-signing/).
+*   **Secure Coding Standards:** You need clear, consistent rules to avoid common mistakes. For example, a huge part of this is proving your code is authentic and hasn't been tampered with, which you can read about in our guide on [what is code signing](https://codepushgo.com/blog/what-is-code-signing/).
 *   **Automated Security Testing:** Instead of manual checks, you use tools that constantly scan your code for vulnerabilities as it's being written.
 *   **Security Education:** Everyone on the team, especially developers, needs to be trained to spot potential security risks and know how to avoid them.
 
@@ -121,7 +121,7 @@ Security testing brings a specialized arsenal of tools and techniques to the tab
 
 Getting your application live is a massive milestone, but the deployment process itself needs to be locked down. This phase ensures the environment where your code will run is hardened and the release pipeline is shielded from tampering.
 
-Key activities here include securing all configuration files, properly managing secrets like API keys and database passwords, and making sure the servers are hardened against common attacks. Automation is your best friend here, with CI/CD pipelines configured to run final security checks before anything is pushed to production. To really dig in, check out our guide on [software deployment best practices](https://codepushgo.com/es/blog/software-deployment-best-practices/) to help bulletproof your release process.
+Key activities here include securing all configuration files, properly managing secrets like API keys and database passwords, and making sure the servers are hardened against common attacks. Automation is your best friend here, with CI/CD pipelines configured to run final security checks before anything is pushed to production. To really dig in, check out our guide on [software deployment best practices](https://codepushgo.com/blog/software-deployment-best-practices/) to help bulletproof your release process.
 
 ### Phase 6: Maintenance and Response
 
@@ -159,7 +159,7 @@ An SSDLC gives you a structured, repeatable way to make sure you're meeting thes
 *   **Operating in Global Markets:** If you want to expand, you have to play by international data protection rules.
 *   **Building Partner Trust:** Other companies are far more likely to integrate with your software if they know it’s built on a secure foundation.
 
-Ultimately, an SSDLC makes it much easier to navigate these complex rules. And it fits perfectly with your deployment strategy. Writing secure code is one half of the equation; getting it to your users safely is the other. This is something we dig into in our guide on [code release management best practices](https://codepushgo.com/es/blog/code-release-management-best-practices/). When you align secure development with secure deployment, you create an unbroken chain of trust from the first line of code all the way to the end-user.
+Ultimately, an SSDLC makes it much easier to navigate these complex rules. And it fits perfectly with your deployment strategy. Writing secure code is one half of the equation; getting it to your users safely is the other. This is something we dig into in our guide on [code release management best practices](https://codepushgo.com/blog/code-release-management-best-practices/). When you align secure development with secure deployment, you create an unbroken chain of trust from the first line of code all the way to the end-user.
 
 ## Putting Secure Development into Practice
 
@@ -192,7 +192,7 @@ Let's be real: manual security reviews can't keep up with the pace of modern dev
 
 > By embedding security scans directly into the build and deployment process, you transform security from a manual, periodic event into a continuous, automated feedback loop for developers.
 
-This means every time a developer commits new code, it’s automatically scanned for potential issues. Tools like SAST and DAST can be set up to run on their own, giving immediate feedback and even blocking builds that introduce critical vulnerabilities. This approach is also a perfect fit for mobile development, and you can learn more about how to [automate Android testing](https://codepushgo.com/es/blog/automate-android-testing/) to catch bugs and security flaws early on.
+This means every time a developer commits new code, it’s automatically scanned for potential issues. Tools like SAST and DAST can be set up to run on their own, giving immediate feedback and even blocking builds that introduce critical vulnerabilities. This approach is also a perfect fit for mobile development, and you can learn more about how to [automate Android testing](https://codepushgo.com/blog/automate-android-testing/) to catch bugs and security flaws early on.
 
 To help visualize how this fits together, here’s a quick rundown of common security activities and the types of tools that can automate them at each stage.
 
@@ -249,7 +249,7 @@ This shortage gets even more complicated when you consider internal risks. In 20
 
 This is where smart automation becomes a game-changer. By building automated security tools right into the CI/CD pipeline, you create a safety net that's always on. These tools can handle the repetitive, time-consuming work of scanning for common vulnerabilities. This frees up your limited security experts to tackle the bigger, more complex problems, like threat modeling and deep architectural reviews.
 
-At the same time, you have to invest in your developers. Giving them regular, practical training on secure coding turns your entire development team into a security asset. This doesn't just help you scale your security efforts; it helps close that skills gap from the inside out. For instance, solid [mobile app security testing](https://codepushgo.com/es/blog/mobile-app-security-testing/) is a perfect area where developers can use these skills to protect user data. By arming your developers with the right knowledge and the right automated tools, you can build a strong, sustainable security culture, even if you don't have a huge budget or a deep bench of security specialists.
+At the same time, you have to invest in your developers. Giving them regular, practical training on secure coding turns your entire development team into a security asset. This doesn't just help you scale your security efforts; it helps close that skills gap from the inside out. For instance, solid [mobile app security testing](https://codepushgo.com/blog/mobile-app-security-testing/) is a perfect area where developers can use these skills to protect user data. By arming your developers with the right knowledge and the right automated tools, you can build a strong, sustainable security culture, even if you don't have a huge budget or a deep bench of security specialists.
 
 ## Got Questions About the Secure SDLC? Let's Clear Things Up.
 

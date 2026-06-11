@@ -52,7 +52,7 @@ Getting these distinctions right is the first step. They are the most secure and
 
 *   **App Links (Android):** Google's answer to Universal Links. They also use standard HTTPS URLs and require a verification process to prove you own the domain, which prevents other apps from intercepting your links.
 
-Once you have these links in place, tracking how users navigate through them can give you some powerful insights. If you're interested in that, you can learn more about setting up **[analytics for React Native](https://codepushgo.com/de/blog/analytics-for-react-native/)** in our other guide.
+Once you have these links in place, tracking how users navigate through them can give you some powerful insights. If you're interested in that, you can learn more about setting up **[analytics for React Native](https://codepushgo.com/blog/analytics-for-react-native/)** in our other guide.
 
 ## Setting Up Your Project for Deep Linking
 
@@ -94,7 +94,7 @@ With this configuration, the `android:scheme` and `android:host` attributes tell
 
 > **From experience:** Think of the intent filter as your app's bouncer. It checks every link at the door and only lets in the ones that match your app's specific scheme and host, ensuring the OS knows exactly where to send the user.
 
-Managing these native files becomes a routine part of development. For larger teams, it's smart to automate these configurations as part of your build process. If you’re looking to streamline this, diving into a guide on **[Android continuous integration](https://codepushgo.com/de/blog/android-continuous-integration/)** can offer some great strategies for automating these kinds of complex workflows.
+Managing these native files becomes a routine part of development. For larger teams, it's smart to automate these configurations as part of your build process. If you’re looking to streamline this, diving into a guide on **[Android continuous integration](https://codepushgo.com/blog/android-continuous-integration/)** can offer some great strategies for automating these kinds of complex workflows.
 
 Once you have these native settings locked in, you're ready for the fun part: connecting them to your app's navigation logic.
 
@@ -215,7 +215,7 @@ const useDeepLinking = (navigation) => {
   }, [navigation]);
 };
 
-Using a custom hook like this makes your logic reusable and much easier to manage down the line. As a final note, always think about security when you're processing data from external URLs. If you're passing sensitive information, it's worth taking the time to **[implement end-to-end encryption](https://codepushgo.com/de/blog/implement-end-to-end-encryption/)** to keep that data safe. By properly managing your app's state, you can ensure every deep link delivers a smooth and seamless experience for your users.
+Using a custom hook like this makes your logic reusable and much easier to manage down the line. As a final note, always think about security when you're processing data from external URLs. If you're passing sensitive information, it's worth taking the time to **[implement end-to-end encryption](https://codepushgo.com/blog/implement-end-to-end-encryption/)** to keep that data safe. By properly managing your app's state, you can ensure every deep link delivers a smooth and seamless experience for your users.
 
 ## Troubleshooting Common Deep Linking Problems
 

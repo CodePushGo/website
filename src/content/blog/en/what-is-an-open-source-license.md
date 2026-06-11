@@ -38,7 +38,7 @@ This structure encourages innovation while safeguarding the project's collaborat
 
 > The real purpose of these licenses is to protect the spirit of open source. They make sure no single company or individual can take over, re-license, or take back what was freely given to the community, which builds trust and ensures the project can last for the long haul.
 
-For a deeper dive, check out our guide on https://codepushgo.com/de/blog/what-is-open-source-license/. The table below gives you a quick visual summary of the core permissions.
+For a deeper dive, check out our guide on https://codepushgo.com/blog/what-is-open-source-license/. The table below gives you a quick visual summary of the core permissions.
 
 ### Core Permissions of Open Source Licenses at a Glance
 
@@ -145,7 +145,7 @@ The GPL’s "share-alike" rule is often described as viral for a reason. By inte
 
 > This isn't just some theoretical "what if." It's a fundamental legal principle designed to protect the open-source ecosystem. Your software supply chain is also a legal supply chain, and understanding these potential conflicts is non-negotiable for anyone building software today.
 
-For teams using tools to manage updates in frameworks like React Native, keeping a close eye on these licenses is a core part of sound [code release management best practices](https://codepushgo.com/de/blog/code-release-management-best-practices/).
+For teams using tools to manage updates in frameworks like React Native, keeping a close eye on these licenses is a core part of sound [code release management best practices](https://codepushgo.com/blog/code-release-management-best-practices/).
 
 ![Image](https://cdn.outrank.so/c504846a-b33a-4018-bc93-5bfa9be0f3af/ef0531ad-ab71-45ba-9645-13022e685b33.jpg)
 
@@ -182,7 +182,7 @@ Once you know what you want, you can find the license that helps you get there. 
 
 > Choosing a license is a foundational decision, much like deciding on your app's architecture. It establishes the ground rules for your community and is incredibly difficult to change down the road. Be sure the license you pick truly reflects the kind of ecosystem you want to build.
 
-Getting a handle on these differences is just as important when you're using open source software as when you're releasing it. When you're building a mobile app, for example, the licenses of all your dependencies can directly affect your project’s legal standing. That’s something you need to sort out long before you even start thinking about [how to publish an app in the app store](https://codepushgo.com/de/blog/how-to-publish-app-in-app-store/). At the end of the day, your license is a public declaration of your project's values and your vision for its future.
+Getting a handle on these differences is just as important when you're using open source software as when you're releasing it. When you're building a mobile app, for example, the licenses of all your dependencies can directly affect your project’s legal standing. That’s something you need to sort out long before you even start thinking about [how to publish an app in the app store](https://codepushgo.com/blog/how-to-publish-app-in-app-store/). At the end of the day, your license is a public declaration of your project's values and your vision for its future.
 
 ## The Future of Licensing and Emerging Ethical Debates
 
@@ -202,7 +202,7 @@ These licenses often have clauses that explicitly forbid using the software in w
 
 This debate isn't just a philosophical exercise. New frontiers like artificial intelligence are forcing us all to rethink traditional licensing. As AI gets more and more powerful, tough questions about data privacy, algorithmic bias, and autonomous decision-making are putting a huge amount of pressure on licensing frameworks that were created decades ago.
 
-And through it all, the integrity of the code itself is as important as ever. We have to be sure that the software, no matter its license, hasn't been tampered with. This is where practices like [understanding what is code signing](https://codepushgo.com/de/blog/what-is-code-signing/) come into play, creating a verifiable chain of trust from the developer all the way to you. As licensing models continue to evolve, these security fundamentals will only become more critical.
+And through it all, the integrity of the code itself is as important as ever. We have to be sure that the software, no matter its license, hasn't been tampered with. This is where practices like [understanding what is code signing](https://codepushgo.com/blog/what-is-code-signing/) come into play, creating a verifiable chain of trust from the developer all the way to you. As licensing models continue to evolve, these security fundamentals will only become more critical.
 
 ## Got Questions About Open Source Licenses? We've Got Answers.
 

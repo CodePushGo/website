@@ -42,7 +42,7 @@ Here’s what it brings to the table for your update process:
 *   **Integrity:** It ensures the update bundle hasn't been modified in any way since you signed it.
 *   **Confidentiality:** It keeps any proprietary code or sensitive configuration within the update itself under wraps.
 
-By building on these principles, you create a far more resilient system that your users can actually trust. If you're looking to get into the weeds on this topic, our guide on https://codepushgo.com/es/blog/mobile-app-encryption-best-practices/ is a great place to start.
+By building on these principles, you create a far more resilient system that your users can actually trust. If you're looking to get into the weeds on this topic, our guide on https://codepushgo.com/blog/mobile-app-encryption-best-practices/ is a great place to start.
 
 ## Getting Your React Native Environment Ready for Secure Updates
 
@@ -153,7 +153,7 @@ Security is crucial, but it shouldn't create a clunky user experience. While imm
 
 Consider designing a custom modal that explains a new version is ready. Give users the choice to install it now or be reminded later. This respects their workflow while still encouraging them to stay up-to-date. It's a small detail, but this kind of thoughtful UI design is what separates a good app from a great one.
 
-For those looking to dive deeper, exploring different strategies for [deploying a React Native app](https://codepushgo.com/es/blog/deploying-react-native-app/) can offer even more insights into fine-tuning this process. When you manage the update lifecycle properly, you ensure your app is both secure and a pleasure to use.
+For those looking to dive deeper, exploring different strategies for [deploying a React Native app](https://codepushgo.com/blog/deploying-react-native-app/) can offer even more insights into fine-tuning this process. When you manage the update lifecycle properly, you ensure your app is both secure and a pleasure to use.
 
 ## How to Generate and Manage Your Signing Keys
 
@@ -191,7 +191,7 @@ The demand for this level of security is skyrocketing across the industry. Just 
 
 > Storing your private key securely isn't an optional step; it is the absolute core of your E2EE strategy. A breach here invalidates the entire system, making it crucial to get this right from day one.
 
-The final piece of the puzzle is integrating this secure key retrieval into your automation pipeline. For a deeper dive, our article on [continuous integration for React Native](https://codepushgo.com/es/blog/continuous-integration-react-native/) provides practical steps for setting up a secure and efficient workflow. By adopting these practices, you'll build a resilient process that protects both your app's integrity and your users' trust.
+The final piece of the puzzle is integrating this secure key retrieval into your automation pipeline. For a deeper dive, our article on [continuous integration for React Native](https://codepushgo.com/blog/continuous-integration-react-native/) provides practical steps for setting up a secure and efficient workflow. By adopting these practices, you'll build a resilient process that protects both your app's integrity and your users' trust.
 
 ## Deploying and Verifying Your First Encrypted Update
 ![Image](https://cdn.outrank.so/c504846a-b33a-4018-bc93-5bfa9be0f3af/db012791-8c68-4584-bd81-0b4287ccead6.jpg)
@@ -220,7 +220,7 @@ Once the device downloads and installs the update, the CodePushGo SDK will print
 
 Getting this right isn't just a technical win; it has massive financial implications. The average cost of a data breach in 2024 hovered around **USD 4.9 million**. That's a staggering figure. When you add compliance-related costs, which average about **USD 7.6 million**, the value of a rock-solid, secure update system becomes crystal clear.
 
-A dependable deployment and verification process is a cornerstone of any good [https://codepushgo.com/es/blog/mobile-app-update-strategy/](https://codepushgo.com/es/blog/mobile-app-update-strategy/). It builds confidence with your users and, just as importantly, with your own development team, proving your security measures are truly effective.
+A dependable deployment and verification process is a cornerstone of any good [https://codepushgo.com/blog/mobile-app-update-strategy/](https://codepushgo.com/blog/mobile-app-update-strategy/). It builds confidence with your users and, just as importantly, with your own development team, proving your security measures are truly effective.
 
 ## Your Top Encryption Questions, Answered
 
@@ -236,7 +236,7 @@ Okay, but what happens if the unthinkable occurs and you lose your private key? 
 
 > The only way forward is to release a completely new version of your app to the App Store and Google Play. That new binary will have to include the new public key. It's a major disruption, which highlights just how critical it is to back up your private key securely from day one.
 
-Having a solid recovery plan isn't just a suggestion—it's essential. Your strategy should follow established [incident response best practices](https://codepushgo.com/es/blog/incident-response-best-practices/) to keep any potential downtime and user friction to an absolute minimum.
+Having a solid recovery plan isn't just a suggestion—it's essential. Your strategy should follow established [incident response best practices](https://codepushgo.com/blog/incident-response-best-practices/) to keep any potential downtime and user friction to an absolute minimum.
 
 If you want to go deeper into the principles that underpin secure communications, this [ultimate guide to encryption methods](https://infotech.net/blog/ultimate-guide-to-encryption-methods/) is a fantastic resource. Really understanding these concepts makes building and maintaining a secure pipeline so much smoother.
 

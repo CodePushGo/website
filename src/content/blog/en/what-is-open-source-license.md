@@ -97,7 +97,7 @@ Ultimately, this table shows two valid but very different ways to foster an open
 
 The data clearly shows a trend: while permissive licenses are more widely used, copyleft licenses are the backbone of some of the most important open-source projects in the world. This balance between flexibility and protected freedom is what keeps the entire ecosystem healthy.
 
-For mobile developers, understanding these licenses isn't just a legal chore; it's a crucial part of building a clean and efficient development pipeline. In fact, if you're interested in how these concepts play out in real-world workflows, you might find our deep dive into [Android continuous integration](https://codepushgo.com/de/blog/android-continuous-integration/) helpful.
+For mobile developers, understanding these licenses isn't just a legal chore; it's a crucial part of building a clean and efficient development pipeline. In fact, if you're interested in how these concepts play out in real-world workflows, you might find our deep dive into [Android continuous integration](https://codepushgo.com/blog/android-continuous-integration/) helpful.
 
 ## A Look at the Most Common Open Source Licenses
 
@@ -199,7 +199,7 @@ Your main goal is to build a collaborative ecosystem. Anyone can use, change, an
 
 > Choosing a license is the moment you declare your project's values. It’s your statement on collaboration, commerce, and community. Make it a deliberate one.
 
-While you're thinking about open source, it's helpful to see where it fits into [broader software IP protection strategies](https://www.corderolawgroup.com/blog/2025/software-ip-protection). And if you're building a mobile app, aligning your license choice with your team's workflow is crucial. Our guide on [agile mobile app development](https://codepushgo.com/de/blog/agile-mobile-app-development/) offers insights on how to sync your development process with your project's overarching goals.
+While you're thinking about open source, it's helpful to see where it fits into [broader software IP protection strategies](https://www.corderolawgroup.com/blog/2025/software-ip-protection). And if you're building a mobile app, aligning your license choice with your team's workflow is crucial. Our guide on [agile mobile app development](https://codepushgo.com/blog/agile-mobile-app-development/) offers insights on how to sync your development process with your project's overarching goals.
 
 ## How to Use Open Source Software Safely
 
@@ -238,7 +238,7 @@ Here’s what these tools do for you:
 
 An SCA tool turns compliance from a high-stakes guessing game into a methodical, predictable process. It gives you the clear view you need to use open source safely and responsibly.
 
-Building these habits is a key part of any solid development pipeline. For a deeper dive, check out our guide on **[application security best practices](https://codepushgo.com/de/blog/application-security-best-practices/)**, which covers how to build a secure workflow from the ground up. By pairing smart internal policies with the right automated tools, your team can build amazing things without ever running afoul of the community that makes it all possible.
+Building these habits is a key part of any solid development pipeline. For a deeper dive, check out our guide on **[application security best practices](https://codepushgo.com/blog/application-security-best-practices/)**, which covers how to build a secure workflow from the ground up. By pairing smart internal policies with the right automated tools, your team can build amazing things without ever running afoul of the community that makes it all possible.
 
 ## Common Questions About Open Source Licenses
 
@@ -275,7 +275,7 @@ On the other hand, open source software is **still protected by copyright**. The
 
 If you push code to a public [GitHub](https://github.com/) repository without a license, you create a legal mess. By default, your code is protected by exclusive copyright law. That means people can look at it and even fork it, but they have **no legal right** to actually use, change, or share it in their own projects.
 
-This ambiguity is a huge red flag for other developers. No one wants to build on a foundation that might crumble under a legal challenge. By simply adding a `LICENSE` file, you’re telling the world exactly how they can use your work. It removes the guesswork and is the first real step to becoming a good citizen of the open source community. For developers in certain ecosystems, like Apple's, understanding these rules is just as crucial as managing your credentials. You can learn more in our guide on the **[Apple Developer Certificate](https://codepushgo.com/de/blog/apple-developer-certificate/)**.
+This ambiguity is a huge red flag for other developers. No one wants to build on a foundation that might crumble under a legal challenge. By simply adding a `LICENSE` file, you’re telling the world exactly how they can use your work. It removes the guesswork and is the first real step to becoming a good citizen of the open source community. For developers in certain ecosystems, like Apple's, understanding these rules is just as crucial as managing your credentials. You can learn more in our guide on the **[Apple Developer Certificate](https://codepushgo.com/blog/apple-developer-certificate/)**.
 
 ---
 At **[CodePushGo](https://codepushgo.com)**, we're big believers in the power of open source to spark innovation. Our platform is built on that spirit, giving you the tools to update your React Native apps instantly and securely. You can focus on shipping great features, not on waiting for app store approvals.

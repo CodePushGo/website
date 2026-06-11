@@ -123,7 +123,7 @@ The real magic of React Native is its component-based architecture. Instead of w
 1.  **`TaskInput.js`**: This will handle everything related to adding new tasks. It'll just be a `<TextInput>` field and a button to submit a new to-do.
 2.  **`TaskItem.js`**: This component will be a single to-do item in our list. It’ll show the task's text and have a way for the user to delete it, probably using a `<TouchableOpacity>`.
 
-Building them this way means you can easily use them elsewhere, style them on their own, and manage their logic in isolation. It’s a core practice for building a maintainable React Native app. For a deeper dive into this and other best practices, check out our guide on [building apps with React Native](https://codepushgo.com/de/blog/building-apps-with-react-native/).
+Building them this way means you can easily use them elsewhere, style them on their own, and manage their logic in isolation. It’s a core practice for building a maintainable React Native app. For a deeper dive into this and other best practices, check out our guide on [building apps with React Native](https://codepushgo.com/blog/building-apps-with-react-native/).
 
 > **My Take:** Think of components as custom HTML tags you invent for your app. Seeing a `<TaskItem>` in your code is way more intuitive than trying to decipher a complex nest of `<View>` and `<Text>` elements.
 
@@ -232,7 +232,7 @@ The user experience is completely seamless. They don't have to lift a finger.
 
 The image above highlights a similar principle: for simple state management, React's built-in tools are far more efficient than a heavy library like Redux. The same logic applies to updates—a simple text change shouldn't demand a full, cumbersome app store submission.
 
-The process of building a React Native app that supports these kinds of updates is surprisingly simple. For more advanced use cases, I'd recommend diving into the official guides on [deploying your React Native app with CodePushGo](https://codepushgo.com/de/blog/deploying-react-native-app/) to learn about powerful features like staged rollouts and automatic rollbacks. Mastering OTA updates gives you a serious advantage, allowing you to ship a more polished and stable app faster than you ever thought possible.
+The process of building a React Native app that supports these kinds of updates is surprisingly simple. For more advanced use cases, I'd recommend diving into the official guides on [deploying your React Native app with CodePushGo](https://codepushgo.com/blog/deploying-react-native-app/) to learn about powerful features like staged rollouts and automatic rollbacks. Mastering OTA updates gives you a serious advantage, allowing you to ship a more polished and stable app faster than you ever thought possible.
 
 You've done the hard work of building your app, from the initial setup to creating a great-looking UI that pulls in live data. Now comes the last mile: getting it ready for the world. This is where we shift gears from coding features to polishing and packaging your app for the official stores.
 
@@ -262,7 +262,7 @@ After your code signing is all set up in Xcode, you'll "archive" your app. This 
 
 The framework's adoption just keeps climbing. By 2024, React Native's global market share hit about **6.75%**, making it the most popular non-native framework on the App Store. Companies often pick it to cut development costs by up to **40%** and launch their products faster. If you want to dive deeper, you can explore more on these [cross-platform mobile development trends on makeitnew.io](https://makeitnew.io/cross-platform-mobile-development-trends-you-need-to-know-in-2025-a00ff6cc34f3).
 
-As you get more comfortable with deployment, you'll find that automating tasks is a huge time-saver. Learning about [creating reusable GitHub Actions](https://blog.pullnotifier.com/blog/how-to-create-reusable-github-actions-in-2025) is a great next step. And while this guide walked through the manual process, remember that you can take your workflow even further by exploring options for [automating your app updates](https://codepushgo.com/de/blog/automatic-app-updates/).
+As you get more comfortable with deployment, you'll find that automating tasks is a huge time-saver. Learning about [creating reusable GitHub Actions](https://blog.pullnotifier.com/blog/how-to-create-reusable-github-actions-in-2025) is a great next step. And while this guide walked through the manual process, remember that you can take your workflow even further by exploring options for [automating your app updates](https://codepushgo.com/blog/automatic-app-updates/).
 
 ## Got Questions? Let's Talk React Native
 
@@ -293,7 +293,7 @@ This is one of the first big forks in the road you'll encounter. Think of **Expo
 
 The **React Native CLI**, on the other hand, is the "bare" workflow. It gives you raw, full access to the underlying iOS and Android projects. You'll want to go this route if you know you need to write your own custom native modules or require total, granular control over every aspect of the build process.
 
-Choosing the right tools is just the beginning. To keep your app healthy after launch, you have to know which [app metrics to track](https://codepushgo.com/de/blog/app-metrics-to-track/). This insight is crucial for maintaining a great user experience.
+Choosing the right tools is just the beginning. To keep your app healthy after launch, you have to know which [app metrics to track](https://codepushgo.com/blog/app-metrics-to-track/). This insight is crucial for maintaining a great user experience.
 
 ---
 Ready to push updates to your users in minutes, not days? **CodePushGo** allows you to deploy bug fixes and new features instantly, bypassing the slow app store review process. Take control of your release cycle and deliver a better app, faster. Explore the features at [https://codepushgo.com](https://codepushgo.com).

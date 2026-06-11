@@ -74,7 +74,7 @@ When you download and try to run the software, your operating system steps in to
 
 If the two hashes are a perfect match, your system knows the code is authentic and hasn't been tampered with. The installation continues without a hitch. But if they don't match? A big red flag goes up, and you'll see a security warning, stopping potentially malicious code in its tracks.
 
-This verification is absolutely critical, especially in the world of rapid, continuous updates. To see how this applies to mobile apps, you can explore our guide on [what OTA updates are](https://codepushgo.com/de/blog/what-are-ota-updates/).
+This verification is absolutely critical, especially in the world of rapid, continuous updates. To see how this applies to mobile apps, you can explore our guide on [what OTA updates are](https://codepushgo.com/blog/what-are-ota-updates/).
 
 ## The Real-World Security Benefits of Code Signing
 
@@ -96,7 +96,7 @@ Unsigned applications don't just kill user confidence; they're a genuine securit
 
 This security checkpoint has a direct impact on whether people will even use your software. Properly signed code dramatically reduces security warnings, and in some cases, has been shown to boost installation success rates by **over 30%**.
 
-Ultimately, if you want your software on major platforms, meeting the strict requirements from vendors like Apple and Microsoft is non-negotiable. This becomes especially critical when you're pushing frequent updates, a core concept we explore in our guide to [Over-the-Air updates](https://codepushgo.com/de/blog/over-the-air-updates/).
+Ultimately, if you want your software on major platforms, meeting the strict requirements from vendors like Apple and Microsoft is non-negotiable. This becomes especially critical when you're pushing frequent updates, a core concept we explore in our guide to [Over-the-Air updates](https://codepushgo.com/blog/over-the-air-updates/).
 
 ## Choosing the Right Code Signing Certificate
 
@@ -124,7 +124,7 @@ To help you decide which path is right for you, let's break down the key differe
 | **Installation Experience** | May trigger initial security warnings until a reputation is built. | Smooth, warning-free installation experience from the first download. |
 | **Best For** | Independent developers, open-source projects, and businesses needing foundational trust. | Enterprises, major software vendors, and anyone prioritizing a frictionless user experience. |
 
-Ultimately, choosing between OV and EV comes down to balancing cost, the effort of verification, and the immediate trust you need to project. Understanding this choice is a key part of maintaining solid [application security best practices](https://codepushgo.com/de/blog/application-security-best-practices/).
+Ultimately, choosing between OV and EV comes down to balancing cost, the effort of verification, and the immediate trust you need to project. Understanding this choice is a key part of maintaining solid [application security best practices](https://codepushgo.com/blog/application-security-best-practices/).
 
 One of the most significant recent changes is that EV certificates now **require** the private key to be stored on a physical **Hardware Security Module (HSM)**. This isn't just a suggestion; it's a mandate. This requirement makes it incredibly difficult for an attacker to steal the private key, ensuring the signature's integrity is physically protected by certified hardware.
 
@@ -146,7 +146,7 @@ This verification check isn't just a "nice-to-have" feature; it's a core securit
 
 > Code signing ensures that the integrity of an application is protected throughout its entire lifecycle. From the initial install to the final patch, the digital signature acts as a constant, verifiable seal of authenticity and safety for the end-user.
 
-This security model is the foundation for platforms that manage app updates. For example, services that enable [automatic app updates](https://codepushgo.com/de/blog/automatic-app-updates/) depend on this cryptographic proof to push changes out to users safely and confidently. By signing every single code push, developers can fix bugs and deliver new features quickly, all while assuring users they are shielded from supply chain attacks where updates get hijacked.
+This security model is the foundation for platforms that manage app updates. For example, services that enable [automatic app updates](https://codepushgo.com/blog/automatic-app-updates/) depend on this cryptographic proof to push changes out to users safely and confidently. By signing every single code push, developers can fix bugs and deliver new features quickly, all while assuring users they are shielded from supply chain attacks where updates get hijacked.
 
 ## Frequently Asked Questions About Code Signing
 
@@ -172,7 +172,7 @@ The cost really depends on what you need.
 
 Certificates are usually issued for terms ranging from **one to three years**. But here's the cool part: the signature itself can remain valid long after the certificate expires.
 
-This is possible through a process called **timestamping**. When you sign your code, you can include a secure timestamp from a trusted authority. This acts as cryptographic proof that your signature was valid at the moment it was applied. As a result, operating systems will continue to trust your software indefinitely. Getting this right is a key step, especially when you need to [publish an app in the App Store](https://codepushgo.com/de/blog/how-to-publish-app-in-app-store/), where trust and verification are mandatory.
+This is possible through a process called **timestamping**. When you sign your code, you can include a secure timestamp from a trusted authority. This acts as cryptographic proof that your signature was valid at the moment it was applied. As a result, operating systems will continue to trust your software indefinitely. Getting this right is a key step, especially when you need to [publish an app in the App Store](https://codepushgo.com/blog/how-to-publish-app-in-app-store/), where trust and verification are mandatory.
 
 ---
 At **CodePushGo**, we simplify the update process for your React Native apps, ensuring that every code push is secure and verified. Our platform integrates seamlessly into your workflow, allowing you to deploy trusted updates instantly. [Learn more at CodePushGo](https://codepushgo.com).

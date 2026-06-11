@@ -137,7 +137,7 @@ Let’s put your own stamp on it. Open the `App.tsx` file in your favorite code 
 
 Now, just save the file.
 
-Almost instantly, you’ll see the magic of **Fast Refresh**. The app on your simulator updates on the fly without needing a full restart, keeping its current state intact. This incredibly tight feedback loop is what makes developing in React Native so productive and, frankly, so enjoyable. This simple change is your first step, and as you get more comfortable, you can start [building apps with React Native](https://codepushgo.com/de/blog/building-apps-with-react-native/) that have much more complex and interesting user interfaces.
+Almost instantly, you’ll see the magic of **Fast Refresh**. The app on your simulator updates on the fly without needing a full restart, keeping its current state intact. This incredibly tight feedback loop is what makes developing in React Native so productive and, frankly, so enjoyable. This simple change is your first step, and as you get more comfortable, you can start [building apps with React Native](https://codepushgo.com/blog/building-apps-with-react-native/) that have much more complex and interesting user interfaces.
 
 ## Getting to Grips with Core Components and Styling
 
@@ -235,7 +235,7 @@ You might see a difference in highly intensive apps, like those with complex 3D 
 Here are a few other rapid-fire questions we see all the time:
 
 *   **How should I handle state management?** When you're starting out, React's own tools like `useState` and `useContext` are perfect. As your app grows, you'll likely want to reach for something more robust like Redux Toolkit or Zustand.
-*   **What's the deal with app analytics?** Tracking user behavior is non-negotiable for improving your app. Integrating analytics tools is a standard part of the process. We actually wrote a detailed guide on implementing [analytics for React Native applications](https://codepushgo.com/de/blog/analytics-for-react-native/) that you might find useful.
+*   **What's the deal with app analytics?** Tracking user behavior is non-negotiable for improving your app. Integrating analytics tools is a standard part of the process. We actually wrote a detailed guide on implementing [analytics for React Native applications](https://codepushgo.com/blog/analytics-for-react-native/) that you might find useful.
 *   **How do I debug my app effectively?** You can use your browser's dev tools for basic JavaScript debugging, but honestly, the community has pretty much standardized on tools like Flipper. It lets you inspect layouts, network requests, and device logs in a much more powerful way.
 
 ---

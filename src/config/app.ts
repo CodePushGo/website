@@ -10,7 +10,7 @@ function getRightKey(branch: string, keyname: 'base_domain'): string {
 
 const brand = 'CodePushGo'
 const blogTitle = `${brand} | React Native Blog`
-const blogDescription = 'The best articles to enhance your React Native app. Do more with React Native and CodePushGo. Learn how to build a modern app with React Native.'
+const blogDescription = 'React Native release strategy, JavaScript bundle updates, OTA deployment, rollout safety, and CodePushGo live update guides.'
 
 function getUrl(branch = ''): string {
   if (branch === 'local') return `http://${getRightKey(branch, 'base_domain')}`
@@ -52,7 +52,7 @@ export function useRuntimeConfig(): RuntimeConfig {
       brand,
       blog_title: blogTitle,
       blog_description: blogDescription,
-      blog_keywords: 'Learning React Native, React Native updates, OTA updates, mobile app development, update strategy, developer tools',
+      blog_keywords: 'React Native live updates, JavaScript bundle updates, OTA updates, mobile release strategy, CodePushGo',
       baseUrl: getUrl(import.meta.env.BRANCH),
       baseApiUrl: getApiUrl(import.meta.env.BRANCH),
     },
@@ -103,29 +103,19 @@ export const structuredData = {
           position: 2,
           item: {
             '@type': 'WebPage',
+            '@id': `${getUrl(import.meta.env.BRANCH)}/docs/live-updates/`,
+            url: `${getUrl(import.meta.env.BRANCH)}/docs/live-updates/`,
+            name: 'Live Updates',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          item: {
+            '@type': 'WebPage',
             '@id': `${getUrl(import.meta.env.BRANCH)}/blog/`,
             url: `${getUrl(import.meta.env.BRANCH)}/blog/`,
             name: 'Blog',
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          item: {
-            '@type': 'WebPage',
-            '@id': `${getUrl(import.meta.env.BRANCH)}/app_mobile/`,
-            url: `${getUrl(import.meta.env.BRANCH)}/app_mobile/`,
-            name: 'App',
-          },
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          item: {
-            '@type': 'WebPage',
-            '@id': `${getUrl(import.meta.env.BRANCH)}/pricing/`,
-            url: `${getUrl(import.meta.env.BRANCH)}/pricing/`,
-            name: 'Pricing',
           },
         },
       ],

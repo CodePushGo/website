@@ -75,7 +75,7 @@ Let's walk through an example for a new e-commerce feature.
 *   **Weak Criterion:** "User should be able to apply a discount." (This tells us almost nothing.)
 *   **Strong Criterion:** "When a user enters the code **‘SAVE20’** in the promo code field and clicks ‘Apply,’ the order subtotal must decrease by **20%**, and the discount amount must appear as a separate line item in the cart summary."
 
-See the difference? The second one is powerful. It defines the *exact* action, the specific input, and the observable outcome. This clarity is gold for the tester performing the check and for the developer who might have to fix a bug. Building this skill is a cornerstone of effective [agile mobile app development](https://codepushgo.com/de/blog/agile-mobile-app-development/) and pays dividends in UAT.
+See the difference? The second one is powerful. It defines the *exact* action, the specific input, and the observable outcome. This clarity is gold for the tester performing the check and for the developer who might have to fix a bug. Building this skill is a cornerstone of effective [agile mobile app development](https://codepushgo.com/blog/agile-mobile-app-development/) and pays dividends in UAT.
 
 ### Assembling the Right UAT Team
 
@@ -117,7 +117,7 @@ A solid bug report from a tester should always include:
 4.  **Actual vs. Expected Results:** A simple, direct comparison of what happened versus what *should* have happened.
 5.  **Screenshots and Recordings:** A picture is worth a thousand words. Visual proof of an error or weird behavior is invaluable and speeds up the fix immensely.
 
-This level of detail creates an airtight audit trail, which makes the handoff to the development team incredibly efficient. It cuts down on the back-and-forth by answering their questions before they even have to ask. Managing this flow of information effectively is one of the core [software deployment best practices](https://codepushgo.com/de/blog/software-deployment-best-practices/) that truly sets high-performing teams apart.
+This level of detail creates an airtight audit trail, which makes the handoff to the development team incredibly efficient. It cuts down on the back-and-forth by answering their questions before they even have to ask. Managing this flow of information effectively is one of the core [software deployment best practices](https://codepushgo.com/blog/software-deployment-best-practices/) that truly sets high-performing teams apart.
 
 ## Turning UAT Feedback into Actionable Insights
 
@@ -166,7 +166,7 @@ This ability to iterate quickly transforms how you can track UAT progress and ma
 
 ![Image](https://cdn.outrank.so/c504846a-b33a-4018-bc93-5bfa9be0f3af/0b2e6303-eb4b-4de3-956a-e26932126c11.jpg)
 
-When you can gather feedback and generate reports this fast, UAT stops feeling like a slow, painful checkpoint and becomes a dynamic, ongoing conversation. For any team looking to build this kind of speed, getting familiar with [the principles of mobile app continuous delivery](https://codepushgo.com/de/blog/mobile-app-continuous-delivery/) is the perfect starting point.
+When you can gather feedback and generate reports this fast, UAT stops feeling like a slow, painful checkpoint and becomes a dynamic, ongoing conversation. For any team looking to build this kind of speed, getting familiar with [the principles of mobile app continuous delivery](https://codepushgo.com/blog/mobile-app-continuous-delivery/) is the perfect starting point.
 
 To really see the difference, let’s compare the old way of doing things with an OTA-powered approach.
 
@@ -210,7 +210,7 @@ Machine learning models take this a step further. By crunching data from past bu
 
 The explosion of Internet of Things (IoT) devices has opened up a whole new can of worms for UAT. We're no longer just testing software on a screen. Now, testing involves smartwatches, connected home appliances, industrial sensors, and a whole universe of interconnected hardware. This complexity demands a new approach.
 
-UAT for IoT means validating the entire ecosystem, not just a single app. A test might involve confirming that a smart thermostat responds correctly to a mobile app command, but it also needs to ensure it communicates properly with other connected devices in the home. A crucial piece of this puzzle is validating the update process itself. If you're new to this, understanding [what an OTA update is](https://codepushgo.com/de/blog/what-is-an-ota-update/) is a great starting point, as it's fundamental to modern device management. This specialized UAT has to focus on reliability, security, and the fluid interaction between hardware and software in messy, real-world conditions.
+UAT for IoT means validating the entire ecosystem, not just a single app. A test might involve confirming that a smart thermostat responds correctly to a mobile app command, but it also needs to ensure it communicates properly with other connected devices in the home. A crucial piece of this puzzle is validating the update process itself. If you're new to this, understanding [what an OTA update is](https://codepushgo.com/blog/what-is-an-ota-update/) is a great starting point, as it's fundamental to modern device management. This specialized UAT has to focus on reliability, security, and the fluid interaction between hardware and software in messy, real-world conditions.
 
 ## Common Questions About the UAT Process
 
@@ -251,7 +251,7 @@ First off, a UAT "failure" isn't a disaster. It's a success! It means you caught
 
 When a major bug is found, the project isn't doomed. The team simply regroups to prioritize the necessary fixes based on severity. Once the developers have addressed the issues, they'll run regression tests to make sure the fixes didn't break anything else. Then, it's time for another go/no-go meeting and potentially another round of targeted UAT.
 
-To see how these scenarios play out with real-world examples, check out our detailed guide on [user acceptance test examples](https://codepushgo.com/de/blog/user-acceptance-test-examples/). It really helps bring these concepts to life.
+To see how these scenarios play out with real-world examples, check out our detailed guide on [user acceptance test examples](https://codepushgo.com/blog/user-acceptance-test-examples/). It really helps bring these concepts to life.
 
 ### So, What Are Your Next Steps?
 

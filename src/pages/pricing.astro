@@ -1,0 +1,396 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+const locale = Astro.locals.locale
+const config = Astro.locals.runtimeConfig
+
+const homeUrl = getRelativeLocaleUrl(locale)
+const quickstartUrl = getRelativeLocaleUrl(locale, 'docs/getting-started/quickstart')
+const supportUrl = 'mailto:support@codepushgo.com'
+
+const content = {
+  title: 'CodePushGo Pricing - React Native Live Updates',
+  description:
+    'CodePushGo pricing for React Native live updates, with the same public plan prices as Capgo and a clear scope: JavaScript bundle delivery, channels, telemetry, and rollback.',
+  image: `${config.public.baseUrl}/codepush_cover.webp`,
+  keywords: 'CodePushGo pricing, React Native live update pricing, CodePush pricing, OTA update pricing, JavaScript bundle updates',
+}
+
+const plans = [
+  {
+    name: 'Solo',
+    audience: 'Best for independent developers',
+    yearlyPrice: '$12',
+    monthlyPrice: '$14',
+    annualBilling: '$146',
+    featured: false,
+    limits: ['2,000 Monthly Active Users', '100 GiB/month bandwidth', '20 GiB storage'],
+    features: ['Unlimited live updates', 'Release channels', 'Rollback history', 'CLI upload workflow'],
+  },
+  {
+    name: 'Maker',
+    audience: 'Best for small product teams',
+    yearlyPrice: '$33',
+    monthlyPrice: '$39',
+    annualBilling: '$396',
+    featured: true,
+    limits: ['10,000 Monthly Active Users', '1,000 GiB/month bandwidth', '50 GiB storage'],
+    features: ['Unlimited live updates', 'Staged release workflow', 'Update telemetry', 'Priority support path'],
+  },
+  {
+    name: 'Team',
+    audience: 'Best for production mobile teams',
+    yearlyPrice: '$83',
+    monthlyPrice: '$99',
+    annualBilling: '$998',
+    featured: false,
+    limits: ['100,000 Monthly Active Users', '2,000 GiB/month bandwidth', '100 GiB storage'],
+    features: ['Unlimited live updates', 'Team release controls', 'Audit-ready history', 'Priority support'],
+  },
+  {
+    name: 'Enterprise',
+    audience: 'Best for apps at scale',
+    yearlyPrice: '$208+',
+    monthlyPrice: '$249+',
+    annualBilling: '$2,490',
+    featured: false,
+    limits: ['1,000,000+ Monthly Active Users', '20,000+ GiB/month bandwidth', '200+ GiB storage'],
+    features: ['Unlimited live updates', 'Large rollout support', 'Security questionnaires', 'Direct support conversation'],
+  },
+]
+
+const liveUpdateFeatures = [
+  'JavaScript bundle and asset delivery',
+  'Development, beta, and production channels',
+  'Compatible-version targeting',
+  'Download and install telemetry',
+  'Fast rollback to a previous bundle',
+  'CLI workflow for local and CI uploads',
+]
+
+const notIncluded = [
+  'Native cloud builds',
+  'App Store or Google Play publishing',
+  'Capacitor plugin marketplace',
+  'Plugin priority bug fixes',
+  'Native entitlement or permission changes',
+  'Binary updates that require store review',
+]
+
+const creditGroups = [
+  {
+    title: 'Monthly Active Users',
+    rows: ['$0.003 per MAU for the first 1M', '$0.0022 per MAU for the next 2M', '$0.0016 per MAU for the next 7M', '$0.0007 per MAU over 100M'],
+  },
+  {
+    title: 'Bandwidth',
+    rows: ['$0.12 per GiB for the first 1 TB', '$0.10 per GiB for the next 1 TB', '$0.085 per GiB for the next 4 TB', '$0.02 per GiB over 128 TB'],
+  },
+  {
+    title: 'Storage',
+    rows: ['$0.09 per GiB for the first 1 GiB', '$0.08 per GiB for the next 5 GiB', '$0.065 per GiB for the next 19 GiB', '$0.021 per GiB over 1 TB'],
+  },
+]
+
+const faqs = [
+  {
+    question: 'Why use the same plan prices as Capgo?',
+    answer: 'CodePushGo keeps pricing familiar for teams comparing release tooling, but the product scope is narrower: React Native live updates, not native builds or plugins.',
+  },
+  {
+    question: 'What happens if I change native code?',
+    answer: 'Native module changes, permissions, entitlements, SDK upgrades, and binary configuration still need a normal App Store or Google Play release.',
+  },
+  {
+    question: 'Can I start on monthly billing?',
+    answer: 'Yes. Monthly billing is available at the month-to-month prices shown above. Annual billing uses the lower monthly equivalent and is billed once per year.',
+  },
+  {
+    question: 'What happens above plan limits?',
+    answer: 'Use credits or move to a larger plan before a rollout hits the ceiling. The goal is predictable spend, not surprise overage billing during a production incident.',
+  },
+]
+---
+
+<Layout content={content}>
+  <main class="bg-misty-50 text-codepushgo-900">
+    <section class="bg-codepushgo-900 relative isolate overflow-hidden border-b border-white/15 text-white">
+      <div
+        class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:76px_76px] opacity-35"
+      >
+      </div>
+      <div class="from-codepushgo-800 absolute inset-x-0 bottom-0 -z-10 h-36 bg-linear-to-t to-transparent"></div>
+
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="border-pumpkin-200/40 bg-pumpkin-500/20 text-misty-300 inline-flex items-center rounded-lg border px-3 py-2 text-sm font-bold">Price parity, clear scope</p>
+          <h1 class="mt-6 text-4xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl">Pricing for React Native production recovery.</h1>
+          <p class="text-misty-300 mt-6 max-w-2xl text-lg leading-8">
+            Same public plan prices as Capgo, focused on CodePushGo live updates: ship compatible JavaScript bundles, control rollout, watch adoption, and roll back quickly.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href={quickstartUrl}
+              class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 inline-flex min-h-12 items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-bold transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
+            >
+              Start free
+            </a>
+            <a
+              href={homeUrl}
+              class="bg-codepushgo-800 hover:bg-codepushgo-700 focus-visible:ring-misty-300 focus-visible:ring-offset-codepushgo-900 inline-flex min-h-12 items-center justify-center rounded-lg border border-white/20 px-6 py-3 text-base font-bold text-white transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+            >
+              Review live update features
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-12 sm:py-16" aria-labelledby="plans-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p class="text-codepushgo-700 text-sm font-bold">Plans</p>
+            <h2 id="plans-heading" class="text-codepushgo-900 mt-2 text-3xl leading-tight font-bold sm:text-4xl">Start small, scale when rollout volume grows.</h2>
+            <p class="text-dusk-700 mt-4 max-w-2xl text-base leading-7">Prices below mirror Capgo public pricing. Feature copy is scoped to CodePushGo live updates.</p>
+          </div>
+          <div class="border-codepushgo-900/15 inline-flex w-full rounded-lg border bg-white p-1 shadow-sm sm:w-auto" aria-label="Billing period">
+            <button
+              type="button"
+              data-billing="yearly"
+              aria-pressed="true"
+              class="aria-pressed:bg-codepushgo-900 focus-visible:outline-pumpkin-300 text-dusk-700 min-h-11 flex-1 rounded-md px-4 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 aria-pressed:text-white aria-pressed:shadow-sm sm:flex-none"
+            >
+              Yearly -20%
+            </button>
+            <button
+              type="button"
+              data-billing="monthly"
+              aria-pressed="false"
+              class="aria-pressed:bg-codepushgo-900 focus-visible:outline-pumpkin-300 text-dusk-700 min-h-11 flex-1 rounded-md px-4 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 aria-pressed:text-white aria-pressed:shadow-sm sm:flex-none"
+            >
+              Monthly
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {
+            plans.map((plan) => (
+              <article
+                class={`relative flex h-full flex-col rounded-lg border p-6 shadow-sm ${
+                  plan.featured ? 'border-codepushgo-900 bg-codepushgo-900 shadow-codepushgo-900/20 text-white' : 'border-codepushgo-900/15 text-codepushgo-900 bg-white'
+                }`}
+              >
+                {plan.featured && <p class="bg-pumpkin-300 text-dusk-900 absolute top-4 right-4 rounded-md px-3 py-1 text-xs font-bold">Most popular</p>}
+                <div class="pr-24 xl:pr-0">
+                  <h3 class={`text-xl font-bold ${plan.featured ? 'text-white' : 'text-codepushgo-900'}`}>{plan.name}</h3>
+                  <p class={`mt-2 text-sm leading-6 ${plan.featured ? 'text-misty-300' : 'text-dusk-700'}`}>{plan.audience}</p>
+                </div>
+
+                <div class="mt-6">
+                  <div class="flex items-end gap-1">
+                    <span
+                      class={`text-5xl font-bold ${plan.featured ? 'text-white' : 'text-codepushgo-900'}`}
+                      data-price
+                      data-yearly-price={plan.yearlyPrice}
+                      data-monthly-price={plan.monthlyPrice}
+                    >
+                      {plan.yearlyPrice}
+                    </span>
+                    <span class={`pb-2 text-sm font-bold ${plan.featured ? 'text-misty-300' : 'text-dusk-700'}`}>/mo</span>
+                  </div>
+                  <p
+                    class={`mt-3 text-sm ${plan.featured ? 'text-misty-300' : 'text-dusk-700'}`}
+                    data-note
+                    data-yearly-note={`Billed annually at ${plan.annualBilling}`}
+                    data-monthly-note={`${plan.monthlyPrice} month-to-month`}
+                  >
+                    Billed annually at {plan.annualBilling}
+                  </p>
+                </div>
+
+                <div class={`mt-6 border-t pt-6 ${plan.featured ? 'border-white/20' : 'border-codepushgo-900/15'}`}>
+                  <h4 class={`text-sm font-bold ${plan.featured ? 'text-white' : 'text-codepushgo-900'}`}>Usage included</h4>
+                  <ul class="mt-3 space-y-3">
+                    {plan.limits.map((item) => (
+                      <li class={`flex gap-2 text-sm leading-6 ${plan.featured ? 'text-misty-300' : 'text-dusk-700'}`}>
+                        <svg
+                          class={`mt-1 h-4 w-4 shrink-0 ${plan.featured ? 'text-pumpkin-300' : 'text-codepushgo-700'}`}
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.7 5.3a1 1 0 010 1.4l-7.2 7.2a1 1 0 01-1.4 0L3.3 9.1a1 1 0 111.4-1.4l4.1 4.1 6.5-6.5a1 1 0 011.4 0z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div class={`mt-6 border-t pt-6 ${plan.featured ? 'border-white/20' : 'border-codepushgo-900/15'}`}>
+                  <h4 class={`text-sm font-bold ${plan.featured ? 'text-white' : 'text-codepushgo-900'}`}>Live update workflow</h4>
+                  <ul class="mt-3 space-y-3">
+                    {plan.features.map((item) => (
+                      <li class={`flex gap-2 text-sm leading-6 ${plan.featured ? 'text-misty-300' : 'text-dusk-700'}`}>
+                        <svg
+                          class={`mt-1 h-4 w-4 shrink-0 ${plan.featured ? 'text-pumpkin-300' : 'text-codepushgo-700'}`}
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.7 5.3a1 1 0 010 1.4l-7.2 7.2a1 1 0 01-1.4 0L3.3 9.1a1 1 0 111.4-1.4l4.1 4.1 6.5-6.5a1 1 0 011.4 0z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <a
+                  href={plan.name === 'Enterprise' ? supportUrl : quickstartUrl}
+                  class={`mt-8 inline-flex min-h-12 items-center justify-center rounded-lg px-4 text-sm font-bold transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none ${
+                    plan.featured
+                      ? 'text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 bg-white focus-visible:ring-white'
+                      : 'bg-codepushgo-900 hover:bg-codepushgo-800 focus-visible:ring-codepushgo-300 text-white focus-visible:ring-offset-white'
+                  }`}
+                >
+                  {plan.name === 'Enterprise' ? 'Talk to support' : 'Start free'}
+                </a>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-misty-100 py-12 sm:py-16" aria-labelledby="scope-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="border-codepushgo-900/15 rounded-lg border bg-white p-6 shadow-sm">
+            <p class="text-codepushgo-700 text-sm font-bold">Included</p>
+            <h2 id="scope-heading" class="text-codepushgo-900 mt-2 text-2xl font-bold">What these plans pay for</h2>
+            <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+              {
+                liveUpdateFeatures.map((item) => (
+                  <li class="border-codepushgo-900/15 text-codepushgo-900 flex min-h-14 items-center gap-3 rounded-lg border bg-white px-4 py-3 text-sm font-bold">
+                    <svg class="text-vista-700 h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false">
+                      <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.2 7.2a1 1 0 01-1.4 0L3.3 9.1a1 1 0 111.4-1.4l4.1 4.1 6.5-6.5a1 1 0 011.4 0z" clip-rule="evenodd" />
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </article>
+
+          <article class="border-pumpkin-400/50 rounded-lg border bg-white p-6 shadow-sm">
+            <p class="text-dusk-900 text-sm font-bold">Not included</p>
+            <h2 class="text-codepushgo-900 mt-2 text-2xl font-bold">No hidden native-build or plugin claims</h2>
+            <p class="text-dusk-700 mt-3 text-base leading-7">CodePushGo pricing is for live updates. Keep native work on the normal store-release path.</p>
+            <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+              {
+                notIncluded.map((item) => (
+                  <li class="border-pumpkin-300/50 bg-pumpkin-50 text-dusk-900 flex min-h-14 items-center gap-3 rounded-lg border px-4 py-3 text-sm font-bold">
+                    <svg class="text-pumpkin-800 h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 8.6l4.3-4.3a1 1 0 111.4 1.4L11.4 10l4.3 4.3a1 1 0 01-1.4 1.4L10 11.4l-4.3 4.3a1 1 0 01-1.4-1.4L8.6 10 4.3 5.7a1 1 0 011.4-1.4L10 8.6z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-12 sm:py-16" aria-labelledby="credits-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-codepushgo-700 text-sm font-bold">Usage credits</p>
+          <h2 id="credits-heading" class="text-codepushgo-900 mt-2 text-3xl font-bold">For usage above plan limits.</h2>
+          <p class="text-dusk-700 mt-4 text-base leading-7">
+            Credits cover live-update resources beyond the included limits. Native build-minute credits are not listed because CodePushGo does not sell native builds.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-5 lg:grid-cols-3">
+          {
+            creditGroups.map((group) => (
+              <article class="border-codepushgo-900/15 rounded-lg border bg-white p-6 shadow-sm">
+                <h3 class="text-codepushgo-900 text-xl font-bold">{group.title}</h3>
+                <ul class="mt-5 space-y-3">
+                  {group.rows.map((row) => (
+                    <li class="border-codepushgo-900/10 bg-misty-100 text-dusk-800 rounded-lg border px-4 py-3 text-sm leading-6 font-bold">{row}</li>
+                  ))}
+                </ul>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-codepushgo-900 py-12 text-white sm:py-16" aria-labelledby="faq-heading">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-misty-300 text-sm font-bold">Questions</p>
+          <h2 id="faq-heading" class="mt-2 text-3xl font-bold text-white">Pricing without fuzzy product scope.</h2>
+        </div>
+        <div class="mt-8 grid gap-5 md:grid-cols-2">
+          {
+            faqs.map((item) => (
+              <article class="bg-codepushgo-800 rounded-lg border border-white/15 p-6 shadow-sm">
+                <h3 class="text-xl font-bold text-white">{item.question}</h3>
+                <p class="text-misty-300 mt-3 text-base leading-7">{item.answer}</p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<script>
+  const billingButtons = document.querySelectorAll('[data-billing]')
+  const priceNodes = document.querySelectorAll('[data-price]')
+  const noteNodes = document.querySelectorAll('[data-note]')
+
+  function setBilling(mode) {
+    billingButtons.forEach((button) => {
+      button.setAttribute('aria-pressed', String(button.getAttribute('data-billing') === mode))
+    })
+
+    priceNodes.forEach((node) => {
+      const value = node.getAttribute(mode === 'yearly' ? 'data-yearly-price' : 'data-monthly-price')
+      if (value) node.textContent = value
+    })
+
+    noteNodes.forEach((node) => {
+      const value = node.getAttribute(mode === 'yearly' ? 'data-yearly-note' : 'data-monthly-note')
+      if (value) node.textContent = value
+    })
+  }
+
+  billingButtons.forEach((button) => {
+    button.addEventListener('click', () => setBilling(button.getAttribute('data-billing') || 'yearly'))
+  })
+</script>

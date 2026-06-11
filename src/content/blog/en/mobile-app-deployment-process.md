@@ -65,7 +65,7 @@ Before we dive into the nuts and bolts of CI/CD, here's a quick look at the esse
 | **API Key Management** | Prevent unauthorized access and abuse of third-party services. | GitHub Secrets, AWS Secrets Manager |
 | **Version Control** | Maintain a clean codebase and enable collaboration. | Git, GitFlow branching strategy |
 
-Treating these steps with the seriousness they deserve will save you countless headaches later on. This discipline is a core tenet of agile development, which is all about creating flexible and efficient workflows. If you want to go deeper, our guide to [agile mobile app development](https://codepushgo.com/fr/blog/agile-mobile-app-development/) is a great resource.
+Treating these steps with the seriousness they deserve will save you countless headaches later on. This discipline is a core tenet of agile development, which is all about creating flexible and efficient workflows. If you want to go deeper, our guide to [agile mobile app development](https://codepushgo.com/blog/agile-mobile-app-development/) is a great resource.
 
 While traditional mobile app deployment can take a lengthy **3 to 9 months**, the landscape is shifting. Modern low-code platforms and reusable component libraries are dramatically speeding things up, allowing some teams to get an MVP out the door in as little as **4 to 6 weeks**. It's a testament to how much organized preparation and the right tools can impact your timeline.
 
@@ -142,7 +142,7 @@ Apple’s review process is famously meticulous, often involving human reviewers
 
 Google's process tends to be faster and more automated, but it’s just as strict about policies on malware, user-generated content, and data safety. Their "Data safety" section is a huge deal—you have to be dead-on accurate about what data you collect and why.
 
-To avoid common pitfalls, it’s worth bookmarking our detailed breakdown of the [App Store review guidelines](https://codepushgo.com/fr/blog/app-store-review-guidelines/).
+To avoid common pitfalls, it’s worth bookmarking our detailed breakdown of the [App Store review guidelines](https://codepushgo.com/blog/app-store-review-guidelines/).
 
 ### How to Handle a Rejection
 
@@ -176,7 +176,7 @@ On the iOS side of things, [**Apple’s TestFlight**](https://developer.apple.co
 
 > Think of these tools as mission control for your pre-launch checks. They give you the power to gradually dial up your audience, from a few trusted colleagues to thousands of eager beta testers, all while collecting the data you need for a smooth launch.
 
-Of course, just pushing out builds isn't enough. You need a structured feedback loop to collect, sort, and act on what your testers are telling you. For a much deeper look into setting this up, check out our guide on [implementing beta testing best practices](https://codepushgo.com/fr/blog/beta-testing-best-practices/).
+Of course, just pushing out builds isn't enough. You need a structured feedback loop to collect, sort, and act on what your testers are telling you. For a much deeper look into setting this up, check out our guide on [implementing beta testing best practices](https://codepushgo.com/blog/beta-testing-best-practices/).
 
 ### The Power of Phased Rollouts
 
@@ -241,7 +241,7 @@ Seeing a side-by-side comparison really drives home just how much of a differenc
 
 The table makes it clear: for anything related to your app's JavaScript, the OTA method provides unmatched speed and control.
 
-For an even deeper look, especially on the Android side of things, check out our detailed guide on [how OTA updates for Android work](https://codepushgo.com/fr/blog/ota-updates-for-android/). By adopting OTA updates, you're not just improving your deployment process—you're fundamentally changing how quickly you can respond to your users and the market.
+For an even deeper look, especially on the Android side of things, check out our detailed guide on [how OTA updates for Android work](https://codepushgo.com/blog/ota-updates-for-android/). By adopting OTA updates, you're not just improving your deployment process—you're fundamentally changing how quickly you can respond to your users and the market.
 
 ## Answering Your Top Deployment Questions
 
@@ -291,7 +291,7 @@ I've seen builds fail for all sorts of reasons, but a few usual suspects pop up 
 *   **Dependency Conflicts:** You add a new library, and suddenly it doesn't play nice with an existing one. Look for errors during `npm install` or `pod install` phases.
 *   **Failed Tests:** Your pipeline should be configured to halt a deployment if tests fail. That's a good thing! It just saved you from shipping a broken update to your users.
 
-Once you’ve pinpointed the problem in the logs, the fix is usually straightforward. Create a hotfix branch, make your change, and push it. Your CI/CD pipeline will kick off a new build, and you'll be back on track. For a deeper dive into creating these kinds of resilient workflows, it's worth exploring different [software deployment best practices](https://codepushgo.com/fr/blog/software-deployment-best-practices/).
+Once you’ve pinpointed the problem in the logs, the fix is usually straightforward. Create a hotfix branch, make your change, and push it. Your CI/CD pipeline will kick off a new build, and you'll be back on track. For a deeper dive into creating these kinds of resilient workflows, it's worth exploring different [software deployment best practices](https://codepushgo.com/blog/software-deployment-best-practices/).
 
 ### How Can I Secure My Deployment Pipeline?
 

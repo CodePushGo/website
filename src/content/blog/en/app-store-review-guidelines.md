@@ -132,7 +132,7 @@ Here’s a practical breakdown of what’s generally safe versus what will almos
 *   **Changing the business model:** Introducing a new subscription tier or in-app purchases that weren't there when the app was approved is a definite no-go.
 *   **Removing advertised functionality:** Taking away a feature that you promoted on your App Store page is misleading and not allowed.
 
-By respecting these boundaries, you can use OTA updates exactly as intended: to keep your app stable and polished without the headache of long review cycles. If you want to dive deeper, you can explore more about what makes these updates so powerful in our post on [the benefits of Over-the-Air updates](https://codepushgo.com/fr/blog/over-the-air-updates/).
+By respecting these boundaries, you can use OTA updates exactly as intended: to keep your app stable and polished without the headache of long review cycles. If you want to dive deeper, you can explore more about what makes these updates so powerful in our post on [the benefits of Over-the-Air updates](https://codepushgo.com/blog/over-the-air-updates/).
 
 ## How to Avoid Common App Rejection Pitfalls
 
@@ -231,7 +231,7 @@ If you genuinely believe the rejection was a mistake, you have the right to appe
 
 The guidelines we’ve been talking about are built specifically for the public-facing App Store. If you're using something like the Apple Developer Enterprise Program to distribute apps just within your own company, a different set of rules and agreements comes into play.
 
-That said, things are changing, especially with new regulations in places like the European Union paving the way for alternative app marketplaces. While these new stores will have their own review processes, it's a safe bet they'll adopt similar core principles around user safety, privacy, and performance. A good grasp of Apple's rules gives you a strong foundation, no matter where you publish. Ultimately, a smart **[mobile app update strategy](https://codepushgo.com/fr/blog/mobile-app-update-strategy/)** is key to staying compliant across all channels.
+That said, things are changing, especially with new regulations in places like the European Union paving the way for alternative app marketplaces. While these new stores will have their own review processes, it's a safe bet they'll adopt similar core principles around user safety, privacy, and performance. A good grasp of Apple's rules gives you a strong foundation, no matter where you publish. Ultimately, a smart **[mobile app update strategy](https://codepushgo.com/blog/mobile-app-update-strategy/)** is key to staying compliant across all channels.
 
 ---
 Accelerate your development cycle without compromising compliance. **[CodePushGo](https://codepushgo.com)** offers a secure, reliable platform for deploying OTA updates that align with app store rules, allowing you to fix bugs and make minor improvements in minutes, not days. Learn more at [https://codepushgo.com](https://codepushgo.com).

@@ -43,7 +43,7 @@ Here are a few of the core features that make it so effective:
 *   **Built-in Mocking:** Ever need to test a function that calls an external API? You don't want your tests to fail just because a network is down. Jest lets you create "mocks," which are essentially stand-ins for real functions or modules. This lets you isolate your code and test it without relying on outside dependencies, making your tests faster and far more reliable.
 *   **Code Coverage Reports:** Jest can automatically generate a report that shows you exactly how much of your code is covered by your tests—right down to the specific lines. This gives you a clear, visual map of where your testing efforts are strong and where you might have blind spots.
 
-By bringing these tools together, Jest helps you catch bugs early, prevent them from coming back, and ship applications you can be proud of. If you want to see how this works in practice, check out our in-depth guide to the https://codepushgo.com/de/blog/jest-testing/.
+By bringing these tools together, Jest helps you catch bugs early, prevent them from coming back, and ship applications you can be proud of. If you want to see how this works in practice, check out our in-depth guide to the https://codepushgo.com/blog/jest-testing/.
 
 ## 2. A Look at Jest’s Core Features
 
@@ -183,7 +183,7 @@ Here are a few of the most common matchers you'll find yourself using all the ti
 
 > Matchers are the heart of your tests. They are the tools that let you declare, "I expect this value to be this specific thing." Clear, descriptive matchers make your tests easy to read and understand, which is crucial for long-term maintainability.
 
-By combining these simple but effective tools, you can start building a solid test suite. Getting this foundation right is key before you tackle more complex scenarios. A thoughtful approach to testing from the start will save you countless headaches down the road. For more on organizing your testing efforts, take a look at our guide on [how to create a test plan](https://codepushgo.com/de/blog/how-to-create-test-plan/) to make sure you have all your bases covered.
+By combining these simple but effective tools, you can start building a solid test suite. Getting this foundation right is key before you tackle more complex scenarios. A thoughtful approach to testing from the start will save you countless headaches down the road. For more on organizing your testing efforts, take a look at our guide on [how to create a test plan](https://codepushgo.com/blog/how-to-create-test-plan/) to make sure you have all your bases covered.
 
 ## Advanced Jest Techniques and Best Practices
 
@@ -213,7 +213,7 @@ Just as important is maintaining a clean state between each test. You never want
 *   **`afterEach()`**: As you might guess, this runs after each test. It's ideal for any cleanup tasks.
 *   **`beforeAll()`** and **`afterAll()`**: These run just once—before all the tests in a block start and after they all finish. They're great for one-time setup tasks, like connecting to a mock database.
 
-These setup and teardown functions guarantee that your tests are independent and repeatable. And while testing your data flows is critical, securing them is just as vital. To dive deeper into protecting data in your app, our guide on how to [implement end-to-end encryption](https://codepushgo.com/de/blog/implement-end-to-end-encryption/) offers some great insights that pair well with a solid testing strategy.
+These setup and teardown functions guarantee that your tests are independent and repeatable. And while testing your data flows is critical, securing them is just as vital. To dive deeper into protecting data in your app, our guide on how to [implement end-to-end encryption](https://codepushgo.com/blog/implement-end-to-end-encryption/) offers some great insights that pair well with a solid testing strategy.
 
 ## Why Jest Dominates the Testing Ecosystem
 

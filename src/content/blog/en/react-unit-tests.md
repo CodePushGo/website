@@ -27,7 +27,7 @@ Let's be real—testing can feel like a chore when you're under pressure to ship
 
 This is where the real value of **react unit tests** shines. By testing components completely on their own, you catch these kinds of issues way earlier in the development cycle. React's whole component-based architecture is tailor-made for this. You can verify every button, form, and modal independently, creating a safety net for your entire application.
 
-This gives your team the confidence to refactor code or roll out new features without constantly worrying about what might break. That confidence is essential for moving quickly and sticking to sound deployment practices. For a deeper dive into this, our guide on [software deployment best practices](https://codepushgo.com/de/blog/software-deployment-best-practices/) is a great resource.
+This gives your team the confidence to refactor code or roll out new features without constantly worrying about what might break. That confidence is essential for moving quickly and sticking to sound deployment practices. For a deeper dive into this, our guide on [software deployment best practices](https://codepushgo.com/blog/software-deployment-best-practices/) is a great resource.
 
 It's no surprise this has become an industry standard, especially with React's explosive growth. It’s now the engine behind over **4.8% of all websites**, which adds up to nearly 11 million sites, including heavy hitters like [Netflix](https://www.netflix.com/) and [Airbnb](https://www.airbnb.com/).
 
@@ -66,7 +66,7 @@ Nailing this sequence from the start means your tools are installed, configured,
 
 > A well-structured professional testing environment requires a solid foundation. This extends beyond just tools and into broader strategies for [mastering software QA management](https://clouddevs.com/software-qa-management/) to ensure top-tier testing across your projects.
 
-Ultimately, taking the time to set things up right makes your test suite easier to maintain and far more powerful down the road. It creates a stable base not just for writing tests, but for integrating them into your larger development workflow. If you're ready to see how this fits into the bigger picture, check out our guide on how a professional setup plugs into automated pipelines here: https://codepushgo.com/de/blog/continuous-integration-react-native/
+Ultimately, taking the time to set things up right makes your test suite easier to maintain and far more powerful down the road. It creates a stable base not just for writing tests, but for integrating them into your larger development workflow. If you're ready to see how this fits into the bigger picture, check out our guide on how a professional setup plugs into automated pipelines here: https://codepushgo.com/blog/continuous-integration-react-native/
 
 ## Writing Your First Component Test with RTL
 
@@ -86,7 +86,7 @@ Every Jest test file you come across will likely follow the same predictable, re
 *   **`it` or `test` block:** Each `it` block is a single, isolated test case. The description should read like a sentence, such as `'should render with the correct text'`.
 *   **`expect` statement:** This is where you make your assertion. It’s the part that actually verifies your code works, like `expect(buttonElement).toBeInTheDocument()`.
 
-Following this structure helps keep your test suite clean and self-documenting. As your application grows, a well-organized test suite is just as critical as the production code itself, especially when you're pushing out updates. Keeping things maintainable is a huge part of the process, much like managing over-the-air updates for mobile apps. If you're curious, you can learn more about [what an OTA update is](https://codepushgo.com/de/blog/what-is-an-ota-update/) and see the parallels in maintaining software.
+Following this structure helps keep your test suite clean and self-documenting. As your application grows, a well-organized test suite is just as critical as the production code itself, especially when you're pushing out updates. Keeping things maintainable is a huge part of the process, much like managing over-the-air updates for mobile apps. If you're curious, you can learn more about [what an OTA update is](https://codepushgo.com/blog/what-is-an-ota-update/) and see the parallels in maintaining software.
 
 ### Putting It All into Practice
 
@@ -192,7 +192,7 @@ For maximum readability, I always structure my tests using the **Arrange, Act, A
 
 > Sticking to these principles transforms your tests from a source of frustration into a reliable safety net. They become living documentation, clearly defining a component's expected behavior for any developer who comes after you.
 
-This focus on user behavior isn't just for web apps, either. The same core ideas are critical for creating stable tests on any platform. You can see how these concepts translate in our guide on [how to test a mobile app](https://codepushgo.com/de/blog/how-to-test-a-mobile-app/).
+This focus on user behavior isn't just for web apps, either. The same core ideas are critical for creating stable tests on any platform. You can see how these concepts translate in our guide on [how to test a mobile app](https://codepushgo.com/blog/how-to-test-a-mobile-app/).
 
 ## Frequently Asked Questions About React Unit Tests
 
@@ -223,7 +223,7 @@ Both are crucial for a healthy application, but they solve different problems.
 *   **Unit Tests** are for testing things in isolation. They're perfect for verifying that a single component or a specific function behaves correctly given a set of inputs. They are fast, focused, and fantastic for pinpointing bugs in your logic.
 *   **End-to-End (E2E) Tests**, often written with tools like [Cypress](https://www.cypress.io/), simulate a complete user journey. They test entire workflows from start to finish—like a user logging in, adding an item to their cart, and checking out—to ensure all the pieces of your application work together correctly.
 
-If you're building for mobile, the distinction becomes even more important. We cover this in much more detail in our guide on [React Native unit testing](https://codepushgo.com/de/blog/react-native-unit-testing/).
+If you're building for mobile, the distinction becomes even more important. We cover this in much more detail in our guide on [React Native unit testing](https://codepushgo.com/blog/react-native-unit-testing/).
 
 ---
 At **CodePushGo**, we’re all about helping you ship better code, faster. Our platform makes over-the-air (OTA) updates for your React Native apps a breeze, letting you push critical fixes and new features in minutes, not days. Find out how it works at [https://codepushgo.com](https://codepushgo.com).

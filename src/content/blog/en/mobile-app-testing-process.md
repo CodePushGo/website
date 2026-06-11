@@ -49,7 +49,7 @@ It should clearly outline things like:
 
 This plan is much more than just documentation; it’s about creating alignment across the team. The demand for great mobile apps is exploding, and with it, the challenge of ensuring quality. In fact, the global mobile application testing services market is projected to hit **$6.56 billion** by 2025, a number fueled by this very complexity. [Discover more insights about mobile testing market growth](https://www.datainsightsmarket.com/reports/mobile-testing-services-1936964).
 
-This is why sticking to proven [mobile app testing best practices](https://codepushgo.com/fr/blog/mobile-app-testing-best-practices/) from day one is non-negotiable for building a process that truly works.
+This is why sticking to proven [mobile app testing best practices](https://codepushgo.com/blog/mobile-app-testing-best-practices/) from day one is non-negotiable for building a process that truly works.
 
 ## Setting Up Your Mobile Testing Environment
 
@@ -126,7 +126,7 @@ Your security checklist should include probing for common weak points, like inse
 
 A huge part of a tester’s job is learning to tell the difference between a minor annoyance and a critical flaw. A typo on a button is a bug; an exposed database of user credentials is a business-ending catastrophe. As you run your tests, you have to triage your findings based on their potential impact. This disciplined prioritization makes sure your developers fix what really matters first.
 
-Having a solid [mobile app update strategy](https://codepushgo.com/fr/blog/mobile-app-update-strategy/) is also key, as it lets you push out critical security patches and bug fixes quickly, without getting stuck in the long app store review queues.
+Having a solid [mobile app update strategy](https://codepushgo.com/blog/mobile-app-update-strategy/) is also key, as it lets you push out critical security patches and bug fixes quickly, without getting stuck in the long app store review queues.
 
 ## Using Automation to Accelerate and Scale Testing
 
@@ -160,7 +160,7 @@ To get started, you'll need an automation framework. These are the toolkits that
 
 Ultimately, this is all about the user experience. Research shows a staggering **88% of users** will ditch an app because of bugs or poor performance. To fight this, the industry is getting smarter. In fact, **72% of companies** are expected to be using AI-powered testing by 2025 to improve their test coverage and find issues faster.
 
-Connecting these automated workflows is a hallmark of a mature development process. To see how this works in practice, you can learn more about [implementing React Native continuous integration](https://codepushgo.com/fr/blog/react-native-continuous-integration/).
+Connecting these automated workflows is a hallmark of a mature development process. To see how this works in practice, you can learn more about [implementing React Native continuous integration](https://codepushgo.com/blog/react-native-continuous-integration/).
 
 ## Reporting Bugs and Analyzing Results for Action
 
@@ -195,7 +195,7 @@ Here are a few metrics you should absolutely be tracking:
 
 *   **Defect Density:** This is the number of confirmed bugs per feature or module. It’s a powerful metric for pinpointing which parts of your app are the most unstable. A high defect density might signal that a feature needs more focused testing or even a complete refactor.
 *   **Pass/Fail Rate:** The simple percentage of test cases that passed versus those that failed. This provides a quick, at-a-glance health check on the latest build.
-*   **Security Vulnerabilities:** Tracking the number and severity of security flaws isn't optional; it's essential. As you review results, these issues must be prioritized. For a much deeper dive into this topic, check out our guide on [comprehensive mobile app security testing](https://codepushgo.com/fr/blog/mobile-app-security-testing/).
+*   **Security Vulnerabilities:** Tracking the number and severity of security flaws isn't optional; it's essential. As you review results, these issues must be prioritized. For a much deeper dive into this topic, check out our guide on [comprehensive mobile app security testing](https://codepushgo.com/blog/mobile-app-security-testing/).
 
 By monitoring these data points over time, you build a story. You can show measurable improvements in quality, make a data-driven case for more resources, and give leadership a confident, evidence-backed answer to the ultimate question: "Are we ready to ship?"
 

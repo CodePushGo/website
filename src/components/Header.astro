@@ -1,62 +1,103 @@
 ---
-import * as m from '@/paraglide/messages'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 
 const brand = Astro.locals.runtimeConfig.public.brand
+const locale = Astro.locals.locale
+const homeUrl = getRelativeLocaleUrl(locale)
+const links = [
+  { label: 'Live updates', href: `${homeUrl}#features` },
+  { label: 'Workflow', href: `${homeUrl}#workflow` },
+  { label: 'Monitoring', href: `${homeUrl}#monitoring` },
+  { label: 'Security', href: `${homeUrl}#security` },
+  { label: 'Pricing', href: getRelativeLocaleUrl(locale, 'pricing') },
+  { label: 'FAQ', href: `${homeUrl}#faq` },
+]
 ---
 
-<header class="relative py-2">
+<header class="bg-codepushgo-900/95 relative z-50 border-b border-white/15 text-white backdrop-blur">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="relative flex items-center justify-between">
-      <div class="shrink-0">
-        <a href={getRelativeLocaleUrl(Astro.locals.locale)} class="font-prompt flex items-center pr-3 text-4xl font-medium">
-          <img class="h-18 w-auto pr-1" loading="eager" height="72" width="133" alt={`${brand} logo`} title={`${brand} logo`} src="/capgo_logo.webp" />
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="text-white" title="Expand menu" id="menu-toggle">
-          <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+    <div class="flex min-h-16 items-center justify-between gap-4">
+      <a
+        href={homeUrl}
+        aria-label={`${brand} home`}
+        class="focus-visible:outline-pumpkin-200 flex min-h-12 items-center gap-3 rounded-lg pr-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+      >
+        <img class="h-10 w-10 rounded-md object-contain" loading="eager" height="40" width="40" alt="" src="/logo.png" />
+        <span class="text-lg font-bold tracking-normal text-white">{brand}</span>
+      </a>
+
+      <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary navigation">
+        {
+          links.map((link) => (
+            <a
+              href={link.href}
+              class="text-misty-300 hover:bg-codepushgo-800 focus-visible:outline-pumpkin-200 inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-bold transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            >
+              {link.label}
+            </a>
+          ))
+        }
         <a
-          href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')}
-          class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
+          href="https://github.com/CodePushGo/website"
+          target="_blank"
+          rel="noreferrer"
+          class="text-misty-300 hover:bg-codepushgo-800 focus-visible:outline-pumpkin-200 inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-bold transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
         >
-          {m.blog({}, { locale: Astro.locals.locale })}
+          GitHub
         </a>
+      </nav>
+
+      <div class="hidden items-center gap-3 lg:flex">
         <a
-          href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
-          class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
+          href={getRelativeLocaleUrl(locale, 'docs/getting-started/quickstart')}
+          class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 inline-flex min-h-11 items-center justify-center rounded-lg bg-white px-4 text-sm font-bold transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
         >
-          Tutorials
+          Start free
         </a>
-        <!-- <a
-          href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')}
-          class="border-b-2 border-transparent text-base font-medium transition-all duration-200 hover:border-blue-600 focus:border-blue-600"
-        >
-          {m.documentation({}, { locale: Astro.locals.locale })}
-        </a> -->
       </div>
+
+      <button
+        type="button"
+        class="bg-codepushgo-800 hover:bg-codepushgo-700 focus-visible:ring-pumpkin-100 focus-visible:ring-offset-codepushgo-900 inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/20 text-white transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none lg:hidden"
+        aria-label="Expand menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        id="menu-toggle"
+      >
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </div>
-  <div id="mobile-menu" class="hidden">
-    <div class="bg-codepushgo-700 mt-2 space-y-1 px-2 pt-2 pb-3">
-      <a href={getRelativeLocaleUrl(Astro.locals.locale, 'blog')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
-        Blog
+
+  <div id="mobile-menu" class="bg-codepushgo-900 hidden border-t border-white/15 lg:hidden">
+    <nav class="mx-auto grid max-w-7xl gap-1 px-4 py-4 sm:px-6" aria-label="Mobile navigation">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="text-misty-300 hover:bg-codepushgo-800 focus-visible:outline-pumpkin-200 flex min-h-11 items-center rounded-lg px-3 text-base font-bold hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+      <a
+        href="https://github.com/CodePushGo/website"
+        target="_blank"
+        rel="noreferrer"
+        class="text-misty-300 hover:bg-codepushgo-800 focus-visible:outline-pumpkin-200 flex min-h-11 items-center rounded-lg px-3 text-base font-bold hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+      >
+        GitHub
       </a>
       <a
-        href={getRelativeLocaleUrl(Astro.locals.locale, 'tutorials')}
-        class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white"
+        href={getRelativeLocaleUrl(locale, 'docs/getting-started/quickstart')}
+        class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 mt-2 flex min-h-12 items-center justify-center rounded-lg bg-white px-4 text-base font-bold focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
       >
-        Tutorials
+        Start free
       </a>
-      <!-- <a href={getRelativeLocaleUrl(Astro.locals.locale, 'docs')} class="hover:bg-codepushgo-700 block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">
-        Documentation
-      </a> -->
-    </div>
+    </nav>
   </div>
 </header>
 
@@ -65,6 +106,8 @@ const brand = Astro.locals.runtimeConfig.public.brand
   const mobileMenu = document.getElementById('mobile-menu')
 
   menuToggle?.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true'
+    menuToggle.setAttribute('aria-expanded', String(!isExpanded))
     mobileMenu?.classList.toggle('hidden')
   })
 </script>

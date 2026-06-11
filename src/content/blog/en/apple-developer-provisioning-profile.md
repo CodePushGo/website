@@ -73,7 +73,7 @@ With a good name in place, just click "Generate." Your browser will download the
 
 > This whole process might seem tedious, but it’s Apple's fortress of security. It’s the very system that over **10 million** apps on the App Store rely on to manage who can build them and where they can run. It’s all about control and minimizing risk. If you want a deeper dive, you can discover more about Apple's standardized creation process on Staffbase.com.
 
-Once you have this file, you'll feed it directly into Xcode. And if you’re part of a team that wants to stop doing this manually every time, you should absolutely look into automating your build pipeline. Our guide on [setting up iOS continuous integration](https://codepushgo.com/es/blog/ios-continuous-integration/) is the perfect next step.
+Once you have this file, you'll feed it directly into Xcode. And if you’re part of a team that wants to stop doing this manually every time, you should absolutely look into automating your build pipeline. Our guide on [setting up iOS continuous integration](https://codepushgo.com/blog/ios-continuous-integration/) is the perfect next step.
 
 ## Integrating Your Profile with React Native and CodePushGo
 
@@ -106,7 +106,7 @@ So, you need a consistent strategy for your environments:
 *   **For Beta Testers:** Use an **Ad Hoc** profile when building for TestFlight or your internal QA team. Any CodePushGo updates you push to your "Staging" or "Beta" deployment should target builds signed with this Ad Hoc profile.
 *   **For the Public Release:** Sign the build you submit to the App Store with an **App Store Distribution** profile. All your "Production" updates through CodePushGo must be aimed at this specific app version.
 
-Getting this wrong is a silent killer—updates will simply fail to apply on your users' devices with no obvious error. This approach also works hand-in-hand with feature flags to safely roll out new code within your updates. We actually have a whole guide on [best practices for feature flags](https://codepushgo.com/es/blog/feature-flags-best-practices/) if you want to dive deeper.
+Getting this wrong is a silent killer—updates will simply fail to apply on your users' devices with no obvious error. This approach also works hand-in-hand with feature flags to safely roll out new code within your updates. We actually have a whole guide on [best practices for feature flags](https://codepushgo.com/blog/feature-flags-best-practices/) if you want to dive deeper.
 
 With your provisioning and signing pipeline locked down, the final piece of the puzzle is rigorous testing. Running through a solid [mobile app testing checklist](https://getnerdify.com/blog/mobile-app-testing-checklist) is the best way to ensure you're shipping a quality app to your users.
 
@@ -134,7 +134,7 @@ Your primary concern becomes security. Since these apps don't undergo the App St
 
 Ever since Apple enabled wireless installation for proprietary apps, these profiles have become the standard for corporate app deployment. With iOS 18, Apple has even added a security step that requires a device restart after installing a new in-house app to fully trust its profile. This just underscores their ongoing focus on security, even for apps outside the main store.
 
-Getting this distribution method right is fundamental to a smooth development workflow. To see how these profiles fit into the bigger picture, check out our guide on how to [deploy a React Native app from start to finish](https://codepushgo.com/es/blog/deploying-react-native-app/).
+Getting this distribution method right is fundamental to a smooth development workflow. To see how these profiles fit into the bigger picture, check out our guide on how to [deploy a React Native app from start to finish](https://codepushgo.com/blog/deploying-react-native-app/).
 
 ## How to Fix Common Provisioning Profile Errors
 
@@ -153,7 +153,7 @@ By far, the most frequent issue is simple expiration. If you see an error like "
 *   **The Cause:** All profiles expire, usually after **one year**. Apple does this as a security measure to make sure only active developers can sign and distribute code.
 *   **The Fix:** Simply log in to the Apple Developer portal, find the expired profile, and hit regenerate. After that, you'll need to download the new `.mobileprovision` file and use it to re-sign and create a fresh build of your app.
 
-While it's a straightforward fix, it's a critical one to stay on top of. For internal Enterprise apps, an expired profile can be a disaster, causing the app to stop launching on every single employee's device. This can quickly turn into a major incident. Building this renewal cycle into your operational strategy is a must. For larger teams, managing these potential issues proactively is essential; our guide to [incident response best practices](https://codepushgo.com/es/blog/incident-response-best-practices/) has some great advice on that front.
+While it's a straightforward fix, it's a critical one to stay on top of. For internal Enterprise apps, an expired profile can be a disaster, causing the app to stop launching on every single employee's device. This can quickly turn into a major incident. Building this renewal cycle into your operational strategy is a must. For larger teams, managing these potential issues proactively is essential; our guide to [incident response best practices](https://codepushgo.com/blog/incident-response-best-practices/) has some great advice on that front.
 
 ### Mismatched App IDs and Entitlements
 
@@ -215,7 +215,7 @@ For any app using those services, you're back to creating a specific, explicit A
 
 When you add a new device's **UDID** to your test device list, you immediately invalidate the existing **Ad Hoc profile**. The old profile simply has no record of the new device and is now out-of-date.
 
-To get things working, you must regenerate the profile. This creates a new `.mobileprovision` file that includes the device you just added. From there, you'll need to download it, pop it into Xcode, and archive a completely new build (`.ipa`) of your app. Only this new build, signed with the updated profile, will install on that new test device. Getting this workflow down is a key part of solid [software deployment best practices](https://codepushgo.com/es/blog/software-deployment-best-practices/) for iOS development.
+To get things working, you must regenerate the profile. This creates a new `.mobileprovision` file that includes the device you just added. From there, you'll need to download it, pop it into Xcode, and archive a completely new build (`.ipa`) of your app. Only this new build, signed with the updated profile, will install on that new test device. Getting this workflow down is a key part of solid [software deployment best practices](https://codepushgo.com/blog/software-deployment-best-practices/) for iOS development.
 
 ---
 At **CodePushGo**, we help you bypass the App Store review process for your React Native updates. Ship bug fixes and new features in minutes, not days, with our secure and reliable over-the-air update service. [Learn more at CodePushGo](https://codepushgo.com).

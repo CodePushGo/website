@@ -60,7 +60,7 @@ This level of automation drastically shortens the "time to market" for new featu
 
 > **Key Takeaway:** The ultimate goal of CI/CD in React is to make your deployments boring, predictable, and frequent. It lets your team stop worrying about risky releases and start focusing on consistently delivering value to your users.
 
-While this guide is centered on web-based React, these principles are just as vital for mobile development. If you're working in that space, be sure to check out our detailed guide on how to set up a [React Native CI/CD pipeline](https://codepushgo.com/de/blog/react-native-ci-cd/), which dives into the specific challenges and solutions for mobile apps.
+While this guide is centered on web-based React, these principles are just as vital for mobile development. If you're working in that space, be sure to check out our detailed guide on how to set up a [React Native CI/CD pipeline](https://codepushgo.com/blog/react-native-ci-cd/), which dives into the specific challenges and solutions for mobile apps.
 
 Alright, let's get our hands dirty and build your first CI/CD pipeline. The theory is great, but seeing it in action is what really matters. If you've been putting this off because it sounds complicated, you'll be surprised how quickly you can get a solid pipeline running for your React app using [GitHub Actions](https://github.com/features/actions).
 
@@ -127,7 +127,7 @@ The real action happens in the `steps`, where each task is executed in order.
 3.  **`run: npm ci`**: As mentioned, this command installs all your project's dependencies cleanly and predictably.
 4.  **`run: npm test`**: Finally, this step runs your test suite. If even a single test fails, this step fails, which stops the entire workflow and flags the run as a failure—immediately alerting you to the problem.
 
-This structure provides a solid, reliable foundation for any **CI/CD React** setup. Of course, managing these automated releases is a skill in itself. If you're looking to refine how you manage deployment cycles, our guide on [code release management best practices](https://codepushgo.com/de/blog/code-release-management-best-practices/) is a great next read.
+This structure provides a solid, reliable foundation for any **CI/CD React** setup. Of course, managing these automated releases is a skill in itself. If you're looking to refine how you manage deployment cycles, our guide on [code release management best practices](https://codepushgo.com/blog/code-release-management-best-practices/) is a great next read.
 
 ## Weaving in Automated Testing and Quality Gates
 
@@ -255,7 +255,7 @@ Most modern hosting providers like [Vercel](https://vercel.com/) or [Netlify](ht
 
 Pay close attention to the `if: github.ref == 'refs/heads/main'` line. This is a crucial condition that tells the pipeline to *only* run this deployment job for commits pushed to the `main` branch. This prevents half-finished work from feature branches from ever going live.
 
-Of course, no matter how much you automate, a bad deployment can sometimes slip through. That’s why having a solid rollback strategy is non-negotiable. It's your safety net. To dive deeper into this, check out our guide on how to create an effective [deployment rollback plan](https://codepushgo.com/de/blog/deployment-rollback-plan/). This final piece completes your CI/CD loop, giving you both incredible speed and peace of mind.
+Of course, no matter how much you automate, a bad deployment can sometimes slip through. That’s why having a solid rollback strategy is non-negotiable. It's your safety net. To dive deeper into this, check out our guide on how to create an effective [deployment rollback plan](https://codepushgo.com/blog/deployment-rollback-plan/). This final piece completes your CI/CD loop, giving you both incredible speed and peace of mind.
 
 ## Advanced Pipeline Strategies and Best Practices
 
@@ -289,7 +289,7 @@ This approach fits perfectly with a CI/CD workflow. You're constantly integratin
 
 Once the feature is complete, the real magic begins. You can flip the switch for a small group of internal testers or beta users, get their feedback, and then slowly roll it out to your entire user base. The best part? You can do all of this without a single new deployment. This gives you the confidence to release often and with far less risk.
 
-If you're looking to really dig in and get this right, we've put together a comprehensive guide on [feature flags best practices](https://codepushgo.com/de/blog/feature-flags-best-practices/).
+If you're looking to really dig in and get this right, we've put together a comprehensive guide on [feature flags best practices](https://codepushgo.com/blog/feature-flags-best-practices/).
 
 ## Got Questions About CI/CD for React? We've Got Answers.
 
@@ -310,7 +310,7 @@ This is a big one. The golden rule is simple: **never, ever commit secrets or en
 
 Instead, every modern CI/CD platform has a dedicated secrets management feature. In GitHub Actions, for instance, you'll use "Encrypted secrets." Your pipeline script can then pull these values securely at runtime, making them available to your build process without ever exposing them in your codebase.
 
-> Securing your pipeline is critical, but so is knowing what to do when it breaks. A solid plan for failures is non-negotiable. You can get a head start by learning about [incident response best practices](https://codepushgo.com/de/blog/incident-response-best-practices/) to make sure your team is ready for anything.
+> Securing your pipeline is critical, but so is knowing what to do when it breaks. A solid plan for failures is non-negotiable. You can get a head start by learning about [incident response best practices](https://codepushgo.com/blog/incident-response-best-practices/) to make sure your team is ready for anything.
 
 ### Can We Use CI/CD for React Native Apps Too?
 

@@ -74,7 +74,7 @@ Keep these straight. Apple's system is strict and will flat-out reject a new bui
 
 Even with a perfect setup, archives can sometimes fail. More often than not, the culprit is related to code signing. A mismatched provisioning profile or an expired certificate can bring the whole process to a screeching halt.
 
-Getting a handle on these issues early is key to avoiding headaches later. If you find yourself stuck, it's worth taking the time to [learn more about how to manage your Apple Developer provisioning profiles](https://codepushgo.com/es/blog/apple-developer-provisioning-profile/) to ensure everything is configured correctly. A few minutes of troubleshooting here can save you hours of frustration down the line.
+Getting a handle on these issues early is key to avoiding headaches later. If you find yourself stuck, it's worth taking the time to [learn more about how to manage your Apple Developer provisioning profiles](https://codepushgo.com/blog/apple-developer-provisioning-profile/) to ensure everything is configured correctly. A few minutes of troubleshooting here can save you hours of frustration down the line.
 
 Alright, with your app neatly archived in Xcode, it's time to shift gears and head over to the main event: [App Store Connect](https://appstoreconnect.apple.com/). Think of this as your mission control for everything that happens *after* the code is written. This is where you’ll manage your app's listing, set its price, decide where it’s available, and ultimately, submit it for review.
 
@@ -114,7 +114,7 @@ Preparing these components thoughtfully will give your app a fighting chance in 
 
 The potential here is huge. In a recent year, consumer spending on the App Store soared to **$89.3 billion**, a figure that keeps climbing and is more than double the revenue of Google Play.
 
-Getting this listing right is just one part of the overall journey. To see how this fits into the bigger picture, you can explore our detailed guide on the complete [mobile app deployment process](https://codepushgo.com/es/blog/mobile-app-deployment-process/). Once all this metadata is filled out, you’ll be ready to link the build you uploaded from Xcode and get one step closer to hitting "Submit for Review."
+Getting this listing right is just one part of the overall journey. To see how this fits into the bigger picture, you can explore our detailed guide on the complete [mobile app deployment process](https://codepushgo.com/blog/mobile-app-deployment-process/). Once all this metadata is filled out, you’ll be ready to link the build you uploaded from Xcode and get one step closer to hitting "Submit for Review."
 
 Alright, you're at the final hurdle. Your metadata is looking sharp in App Store Connect, your build is archived in Xcode, and now it's time to bring it all together and get it in front of the App Store review team. This is where all that careful preparation really pays off.
 
@@ -141,7 +141,7 @@ Once you click that final "Submit for Review" button, your app's status will fli
 
 > **A Pro Tip:** That "In Review" status can feel a bit nerve-wracking, but it’s a great sign. It means a real person is actively testing your app. Remember, reviewers are looking for guideline compliance, not just trying to find reasons to reject you. If you've submitted a polished, bug-free app with clear notes, your odds of a smooth approval are very high.
 
-The most common rejections I see stem from basic guideline violations or performance problems. A big one is failing to meet **Guideline 2.1**, which covers app completeness. Things like hidden bugs, broken links, or placeholder content are almost guaranteed rejection magnets. The best defense is a good offense: get familiar with the official https://codepushgo.com/es/blog/app-store-review-guidelines/ long before you even think about submitting.
+The most common rejections I see stem from basic guideline violations or performance problems. A big one is failing to meet **Guideline 2.1**, which covers app completeness. Things like hidden bugs, broken links, or placeholder content are almost guaranteed rejection magnets. The best defense is a good offense: get familiar with the official https://codepushgo.com/blog/app-store-review-guidelines/ long before you even think about submitting.
 
 If you do get rejected, don't panic. The Resolution Center in App Store Connect will give you specific feedback, often with helpful screenshots, explaining exactly what went wrong. Read their notes carefully, fix the issue, and resubmit. A professional and direct response can turn a rejection into a simple, constructive step toward a successful launch.
 
@@ -174,7 +174,7 @@ When you submit, make your "What's New in This Version" notes count. Nobody is i
 
 This kind of transparency builds trust and gives people a reason to actually install the update.
 
-For those looking to streamline their workflow, you can even explore ways to push updates without going through the full App Store review every single time. We have a great guide on how to get started with [implementing automatic app updates](https://codepushgo.com/es/blog/automatic-app-updates/). This cycle of monitoring, learning, and updating is the engine that drives long-term success.
+For those looking to streamline their workflow, you can even explore ways to push updates without going through the full App Store review every single time. We have a great guide on how to get started with [implementing automatic app updates](https://codepushgo.com/blog/automatic-app-updates/). This cycle of monitoring, learning, and updating is the engine that drives long-term success.
 
 ## Frequently Asked Questions About App Store Publishing
 
@@ -194,7 +194,7 @@ Some of the most common rejection flags I see are:
 *   **Missing Demo Account:** An instant rejection. If your app has a login screen, you **must** provide a working demo account for the reviewer. No exceptions.
 *   **Privacy Violations:** Your privacy policy isn't just a formality. It has to perfectly match what your app actually does with user data. Be crystal clear about what you collect and why.
 
-> **A Quick Tip:** Your best defense against a rejection is one last, exhaustive testing pass *before* you submit. Get fresh eyes on it. Check out these pointers on [how to test a mobile app](https://codepushgo.com/es/blog/how-to-test-a-mobile-app/) to make sure you catch those show-stopping bugs before Apple's team does. This single step can save you days of frustrating back-and-forth.
+> **A Quick Tip:** Your best defense against a rejection is one last, exhaustive testing pass *before* you submit. Get fresh eyes on it. Check out these pointers on [how to test a mobile app](https://codepushgo.com/blog/how-to-test-a-mobile-app/) to make sure you catch those show-stopping bugs before Apple's team does. This single step can save you days of frustrating back-and-forth.
 
 ### Post-Launch Questions
 

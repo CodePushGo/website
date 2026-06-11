@@ -4,14 +4,15 @@ import { paraglideVitePlugin } from '@inlang/paraglide-js'
 import tailwindcss from '@tailwindcss/vite'
 import { filterSitemapByDefaultLocale, i18n } from 'astro-i18n-aut/integration'
 import { defineConfig, envField } from 'astro/config'
+import { readFileSync } from 'node:fs'
 // import starlightImageZoom from 'starlight-image-zoom'
-// import starlightLlmsTxt from 'starlight-llms-txt'
-import config from './configs.json'
 import { defaultLocale, localeNames, locales } from './src/services/locale'
+
+const siteConfig = JSON.parse(readFileSync(new URL('./configs.json', import.meta.url), 'utf8'))
 
 export default defineConfig({
   trailingSlash: 'always',
-  site: `https://${config.base_domain.prod}`,
+  site: `https://${siteConfig.base_domain.prod}`,
   build: {
     concurrency: 2,
   },
@@ -40,21 +41,15 @@ export default defineConfig({
   i18n: {
     locales,
     defaultLocale,
-    // fallback: locales
-    //   .filter((i) => i !== defaultLocale)
-    //   .reduce((r, h) => {
-    //     r[h] = defaultLocale
-    //     return r
-    //   }, {})
     routing: {
-      redirectToDefaultLocale: true,
+      redirectToDefaultLocale: false,
     },
   },
   integrations: [
     i18n({
       locales: localeNames,
       defaultLocale,
-      redirectDefaultLocale: true,
+      redirectDefaultLocale: false,
       exclude: ['pages/**/*.json.ts'],
     }),
     sitemap({
@@ -76,7 +71,6 @@ export default defineConfig({
     //   components: {
     //     Head: './src/components/doc/Head.astro',
     //     Search: './src/components/doc/Search.astro',
-    //     LanguageSelect: './src/components/doc/LanguageSelect.astro',
     //   },
     //   social: [
     //     { icon: 'discord', label: 'Discord', href: 'https://discord.com/invite/VnYRvBfgA6' },

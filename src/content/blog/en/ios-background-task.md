@@ -121,7 +121,7 @@ Here’s your game plan for the expiration handler:
 *   **Save State:** Quickly save any partial results so you can pick up where you left off later.
 *   **Signal Completion:** Even if you failed, you still have to call that completion handler.
 
-Making this process automatic is a huge part of a healthy development workflow. You can learn more about how to catch these kinds of issues early by checking out our guide on [implementing iOS Continuous Integration](https://codepushgo.com/de/blog/ios-continuous-integration/).
+Making this process automatic is a huge part of a healthy development workflow. You can learn more about how to catch these kinds of issues early by checking out our guide on [implementing iOS Continuous Integration](https://codepushgo.com/blog/ios-continuous-integration/).
 
 ### Crossing the Finish Line: Graceful Completion
 
@@ -236,7 +236,7 @@ This table gives a high-level overview of the differences between the two approa
 | **Communication** | Direct calls to the `BackgroundTasks` framework within the Swift codebase. | Requires a custom native module (bridge) to expose scheduling functions to JavaScript. |
 | **Complexity** | Simpler, as it's a single, self-contained native codebase. | More complex due to the bridge, managing communication between JS and native layers. |
 
-This hybrid approach gives you access to the full power of native iOS background tasks while letting you keep most of your app's logic in React Native. Juggling these separate native and JavaScript pieces is just part of the cross-platform game. To make life easier, you might want to look into how a solid [React Native CI/CD pipeline](https://codepushgo.com/de/blog/react-native-ci-cd/) can automate the build and deployment process for these more complex projects.
+This hybrid approach gives you access to the full power of native iOS background tasks while letting you keep most of your app's logic in React Native. Juggling these separate native and JavaScript pieces is just part of the cross-platform game. To make life easier, you might want to look into how a solid [React Native CI/CD pipeline](https://codepushgo.com/blog/react-native-ci-cd/) can automate the build and deployment process for these more complex projects.
 
 ## Best Practices and Common Pitfalls to Avoid
 
@@ -256,7 +256,7 @@ To build a reliable background process, you need a solid foundation. These core 
 
 *   **Always Call the Completion Handler:** This is the golden rule. Seriously. The most common reason apps get penalized for background violations is forgetting to call `task.setTaskCompleted(success:)`. As soon as your work is finished—even if it failed—let the system know.
 
-> A critical part of successful app maintenance is ensuring your updates, including fixes to background task handlers, reach users quickly. One way to achieve this is through an OTA update strategy, which you can explore in our guide on [automatic app updates](https://codepushgo.com/de/blog/automatic-app-updates/).
+> A critical part of successful app maintenance is ensuring your updates, including fixes to background task handlers, reach users quickly. One way to achieve this is through an OTA update strategy, which you can explore in our guide on [automatic app updates](https://codepushgo.com/blog/automatic-app-updates/).
 
 ### Common Pitfalls and How to Sidestep Them
 
@@ -296,13 +296,13 @@ This new task type unlocks possibilities that used to be incredibly clunky or ju
 
 Of course, with great power comes great responsibility. As Apple opens the door to more powerful background capabilities, it's on us as developers to use them wisely. We have to be good citizens on the user's device, which means playing by the rules to maintain user trust and keep our apps in good standing.
 
-To make sure you're always on the right side of the line, it’s a good habit to keep a close eye on the official https://codepushgo.com/de/blog/app-store-review-guidelines/. By understanding where Apple is headed, you can build apps that aren't just functional today but are designed to thrive in the future of iOS.
+To make sure you're always on the right side of the line, it’s a good habit to keep a close eye on the official https://codepushgo.com/blog/app-store-review-guidelines/. By understanding where Apple is headed, you can build apps that aren't just functional today but are designed to thrive in the future of iOS.
 
 ## Frequently Asked Questions About iOS Background Tasks
 
 Even after you've got a handle on the APIs and best practices, a few common questions always seem to surface when you start implementing background tasks in iOS. Let's tackle some of the most frequent hurdles developers run into, from tricky time limits to effective testing.
 
-Getting these details right is the difference between a stable app and one that behaves erratically. If you're wrestling with unexpected behavior, our guide on effective [mobile app crash reporting](https://codepushgo.com/de/blog/mobile-app-crash-reporting/) can give you some great pointers for digging into the root cause.
+Getting these details right is the difference between a stable app and one that behaves erratically. If you're wrestling with unexpected behavior, our guide on effective [mobile app crash reporting](https://codepushgo.com/blog/mobile-app-crash-reporting/) can give you some great pointers for digging into the root cause.
 
 ### How Much Time Does My Background Task Get?
 
