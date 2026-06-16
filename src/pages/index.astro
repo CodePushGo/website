@@ -7,8 +7,8 @@ const config = Astro.locals.runtimeConfig
 
 const homeUrl = getRelativeLocaleUrl(locale)
 const docsUrl = getRelativeLocaleUrl(locale, 'docs/live-updates')
-const quickstartUrl = getRelativeLocaleUrl(locale, 'docs/getting-started/quickstart')
 const pricingUrl = getRelativeLocaleUrl(locale, 'pricing')
+const registerUrl = getRelativeLocaleUrl(locale, 'register')
 
 const content = {
   title: 'CodePushGo - React Native Live Updates',
@@ -231,7 +231,7 @@ const faqItems = [
 
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href={quickstartUrl}
+              href={registerUrl}
               class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 inline-flex min-h-12 items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-bold transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
             >
               Start live updates
@@ -620,10 +620,10 @@ npx @capgo/cli@latest bundle upload --channel=Production</code></pre>
       </p>
       <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
         <a
-          href={quickstartUrl}
+          href={registerUrl}
           class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-800 inline-flex min-h-12 items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-bold transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
         >
-          Start with the quickstart
+          Start free
         </a>
         <a
           href={`${homeUrl}#features`}

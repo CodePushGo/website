@@ -6,7 +6,7 @@ const locale = Astro.locals.locale
 const config = Astro.locals.runtimeConfig
 
 const homeUrl = getRelativeLocaleUrl(locale)
-const quickstartUrl = getRelativeLocaleUrl(locale, 'docs/getting-started/quickstart')
+const registerUrl = getRelativeLocaleUrl(locale, 'register')
 const supportUrl = 'mailto:support@codepushgo.com'
 
 const content = {
@@ -131,7 +131,7 @@ const faqs = [
           </p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href={quickstartUrl}
+              href={registerUrl}
               class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 inline-flex min-h-12 items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-bold transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
             >
               Start free
@@ -258,9 +258,8 @@ const faqs = [
                     ))}
                   </ul>
                 </div>
-
                 <a
-                  href={plan.name === 'Enterprise' ? supportUrl : quickstartUrl}
+                  href={plan.name === 'Enterprise' ? supportUrl : `${registerUrl}?plan=${plan.name.toLowerCase()}`}
                   class={`mt-8 inline-flex min-h-12 items-center justify-center rounded-lg px-4 text-sm font-bold transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none ${
                     plan.featured
                       ? 'text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 bg-white focus-visible:ring-white'

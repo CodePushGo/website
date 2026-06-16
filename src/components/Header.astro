@@ -4,6 +4,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n'
 const brand = Astro.locals.runtimeConfig.public.brand
 const locale = Astro.locals.locale
 const homeUrl = getRelativeLocaleUrl(locale)
+const registerUrl = getRelativeLocaleUrl(locale, 'register')
 const links = [
   { label: 'Live updates', href: `${homeUrl}#features` },
   { label: 'Workflow', href: `${homeUrl}#workflow` },
@@ -49,7 +50,7 @@ const links = [
 
       <div class="hidden items-center gap-3 lg:flex">
         <a
-          href={getRelativeLocaleUrl(locale, 'docs/getting-started/quickstart')}
+          href={registerUrl}
           class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 inline-flex min-h-11 items-center justify-center rounded-lg bg-white px-4 text-sm font-bold transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
         >
           Start free
@@ -92,7 +93,7 @@ const links = [
         GitHub
       </a>
       <a
-        href={getRelativeLocaleUrl(locale, 'docs/getting-started/quickstart')}
+        href={registerUrl}
         class="text-codepushgo-900 hover:bg-misty-300 focus-visible:ring-offset-codepushgo-900 mt-2 flex min-h-12 items-center justify-center rounded-lg bg-white px-4 text-base font-bold focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:outline-none"
       >
         Start free
