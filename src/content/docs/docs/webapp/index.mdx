@@ -1,24 +1,34 @@
 ---
-title: "Introduction"
-description: "Introduction to the Cagpo webapp, learn how to use the web app of CodePushGo, to manage your updates and understand what happen with it"
+title: Console overview
+description: Use the CodePushGo console to manage React Native apps, releases, onboarding, and plan intent.
 sidebar:
   order: 1
 ---
 
-## What is this?
+The CodePushGo console is the Capgo-style web app adapted for React Native. It uses Supabase Auth for accounts and a Vue dashboard for onboarding, apps, releases, and plan intent.
 
-Cagpo has an extensive webapp to help you manage your projects. This webapp is built with Vue.js and is open source. You can find the source code on [GitHub](https://github.com/Cap-go/capgo/tree/main/src/) \
-The webapp is avalible [here](https://web.capgo.app/). \
-This webapp allows you to [manage channels](/docs/webapp/channels/), [manage versions](/docs/webapp/bundles/), [manage devices](/docs/webapp/devices/), [inspect logs](/docs/webapp/logs/), [manage billing](/docs/webapp/settings/) and [manage your account](/docs/webapp/settings/).
+## Sign up and sign in
 
-## How do I use it?
+Create an account at [codepushgo.com/register](https://codepushgo.com/register/). Registration only asks for identity fields and password. Plan selection happens later inside console onboarding.
 
-First, you need to create an account or log in. This is relatively simple and can be done by clicking the `Log in` button in the center of the screen. After you have logged in you will be redirected to the dashboard. This is the main page of the webapp. From here you can navigate to all the other pages.
+Sign in at [console.codepushgo.com](https://console.codepushgo.com/).
 
-<figure><img src="/login.webp" alt="login page" /><figcaption></figcaption></figure>
+## Onboarding
 
-## Creating an account
+When your account has no apps, the console shows the setup flow:
 
-You have to click on the `Create a free account` in the bottom part of the login form. From then it will be as simple as filling a form and following the instructions.
+1. Log in to the CLI.
+2. Run `npx @codepushgo/cli@latest init` in the React Native project.
+3. Install `@codepushgo/react-native-updater`.
+4. Bundle and upload a release.
+5. Choose and save the plan intent for the account.
 
-<figure><img src="/create-account.webp" alt="create account" /><figcaption></figcaption></figure>
+## Apps and releases
+
+After the first app exists, the console lists apps by native bundle ID and shows recent releases, channel, platform, rollout, size, and creation time.
+
+## Backend boundaries
+
+- Supabase owns auth, console-readable app metadata, releases, and plan intent records.
+- Cloudflare Worker owns update/device/upload endpoints.
+- Supabase Edge Functions are not used.

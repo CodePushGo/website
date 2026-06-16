@@ -1,27 +1,44 @@
 ---
-title: "Overview"
-description: "Comprehensive guide comparing Cloud and Self-Hosted Modes for effective update management, security, and control, helping you choose the best approach for your needs."
+title: React Native updater overview
+description: Install and configure the CodePushGo React Native updater client.
 sidebar:
   order: 1
 ---
 
+The CodePushGo updater package is the React Native client that checks for available JavaScript bundle updates, downloads release metadata, reports stats, and respects channel overrides from the Worker backend.
 
-### Cloud Mode (Recommended)
-Cloud Mode is our recommended choice for hassle-free update management. CodePushGo's backend takes care of all the update logic, making decisions about updates server-side for better security and control. This mode is all about ease of use: once set up, it runs smoothly on its own, offering advanced features like statistics, and channels. It can also be set-up in a manual mode so it gives you more control, allowing you to decide when to update using your JavaScript code. The backend still manages what gets updated. This mode shares many benefits with the Auto Mode, especially in security and advanced features, but adds the flexibility of timing updates yourself.
+Native bundle swapping is intentionally simplified for the current product phase. The JavaScript client and native-facing contracts are present; full native bridge/build support is deferred.
 
+## Install
 
-### Self Hosted Mode
+```bash
+npm install @codepushgo/react-native-updater
+```
 
-Self-Hosted Auto Mode is for those who want to handle all the update logic on their server. It offers complete autonomy but requires a separate server and more work to manage updates and server requirements.
+## Configure
 
-Self-Hosted Manual Mode mixes control and autonomy. You decide when to update through JavaScript, but your server handles what gets updated. It's a bit complex since you're including update code in the updates.
+```ts
+import { configureCodePushGo, startCodePushGo } from '@codepushgo/react-native-updater'
 
+configureCodePushGo({ endpoint: 'https://api.codepushgo.com' })
 
-:::note 
-If you chose to self host you're missing out on all the great features capgo cloud has to offer such as: auto reverts, email alerts, channels, statistics, encryption and more.
-:::
+await startCodePushGo({ defaultChannel: 'production' })
+```
 
-:::danger
-If you send a bad update to your users you can and will break their app.
-:::
+## Identity
 
+The updater resolves the React Native bundle ID from explicit options, runtime config, native/global values, Expo config, or React Native constants. That ID is sent as both `app_id` and `bundle_id` so the backend and console stay aligned with the native app identity.
+
+## Update scope
+
+CodePushGo updates JavaScript bundles and assets. If you change native code, entitlements, permissions, native modules, or platform configuration, ship a new native binary through the stores.
+
+## Backend
+
+The updater talks to the Cloudflare Worker device endpoints:
+
+- `/updates` checks for available releases.
+- `/stats` records install/download events.
+- `/channel_self` stores device channel overrides.
+
+Supabase Edge Functions are not part of this architecture.

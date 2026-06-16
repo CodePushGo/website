@@ -1,129 +1,87 @@
 ---
-title: Overview 
-description: "Get started with CodePushGo by learning the key concepts and steps to integrate and deploy live updates to your app."
+title: React Native quickstart
+description: Set up CodePushGo live updates for a React Native app using the native bundle ID as the app identity.
 sidebar:
   order: 1
 next: false
 prev: false
 ---
 
-import { Card, CardGrid, Steps, LinkCard, Aside } from '@astrojs/starlight/components';
+import { Card, CardGrid, Steps, Aside } from '@astrojs/starlight/components';
 
-The quickstart tutorial will walk you through the key concepts of CodePushGo! Concepts that will be explored include:
+CodePushGo is the Capgo-style live update flow adapted for React Native. The app identity is your native bundle ID, so the CLI and console work with the same identifier already used by iOS and Android.
 
 <Steps>
 
-1. Adding an app to your CodePushGo account
+1. Create an account at [codepushgo.com/register](https://codepushgo.com/register/), then sign in to [console.codepushgo.com](https://console.codepushgo.com/).
 
-2. Integrating CodePushGo with your CI/CD
+2. In the console onboarding flow, choose the plan intent for the account. Registration itself only creates the Supabase auth user.
 
-3. Triggering bundle upload on CodePushGo by pushing commits 
+3. From your React Native project, initialize CodePushGo. The CLI detects the native bundle ID from `app.json`, Expo config, Android Gradle files, or the iOS Xcode project.
 
-4. Configuring and customizing the CodePushGo bundle publishing
+   ```bash
+   npx @codepushgo/cli@latest init
+   ```
 
-5. Setting up your app to enable live updates via CodePushGo
+4. Install the updater JavaScript client.
 
-6. Deploying live updates to your app from CodePushGo
+   ```bash
+   npm install @codepushgo/react-native-updater
+   ```
+
+5. Configure the updater in your app startup code.
+
+   ```ts
+   import { configureCodePushGo, startCodePushGo } from '@codepushgo/react-native-updater'
+
+   configureCodePushGo({ endpoint: 'https://api.codepushgo.com' })
+
+   await startCodePushGo({ defaultChannel: 'production' })
+   ```
+
+6. Bundle and upload a JavaScript update.
+
+   ```bash
+   npx @codepushgo/cli@latest bundle --platform ios
+   npx @codepushgo/cli@latest upload
+   ```
 
 </Steps>
 
-Simply follow the guide step-by-step, or navigate directly to the documentation for the component that interests you.
-
-
-<CardGrid stagger>
-  <a href="/docs/getting-started/add-an-app/" ><Card title="Start the Tutorial" icon="rocket" >
-    Follow the quickstart tutorial and get up and running with CodePushGo in no time!
-  </Card></a>
-  <a href="/docs/getting-started/deploy/"><Card title="Ship updates" icon="pencil">
-    Ship updates to your app from the CodePushGo dashboard.
-  </Card></a>
-  <a href="/docs/getting-started/cicd-integration/"><Card title="Automate updates" icon="pencil">
-    Integrate CodePushGo with your CI/CD and trigger bundle uploads on CodePushGo by pushing commits.
-  </Card></a>
-  <a href="/docs/getting-started/troubleshooting/"><Card title="Trouble Shooting" icon="open-book">
-    Common issues and how to solve them.
-  </Card></a>
-  <a href="/docs/getting-started/wrapping-up/"><Card title="Wrap Up" icon="pencil">
-    Wrap up the tutorial and get a quick overview of what you've learned.
-  </Card></a>
-</CardGrid>
-
-<Aside type="tip">
-The Over-the-Air (OTA) update feature is applicable only for modifications made to HTML, CSS, and JavaScript files.
-
-If you make any changes to the native code, such as updates to Capacitor plugins, it is mandatory to resubmit the application to the app store for approval.
+<Aside type="caution">
+CodePushGo updates JavaScript bundles and assets. Native changes still require a new App Store or Google Play binary.
 </Aside>
 
-## Join Discord Community
+## What happens by default
 
-[Join the Capacitor-updater Discord Server!](https://discord.com/invite/VnYRvBfgA6)
+- The CLI uses the detected React Native bundle ID as the CodePushGo app ID.
+- The updater sends both `app_id` and `bundle_id` from that same identity.
+- The Cloudflare Worker decides which bundle is available for the app, platform, device, and channel.
+- Supabase backs console auth, onboarding state, app metadata, releases, and plan intent records.
 
-## Maintenance
+<CardGrid stagger>
+  <a href="/docs/cli/overview/">
+    <Card title="CLI" icon="terminal">
+      Detect the React Native bundle ID, create the app, bundle JavaScript, and upload releases.
+    </Card>
+  </a>
+  <a href="/docs/plugin/overview/">
+    <Card title="React Native updater" icon="rocket">
+      Install the JavaScript updater client and understand the first native-facing contract.
+    </Card>
+  </a>
+  <a href="/docs/webapp/">
+    <Card title="Console" icon="setting">
+      Use the Capgo-style console flow adapted to CodePushGo and React Native.
+    </Card>
+  </a>
+  <a href="/docs/getting-started/cicd-integration/">
+    <Card title="CI/CD" icon="open-book">
+      Automate upload commands in your existing pipeline.
+    </Card>
+  </a>
+</CardGrid>
 
-| Plugin version | Capacitor compatibility | Maintained        |
-| -------------- | ----------------------- | ----------------- |
-| v7.\*.\*       | v7.\*.\*                | ✅                 |
-| v6.\*.\*       | v6.\*.\*                | Critical bug only |
-| v5.\*.\*       | v5.\*.\*                | ⚠️ Deprecated |
-| v4.\*.\*       | v4.\*.\*                | ⚠️ Deprecated |
-| v3.\*.\*       | v3.\*.\*                | ⚠️ Deprecated     |
-| > 7            | v4.\*.\*                | ⚠️ Deprecated, our CI got crazy and bumped too much version     |
+## App store compliance
 
-## Store Guideline Compliance
-
-Android Google Play and iOS App Store have corresponding guidelines that have rules you should be aware of before integrating the Capacitor-updater solution within your application.
-
-### Google play
-
-Third paragraph of [Device and Network Abuse](https://support.google.com/googleplay/android-developer/answer/9888379/?hl=en) topic describe that updating source code by any method other than Google Play's update mechanism is restricted. But this restriction does not apply to updating javascript bundles.
-> This restriction does not apply to code that runs in a virtual machine and has limited access to Android APIs (such as JavaScript in a webview or browser).
-
-That fully allows Capacitor-updater as it updates just the JS bundles and won't update native code.
-
-### App Store
-
-Paragraph **3.3.2**, since back in 2015's [Apple Developer Program License Agreement](https://developer.apple.com/programs/ios/information/) fully allows performing over-the-air updates of JavaScript and assets -  and in its latest version (20170605) [downloadable here](https://developer.apple.com/terms/) this ruling is even broader:
-
-> Interpreted code may be downloaded to an Application but only so long as such code: (a) does not change the primary purpose of the Application by providing features or functionality that are inconsistent with the intended and advertised purpose of the Application as submitted to the App Store, (b) does not create a store or storefront for other code or applications, and (c) does not bypass signing, sandbox, or other security features of the OS.
-
-Capacitor-updater allows you to follow these rules in full compliance so long as the update you push does not significantly deviate your product from its original App Store approved intent.
-
-To further remain in compliance with Apple's guidelines we suggest that App Store-distributed apps do not enable the `Force update` scenario, since in the [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) state that:
-
-> Apps must not force users to rate the app, review the app, download other apps, or other similar actions in order to access functionality, content, or use of the app.
-
-This is not a problem for the default behavior of background update, since it won't force the user to apply the new version until next time they close the app, but at least you should be aware of that role if you decide to show it.
-
-## Open source
-
-The plugin is under the LGPL-3.0 License and the back-end is AGPL-3.0 License.
-
-> 💡 LGPL-3.0 means if someone modifies the code of the plugin, it’s mandatory to publish it, in open-source with the same licensing. If you use the code without modification, that doesn’t concern you. See the issue below for more details check the link 👇
-
-<LinkCard
-	title="Licensing?"
-	href="https://github.com/Cap-go/capacitor-updater/issues/7"
-/>
-
-
-<LinkCard
-	title="Try GPTS CodePushGo to Get help instead of reading  the docs"
-	href="https://chat.openai.com/g/g-3dMwHbF2w-capgo-doc-gpt"
-/>
-
-
-> You can include it in your app without worrying
-
-## Final Notes
-
-If you self-host and find this tool useful, please consider supporting my work by becoming a [GitHub sponsor](https://github.com/sponsors/riderx/).
-
-I made a bet to open-source all the code I built here instead of paywalling it. By opening it up instead of fighting and hiding, I believe we can make the world a better place.
-
-To make this possible, it's necessary for all of us to do our part, including you 🥹. If CodePushGo cloud doesn't meet your needs, you can back a bootstrapped Maker [here](https://github.com/sponsors/riderx/) on your own terms.
-
-## Simple Maths
-
-The price of the basic plan: $14*12 = $168 a year.
-While average dev/hour = $60.
-That means that 3 hours wasted of dev time on self-host allows you to pay for a whole year, if you spent more than 3 hours you're losing money ^^
+React Native JavaScript bundle updates are interpreted code updates. They must not change the app's primary purpose, bypass platform security, or introduce native capabilities that were not already present in the submitted binary.
