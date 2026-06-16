@@ -29,15 +29,13 @@ jobs:
           ORAMA_CLOUD_API_KEY: ${{ secrets.ORAMA_CLOUD_API_KEY }}
           ORAMA_CLOUD_ENDPOINT: ${{ secrets.ORAMA_CLOUD_ENDPOINT }}
           CLOUDFLARE_TURNSTILE_SITE_KEY: ${{ secrets.CLOUDFLARE_TURNSTILE_SITE_KEY }}
+          VITE_SUPABASE_PROJECT_REF: umpxowxnwroafuzynvwf
+          VITE_SUPABASE_URL: https://umpxowxnwroafuzynvwf.supabase.co
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_CONSOLE_URL: https://console.codepushgo.com
       - name: Set branch name
         id: vars
-        run: |
-          ref=${{ github.event.pull_request.head.ref }}
-          if [ "$ref" == "refs/heads/main" ]; then
-            echo "branch=main" >> $GITHUB_OUTPUT
-          else
-            echo "branch=${ref}" >> $GITHUB_OUTPUT
-          fi
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}" >> "$GITHUB_OUTPUT"
       - run: bunx wrangler@latest pages deploy dist --project-name codepushgo-website --branch ${{ steps.vars.outputs.branch }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

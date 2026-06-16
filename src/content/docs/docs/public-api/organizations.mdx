@@ -1,34 +1,39 @@
 ---
 title: "Organizations"
-description: "Guide to managing organizations in CodePushGo, covering creation, settings, updates, and retrieval of organization details."
+description: "Manage CodePushGo organizations for React Native apps, team access, and billing ownership."
 sidebar:
   order: 2
 ---
 
-Organizations are the top-level entities in CodePushGo. They allow you to group apps, team members, and resources under a single umbrella. Each organization can have multiple members with different roles and permissions.
+Organizations are the top-level ownership boundary in CodePushGo. They group React Native apps, API keys, team members, billing settings, and plan intent under one account.
 
-## Common Use Cases
+Admin API requests use:
 
-- Creating a new organization for your company
-- Managing organization settings
-- Updating organization information
-- Retrieving organization details
+```http
+Authorization: Bearer <CODEPUSHGO_API_KEY>
+```
 
-## Endpoints
+Base URL:
 
-### GET
+```text
+https://api.codepushgo.com
+```
 
-`https://api.capgo.app/organization/`
+## GET /organization/
 
-Retrieve organization information. If `orgId` is provided in the parameters, returns a single organization. Otherwise, returns all accessible organizations.
+Retrieve organizations available to the API key. Pass `orgId` to fetch one organization.
 
-#### Query Parameters
+```bash
+curl -H "Authorization: Bearer $CODEPUSHGO_API_KEY" \
+  https://api.codepushgo.com/organization/
 
-- `orgId` (optional): The ID of the specific organization to retrieve
+curl -H "Authorization: Bearer $CODEPUSHGO_API_KEY" \
+  "https://api.codepushgo.com/organization/?orgId=org_123"
+```
 
-#### Response Type
+Response shape:
 
-```typescript
+```ts
 interface Organization {
   id: string
   created_by: string
@@ -36,170 +41,52 @@ interface Organization {
   updated_at: string
   logo: string | null
   name: string
-  management_email: string
+  management_email: string | null
   customer_id: string | null
 }
 ```
 
-#### Example Request
-
-```bash
-# Get all organizations
-curl -H "authorization: your-api-key" https://api.capgo.app/organization/
-
-# Get specific organization
-curl -H "authorization: your-api-key" https://api.capgo.app/organization/?orgId=org_123
-```
-
-#### Example Response
-
-```json
-{
-  "data": {
-    "id": "org_123",
-    "name": "My Company",
-    "created_at": "2024-01-01T00:00:00Z",
-    "updated_at": "2024-01-01T00:00:00Z",
-    "logo": "https://example.com/logo.png",
-    "management_email": "admin@example.com",
-    "customer_id": "cus_123"
-  }
-}
-```
-
-### POST
-
-`https://api.capgo.app/organization/`
+## POST /organization/
 
 Create a new organization.
 
-#### Request Body
-
-```typescript
-interface OrganizationCreate {
-  name: string
-}
-```
-
-#### Example Request
-
 ```bash
 curl -X POST \
-  -H "authorization: your-api-key" \
+  -H "Authorization: Bearer $CODEPUSHGO_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{
-    "name": "New Organization"
-  }' \
-  https://api.capgo.app/organization/
+  -d '{ "name": "Mobile Team" }' \
+  https://api.codepushgo.com/organization/
 ```
 
-#### Example Response
+## PUT /organization/
 
-```json
-{
-  "status": "Organization created",
-  "id": "org_456"
-}
-```
-
-### PUT
-
-`https://api.capgo.app/organization/`
-
-Update an existing organization. Requires admin role.
-
-#### Request Body
-
-```typescript
-interface OrganizationUpdate {
-  orgId: string
-  logo?: string
-  name?: string
-  management_email?: string
-}
-```
-
-#### Example Request
+Update organization metadata. Requires an admin API key for the organization.
 
 ```bash
 curl -X PUT \
-  -H "authorization: your-api-key" \
+  -H "Authorization: Bearer $CODEPUSHGO_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "orgId": "org_123",
-    "name": "New Company Name",
-    "management_email": "newemail@example.com"
+    "name": "Mobile Platform",
+    "management_email": "mobile@example.com"
   }' \
-  https://api.capgo.app/organization/
+  https://api.codepushgo.com/organization/
 ```
 
-#### Example Response
+## DELETE /organization/
 
-```json
-{
-  "status": "Organization updated",
-  "data": {
-    "id": "org_123",
-    "name": "New Company Name",
-    "management_email": "newemail@example.com"
-  }
-}
-```
-
-### DELETE
-
-`https://api.capgo.app/organization/`
-
-Delete an existing organization. Requires admin role. This action is irreversible and will remove all associated apps, versions, and resources.
-
-#### Query Parameters
-
-- `orgId`: The ID of the organization to delete
-
-#### Example Request
+Delete an organization. This is destructive and removes associated app ownership data.
 
 ```bash
 curl -X DELETE \
-  -H "authorization: your-api-key" \
-  https://api.capgo.app/organization/?orgId=org_123
-```
-
-#### Example Response
-
-```json
-{
-  "status": "Organization deleted",
-  "id": "org_123"
-}
-```
-
-## Error Handling
-
-Common error scenarios and their responses:
-
-```json
-// Invalid API key
-{
-  "error": "Invalid API key",
-  "status": "KO"
-}
-
-// Missing required field
-{
-  "error": "Name is required",
-  "status": "KO"
-}
-
-// Insufficient permissions
-{
-  "error": "Admin role required",
-  "status": "KO"
-}
+  -H "Authorization: Bearer $CODEPUSHGO_API_KEY" \
+  "https://api.codepushgo.com/organization/?orgId=org_123"
 ```
 
 ## Best Practices
 
-1. **Naming**: Use clear, descriptive names for organizations
-2. **Roles**: Assign appropriate roles to team members
-3. **Email**: Use a group email for management_email to avoid issues with personal email changes
-4. **Logo**: Host logos on a reliable CDN and use HTTPS URLs 
+- Use one organization for each billing and team ownership boundary.
+- Use a group email for `management_email` so access is not tied to one person.
+- Create scoped API keys for CI instead of sharing personal keys.
+- Keep app ids as the native React Native bundle ids, for example `com.company.app`.

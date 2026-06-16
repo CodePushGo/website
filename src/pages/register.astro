@@ -76,12 +76,7 @@ const content = {
           </button>
         </form>
 
-        <p class="mt-5 text-sm leading-6 text-dusk-700">
-          No plan is selected here. CodePushGo records plan intent during console onboarding, after the account exists.
-        </p>
-        <a href={`${consoleUrl}/register`} class="mt-4 inline-flex min-h-11 items-center text-sm font-bold text-codepushgo-700 no-underline hover:text-codepushgo-900">
-          Open console register
-        </a>
+      </section>
       </section>
     </section>
   </main>
@@ -142,10 +137,9 @@ const content = {
       }
 
       if (!supabaseAnonKey) {
-        window.location.href = `${consoleUrl}/register?email=${encodeURIComponent(input.email)}`
+        show(error, 'Registration is temporarily unavailable. Please try again shortly or contact support@codepushgo.com.')
         return
       }
-
       submit.disabled = true
       submit.textContent = 'Creating account...'
       try {

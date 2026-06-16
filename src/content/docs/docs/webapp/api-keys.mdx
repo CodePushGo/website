@@ -1,45 +1,36 @@
 ---
-title: "Api keys"
-description: "How to manage api keys for CodePushGo cloud, learn what they use for, how to create, edit or roll them to ensure security with your account"
+title: "API keys"
+description: "Create and manage CodePushGo API keys for CLI uploads, channel changes, and Worker admin endpoints."
 sidebar:
   order: 3
 ---
 
+API keys authorize CodePushGo CLI and admin API actions. Device update endpoints are public, but app, bundle, channel, organization, and statistics admin endpoints require an API key.
 
-## What can I do with the api keys?
+```http
+Authorization: Bearer <CODEPUSHGO_API_KEY>
+```
 
-An API key can be regenerated, or removed or a new one can be added.
+## Open API keys
 
-## How to see all api keys?
+Go to [console.codepushgo.com/dashboard/apikeys](https://console.codepushgo.com/dashboard/apikeys).
 
-You need to go to [API keys page](https://web.capgo.app/dashboard/apikeys/) and there you will see all your api keys.
+## Permissions
 
-## How to add a new api key?
+Use the least powerful key that can do the job:
 
-To add a new API key click on the little plus button
+- **Read**: inspect apps, releases, channels, and stats.
+- **Upload**: upload JavaScript bundles from CI and read release metadata.
+- **All**: manage apps, channels, organizations, and API keys.
 
-<figure><img src="/apikeys-add.webp" alt="add apikey" /><figcaption></figcaption></figure>
+## CI usage
 
-and then select the permissions you want to give to the new API key. You can select:
+Store the key as `CODEPUSHGO_API_KEY` in your CI provider.
 
- - Read - the API key will be able to read all the data
- - Upload - the API key will be able to upload new versions from the CLI and read
- - All - The API key will be able to do everything
+```bash
+npx @codepushgo/cli@latest upload --app-id com.company.app --channel production --apikey "$CODEPUSHGO_API_KEY"
+```
 
-<figure><img src="/apikeys-select-perm.webp" alt="select perm" /><figcaption></figcaption></figure>
+## Rotation
 
-## How to remove an api key?
-
-To remove an API key click on the little trash button.
-
-<figure><img src="/apikeys-remove.webp" alt="remove apikey" /><figcaption></figcaption></figure>
-
-And then confirm removing the API key.
-
-## How to regenerate an api key?
-
-To regenerate an API key click on the little refresh button.
-
-<figure><img src="/apikeys-regenerate.webp" alt="generate apikey" /><figcaption></figcaption></figure>
-
-And then confirm regenerating the API key.
+Create a new key, update CI secrets, run one upload to verify it, then remove the old key from the console.

@@ -18,3 +18,7 @@ jobs:
           ORAMA_CLOUD_API_KEY: ${{ secrets.ORAMA_CLOUD_API_KEY }}
           ORAMA_CLOUD_ENDPOINT: ${{ secrets.ORAMA_CLOUD_ENDPOINT }}
           CLOUDFLARE_TURNSTILE_SITE_KEY: ${{ secrets.CLOUDFLARE_TURNSTILE_SITE_KEY }}
+          VITE_SUPABASE_PROJECT_REF: umpxowxnwroafuzynvwf
+          VITE_SUPABASE_URL: https://umpxowxnwroafuzynvwf.supabase.co
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_CONSOLE_URL: https://console.codepushgo.com
