@@ -20,5 +20,5 @@ jobs:
           CLOUDFLARE_TURNSTILE_SITE_KEY: ${{ secrets.CLOUDFLARE_TURNSTILE_SITE_KEY }}
           VITE_SUPABASE_PROJECT_REF: umpxowxnwroafuzynvwf
           VITE_SUPABASE_URL: https://umpxowxnwroafuzynvwf.supabase.co
-          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: sb_publishable__EBHKsRnL--XAzmI7NWRww_q531-pQO
           VITE_CONSOLE_URL: https://console.codepushgo.com

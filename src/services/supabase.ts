@@ -11,10 +11,12 @@ interface CapgoConfig {
   supbaseId: string
 }
 
+const codePushGoSupabasePublishableKey = 'sb_publishable__EBHKsRnL--XAzmI7NWRww_q531-pQO'
+
 const getLocalConfig = (): CapgoConfig => ({
-  supaHost: import.meta.env.VITE_SUPABASE_URL as string,
-  supaKey: import.meta.env.VITE_SUPABASE_ANON_KEY as string,
-  supbaseId: import.meta.env.VITE_SUPABASE_URL?.split('//')[1].split('.')[0].split(':')[0] as string,
+  supaHost: import.meta.env.VITE_SUPABASE_URL || 'https://umpxowxnwroafuzynvwf.supabase.co',
+  supaKey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY || codePushGoSupabasePublishableKey,
+  supbaseId: (import.meta.env.VITE_SUPABASE_URL || 'https://umpxowxnwroafuzynvwf.supabase.co').split('//')[1].split('.')[0].split(':')[0] as string,
 })
 
 let config: CapgoConfig = getLocalConfig()

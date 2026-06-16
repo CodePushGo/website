@@ -2,8 +2,9 @@
 import Layout from '@/layouts/Layout.astro'
 
 const consoleUrl = 'https://console.codepushgo.com'
+const apiUrl = import.meta.env.VITE_API_URL || 'https://api.codepushgo.com'
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://umpxowxnwroafuzynvwf.supabase.co'
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || ''
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY || 'sb_publishable__EBHKsRnL--XAzmI7NWRww_q531-pQO'
 const content = {
   title: 'Register for CodePushGo - React Native live updates',
   description: 'Create a CodePushGo account for React Native JavaScript bundle updates. Plan selection happens later in console onboarding.',
@@ -80,8 +81,7 @@ const content = {
       </section>
     </section>
   </main>
-
-  <script define:vars={{ supabaseUrl, supabaseAnonKey, consoleUrl }}>
+  <script define:vars={{ apiUrl, supabaseUrl, supabaseAnonKey, consoleUrl }}>
     const form = document.getElementById('register-form')
     const submit = document.getElementById('register-submit')
     const error = document.getElementById('register-error')
@@ -99,8 +99,41 @@ const content = {
       node.classList.add('hidden')
     }
 
-    async function signUpWithSupabase(input) {
-      const response = await fetch(`${supabaseUrl}/auth/v1/signup`, {
+    function consoleRedirectWithSession(session) {
+      const accessToken = session?.access_token
+      const refreshToken = session?.refresh_token
+      if (!accessToken || !refreshToken)
+        throw new Error('Registration completed but no Supabase session was returned.')
+
+      const target = new URL('/app/home', consoleUrl)
+      target.hash = new URLSearchParams({
+        access_token: accessToken,
+        refresh_token: refreshToken,
+        expires_in: String(session.expires_in || 3600),
+        token_type: session.token_type || 'bearer',
+        type: 'signup',
+      }).toString()
+      window.location.assign(target.toString())
+    }
+
+    async function createConfirmedAccount(input) {
+      const response = await fetch(`${apiUrl.replace(/\/+$/, '')}/auth/signup`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: input.email,
+          password: input.password,
+          first_name: input.firstName,
+          last_name: input.lastName,
+        }),
+      })
+      const data = await response.json().catch(() => ({}))
+      if (!response.ok) throw new Error(data.message || 'Unable to create account')
+      return data
+    }
+
+    async function signInWithSupabase(input) {
+      const response = await fetch(`${supabaseUrl}/auth/v1/token?grant_type=password`, {
         method: 'POST',
         headers: {
           apikey: supabaseAnonKey,
@@ -110,16 +143,10 @@ const content = {
         body: JSON.stringify({
           email: input.email,
           password: input.password,
-          data: {
-            first_name: input.firstName,
-            last_name: input.lastName,
-          },
-          gotrue_meta_security: {},
-          email_redirect_to: `${consoleUrl}/onboarding/verify_email`,
         }),
       })
       const data = await response.json().catch(() => ({}))
-      if (!response.ok) throw new Error(data.msg || data.message || 'Unable to create account')
+      if (!response.ok) throw new Error(data.msg || data.message || 'Unable to sign in after account creation')
       return data
     }
 
@@ -143,8 +170,10 @@ const content = {
       submit.disabled = true
       submit.textContent = 'Creating account...'
       try {
-        await signUpWithSupabase(input)
-        show(success, 'Account created. Check your email, then sign in to finish onboarding in the console.')
+        await createConfirmedAccount(input)
+        submit.textContent = 'Opening console...'
+        const signin = await signInWithSupabase(input)
+        consoleRedirectWithSession(signin.session || signin)
       }
       catch (registerError) {
         show(error, registerError instanceof Error ? registerError.message : String(registerError))
