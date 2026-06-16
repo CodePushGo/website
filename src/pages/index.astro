@@ -98,8 +98,8 @@ const workflowSteps = [
   {
     step: '01',
     title: 'Connect the app',
-    body: 'Install the React Native SDK once and create the channels your team uses for release flow.',
-    command: 'npx @capgo/cli@latest init',
+    body: 'Install the React Native SDK once. The CLI creates config from the native bundle ID it detects in iOS or Android.',
+    command: 'npx @codepushgo/cli@latest init',
   },
   {
     step: '02',
@@ -110,20 +110,20 @@ const workflowSteps = [
   {
     step: '03',
     title: 'Upload to a channel',
-    body: 'Publish the bundle to Development, Beta, or Production from a laptop or CI pipeline.',
-    command: 'npx @capgo/cli@latest bundle upload --channel=Production',
+    body: 'Publish a new JavaScript release to production, beta, or development from a laptop or CI pipeline.',
+    command: 'npx @codepushgo/cli@latest release --platform ios --version 2.8.4 --channel production',
   },
   {
     step: '04',
     title: 'Watch adoption',
     body: 'Follow download and install state before expanding a rollout or promoting the bundle further.',
-    command: 'npx @capgo/cli@latest app debug',
+    command: 'npx @codepushgo/cli@latest bundle list',
   },
   {
     step: '05',
     title: 'Rollback if needed',
-    body: 'Move the channel back to a previous bundle without asking users to wait for a new binary release.',
-    command: 'npx @capgo/cli@latest bundle rollback --channel=Production',
+    body: 'Move the production channel back to a previous bundle from the console while the team investigates.',
+    command: 'Console -> Channels -> Production -> select previous release',
   },
 ]
 
@@ -321,6 +321,10 @@ const faqItems = [
                     href={docsUrl}
                     class="text-codepushgo-700 hover:text-codepushgo-900 focus-visible:outline-pumpkin-200 mt-4 inline-flex min-h-11 items-center text-sm font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
                   >
+                  <a
+                    href={docsUrl}
+                    class="text-codepushgo-700 hover:text-codepushgo-900 focus-visible:outline-pumpkin-200 mt-4 inline-flex min-h-11 items-center text-sm font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"
+                  >
                     Learn how rollback works
                   </a>
                 </div>
@@ -328,11 +332,7 @@ const faqItems = [
 
               <pre
                 class="text-misty-100 bg-dusk-900 border-dusk-700 overflow-x-auto rounded-lg border p-4 text-xs leading-6 sm:text-sm"><code class="block whitespace-pre-wrap break-words">npm run build
-npx @capgo/cli@latest bundle upload --channel=Production</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
+npx @codepushgo/cli@latest release --platform ios --version 2.8.4 --channel production</code></pre>
     </section>
 
     <section class="border-codepushgo-900/10 text-codepushgo-900 bg-white py-12">

@@ -1,0 +1,164 @@
+---
+import Layout from '@/layouts/Layout.astro'
+
+const consoleUrl = 'https://console.codepushgo.com'
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://umpxowxnwroafuzynvwf.supabase.co'
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || ''
+const content = {
+  title: 'Register for CodePushGo - React Native live updates',
+  description: 'Create a CodePushGo account for React Native JavaScript bundle updates. Plan selection happens later in console onboarding.',
+  image: 'https://codepushgo.com/codepush_cover.webp',
+  keywords: 'CodePushGo register, React Native live updates, OTA updates, CodePush registration',
+}
+---
+
+<Layout content={content}>
+  <main class="bg-misty-300 text-codepushgo-900 min-h-screen">
+    <section class="mx-auto grid min-h-[calc(100vh-8rem)] max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(380px,520px)] lg:px-8">
+      <div class="max-w-2xl">
+        <a href="/" class="inline-flex items-center gap-3 text-codepushgo-900 no-underline">
+          <img src="/logo.png" alt="" width="44" height="44" class="h-11 w-11 rounded-lg" />
+          <span class="text-xl font-bold">CodePushGo</span>
+        </a>
+        <p class="text-codepushgo-700 mt-12 text-sm font-bold">React Native live updates</p>
+        <h1 class="mt-4 text-4xl leading-tight font-bold sm:text-5xl lg:text-6xl">Create your account, then connect your app by bundle ID.</h1>
+        <p class="text-dusk-700 mt-6 text-lg leading-8">
+          Register first. The console onboarding handles plan intent, app creation, and the CLI flow that detects your iOS bundle identifier or Android application ID by default.
+        </p>
+        <div class="mt-10 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-lg border border-codepushgo-900/15 bg-white p-4 shadow-sm">
+            <p class="text-sm font-bold text-dusk-700">Step 1</p>
+            <p class="mt-2 font-bold">Create account</p>
+          </div>
+          <div class="rounded-lg border border-codepushgo-900/15 bg-white p-4 shadow-sm">
+            <p class="text-sm font-bold text-dusk-700">Step 2</p>
+            <p class="mt-2 font-bold">Pick plan intent</p>
+          </div>
+          <div class="rounded-lg border border-codepushgo-900/15 bg-white p-4 shadow-sm">
+            <p class="text-sm font-bold text-dusk-700">Step 3</p>
+            <p class="mt-2 font-bold">Run CLI init</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="rounded-lg border border-codepushgo-900/15 bg-white p-6 shadow-xl shadow-codepushgo-900/10 sm:p-8" aria-labelledby="register-title">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="text-codepushgo-700 text-sm font-bold">Create account</p>
+            <h2 id="register-title" class="mt-1 text-3xl font-bold">Start with email</h2>
+          </div>
+          <a href={`${consoleUrl}/login`} class="text-codepushgo-700 hover:text-codepushgo-900 text-sm font-bold no-underline">Sign in</a>
+        </div>
+
+        <form id="register-form" class="mt-8 grid gap-4">
+          <label class="grid gap-2 text-sm font-bold text-dusk-700">
+            Email
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required class="min-h-12 rounded-lg border border-codepushgo-900/20 px-3 text-codepushgo-900" />
+          </label>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="grid gap-2 text-sm font-bold text-dusk-700">
+              First name
+              <input id="first-name" name="first_name" autocomplete="given-name" placeholder="Jane" required class="min-h-12 rounded-lg border border-codepushgo-900/20 px-3 text-codepushgo-900" />
+            </label>
+            <label class="grid gap-2 text-sm font-bold text-dusk-700">
+              Last name
+              <input id="last-name" name="last_name" autocomplete="family-name" placeholder="Doe" required class="min-h-12 rounded-lg border border-codepushgo-900/20 px-3 text-codepushgo-900" />
+            </label>
+          </div>
+          <label class="grid gap-2 text-sm font-bold text-dusk-700">
+            Password
+            <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required class="min-h-12 rounded-lg border border-codepushgo-900/20 px-3 text-codepushgo-900" />
+          </label>
+          <p id="register-error" class="hidden rounded-lg border border-red-200 bg-red-50 px-3 py-3 text-sm font-bold text-red-800"></p>
+          <p id="register-success" class="hidden rounded-lg border border-vista-500/30 bg-vista-500/10 px-3 py-3 text-sm font-bold text-codepushgo-900"></p>
+          <button id="register-submit" type="submit" class="bg-codepushgo-700 hover:bg-codepushgo-900 min-h-12 rounded-lg px-4 text-base font-bold text-white transition-colors">
+            Sign up
+          </button>
+        </form>
+
+        <p class="mt-5 text-sm leading-6 text-dusk-700">
+          No plan is selected here. CodePushGo records plan intent during console onboarding, after the account exists.
+        </p>
+        <a href={`${consoleUrl}/register`} class="mt-4 inline-flex min-h-11 items-center text-sm font-bold text-codepushgo-700 no-underline hover:text-codepushgo-900">
+          Open console register
+        </a>
+      </section>
+    </section>
+  </main>
+
+  <script define:vars={{ supabaseUrl, supabaseAnonKey, consoleUrl }}>
+    const form = document.getElementById('register-form')
+    const submit = document.getElementById('register-submit')
+    const error = document.getElementById('register-error')
+    const success = document.getElementById('register-success')
+
+    function show(node, message) {
+      if (!node) return
+      node.textContent = message
+      node.classList.remove('hidden')
+    }
+
+    function hide(node) {
+      if (!node) return
+      node.textContent = ''
+      node.classList.add('hidden')
+    }
+
+    async function signUpWithSupabase(input) {
+      const response = await fetch(`${supabaseUrl}/auth/v1/signup`, {
+        method: 'POST',
+        headers: {
+          apikey: supabaseAnonKey,
+          Authorization: `Bearer ${supabaseAnonKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: input.email,
+          password: input.password,
+          data: {
+            first_name: input.firstName,
+            last_name: input.lastName,
+          },
+          gotrue_meta_security: {},
+          email_redirect_to: `${consoleUrl}/onboarding/verify_email`,
+        }),
+      })
+      const data = await response.json().catch(() => ({}))
+      if (!response.ok) throw new Error(data.msg || data.message || 'Unable to create account')
+      return data
+    }
+
+    form?.addEventListener('submit', async (event) => {
+      event.preventDefault()
+      hide(error)
+      hide(success)
+
+      const formData = new FormData(form)
+      const input = {
+        email: String(formData.get('email') || '').trim().toLowerCase(),
+        firstName: String(formData.get('first_name') || '').trim(),
+        lastName: String(formData.get('last_name') || '').trim(),
+        password: String(formData.get('password') || ''),
+      }
+
+      if (!supabaseAnonKey) {
+        window.location.href = `${consoleUrl}/register?email=${encodeURIComponent(input.email)}`
+        return
+      }
+
+      submit.disabled = true
+      submit.textContent = 'Creating account...'
+      try {
+        await signUpWithSupabase(input)
+        show(success, 'Account created. Check your email, then sign in to finish onboarding in the console.')
+      }
+      catch (registerError) {
+        show(error, registerError instanceof Error ? registerError.message : String(registerError))
+      }
+      finally {
+        submit.disabled = false
+        submit.textContent = 'Sign up'
+      }
+    })
+  </script>
+</Layout>

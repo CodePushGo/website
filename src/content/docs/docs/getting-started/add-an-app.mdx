@@ -1,57 +1,70 @@
 ---
-title: "Add an App"
-description: "Add an app to your CodePushGo account, and install the plugin in your app"
+title: "Add a React Native App"
+description: "Add a React Native app to CodePushGo using the native bundle ID detected by the CLI."
 sidebar:
   order: 2
 prev: false
 next: false
 ---
 
-import { YouTube } from 'astro-embed';
 import { Aside, Steps, LinkCard, Code } from '@astrojs/starlight/components';
 
 ## Requirements
 
 Before getting started with CodePushGo, make sure you have:
-- A Capacitor app installed and configured. [Learn how to set up Capacitor](https://capacitorjs.com/docs/getting-started/)
-- Node.js 18 or later installed
 
-## Introduction to CodePushGo
-<YouTube id="NzXXKoyhTIo" title="Capgo in 15 min" />
+- A React Native app with an iOS bundle identifier or Android application ID
+- Node.js 18 or later
+- A CodePushGo account at [https://codepushgo.com/register/](https://codepushgo.com/register/)
 
-## Live updates are 3 step away
+<Aside type="note">
+Registration creates the account only. Plan intent is recorded inside console onboarding, after the account exists.
+</Aside>
 
-
-### Guided setup
+## Guided setup
 
 <Steps>
 
-1. Create your account at [https://capgo.app/register](https://capgo.app/register).
-![signup screenshot](/signup.webp "signup screenshot")
+1. Open the console at [https://console.codepushgo.com/app/home](https://console.codepushgo.com/app/home).
 
-2. Use the Init commands to get started <Code code={`npx @capgo/cli@latest init [APIKEY]`} lang="bash" /> You will be presented with a series of questions. Provide the necessary answers to complete the automated setup.<Aside type="tip">By following these steps, you'll be up and running in no time. If you need any further assistance during the process, our support team is [here to help](mailto:support@capgo.app). Happy onboarding!</Aside>
+2. Log in with the CLI from your React Native project folder.
 
-3. Deploy a live update <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Learn how to deploy a live update to your app" />
+   <Code code={`npx @codepushgo/cli@latest login`} lang="bash" />
+
+3. Connect the app. By default the CLI detects the native app identity from Expo config, iOS `PRODUCT_BUNDLE_IDENTIFIER`, or Android `applicationId`.
+
+   <Code code={`npx @codepushgo/cli@latest init`} lang="bash" />
+
+4. Install the updater client.
+
+   <Code code={`npm install @codepushgo/react-native-updater`} lang="bash" />
+
+5. Deploy a live update.
+
+   <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Build and upload your first React Native JavaScript bundle." />
 
 </Steps>
 
-### Manual setup
+## Manual setup
 
-In case the init command doesn't work for you, you can manually add an app.
+Use manual setup only when the CLI cannot infer the app identity.
 
 <Steps>
 
-1. Connect the CLI to your account: <Code code={`npx @capgo/cli@latest login [APIKEY]`} lang="bash" />
+1. Create or update the app using its native bundle ID.
 
-2. Add the app to your account with this command: <Code code={`npx @capgo/cli@latest app add [APP_NAME]`} lang="bash" />
+   <Code code={`npx @codepushgo/cli@latest app add com.example.app --name "Example App"`} lang="bash" />
 
-3. Install the plugin in your app: <Code code={`npm i @capgo/capacitor-updater`} lang="bash" />
+2. Create a local config file.
 
-4. Configure the plugin in your `capacitor.config` <Code code={`{\n  "plugins": {\n    CapacitorUpdater: {\n      "appId": "Your appID",\n      "autoUpdate": "atBackground",\n      "version": "1.0.0"\n    }\n  }\n}`} lang="json" />
-  [See all option available](/docs/plugin/settings/). This informations will be infer if not provided.
+   <Code code={`{\n  "appId": "com.example.app",\n  "channel": "production",\n  "endpoint": "https://api.codepushgo.com"\n}`} lang="json" />
 
-5. Call the init method as early as possible in your app: <Code code={`import { CapacitorUpdater } from '@capgo/capacitor-updater';\nCapacitorUpdater.notifyAppReady();`} lang="typescript" />
+3. Configure the JavaScript updater in your app startup code.
 
-6. Deploy a live update <LinkCard href="/docs/getting-started/deploy/" title="Deploy a live update" description="Learn how to deploy a live update to your app" />
+   <Code code={`import { configureCodePushGo, startCodePushGo } from '@codepushgo/react-native-updater'\n\nconfigureCodePushGo({ endpoint: 'https://api.codepushgo.com' })\nawait startCodePushGo({ defaultChannel: 'production' })`} lang="typescript" />
+
+4. Upload your first release.
+
+   <Code code={`npx @codepushgo/cli@latest release --platform ios --version 1.0.1 --channel production`} lang="bash" />
 
 </Steps>

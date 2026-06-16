@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: "Discover how CodePushGo's Live Updates enable seamless JavaScript bundle updates, allowing you to push changes directly to users without app store delays."
+description: "How CodePushGo live updates deliver React Native JavaScript bundles without app-store review."
 sidebar:
   order: 1
 prev: false
@@ -9,75 +9,58 @@ next: false
 
 import { Steps, CardGrid, Card, Aside } from '@astrojs/starlight/components';
 
-Use CodePushGo's Live Updates feature to update the JavaScript bundles of your app remotely, in real-time. Push JS updates directly to your users without going through the app store review process to instantly fix bugs and ship new features.
+CodePushGo Live Updates deliver React Native JavaScript bundles and bundled assets to installed apps. Use them for compatible JavaScript changes, urgent fixes, rollout control, and rollback. Use normal app-store releases for native code changes.
 
 <Aside>
-
-Live Updates are limited to JavaScript bundle changes. If you need to update native code, such as adding or removing a plugin or changing native project configuration, you'll need to submit a new native binary build to the app stores.
-
+Live Updates do not replace native builds. If you add a native module, change permissions, change entitlements, or modify platform configuration, ship a new iOS or Android binary.
 </Aside>
 
-## How Live Updates Work
+## How live updates work
 
-Capgo's Live Update system has two key components:
+CodePushGo has three main pieces:
 
-1. The CodePushGo SDK, which you install in your app. The SDK checks for available updates and downloads them in the background.
+1. The React Native updater client installed in your app.
+2. The CLI that detects the native bundle ID, builds/releases JavaScript bundles, and uploads them.
+3. The console and Cloudflare Worker backend that store releases, channels, rollout metadata, stats, and rollback targets.
 
-2. Channels, which let you target updates to specific groups of users. You can use channels to manage different release tracks, such as `Production`, `Staging`, and `Dev`.
+When you upload a release to a channel, compatible apps using that channel can discover the update from the Worker backend. The app identity is the native bundle ID by default, so the console, CLI, backend, and updater all refer to the same app.
 
-When you upload a new JS bundle to CodePushGo and assign it to a channel, the CodePushGo SDK in apps configured for that channel will detect the update and download it. The next time the app restarts, the new bundle will be loaded.
-
-## Getting Started
-
-To start using Live Updates, follow these steps:
+## Getting started
 
 <Steps>
 
-1. Complete the [Capgo Quickstart](/docs/getting-started/quickstart) to set up your app in CodePushGo and install the CodePushGo SDK.
+1. Complete the [React Native quickstart](/docs/getting-started/quickstart/) to create an account, connect the app, and install the updater.
 
-2. In your app code, call `CapacitorUpdater.notifyAppReady()` after your app has finished initializing. This tells the CodePushGo SDK that your app is ready to receive updates.
+2. Upload a release:
 
-3. Build your JS bundle and upload it to CodePushGo:
    ```shell
-   npm run build
-   npx @capgo/cli@latest bundle upload --channel=Production 
+   npx @codepushgo/cli@latest release --platform ios --version 1.0.1 --channel production
    ```
 
-4. Open your app and wait for the update to download. You can check the status with:
-   ```shell
-   npx @capgo/cli@latest app debug
-   ```
+3. Open the console at [https://console.codepushgo.com/app/home](https://console.codepushgo.com/app/home) to inspect apps and releases.
 
-5. Once the update is downloaded, close and reopen your app to load the new bundle.
+4. Promote, pause, or roll back through channels when needed.
 
 </Steps>
 
-See the [Deploying Live Updates](/docs/getting-started/deploy) guide for more details.
-
-
-## Next Steps
+## Next steps
 
 <CardGrid stagger>
   <a href="/docs/live-updates/channels/">
     <Card title="Channels" icon="bars">
-      Learn how to use channels to manage different release tracks and target updates to specific users.
+      Use channels to control production, beta, and development release tracks.
     </Card>
   </a>
 
   <a href="/docs/live-updates/rollbacks/">
     <Card title="Rollbacks" icon="left-arrow">
-      Discover how to roll back to a previous JS bundle version if an update causes issues.
+      Move a channel back to a previous JavaScript bundle when a release misbehaves.
     </Card>
   </a>
 
   <a href="/docs/live-updates/update-behavior/">
     <Card title="Update Behavior" icon="setting">
-      Customize how and when updates are downloaded and applied in your app.  
-    </Card>
-  </a>
-  <a href="/docs/live-updates/differentials/">
-    <Card title="Fast Updates" icon="starlight">
-      Learn how to use fast updates to speed up the update process.
+      Understand how updates are discovered, downloaded, and applied.
     </Card>
   </a>
 </CardGrid>
