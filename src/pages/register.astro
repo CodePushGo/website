@@ -164,7 +164,7 @@ const content = {
       }
 
       if (!supabaseAnonKey) {
-        show(error, 'Registration is temporarily unavailable. Please try again shortly or contact support@codepushgo.com.')
+        show(error, 'Supabase public registration key is missing from this deployment.')
         return
       }
       submit.disabled = true
